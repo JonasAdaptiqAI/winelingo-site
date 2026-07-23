@@ -35,8 +35,6 @@ builds a private taste profile from the wines you rate. The data controller is
   <tr><td>Your tastings — ratings, aroma/taste notes, free-text notes, and the resulting taste (“palate”) profile</td><td>The core feature: to show your history and personalise recommendations.</td></tr>
   <tr><td>Declared preferences (e.g. body/sweetness leanings) you optionally enter</td><td>To personalise recommendations before you have rated many wines.</td></tr>
   <tr><td>Learning activity (lessons completed, streak, language)</td><td>To run the daily-learning features and show progress.</td></tr>
-  <tr><td>Subscription status (via our payments provider)</td><td>To unlock premium features.</td></tr>
-  <tr><td>A device push token (if you enable notifications)</td><td>To send re-engagement reminders you can turn off.</td></tr>
   <tr><td>Basic product-analytics events, keyed to your account identifier</td><td>To understand usage and improve the app.</td></tr>
 </table>
 <p>We do <strong>not</strong> knowingly collect special-category data, and we do not sell your personal data.</p>
@@ -47,9 +45,7 @@ builds a private taste profile from the wines you rate. The data controller is
   <tr><th>Processor</th><th>Purpose</th></tr>
   <tr><td>Supabase</td><td>Backend, database and authentication (data hosting).</td></tr>
   <tr><td>Anthropic</td><td>AI vision + text: reads your scanned photos and writes the tasting explanations. Photos are sent for processing to return your result.</td></tr>
-  <tr><td>RevenueCat + Apple</td><td>Subscription purchases and entitlement management.</td></tr>
   <tr><td>PostHog</td><td>Privacy-focused product analytics.</td></tr>
-  <tr><td>Expo</td><td>Push-notification delivery.</td></tr>
 </table>
 <p>Some processors operate outside the EEA; where they do, transfers are covered by appropriate safeguards
 (e.g. Standard Contractual Clauses).</p>
