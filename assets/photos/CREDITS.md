@@ -16,6 +16,19 @@ courtesy, not a requirement. Each file below lists its Unsplash source image.
 | grapes-green.jpg | Green grapes on the vine | images.unsplash.com/photo-1632990951421-0f748857ad9a |
 | grapes-purple.jpg | Dark grapes on the vine | images.unsplash.com/photo-1642556288596-a75c28303cf8 |
 | table-people.jpg | People sharing a table | images.unsplash.com/photo-1528605248644-14dd04022da1 |
+| region-tuscany.jpg | Tuscan hillside vineyard | images.unsplash.com/photo-1596142332133-327e2a0ff006 |
+| region-bordeaux.jpg | Bordeaux château + vineyard | images.unsplash.com/photo-1676654420746-269a05c5fb37 |
+| region-napa.jpg | Napa Valley at sunrise | images.unsplash.com/photo-1701623785014-181cda1bcc37 |
+| region-burgundy.jpg | Burgundy vineyard | images.unsplash.com/photo-1755090249373-dfbf3a462f6c |
+| region-rioja.jpg | Hills above Rioja | images.unsplash.com/photo-1660508477980-ac5307fe39dd |
+| grape-cabernet.jpg | Glass of bold red wine | images.unsplash.com/photo-1775215237032-54e9f5a67e40 |
+| grape-merlot.jpg | Glass of red wine on a table | images.unsplash.com/photo-1705917892974-d44cdf98ff99 |
+| grape-pinot.jpg | Elegant glass of red wine | images.unsplash.com/photo-1779555812989-b9dc041375eb |
+| grape-malbec.jpg | Red wine served with food | images.unsplash.com/photo-1762922425256-621f056e1ebb |
+| grape-chardonnay.jpg | Glass of white wine | images.unsplash.com/photo-1597905722448-a1df7c00000a |
+| grape-sauvignon.jpg | Swirling a glass of white wine | images.unsplash.com/photo-1596438214057-5ff7c7fa76b1 |
+| grape-riesling.jpg | Glass of golden white wine | images.unsplash.com/photo-1585553616435-2dc0a54e271d |
+| cta-cellar.jpg | Barrel cellar | images.unsplash.com/photo-1701622669938-fa4e09a1f1fe |
 
 Images were fetched at ~1500px wide, JPEG q80. To swap any of them, download a
 replacement from Unsplash/Pexels (both commercial-safe) and keep the same filename.

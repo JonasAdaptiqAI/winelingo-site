@@ -226,7 +226,8 @@
   .toast small{display:block; margin-top:5px; color:var(--muted); font-size:12px; letter-spacing:.05em; text-transform:uppercase}
 
   .cta{background:linear-gradient(155deg,#4a1024,#3b0a1e 55%,#26060f); color:var(--paper); position:relative; overflow:hidden}
-  .cta::before{content:""; position:absolute; inset:0; opacity:.5;
+  .cta-bg{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0; opacity:.28}
+  .cta::before{content:""; position:absolute; inset:0; z-index:1; opacity:.5;
     background:radial-gradient(680px 380px at 14% 6%, rgba(201,162,74,.20), transparent 60%),
       radial-gradient(760px 420px at 92% 100%, rgba(232,160,176,.16), transparent 60%)}
   .cta .wrap{position:relative; z-index:2; text-align:center; padding-top:92px; padding-bottom:92px}
@@ -591,6 +592,7 @@
 
 <!-- ============ CTA / WAITLIST ============ -->
 <section class="cta" id="waitlist">
+  <img class="cta-bg" src="/assets/photos/cta-cellar.jpg" alt="" loading="lazy">
   <div class="wrap">
     <p class="eyebrow center reveal">Coming soon</p>
     <h2 class="reveal">Be first to pour with confidence</h2>
