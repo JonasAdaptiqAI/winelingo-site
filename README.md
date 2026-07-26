@@ -49,6 +49,26 @@ press**. The launch app genuinely ships 4 languages (EN/DA/ES/DE) and an "About 
 2. **App Store badge.** Once the app is approved, swap the "Coming soon to the App Store" pill for the
    official Apple download badge linked to the App Store listing (hero + CTA + footer).
 
+## SEO go-live checklist (do after deploy)
+
+On-page/technical SEO is built in (titles, meta, canonical, hreflang, OG, JSON-LD, sitemap,
+internal links, image alt). These need your accounts and can only be done once the site is live:
+
+1. **Google Search Console** — add winelingo.app (verify via DNS TXT at Hostinger, or paste the
+   HTML-tag `<meta name="google-site-verification" ...>` into every page's `<head>`), then submit
+   `https://winelingo.app/sitemap.xml` and Request Indexing on the homepage.
+2. **Bing Webmaster Tools** — same: add the site + submit the sitemap (can import from Search Console).
+3. **Analytics** (pick one, paste its snippet into the `<head>` — I can wire it up):
+   - Plausible / Fathom (privacy-friendly, no cookie banner), or GA4, or **PostHog** (already used in
+     the app, so one dashboard for app + site).
+4. Confirm indexing after ~1–2 weeks; expand content (see below) to grow long-tail coverage.
+
+## Photos
+
+Photography lives in `assets/photos/` (see `assets/photos/CREDITS.md`) — all from **Unsplash**, used
+under the Unsplash License (commercial-safe, no attribution required). To swap any image, download a
+replacement from Unsplash/Pexels and keep the same filename.
+
 ## Deploy
 
 This repo IS production (GitHub Pages). To publish, commit and push to `main`:
