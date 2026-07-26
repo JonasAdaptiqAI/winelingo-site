@@ -1,0 +1,13 @@
+{
+  "name": "Winelingo — Learn the wine in your glass",
+  "short_name": "Winelingo",
+  "description": "Scan a wine label to identify it, learn why it tastes the way it does, and build your palate. A warm wine-education iPhone app.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FBF7F4",
+  "theme_color": "#7b1e3b",
+  "icons": [
+    { "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

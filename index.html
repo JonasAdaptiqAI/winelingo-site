@@ -3,29 +3,762 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Winelingo — learn wine, one scan at a time</title>
-<meta name="description" content="Winelingo is a wine-education iPhone app: scan a label, understand the wine, and build your personal taste profile.">
+<title>Winelingo — Scan Wine Labels, Learn Wine &amp; Build Your Palate</title>
+<meta name="description" content="Point your iPhone at any wine label to identify the wine, learn why it tastes the way it does, and build your palate. A warm wine-education app — free at launch.">
+<meta name="keywords" content="wine app, wine label scanner, wine scanner app, learn wine, wine education, taste profile, sommelier app, wine tasting, wine for beginners, wine glossary, food pairing, wine journal, palate">
+<link rel="canonical" href="https://winelingo.app/">
+<meta name="theme-color" content="#7b1e3b">
+<meta name="color-scheme" content="light">
+<meta name="author" content="Jonas Egeskov">
+<link rel="alternate" hreflang="en" href="https://winelingo.app/">
+<link rel="alternate" hreflang="x-default" href="https://winelingo.app/">
+
+<!-- Icons & manifest (real app icon) -->
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Winelingo">
+<meta property="og:title" content="Winelingo — Learn the wine in your glass">
+<meta property="og:description" content="Scan any wine label to identify the wine, learn why it tastes the way it does, and build your palate — one scan at a time. Free at launch.">
+<meta property="og:url" content="https://winelingo.app/">
+<meta property="og:image" content="https://winelingo.app/assets/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Winelingo — Learn the wine in your glass">
+<meta name="twitter:description" content="A wine-education iPhone app. Scan a label, learn the wine, build your palate. Free at launch.">
+<meta name="twitter:image" content="https://winelingo.app/assets/social-card.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/site.css">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://winelingo.app/#organization",
+      "name": "Winelingo",
+      "url": "https://winelingo.app/",
+      "logo": "https://winelingo.app/assets/icon-512.png",
+      "description": "Winelingo is a warm, plain-language wine-education app: scan a label to identify a wine, learn why it tastes the way it does, and build a personal palate profile.",
+      "founder": { "@type": "Person", "name": "Jonas Egeskov" },
+      "foundingLocation": { "@type": "Place", "name": "Denmark" },
+      "email": "jonsegeskov29@gmail.com"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://winelingo.app/#app",
+      "name": "Winelingo",
+      "operatingSystem": "iOS",
+      "applicationCategory": "EducationApplication",
+      "applicationSubCategory": "Wine Education",
+      "description": "Scan a wine label to identify it, get a plain-language taste profile and the story behind it, read a 'story for serving', scan a restaurant wine list for the bottle to order, and build a personal palate profile. Free at launch.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "inLanguage": ["en", "da", "es", "de"],
+      "contentRating": "17+",
+      "image": "https://winelingo.app/assets/icon-512.png",
+      "author": { "@id": "https://winelingo.app/#organization" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://winelingo.app/#website",
+      "name": "Winelingo",
+      "url": "https://winelingo.app/",
+      "description": "Scan any wine label, learn the wine, and build your palate — one scan at a time.",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://winelingo.app/#organization" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://winelingo.app/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Is Winelingo free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Winelingo launches completely free, with no in-app purchases — you get the full experience at launch." } },
+        { "@type": "Question", "name": "When can I get it?", "acceptedAnswer": { "@type": "Answer", "text": "Winelingo is coming to the App Store very soon. Join the waitlist and we'll email you the moment it's available to download." } },
+        { "@type": "Question", "name": "Which devices does it work on?", "acceptedAnswer": { "@type": "Answer", "text": "Winelingo is an iPhone app at launch. You point your iPhone camera at a label or wine list to scan it." } },
+        { "@type": "Question", "name": "What languages does it support?", "acceptedAnswer": { "@type": "Answer", "text": "English, Danish, Spanish and German — with the same warm, plain-language teaching in each." } },
+        { "@type": "Question", "name": "Do I need an account?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — your tasting journal and palate profile are personal to you, so Winelingo asks you to create an account. You can delete your account and all its data at any time, right inside the app." } },
+        { "@type": "Question", "name": "What happens to the photos I scan?", "acceptedAnswer": { "@type": "Answer", "text": "A label or wine-list photo is processed to identify the wine and return your result — it isn't kept as a long-term gallery, and it's never used to build an advertising profile." } }
+      ]
+    }
+  ]
+}
+</script>
+
 <style>
-  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#fbf7f4;color:#241f21;font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-  main{max-width:560px;padding:48px 26px;text-align:center}
-  h1{font-size:42px;margin:0 0 10px;color:#7b1e3b;letter-spacing:-.5px}
-  .tag{font-size:19px;color:#6f636b;margin:0 0 26px}
-  .soon{display:inline-block;background:#3b0a1e;color:#fbf7f4;border-radius:999px;padding:9px 20px;font-size:15px;margin-bottom:34px}
-  .links{font-size:14.5px;color:#6f636b}
-  .links a{color:#7b1e3b;text-decoration:none;margin:0 8px}
-  .links a:hover{text-decoration:underline}
+  /* ---------- Homepage-specific components ---------- */
+  .hero{position:relative; padding:76px 0 40px; overflow:hidden}
+  .hero-bg{position:absolute; inset:0; z-index:0; pointer-events:none;
+    background:
+      radial-gradient(1100px 620px at 82% -6%, rgba(232,160,176,.20), transparent 60%),
+      radial-gradient(900px 640px at 6% 8%, rgba(201,162,74,.14), transparent 58%),
+      radial-gradient(1200px 900px at 50% 120%, rgba(243,236,227,.9), transparent 60%);
+  }
+  .hero-grid{display:grid; grid-template-columns:1.06fr .94fr; gap:56px; align-items:center; position:relative; z-index:2}
+  .hero h1{font-size:clamp(40px,6vw,68px); color:var(--wine-deep); font-weight:600; letter-spacing:-.02em}
+  .hero h1 em{font-style:italic; color:var(--wine); font-weight:500}
+  .hero-sub{font-size:clamp(17px,2vw,20px); color:var(--sec); margin:22px 0 30px; max-width:33ch}
+  .hero-actions{display:flex; flex-wrap:wrap; gap:14px; align-items:center}
+  .hero-meta{display:flex; align-items:center; gap:18px; margin-top:26px; flex-wrap:wrap}
+  .soon-badge{display:inline-flex; align-items:center; gap:9px; background:var(--wine-deep); color:var(--paper);
+    padding:9px 16px 9px 13px; border-radius:var(--r-pill); font-size:13.5px; font-weight:500; letter-spacing:.01em}
+  .soon-badge svg{opacity:.92}
+  .free-line{font-size:14px; color:var(--muted); display:inline-flex; align-items:center; gap:8px}
+  .free-line b{color:var(--vine-text); font-weight:600}
+
+  .device-stage{position:relative; display:flex; justify-content:center}
+  .device-glow{position:absolute; width:78%; height:78%; top:8%; left:11%; z-index:0;
+    background:radial-gradient(closest-side, rgba(123,30,59,.22), transparent 70%); filter:blur(30px)}
+  .device{position:relative; z-index:1; width:296px; border-radius:44px; padding:12px;
+    background:linear-gradient(160deg,#241019,#3b0a1e 55%,#1c0712);
+    box-shadow:var(--shadow-lg), inset 0 0 0 1.5px rgba(255,255,255,.06)}
+  .device::after{content:""; position:absolute; top:15px; left:50%; transform:translateX(-50%);
+    width:104px; height:24px; background:#160510; border-radius:14px; z-index:3}
+  .screen{position:relative; border-radius:33px; overflow:hidden; background:var(--paper); z-index:2}
+  .screen-top{height:44px}
+  .app-card{padding:16px 15px 20px}
+  .scan-eyebrow{font-size:10.5px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--wine); display:flex; align-items:center; gap:7px}
+  .scan-eyebrow .dot{width:6px; height:6px; border-radius:50%; background:var(--vine); box-shadow:0 0 0 3px rgba(110,123,84,.18)}
+  .wine-name{font-family:var(--font-display); font-weight:600; font-size:23px; color:var(--wine-deep); line-height:1.1; margin:9px 0 3px}
+  .wine-meta{font-size:12.5px; color:var(--muted)}
+  .type-badge{display:inline-flex; align-items:center; gap:6px; margin-top:11px; padding:5px 11px; border-radius:var(--r-pill); background:rgba(123,30,59,.09); color:var(--wine); font-size:11.5px; font-weight:600; letter-spacing:.02em}
+  .type-badge .swatch{width:9px; height:9px; border-radius:50%; background:var(--wine)}
+  .bars{margin:15px 0 4px; display:grid; gap:9px}
+  .bar-row{display:grid; grid-template-columns:64px 1fr; align-items:center; gap:10px}
+  .bar-row span{font-size:10.5px; color:var(--muted); font-weight:500}
+  .track{height:6px; border-radius:6px; background:var(--line); overflow:hidden}
+  .fill{height:100%; border-radius:6px; background:linear-gradient(90deg,var(--wine),#a63552)}
+  .story{margin-top:14px; background:var(--parchment); border-radius:12px; padding:12px 13px; position:relative}
+  .story .lbl{font-size:9.5px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; color:var(--wine); display:flex; align-items:center; gap:6px; margin-bottom:6px}
+  .story p{font-family:var(--font-display); font-style:italic; font-size:13px; line-height:1.5; color:#4a3f45}
+  .float-chip{position:absolute; z-index:4; background:var(--paper-raised); border:1px solid var(--line); border-radius:13px; box-shadow:var(--shadow-md); padding:11px 13px; display:flex; align-items:center; gap:10px; font-size:12.5px; font-weight:500; color:var(--ink)}
+  .float-chip .ico{width:30px; height:30px; border-radius:9px; display:grid; place-items:center; flex:0 0 auto}
+  .chip-1{top:2%; right:-22px}
+  .chip-2{bottom:6%; left:-26px}
+
+  .strip{border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--paper-raised); padding:24px 0; margin-top:36px}
+  .strip-inner{display:flex; align-items:center; justify-content:center; gap:14px 40px; flex-wrap:wrap; text-align:center}
+  .strip-item{display:inline-flex; align-items:center; gap:11px; font-size:15px; color:var(--sec)}
+  .strip-item svg{color:var(--wine); flex:0 0 auto}
+  .strip-sep{width:5px; height:5px; border-radius:50%; background:var(--gold); opacity:.6}
+
+  .steps{display:grid; grid-template-columns:repeat(3,1fr); gap:24px}
+  .step{background:var(--paper-raised); border:1px solid var(--line); border-radius:var(--r-card); padding:32px 26px; box-shadow:var(--shadow-sm); transition:transform .3s var(--ease), box-shadow .3s var(--ease)}
+  .step:hover{transform:translateY(-5px); box-shadow:var(--shadow-md)}
+  .step-num{font-family:var(--font-display); font-size:14px; color:var(--wine); font-weight:600; letter-spacing:.04em}
+  .step-ico{width:52px; height:52px; border-radius:14px; background:rgba(123,30,59,.07); display:grid; place-items:center; margin:14px 0 20px; color:var(--wine)}
+  .step h3{font-size:22px; color:var(--wine-deep); margin-bottom:9px}
+  .step p{color:var(--sec); font-size:15.5px}
+
+  .showcase{display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; padding:14px 0}
+  .showcase + .showcase{margin-top:96px}
+  .showcase.flip .show-media{order:2}
+  .show-copy .eyebrow{margin-bottom:14px}
+  .show-copy h3{font-size:clamp(26px,3.4vw,38px); color:var(--wine-deep); margin-bottom:16px}
+  .show-copy p{color:var(--sec); font-size:17.5px}
+  .show-list{list-style:none; padding:0; margin:22px 0 0; display:grid; gap:12px}
+  .show-list li{display:flex; gap:12px; align-items:flex-start; font-size:16px; color:#463d43}
+  .show-list li em{font-style:italic; color:var(--wine)}
+  .show-list svg{flex:0 0 auto; margin-top:3px; color:var(--vine)}
+  .show-media{position:relative; display:flex; justify-content:center; align-items:center; min-height:340px}
+  .panel{position:relative; z-index:2; width:100%; max-width:420px; background:var(--paper-raised); border:1px solid var(--line); border-radius:20px; box-shadow:var(--shadow-md); padding:22px}
+  .panel-glow{position:absolute; inset:8% 6%; z-index:0; border-radius:30px; background:radial-gradient(closest-side, rgba(201,162,74,.16), transparent 72%); filter:blur(24px)}
+
+  .list-head{display:flex; align-items:center; justify-content:space-between; margin-bottom:16px}
+  .list-head .t{font-family:var(--font-display); font-weight:600; font-size:18px; color:var(--wine-deep)}
+  .list-head .s{font-size:12px; color:var(--muted)}
+  .wine-row{display:flex; align-items:center; gap:13px; padding:13px 0; border-top:1px solid var(--line)}
+  .wine-row:first-of-type{border-top:none}
+  .rank{width:30px; height:30px; border-radius:9px; background:var(--parchment); display:grid; place-items:center; font-family:var(--font-display); font-weight:600; font-size:14px; color:var(--wine); flex:0 0 auto}
+  .wine-row .info{flex:1; min-width:0}
+  .wine-row .nm{font-weight:600; font-size:14.5px; color:var(--ink); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .wine-row .sub{font-size:12px; color:var(--muted)}
+  .match{font-size:12px; font-weight:600; color:var(--vine-text); white-space:nowrap}
+  .order-tag{margin-left:auto; background:var(--wine); color:#fff; font-size:10.5px; font-weight:600; letter-spacing:.03em; padding:5px 10px; border-radius:var(--r-pill)}
+  .row-best{background:linear-gradient(90deg, rgba(201,162,74,.10), transparent); border-radius:12px; padding-left:10px; padding-right:10px; margin:2px -10px}
+
+  .learn-top{display:flex; align-items:center; justify-content:space-between; margin-bottom:18px}
+  .streak{display:inline-flex; align-items:center; gap:8px; font-weight:600; font-size:14px; color:var(--wine-deep)}
+  .streak .flame{width:26px; height:26px; border-radius:8px; background:rgba(201,162,74,.16); display:grid; place-items:center; color:var(--gold)}
+  .dots{display:flex; gap:5px}
+  .dots i{width:9px; height:9px; border-radius:50%; background:var(--line)}
+  .dots i.on{background:var(--vine)}
+  .word{background:var(--parchment); border-radius:12px; padding:14px; margin-bottom:12px}
+  .word .k{font-size:10px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; color:var(--wine); margin-bottom:5px}
+  .word .w{font-family:var(--font-display); font-size:20px; color:var(--wine-deep); font-weight:600}
+  .word .d{font-size:12.5px; color:var(--sec); margin-top:3px}
+  .lesson{display:flex; align-items:center; gap:12px; padding:13px; border:1px solid var(--line); border-radius:12px}
+  .lesson .pg{flex:1}
+  .lesson .pg .t{font-size:13.5px; font-weight:600; color:var(--ink); margin-bottom:6px}
+  .lesson .pgbar{height:6px; background:var(--line); border-radius:6px; overflow:hidden}
+  .lesson .pgbar i{display:block; height:100%; width:60%; background:linear-gradient(90deg,var(--wine),#a63552); border-radius:6px}
+  .lesson .go{width:34px; height:34px; border-radius:10px; background:var(--wine); display:grid; place-items:center; color:#fff; flex:0 0 auto}
+
+  .trio{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:22px}
+  .fcard{background:var(--paper-raised); border:1px solid var(--line); border-radius:var(--r-card); padding:30px 26px; box-shadow:var(--shadow-sm); transition:transform .3s var(--ease), box-shadow .3s var(--ease)}
+  .fcard:hover{transform:translateY(-5px); box-shadow:var(--shadow-md)}
+  .fcard .ico{width:48px; height:48px; border-radius:13px; background:rgba(123,30,59,.07); display:grid; place-items:center; color:var(--wine); margin-bottom:18px}
+  .fcard h3{font-size:20px; color:var(--wine-deep); margin-bottom:9px}
+  .fcard p{color:var(--sec); font-size:15px}
+
+  .langs{background:var(--parchment); border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+  .langs .wrap{display:flex; align-items:center; justify-content:space-between; gap:30px; padding-top:44px; padding-bottom:44px; flex-wrap:wrap}
+  .langs .lead{max-width:40ch}
+  .langs h2{font-size:26px; color:var(--wine-deep); margin-bottom:8px}
+  .langs p{color:var(--sec); font-size:16px}
+  .lang-chips{display:flex; gap:12px; flex-wrap:wrap}
+  .lang-chip{display:inline-flex; align-items:center; gap:9px; background:var(--paper-raised); border:1px solid var(--line); border-radius:var(--r-pill); padding:11px 18px; font-weight:600; font-size:15px; color:var(--wine-deep); box-shadow:var(--shadow-sm)}
+  .lang-chip small{color:var(--muted); font-weight:500; font-size:12.5px}
+  .lang-toasts{display:flex; gap:14px; flex-wrap:wrap}
+  .toast{background:var(--paper-raised); border:1px solid var(--line); border-radius:14px; box-shadow:var(--shadow-sm); padding:16px 24px; text-align:center; min-width:118px}
+  .toast .cheers{display:block; font-family:var(--font-display); font-weight:600; font-style:italic; font-size:25px; color:var(--wine)}
+  .toast small{display:block; margin-top:5px; color:var(--muted); font-size:12px; letter-spacing:.05em; text-transform:uppercase}
+
+  .cta{background:linear-gradient(155deg,#4a1024,#3b0a1e 55%,#26060f); color:var(--paper); position:relative; overflow:hidden}
+  .cta::before{content:""; position:absolute; inset:0; opacity:.5;
+    background:radial-gradient(680px 380px at 14% 6%, rgba(201,162,74,.20), transparent 60%),
+      radial-gradient(760px 420px at 92% 100%, rgba(232,160,176,.16), transparent 60%)}
+  .cta .wrap{position:relative; z-index:2; text-align:center; padding-top:92px; padding-bottom:92px}
+  .cta .eyebrow{color:var(--gold)}
+  .cta .eyebrow::before{background:linear-gradient(90deg,var(--gold),rgba(201,162,74,.2))}
+  .cta h2{font-size:clamp(32px,4.6vw,50px); color:#fff; max-width:16ch; margin:0 auto 16px}
+  .cta .lead{color:rgba(251,247,244,.82); font-size:18.5px; max-width:44ch; margin:0 auto 34px}
+  .waitlist{display:flex; gap:12px; max-width:480px; margin:0 auto; flex-wrap:wrap; justify-content:center}
+  .waitlist input[type=email]{flex:1; min-width:230px; padding:16px 18px; border-radius:var(--r-ctrl); border:1px solid rgba(255,255,255,.18);
+    background:rgba(255,255,255,.06); color:#fff; font-family:var(--font-body); font-size:16px; transition:border-color .2s, background .2s}
+  .waitlist input[type=email]::placeholder{color:rgba(251,247,244,.55)}
+  .waitlist input[type=email]:focus{outline:none; border-color:var(--gold); background:rgba(255,255,255,.1)}
+  .waitlist .btn-primary{background:var(--paper); color:var(--wine-deep); box-shadow:0 14px 32px -14px rgba(0,0,0,.55)}
+  .waitlist .btn-primary:hover{background:#ffffff}
+  .hp{position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden}
+  .form-note{margin-top:16px; font-size:13.5px; color:rgba(251,247,244,.6)}
+  .form-note a{color:var(--gold)}
+  .form-msg{margin-top:18px; font-size:15px; min-height:1.2em; font-weight:500}
+  .form-msg a{color:var(--sparkling); text-decoration:underline}
+  .form-msg.ok{color:#dcecb9}
+  .form-msg.warn{color:var(--sparkling)}
+  .cta-badges{display:flex; align-items:center; justify-content:center; gap:16px; margin-top:30px; flex-wrap:wrap}
+  .cta .soon-badge{background:rgba(255,255,255,.1); color:var(--paper); border:1px solid rgba(255,255,255,.16)}
+  .respons{font-size:13px; color:rgba(251,247,244,.6); display:inline-flex; align-items:center; gap:8px}
+
+  @media (max-width:900px){
+    .hero{padding-top:52px}
+    .hero-grid{grid-template-columns:1fr; gap:48px; text-align:center}
+    .hero-sub{margin-left:auto; margin-right:auto}
+    .hero-actions, .hero-meta{justify-content:center}
+    .hero-copy .eyebrow{justify-content:center}
+    .steps{grid-template-columns:1fr; gap:18px}
+    .showcase{grid-template-columns:1fr; gap:34px}
+    .showcase.flip .show-media{order:0}
+    .show-copy{text-align:center}
+    .show-copy .eyebrow{justify-content:center}
+    .show-list{text-align:left; max-width:420px; margin-left:auto; margin-right:auto}
+    .trio{grid-template-columns:1fr}
+    .langs .wrap{flex-direction:column; text-align:center}
+    .lang-chips{justify-content:center}
+  }
+  @media (max-width:560px){
+    .chip-1{right:-6px; top:0} .chip-2{left:-8px}
+    .waitlist .btn-primary{width:100%}
+  }
 </style>
 </head>
 <body>
-<main>
-  <h1>Winelingo</h1>
-  <p class="tag">Learn wine, one scan at a time. Scan a label, understand the wine, and build your personal taste profile.</p>
-  <span class="soon">Coming soon to the App&nbsp;Store</span>
-  <p class="links">
-    <a href="/privacy">Privacy Policy</a> ·
-    <a href="/terms">Terms of Use</a> ·
-    <a href="mailto:jonsegeskov29@gmail.com">Contact</a>
-  </p>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="/" aria-label="Winelingo home">
+      <img src="/assets/logo.png" alt="" width="34" height="34">
+      Winelingo
+    </a>
+    <nav class="nav-links" id="navmenu" aria-label="Primary">
+      <a href="#features">Features</a>
+      <a href="/learn/">Learn</a>
+      <a href="/wine-glossary/">Glossary</a>
+      <a href="/tools/">Tools</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary" href="#waitlist">Join the waitlist</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navmenu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow reveal">Wine education · iPhone</p>
+      <h1 class="reveal d1">Learn the wine <br>in your <em>glass</em>.</h1>
+      <p class="hero-sub reveal d2">Point your camera at any label. Winelingo tells you what it is, why it tastes the way it does, and how to serve it like you’ve known it for years — then quietly learns your palate, one scan at a time.</p>
+      <div class="hero-actions reveal d2">
+        <a class="btn btn-primary btn-lg" href="#waitlist">Join the waitlist</a>
+        <a class="btn btn-ghost btn-lg" href="#how">See how it works</a>
+      </div>
+      <div class="hero-meta reveal d3">
+        <span class="soon-badge">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.9c0-2 1.6-2.9 1.7-3-1-1.4-2.4-1.6-2.9-1.6-1.2-.1-2.4.7-3 .7-.6 0-1.6-.7-2.6-.7-1.3 0-2.6.8-3.2 2-1.4 2.4-.4 6 1 8 .6 1 1.4 2 2.4 2 1 0 1.3-.6 2.5-.6 1.1 0 1.4.6 2.5.6 1 0 1.7-1 2.3-2 .4-.6.7-1.3.9-2-2-.8-2.1-3.5-2.1-3.6ZM14.5 6.3c.5-.7.9-1.6.8-2.5-.8 0-1.7.6-2.3 1.2-.5.6-.9 1.5-.8 2.4.9.1 1.8-.4 2.3-1.1Z"/></svg>
+          Coming soon to the App&nbsp;Store
+        </span>
+        <span class="free-line"><b>Free</b> at launch · No in-app purchases · 17+</span>
+      </div>
+    </div>
+
+    <!-- Phone mockup: the scan-result profile (illustration) -->
+    <div class="device-stage reveal d2">
+      <div class="device-glow" aria-hidden="true"></div>
+      <div class="float-chip chip-1" aria-hidden="true">
+        <span class="ico" style="background:rgba(110,123,84,.14); color:var(--vine)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        Identified in a second
+      </div>
+      <div class="float-chip chip-2" aria-hidden="true">
+        <span class="ico" style="background:rgba(201,162,74,.18); color:var(--gold)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.5 6.6L21 9.3l-5 4.4 1.6 6.8L12 17l-5.6 3.5L8 13.7 3 9.3l6.5-.7L12 2Z"/></svg>
+        </span>
+        +1 day streak
+      </div>
+      <div class="device" role="img" aria-label="Example Winelingo scan result: a wine identified, with a taste-profile chart and a read-aloud story for serving.">
+        <div class="screen">
+          <div class="screen-top" style="background:linear-gradient(180deg,#f7ede3,var(--paper))"></div>
+          <div class="app-card">
+            <p class="scan-eyebrow"><span class="dot"></span> Example scan · Taste profile</p>
+            <p class="wine-name">Colline Rosse</p>
+            <p class="wine-meta">Barolo · Nebbiolo · Piedmont, Italy · 2019</p>
+            <span class="type-badge"><span class="swatch"></span> Red · Bold &amp; structured</span>
+            <div class="bars">
+              <div class="bar-row"><span>Body</span><div class="track"><div class="fill" style="width:82%"></div></div></div>
+              <div class="bar-row"><span>Tannin</span><div class="track"><div class="fill" style="width:88%"></div></div></div>
+              <div class="bar-row"><span>Acidity</span><div class="track"><div class="fill" style="width:74%"></div></div></div>
+              <div class="bar-row"><span>Sweetness</span><div class="track"><div class="fill" style="width:12%"></div></div></div>
+              <div class="bar-row"><span>Oak</span><div class="track"><div class="fill" style="width:56%"></div></div></div>
+            </div>
+            <div class="story">
+              <p class="lbl"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 5h16M4 12h16M4 19h10" stroke="#7B1E3B" stroke-width="2" stroke-linecap="round"/></svg> Story for serving</p>
+              <p>“This Barolo spent years in oak before it ever met a glass — decant it, and tell your table it tastes of dried rose, tar and sour cherry. That grip on your tongue? Nebbiolo’s famous tannins, softening as it breathes.”</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="strip reveal">
+    <div class="wrap strip-inner">
+      <span class="strip-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="3" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="11" r="3.2" stroke="currentColor" stroke-width="1.6"/><path d="M9 3.5h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg> Point your camera</span>
+      <span class="strip-sep" aria-hidden="true"></span>
+      <span class="strip-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3a9 9 0 1 0 9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Know your wine</span>
+      <span class="strip-sep" aria-hidden="true"></span>
+      <span class="strip-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 4v16m0-16c-2.5 0-4.5 1-4.5 3.5S9.5 11 12 11m0-7c2.5 0 4.5 1 4.5 3.5S14.5 11 12 11m-4.5 5.5C7.5 14 9.5 13 12 13s4.5 1 4.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> Learn a little daily</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section" id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow center reveal">How it works</p>
+      <h2 class="reveal">From “no idea” to “I’ll have this one”</h2>
+      <p class="reveal d1">No wine words to memorise first. Winelingo starts with the bottle in front of you and teaches from there.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <span class="step-num">01</span>
+        <div class="step-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="14" rx="3" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="13" r="3.4" stroke="currentColor" stroke-width="1.6"/><path d="M8 6l1.2-2h5.6L16 6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+        <h3>Point your camera</h3>
+        <p>Snap a bottle label or a whole restaurant wine list. That’s the entire input — no typing, no searching.</p>
+      </div>
+      <div class="step reveal d1">
+        <span class="step-num">02</span>
+        <div class="step-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M8 3h8l-.5 4.4A4 4 0 0 1 12 11a4 4 0 0 1-3.5-3.6L8 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 11v6m-3 3h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+        <h3>Meet the wine</h3>
+        <p>Get the identity, a plain-language taste profile, why it tastes that way, an honest note on the winery, and a story to tell as you pour.</p>
+      </div>
+      <div class="step reveal d2">
+        <span class="step-num">03</span>
+        <div class="step-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 19V5a2 2 0 0 1 2-2h11a1 1 0 0 1 1 1v13" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M6 17h12v3a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2 2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+        <h3>Learn a little daily</h3>
+        <p>Rate what you drink and Winelingo maps your palate. A short daily lesson and a word of the day keep the habit — and your streak — alive.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="section" id="features" style="padding-top:36px">
+  <div class="wrap">
+
+    <div class="showcase">
+      <div class="show-copy">
+        <p class="eyebrow reveal">Scan a label</p>
+        <h3 class="reveal">Every bottle becomes a wine lesson</h3>
+        <p class="reveal d1">One photo turns a label you can’t pronounce into something you understand. Winelingo identifies the wine, then explains it the way a generous friend would — no jargon, no gatekeeping.</p>
+        <ul class="show-list reveal d1">
+          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> A taste profile in plain words — body, tannin, acidity, sweetness</li>
+          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> The story of <em>why</em> it tastes that way — grape, place, winemaking</li>
+          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> An honest note on the winery — no marketing gloss</li>
+        </ul>
+      </div>
+      <div class="show-media reveal d1">
+        <div class="panel-glow" aria-hidden="true"></div>
+        <div class="panel" role="img" aria-label="Example Winelingo scan result with a plain-language taste-profile chart and a note on why the wine tastes that way.">
+          <p class="scan-eyebrow"><span class="dot"></span> Example scan · Taste profile</p>
+          <p class="wine-name" style="font-size:26px">Colline Rosse</p>
+          <p class="wine-meta">Barolo · Nebbiolo · Piedmont, Italy · 2019</p>
+          <span class="type-badge"><span class="swatch"></span> Red · Bold &amp; structured</span>
+          <div class="bars">
+            <div class="bar-row"><span>Body</span><div class="track"><div class="fill" style="width:82%"></div></div></div>
+            <div class="bar-row"><span>Tannin</span><div class="track"><div class="fill" style="width:88%"></div></div></div>
+            <div class="bar-row"><span>Acidity</span><div class="track"><div class="fill" style="width:74%"></div></div></div>
+            <div class="bar-row"><span>Sweetness</span><div class="track"><div class="fill" style="width:12%"></div></div></div>
+          </div>
+          <div class="story">
+            <p class="lbl"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 5h16M4 12h16M4 19h10" stroke="#7B1E3B" stroke-width="2" stroke-linecap="round"/></svg> Why it tastes this way</p>
+            <p>“Nebbiolo grown in Piedmont’s fog gives high tannin and bright acidity; years in oak add the dried-rose and tar notes Barolo is loved for.”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="showcase flip">
+      <div class="show-media reveal d1">
+        <div class="panel-glow" aria-hidden="true"></div>
+        <div class="panel" role="img" aria-label="Example ranked wine list matched to your palate, with a clear top pick to order.">
+          <div class="list-head">
+            <span class="t">The wine list, ranked</span>
+            <span class="s">for your palate</span>
+          </div>
+          <div class="wine-row row-best">
+            <span class="rank">1</span>
+            <div class="info"><div class="nm">Côtes du Rhône, Grenache</div><div class="sub">Medium body · soft tannin</div></div>
+            <span class="order-tag">Order this</span>
+          </div>
+          <div class="wine-row"><span class="rank">2</span><div class="info"><div class="nm">Rioja Crianza, Tempranillo</div><div class="sub">92% match</div></div><span class="match">92%</span></div>
+          <div class="wine-row"><span class="rank">3</span><div class="info"><div class="nm">Chianti Classico, Sangiovese</div><div class="sub">87% match</div></div><span class="match">87%</span></div>
+          <div class="wine-row"><span class="rank">4</span><div class="info"><div class="nm">Malbec, Mendoza</div><div class="sub">81% match</div></div><span class="match">81%</span></div>
+        </div>
+      </div>
+      <div class="show-copy">
+        <p class="eyebrow reveal">Order this</p>
+        <h3 class="reveal">Never freeze at the wine list again</h3>
+        <p class="reveal d1">Scan the whole page at a restaurant and Winelingo reads every bottle, then ranks them by the wines you’ve actually loved. You get a confident pick — and the reason behind it — before the waiter comes back.</p>
+        <ul class="show-list reveal d1">
+          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> Reads the printed list straight from your camera</li>
+          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> Ranks bottles by your personal taste profile</li>
+          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> One clear recommendation, not a wall of names</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="showcase">
+      <div class="show-copy">
+        <p class="eyebrow reveal">Learn wine like a language</p>
+        <h3 class="reveal">A daily habit, not a homework assignment</h3>
+        <p class="reveal d1">Wine is a language, and Winelingo teaches it the way the best language apps do: a little every day, building on what you tried last night. Small, warm and genuinely fun to keep up.</p>
+        <ul class="show-list reveal d1">
+          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> A short daily lesson and a wine word of the day</li>
+          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> Keep your streak alive with a lesson <em>or</em> a tasting</li>
+          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> Explore grapes, regions and styles in real depth</li>
+        </ul>
+      </div>
+      <div class="show-media reveal d1">
+        <div class="panel-glow" aria-hidden="true"></div>
+        <div class="panel" role="img" aria-label="Example daily lesson with a 12-day streak and a wine word of the day.">
+          <div class="learn-top">
+            <span class="streak"><span class="flame"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2s5 4 5 9a5 5 0 0 1-10 0c0-1 .3-1.8.3-1.8S8 11 9 12c0-2 1-4 3-5-.3 2 1 3 1.8 3.8C14.6 8 14 5 12 2Z"/></svg></span> 12-day streak</span>
+            <span class="dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span>
+          </div>
+          <div class="word">
+            <div class="k">Word of the day</div>
+            <div class="w">Tannin</div>
+            <div class="d">The drying, grippy feeling in a red — from grape skins and oak. It’s texture, not taste.</div>
+          </div>
+          <div class="lesson">
+            <div class="pg">
+              <div class="t">Today’s lesson · Why oak matters</div>
+              <div class="pgbar"><i></i></div>
+            </div>
+            <span class="go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:96px">
+      <div class="section-head left">
+        <p class="eyebrow reveal">Your palate, mapped</p>
+        <h2 class="reveal">The more you sip, the smarter it gets</h2>
+      </div>
+      <div class="trio">
+        <div class="fcard reveal">
+          <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 5h16M4 12h16M4 19h9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="18.5" cy="19" r="2.2" stroke="currentColor" stroke-width="1.6"/></svg></div>
+          <h3>Story for serving</h3>
+          <p>A read-aloud host narration for every wine — so you can pour with a little story instead of an awkward silence.</p>
+        </div>
+        <div class="fcard reveal d1">
+          <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.4-7-10a4.6 4.6 0 0 1 8.6-2.3l.4.7.4-.7A4.6 4.6 0 0 1 19 11c0 5.6-7 10-7 10Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+          <h3>Palate Passport</h3>
+          <p>A living map of what you love — the grapes, styles and regions your ratings reveal — turning scattered sips into a picture of your taste.</p>
+        </div>
+        <div class="fcard reveal d2">
+          <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="14" height="18" rx="2.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 8h6M8 12h6M8 16h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <h3>A journal you’ll keep</h3>
+          <p>Every bottle saved with its label photo, your rating and notes — a beautiful record of what you drank, and recommendations that get sharper over time.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ LANGUAGES ============ -->
+<section class="langs">
+  <div class="wrap">
+    <div class="lead reveal">
+      <h2>Learn wine in your language</h2>
+      <p>However you say cheers, Winelingo teaches wine in your language — warm, plain and clear in all four.</p>
+    </div>
+    <div class="lang-toasts reveal d1">
+      <div class="toast"><span class="cheers">Cheers</span><small>English</small></div>
+      <div class="toast"><span class="cheers">Skål</span><small>Dansk</small></div>
+      <div class="toast"><span class="cheers">Salud</span><small>Español</small></div>
+      <div class="toast"><span class="cheers">Prost</span><small>Deutsch</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEARN HUB TEASER ============ -->
+<section class="section" id="learn-teaser" style="padding-bottom:40px">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow center reveal">Free to read, no app needed</p>
+      <h2 class="reveal">Start learning wine right now</h2>
+      <p class="reveal d1">Plain-language guides and a full glossary — the same warm teaching that lives inside the app, free on the web.</p>
+    </div>
+    <div class="hub-grid">
+      <a class="hub-card reveal" href="/learn/wine-for-beginners/">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 16.5 7.1 18.2l.9-5.5-4-3.9L9.5 8 12 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+        <h3>Wine for beginners</h3>
+        <p>Where to start, how to find what you like, and why there are no wrong answers.</p>
+        <div class="go">Read the guide →</div>
+      </a>
+      <a class="hub-card reveal d1" href="/learn/how-to-taste-wine/">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 3h8l-.5 4.4A4 4 0 0 1 12 11a4 4 0 0 1-3.5-3.6L8 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 11v6m-3 3h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <h3>How to taste wine</h3>
+        <p>The 5 S’s — see, swirl, sniff, sip, savour — explained simply for real life.</p>
+        <div class="go">Read the guide →</div>
+      </a>
+      <a class="hub-card reveal d2" href="/wine-glossary/">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h11a2 2 0 0 1 2 2v14H7a2 2 0 0 1-2-2V4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 8h6M9 12h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <h3>Wine glossary</h3>
+        <p>45 wine words — tannin, terroir, cuvée and more — defined in plain English.</p>
+        <div class="go">Browse the glossary →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA / WAITLIST ============ -->
+<section class="cta" id="waitlist">
+  <div class="wrap">
+    <p class="eyebrow center reveal">Coming soon</p>
+    <h2 class="reveal">Be first to pour with confidence</h2>
+    <p class="lead reveal d1">Winelingo is launching free on the App Store. Join the waitlist and we’ll email you the moment it goes live — nothing else.</p>
+
+    <form class="waitlist reveal d1" id="waitlist-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+      <label for="wl-email" class="hp">Your email address</label>
+      <input id="wl-email" type="email" name="email" placeholder="you@email.com" required autocomplete="email" aria-describedby="wl-note">
+      <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="_subject" value="New Winelingo waitlist signup">
+      <input type="hidden" name="source" value="winelingo.app">
+      <button class="btn btn-primary btn-lg" type="submit">Notify me</button>
+    </form>
+    <p class="form-msg" id="wl-msg" role="status" aria-live="polite"></p>
+    <p class="form-note" id="wl-note">No spam, no sharing your email. See our <a href="/privacy">Privacy Policy</a>.</p>
+
+    <div class="cta-badges reveal d2">
+      <span class="soon-badge">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.9c0-2 1.6-2.9 1.7-3-1-1.4-2.4-1.6-2.9-1.6-1.2-.1-2.4.7-3 .7-.6 0-1.6-.7-2.6-.7-1.3 0-2.6.8-3.2 2-1.4 2.4-.4 6 1 8 .6 1 1.4 2 2.4 2 1 0 1.3-.6 2.5-.6 1.1 0 1.4.6 2.5.6 1 0 1.7-1 2.3-2 .4-.6.7-1.3.9-2-2-.8-2.1-3.5-2.1-3.6ZM14.5 6.3c.5-.7.9-1.6.8-2.5-.8 0-1.7.6-2.3 1.2-.5.6-.9 1.5-.8 2.4.9.1 1.8-.4 2.3-1.1Z"/></svg>
+        Coming soon to the App&nbsp;Store
+      </span>
+      <span class="respons">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 3h8l-.5 4.4A4 4 0 0 1 12 11a4 4 0 0 1-3.5-3.6L8 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 11v6m-3 3h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        For adults of legal drinking age · Enjoy wine responsibly
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow center reveal">Questions</p>
+      <h2 class="reveal">Good to know</h2>
+    </div>
+    <div class="faq reveal d1">
+      <details open>
+        <summary>Is Winelingo free?<span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary>
+        <div class="a"><p>Yes. Winelingo launches completely free, with no in-app purchases — you get the full experience at launch. (We may add optional extras down the road, but the launch app is free to use.)</p></div>
+      </details>
+      <details>
+        <summary>When can I get it?<span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary>
+        <div class="a"><p>Winelingo is coming to the App Store very soon. Join the waitlist above and we’ll email you the moment it’s available to download — that’s the fastest way to hear.</p></div>
+      </details>
+      <details>
+        <summary>Which devices does it work on?<span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary>
+        <div class="a"><p>Winelingo is an iPhone app at launch. You’ll point your iPhone camera at a label or wine list to scan it.</p></div>
+      </details>
+      <details>
+        <summary>What languages does it support?<span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary>
+        <div class="a"><p>English, Danish, Spanish and German — with the same warm, plain-language teaching in each.</p></div>
+      </details>
+      <details>
+        <summary>Do I need an account?<span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary>
+        <div class="a"><p>Yes — your tasting journal and palate profile are personal to you, so Winelingo asks you to create an account to keep them safe and in sync. You can delete your account and all its data at any time, right inside the app.</p></div>
+      </details>
+      <details>
+        <summary>What happens to the photos I scan?<span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary>
+        <div class="a"><p>A label or wine-list photo is processed to identify the wine and return your result — it isn’t kept as a long-term gallery, and it’s never used to build an advertising profile. Full details are in our <a href="/privacy">Privacy Policy</a>.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
 </main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="brand" href="/" aria-label="Winelingo home">
+          <img src="/assets/logo.png" alt="" width="34" height="34">
+          Winelingo
+        </a>
+        <p>Learn the wine in your glass. Scan a label, understand what you’re drinking, and build your own palate — one scan at a time.</p>
+        <span class="foot-soon">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.9c0-2 1.6-2.9 1.7-3-1-1.4-2.4-1.6-2.9-1.6-1.2-.1-2.4.7-3 .7-.6 0-1.6-.7-2.6-.7-1.3 0-2.6.8-3.2 2-1.4 2.4-.4 6 1 8 .6 1 1.4 2 2.4 2 1 0 1.3-.6 2.5-.6 1.1 0 1.4.6 2.5.6 1 0 1.7-1 2.3-2 .4-.6.7-1.3.9-2-2-.8-2.1-3.5-2.1-3.6ZM14.5 6.3c.5-.7.9-1.6.8-2.5-.8 0-1.7.6-2.3 1.2-.5.6-.9 1.5-.8 2.4.9.1 1.8-.4 2.3-1.1Z"/></svg>
+          Coming soon to the App Store
+        </span>
+      </div>
+      <div class="foot-col">
+        <h3>Product</h4>
+        <a href="/#how">How it works</a>
+        <a href="/#features">Features</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/#waitlist">Join the waitlist</a>
+      </div>
+      <div class="foot-col">
+        <h3>Learn</h4>
+        <a href="/learn/wine-for-beginners/">Wine for beginners</a>
+        <a href="/learn/how-to-taste-wine/">How to taste wine</a>
+        <a href="/learn/how-to-read-a-wine-label/">Read a wine label</a>
+        <a href="/learn/understanding-your-wine-taste-profile/">Taste profile explained</a>
+        <a href="/wine-glossary/">Wine glossary</a>
+      </div>
+      <div class="foot-col">
+        <h3>Free tools</h4>
+        <a href="/tools/wine-serving-temperature/">Serving temperature</a>
+        <a href="/tools/wine-calories/">Wine calories &amp; units</a>
+        <a href="/tools/">All tools</a>
+      </div>
+      <div class="foot-col">
+        <h3>Company</h4>
+        <a href="/about/">About</a>
+        <a href="/support/">Support</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Use</a>
+        <a href="mailto:jonsegeskov29@gmail.com">Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Jonas Egeskov · Denmark</span>
+      <span>For adults of legal drinking age (17+). Please enjoy wine responsibly.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('svg').forEach(function(s){
+    if (!s.hasAttribute('aria-label') && !s.hasAttribute('role')) s.setAttribute('aria-hidden','true');
+  });
+
+  var header = document.getElementById('site-header');
+  var onScroll = function(){ header.classList.toggle('scrolled', window.scrollY > 8); };
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  // Mobile nav toggle
+  var navToggle = document.querySelector('.nav-toggle'), navMenu = document.getElementById('navmenu');
+  if (navToggle && navMenu){
+    navToggle.addEventListener('click', function(){ var o = navMenu.classList.toggle('open'); navToggle.setAttribute('aria-expanded', o ? 'true' : 'false'); });
+    navMenu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ navMenu.classList.remove('open'); navToggle.setAttribute('aria-expanded','false'); }); });
+  }
+
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var reveals = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    reveals.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold:.12, rootMargin:'0px 0px -8% 0px'});
+    reveals.forEach(function(el){ io.observe(el); });
+  }
+
+  // Waitlist form — Formspree with graceful fallback. Messages built with safe DOM methods.
+  var form = document.getElementById('waitlist-form');
+  var msg = document.getElementById('wl-msg');
+  var CONTACT = 'jonsegeskov29@gmail.com';
+  function clearMsg(cls){ msg.className = 'form-msg ' + cls; while (msg.firstChild) msg.removeChild(msg.firstChild); }
+  function say(cls, text){ clearMsg(cls); msg.appendChild(document.createTextNode(text)); }
+  function sayWithMail(cls, before, href, linkText, after){
+    clearMsg(cls);
+    if (before) msg.appendChild(document.createTextNode(before));
+    var a = document.createElement('a'); a.setAttribute('href', href); a.textContent = linkText;
+    msg.appendChild(a);
+    if (after) msg.appendChild(document.createTextNode(after));
+  }
+  form.addEventListener('submit', function(ev){
+    var action = form.getAttribute('action') || '';
+    var notConfigured = action.indexOf('YOUR_FORM_ID') !== -1;
+    var email = (form.email.value || '').trim();
+    if (!email || email.indexOf('@') === -1){ ev.preventDefault(); say('warn', 'Please enter a valid email address.'); return; }
+    if (notConfigured){
+      ev.preventDefault();
+      sayWithMail('warn', 'Almost there — the waitlist opens shortly. In the meantime, email ',
+        'mailto:' + CONTACT + '?subject=Winelingo%20waitlist&body=Please%20add%20me%20to%20the%20Winelingo%20waitlist.',
+        CONTACT, " and we'll add you.");
+      return;
+    }
+    ev.preventDefault();
+    var btn = form.querySelector('button[type=submit]');
+    var label = btn.textContent; btn.disabled = true; btn.textContent = 'Adding you…';
+    fetch(action, { method:'POST', body:new FormData(form), headers:{'Accept':'application/json'} })
+      .then(function(r){ if (r.ok){ form.reset(); say('ok', "You're on the list — we'll email you the moment Winelingo goes live. 🥂"); } else { throw new Error('bad'); } })
+      .catch(function(){ sayWithMail('warn', 'Something went wrong — please email ', 'mailto:' + CONTACT, CONTACT, " and we'll add you."); })
+      .finally(function(){ btn.disabled = false; btn.textContent = label; });
+  });
+</script>
 </body>
 </html>
