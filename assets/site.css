@@ -302,3 +302,21 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   .reveal{opacity:1; transform:none; transition:none}
   *{transition-duration:.01ms !important; animation-duration:.01ms !important}
 }
+
+/* ---- catalog: filters, linked chips, pairings, classifications ---- */
+.filterbar{display:flex; flex-wrap:wrap; gap:9px; max-width:var(--maxw); margin:2px auto 6px; padding:0}
+.filt{display:inline-flex; align-items:center; padding:9px 17px; border-radius:var(--r-pill); border:1px solid var(--line); background:var(--paper-raised); color:var(--sec); font-size:14px; font-weight:600; cursor:pointer; font-family:var(--font-body); transition:background .2s, color .2s, border-color .2s}
+.filt:hover{border-color:rgba(123,30,59,.3); color:var(--wine)}
+.filt.on{background:var(--wine); color:#fff; border-color:var(--wine)}
+a.pairpill{text-decoration:none; transition:border-color .2s, color .2s, box-shadow .2s}
+a.pairpill:hover{border-color:rgba(123,30,59,.35); color:var(--wine); text-decoration:none}
+.pcat{font-family:var(--font-display); font-size:25px; color:var(--wine-deep); margin:36px 0 4px; padding-bottom:8px; border-bottom:1px solid var(--line)}
+.pairrow{padding:18px 0; border-bottom:1px solid var(--line)}
+.pairrow h3{font-size:18px; color:var(--wine-deep); margin-bottom:11px}
+.pairrow .pairwrap{margin-bottom:11px}
+.pairrow .why{color:var(--ink); margin:8px 0 5px}
+.pairrow .principle{color:var(--sec); font-size:14.5px}
+.classblock{margin:0 0 8px}
+.classblock h2{font-size:26px; color:var(--wine-deep); margin-bottom:3px}
+.classblock .csub{color:var(--wine); font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:.04em; margin-bottom:12px}
+.term-grid.tiers{margin-top:14px}

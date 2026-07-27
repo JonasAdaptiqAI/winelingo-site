@@ -32,6 +32,14 @@ courtesy, not a requirement. Each file below lists its Unsplash source image.
 | bottle-glass.jpg | Wine bottle (generic label) and a glass | images.unsplash.com/photo-1697115355157-c95fbd5250fd |
 | bottle-label.jpg | Standing wine bottle, label facing forward | images.unsplash.com/photo-1635674686943-01e7431e91c4 |
 | wine-styles.jpg | A row of filled white-wine glasses | images.unsplash.com/photo-1603360901888-d96f6e46c578 |
+| wine-rose.jpg | A glass of rosé wine among dried flowers | images.unsplash.com/photo-1747064888166-182560b65a29 |
+| wine-sparkling.jpg | Champagne flutes with bubbles, a toast | images.unsplash.com/photo-1546567075-d7113bee3c4a |
+| wine-dessert.jpg | Two glasses of golden dessert wine | images.unsplash.com/photo-1616240580835-85fec1c8188b |
+| pairings.jpg | A wine and cheese board on a table | images.unsplash.com/photo-1719996155228-bbac3f5a8843 |
+| vine-1.jpg | Green vineyard rows into the hills | images.unsplash.com/photo-1637181156153-bedd1098f8c1 |
+| vine-2.jpg | Autumn vineyard rows toward trees | images.unsplash.com/photo-1637181155600-f4487dabf8ba |
+| vine-3.jpg | Vineyard valley below distant mountains | images.unsplash.com/photo-1624780916427-ab5aa78bb443 |
+| vine-4.jpg | A broad green vineyard under blue sky | images.unsplash.com/photo-1688261559299-bfc4e280a89e |
 
 Images were fetched at ~1500px wide, JPEG q80. To swap any of them, download a
 replacement from Unsplash/Pexels (both commercial-safe) and keep the same filename.
