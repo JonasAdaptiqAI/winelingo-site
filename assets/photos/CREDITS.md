@@ -22,9 +22,9 @@ courtesy, not a requirement. Each file below lists its Unsplash source image.
 | region-burgundy.jpg | Burgundy vineyard | images.unsplash.com/photo-1755090249373-dfbf3a462f6c |
 | region-rioja.jpg | Hills above Rioja | images.unsplash.com/photo-1660508477980-ac5307fe39dd |
 | grape-cabernet.jpg | Glass of bold red wine | images.unsplash.com/photo-1775215237032-54e9f5a67e40 |
-| grape-merlot.jpg | Glass of red wine on a table | images.unsplash.com/photo-1705917892974-d44cdf98ff99 |
-| grape-pinot.jpg | Elegant glass of red wine | images.unsplash.com/photo-1779555812989-b9dc041375eb |
-| grape-malbec.jpg | Red wine served with food | images.unsplash.com/photo-1762922425256-621f056e1ebb |
+| grape-pinot.jpg | Red wine bottle and glass | images.unsplash.com/photo-1656235123277-9ac111857004 |
+| grape-merlot.jpg | Pouring a glass of red wine | images.unsplash.com/photo-1606767351797-1664b860ae5a |
+| grape-malbec.jpg | Pouring red wine at a table | images.unsplash.com/photo-1586124288020-1d7436afd010 |
 | grape-chardonnay.jpg | Glass of white wine | images.unsplash.com/photo-1597905722448-a1df7c00000a |
 | grape-sauvignon.jpg | Swirling a glass of white wine | images.unsplash.com/photo-1596438214057-5ff7c7fa76b1 |
 | grape-riesling.jpg | Glass of golden white wine | images.unsplash.com/photo-1585553616435-2dc0a54e271d |
