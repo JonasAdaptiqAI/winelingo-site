@@ -59,5 +59,15 @@ courtesy, not a requirement. Each file below lists its Unsplash source image.
 | white-8.jpg | A glass of white wine in a restaurant | images.unsplash.com/photo-1613166766696-76b26677b153 |
 | white-9.jpg | Pouring white wine outdoors | images.unsplash.com/photo-1633509928027-f1c3b5dc1f92 |
 
+| vine-5.jpg | Rolling vineyard at golden hour | images.unsplash.com/photo-1775136879038-ee04b7ac6ab6 |
+| vine-6.jpg | Sun through vineyard rows at sunset | images.unsplash.com/photo-1762947755843-075d85d143c8 |
+| vine-7.jpg | Hillside vineyard above a town | images.unsplash.com/photo-1762362611583-8151f0a2c112 |
+| vine-8.jpg | Vineyard rows with posts, golden light | images.unsplash.com/photo-1760139927409-7b6e98d53368 |
+| vine-9.jpg | Aerial view of a winding vineyard | images.unsplash.com/photo-1596695346787-be03f89b1cdd |
+| vine-10.jpg | Vineyard framed by vine leaves at sunset | images.unsplash.com/photo-1600672220645-4781b8ca30c5 |
+| vine-11.jpg | Flat vineyard rows under a dramatic sky | images.unsplash.com/photo-1470592720078-cde022719c32 |
+| vine-12.jpg | Rolling vineyard hills, moody sky | images.unsplash.com/photo-1558241665-f0512695d322 |
+| vine-13.jpg | Vineyard rows toward the sunset | images.unsplash.com/photo-1543418219-44e30b057fea |
+
 Images were fetched at ~1500px wide, JPEG q80. To swap any of them, download a
 replacement from Unsplash/Pexels (both commercial-safe) and keep the same filename.
