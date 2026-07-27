@@ -27,8 +27,11 @@ courtesy, not a requirement. Each file below lists its Unsplash source image.
 | grape-malbec.jpg | Pouring red wine at a table | images.unsplash.com/photo-1586124288020-1d7436afd010 |
 | grape-chardonnay.jpg | Glass of white wine | images.unsplash.com/photo-1597905722448-a1df7c00000a |
 | grape-sauvignon.jpg | Swirling a glass of white wine | images.unsplash.com/photo-1596438214057-5ff7c7fa76b1 |
-| grape-riesling.jpg | Glass of golden white wine | images.unsplash.com/photo-1585553616435-2dc0a54e271d |
+| grape-riesling.jpg | Glass of white wine (bright) | images.unsplash.com/photo-1458945037814-389ec6994cbd |
 | cta-cellar.jpg | Barrel cellar | images.unsplash.com/photo-1701622669938-fa4e09a1f1fe |
+| bottle-glass.jpg | Wine bottle (generic label) and a glass | images.unsplash.com/photo-1697115355157-c95fbd5250fd |
+| bottle-label.jpg | Standing wine bottle, label facing forward | images.unsplash.com/photo-1635674686943-01e7431e91c4 |
+| wine-styles.jpg | A row of filled white-wine glasses | images.unsplash.com/photo-1603360901888-d96f6e46c578 |
 
 Images were fetched at ~1500px wide, JPEG q80. To swap any of them, download a
 replacement from Unsplash/Pexels (both commercial-safe) and keep the same filename.
