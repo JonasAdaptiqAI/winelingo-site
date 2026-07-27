@@ -320,7 +320,8 @@ a.pairpill:hover{border-color:rgba(123,30,59,.35); color:var(--wine); text-decor
 .classblock h2{font-size:26px; color:var(--wine-deep); margin-bottom:3px}
 .classblock .csub{color:var(--wine); font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:.04em; margin-bottom:12px}
 .term-grid.tiers{margin-top:14px}
-.producers h2{font-size:24px; color:var(--wine-deep); margin-bottom:8px}
+.producers h2{font-size:24px; color:var(--wine-deep); margin-bottom:6px}
+.producers .pintro{color:var(--sec); margin-bottom:8px; font-size:16px}
 .producer{padding:15px 0; border-bottom:1px solid var(--line)}
 .producer:last-child{border-bottom:none}
 .producer .pn{display:flex; align-items:center; gap:11px}
