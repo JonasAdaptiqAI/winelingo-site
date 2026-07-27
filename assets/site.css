@@ -308,6 +308,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
 .filt{display:inline-flex; align-items:center; padding:9px 17px; border-radius:var(--r-pill); border:1px solid var(--line); background:var(--paper-raised); color:var(--sec); font-size:14px; font-weight:600; cursor:pointer; font-family:var(--font-body); transition:background .2s, color .2s, border-color .2s}
 .filt:hover{border-color:rgba(123,30,59,.3); color:var(--wine)}
 .filt.on{background:var(--wine); color:#fff; border-color:var(--wine)}
+.flabel{font-size:12.5px; font-weight:600; letter-spacing:.03em; text-transform:uppercase; color:var(--muted); margin:0 0 9px}
+.filtnote{color:var(--sec); font-size:14px; margin:14px 0 0; min-height:18px}
 a.pairpill{text-decoration:none; transition:border-color .2s, color .2s, box-shadow .2s}
 a.pairpill:hover{border-color:rgba(123,30,59,.35); color:var(--wine); text-decoration:none}
 .pcat{font-family:var(--font-display); font-size:25px; color:var(--wine-deep); margin:36px 0 4px; padding-bottom:8px; border-bottom:1px solid var(--line)}
