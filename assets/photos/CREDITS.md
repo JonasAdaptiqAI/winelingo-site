@@ -40,6 +40,24 @@ courtesy, not a requirement. Each file below lists its Unsplash source image.
 | vine-2.jpg | Autumn vineyard rows toward trees | images.unsplash.com/photo-1637181155600-f4487dabf8ba |
 | vine-3.jpg | Vineyard valley below distant mountains | images.unsplash.com/photo-1624780916427-ab5aa78bb443 |
 | vine-4.jpg | A broad green vineyard under blue sky | images.unsplash.com/photo-1688261559299-bfc4e280a89e |
+| red-1.jpg | Pouring red wine into a glass | images.unsplash.com/photo-1638186095578-7e58f9f16d0d |
+| red-2.jpg | Red wine poured into a glass, close | images.unsplash.com/photo-1693926999889-fddd14f9309b |
+| red-3.jpg | Pouring red wine at a bar | images.unsplash.com/photo-1720365522305-92ad8a7a3475 |
+| red-4.jpg | A glass of red wine and a bottle on a table | images.unsplash.com/photo-1678023430203-4b63ab869400 |
+| red-5.jpg | A warm glass of red wine | images.unsplash.com/photo-1600673177531-46749442aa63 |
+| red-6.jpg | A glass of red wine with festive bokeh | images.unsplash.com/photo-1610278614135-739ed9ef1ef4 |
+| red-7.jpg | A glass of red wine on black | images.unsplash.com/photo-1641453288558-6dce96ee996c |
+| red-8.jpg | A glass of red wine, spotlit on wood | images.unsplash.com/photo-1519010135229-1f2e4523b3c7 |
+| red-9.jpg | Pouring red wine on a white background | images.unsplash.com/photo-1597043851759-3b383a6d1c14 |
+| white-1.jpg | A glass of white wine at sunset | images.unsplash.com/photo-1566754436776-816e4da647e1 |
+| white-2.jpg | A glass of white wine on a table | images.unsplash.com/photo-1499380781121-042517f403fc |
+| white-3.jpg | Holding a glass of white wine at the beach | images.unsplash.com/photo-1558698071-105037dc2283 |
+| white-4.jpg | A glass of white wine, close-up | images.unsplash.com/photo-1691195116919-534b9e1db829 |
+| white-5.jpg | A glass of white wine with crystal | images.unsplash.com/photo-1783628642381-4d3a2a5839d2 |
+| white-6.jpg | Pouring white wine | images.unsplash.com/photo-1541971897566-308cf7ad0934 |
+| white-7.jpg | Pouring white wine into a glass | images.unsplash.com/photo-1621341616519-ff40c652d43e |
+| white-8.jpg | A glass of white wine in a restaurant | images.unsplash.com/photo-1613166766696-76b26677b153 |
+| white-9.jpg | Pouring white wine outdoors | images.unsplash.com/photo-1633509928027-f1c3b5dc1f92 |
 
 Images were fetched at ~1500px wide, JPEG q80. To swap any of them, download a
 replacement from Unsplash/Pexels (both commercial-safe) and keep the same filename.
