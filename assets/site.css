@@ -74,8 +74,8 @@ header.site-header.scrolled{border-bottom-color:var(--line); box-shadow:0 6px 24
 .brand{display:inline-flex; align-items:center; gap:11px; font-family:var(--font-display); font-weight:600; font-size:21px; color:var(--wine-deep); letter-spacing:-.01em}
 .brand:hover{text-decoration:none}
 .brand img{width:34px; height:34px; border-radius:9px; box-shadow:0 3px 8px -3px rgba(59,10,30,.4)}
-.nav-links{display:flex; align-items:center; gap:30px}
-.nav-links a{color:var(--ink); font-size:15px; font-weight:500}
+.nav-links{display:flex; align-items:center; gap:22px}
+.nav-links a{color:var(--ink); font-size:14.5px; font-weight:500}
 .nav-links a:hover{color:var(--wine); text-decoration:none}
 .nav-cta{display:flex; align-items:center; gap:12px}
 .nav-toggle{display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; flex:0 0 auto;
