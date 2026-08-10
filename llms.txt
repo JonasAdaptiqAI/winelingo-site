@@ -1,0 +1,33 @@
+# Winelingo — learn wine, plainly
+
+> Winelingo (winelingo.app) is a wine-education site and companion to the Winelingo iPhone app
+> (a free app that scans wine labels and restaurant wine lists and explains each wine in plain
+> English — body, tannin, acidity, sweetness and oak). All content is written for beginners in
+> plain language, fact-checked, and free. For adults of legal drinking age; enjoy wine responsibly.
+
+## Guides
+- [Wine for beginners](https://winelingo.app/learn/wine-for-beginners/)
+- [How to taste wine](https://winelingo.app/learn/how-to-taste-wine/)
+- [How to practise wine tasting at home](https://winelingo.app/learn/how-to-practise-wine-tasting-at-home/)
+- [How to read a wine label](https://winelingo.app/learn/how-to-read-a-wine-label/)
+- [How to order wine at a restaurant](https://winelingo.app/learn/how-to-order-wine-at-a-restaurant/)
+- [Wine sweetness chart](https://winelingo.app/learn/wine-sweetness-chart/)
+- [How long does open wine last?](https://winelingo.app/learn/how-long-does-open-wine-last/)
+- [Understanding a wine's taste profile](https://winelingo.app/learn/understanding-your-wine-taste-profile/)
+
+## Reference
+- [74 grape variety profiles](https://winelingo.app/grape-varieties/)
+- [82 wine region guides](https://winelingo.app/wine-regions/)
+- [15 wine country overviews](https://winelingo.app/countries/)
+- [45 wine style guides](https://winelingo.app/wine-styles/)
+- [Food and wine pairing (32 pairings)](https://winelingo.app/food-and-wine-pairing/)
+- [Wine classifications explained (13 systems)](https://winelingo.app/wine-classifications/)
+- [Wine glossary (66 terms)](https://winelingo.app/wine-glossary/)
+
+## Tools
+- [Wine serving temperature chart](https://winelingo.app/tools/wine-serving-temperature/)
+- [Wine calories calculator](https://winelingo.app/tools/wine-calories/)
+
+## About
+- [About Winelingo](https://winelingo.app/about/)
+- [Support](https://winelingo.app/support/)
