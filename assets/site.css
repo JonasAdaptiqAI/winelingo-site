@@ -364,3 +364,21 @@ a.pairpill:hover{border-color:rgba(123,30,59,.35); color:var(--wine); text-decor
 @media (max-width:900px){ .nav-badge img{height:36px} }
 @media (max-width:560px){ .nav-badge img{height:32px} }
 @media (max-width:400px){ .nav-badge{display:none} }
+
+/* ---------- "Five things to know" key-facts panel ---------- */
+/* Sits between the lead paragraph and the first h2 on entity pages. Each item
+   leads with a bold hook, then the fact. Numbers are rendered manually so they
+   can carry the wine colour and sit outside the text block. */
+.fivethings{background:var(--parchment); border:1px solid var(--line); border-radius:16px;
+  padding:26px 28px 22px; margin:30px 0 34px; box-shadow:var(--shadow-sm)}
+.fivethings h2{font-size:21px; color:var(--wine-deep); margin:0 0 16px; letter-spacing:-.01em}
+.fivethings ol{list-style:none; margin:0; padding:0; counter-reset:ft}
+.fivethings li{counter-increment:ft; position:relative; padding-left:38px; margin:0 0 14px;
+  color:#3f373d; font-size:16px; line-height:1.6}
+.fivethings li:last-child{margin-bottom:0}
+.fivethings li::before{content:counter(ft); position:absolute; left:0; top:1px;
+  width:25px; height:25px; border-radius:50%; background:var(--wine); color:#fff;
+  font-family:var(--font-body); font-size:13px; font-weight:700;
+  display:flex; align-items:center; justify-content:center}
+.fivethings li strong{color:var(--wine-deep)}
+@media (max-width:560px){ .fivethings{padding:22px 20px 18px} .fivethings li{font-size:15.5px; padding-left:34px} }
