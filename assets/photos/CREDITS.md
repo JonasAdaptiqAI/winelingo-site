@@ -71,3 +71,36 @@ courtesy, not a requirement. Each file below lists its Unsplash source image.
 
 Images were fetched at ~1500px wide, JPEG q80. To swap any of them, download a
 replacement from Unsplash/Pexels (both commercial-safe) and keep the same filename.
+
+## Food photography (added 2026-08-19, for the food-pairing pages)
+
+| File | Subject | Unsplash source |
+|---|---|---|
+| food-steak.jpg | A seared steak with a pink centre, sliced on a bed of salad leaves | images.unsplash.com/photo-1588168333986-5078d3ae3976 |
+| food-sushi.jpg | Salmon and avocado sushi rolls on a wooden board | images.unsplash.com/photo-1579584425555-c3ce17fd4351 |
+| food-oysters.jpg | A table of freshly shucked oysters with wine glasses | images.unsplash.com/photo-1715249792962-5359b4b17f21 |
+| food-pizza.jpg | A margherita pizza with cherry tomatoes and rosemary on a wooden board | images.unsplash.com/photo-1513104890138-7c749659a591 |
+| food-roast-chicken.jpg | A whole roast chicken on a white plate | images.unsplash.com/photo-1606728035253-49e8a23146de |
+| food-roast-turkey.jpg | A festive table laid with roast dinner and drinks | images.unsplash.com/photo-1669130183473-3a4c8524082f |
+| food-duck.jpg | A plated duck dish with sauce and sides | images.unsplash.com/photo-1774921677530-9031f1ea00ec |
+| food-pork-chop.jpg | A cooked pork chop on a wooden plate | images.unsplash.com/photo-1692106914421-e04e1066bd62 |
+| food-burger.jpg | A cheeseburger with lettuce, tomato and onion on a dark wooden surface | images.unsplash.com/photo-1571091718767-18b5b1457add |
+| food-lamb.jpg | Roast lamb being carved on a wooden board | images.unsplash.com/photo-1529692236671-f1f6cf9683ba |
+| food-venison.jpg | A plated game dish with meat and vegetables | images.unsplash.com/photo-1692742245738-f42241e02108 |
+| food-salmon.jpg | Grilled salmon with vegetables on a plate | images.unsplash.com/photo-1519708227418-c8fd9a32b7a2 |
+| food-lobster-crab.jpg | A plate of cooked lobster with lemon | images.unsplash.com/photo-1707995546402-5057206e5161 |
+| food-carbonara.jpg | Spaghetti carbonara with bacon on a white plate | images.unsplash.com/photo-1633337474564-1d9478ca4e2e |
+| food-tomato-pasta.jpg | Pasta in a rich tomato sauce | images.unsplash.com/photo-1516100882582-96c3a05fe590 |
+| food-risotto.jpg | A close-up of mushroom risotto | images.unsplash.com/photo-1723476662512-6abc972f1167 |
+| food-charcuterie.jpg | A platter of cured meats, cheese, nuts and olives | images.unsplash.com/photo-1640618491853-95b2c5041eda |
+| food-chocolate.jpg | A slice of dark chocolate cake on a plate | images.unsplash.com/photo-1517427294546-5aa121f68e8a |
+| food-fruit-tart.jpg | Fruit tarts arranged on a table | images.unsplash.com/photo-1670819916757-e8d5935a6c65 |
+| food-olives-nuts.jpg | A plate of green olives on a table | images.unsplash.com/photo-1727176401986-6289c5121eef |
+| food-teriyaki.jpg | Teriyaki chicken with rice on a red plate | images.unsplash.com/photo-1636401870585-a8852371e84a |
+| food-indian-curry.jpg | A bowl of rich Indian curry served with rice | images.unsplash.com/photo-1631452180519-c014fe946bc7 |
+| food-sichuan.jpg | A table of Sichuan-style Chinese dishes | images.unsplash.com/photo-1773196275043-8d6e367b0bca |
+| food-thai-curry.jpg | A bowl of Thai green curry with vegetables | images.unsplash.com/photo-1707056924965-2c687206af67 |
+| food-salad.jpg | A fresh green salad in a dark bowl | images.unsplash.com/photo-1572449043416-55f4685c9bb7 |
+| food-grilled-veg.jpg | Sliced grilled vegetables on a green ceramic plate | images.unsplash.com/photo-1625944227313-4f7f68e6b3fa |
+| food-lentil-stew.jpg | Two bowls of lentil stew on a table | images.unsplash.com/photo-1648455320791-a667c8aab7e4 |
+| food-bruschetta.jpg | Bruschetta with tomato and herbs on a wooden table | images.unsplash.com/photo-1594978583693-8dfdfc93f052 |
