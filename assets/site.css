@@ -355,3 +355,12 @@ a.pairpill:hover{border-color:rgba(123,30,59,.35); color:var(--wine); text-decor
 .foot-badge img{height:40px; width:auto; display:block}
 .cta-get{margin:0 0 14px; line-height:0}
 .cta-get .badge-link img{height:56px; margin:0 auto}
+
+/* ---------- App Store badge in the top bar ---------- */
+/* .badge-link img is 52px for the hero/CTA bands; the nav is only 72px tall,
+   so the nav instance needs its own smaller size. Apple's artwork is 119.66x40,
+   so height alone drives the width. */
+.nav-badge img{height:40px}
+@media (max-width:900px){ .nav-badge img{height:36px} }
+@media (max-width:560px){ .nav-badge img{height:32px} }
+@media (max-width:400px){ .nav-badge{display:none} }
