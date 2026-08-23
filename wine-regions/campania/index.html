@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Campania wine taste?","acceptedAnswer":{"@type":"Answer","text":"The flagship red, Taurasi from Aglianico, is firm and savoury with dark fruit, earthy notes and grippy tannins that soften with age. The whites are fresh and mineral, from nutty Fiano to citrussy Greco and floral Falanghina."}},{"@type":"Question","name":"Which wineries is Campania known for?","acceptedAnswer":{"@type":"Answer","text":"Well-known producers include Mastroberardino, Feudi di San Gregorio, Terredora Di Paolo, Quintodecimo and Villa Matilde, many based in the inland Irpinia hills."}},{"@type":"Question","name":"What is Taurasi wine?","acceptedAnswer":{"@type":"Answer","text":"Taurasi is Campania's most celebrated red, a firm, age-worthy wine made from the Aglianico grape in the Irpinia hills. Its power and tannins have earned it the nickname the 'Barolo of the South'."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Tokaji wine taste?","acceptedAnswer":{"@type":"Answer","text":"The famous sweet Tokaji Aszú is golden and honeyed, with dried apricot, marmalade and spice, but lifted by bright acidity so it stays fresh rather than cloying. The region's dry Furmint is crisp and mineral, with green apple, citrus and a stony edge."}},{"@type":"Question","name":"What is Tokaji Aszú and what does puttonyos mean?","acceptedAnswer":{"@type":"Answer","text":"Tokaji Aszú is a sweet wine made from grapes shrivelled by noble rot, which concentrates their sugar and flavour. Puttonyos is the traditional measure of sweetness on the label; a higher number, such as 5 or 6 puttonyos, means a sweeter, more concentrated wine."}},{"@type":"Question","name":"Which wineries is Tokaj known for?","acceptedAnswer":{"@type":"Answer","text":"Royal Tokaji, Disznókő, Oremus and Hétszőlő are among the estates that led the region's revival for sweet Aszú. Szepsy is a benchmark name, especially for pioneering single-vineyard dry Furmint."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

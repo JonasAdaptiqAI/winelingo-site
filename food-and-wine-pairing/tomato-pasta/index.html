@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What wine goes with spaghetti and tomato sauce?","acceptedAnswer":{"@type":"Answer","text":"A high-acid Italian red. Chianti and other Sangiovese wines are the classic match, Barbera is the softest and most forgiving, and Montepulciano d’Abruzzo suits a heartier sauce with sausage or chilli in it."}},{"@type":"Question","name":"Why does tomato sauce make wine taste bad?","acceptedAnswer":{"@type":"Answer","text":"Two separate things are happening. The acidity sets a bar: a wine carrying less acid than the dish tastes soft and dull beside it. Separately, tomato is rich in glutamate, and umami makes bitterness and astringency more prominent — that, and not the acid, is what turns a tannic red harsh. A high-acid, low-tannin wine answers both at once."}},{"@type":"Question","name":"Can you drink white wine with tomato pasta?","acceptedAnswer":{"@type":"Answer","text":"You can, but it has to be genuinely crisp — a Verdicchio or a Vermentino rather than an oaked Chardonnay. A high-acid red is the better bet with a long-simmered sauce, and a white makes more sense with a fresh, raw tomato dressing."}},{"@type":"Question","name":"Is Montepulciano d’Abruzzo the same as Vino Nobile di Montepulciano?","acceptedAnswer":{"@type":"Answer","text":"No. Montepulciano d’Abruzzo is made from the Montepulciano grape in Abruzzo. Vino Nobile di Montepulciano is at least 70% Sangiovese, made in a Tuscan town called Montepulciano, and costs considerably more. Same word, different thing: one is a grape, one is a place."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

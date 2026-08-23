@@ -38,6 +38,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I get Winelingo?","acceptedAnswer":{"@type":"Answer","text":"Download it free from the App Store. It is an iPhone app, free to use with no in-app purchases, and you create an account so your tasting journal and palate profile are saved to you."}},{"@type":"Question","name":"Is Winelingo available now?","acceptedAnswer":{"@type":"Answer","text":"Yes. Winelingo is on the App Store now, free, with no in-app purchases."}},{"@type":"Question","name":"Which devices are supported?","acceptedAnswer":{"@type":"Answer","text":"Winelingo is an iPhone app. You point your iPhone camera at a wine label or wine list to scan it."}},{"@type":"Question","name":"How do I delete my account and data?","acceptedAnswer":{"@type":"Answer","text":"You can delete your account and all its data at any time, right inside the app, under Profile → Delete account. See our Privacy Policy for details."}},{"@type":"Question","name":"How is my data handled?","acceptedAnswer":{"@type":"Answer","text":"Your tasting journal and palate profile are private to you. Scanned photos are processed to return your result and aren’t kept as a gallery or used for advertising. Full details are in our Privacy Policy."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

@@ -44,6 +44,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why does New Zealand Sauvignon Blanc taste so different from Sancerre?","acceptedAnswer":{"@type":"Answer","text":"Climate, mostly. Marlborough's long, cool, sunny growing season lets the grape build intense aromatic compounds while holding on to high acidity, which produces that famous burst of passion fruit, gooseberry and cut grass. Sancerre, in France's Loire Valley, grows the same grape on limestone in a cooler and cloudier place, giving a leaner, flintier, more restrained wine. One grape, two accents."}},{"@type":"Question","name":"What is the Gimblett Gravels?","acceptedAnswer":{"@type":"Answer","text":"A defined growing area within Hawke's Bay, unusual because its boundary follows a soil type rather than lines drawn on a map. The deep, stony gravel was left behind when the Ngaruroro River changed course after a flood in 1867. Those stones store heat and drain freely, which is why Bordeaux varieties and Syrah ripen there when they can struggle elsewhere in New Zealand."}},{"@type":"Question","name":"Is New Zealand Pinot Noir like red Burgundy?","acceptedAnswer":{"@type":"Answer","text":"Related, but not the same. Both chase perfume and finesse rather than power. New Zealand versions usually give more upfront fruit, darker cherry and plum, and a rounder, riper feel, while red Burgundy leans earthier and more savoury. Central Otago makes the boldest examples and Martinborough the most structured. Good New Zealand Pinot Noir is worth judging on its own terms."}},{"@type":"Question","name":"Does New Zealand make anything besides Sauvignon Blanc?","acceptedAnswer":{"@type":"Answer","text":"A great deal. Pinot Noir is the leading red and the country's strongest claim to greatness after Sauvignon Blanc. Hawke's Bay produces Merlot and Cabernet Sauvignon blends alongside a fine, peppery Syrah. Chardonnay is excellent and often overlooked, Pinot Gris is widely planted, and Riesling, running from bone dry to lusciously sweet, has a small but devoted following."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

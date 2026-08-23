@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Sherry (Fino)?","acceptedAnswer":{"@type":"Answer","text":"Sherry (Fino) is a fortified wine from Jerez, Spain. A bone-dry, lightly fortified white from Andalusia, aged under a veil of flor yeast."}},{"@type":"Question","name":"What grapes are used in Sherry (Fino)?","acceptedAnswer":{"@type":"Answer","text":"Sherry (Fino) is made from Palomino."}},{"@type":"Question","name":"How do you serve Sherry (Fino)?","acceptedAnswer":{"@type":"Answer","text":"Serve well-chilled (7-9°C) like a white wine; brilliant with olives, almonds and seafood. Drink fresh."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

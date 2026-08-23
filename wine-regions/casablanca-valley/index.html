@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Casablanca Valley wine taste?","acceptedAnswer":{"@type":"Answer","text":"Fresh and zesty. The whites, especially Sauvignon Blanc, show grapefruit, lime and green herbs with a slightly salty edge, while the reds like Pinot Noir stay light and bright with red-cherry fruit."}},{"@type":"Question","name":"Which wineries is Casablanca Valley known for?","acceptedAnswer":{"@type":"Answer","text":"Well-known names include Veramonte, Viña Casas del Bosque, Cono Sur, Kingston Family Vineyards and William Cole Vineyards, all working with the valley's cool coastal sites."}},{"@type":"Question","name":"Is Casablanca Valley red or white wine country?","acceptedAnswer":{"@type":"Answer","text":"It made its name with whites, above all Sauvignon Blanc and Chardonnay, but its cool climate also suits fresh, elegant Pinot Noir and Syrah."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

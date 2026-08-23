@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Uco Valley wine taste?","acceptedAnswer":{"@type":"Answer","text":"Its trademark Malbec is deeply coloured and floral with blackberry and blueberry fruit, fresh acidity and firm, fine tannins — structured and perfumed rather than jammy. The cool-climate Chardonnay is crisp and citrusy."}},{"@type":"Question","name":"Which wineries is Uco Valley known for?","acceptedAnswer":{"@type":"Answer","text":"Notable producers include Zuccardi Valle de Uco, Catena Zapata (whose Adrianna Vineyard sits in Gualtallary), Bodegas Salentein, Domaine Bousquet and Bodega Monteviejo."}},{"@type":"Question","name":"Why is altitude so important here?","acceptedAnswer":{"@type":"Answer","text":"High elevation cools an otherwise hot desert climate. Hot days ripen the grapes fully while cold nights preserve acidity and colour, which is why Uco Valley reds taste fresh and structured instead of heavy."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

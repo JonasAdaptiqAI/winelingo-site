@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Amarone della Valpolicella?","acceptedAnswer":{"@type":"Answer","text":"Amarone della Valpolicella is a red wine from Veneto, Italy. A rich, dried-grape red from Veneto, made by air-drying the grapes for months before fermenting."}},{"@type":"Question","name":"What grapes are used in Amarone della Valpolicella?","acceptedAnswer":{"@type":"Answer","text":"Amarone della Valpolicella is made from Corvina."}},{"@type":"Question","name":"How do you serve Amarone della Valpolicella?","acceptedAnswer":{"@type":"Answer","text":"Serve 16-18°C in a large glass; a 'meditation wine' for after dinner or with hard cheese."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

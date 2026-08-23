@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Friuli-Venezia Giulia wine taste?","acceptedAnswer":{"@type":"Answer","text":"The whites are crisp, textured and gently aromatic, with pear, almond, herbs and a savoury saline finish. The amber 'orange' wines are deeper, grippier and tea-like, tasting of dried apricot, walnut and orange peel."}},{"@type":"Question","name":"Which wineries is Friuli-Venezia Giulia known for?","acceptedAnswer":{"@type":"Answer","text":"Livio Felluga, Jermann and Schiopetto for classic whites, and Gravner and Radikon of Oslavia for the pioneering amber (orange) wines."}},{"@type":"Question","name":"What is an orange wine?","acceptedAnswer":{"@type":"Answer","text":"It's a white wine made like a red: the juice is left to ferment on the grape skins for weeks instead of being pressed off straight away. That gives an amber colour, a grippy tea-like texture and savoury dried-fruit flavours. Friuli is one of its spiritual homes."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

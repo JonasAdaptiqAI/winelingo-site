@@ -44,6 +44,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between DOC and DOCG on an Italian wine label?","acceptedAnswer":{"@type":"Answer","text":"Both mean the wine comes from a defined place and follows that place's rules. DOCG is the stricter tier: tighter limits on yields, longer minimum ageing, and an official tasting panel before approval. DOCG bottles also carry a numbered government seal across the neck. As of 2025 Italy had 78 DOCG zones and 341 DOCs."}},{"@type":"Question","name":"Is Chianti the same thing as Chianti Classico?","acceptedAnswer":{"@type":"Answer","text":"No — they are two separate DOCGs. Chianti Classico covers the original hills between Florence and Siena, became its own denomination in 1996, and needs at least 80% Sangiovese. Plain Chianti covers a much larger area around it and needs at least 70%. The black rooster on the label marks Chianti Classico."}},{"@type":"Question","name":"What grape is Barolo made from?","acceptedAnswer":{"@type":"Answer","text":"Nebbiolo, and only Nebbiolo. Barolo comes from a group of villages in the Langhe hills of Piedmont and must age at least 38 months before release, 18 of them in wood; Riserva needs 62 months. Barbaresco, next door, is also entirely Nebbiolo but with shorter minimums, so it often drinks well younger."}},{"@type":"Question","name":"Why do Italian red wines taste tart or sour?","acceptedAnswer":{"@type":"Answer","text":"High natural acidity, mostly. Grapes like Sangiovese, Nebbiolo and Corvina hold onto acid even when fully ripe, and Italian winemaking tends not to soften it with residual sugar or heavy oak. On its own that can read as sour. With tomato, olive oil, cheese or cured meat it stops reading as sour and starts tasting refreshing."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

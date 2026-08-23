@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What wine goes with a lemon tart?","acceptedAnswer":{"@type":"Answer","text":"Moscato d'Asti or a demi-sec Vouvray. Both are sweeter than the tart but keep enough acidity to stand up to lemon curd. Sauternes is a less happy match — its marmalade richness fights clean citrus."}},{"@type":"Question","name":"What wine goes with a berry tart?","acceptedAnswer":{"@type":"Answer","text":"A demi-sec Vouvray or demi-sec Champagne if there is crème pâtissière under the fruit, since both have the body to match the custard. For a lighter, sweeter tart, Moscato d'Asti or a sweet Riesling works."}},{"@type":"Question","name":"Why does my wine taste sour with dessert?","acceptedAnswer":{"@type":"Answer","text":"Because the pudding is sweeter than the wine, and sweetness on the plate resets the baseline you taste against. Anything less sweet than the dessert reads as thin and sour by comparison — the fix is to go one notch sweeter than you think you need, not one notch drier."}},{"@type":"Question","name":"How sweet is demi-sec Champagne?","acceptedAnswer":{"@type":"Answer","text":"Demi-Sec is defined in EU law as 32–50 grams of residual sugar per litre, which is genuinely sweet — roughly four times a typical Brut. It is one of the few sweetness terms on a wine label that means an exact thing."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

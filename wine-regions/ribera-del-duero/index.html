@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Ribera del Duero wine taste?","acceptedAnswer":{"@type":"Answer","text":"Deep, powerful and concentrated, with dark blackberry and plum fruit, firm tannins, fresh acidity and generous oak notes of vanilla and spice. It's full-bodied and structured, and the best examples age beautifully."}},{"@type":"Question","name":"Which wineries is Ribera del Duero known for?","acceptedAnswer":{"@type":"Answer","text":"Landmark producers include Vega Sicilia, Tinto Pesquera, Bodegas Protos, Bodegas Emilio Moro and the cult estate Dominio de Pingus."}},{"@type":"Question","name":"Is Ribera del Duero the same as Rioja?","acceptedAnswer":{"@type":"Answer","text":"No — they're different regions, though both are built on Tempranillo and use the same Crianza/Reserva/Gran Reserva ageing tiers. Ribera del Duero sits higher and hotter, giving bolder, darker, more powerful reds, while Rioja tends to be more supple and savoury."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

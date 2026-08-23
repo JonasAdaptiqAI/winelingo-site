@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Willamette Valley wine taste?","acceptedAnswer":{"@type":"Answer","text":"The signature Pinot Noir is elegant and perfumed, with red cherry, cranberry and raspberry, floral and savoury notes, silky tannins and fresh acidity. It favours finesse over power. The whites, led by crisp Pinot Gris and increasingly serious Chardonnay, are bright and textured."}},{"@type":"Question","name":"Which wineries is Willamette Valley known for?","acceptedAnswer":{"@type":"Answer","text":"Historic and leading names include The Eyrie Vineyards (which planted Oregon's first Pinot Noir), Domaine Serene, Argyle, Beaux Frères and Willamette Valley Vineyards, among nearly 700 wineries in the region."}},{"@type":"Question","name":"Why is Willamette Valley Pinot Noir compared to Burgundy?","acceptedAnswer":{"@type":"Answer","text":"Both are cool, marine-influenced regions that ripen Pinot Noir slowly, giving light-to-medium-bodied, red-fruited, savoury wines built on perfume and finesse rather than big, ripe fruit. Willamette's volcanic and marine-sediment soils add their own earthy nuance."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

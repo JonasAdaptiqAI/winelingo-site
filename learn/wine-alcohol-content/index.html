@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the average alcohol content of wine?","acceptedAnswer":{"@type":"Answer","text":"Most table wine falls between about 11% and 15% ABV, with 13% being a very common supermarket strength. The full range runs much wider, from around 5.5% for Moscato d’Asti to 20% or more for fortified wines like Port."}},{"@type":"Question","name":"Which wine has the highest alcohol content?","acceptedAnswer":{"@type":"Answer","text":"Fortified wines are the strongest, because neutral grape spirit is added to them. Port typically reaches 18–20% ABV and sherry can reach 22%. Among unfortified wines, Californian Zinfandel is among the strongest at 14.5–15.5%."}},{"@type":"Question","name":"Does red wine have more alcohol than white wine?","acceptedAnswer":{"@type":"Answer","text":"Usually, yes — but only slightly, and it is about climate rather than colour. Red grapes tend to be grown in warmer places and picked riper, so reds often sit at 13–15% while many whites sit at 12–13.5%. Plenty of full-bodied whites match reds for strength."}},{"@type":"Question","name":"Why is some wine only 5% alcohol?","acceptedAnswer":{"@type":"Answer","text":"Because fermentation was stopped early, before the yeast could convert all the grape sugar into alcohol. That leaves the wine both sweeter and much lower in alcohol, which is exactly how Moscato d’Asti reaches around 5.5–6.5% ABV."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can you drink red wine with salmon?","acceptedAnswer":{"@type":"Answer","text":"Yes. Salmon is oily and meaty enough to take a light, low-tannin red such as Pinot Noir or a cru Beaujolais. Avoid tannic reds like Cabernet Sauvignon, which turn dry and metallic against oily fish."}},{"@type":"Question","name":"What is the best wine for grilled salmon?","acceptedAnswer":{"@type":"Answer","text":"Pinot Noir, served slightly chilled. It has the acidity to cut the fat and the red fruit to flatter the char, without the tannin that spoils the pairing. A dry rosé is the easiest alternative."}},{"@type":"Question","name":"Why does red wine taste metallic with fish?","acceptedAnswer":{"@type":"Answer","text":"Iron. A 2009 study in the Journal of Agricultural and Food Chemistry found that the fishy aftertaste in wine-and-seafood pairings tracks the iron content of the wine, not its colour. Reds tend to carry more of it."}},{"@type":"Question","name":"What wine goes with teriyaki or miso-glazed salmon?","acceptedAnswer":{"@type":"Answer","text":"An off-dry Riesling. The glaze adds sugar and salt, and a touch of residual sugar in the wine mirrors it while the high acidity keeps everything fresh. A light Pinot Noir still works too."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

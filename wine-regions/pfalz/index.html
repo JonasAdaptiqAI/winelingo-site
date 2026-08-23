@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Pfalz wine taste?","acceptedAnswer":{"@type":"Answer","text":"Its Rieslings are riper and fuller than in cooler German regions — think peach, apricot and yellow apple with a juicy acidity — and are mostly made dry. The region also makes savoury Pinot Noir and soft, creamy Pinot Blanc and Pinot Gris."}},{"@type":"Question","name":"Is Pfalz Riesling sweet or dry?","acceptedAnswer":{"@type":"Answer","text":"Both are made, but the region's modern reputation rests on dry (trocken) styles. Check the label: trocken is dry, while the Prädikat terms like Spätlese and Auslese often signal sweeter wines."}},{"@type":"Question","name":"Which wineries is Pfalz known for?","acceptedAnswer":{"@type":"Answer","text":"Historic Mittelhaardt estates such as Dr. Bürklin-Wolf, Bassermann-Jordan and Reichsrat von Buhl, alongside Müller-Catoir and the southern star Ökonomierat Rebholz, are all well-established names."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What wine goes with a charcuterie board?","acceptedAnswer":{"@type":"Answer","text":"A light, high-acid wine with little or no tannin: Lambrusco, chilled Beaujolais, a dry rosé, Champagne or a dry Riesling. All of them cut the fat and stay in scale with what is essentially a plate of small salty bites."}},{"@type":"Question","name":"Does red wine work on a charcuterie board?","acceptedAnswer":{"@type":"Answer","text":"Yes, provided it stays light and low in tannin — Beaujolais or a dry Lambrusco, served cool. Avoid big, high-alcohol reds: salt strips the fruit out of a young fruit-driven wine and leaves it tasting hollow."}},{"@type":"Question","name":"What wine goes with prosciutto?","acceptedAnswer":{"@type":"Answer","text":"Champagne is the classic. The bubbles lift the fat and the wine's bready, lees-aged character picks up the nutty sweetness of a properly aged ham. A dry Lambrusco or a crisp dry Riesling also works well."}},{"@type":"Question","name":"Why does wine taste different with salty food?","acceptedAnswer":{"@type":"Answer","text":"Sodium dulls the receptors that register sharpness, bitterness and grip, so the same glass reads softer and fruitier next to cured meat than it did on its own. It is the reason a wine that seems severe in the shop can be the right call on a board."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Columbia Valley wine taste?","acceptedAnswer":{"@type":"Answer","text":"Bold and fruit-forward: ripe Cabernet and Merlot full of blackcurrant and dark cherry, smoky-peppery Syrah, and crisp, aromatic whites. The desert climate gives the reds ripe fruit with firm structure and keeps the whites fresh."}},{"@type":"Question","name":"Which wineries is Columbia Valley known for?","acceptedAnswer":{"@type":"Answer","text":"Landmark names include Château Ste. Michelle, Columbia Crest, L'Ecole No 41, Leonetti Cellar and K Vintners."}},{"@type":"Question","name":"Where is the Columbia Valley?","acceptedAnswer":{"@type":"Answer","text":"It is a very large wine region covering much of eastern Washington State and stretching into Oregon — the umbrella appellation for well-known smaller areas such as Walla Walla Valley, Yakima Valley and Red Mountain."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

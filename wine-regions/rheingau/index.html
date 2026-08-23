@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Rheingau wine taste?","acceptedAnswer":{"@type":"Answer","text":"Its Rieslings are taut and precise, with citrus, apple and peach fruit, a stony minerality and bright acidity, in styles from bone-dry to lusciously sweet. Its Spätburgunder (Pinot Noir) is light, savoury and elegant."}},{"@type":"Question","name":"Which wineries is Rheingau known for?","acceptedAnswer":{"@type":"Answer","text":"Renowned estates include Robert Weil, the historic Schloss Johannisberg, Georg Breuer, Josef Leitz and Künstler — all celebrated for their Riesling."}},{"@type":"Question","name":"Is Rheingau Riesling sweet or dry?","acceptedAnswer":{"@type":"Answer","text":"Both. The region makes everything from bone-dry (trocken) Rieslings to noble-sweet dessert wines. Check the label for 'trocken' (dry) or the Prädikat term; even the sweeter styles stay balanced thanks to high acidity."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

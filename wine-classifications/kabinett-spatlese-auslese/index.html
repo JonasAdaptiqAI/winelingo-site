@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Spätlese sweet?","acceptedAnswer":{"@type":"Answer","text":"Not necessarily. Spätlese means the grapes were picked riper than the main harvest, and the wine can be fermented bone dry. Check the alcohol: around 8% means sweet, 12% or so means dry."}},{"@type":"Question","name":"What does Kabinett mean on a German wine label?","acceptedAnswer":{"@type":"Answer","text":"It is the entry rung of the Prädikat ladder — grapes at normal harvest ripeness, roughly 67–82° Öchsle depending on region and variety. The wines are light and low in alcohol, from dry to gently off-dry."}},{"@type":"Question","name":"What is the difference between Auslese and Beerenauslese?","acceptedAnswer":{"@type":"Answer","text":"Auslese selects whole ripe bunches from about 83° Öchsle. Beerenauslese selects individual overripe or nobly rotten berries from about 110° Öchsle, and is a full dessert wine made only in exceptional vintages."}},{"@type":"Question","name":"What is Öchsle?","acceptedAnswer":{"@type":"Answer","text":"The German scale for must weight — how much sugar is dissolved in the unfermented grape juice. It is measured at harvest, and it is what the whole Prädikat system is built on."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

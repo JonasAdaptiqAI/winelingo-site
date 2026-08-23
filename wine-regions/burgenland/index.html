@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Burgenland wine taste?","acceptedAnswer":{"@type":"Answer","text":"The reds are juicy and medium to full-bodied, with dark cherry and blackberry fruit, a peppery, spicy edge and fresh acidity. The sweet wines are richly honeyed with apricot and dried-fruit flavours, balanced by good acidity."}},{"@type":"Question","name":"Which wineries is Burgenland known for?","acceptedAnswer":{"@type":"Answer","text":"Notable names include Kracher for sweet wines and Moric, Umathum, Prieler and Hans & Anita Nittnaus for Blaufränkisch and other reds."}},{"@type":"Question","name":"Why is Burgenland famous for sweet wine?","acceptedAnswer":{"@type":"Answer","text":"Humidity and autumn mists from shallow Lake Neusiedl encourage noble rot, a mould that shrivels grapes and concentrates their sugars, giving the region ideal conditions for luscious dessert wines."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

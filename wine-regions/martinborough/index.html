@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Martinborough wine taste?","acceptedAnswer":{"@type":"Answer","text":"Martinborough is best known for savoury, structured Pinot Noir with dark cherry and plum fruit and an earthy, dried-herb, sometimes gamey character. It is denser and more serious than many New Zealand Pinots, with fine tannins and fresh acidity."}},{"@type":"Question","name":"Which wineries is Martinborough known for?","acceptedAnswer":{"@type":"Answer","text":"Leading Martinborough producers include Ata Rangi, Dry River, Palliser Estate, Escarpment and Kusuda. Ata Rangi and Dry River were among the pioneers that established the region's Pinot Noir reputation."}},{"@type":"Question","name":"Is Martinborough the same as Marlborough?","acceptedAnswer":{"@type":"Answer","text":"No, and they are easy to confuse. Martinborough is a small Pinot Noir region in the Wairarapa on the North Island, while Marlborough is a much larger Sauvignon Blanc region on the South Island."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

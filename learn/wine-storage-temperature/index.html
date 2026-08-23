@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What temperature should wine be stored at?","acceptedAnswer":{"@type":"Answer","text":"Around 12–13°C (54–55°F) is the standard target, and the same temperature suits red, white, rosé and sparkling. Anything steady between roughly 10°C and 14°C works well, and keeping it constant matters more than the precise number."}},{"@type":"Question","name":"Should red and white wine be stored at different temperatures?","acceptedAnswer":{"@type":"Answer","text":"No. Charts giving different storage temperatures per colour are really quoting serving temperatures. For storage, one stable cool temperature suits every style — the difference between reds and whites only matters at the point you pour."}},{"@type":"Question","name":"Can you store wine in a normal fridge?","acceptedAnswer":{"@type":"Answer","text":"For a few days or weeks, yes. Longer than that is not ideal: a kitchen fridge runs at about 4°C, colder than wine wants, and its dry air can shrink a natural cork over months. Treat it as short-term parking rather than storage."}},{"@type":"Question","name":"Does wine need to be stored on its side?","acceptedAnswer":{"@type":"Answer","text":"Only if it has a natural cork, so the wine keeps the cork moist and swollen. Screwcap bottles can be stored upright or on their side with no difference at all."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

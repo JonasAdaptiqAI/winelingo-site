@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Central Otago wine taste?","acceptedAnswer":{"@type":"Answer","text":"Its famous Pinot Noir is ripe and fruit-forward, full of dark cherry and plum with herbal, spicy notes, bright acidity and a smooth, silky texture, generous yet still fresh."}},{"@type":"Question","name":"Which wineries is Central Otago known for?","acceptedAnswer":{"@type":"Answer","text":"Names to know include Felton Road, Rippon, Gibbston Valley, Chard Farm and Akarua, spanning the region's pioneers and its most celebrated Pinot Noir makers."}},{"@type":"Question","name":"Why is Central Otago so good for Pinot Noir?","acceptedAnswer":{"@type":"Answer","text":"It is New Zealand's only continental region, with hot days and cold nights at altitude. That swing ripens the fruit fully while keeping the acidity fresh, which is exactly what fine Pinot Noir needs."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

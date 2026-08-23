@@ -44,6 +44,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between Crianza, Reserva and Gran Reserva?","acceptedAnswer":{"@type":"Answer","text":"They are ageing rules, not quality grades, though older usually means more expensive. For red Rioja, Crianza needs two years in total, with at least one of them in oak barrels. Reserva needs three years, including a year in barrel and six months in bottle. Gran Reserva needs five years, with at least two in oak and two in bottle."}},{"@type":"Question","name":"Is Rioja the same thing as Tempranillo?","acceptedAnswer":{"@type":"Answer","text":"Not quite. Rioja is a place in northern Spain; Tempranillo is the grape that dominates it, usually blended with a little Garnacha and other local varieties. So Rioja reds are mostly Tempranillo, but plenty of Tempranillo grows elsewhere. In Ribera del Duero it is called Tinto Fino, in Toro it is Tinta de Toro, and it tastes noticeably different in each."}},{"@type":"Question","name":"Is sherry a sweet wine?","acceptedAnswer":{"@type":"Answer","text":"Mostly no. Fino and Oloroso are both fermented completely dry. Fino ages under a living film of yeast called flor, which shields it from air and leaves it pale, bone dry and salty. Oloroso is fortified slightly higher, so flor cannot survive, and it ages in contact with air instead, turning nutty and brown. The genuinely sweet ones are made from Pedro Ximénez, or from Moscatel."}},{"@type":"Question","name":"What is Cava, and how does it differ from Prosecco?","acceptedAnswer":{"@type":"Answer","text":"Cava is Spanish sparkling wine, most of it made in Penedès in Catalonia. Its bubbles come from a second fermentation inside the bottle, the same method used for Champagne, followed by at least nine months resting on the spent yeast. Prosecco ferments a second time in a large tank instead, which keeps it fruitier and softer. Cava tastes drier and more savoury."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

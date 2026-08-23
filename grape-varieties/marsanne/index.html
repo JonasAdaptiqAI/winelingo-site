@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Marsanne a red or white wine?","acceptedAnswer":{"@type":"Answer","text":"Marsanne is a white wine grape. Marsanne is a full-bodied white grape from Northern Rhône, known for pear, quince and almond."}},{"@type":"Question","name":"What food pairs with Marsanne?","acceptedAnswer":{"@type":"Answer","text":"Full-bodied and waxy, it pairs with roast chicken, creamy pasta, and mild soft cheeses. Bring out its pear, honeysuckle, and almond notes with butter, herbs, and gentle spice."}},{"@type":"Question","name":"How should I serve Marsanne?","acceptedAnswer":{"@type":"Answer","text":"Serve at 10–13°C / 50–55°F. Use a universal or white glass."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

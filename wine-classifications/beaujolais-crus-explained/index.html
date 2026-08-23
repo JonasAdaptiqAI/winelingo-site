@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between Beaujolais and Beaujolais-Villages?","acceptedAnswer":{"@type":"Answer","text":"Beaujolais-Villages comes from 38 defined communes in the hillier north and is held to a tighter yield — 58 hectolitres per hectare against 60. In practice it is a little denser and more savoury than plain Beaujolais."}},{"@type":"Question","name":"Which Beaujolais cru should I try first?","acceptedAnswer":{"@type":"Answer","text":"Morgon if you want structure and something that will improve for a few years, Fleurie if you want perfume and immediate charm. Both are Gamay; the difference is the hillside."}},{"@type":"Question","name":"Can a Beaujolais cru be sold as Beaujolais Nouveau?","acceptedAnswer":{"@type":"Answer","text":"No. Only Beaujolais and Beaujolais-Villages may be released as Nouveau on the third Thursday of November. The ten crus are excluded."}},{"@type":"Question","name":"Should Beaujolais be served chilled?","acceptedAnswer":{"@type":"Answer","text":"Lightly. Around 12–13°C (54–55°F) for basic Beaujolais and 14–15°C (57–59°F) for a cru. Fridge temperature is too cold for the crus and flattens them."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

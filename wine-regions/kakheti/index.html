@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Kakheti wine taste?","acceptedAnswer":{"@type":"Answer","text":"The Saperavi reds are deep, full-bodied and bold, with dark plum and blackberry fruit, firm tannins and tangy acidity. The traditional amber wines are grippy and savoury, tasting of dried apricot, walnut, honey and black tea."}},{"@type":"Question","name":"Which wineries is Kakheti known for?","acceptedAnswer":{"@type":"Answer","text":"Pheasant's Tears, Schuchmann Wines, Alaverdi Monastery, Teliani Valley and Tbilvino are all well-known producers of Saperavi and traditional qvevri wines."}},{"@type":"Question","name":"What is qvevri wine?","acceptedAnswer":{"@type":"Answer","text":"It's wine fermented and aged in a qvevri, a large clay vessel buried in the ground. For white grapes this means long contact with the skins, giving Georgia's famous amber (orange) wines their colour, tannic grip and dried-fruit flavours. The method is around 8,000 years old."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

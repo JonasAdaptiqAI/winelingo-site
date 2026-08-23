@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How many units are in a 750ml bottle of wine?","acceptedAnswer":{"@type":"Answer","text":"About 9 to 11 units, depending on strength. A 13% ABV bottle contains 9.8 units and a 14% bottle contains 10.5, so roughly ten units is a fair rule of thumb for a standard bottle."}},{"@type":"Question","name":"How many units are in a large glass of wine?","acceptedAnswer":{"@type":"Answer","text":"A large 250ml glass of 13% wine is about 3.3 units — a third of a bottle. A medium 175ml glass is about 2.3 units and a small 125ml glass about 1.6 units at the same strength."}},{"@type":"Question","name":"How do you calculate alcohol units in wine?","acceptedAnswer":{"@type":"Answer","text":"Multiply the ABV percentage by the volume in millilitres and divide by 1,000. So a 175ml glass of 13% wine is (13 × 175) ÷ 1,000 = 2.3 units. For a standard bottle, a quick shortcut is ABV × 0.75."}},{"@type":"Question","name":"Is a bottle of wine a week too much?","acceptedAnswer":{"@type":"Answer","text":"The UK Chief Medical Officers advise not regularly drinking more than 14 units a week, and a bottle of 13% wine is about 9.8 units — so one bottle a week sits below that guideline. The advice also suggests spreading drinking over three or more days and having drink-free days."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

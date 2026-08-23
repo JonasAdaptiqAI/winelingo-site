@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between French and American oak in wine?","acceptedAnswer":{"@type":"Answer","text":"American oak (Quercus alba) is far richer in oak lactone, giving coconut, sweet vanilla and dill, with lower wood tannin. French oak (Quercus petraea and robur) is tighter-grained and higher in tannin, giving cedar, clove and toasted spice with more structural grip."}},{"@type":"Question","name":"Which oak makes wine taste like coconut and vanilla?","acceptedAnswer":{"@type":"Answer","text":"American oak. The coconut note comes from oak lactone, which American white oak holds in far higher concentrations than French oak. Fire degrades it, though — so a strongly charred American barrel gives smoke and caramel instead of coconut."}},{"@type":"Question","name":"Is French oak better than American oak?","acceptedAnswer":{"@type":"Answer","text":"No — it is better suited to some grapes. French oak flatters Cabernet, Pinot Noir and Chardonnay, where texture matters most. American oak flatters Tempranillo, Zinfandel and warm-climate Shiraz, which have the fruit weight to carry its sweetness. Traditional Rioja is a case for American oak, not against it."}},{"@type":"Question","name":"Why is French oak more expensive than American oak?","acceptedAnswer":{"@type":"Answer","text":"Because of waste. American white oak plugs its vessels densely enough with tyloses to stay watertight when sawn; European oak plugs them sparsely, so its staves must be split along the grain. That leaves only about a fifth to a quarter of the log usable, roughly half the yield of American oak."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

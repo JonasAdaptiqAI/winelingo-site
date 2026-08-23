@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Naoussa wine taste?","acceptedAnswer":{"@type":"Answer","text":"Pale in colour but powerful and savoury: high tannin and bright acidity with tomato, dried herb, olive and tart red-cherry flavours, gaining leather and earthy complexity with age. It is a structured, age-worthy red made from Xinomavro."}},{"@type":"Question","name":"Which wineries is Naoussa known for?","acceptedAnswer":{"@type":"Answer","text":"Well-known names include Boutari and Kir-Yianni, the biodynamic Thymiopoulos, and smaller family estates such as Dalamara and Chrisohoou."}},{"@type":"Question","name":"Why is Naoussa red so pale if it is so tannic?","acceptedAnswer":{"@type":"Answer","text":"The Xinomavro grape naturally has thin skins and low colour pigment, so it gives a light, sometimes translucent red, yet it is very high in tannin and acidity. Colour is simply not a reliable guide to a wine's power."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

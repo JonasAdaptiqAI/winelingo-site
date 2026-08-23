@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the best wine to drink with sushi?","acceptedAnswer":{"@type":"Answer","text":"An off-dry Riesling, ideally a Mosel Kabinett. Its high acidity matches the vinegared rice, its low alcohol and touch of sugar tame wasabi, and it is light enough not to bury the fish."}},{"@type":"Question","name":"Does Champagne go with sushi?","acceptedAnswer":{"@type":"Answer","text":"Yes, and it is the best sparkling option. The acidity handles the seasoned rice and the bubbles clear the palate. A brut contains under 12 g/l of residual sugar, so it stays dry enough for sashimi."}},{"@type":"Question","name":"What wine goes with wasabi and spicy sushi?","acceptedAnswer":{"@type":"Answer","text":"A low-alcohol off-dry white. Alcohol intensifies the burn while residual sugar buffers it, so a Mosel Kabinett at 8% is far more comfortable than a dry 13% white."}},{"@type":"Question","name":"Can you drink red wine with sushi?","acceptedAnswer":{"@type":"Answer","text":"It is a difficult match. The umami in soy sauce and nori makes tannin taste harsher and more bitter, and most reds overwhelm raw fish. If you must, choose something very light and chilled with no oak."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

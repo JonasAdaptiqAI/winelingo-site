@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Sauternes?","acceptedAnswer":{"@type":"Answer","text":"Sauternes is a dessert / sweet wine from Bordeaux, France. A luscious golden dessert wine made from grapes shrivelled by 'noble rot' (botrytis)."}},{"@type":"Question","name":"What grapes are used in Sauternes?","acceptedAnswer":{"@type":"Answer","text":"Sauternes is made from Sémillon, Sauvignon Blanc."}},{"@type":"Question","name":"How do you serve Sauternes?","acceptedAnswer":{"@type":"Answer","text":"Serve chilled (8-10°C) in a small glass; pairs with blue cheese or fruit tart, or sip on its own."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

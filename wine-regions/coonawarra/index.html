@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Coonawarra wine taste?","acceptedAnswer":{"@type":"Answer","text":"Its famous Cabernet Sauvignon is deep and structured, with blackcurrant and dark cherry, a signature hint of mint and eucalyptus, cedary oak and firm tannins — fresh and elegant thanks to the cool climate, and built to age."}},{"@type":"Question","name":"Which wineries is Coonawarra known for?","acceptedAnswer":{"@type":"Answer","text":"Leading names include Wynns Coonawarra Estate, Balnaves of Coonawarra, Majella, Katnook Estate and Penley Estate."}},{"@type":"Question","name":"What is terra rossa?","acceptedAnswer":{"@type":"Answer","text":"Terra rossa is the narrow strip of red soil over limestone that Coonawarra is built on. It drains well and ripens Cabernet Sauvignon evenly, and is a big reason the region's reds have such distinctive character."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

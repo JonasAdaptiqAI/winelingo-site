@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What wine goes with bruschetta?","acceptedAnswer":{"@type":"Answer","text":"Chianti or Barbera for red, Verdicchio for white, or a dry rosé. All are high in acidity and moderate in tannin, which is what raw tomato demands: it drains the freshness out of a wine and sharpens its tannin at the same time."}},{"@type":"Question","name":"What white wine goes with tomato bruschetta?","acceptedAnswer":{"@type":"Answer","text":"Verdicchio dei Castelli di Jesi. Its green apple and citrus-pith character has the acidity to match the tomato, and its trademark bitter-almond finish sits well with garlic and olive oil."}},{"@type":"Question","name":"Does raw garlic ruin the wine?","acceptedAnswer":{"@type":"Answer","text":"It flattens a delicate wine and turns an oaked one bitter, so this is not the night for the good bottle. It does not defeat a high-acid, unoaked wine, though: Chianti, Barbera and Verdicchio all keep their shape next to a clove dragged across hot toast."}},{"@type":"Question","name":"How is bruschetta pronounced?","acceptedAnswer":{"@type":"Answer","text":"Broo-SKET-ta. The ch in Italian is a hard k sound. The word comes from bruscare, meaning to roast over coals, and refers to the grilled bread rather than the topping."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

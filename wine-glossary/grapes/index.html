@@ -38,6 +38,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"DefinedTermSet","name":"Grapes — Winelingo Wine Glossary","url":"https://winelingo.app/wine-glossary/grapes/","inLanguage":"en","hasDefinedTerm":[{"@type":"DefinedTerm","name":"Grape variety","description":"The specific type of grape a wine is made from, such as Merlot or Chardonnay. Sometimes called the 'varietal'. It's the single biggest clue to how a wine will taste."},{"@type":"DefinedTerm","name":"Cabernet Sauvignon","description":"A widely planted red grape making bold, structured wines with firm tannin and blackcurrant flavours. A cornerstone of Bordeaux and popular worldwide."},{"@type":"DefinedTerm","name":"Merlot","description":"A red grape making softer, rounder, plummy wines with gentler tannin. Approachable on its own and a common blending partner for Cabernet Sauvignon."},{"@type":"DefinedTerm","name":"Pinot Noir","description":"A lighter-bodied red grape known for red-berry fruit, silky texture and delicacy. Famous in Burgundy and prized for its finesse."},{"@type":"DefinedTerm","name":"Chardonnay","description":"A versatile white grape that can be crisp and unoaked or rich and buttery depending on how it's made. Grown almost everywhere wine is made."},{"@type":"DefinedTerm","name":"Sauvignon Blanc","description":"An aromatic white grape making zesty, refreshing wines with grassy, citrus and green notes. Loved for its bright, mouth-watering acidity."},{"@type":"DefinedTerm","name":"Riesling","description":"An aromatic white grape making wines that range from bone-dry to lusciously sweet, always with vivid acidity and floral, citrus and stone-fruit notes."}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

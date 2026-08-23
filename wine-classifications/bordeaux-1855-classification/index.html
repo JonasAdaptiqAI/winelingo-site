@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What are the five First Growths of Bordeaux?","acceptedAnswer":{"@type":"Answer","text":"Lafite Rothschild, Latour, Margaux and Mouton Rothschild in the Médoc, plus Haut-Brion in Graves. Mouton was promoted from second growth in 1973; the other four have been first growths since 1855."}},{"@type":"Question","name":"Has the 1855 classification ever changed?","acceptedAnswer":{"@type":"Answer","text":"Twice. Cantemerle was added as a fifth growth in 1856, and Mouton Rothschild was promoted to first growth in 1973. Nothing else has moved."}},{"@type":"Question","name":"Why isn't Saint-Émilion in the 1855 classification?","acceptedAnswer":{"@type":"Answer","text":"The 1855 list covered the Médoc, plus Haut-Brion in Graves, and the sweet wines of Sauternes and Barsac. Saint-Émilion runs its own classification, first drawn up in 1955."}},{"@type":"Question","name":"Is Cru Bourgeois worth buying?","acceptedAnswer":{"@type":"Answer","text":"Often, yes. It is a separate Médoc classification revised every five years, so it reflects recent performance rather than 1855 prices. The 2020 edition ran to 249 châteaux, and the Supérieur tier in particular is good drinking for the money."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

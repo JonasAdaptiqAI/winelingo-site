@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What wine goes best with chicken teriyaki?","acceptedAnswer":{"@type":"Answer","text":"An off-dry Riesling. Its residual sugar matches the sweetness of the soy glaze, its high acidity handles the salt, and it has no tannin to clash with the umami. A Mosel Kabinett at around 8% alcohol is the ideal shape."}},{"@type":"Question","name":"Is there a red that survives teriyaki sauce?","acceptedAnswer":{"@type":"Answer","text":"One that is light and low in tannin, yes. Pinot Noir, Gamay and Austrian Zweigelt all hold up served slightly cool. Big tannic reds do not — the umami in the soy sauce makes them taste bitter and metallic."}},{"@type":"Question","name":"Why does soy sauce make red wine taste bad?","acceptedAnswer":{"@type":"Answer","text":"Soy sauce is extremely high in free glutamate, and umami increases your perception of bitterness and astringency while suppressing fruit and body. A tannic red ends up tasting harsh and hollow, even though the salt in the sauce is working the other way."}},{"@type":"Question","name":"Does Chardonnay go with teriyaki?","acceptedAnswer":{"@type":"Answer","text":"An oaked Chardonnay is a poor match. Its toasty, buttery character piles onto the caramelised sugar in the glaze and the pairing turns heavy and muddled. If you want a white, choose something with acidity and a touch of sweetness instead."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

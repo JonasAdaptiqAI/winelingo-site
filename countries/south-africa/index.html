@@ -44,6 +44,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Pinotage, and is it any good?","acceptedAnswer":{"@type":"Answer","text":"Pinotage is a South African grape, created in 1925 at Stellenbosch University by Abraham Izak Perold, who crossed Pinot Noir with Cinsault. It earned a poor reputation from badly made examples that tasted burnt or solvent-like. Modern versions are far better, offering dark plum, smoke and sometimes a coffee-ish note. If it put you off once, it is worth trying something recent."}},{"@type":"Question","name":"Why is Chenin Blanc such a big deal in South Africa?","acceptedAnswer":{"@type":"Answer","text":"Because there is more of it in the Cape than anywhere else on earth, including the Loire Valley where the grape originated. It arrived early, was planted widely for brandy and bulk wine under the local name Steen, and much of it simply survived. Those old, dry-farmed bush vines give tiny crops of intensely flavoured fruit, which is why Cape Chenin is now taken seriously."}},{"@type":"Question","name":"What does Wine of Origin mean on a South African label?","acceptedAnswer":{"@type":"Answer","text":"It is the Cape's certification scheme, enforced by law since 1973. If a label states a Wine of Origin area such as Stellenbosch, Swartland or Constantia, all of the grapes must come from that demarcated area, and the claim is independently checked. The areas run from broad geographical units down through regions and districts to small wards. It guarantees honesty about origin, not a quality ranking."}},{"@type":"Question","name":"What is the difference between Stellenbosch and Swartland?","acceptedAnswer":{"@type":"Answer","text":"Stellenbosch is the established heart of Cape wine: mountain slopes, varied soils, irrigation where needed, and a focus on Cabernet Sauvignon, Syrah, Chenin Blanc and Pinotage. Swartland, further north, is hotter, drier and mostly unirrigated, farmed on granite and shale. Its old bush vines and Rhône-inspired blends made it the centre of South Africa's modern wine revival from the 2000s onwards."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What wine goes best with Margherita pizza?","acceptedAnswer":{"@type":"Answer","text":"A medium-bodied, high-acid Italian red. Chianti is the classic, Barbera the best value and a dry (secco) Lambrusco served cold the most enjoyable. All three have the acidity to meet the tomato and enough fruit to carry the mozzarella."}},{"@type":"Question","name":"Can you drink white wine with pizza?","acceptedAnswer":{"@type":"Answer","text":"Yes, as long as it is crisp and high in acid — Vermentino and Verdicchio both work, and a white is the better call on a pizza bianca or anything with seafood. Rich, oaked whites taste flat beside tomato."}},{"@type":"Question","name":"Why does red wine sometimes taste bad with pizza?","acceptedAnswer":{"@type":"Answer","text":"Usually tannin, but not for the reason people assume. Cooked tomato is unusually rich in free glutamate, and umami raises your perception of bitterness and astringency; the charred crust adds bitterness of its own. Food acidity actually softens tannin. Low-tannin reds such as Barbera and Lambrusco sidestep the problem completely."}},{"@type":"Question","name":"Is Lambrusco actually good with pizza?","acceptedAnswer":{"@type":"Answer","text":"It is one of the best matches there is, provided the label says secco. The bubbles and acidity strip the fat of the mozzarella away, and it is served chilled at around 10°C, which is a welcome contrast to a pizza straight from the oven."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

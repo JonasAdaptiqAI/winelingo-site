@@ -364,6 +364,18 @@
   @media (max-width:900px){ .shotgrid{grid-template-columns:repeat(2,1fr); gap:22px} }
   @media (max-width:520px){ .shotgrid{grid-template-columns:repeat(2,1fr); gap:16px} .shot figcaption{font-size:13px} .shot figcaption b{font-size:15px} }
 </style>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>

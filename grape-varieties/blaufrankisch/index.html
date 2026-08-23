@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Blaufränkisch a red or white wine?","acceptedAnswer":{"@type":"Answer","text":"Blaufränkisch is a red wine grape. Blaufränkisch is a full-bodied red grape from Burgenland, known for blackberry, dark cherry and white pepper."}},{"@type":"Question","name":"What food pairs with Blaufränkisch?","acceptedAnswer":{"@type":"Answer","text":"Blaufränkisch is peppery and medium-bodied, loving roast pork, mushroom dishes, and spiced sausages. Lean into blackberry, black pepper, and a touch of smoky spice."}},{"@type":"Question","name":"How should I serve Blaufränkisch?","acceptedAnswer":{"@type":"Answer","text":"Serve at 15–17°C / 59–63°F. Use a universal red glass. Decant: 15–30 minutes."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

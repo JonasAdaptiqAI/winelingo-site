@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Pinot Grigio?","acceptedAnswer":{"@type":"Answer","text":"Pinot Grigio is a white wine from Veneto, Italy. Northern Italy's light, crisp, dry white — clean citrus and pear, the easy-drinking everyday glass."}},{"@type":"Question","name":"What grapes are used in Pinot Grigio?","acceptedAnswer":{"@type":"Answer","text":"Pinot Grigio is made from Pinot Grigio."}},{"@type":"Question","name":"How do you serve Pinot Grigio?","acceptedAnswer":{"@type":"Answer","text":"Serve well-chilled (8-10°C) in any white glass; a perfect aperitif and partner for light seafood."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What wine goes best with pork chops?","acceptedAnswer":{"@type":"Answer","text":"For a plain grilled chop, Pinot Noir. Change the seasoning and the answer changes: off-dry Chenin Blanc or Riesling with apple sauce, Zinfandel with a sweet barbecue glaze, Grenache with garlic and rosemary."}},{"@type":"Question","name":"Red or white wine with pork?","acceptedAnswer":{"@type":"Answer","text":"Both are correct, which is unusual. Pork is mild and medium-weight, so the sauce decides. Savoury and herby leans red; sweet, fruity or creamy leans towards a white with a little residual sugar."}},{"@type":"Question","name":"What wine goes with pork and apple sauce?","acceptedAnswer":{"@type":"Answer","text":"An off-dry white — Vouvray demi-sec or a German Riesling Kabinett. The sweetness of the apple would make a bone-dry wine taste sour and thin, while a lightly sweet wine matches it and still cuts the fat."}},{"@type":"Question","name":"What wine goes with barbecue pork chops?","acceptedAnswer":{"@type":"Answer","text":"Zinfandel, provided the rub is sweet and smoky rather than fiery. Its ripe, jammy fruit matches the caramelised glaze. If there is serious chilli heat in the rub, its high alcohol will make the burn worse — pour an off-dry Riesling instead."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

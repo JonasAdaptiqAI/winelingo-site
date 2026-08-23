@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Puglia wine taste?","acceptedAnswer":{"@type":"Answer","text":"Rich, ripe and full-bodied, with jammy dark fruit, warming alcohol and soft, easy-going tannins. It's fruit-forward and smooth rather than firm or austere — one of the most approachable red styles in Italy."}},{"@type":"Question","name":"Which wineries is Puglia known for?","acceptedAnswer":{"@type":"Answer","text":"Well-established names include Leone de Castris (dating to 1665), the Produttori di Manduria cooperative, Tormaresca (owned by the Antinori family), Gianfranco Fino for old-vine Primitivo, and Rivera in Castel del Monte."}},{"@type":"Question","name":"Is Primitivo the same as Zinfandel?","acceptedAnswer":{"@type":"Answer","text":"Yes — Primitivo and California's Zinfandel are the same grape variety (both are the Croatian Tribidrag). Puglian Primitivo tends to taste riper, jammier and more Mediterranean in character."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

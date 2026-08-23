@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Barossa Shiraz?","acceptedAnswer":{"@type":"Answer","text":"Barossa Shiraz is a red wine from Barossa Valley, Australia. Australia's powerhouse red — big, ripe, full-bodied Shiraz from the warm, old-vine Barossa Valley."}},{"@type":"Question","name":"What grapes are used in Barossa Shiraz?","acceptedAnswer":{"@type":"Answer","text":"Barossa Shiraz is made from Shiraz."}},{"@type":"Question","name":"How do you serve Barossa Shiraz?","acceptedAnswer":{"@type":"Answer","text":"Decant 30-60 min; serve 16-18°C in a big glass. A natural with barbecue, lamb and aged cheddar."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

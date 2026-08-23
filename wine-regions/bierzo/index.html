@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Bierzo wine taste?","acceptedAnswer":{"@type":"Answer","text":"Fragrant and medium-bodied, with juicy red and dark fruit, floral and herbal notes, and a savoury, stony minerality. Fine tannins and fresh acidity keep the wines lifted and lively."}},{"@type":"Question","name":"Which wineries is Bierzo known for?","acceptedAnswer":{"@type":"Answer","text":"Leading names include Descendientes de J. Palacios, Raúl Pérez, Dominio de Tares, Losada Vinos de Finca and Mengoba, many working with old hillside vines."}},{"@type":"Question","name":"What grape is Bierzo wine made from?","acceptedAnswer":{"@type":"Answer","text":"The reds are made mainly from Mencía, a native grape prized for its perfume and freshness. The region's whites come chiefly from Godello."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

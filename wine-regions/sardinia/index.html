@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Sardinian wine taste?","acceptedAnswer":{"@type":"Answer","text":"The Cannonau reds are warm and full-bodied, with ripe berry fruit, dried herbs and a peppery edge and soft tannins. The Vermentino whites are fresh and zesty, with citrus, a hint of almond and a salty, sea-breeze tang."}},{"@type":"Question","name":"Which wineries is Sardinia known for?","acceptedAnswer":{"@type":"Answer","text":"Established producers include Argiolas, Sella & Mosca, Capichera, Cantina Santadi and Siddura."}},{"@type":"Question","name":"Is Cannonau the same as Grenache?","acceptedAnswer":{"@type":"Answer","text":"Yes. Cannonau is simply the Sardinian name for Grenache, the same grape grown widely in Spain and southern France. On the island it makes warming, generous, herb-scented reds."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

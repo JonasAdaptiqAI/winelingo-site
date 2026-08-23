@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do wine legs mean the wine is good quality?","acceptedAnswer":{"@type":"Answer","text":"No. Legs, or tears, are the Marangoni effect, first explained by James Thomson in 1855: alcohol evaporates faster than water and drags liquid up the glass. Their intensity depends only on alcohol content, and covering the glass stops them entirely. They tell you nothing about quality or sweetness."}},{"@type":"Question","name":"Are screwcap wines lower quality than cork?","acceptedAnswer":{"@type":"Answer","text":"No. Domaine Laroche has sealed Grand Cru Chablis under screwcap since the 2001 vintage, and Clare Valley Riesling producers moved in 2000. Across Australia and New Zealand the screwcap is now the normal closure. Its real advantage is that it cannot be corked, so it is the safer seal for anything you will drink within five years."}},{"@type":"Question","name":"Do sulphites in wine cause headaches?","acceptedAnswer":{"@type":"Answer","text":"The evidence says no. EU rules allow more sulphite in white wine (200 mg per litre) than in red (150 mg per litre), and dried fruit carries more than red wine. Sulphite sensitivity is real but presents as asthma-type symptoms. A 2023 study in Scientific Reports points instead to quercetin inhibiting ALDH2, the enzyme that clears acetaldehyde."}},{"@type":"Question","name":"Does wine get better the longer you keep it?","acceptedAnswer":{"@type":"Answer","text":"Very rarely. More than 90% of the world’s wine is meant to be drunk within a year of production, and less than 1% is built to age beyond five. Ageing needs tannin, acidity or sugar to preserve the wine, which suits Nebbiolo, Riesling and Sauternes — not everyday reds or rosé."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

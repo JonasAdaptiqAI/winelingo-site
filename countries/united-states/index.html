@@ -44,6 +44,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does AVA mean on an American wine label?","acceptedAnswer":{"@type":"Answer","text":"AVA stands for American Viticultural Area, a legally defined grape-growing region such as Napa Valley or Willamette Valley. To put the name on a label, at least 85 per cent of the grapes must come from inside it. Unlike a French appellation, an AVA sets no rules about which varieties you plant or how you make the wine. It marks a place, not a recipe."}},{"@type":"Question","name":"What is the difference between Napa and Sonoma?","acceptedAnswer":{"@type":"Answer","text":"Napa Valley is small, narrow and warm, and it is overwhelmingly about Cabernet Sauvignon. Sonoma County is much bigger and far more varied. Parts of it sit close to the Pacific and get pulled cold by fog, which suits Pinot Noir and Chardonnay, while warmer inland valleys grow Zinfandel and Cabernet Sauvignon. Sonoma offers more styles; Napa offers more focus."}},{"@type":"Question","name":"Is white Zinfandel the same as Zinfandel?","acceptedAnswer":{"@type":"Answer","text":"Same grape, very different wine. Zinfandel is a full-bodied red, brambly and peppery, usually high in alcohol. White Zinfandel is a pale pink wine made by running the juice off the skins early, and it is typically made in a sweet, lower-alcohol style. If you have only ever met the pink version, a red Zinfandel will surprise you."}},{"@type":"Question","name":"Does the United States make good Riesling?","acceptedAnswer":{"@type":"Answer","text":"Yes, and mostly in places that look nothing like California. The Finger Lakes in New York State grow Riesling beside deep glacial lakes that soften brutal winters and stretch the autumn, giving wines with piercing acidity and lime and green apple flavours. Washington's Columbia Valley also grows a lot of Riesling, often in a rounder, riper style."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

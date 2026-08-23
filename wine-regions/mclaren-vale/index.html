@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does McLaren Vale wine taste?","acceptedAnswer":{"@type":"Answer","text":"McLaren Vale is famous for plush, full-bodied reds. Shiraz shows ripe blueberry and plum with dark chocolate and spice and a velvety texture, while Grenache is brighter, red-fruited and perfumed. Sea breezes keep both fresh rather than heavy."}},{"@type":"Question","name":"Which wineries is McLaren Vale known for?","acceptedAnswer":{"@type":"Answer","text":"Well-known McLaren Vale producers include d'Arenberg, Kay Brothers (the region's oldest family winery), Coriole, Wirra Wirra and SC Pannell. The region is a leader in old-vine Grenache and Rhone-style GSM blends."}},{"@type":"Question","name":"What is a GSM blend?","acceptedAnswer":{"@type":"Answer","text":"GSM stands for Grenache, Shiraz and Mourvedre, a blend modelled on the wines of France's southern Rhone Valley. It combines Grenache's perfume, Shiraz's body and Mourvedre's savoury grip, and is a McLaren Vale signature."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

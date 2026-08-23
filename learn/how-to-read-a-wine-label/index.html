@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Where do I find the grape on a wine label?","acceptedAnswer":{"@type":"Answer","text":"On New World wines (USA, Australia, Chile and similar) the grape is usually named on the front, like Merlot or Sauvignon Blanc. On Old World European wines it's often not printed at all — the region implies it. For example, Sancerre is Sauvignon Blanc and Chianti is mostly Sangiovese. A quick lookup fills in the blank."}},{"@type":"Question","name":"Does an older vintage mean a better wine?","acceptedAnswer":{"@type":"Answer","text":"Not usually. The vintage is just the harvest year, and most wines are made to be drunk young and fresh within a few years. Only a small share of wines are built to improve with age. So 'older' isn't automatically 'better' — for everyday bottles, younger is often exactly right."}},{"@type":"Question","name":"What does Reserva mean on a wine label?","acceptedAnswer":{"@type":"Answer","text":"Reserva (and Gran Reserva) are Spanish terms indicating the wine was aged longer before release, typically giving a smoother, more developed style. Italy uses the spelling Riserva for a similar idea. The exact ageing rules vary by country and region, so treat it as a helpful hint about style rather than a fixed quality score."}},{"@type":"Question","name":"What's the difference between DOC and DOCG?","acceptedAnswer":{"@type":"Answer","text":"Both are Italian labels certifying that a wine comes from a defined region and follows its rules. DOCG is the higher tier — the extra 'G' (garantita) adds tighter controls and guarantees. They tell you about origin and standards, not how much you'll personally enjoy the wine."}},{"@type":"Question","name":"Is a higher alcohol percentage better?","acceptedAnswer":{"@type":"Answer","text":"No, it's not about better or worse — it's about style. Higher ABV wines (around 14% and up) tend to feel fuller, richer and warmer, often from sunnier climates. Lower ABV wines feel lighter and crisper. Pick what suits your taste and the moment, and always enjoy responsibly as an adult of legal drinking age."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

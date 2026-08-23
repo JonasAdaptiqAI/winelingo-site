@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What wine goes with dark chocolate cake?","acceptedAnswer":{"@type":"Answer","text":"A sweet fortified red — Ruby or LBV Port, Banyuls, Maury, or Pedro Ximénez sherry. Each carries more sugar than the cake, which stops the pudding stripping the fruit out of the wine."}},{"@type":"Question","name":"Can you drink dry red wine with chocolate?","acceptedAnswer":{"@type":"Answer","text":"Not with a sweet chocolate pudding — the sugar on the plate strips a dry red of its fruit and leaves the tannin and acid standing there unaccompanied. A single square of very dark chocolate alongside a glass of red is a different proposition entirely, and works well."}},{"@type":"Question","name":"What is a cheaper alternative to Port with chocolate?","acceptedAnswer":{"@type":"Answer","text":"Banyuls and Maury from Roussillon are fortified Grenache wines built on the same principle and often cost less than an equivalent Port. A basic Ruby Port is also inexpensive and does the job perfectly well."}},{"@type":"Question","name":"What wine goes with milk chocolate?","acceptedAnswer":{"@type":"Answer","text":"Milk chocolate is the tougher assignment, because it is sweeter than dark — go up a rung to Tawny Port or Pedro Ximénez rather than a dry-leaning fortified red. Pitch the wine below the chocolate and it turns sharp."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How can I get better at tasting wine?","acceptedAnswer":{"@type":"Answer","text":"Taste two contrasting wines side by side and note the differences — body, acidity, tannin and sweetness become obvious with a comparison. Add a three-question note after each wine (Did I like it? Light or heavy? What did it remind me of?) and patterns appear within a dozen bottles."}},{"@type":"Question","name":"Why can't I taste the flavours other people describe in wine?","acceptedAnswer":{"@type":"Answer","text":"Because those notes are trained associations, not objective contents of the glass. Tasting “red fruit” where a critic writes “morello cherry” means you’re on the same road, just earlier. Serving temperature, glass shape and exhaling through your nose after a sip all noticeably sharpen what you detect."}},{"@type":"Question","name":"Do I need to spit when practising wine tasting?","acceptedAnswer":{"@type":"Answer","text":"Spitting is completely normal and what professionals do — it lets you stay sharp across several wines. At home, small pours with full attention teach far more than large glasses, and pouring leftovers away is a legitimate part of practice."}},{"@type":"Question","name":"How many wines should I compare at once?","acceptedAnswer":{"@type":"Answer","text":"Two is the sweet spot for learning — a clear contrast with no confusion. Three or four is a fun evening with friends, but beyond that your nose fatigues and the wines start blurring together."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

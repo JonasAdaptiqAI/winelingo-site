@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Abruzzo wine taste?","acceptedAnswer":{"@type":"Answer","text":"The red Montepulciano d'Abruzzo is juicy and full, with dark cherry and plum fruit, soft tannins and a warming, savoury edge. It's generous but stays fresh, which makes it very easy to drink. The whites are dry and zesty, and the Cerasuolo rosé tastes of crunchy red cherry."}},{"@type":"Question","name":"Which wineries is Abruzzo known for?","acceptedAnswer":{"@type":"Answer","text":"Some of the most respected names are Valentini and Emidio Pepe, both revered for traditional, age-worthy reds and whites, alongside Masciarelli, Cataldi Madonna and Tiberio. There are also excellent-value co-operative wines throughout the region."}},{"@type":"Question","name":"Is Montepulciano d'Abruzzo the same as Vino Nobile di Montepulciano?","acceptedAnswer":{"@type":"Answer","text":"No, and it's a common mix-up. Montepulciano d'Abruzzo is made from the Montepulciano grape in Abruzzo. Vino Nobile di Montepulciano is made mostly from Sangiovese in a Tuscan town that happens to be called Montepulciano. Different grape, different place."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

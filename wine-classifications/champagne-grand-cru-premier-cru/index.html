@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How many Grand Cru villages are there in Champagne?","acceptedAnswer":{"@type":"Answer","text":"Seventeen, all of them in the Marne. The Premier Cru tier below is usually given as 42 villages, though 44 is also published — the scale was a price agreement, not a tidy register."}},{"@type":"Question","name":"Does Grand Cru Champagne taste better?","acceptedAnswer":{"@type":"Answer","text":"Not reliably. The rating covers an entire village rather than a single vineyard, so it tells you nothing about the specific parcel or the grower. It is most meaningful for Chardonnay from the Côte des Blancs."}},{"@type":"Question","name":"Can a Champagne say Grand Cru if only some grapes qualify?","acceptedAnswer":{"@type":"Answer","text":"No. The term may only be used when 100% of the grapes come from Grand Cru villages. “Premier Cru” requires all the fruit to come from Premier Cru villages, or from a mix of Premier and Grand Cru."}},{"@type":"Question","name":"Is the échelle des crus still used?","acceptedAnswer":{"@type":"Answer","text":"Not as a pricing system. Grape prices are now negotiated directly between growers and houses, but the Grand Cru and Premier Cru village names created by the scale are still permitted on labels."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

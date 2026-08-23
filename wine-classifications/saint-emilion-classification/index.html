@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Saint-Émilion Grand Cru the same as Grand Cru Classé?","acceptedAnswer":{"@type":"Answer","text":"No. Saint-Émilion Grand Cru is an appellation with slightly stricter production rules. Grand Cru Classé is a rank in the classification, held by 71 estates in the 2022 list."}},{"@type":"Question","name":"Which châteaux are Premier Grand Cru Classé A?","acceptedAnswer":{"@type":"Answer","text":"Only two: Château Figeac and Château Pavie. Figeac was promoted in 2022; Pavie has held the rank since 2012."}},{"@type":"Question","name":"How often is the Saint-Émilion classification revised?","acceptedAnswer":{"@type":"Answer","text":"Every ten years. The 2022 edition was the seventh since the first list in 1955, which makes it the only major Bordeaux classification that regularly promotes and demotes."}},{"@type":"Question","name":"Why did Cheval Blanc and Ausone leave the classification?","acceptedAnswer":{"@type":"Answer","text":"Both withdrew in July 2021, with Angélus following in January 2022, arguing that the criteria had shifted too far towards reputation, promotion and wine tourism and away from the wine itself."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

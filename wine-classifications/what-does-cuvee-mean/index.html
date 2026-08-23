@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does cuvée mean the wine is better quality?","acceptedAnswer":{"@type":"Answer","text":"No. Cuvée simply means a blend or a batch, and it has no quality meaning in law. Producers use it freely at every price level."}},{"@type":"Question","name":"What does Grande Cuvée mean on Champagne?","acceptedAnswer":{"@type":"Answer","text":"Literally “great blend”. It usually signals a house's flagship bottling — Krug Grande Cuvée is the famous example — but the term is unregulated, so any producer can use it."}},{"@type":"Question","name":"What is a tête de cuvée?","acceptedAnswer":{"@type":"Answer","text":"Trade shorthand for a producer's very top wine, such as Dom Pérignon at Moët, or Cristal at Louis Roederer. The phrase itself rarely appears on the label."}},{"@type":"Question","name":"What is the difference between cuvée and taille in Champagne?","acceptedAnswer":{"@type":"Answer","text":"They are the two legal fractions of the press. From 4,000kg of grapes, the first 2,050 litres of juice are the cuvée and the next 500 the taille. Cuvée juice is finer and better balanced."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

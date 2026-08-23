@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Yarra Valley wine taste?","acceptedAnswer":{"@type":"Answer","text":"Cool, fresh and elegant. The Pinot Noir is fragrant and red-fruited with silky tannins and a savoury edge; the Chardonnay is refined, with citrus, stone fruit, a mineral core and restrained oak. Even the Shiraz is a cooler, peppery, medium-bodied style rather than big and jammy."}},{"@type":"Question","name":"Which wineries is Yarra Valley known for?","acceptedAnswer":{"@type":"Answer","text":"Classic estates include Yarra Yering and Mount Mary, alongside modern names like Giant Steps and Oakridge, plus Domaine Chandon, the Australian sparkling house owned by Champagne's Moët & Chandon."}},{"@type":"Question","name":"Is Yarra Valley good for sparkling wine?","acceptedAnswer":{"@type":"Answer","text":"Yes. Its cool climate makes it one of Australia's leading regions for traditional-method sparkling wine, made fizzy by a second fermentation inside the bottle, the same process used for Champagne, usually from Pinot Noir and Chardonnay."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">

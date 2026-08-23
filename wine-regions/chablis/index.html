@@ -41,6 +41,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Chablis wine taste?","acceptedAnswer":{"@type":"Answer","text":"Bone-dry and crisp, with green apple, lemon and pear fruit, a stony, flinty minerality and sometimes a salty tang, all on bright acidity. It is unoaked, so it avoids the buttery, vanilla notes of many warm-climate Chardonnays."}},{"@type":"Question","name":"Which producers is Chablis known for?","acceptedAnswer":{"@type":"Answer","text":"Respected names include Domaine Raveneau, Domaine Vincent Dauvissat, William Fèvre, Louis Michel & Fils and the cooperative La Chablisienne."}},{"@type":"Question","name":"Is Chablis always made from Chardonnay?","acceptedAnswer":{"@type":"Answer","text":"Yes. Chablis is 100% Chardonnay. What changes is the vineyard quality, shown by the four tiers: Petit Chablis, Chablis, Chablis Premier Cru and Chablis Grand Cru."}}]}
 </script>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+},true);
+</script>
+<!-- /growth:analytics -->
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">
