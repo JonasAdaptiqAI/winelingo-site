@@ -79,7 +79,7 @@ document.addEventListener('click',function(e){
   <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Privacy Policy</span></nav>
   <p class="eyebrow">Legal</p>
   <h1>Privacy Policy</h1>
-  <p class="deck">Winelingo · Last updated: 21 July 2026</p>
+  <p class="deck">Winelingo · Last updated: 24 August 2026</p>
 </div></section>
 
 <article class="prose legal">
@@ -93,11 +93,12 @@ builds a private taste profile from the wines you rate. The data controller is
 <div class="table-wrap"><table>
   <tr><th>Data</th><th>Why</th></tr>
   <tr><td>Account email (and password, stored hashed by our auth provider)</td><td>To create and secure your account.</td></tr>
-  <tr><td>Photos of wine labels and wine lists you scan</td><td>Sent to our AI provider to identify the wine and read the list. Processed transiently to return a result; we do not build an advertising profile from them.</td></tr>
+  <tr><td>Photos of wine labels and wine lists you scan</td><td>Sent to our AI provider to identify the wine and read the list; we do not build an advertising profile from them. Wine-list photos are processed transiently. When you save a tasting, the label photo is stored privately with that journal entry so you can recognise the bottle later — only you can open it.</td></tr>
   <tr><td>Your tastings — ratings, aroma/taste notes, free-text notes, and the resulting taste (“palate”) profile</td><td>The core feature: to show your history and personalise recommendations.</td></tr>
   <tr><td>Declared preferences (e.g. body/sweetness leanings) you optionally enter</td><td>To personalise recommendations before you have rated many wines.</td></tr>
   <tr><td>Learning activity (lessons completed, streak, language)</td><td>To run the daily-learning features and show progress.</td></tr>
   <tr><td>Basic product-analytics events, keyed to your account identifier</td><td>To understand usage and improve the app.</td></tr>
+  <tr><td>A device notification token, only if you allow notifications</td><td>To send the reminders you opted into (for example, that your learning streak is about to end). Turning notifications off in iOS Settings stops them.</td></tr>
 </table></div>
 <p>We do <strong>not</strong> knowingly collect special-category data, and we do not sell your personal data.</p>
 
@@ -108,6 +109,7 @@ builds a private taste profile from the wines you rate. The data controller is
   <tr><td>Supabase</td><td>Backend, database and authentication (data hosting).</td></tr>
   <tr><td>Anthropic</td><td>AI vision + text: reads your scanned photos and writes the tasting explanations. Photos are sent for processing to return your result.</td></tr>
   <tr><td>PostHog</td><td>Privacy-focused product analytics.</td></tr>
+  <tr><td>Expo</td><td>Delivers push notifications to your device, if you allow them.</td></tr>
 </table></div>
 <p>Some processors operate outside the EEA; where they do, transfers are covered by appropriate safeguards
 (e.g. Standard Contractual Clauses).</p>
@@ -118,9 +120,10 @@ builds a private taste profile from the wines you rate. The data controller is
 our <strong>legitimate interests</strong> (securing and improving the service).</p>
 
 <h2>4. Retention</h2>
-<p>We keep your account data for as long as your account exists. Scanned photos are processed to produce a
-result and are not retained by us as a long-term gallery. When you delete your account, your profile,
-journal, palate and scan history are deleted.</p>
+<p>We keep your account data for as long as your account exists. A label photo attached to a saved tasting is
+kept privately with that journal entry until you delete the entry or your account; photos scanned without
+saving a tasting, and wine-list photos, are processed to produce a result and are not kept. When you delete
+your account, your profile, journal, palate, scan history and stored label photos are deleted.</p>
 
 <h2>5. Your rights</h2>
 <p>You can access, correct, export or delete your data. You can <strong>delete your account and all its data
