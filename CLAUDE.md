@@ -18,10 +18,22 @@ Everything is hand-written static HTML/CSS/JS.
 - The `.app` TLD is HTTPS-only — nothing may depend on plain HTTP.
 
 ## Honesty rules for all copy (the site must match the shipped app)
-- The launch version is **FREE, no in-app purchases**. Do NOT advertise subscriptions,
-  pricing, a "Pro" tier, or push notifications as live features (those are planned for v1.1).
-- The app isn't approved yet — use **"Coming soon to the App Store"** framing, not a live
-  download link. Swap in the real App Store badge (and link) only once it's approved.
+- **The app is LIVE.** It shipped 2026-08-17 (id 6785896824) and 1.0.1 followed on
+  2026-08-29. Link to the App Store; the "Coming soon" framing this file used to mandate
+  is dead. Do not reintroduce it.
+- **Never write "no in-app purchases".** 300-odd static pages still carry that line and
+  it goes false the moment Premium is on sale — a claim baked into static HTML is
+  expensive to retract. The wording that is true either side of that release, and what
+  the newest pairing pages use, is **"Free to download, with Premium for unlimited
+  scans."** `growth/paywall-copy.mjs` in the Wine App repo sweeps the older pages.
+- **Check the release state before writing about pricing; do not assume it from this
+  file.** `node growth/pulse.mjs` reports the live App Store version, and the legal pages
+  in this repo are updated when Premium ships. As of 2026-09-01 the store showed 1.0.1,
+  free, with no Premium in the listing description, while `main` carried a commit saying
+  Premium is live — so the two were not in step. Verify, do not infer.
+- ⚠️ A claim frozen into static HTML has to be true at the far end of the roadmap, not
+  just today. That is the lesson these two bullets encode; it cost a near-miss on the
+  carousels to learn.
 - Include a **17+ / drink responsibly** line. Legal entity/contact: **Jonas Egeskov, Denmark**,
   jonsegeskov29@gmail.com.
 
