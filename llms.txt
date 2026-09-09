@@ -1,26 +1,39 @@
 # Winelingo — learn wine, plainly
 
 > Winelingo (winelingo.app) is a wine-education site and companion to the Winelingo iPhone app
-> (a free app that scans wine labels and restaurant wine lists and explains each wine in plain
+> (an app that scans wine labels and restaurant wine lists and explains each wine in plain
 > English — body, tannin, acidity, sweetness and oak). All content is written for beginners in
-> plain language, fact-checked, and free. For adults of legal drinking age; enjoy wine responsibly.
+> plain language, fact-checked, and free to read. Free to download, with Premium for unlimited
+> scans. For adults of legal drinking age; enjoy wine responsibly. Written and edited by
+> Jonas Egeskov (https://winelingo.app/about/).
 
-## Guides
-- [Wine for beginners](https://winelingo.app/learn/wine-for-beginners/)
-- [How to taste wine](https://winelingo.app/learn/how-to-taste-wine/)
-- [How to practise wine tasting at home](https://winelingo.app/learn/how-to-practise-wine-tasting-at-home/)
-- [How to read a wine label](https://winelingo.app/learn/how-to-read-a-wine-label/)
-- [How to order wine at a restaurant](https://winelingo.app/learn/how-to-order-wine-at-a-restaurant/)
-- [Wine sweetness chart](https://winelingo.app/learn/wine-sweetness-chart/)
-- [How long does open wine last?](https://winelingo.app/learn/how-long-does-open-wine-last/)
-- [Understanding a wine's taste profile](https://winelingo.app/learn/understanding-your-wine-taste-profile/)
+## Guides (19)
+- [Alternatives to Red Burgundy: Six Cheaper Bottles Worth Buying](https://winelingo.app/learn/alternatives-to-red-burgundy/)
+- [French vs American Oak: What Each One Does to Wine](https://winelingo.app/learn/french-vs-american-oak/)
+- [How Long Does Open Wine Last?](https://winelingo.app/learn/how-long-does-open-wine-last/)
+- [How Many Units Are in a Bottle of Wine?](https://winelingo.app/learn/how-many-units-in-a-bottle-of-wine/)
+- [How to Order Wine at a Restaurant (Without the Panic)](https://winelingo.app/learn/how-to-order-wine-at-a-restaurant/)
+- [How to Practise Wine Tasting at Home](https://winelingo.app/learn/how-to-practise-wine-tasting-at-home/)
+- [How to Read a Wine Label](https://winelingo.app/learn/how-to-read-a-wine-label/)
+- [How to Taste Wine: The 5 S’s (See, Swirl, Sniff, Sip, Savour)](https://winelingo.app/learn/how-to-taste-wine/)
+- [How Wine Is Made, From Vine to Bottle](https://winelingo.app/learn/how-wine-is-made/)
+- [Sancerre vs Pouilly-Fumé](https://winelingo.app/learn/sancerre-vs-pouilly-fume/)
+- [Types of Wine: The Complete Plain-English Guide](https://winelingo.app/learn/types-of-wine/)
+- [Understanding a Wine’s Taste Profile: Body, Tannin, Acidity, Sweetness, Alcohol & Oak](https://winelingo.app/learn/understanding-your-wine-taste-profile/)
+- [What Are Tannins in Wine?](https://winelingo.app/learn/what-are-tannins-in-wine/)
+- [Wine Alcohol Content: ABV by Wine Type](https://winelingo.app/learn/wine-alcohol-content/)
+- [Is My Wine Corked? How to Spot a Faulty Bottle](https://winelingo.app/learn/wine-faults/)
+- [Wine for Beginners: Where to Start](https://winelingo.app/learn/wine-for-beginners/)
+- [Six wine myths, and what the evidence actually says](https://winelingo.app/learn/wine-myths/)
+- [What Temperature Should Wine Be Stored At?](https://winelingo.app/learn/wine-storage-temperature/)
+- [The Wine Sweetness Chart: Every Style from Dry to Sweet](https://winelingo.app/learn/wine-sweetness-chart/)
 
 ## Reference
 - [74 grape variety profiles](https://winelingo.app/grape-varieties/)
 - [82 wine region guides](https://winelingo.app/wine-regions/)
 - [15 wine country overviews](https://winelingo.app/countries/)
 - [45 wine style guides](https://winelingo.app/wine-styles/)
-- [Food and wine pairing (32 pairings)](https://winelingo.app/food-and-wine-pairing/)
+- [Food and wine pairing (131 pairings)](https://winelingo.app/food-and-wine-pairing/)
 - [Wine classifications explained (13 systems)](https://winelingo.app/wine-classifications/)
 - [Wine glossary (66 terms)](https://winelingo.app/wine-glossary/)
 
@@ -29,5 +42,5 @@
 - [Wine calories calculator](https://winelingo.app/tools/wine-calories/)
 
 ## About
-- [About Winelingo](https://winelingo.app/about/)
+- [About Winelingo and Jonas Egeskov](https://winelingo.app/about/)
 - [Support](https://winelingo.app/support/)
