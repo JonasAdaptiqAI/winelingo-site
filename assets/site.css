@@ -382,3 +382,13 @@ a.pairpill:hover{border-color:rgba(123,30,59,.35); color:var(--wine); text-decor
   display:flex; align-items:center; justify-content:center}
 .fivethings li strong{color:var(--wine-deep)}
 @media (max-width:560px){ .fivethings{padding:22px 20px 18px} .fivethings li{font-size:15.5px; padding-left:34px} }
+
+/* Author byline under page decks */
+.byline{margin-top:14px; font-size:14px; color:var(--muted)}
+.byline a{color:var(--wine); text-decoration:none; border-bottom:1px solid var(--line)}
+.byline a:hover{border-bottom-color:var(--wine)}
+/* Hub grid heading (keeps h1 -> h2 -> h3 order) */
+.hub-h2{max-width:var(--maxw); margin:0 auto 22px; padding:0 24px; font-size:clamp(22px,2.6vw,28px); color:var(--wine-deep)}
+
+/* Region/style cross-reference line */
+.xref{font-size:15px; color:var(--muted); margin:-6px 0 22px}

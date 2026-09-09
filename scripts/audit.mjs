@@ -1,0 +1,101 @@
+// Static-site SEO audit for winelingo-site
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url"; const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const SITE = "https://winelingo.app";
+const files = [];
+(function walk(d) {
+  for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+    if (e.name === ".git" || e.name === "assets" || e.name === "scripts") continue;
+    const p = path.join(d, e.name);
+    if (e.isDirectory()) walk(p);
+    else if (e.name.endsWith(".html")) files.push(p);
+  }
+})(ROOT);
+const rel = (f) => "/" + path.relative(ROOT, f).replace(/index\.html$/, "").replace(/\\/g, "/");
+const urlOf = (f) => SITE + rel(f);
+const pages = new Map();
+const attr = (tag, name) => { const m = tag.match(new RegExp(`\\s${name}\\s*=\\s*("([^"]*)"|'([^']*)'|([^\\s>]+))`, "i")); return m ? (m[2] ?? m[3] ?? m[4]) : null; };
+for (const f of files) {
+  const html = fs.readFileSync(f, "utf8");
+  const decodeE = (x) => x == null ? x : x.replace(/&amp;/g, "&").replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&nbsp;/g, " ");
+  const title = decodeE((html.match(/<title[^>]*>([\s\S]*?)<\/title>/i) || [])[1]?.trim() ?? null);
+  const descTag = (html.match(/<meta[^>]+name=["']description["'][^>]*>/i) || [])[0];
+  const desc = decodeE(descTag ? attr(descTag, "content") : null);
+  const canon = (html.match(/<link[^>]+rel=["']canonical["'][^>]*>/i) || [])[0];
+  const canonical = canon ? attr(canon, "href") : null;
+  const h1s = [...html.matchAll(/<h1[^>]*>([\s\S]*?)<\/h1>/gi)].map(m => m[1].replace(/<[^>]+>/g, "").trim());
+  const imgs = [...html.matchAll(/<img\b[^>]*>/gi)].map(m => m[0]);
+  const imgsNoAlt = imgs.filter(t => attr(t, "alt") === null);
+  const imgsEmptyAlt = imgs.filter(t => attr(t, "alt") === "");
+  const imgsNoDims = imgs.filter(t => !attr(t, "width") || !attr(t, "height"));
+  const imgsNoLazy = imgs.filter(t => !attr(t, "loading"));
+  const links = [...html.matchAll(/<a\b[^>]*>/gi)].map(m => attr(m[0], "href")).filter(Boolean);
+  const internal = links.filter(h => h.startsWith("/") || h.startsWith(SITE)).map(h => h.replace(SITE, "").split("#")[0].split("?")[0]).filter(h => h);
+  const ld = [...html.matchAll(/<script[^>]+application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)].map(m => m[1]);
+  const types = []; let ldErr = 0;
+  for (const s of ld) { try { const j = JSON.parse(s); const walkT = (o) => { if (Array.isArray(o)) o.forEach(walkT); else if (o && typeof o === "object") { if (o["@type"]) types.push(String(o["@type"])); Object.values(o).forEach(walkT); } }; walkT(j); } catch { ldErr++; } }
+  const robotsTag = (html.match(/<meta[^>]+name=["']robots["'][^>]*>/i) || [])[0];
+  const robots = robotsTag ? attr(robotsTag, "content") : null;
+  const hreflang = [...html.matchAll(/<link[^>]+hreflang=["']([^"']+)["'][^>]*>/gi)].map(m => m[1]);
+  const words = html.replace(/<script[\s\S]*?<\/script>/gi, "").replace(/<style[\s\S]*?<\/style>/gi, "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().split(" ").length;
+  const viewport = /<meta[^>]+name=["']viewport["']/i.test(html);
+  const author = /rel=["']author["']|"@type":\s*"Person"|class=["'][^"']*author/i.test(html);
+  const dateMod = /dateModified/.test(html);
+  const noIAP = /no in-app purchases/i.test(html);
+  const comingSoon = /coming soon/i.test(html);
+  const hTags = [...html.matchAll(/<h([1-6])[^>]*>/gi)].map(m => +m[1]);
+  let skips = 0; for (let i = 1; i < hTags.length; i++) if (hTags[i] > hTags[i-1] + 1) skips++;
+  pages.set(rel(f), { file: f, title, tlen: title?.length ?? 0, desc, dlen: desc?.length ?? 0, canonical, h1s, imgs: imgs.length, imgsNoAlt: imgsNoAlt.length, imgsEmptyAlt: imgsEmptyAlt.length, imgsNoDims: imgsNoDims.length, imgsNoLazy: imgsNoLazy.length, internal, types, ldErr, robots, hreflang, words, viewport, author, dateMod, noIAP, comingSoon, skips });
+}
+const sitemap = fs.readFileSync(path.join(ROOT, "sitemap.xml"), "utf8");
+const smUrls = new Set([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1].replace(SITE, "")));
+const norm = (p) => p.endsWith("/") || p.includes(".") ? p : p + "/";
+const existing = new Set([...pages.keys()].map(norm));
+// inbound link graph
+const inbound = new Map([...pages.keys()].map(k => [norm(k), new Set()]));
+const broken = [];
+for (const [p, d] of pages) for (const h of d.internal) { const t = norm(h); if (existing.has(t)) { if (t !== norm(p)) inbound.get(t).add(p); } else if (!fs.existsSync(path.join(ROOT, h.replace(/^\//, "")))) broken.push([p, h]); }
+const out = {};
+out.totalPages = pages.size;
+out.notInSitemap = [...pages.keys()].map(norm).filter(p => !smUrls.has(p));
+out.sitemapWithoutFile = [...smUrls].filter(u => !existing.has(norm(u)));
+out.orphans = [...inbound].filter(([, s]) => s.size === 0).map(([p]) => p);
+out.weaklyLinked = [...inbound].filter(([, s]) => s.size > 0 && s.size <= 2).map(([p, s]) => [p, s.size]);
+out.brokenInternalLinks = broken;
+out.missingTitle = [...pages].filter(([, d]) => !d.title).map(([p]) => p);
+out.titleTooLong = [...pages].filter(([, d]) => d.tlen > 60).map(([p, d]) => [p, d.tlen, d.title]);
+out.titleTooShort = [...pages].filter(([, d]) => d.tlen && d.tlen < 30).map(([p, d]) => [p, d.tlen, d.title]);
+out.missingDesc = [...pages].filter(([, d]) => !d.desc).map(([p]) => p);
+out.descTooLong = [...pages].filter(([, d]) => d.dlen > 160).map(([p, d]) => [p, d.dlen]);
+out.descTooShort = [...pages].filter(([, d]) => d.dlen && d.dlen < 70).map(([p, d]) => [p, d.dlen]);
+const dupBy = (key) => { const m = new Map(); for (const [p, d] of pages) { const v = d[key]; if (!v) continue; if (!m.has(v)) m.set(v, []); m.get(v).push(p); } return [...m].filter(([, ps]) => ps.length > 1); };
+out.duplicateTitles = dupBy("title"); out.duplicateDescs = dupBy("desc");
+out.dupH1 = (() => { const m = new Map(); for (const [p, d] of pages) { const v = d.h1s[0]; if (!v) continue; if (!m.has(v)) m.set(v, []); m.get(v).push(p); } return [...m].filter(([, ps]) => ps.length > 1); })();
+out.noH1 = [...pages].filter(([, d]) => d.h1s.length === 0).map(([p]) => p);
+out.multiH1 = [...pages].filter(([, d]) => d.h1s.length > 1).map(([p, d]) => [p, d.h1s]);
+out.headingSkips = [...pages].filter(([, d]) => d.skips > 0).map(([p, d]) => [p, d.skips]);
+out.missingCanonical = [...pages].filter(([, d]) => !d.canonical).map(([p]) => p);
+out.canonicalMismatch = [...pages].filter(([p, d]) => d.canonical && d.canonical !== SITE + norm(p)).map(([p, d]) => [p, d.canonical]);
+out.noJsonLd = [...pages].filter(([, d]) => d.types.length === 0).map(([p]) => p);
+out.jsonLdErrors = [...pages].filter(([, d]) => d.ldErr).map(([p, d]) => [p, d.ldErr]);
+out.noBreadcrumb = [...pages].filter(([, d]) => !d.types.includes("BreadcrumbList")).map(([p]) => p);
+out.noPersonSchema = [...pages].filter(([, d]) => !d.types.includes("Person")).length;
+out.noAuthorSignal = [...pages].filter(([, d]) => !d.author).length;
+out.noDateModified = [...pages].filter(([, d]) => !d.dateMod).length;
+out.imgNoAlt = [...pages].filter(([, d]) => d.imgsNoAlt).map(([p, d]) => [p, d.imgsNoAlt]);
+out.imgNoDims = [...pages].reduce((a, [, d]) => a + d.imgsNoDims, 0);
+out.imgNoLazy = [...pages].reduce((a, [, d]) => a + d.imgsNoLazy, 0);
+out.imgTotal = [...pages].reduce((a, [, d]) => a + d.imgs, 0);
+out.noindex = [...pages].filter(([, d]) => d.robots && /noindex/i.test(d.robots)).map(([p]) => p);
+out.noViewport = [...pages].filter(([, d]) => !d.viewport).map(([p]) => p);
+out.noHreflang = [...pages].filter(([, d]) => d.hreflang.length === 0).map(([p]) => p);
+out.thin = [...pages].filter(([, d]) => d.words < 300).map(([p, d]) => [p, d.words]).sort((a, b) => a[1] - b[1]);
+out.noIAPClaim = [...pages].filter(([, d]) => d.noIAP).map(([p]) => p);
+out.comingSoon = [...pages].filter(([, d]) => d.comingSoon).map(([p]) => p);
+out.wordStats = (() => { const w = [...pages.values()].map(d => d.words).sort((a, b) => a - b); return { min: w[0], median: w[Math.floor(w.length / 2)], max: w[w.length - 1] }; })();
+out.inboundStats = (() => { const c = [...inbound.values()].map(s => s.size).sort((a, b) => a - b); return { min: c[0], median: c[Math.floor(c.length / 2)], max: c[c.length - 1] }; })();
+out.tlenDist = (() => { const t = [...pages.values()].map(d => d.tlen); return { under30: t.filter(x => x < 30).length, r30_50: t.filter(x => x >= 30 && x < 50).length, r50_60: t.filter(x => x >= 50 && x <= 60).length, r61_70: t.filter(x => x > 60 && x <= 70).length, over70: t.filter(x => x > 70).length }; })();
+out.dlenDist = (() => { const t = [...pages.values()].map(d => d.dlen); return { under70: t.filter(x => x < 70).length, r70_120: t.filter(x => x >= 70 && x < 120).length, r120_160: t.filter(x => x >= 120 && x <= 160).length, over160: t.filter(x => x > 160).length }; })();
+const trunc = (o, n = 40) => Object.fromEntries(Object.entries(o).map(([k, v]) => [k, Array.isArray(v) && v.length > n ? [...v.slice(0, n), `...(${v.length} total)`] : v]));
+console.log(JSON.stringify(trunc(out), null, 1));
