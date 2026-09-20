@@ -3,7 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const SKIP = new Set(["food-and-wine-pairing/duck-breast/index.html", "google920805b1a6e2b562.html", "404.html"]);
+const SKIP = new Set(["food-and-wine-pairing/duck-breast/index.html", "learn/how-many-units-are-in-a-bottle-of-wine/index.html", "google920805b1a6e2b562.html", "404.html"]);
 const files = [];
 (function walk(d) { for (const e of fs.readdirSync(d, { withFileTypes: true })) { if ([".git", "assets", "scripts"].includes(e.name)) continue; const p = path.join(d, e.name); if (e.isDirectory()) walk(p); else if (e.name.endsWith(".html")) files.push(p); } })(ROOT);
 const rel = (f) => path.relative(ROOT, f);
@@ -28,7 +28,7 @@ const relatedFor = (slug) => { const me = pairingInfo.get(slug); return [...pair
 // ---- sibling links for learn/ and wine-classifications/ articles ------------
 const SIBLING_DIRS = ["learn", "wine-classifications"];
 const siblingsOf = new Map();
-for (const dir of SIBLING_DIRS) { const slugs = files.filter((f) => rel(f).startsWith(dir + "/") && rel(f).split("/").length === 3).map((f) => rel(f).split("/")[1]).sort(); slugs.forEach((slug, i) => siblingsOf.set(`${dir}/${slug}`, Array.from({ length: Math.min(5, slugs.length - 1) }, (_, k) => slugs[(i + 1 + k) % slugs.length]))); }
+for (const dir of SIBLING_DIRS) { const slugs = files.filter((f) => rel(f).startsWith(dir + "/") && rel(f).split("/").length === 3 && !SKIP.has(rel(f))).map((f) => rel(f).split("/")[1]).sort(); slugs.forEach((slug, i) => siblingsOf.set(`${dir}/${slug}`, Array.from({ length: Math.min(5, slugs.length - 1) }, (_, k) => slugs[(i + 1 + k) % slugs.length]))); }
 
 const counts = { footer: 0, logo: 0, fonts: 0, author: 0, byline: 0, picture: 0, srcset: 0, title: 0, ogSync: 0, h2: 0, related: 0, desc: 0, siblings: 0 };
 const countDir = (d) => fs.readdirSync(path.join(ROOT, d), { withFileTypes: true }).filter((e) => e.isDirectory()).length;
