@@ -305,6 +305,13 @@
   .lang-chip{display:inline-flex; align-items:center; gap:9px; background:var(--paper-raised); border:1px solid var(--line); border-radius:var(--r-pill); padding:11px 18px; font-weight:600; font-size:15px; color:var(--wine-deep); box-shadow:var(--shadow-sm)}
   .lang-chip small{color:var(--muted); font-weight:500; font-size:12.5px}
   .lang-toasts{display:flex; gap:14px; flex-wrap:wrap}
+  /* Popular pairings + guides (striking-distance pages get homepage links) */
+  .popular{margin:34px 24px 0; padding:26px 28px 24px; background:var(--paper-raised); border:1px solid var(--line); border-radius:var(--r-card); box-shadow:var(--shadow-sm)}
+  .popular h3{font-size:23px; color:var(--wine-deep); margin-bottom:8px}
+  .popular > p{color:var(--sec); font-size:16px; max-width:60ch}
+  .popular .plabel{font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin:18px 0 10px}
+  .popular .pairpill{font-weight:500}
+  @media (max-width:560px){ .popular{margin:26px 0 0; padding:22px 20px 20px} }
   .toast{background:var(--paper-raised); border:1px solid var(--line); border-radius:14px; box-shadow:var(--shadow-sm); padding:16px 24px; text-align:center; min-width:118px}
   .toast .cheers{display:block; font-family:var(--font-display); font-weight:600; font-style:italic; font-size:25px; color:var(--wine)}
   .toast small{display:block; margin-top:5px; color:var(--muted); font-size:12px; letter-spacing:.05em; text-transform:uppercase}
@@ -693,6 +700,29 @@ document.addEventListener('click',function(e){
         <div class="thumb"><picture><source type="image/webp" srcset="/assets/photos/grapes-purple-800.webp"><img src="/assets/photos/grapes-purple.jpg" alt="" loading="lazy"></picture></div>
         <div class="body"><h3>Wine glossary</h3><p>45 wine words — tannin, terroir, cuvée and more — defined in plain English.</p><div class="go">Browse the glossary →</div></div>
       </a>
+    </div>
+    <div class="popular reveal" id="popular">
+      <h3>Popular pairings and guides</h3>
+      <p>The questions readers bring us most often — each answered with a bottle you can actually find, and the reason it works.</p>
+      <p class="plabel">Pairings</p>
+      <div class="pairwrap">
+        <a class="pairpill" href="/food-and-wine-pairing/bruschetta/">Wine with bruschetta</a>
+        <a class="pairpill" href="/food-and-wine-pairing/pasta-alla-vodka/">Wine with penne alla vodka</a>
+        <a class="pairpill" href="/food-and-wine-pairing/goulash/">Wine with goulash</a>
+        <a class="pairpill" href="/food-and-wine-pairing/halibut/">Wine with halibut</a>
+        <a class="pairpill" href="/food-and-wine-pairing/leek-and-potato-soup/">Wine with leek and potato soup</a>
+        <a class="pairpill" href="/food-and-wine-pairing/lentil-stew/">Wine with lentil stew</a>
+        <a class="pairpill" href="/food-and-wine-pairing/shakshuka/">Wine with shakshuka</a>
+        <a class="pairpill" href="/food-and-wine-pairing/lobster-and-crab/">Wine with lobster and crab</a>
+        <a class="pairpill" href="/food-and-wine-pairing/fruit-tart/">Wine with a fruit tart</a>
+        <a class="pairpill" href="/food-and-wine-pairing/quail/">Wine with quail</a>
+      </div>
+      <p class="plabel">Guides</p>
+      <div class="pairwrap">
+        <a class="pairpill" href="/wine-classifications/brunello-vs-rosso-di-montalcino/">Brunello vs Rosso di Montalcino</a>
+        <a class="pairpill" href="/wine-classifications/kabinett-spatlese-auslese/">Kabinett, Spätlese, Auslese</a>
+        <a class="pairpill" href="/learn/alternatives-to-red-burgundy/">Alternatives to red Burgundy</a>
+      </div>
     </div>
   </div>
 </section>
