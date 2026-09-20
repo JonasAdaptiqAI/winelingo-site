@@ -392,3 +392,13 @@ a.pairpill:hover{border-color:rgba(123,30,59,.35); color:var(--wine); text-decor
 
 /* Region/style cross-reference line */
 .xref{font-size:15px; color:var(--muted); margin:-6px 0 22px}
+
+/* ---------- Schematic maps (region pages) ---------- */
+/* The SVG keeps a 600px minimum width so its labels stay legible on phones; the
+   wrapper scrolls sideways like .table-wrap does for wide tables. */
+.map-fig{margin:22px 0 28px; padding:0}
+.map-wrap{overflow-x:auto; border:1px solid var(--line); border-radius:14px; background:var(--paper-raised); box-shadow:var(--shadow-sm)}
+.map-wrap svg{display:block; width:100%; min-width:600px; height:auto}
+.map-fig figcaption{margin-top:10px; font-size:13.5px; color:var(--muted)}
+.map-fig .swipe{display:none}
+@media (max-width:647px){ .map-fig .swipe{display:inline} }
