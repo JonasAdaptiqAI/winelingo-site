@@ -86,7 +86,8 @@ for (const [slug, name] of Object.entries(NAMES)) {
 { const dec = (x) => x.replace(/&amp;/g, "&").replace(/&#39;/g, "'").replace(/’/g, "’");
   const dirs = (d) => fs.readdirSync(path.join(ROOT, d), { withFileTypes: true }).filter((e) => e.isDirectory()).map((e) => e.name).sort();
   const titleOf = (p) => dec((read(p).match(/<h1[^>]*>([^<]*)<\/h1>/) || [])[1] ?? p);
-  const guides = dirs("learn").map((d) => `- [${titleOf(`learn/${d}/index.html`)}](https://winelingo.app/learn/${d}/)`).join("\n");
+  const learnDirs = dirs("learn").filter((d) => d !== "how-many-units-are-in-a-bottle-of-wine"); // redirect stub, not a guide
+  const guides = learnDirs.map((d) => `- [${titleOf(`learn/${d}/index.html`)}](https://winelingo.app/learn/${d}/)`).join("\n");
   const terms = (read("wine-glossary/index.html").match(/"@type":"DefinedTerm"/g) || []).length; const glossaryCount = terms || dirs("wine-glossary").length;
   const pairings = dirs("food-and-wine-pairing").filter((d) => d !== "duck-breast").length;
   const txt = `# Winelingo — learn wine, plainly
@@ -98,7 +99,7 @@ for (const [slug, name] of Object.entries(NAMES)) {
 > scans. For adults of legal drinking age; enjoy wine responsibly. Written and edited by
 > Jonas Egeskov (https://winelingo.app/about/).
 
-## Guides (${dirs("learn").length})
+## Guides (${learnDirs.length})
 ${guides}
 
 ## Reference
@@ -118,5 +119,5 @@ ${guides}
 - [About Winelingo and Jonas Egeskov](https://winelingo.app/about/)
 - [Support](https://winelingo.app/support/)
 `;
-  write("llms.txt", txt); log.push(`llms.txt regenerated (${dirs("learn").length} guides, ${pairings} pairings, ${glossaryCount} glossary terms)`); }
+  write("llms.txt", txt); log.push(`llms.txt regenerated (${learnDirs.length} guides, ${pairings} pairings, ${glossaryCount} glossary terms)`); }
 console.log(log.join("\n"));
