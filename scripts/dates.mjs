@@ -8,10 +8,11 @@ const ROOT = path.resolve(import.meta.dirname, "..");
 const SITE = "https://winelingo.app";
 const sh = (c) => execSync(c, { cwd: ROOT, encoding: "utf8" });
 // Classify commits once.
-const commits = sh(`git log --format=%H%x09%cs%x09%P`).trim().split("\n").map((l) => { const [h, d, p] = l.split("\t"); return { h, d, merge: (p ?? "").trim().split(" ").filter(Boolean).length > 1 }; });
+const commits = sh(`git log --format=%H%x09%cs%x09%P%x09%s`).trim().split("\n").map((l) => { const [h, d, p, subj] = l.split("\t"); return { h, d, merge: (p ?? "").trim().split(" ").filter(Boolean).length > 1, own: /^dates:/.test(subj ?? "") }; });
 const sweep = new Set();
 for (const c of commits) {
-  if (c.merge) { sweep.add(c.h); continue; }
+  // A "dates:" commit only rewrites dates; counting it as an edit would bump every page it touched on the next run.
+  if (c.merge || c.own) { sweep.add(c.h); continue; }
   const n = sh(`git show --stat=200 --format= ${c.h}`).split("\n").filter((l) => /index\.html/.test(l)).length;
   if (n > 100) sweep.add(c.h);
 }
