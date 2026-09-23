@@ -3,7 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const SKIP = new Set(["food-and-wine-pairing/duck-breast/index.html", "learn/how-many-units-are-in-a-bottle-of-wine/index.html", "google920805b1a6e2b562.html", "404.html"]);
+const SKIP = new Set(["food-and-wine-pairing/duck-breast/index.html", "learn/how-many-units-are-in-a-bottle-of-wine/index.html", "google920805b1a6e2b562.html", "404.html", "food-and-wine-pairing/gulasch/index.html", "wine-regions/beaujolais/index.html", "wine-regions/chablis/index.html", "wine-regions/champagne/index.html", "wine-regions/chateauneuf-du-pape/index.html", "wine-regions/ribera-del-duero/index.html", "wine-regions/rioja/index.html", "wine-regions/sancerre/index.html", "wine-regions/sauternes/index.html", "wine-styles/gruner-veltliner/index.html", "wine-styles/oloroso/index.html", "wine-styles/pinot-grigio/index.html"]);
 const files = [];
 (function walk(d) { for (const e of fs.readdirSync(d, { withFileTypes: true })) { if ([".git", "assets", "scripts"].includes(e.name)) continue; const p = path.join(d, e.name); if (e.isDirectory()) walk(p); else if (e.name.endsWith(".html")) files.push(p); } })(ROOT);
 const rel = (f) => path.relative(ROOT, f);
