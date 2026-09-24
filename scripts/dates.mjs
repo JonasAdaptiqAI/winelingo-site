@@ -31,7 +31,14 @@ sm = sm.replace(/<url><loc>([^<]+)<\/loc><lastmod>([^<]+)<\/lastmod><\/url>/g, (
 fs.writeFileSync(path.join(ROOT, "sitemap.xml"), sm);
 // dateModified forward only
 let bumped = 0;
-for (const f of files) { const rel = "/" + path.relative(ROOT, f).replace(/index\.html$/, ""); const d = dates.get(rel); if (!d) continue; let html = fs.readFileSync(f, "utf8"); const next = html.replace(/"dateModified":"(\d{4}-\d{2}-\d{2})"/g, (m, old) => (d > old ? `"dateModified":"${d}"` : m)); if (next !== html) { bumped++; fs.writeFileSync(f, next); } }
+// The visible "Updated" byline must say what dateModified says, or Google sees two dates.
+const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const human = (iso) => { const [y, m, dd] = iso.split("-").map(Number); return `${dd} ${MONTHS[m - 1]} ${y}`; };
+let bylines = 0;
+for (const f of files) { const rel = "/" + path.relative(ROOT, f).replace(/index\.html$/, ""); const d = dates.get(rel); if (!d) continue; let html = fs.readFileSync(f, "utf8"); let next = html.replace(/"dateModified":"(\d{4}-\d{2}-\d{2})"/g, (m, old) => (d > old ? `"dateModified":"${d}"` : m)); if (next !== html) bumped++;
+  const dm = (next.match(/"dateModified":"(\d{4}-\d{2}-\d{2})"/) || [])[1];
+  if (dm) { const synced = next.replace(/Updated <time datetime="(\d{4}-\d{2}-\d{2})">[^<]*<\/time>/, (m, old) => (dm > old ? `Updated <time datetime="${dm}">${human(dm)}</time>` : m)); if (synced !== next) { bylines++; next = synced; } }
+  if (next !== html) fs.writeFileSync(f, next); }
 const dist = {}; for (const d of dates.values()) dist[d] = (dist[d] ?? 0) + 1;
-console.log(`sweep commits ignored: ${sweep.size}; sitemap lastmod changed: ${changed}; dateModified bumped: ${bumped}`);
+console.log(`sweep commits ignored: ${sweep.size}; sitemap lastmod changed: ${changed}; dateModified bumped: ${bumped}; bylines synced: ${bylines}`);
 console.log("lastmod distribution:", Object.entries(dist).sort().map(([d, n]) => `${d}:${n}`).join(" "));
