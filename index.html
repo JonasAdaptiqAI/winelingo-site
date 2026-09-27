@@ -685,8 +685,8 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
       <h2 class="reveal">Wine lovers, everywhere</h2>
       <p class="reveal d1">People are reading winelingo.app from all over the map. Every glowing dot is a country a visit came from.</p>
       <div class="globe-stats" data-vg-ready="false">
-        <p class="globe-big"><span data-vg="visitors"></span> visits</p>
-        <p class="globe-sub">from <span data-vg="countries"></span> countries<span data-vg-when-active hidden> · <span data-vg="active"></span> here right now</span></p>
+        <p class="globe-big"><span data-vg="visitors"></span> <span data-vg-unit="visitors" data-one="visit" data-many="visits">visits</span></p>
+        <p class="globe-sub">from <span data-vg="countries"></span> <span data-vg-unit="countries" data-one="country" data-many="countries">countries</span><span data-vg-when-active hidden> · <span data-vg="active"></span> here right now</span></p>
         <p class="globe-note">Counted anonymously, one per browser session. We keep the country and the count, nothing else: no cookies, no IP addresses.</p>
       </div>
     </div>
@@ -872,6 +872,6 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
   }
 
 </script>
-<script defer src="/assets/visitor-globe.js?v=1"></script>
+<script defer src="/assets/visitor-globe.js?v=2"></script>
 </body>
 </html>
