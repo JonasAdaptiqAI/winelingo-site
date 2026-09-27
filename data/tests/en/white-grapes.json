@@ -1,0 +1,138 @@
+{
+  "slug": "white-grapes",
+  "title": "White grapes",
+  "summary": "Know the nine white grapes that show up everywhere, what they taste like, and which grape hides behind a famous place name.",
+  "level": 1,
+  "questions": [
+    {
+      "q": "A guest says: \"I hate buttery, oaky Chardonnay, but I love crisp, fresh whites.\" Which Chardonnay-based wine is the safest suggestion?",
+      "opts": [
+        "A big oaked Chardonnay from a warm region",
+        "Sauternes",
+        "Chablis",
+        "Viognier"
+      ],
+      "a": 2,
+      "why": "Chablis is 100% Chardonnay, but it is grown in a cool part of northern Burgundy and is usually made with little or no oak. It tastes of green apple and lemon with sharp, fresh acidity. That makes it the classic answer for a guest who thinks they dislike Chardonnay.",
+      "deeper": "Most Petit Chablis and village Chablis see little or no new oak, though some producers use older barrels; some Premier Cru and Grand Cru producers use more oak, so the top bottles can be a little rounder. Service tip: \"You might actually love this one. It's Chardonnay, but the crisp, mostly unoaked kind.\"",
+      "source": "https://en.wikipedia.org/wiki/Chablis_wine"
+    },
+    {
+      "q": "A guest points at \"Sancerre\" on the list and asks which grape it is. What do you say?",
+      "opts": [
+        "Sauvignon Blanc",
+        "Chardonnay",
+        "Chenin Blanc",
+        "Riesling"
+      ],
+      "a": 0,
+      "why": "White Sancerre, from the eastern Loire Valley in France, is made from Sauvignon Blanc. Expect a dry, crisp white with citrus, green and sometimes flinty notes. French labels usually name the place, not the grape, so this is worth memorising.",
+      "deeper": "Pouilly-Fumé, just across the river, is also Sauvignon Blanc. Red and rosé Sancerre exist too, and they are made from Pinot Noir. If a guest loves New Zealand Sauvignon Blanc (Marlborough), Sancerre is the more restrained, mineral French version of the same grape.",
+      "source": "https://en.wikipedia.org/wiki/Sancerre_AOC"
+    },
+    {
+      "q": "A guest says: \"No Riesling for me, it's always sweet.\" What is the honest answer?",
+      "opts": [
+        "They are right: Riesling is always a dessert wine",
+        "Riesling is only sweet when it comes from Australia",
+        "Riesling is always dry; the sweetness is a myth",
+        "Riesling ranges from bone dry to very sweet; on German labels \"trocken\" means dry"
+      ],
+      "a": 3,
+      "why": "Riesling is made in every style from fully dry to lusciously sweet. Its high natural acidity keeps even the sweet ones fresh. If a German label says \"trocken\", the wine is dry; \"halbtrocken\" (and usually \"feinherb\", which is not legally defined) means off-dry.",
+      "deeper": "With age, Riesling can develop a note often described as \"petrol\" or kerosene. It comes from a compound called TDN and is widely seen as a classic sign of mature Riesling rather than a fault, though too much of it is not to everyone's taste. Its high acidity is also why the best Riesling can age for decades.",
+      "source": "https://en.wikipedia.org/wiki/Riesling"
+    },
+    {
+      "q": "A guest asks: \"What is the difference between Pinot Grigio and Pinot Gris?\"",
+      "opts": [
+        "They are two unrelated grapes",
+        "Same grape: the Italian name usually means a lighter, crisper style, the French (Alsace) name a richer, fuller one",
+        "Pinot Gris is a red wine and Pinot Grigio is white",
+        "Pinot Grigio is a blend of Pinot Gris and Chardonnay"
+      ],
+      "a": 1,
+      "why": "It is the same grape. \"Grigio\" is Italian and \"Gris\" is French, both meaning grey. The name on the label often hints at the style. Italian Pinot Grigio is usually light, pale and crisp. Alsace Pinot Gris is usually fuller, richer and more aromatic.",
+      "deeper": "Pinot Gris is a colour mutation of Pinot Noir. The two have almost identical DNA, and the grey-pink skin is the main visible difference. Producers in other countries pick the name that matches the style they are making.",
+      "source": "https://en.wikipedia.org/wiki/Pinot_gris"
+    },
+    {
+      "q": "A bottle of Vouvray from the Loire Valley is on the list. Which grape is it made from?",
+      "opts": [
+        "Sauvignon Blanc",
+        "Viognier",
+        "Chenin Blanc",
+        "Gewürztraminer"
+      ],
+      "a": 2,
+      "why": "Vouvray is made from Chenin Blanc. Chenin has high acidity and flavours of apple, pear, quince and honey. Always check the sweetness on the label, because Vouvray can be dry (sec), off-dry (demi-sec), sweet (moelleux) or sparkling.",
+      "deeper": "Chenin Blanc is also the most important white grape in South Africa, where it is sometimes called Steen. Service tip: before recommending a Vouvray, ask whether the guest wants dry or a touch of sweetness, and check which style you actually have.",
+      "source": "https://en.wikipedia.org/wiki/Vouvray_AOC"
+    },
+    {
+      "q": "Which country is Grüner Veltliner most associated with?",
+      "opts": [
+        "Austria",
+        "Germany",
+        "Italy",
+        "New Zealand"
+      ],
+      "a": 0,
+      "why": "Grüner Veltliner is Austria's signature white grape and its most planted variety, covering roughly 30% of the country's vineyards. It usually makes a dry, fresh white with citrus, green apple and herbal notes. It is a great food wine, and a good pick for tricky vegetables like asparagus.",
+      "deeper": "Top areas include the Wachau, Kamptal, Kremstal and Weinviertel. Grüner is famous for a \"white pepper\" note (from rotundone, the same compound found in peppercorns), but how strong it is varies a lot between wines, so do not promise it to a guest.",
+      "source": "https://www.austrianwine.com/our-wine/grape-varieties/white-wine/gruener-veltliner"
+    },
+    {
+      "q": "A table has ordered oysters and grilled fish and wants a fresh, zesty white from Spain. Which grape fits best?",
+      "opts": [
+        "Tempranillo",
+        "Albariño",
+        "Gewürztraminer",
+        "Viognier"
+      ],
+      "a": 1,
+      "why": "Albariño comes mainly from Rías Baixas in Galicia, on Spain's rainy Atlantic coast, where it makes up the vast majority of plantings. It is light- to medium-bodied with high acidity and citrus and stone-fruit aromas. That freshness is exactly what shellfish and white fish need.",
+      "deeper": "Across the border in Portugal the same grape is called Alvarinho, and it is used in Vinho Verde (especially around Monção and Melgaço). Tempranillo is a red grape, a common mix-up because it is also Spanish.",
+      "source": "https://daily.sevenfifty.com/regions/rias-baixas/"
+    },
+    {
+      "q": "A guest is having a mildly spicy Thai curry and wants an aromatic white. Which grape, known for lychee and rose aromas, is a classic match?",
+      "opts": [
+        "Chablis-style Chardonnay",
+        "Sauvignon Blanc",
+        "Pinot Grigio",
+        "Gewürztraminer"
+      ],
+      "a": 3,
+      "why": "Gewürztraminer has an unmistakable perfume of lychee and rose. It is full-bodied, fairly low in acidity and often slightly off-dry. That touch of sweetness and big aroma stand up well to gentle spice and aromatic Asian dishes (very hot food is harder, because its high alcohol can make chilli burn more).",
+      "deeper": "\"Gewürz\" is German for spice, and the grape's most famous home is Alsace in France. Gewürztraminer and lychees really do share key aroma compounds, above all cis-rose oxide, which is why the comparison is so accurate.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/10563950/"
+    },
+    {
+      "q": "Condrieu, from France's northern Rhône Valley, is made from which grape?",
+      "opts": [
+        "Chardonnay",
+        "Riesling",
+        "Viognier",
+        "Chenin Blanc"
+      ],
+      "a": 2,
+      "why": "Condrieu is 100% Viognier. Viognier makes full-bodied whites with rich aromas of apricot, peach and flowers, and fairly low acidity. It suits a guest who likes rich whites but finds oaky Chardonnay too heavy on wood.",
+      "deeper": "Viognier nearly disappeared in the 1960s, when only a handful of hectares were left, before a big revival from the 1990s. Most Viognier is best drunk young, while its floral perfume is fresh. In nearby Côte-Rôtie, a little Viognier is sometimes fermented together with the red grape Syrah.",
+      "source": "https://en.wikipedia.org/wiki/Viognier"
+    },
+    {
+      "q": "Where does the \"buttery\" flavour in some Chardonnay mainly come from?",
+      "opts": [
+        "Malolactic conversion, a step in winemaking that creates a buttery-smelling compound",
+        "Butter added during fermentation",
+        "Very ripe grapes from hot vineyards",
+        "Leaving the bottle open too long"
+      ],
+      "a": 0,
+      "why": "Many Chardonnays go through malolactic conversion. Bacteria turn sharp malic acid (as in green apples) into softer lactic acid (as in milk), and one by-product is diacetyl, which smells of butter. Oak barrels add other flavours such as vanilla and toast.",
+      "deeper": "The same step is standard for most red wines, where it softens acidity. Winemakers who want a crisp, fruity white can block it, which is a big reason why fresh, unoaked Chardonnays taste so different from rich, creamy ones.",
+      "source": "https://en.wikipedia.org/wiki/Malolactic_fermentation"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "slug": "labels-and-lists",
+  "title": "Etiketten und Weinkarten",
+  "summary": "Entschlüssle die Begriffe auf einem Weinetikett oder einer Weinkarte und erkläre sie einem Gast in einfachen Worten.",
+  "level": 2,
+  "questions": [
+    {
+      "q": "Ein Gast zeigt auf „Gevrey-Chambertin“ auf der Karte und fragt: „Wo steht denn die Rebsorte?“ Was erklärst du?",
+      "opts": [
+        "Es ist eine Cuvée, daher verbietet Frankreich jede Rebsortenangabe",
+        "In Frankreich steht die Rebsorte immer auf dem Rückenetikett",
+        "Der Ort verrät die Rebsorte: hier Pinot Noir",
+        "Gevrey-Chambertin ist der örtliche Name der Rebsorte selbst"
+      ],
+      "a": 2,
+      "why": "Viele Etiketten aus der Alten Welt (Europa) nennen, woher der Wein kommt, nicht die Rebsorte. Die örtlichen Regeln legen fest, welche Rebsorten verwendet werden dürfen. Gevrey-Chambertin ist ein roter Burgunder, und roter Burgunder wird aus Pinot Noir gemacht.",
+      "deeper": "Dahinter steckt die Idee, dass der Ort wichtiger ist als die Rebsorte. Wenn du ein paar wichtige Regionen und ihre Rebsorten lernst, kannst du einen Großteil einer französischen Weinkarte lesen: Chablis ist Chardonnay, weißer Sancerre ist Sauvignon Blanc, roter Burgunder von der Côte d'Or ist Pinot Noir."
+    },
+    {
+      "q": "Ein Gast vergleicht einen roten Rioja Crianza mit einem Rioja Gran Reserva. Was ist der wesentliche Unterschied?",
+      "opts": [
+        "Gran Reserva wird aus einer anderen, selteneren Rebsorte gemacht",
+        "Gran Reserva reift mindestens 5 Jahre, davon 2 im Eichenfass",
+        "Crianza ist immer süßer, mit mehr Restzucker im Wein",
+        "Crianza reift länger, aber im Stahltank statt im Eichenfass"
+      ],
+      "a": 1,
+      "why": "In Rioja sind die Reifebezeichnungen gesetzliche Mindestwerte. Ein roter Crianza braucht mindestens 2 Jahre Reife, davon mindestens 1 Jahr im Eichenfass. Ein roter Gran Reserva braucht mindestens 5 Jahre, davon mindestens 2 im Eichenfass und 2 in der Flasche.",
+      "deeper": "Dazwischen liegt Reserva: bei Rotweinen mindestens 3 Jahre, davon 1 Jahr im Eichenfass und 6 Monate in der Flasche. Die Rioja-Regeln schreiben Eichenfässer mit 225 Litern vor, und längere Reife bringt meist weichere Tannine und herzhafte Noten wie Leder und Trockenfrüchte."
+    },
+    {
+      "q": "Ein Gast fragt, was „Grand Cru“ auf dem Etikett eines roten Burgunders bedeutet. Was stimmt?",
+      "opts": [
+        "Er stammt aus einer der am höchsten eingestuften Lagen Burgunds",
+        "Es ist die beste Cuvée des Erzeugers aus mehreren Lagen",
+        "Der Wein hat vor dem Verkauf zusätzliche Jahre gereift",
+        "Er stammt vom am höchsten eingestuften Château im Ort"
+      ],
+      "a": 0,
+      "why": "Im Burgund gehören die Einstufungen zu den Lagen (dort „Climats“ genannt), nicht zu den Erzeugern. Grand Cru ist die höchste Stufe, über Premier Cru, Orts- und Regionalweinen. Im Burgund gibt es 33 Grand-Cru-Appellationen.",
+      "deeper": "Die meisten Grand-Cru-Etiketten im Burgund zeigen nur den Lagennamen, etwa Montrachet oder Clos de Tart, ohne den Ort (Chablis ist die Ausnahme: „Chablis Grand Cru“ plus Lage). Premier-Cru-Etiketten zeigen den Ort plus den Lagennamen."
+    },
+    {
+      "q": "Ein Gast sagt: „Premier Cru ist im Burgund die zweite Stufe, also muss ein ‚Premier Cru‘ aus Bordeaux auch nur zweitklassig sein.“ Was erklärst du?",
+      "opts": [
+        "Er hat recht: Premier Cru bedeutet in jeder Region die zweite Stufe",
+        "Bordeaux verwendet das Wort Cru auf keinem seiner Etiketten",
+        "In Bordeaux ist Premier Cru eine Lagenstufe, genau wie im Burgund",
+        "In Bordeaux' Rangliste von 1855 der höchste Rang, für Weingüter"
+      ],
+      "a": 3,
+      "why": "Dieselben Wörter bedeuten in jeder Region etwas anderes. Im Burgund ist Premier Cru eine Lagenstufe direkt unter Grand Cru. In der Médoc-Klassifikation der Rotweine von 1855 ist „Premier Cru“ (First Growth) der höchste Rang, und er wird an ein Château (ein Weingut) vergeben, nicht an eine einzelne Lage.",
+      "deeper": "Die Rotwein-Klassifikation von 1855 hat fünf Stufen. 1855 wurden vier Châteaux als Premiers Crus eingestuft, und Mouton Rothschild wurde 1973 hochgestuft, sodass es heute fünf sind. In der Sauternes-Liste von 1855 steht Château d'Yquem allein über den Premiers Crus als „Premier Cru Supérieur“."
+    },
+    {
+      "q": "Ein Gast zeigt auf „Vieilles Vignes“ auf einem französischen Etikett und fragt, was das bedeutet. Was ist die ehrliche Antwort?",
+      "opts": [
+        "Der Wein hat vor dem Verkauf mindestens zehn Jahre gereift",
+        "„Alte Reben“, aber Frankreich schreibt kein Mindestalter vor",
+        "Die Reben müssen laut Gesetz über 50 Jahre alt sein",
+        "Es ist der Name einer Grand-Cru-Lage im Burgund"
+      ],
+      "a": 1,
+      "why": "Vieilles Vignes bedeutet „alte Reben“. Alte Reben tragen meist weniger, was konzentriertere Weine bedeuten kann. In Frankreich gibt es aber keine gesetzliche Definition, also entscheidet jeder Erzeuger selbst, was „alt“ heißt.",
+      "deeper": "Viele Erzeuger verwenden es für Reben ab etwa 30 bis 40 Jahren, andere nur für viel ältere. 2024 hat die OIV (die internationale Organisation für Rebe und Wein) 35 Jahre als Richtwert für eine „alte Rebe“ festgelegt, aber das ist eine Empfehlung, kein französisches Etikettenrecht."
+    },
+    {
+      "q": "Ein Gast sieht „Reserve“ auf einem kalifornischen Wein und nimmt an, dass er eine festgelegte Zeit gereift ist. Was sagst du ihm?",
+      "opts": [
+        "Auf US-Bundesebene gibt es keine Definition; der Erzeuger entscheidet",
+        "Es bedeutet laut US-Bundesrecht mindestens 3 Jahre Reife",
+        "Es bedeutet, dass der Wein aus einer einzigen benannten Lage stammt",
+        "Es bedeutet, dass der Wein vom USDA bio-zertifiziert ist"
+      ],
+      "a": 0,
+      "why": "Die US-Etikettenregeln auf Bundesebene definieren „Reserve“ nicht. Es kann der beste Wein des Erzeugers sein oder einfach Marketing. Achte auf Erzeuger und Preis, nicht auf das Wort.",
+      "deeper": "Die Weinbranche im Bundesstaat Washington hat einen freiwilligen Reserve-Standard, aber das ist kein Bundesrecht. In manchen Ländern ist das entsprechende Wort gesetzlich definiert: In Spanien gelten für „Reserva“ und in Italien für „Riserva“ Mindestreifezeiten, die für jeden Wein festgelegt sind, etwa in Rioja oder im Chianti Classico."
+    },
+    {
+      "q": "Ein Gast fragt: „Auf diesem europäischen Wein steht 2019. Stammt wirklich jede einzelne Traube aus 2019?“ Was stimmt?",
+      "opts": [
+        "Ja, das EU-Recht verlangt, dass 100 % der Trauben aus diesem Jahr stammen",
+        "Nein, die Jahreszahl zeigt nur, wann der Wein abgefüllt wurde",
+        "Nein: Nach EU-Regeln müssen mindestens 85 % aus diesem Jahr stammen",
+        "Nein, die Jahreszahl zeigt, wann die Reben gepflanzt wurden"
+      ],
+      "a": 2,
+      "why": "Der Jahrgang ist das Jahr, in dem die Trauben geerntet wurden. Nach EU-Regeln müssen mindestens 85 % der Trauben aus dem angegebenen Jahr stammen. Ein Wein ohne Jahreszahl auf dem Etikett ist ein Wein ohne Jahrgang (NV), meist eine Cuvée aus mehreren Ernten.",
+      "deeper": "Jahrgangslose Cuvées sind in der Champagne üblich, wo die Häuser Weine aus verschiedenen Jahren mischen, um jedes Jahr denselben Hausstil zu halten. Ein Jahrgangswein zeigt dagegen den Charakter eines bestimmten Jahres."
+    },
+    {
+      "q": "Ein Gast möchte einen leichten, erfrischenden Weißwein. Auf der Karte stehen zwei unbekannte trockene Weißweine: einer mit 11,5 % Alkohol, einer mit 14,5 %. Was verrät das Etikett?",
+      "opts": [
+        "Der Wein mit 14,5 % ist leichter und feiner",
+        "Der Alkohol hat nichts damit zu tun, wie sich ein Wein anfühlt",
+        "Der Wein mit 11,5 % muss süß sein, er wirkt also schwerer",
+        "Der mit 11,5 % ist wohl leichter, der mit 14,5 % voller"
+      ],
+      "a": 3,
+      "why": "Alkohol gibt einem Wein Gewicht und Wärme und ist deshalb ein nützlicher Hinweis auf den Körper. Ein trockener Weißwein mit weniger Alkohol wirkt meist leichter, einer mit 14 % oder mehr meist voller und üppiger.",
+      "deeper": "Es ist ein Hinweis, keine Regel: Zucker, Holz und Extrakt geben ebenfalls Körper. Die Angabe auf dem Etikett kann auch leicht vom tatsächlichen Wert abweichen; in der EU beträgt die erlaubte Abweichung bei den meisten Stillweinen 0,5 % vol (0,8 % vol bei Schaumwein, Likörwein und manchen älteren Weinen)."
+    },
+    {
+      "q": "Ein Gast, der keinen süßen Wein mag, sieht „Riesling Spätlese trocken“ und befürchtet, er sei süß. Was sagt dir Spätlese?",
+      "opts": [
+        "Wie reif die Trauben bei der Lese waren; „trocken“ heißt trocken",
+        "Dass der Wein immer süß ist, egal was sonst auf dem Etikett steht",
+        "Dass der Wein für eine späte Freigabe im Holz gereift ist",
+        "Dass die Trauben vor der Lese am Stock gefroren waren"
+      ],
+      "a": 0,
+      "why": "Deutsche Begriffe wie Kabinett, Spätlese und Auslese beschreiben, wie reif die Trauben bei der Lese waren, nicht wie süß der fertige Wein ist. Über die Süße gibt das Wort „trocken“ auf dem Etikett Auskunft. Eine Spätlese trocken ist ein trockener Wein mit mehr Reife und Intensität.",
+      "deeper": "Die Leiter lautet Kabinett, Spätlese, Auslese, Beerenauslese und Trockenbeerenauslese, dazu Eiswein aus Trauben, die am Stock gefroren sind. Beerenauslese, Trockenbeerenauslese und Eiswein sind fast immer süß. Keinem dieser Prädikatsweine darf vor der Gärung Zucker zugesetzt werden."
+    },
+    {
+      "q": "Ein Gast fragt, was „DOCG“ auf einem italienischen Etikett und „AOP“ auf einem französischen gemeinsam haben. Was sagst du?",
+      "opts": [
+        "Beide bedeuten, dass der Wein nach EU-Recht bio-zertifiziert ist",
+        "Beide sind geschützte Ursprungsbezeichnungen mit strengen Regeln",
+        "Beide stehen für einfachen Tafelwein ganz ohne regionale Regeln",
+        "Beide bedeuten, dass der Wein eine Mindestzeit im Holz gereift ist"
+      ],
+      "a": 1,
+      "why": "Beide sind geschützte Ursprungsbezeichnungen (g.U.), die strengste Stufe der EU-Herkunftsregeln. Der Wein muss aus einem festgelegten Gebiet stammen und Regeln zu Rebsorten, Erträgen und Weinbereitung einhalten. DOCG ist Italiens höchste Stufe, über DOC; AOP ist der französische Begriff für g.U., und viele französische Etiketten verwenden noch den älteren nationalen Begriff AOC.",
+      "deeper": "Unter der g.U. steht die g.g.A. (geschützte geografische Angabe) mit lockereren Regeln: IGT (oder IGP) in Italien, IGP in Frankreich. g.g.A. heißt nicht schlechter Wein: Mehrere berühmte „Super Tuscans“, die Rebsorten wie Cabernet Sauvignon verwenden, die früher von den örtlichen Regeln ausgeschlossen waren, wurden als IGT Toscana verkauft."
+    }
+  ]
+}

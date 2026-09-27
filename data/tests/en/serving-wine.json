@@ -1,0 +1,138 @@
+{
+  "slug": "serving-wine",
+  "title": "Serving wine",
+  "summary": "Serve any bottle with confidence: the right glass, the right temperature, a clean opening, and the right order at the table.",
+  "level": 1,
+  "questions": [
+    {
+      "q": "A table orders a bottle of full-bodied Cabernet Sauvignon. Which glass do you bring?",
+      "opts": [
+        "A narrow Champagne flute",
+        "A small white-wine glass with a narrow bowl",
+        "A large glass with a generous bowl",
+        "A short tumbler"
+      ],
+      "a": 2,
+      "why": "Big reds are served in glasses with a large bowl. The extra space lets you swirl the wine so air reaches it, and gives the aromas room to gather above the wine.",
+      "deeper": "Whites usually go in smaller bowls, which keep them cooler and focus their fresher aromas. If your venue has only one all-purpose glass, a medium tulip shape works reasonably well for almost everything.",
+      "source": "https://www.wsetglobal.com/knowledge-centre/blog/2022/april/26/ideal-serving-temperatures-and-top-tips-for-wine-storage"
+    },
+    {
+      "q": "A guest asks for their bold red at \"room temperature\". What temperature range suits a full-bodied red best?",
+      "opts": [
+        "Fridge cold, 4–6 °C",
+        "Slightly cool, about 15–18 °C",
+        "Warm-room temperature, 22–24 °C",
+        "Only just below freezing, 0–2 °C"
+      ],
+      "a": 1,
+      "why": "\"Room temperature\" comes from cool, unheated rooms, not a modern warm restaurant. Served too warm, a red tastes flabby and the alcohol feels hot; slightly cool keeps it fresh.",
+      "deeper": "Lighter reds such as Pinot Noir or Gamay are nicer a little cooler, around 12–14 °C. If a red bottle is too warm, 10–15 minutes in the fridge or an ice bucket fixes it; say to the guest, \"I'll just cool it slightly so it shows at its best.\"",
+      "source": "https://www.wsetglobal.com/knowledge-centre/blog/2022/april/26/ideal-serving-temperatures-and-top-tips-for-wine-storage"
+    },
+    {
+      "q": "Which of these wines should be served the coldest?",
+      "opts": [
+        "Prosecco",
+        "An oaked, full-bodied Chardonnay",
+        "Pinot Noir",
+        "Cabernet Sauvignon"
+      ],
+      "a": 0,
+      "why": "Sparkling wines and light, crisp whites are served the coldest, well chilled (roughly 6–10 °C). The cold keeps the bubbles fine and the wine refreshing. Fuller whites like oaked Chardonnay are served a little warmer, and reds warmer still.",
+      "deeper": "A rough ladder: sparkling and light whites coldest, then rosé and full-bodied whites, then light reds, then bold reds. Top-quality sparkling wine, such as vintage Champagne, shows more aroma if it is allowed to warm up slightly in the glass.",
+      "source": "https://www.wsetglobal.com/knowledge-centre/blog/2022/april/26/ideal-serving-temperatures-and-top-tips-for-wine-storage"
+    },
+    {
+      "q": "You arrive at the table with the bottle a guest ordered. What do you do before opening it?",
+      "opts": [
+        "Open it at the bar so the guest sees only the poured glass",
+        "Pour a taste for everyone at the table",
+        "Remove the label so it looks neater",
+        "Show the label to the person who ordered and confirm it is the right wine and vintage"
+      ],
+      "a": 3,
+      "why": "Presenting the bottle lets the host check it is exactly what they ordered, including the year, before anything is opened. It avoids mistakes and shows the guest respect.",
+      "deeper": "Hold the bottle from below with the label facing the host and name it out loud, for example \"the 2020 Rioja Crianza\". Vintages on a wine list sometimes change, so this is the moment to flag it if the year differs from the list.",
+      "source": "https://www.winespectator.com/articles/what-s-the-proper-etiquette-when-a-waiter-pours-you-a-small-taste-of-wine"
+    },
+    {
+      "q": "What is the safest way to open a bottle of Champagne at the table?",
+      "opts": [
+        "Remove the wire cage, then push the cork up with both thumbs",
+        "Keep a hand firmly over the cork and cage, tilt the bottle away from people, and turn the bottle, not the cork",
+        "Shake the bottle gently first so it opens more easily",
+        "Point the cork straight up and let it pop"
+      ],
+      "a": 1,
+      "why": "The pressure inside can launch a cork hard enough to injure someone. Keep your thumb or a napkin over the cork the whole time, angle the bottle away from people, and slowly turn the bottle while holding the cork still.",
+      "deeper": "Aim for a quiet sigh, not a loud pop: a pop wastes bubbles and can spill wine. The bottle should be well chilled, since a warm bottle is more likely to pop unexpectedly.",
+      "source": "https://www.wineenthusiast.com/basics/how-to-serve/how-to-open-a-champagne-bottle/"
+    },
+    {
+      "q": "A guest orders a young, powerful Cabernet Sauvignon and asks if it should be decanted. Why might you suggest it?",
+      "opts": [
+        "Air helps a young, tannic red open up and taste softer",
+        "Decanting removes the alcohol",
+        "Decanting makes the wine sweeter",
+        "Young wines always have a lot of sediment"
+      ],
+      "a": 0,
+      "why": "Pouring a young, tannic red into a decanter exposes it to air. That helps the aromas open up and can make the tannins feel smoother.",
+      "deeper": "Common candidates are young Cabernet Sauvignon, Tempranillo and other bold reds. Even 30 minutes to an hour in a decanter can make a noticeable difference; offer it as, \"This one is quite young; would you like me to decant it so it opens up?\"",
+      "source": "https://www.winespectator.com/articles/how-to-serve-wine-decanting"
+    },
+    {
+      "q": "A guest orders a 20-year-old red with sediment in the bottle. How do you decant it?",
+      "opts": [
+        "Shake it to mix the sediment back in, then pour fast",
+        "Pour it through a paper coffee filter at the table",
+        "Keep it upright beforehand, then pour slowly and stop when the sediment reaches the neck",
+        "Leave it in the decanter for several hours before serving"
+      ],
+      "a": 2,
+      "why": "The goal with an old wine is to separate clear wine from the gritty sediment. Standing the bottle upright lets the sediment settle, and a slow, steady pour lets you see it coming and stop in time.",
+      "deeper": "Ideally stand the bottle upright for a day or more before opening. A light (a candle or torch) under the bottle neck makes the sediment easy to spot. Old wines can be fragile, so decant shortly before serving (around 30 minutes) rather than hours ahead, or their aromas may fade.",
+      "source": "https://www.winespectator.com/articles/how-to-serve-wine-decanting"
+    },
+    {
+      "q": "Your venue pours 150 ml per glass (about 5 fl oz). How many glasses do you get from a standard 750 ml bottle?",
+      "opts": [
+        "3",
+        "4",
+        "6",
+        "5"
+      ],
+      "a": 3,
+      "why": "750 ml divided by 150 ml is 5 glasses. Knowing this helps you tell a table whether one bottle is enough for everyone.",
+      "deeper": "150 ml (5 fl oz) is widely used as a standard glass, but venues vary; a 125 ml pour gives 6 glasses and a 175 ml pour a little over 4. When pouring a bottle for a table, share it evenly so the last guest is not left with a small glass.",
+      "source": "https://www.niaaa.nih.gov/health-professionals-communities/core-resource-on-alcohol/basics-defining-how-much-alcohol-too-much"
+    },
+    {
+      "q": "A table has ordered a Sancerre (dry white), a Barolo (powerful red) and a Sauternes (sweet wine). Following the classic rule of thumb, in what order do you serve them?",
+      "opts": [
+        "Barolo, Sancerre, Sauternes",
+        "Sauternes, Sancerre, Barolo",
+        "Sancerre, Barolo, Sauternes",
+        "Barolo, Sauternes, Sancerre"
+      ],
+      "a": 2,
+      "why": "The usual order is light before heavy, white before red, and dry before sweet. A sweet wine served first would make the dry wines after it taste sour and thin.",
+      "deeper": "A full sequence often runs: sparkling, dry whites, rosé, lighter reds, fuller reds, then sweet or fortified wines. There are classic exceptions, such as a glass of Sauternes with foie gras as a starter, so follow the host's wishes if they ask for a different order.",
+      "source": "https://www.therealreview.com/2020/12/31/serving-order-of-wine/"
+    },
+    {
+      "q": "At closing, half a bottle of red is left for by-the-glass service tomorrow. What is the best way to keep it?",
+      "opts": [
+        "Recork it and store it in the fridge",
+        "Leave it open on the bar so it can breathe",
+        "Recork it and keep it on a warm shelf behind the bar",
+        "Pour it into a carafe and leave it out overnight"
+      ],
+      "a": 0,
+      "why": "Oxygen and warmth make opened wine go stale. Sealing it and chilling it slows that down, and this works for reds too. Let a red warm up a little before serving.",
+      "deeper": "As a rough guide, most opened reds stay good for about 3–5 days sealed in the fridge, light whites and rosés up to about a week, and sparkling wine 1–3 days with a proper sparkling stopper. Always taste an opened bottle before pouring it for a guest.",
+      "source": "https://winefolly.com/tips/how-long-does-an-open-bottle-of-wine-last/"
+    }
+  ]
+}

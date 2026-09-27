@@ -1,0 +1,128 @@
+{
+  "slug": "labels-and-lists",
+  "title": "Etiketter og vinkort",
+  "summary": "Afkod ordene på en vinetiket eller et vinkort, og forklar dem for en gæst i et enkelt sprog.",
+  "level": 2,
+  "questions": [
+    {
+      "q": "En gæst peger på \"Gevrey-Chambertin\" på vinkortet og spørger: \"Hvor står druen?\" Hvad forklarer du?",
+      "opts": [
+        "Det er en blanding, så franske regler forbyder at nævne druer",
+        "Druen står altid på bagetiketten i Frankrig",
+        "Stedet fortæller dig druen: her Pinot Noir",
+        "Gevrey-Chambertin er det lokale navn for selve druen"
+      ],
+      "a": 2,
+      "why": "Mange etiketter fra Den Gamle Verden (Europa) nævner, hvor vinen kommer fra, ikke druen. De lokale regler bestemmer, hvilke druer der må bruges. Gevrey-Chambertin er en rød Bourgogne, og rød Bourgogne er lavet på Pinot Noir.",
+      "deeper": "Tanken er, at stedet betyder mere end druen. Lærer du nogle få vigtige områder og deres druer, kan du læse en stor del af et fransk vinkort: Chablis er Chardonnay, hvid Sancerre er Sauvignon Blanc, rød Bourgogne fra Côte d'Or er Pinot Noir."
+    },
+    {
+      "q": "En gæst sammenligner en rød Rioja Crianza med en Rioja Gran Reserva. Hvad er den vigtigste forskel?",
+      "opts": [
+        "Gran Reserva er lavet på en anden og sjældnere drue",
+        "Gran Reserva lagres mindst 5 år, heraf 2 på egefad",
+        "Crianza er altid sødere, med mere restsukker",
+        "Crianza lagres længere, men i ståltanke i stedet for egefad"
+      ],
+      "a": 1,
+      "why": "I Rioja er lagringsbetegnelserne lovpligtige minimumskrav. En rød Crianza skal lagres mindst 2 år, heraf mindst 1 år på egefad. En rød Gran Reserva skal lagres mindst 5 år, heraf mindst 2 på egefad og 2 på flaske.",
+      "deeper": "Imellem de to ligger Reserva: mindst 3 år for rødvin, heraf 1 år på egefad og 6 måneder på flaske. Riojas regler foreskriver egefade på 225 liter, og længere lagring giver som regel blødere tanniner og noter som læder og tørret frugt."
+    },
+    {
+      "q": "En gæst spørger, hvad \"Grand Cru\" betyder på en etiket fra rød Bourgogne. Hvad er korrekt?",
+      "opts": [
+        "Den kommer fra en af Bourgognes bedst rangerede marker",
+        "Det er producentens egen bedste blanding fra flere marker",
+        "Vinen er lagret ekstra år, før den kom på markedet",
+        "Den kommer fra det højest rangerede château i landsbyen"
+      ],
+      "a": 0,
+      "why": "I Bourgogne er det vinmarkerne (kaldet \"climats\"), der er rangeret, ikke producenterne. Grand Cru er det øverste niveau, over Premier Cru, landsbyvine og regionale vine. Der er 33 Grand Cru-appellationer i Bourgogne.",
+      "deeper": "De fleste Grand Cru-etiketter fra Bourgogne viser kun markens navn, fx Montrachet eller Clos de Tart, uden landsbyen (Chablis er undtagelsen: \"Chablis Grand Cru\" plus marken). Premier Cru-etiketter viser landsbyen plus markens navn."
+    },
+    {
+      "q": "En gæst siger: \"Premier Cru er andet niveau i Bourgogne, så en 'Premier Cru' fra Bordeaux må også være næstbedst.\" Hvad forklarer du?",
+      "opts": [
+        "De har ret: Premier Cru betyder andet niveau i alle vinområder",
+        "Bordeaux bruger slet ikke ordet Cru på sine etiketter",
+        "I Bordeaux er Premier Cru også et markniveau, præcis som i Bourgogne",
+        "I Bordeaux' 1855-klassifikation er det den højeste rang for godser"
+      ],
+      "a": 3,
+      "why": "De samme ord betyder forskellige ting fra område til område. I Bourgogne er Premier Cru et markniveau lige under Grand Cru. I Bordeaux' klassifikation af rødvine fra Médoc fra 1855 er \"Premier Cru\" (first growth) den højeste rang, og den gives til et château (et gods), ikke til en enkelt mark.",
+      "deeper": "Klassifikationen af rødvine fra 1855 har fem niveauer. Fire châteauer blev rangeret som first growths i 1855, og Mouton Rothschild blev rykket op i 1973, så der i dag er fem. På Sauternes-listen fra 1855 står Château d'Yquem alene over first growths som \"Premier Cru Supérieur\"."
+    },
+    {
+      "q": "En gæst peger på \"Vieilles Vignes\" på en fransk etiket og spørger, hvad det betyder. Hvad er det ærlige svar?",
+      "opts": [
+        "Vinen er lagret i mindst ti år, før den er kommet på markedet",
+        "\"Gamle stokke\", men der er intet lovkrav om alder i Frankrig",
+        "Det betyder, at stokkene ifølge loven skal være over 50 år",
+        "Det er navnet på en Grand Cru-mark i Bourgogne"
+      ],
+      "a": 1,
+      "why": "Vieilles Vignes betyder \"gamle stokke\". Gamle stokke giver som regel mindre høst, hvilket kan betyde mere koncentreret vin. Men i Frankrig findes der ingen lovmæssig definition, så hver producent bestemmer selv, hvad \"gammel\" betyder.",
+      "deeper": "Mange producenter bruger det om stokke på ca. 30 til 40 år eller mere, andre om meget ældre. I 2024 vedtog OIV (den internationale organisation for vin og vinstokke) 35 år som sin rettesnor for en \"gammel vinstok\", men det er en vejledning, ikke fransk etiketlovgivning."
+    },
+    {
+      "q": "En gæst ser \"Reserve\" på en vin fra Californien og går ud fra, at den er lagret i en bestemt tid. Hvad siger du?",
+      "opts": [
+        "Den har ingen føderal lovdefinition i USA; producenten bestemmer",
+        "Den betyder mindst 3 års lagring, som krævet af føderal lov i USA",
+        "Den betyder, at vinen kommer fra én navngiven vinmark",
+        "Den betyder, at vinen er økologisk certificeret af USDA"
+      ],
+      "a": 0,
+      "why": "De føderale etiketregler i USA definerer ikke \"Reserve\". Det kan betyde producentens bedste vin, eller det kan bare være markedsføring. Se på producenten og prisen, ikke på ordet.",
+      "deeper": "Vinbranchen i staten Washington har en frivillig Reserve-standard, men det er ikke føderal lov. I nogle lande er det tilsvarende ord defineret ved lov: i Spanien \"Reserva\" og i Italien \"Riserva\" har minimumskrav til lagring for hver vin, som i Rioja eller Chianti Classico."
+    },
+    {
+      "q": "En gæst spørger: \"Der står 2019 på etiketten på den her europæiske vin. Er hver eneste drue fra 2019?\" Hvad er korrekt?",
+      "opts": [
+        "Ja, EU-lovgivningen kræver, at 100 % af druerne er fra det år",
+        "Nej, året viser kun, hvornår vinen blev tappet på flaske",
+        "Nej: efter EU's regler skal mindst 85 % være fra det år",
+        "Nej, året viser, hvornår stokkene blev plantet"
+      ],
+      "a": 2,
+      "why": "Årgangen er det år, druerne blev høstet. EU's regler kræver, at mindst 85 % af druerne kommer fra det angivne år. En vin uden år på etiketten er uden årgang (NV), som regel en blanding af flere høster.",
+      "deeper": "Blanding uden årgang er almindelig i Champagne, hvor husene blander vine fra forskellige år for at holde den samme husstil hvert år. En årgangsvin viser i stedet karakteren af ét bestemt år."
+    },
+    {
+      "q": "En gæst vil have en let, forfriskende hvidvin. Vinkortet har to ukendte tørre hvidvine: én på 11,5 % alkohol og én på 14,5 %. Hvad antyder etiketten?",
+      "opts": [
+        "Vinen på 14,5 % vil være lettere og mere delikat",
+        "Alkohol har intet at gøre med, hvordan en vin føles",
+        "Vinen på 11,5 % må være sød, så den vil føles tungere",
+        "11,5 %-vinen er nok lettere, 14,5 %-vinen fyldigere"
+      ],
+      "a": 3,
+      "why": "Alkohol giver vinen vægt og varme, så det er et nyttigt fingerpeg om fylden. En tør hvidvin med lavere alkohol føles som regel lettere, mens en på 14 % eller mere som regel føles fyldigere og rigere.",
+      "deeper": "Det er et hint, ikke en regel: sukker, fad og ekstrakt giver også fylde. Tallet på etiketten kan også afvige lidt fra det reelle niveau. I EU er den tilladte afvigelse 0,5 % vol. for de fleste stille vine (0,8 % vol. for mousserende vin, hedvin og nogle ældre vine)."
+    },
+    {
+      "q": "En gæst, der ikke kan lide sød vin, ser \"Riesling Spätlese trocken\" og er bange for, at den er sød. Hvad fortæller Spätlese dig?",
+      "opts": [
+        "Hvor modne druerne var ved høst; 'trocken' betyder tør",
+        "At vinen altid er sød, uanset hvad der ellers står på etiketten",
+        "At vinen er lagret på egefad til en sen lancering",
+        "At druerne var frosset på stokken, før de blev plukket"
+      ],
+      "a": 0,
+      "why": "Tyske betegnelser som Kabinett, Spätlese og Auslese beskriver, hvor modne druerne var, da de blev plukket, ikke hvor sød den færdige vin er. Ordet \"trocken\" (tør) på etiketten fortæller dig sødmen. En Spätlese trocken er en tør vin med ekstra modenhed og intensitet.",
+      "deeper": "Stigen går Kabinett, Spätlese, Auslese, Beerenauslese og Trockenbeerenauslese, og Eiswein laves af druer, der er frosset på stokken. Beerenauslese, Trockenbeerenauslese og Eiswein er næsten altid søde. Ingen af disse Prädikat-vine må få tilsat sukker før gæringen."
+    },
+    {
+      "q": "En gæst spørger, hvad \"DOCG\" på en italiensk etiket og \"AOP\" på en fransk har til fælles. Hvad siger du?",
+      "opts": [
+        "Begge betyder, at vinen er økologisk certificeret efter EU-lov",
+        "Begge er beskyttede oprindelsesbetegnelser med strenge regler",
+        "Begge betyder, at det er en simpel bordvin helt uden regionale regler",
+        "Begge betyder, at vinen er lagret på egefad i en minimumsperiode"
+      ],
+      "a": 1,
+      "why": "Begge er beskyttede oprindelsesbetegnelser (BOB, på engelsk PDO), EU's strengeste niveau af oprindelsesregler. Vinen skal komme fra et afgrænset område og følge regler for druer, udbytte og vinfremstilling. DOCG er Italiens øverste niveau, over DOC. AOP er den franske betegnelse for PDO, og mange franske etiketter bruger stadig den ældre nationale betegnelse AOC.",
+      "deeper": "Under BOB ligger BGB (beskyttet geografisk betegnelse, på engelsk PGI) med løsere regler: IGT (eller IGP) i Italien og IGP i Frankrig. BGB betyder ikke dårlig vin: flere berømte \"Super Tuscan\"-rødvine, som bruger druer som Cabernet Sauvignon, som de lokale regler engang udelukkede, er blevet solgt som IGT Toscana."
+    }
+  ]
+}

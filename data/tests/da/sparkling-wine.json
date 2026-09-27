@@ -1,0 +1,128 @@
+{
+  "slug": "sparkling-wine",
+  "title": "Mousserende vin",
+  "summary": "Forklar forskellen på Champagne, Prosecco, Cava og Crémant, læs en etiket på en mousserende vin, og åbn og skænk en flaske med ro i maven.",
+  "level": 2,
+  "questions": [
+    {
+      "q": "En gæst bestiller en Blanc de Noirs Champagne og spørger, hvorfor den er gylden og ikke rød. Hvilke druer er den lavet på?",
+      "opts": [
+        "Kun Chardonnay, den vigtigste hvide drue",
+        "Røde druer: Pinot Noir og/eller Meunier",
+        "En blanding af stille rødvin og hvidvin",
+        "Hvide druer: Sauvignon Blanc og Riesling"
+      ],
+      "a": 1,
+      "why": "Blanc de Noirs betyder \"hvid af sorte\". De røde druer presses nænsomt, så den farveløse saft forlader skallerne (hvor farven sidder). Det modsatte, Blanc de Blancs, betyder \"hvid af hvide\", og i Champagne er det næsten altid Chardonnay.",
+      "deeper": "Champagne er bygget på tre hoveddruer: Chardonnay, Pinot Noir og Meunier. En håndfuld sjældne, gamle sorter (fx Arbane, Petit Meslier, Pinot Blanc og Pinot Gris) er også tilladt, men dækker langt under 1 % af vinmarkerne. Blanc de Noirs føles tit rundere og fyldigere. Blanc de Blancs er tit slankere, citrusagtig og elegant."
+    },
+    {
+      "q": "En gæst spørger, hvorfor et glas Champagne koster så meget mere end et glas Prosecco. Hvad er den største forskel på, hvordan de laves?",
+      "opts": [
+        "Champagne gærer anden gang i hver flaske; det meste Prosecco i tank",
+        "Champagne får tilsat kulsyre fra en gasflaske; det gør Prosecco ikke",
+        "Prosecco lagres meget længere på bærmen, før den kommer på markedet",
+        "Champagne laves altid af røde druer; Prosecco af hvide"
+      ],
+      "a": 0,
+      "why": "Begge vine får deres bobler fra en anden gæring, der fanger kulsyren. Champagne gør det flaske for flaske (den traditionelle metode) og hviler derefter på den døde gær i måneder eller år, hvilket er langsomt og arbejdskrævende. Det meste Prosecco gør det i en lukket tank (tankmetoden eller Charmat-metoden), som er hurtigere og bevarer den friske, frugtige stil med pære og æble.",
+      "deeper": "Tiden på de døde gærceller (bærmen) er det, der giver vine lavet efter den traditionelle metode deres noter af brød, brioche og ristet brød. Vine lavet med tankmetoden springer det meste af det over med vilje: målet er klar, frisk frugt. Ingen af metoderne er \"bedre\". De giver forskellige stilarter."
+    },
+    {
+      "q": "En gæst elsker Champagnens ristede stil, men vil have noget billigere, der er lavet på samme måde. Hvilket forslag passer?",
+      "opts": [
+        "En Prosecco fra Veneto i det nordøstlige Italien",
+        "En Moscato d'Asti fra Piemonte i det nordvestlige Italien",
+        "En Crémant fra Frankrig eller en Cava fra Spanien",
+        "Enhver mousserende vin mærket 'Extra Dry'"
+      ],
+      "a": 2,
+      "why": "Crémant og Cava laves begge efter den traditionelle metode, med den anden gæring på flasken, præcis som Champagne. Begge skal ligge mindst 9 måneder på bærmen, så de har tit noget af den brødagtige karakter til en lavere pris.",
+      "deeper": "Crémant kommer fra flere franske områder (Crémant de Loire, d'Alsace, de Bourgogne og flere), hver med sine egne druer. Cava bruger mest lokale spanske druer som Macabeo, Xarel·lo og Parellada. En god sætning: \"Kan du lide Champagne, så prøv den her Crémant: samme metode, meget vin for pengene.\""
+    },
+    {
+      "q": "En gæst siger: \"Jeg vil have den tørreste boblevin, I har, så jeg tager Extra Dry.\" Hvad skal du vide?",
+      "opts": [
+        "Extra Dry er den tørreste stil, du kan købe",
+        "Extra Dry og Brut er det samme",
+        "Extra Dry betyder, at vinen er uden alkohol",
+        "Extra Dry er lidt sødere end Brut"
+      ],
+      "a": 3,
+      "why": "Navnene er forvirrende. Efter EU's regler har Brut under 12 g sukker pr. liter, mens Extra Dry ligger mellem 12 og 17 g/L. Så Extra Dry er en anelse sødere. Vil gæsten have en virkelig tør vin, så peg på Brut, Extra Brut (0–6 g/L) eller Brut Nature (under 3 g/L, uden tilsat sukker).",
+      "deeper": "Hele EU-skalaen fra tørreste til sødeste: Brut Nature (under 3 g/L, uden tilsat sukker), Extra Brut (0–6), Brut (under 12), Extra Dry (12–17), Sec (17–32), Demi-Sec (32–50), Doux (over 50). Høj syre og bobler får sukker til at smage mindre sødt, og derfor smager en Brut sjældent sød."
+    },
+    {
+      "q": "En gæst spørger, hvad minimumslagringen er for en Champagne uden årgang (NV). Hvad er reglen?",
+      "opts": [
+        "Intet minimum; den kan sælges, så snart den bobler",
+        "15 måneder i alt, heraf 12 på bærmen",
+        "3 år i alt, heraf 2 på bærmen",
+        "10 år i alt, heraf 5 på bærmen"
+      ],
+      "a": 1,
+      "why": "Champagne uden årgang må tidligst sendes på markedet 15 måneder efter, at den blev tappet på flaske til den anden gæring, og mindst 12 af de måneder skal den hvile på gærbærmen. Årgangschampagne, lavet af et enkelt års høst, skal lagre mindst 3 år.",
+      "deeper": "Det er kun minimumskrav. I praksis lagrer de fleste huse deres NV i to-tre år, og årgangsvine tit langt længere. NV-Champagne er en blanding af flere år, også ældre \"reservevine\", så husets stil holder sig ens. En årgang bliver som regel kun erklæret i de bedre år."
+    },
+    {
+      "q": "En gæst bliver overrasket over at høre, at noget rosé-Champagne laves ved at blande rødvin og hvidvin. Passer det?",
+      "opts": [
+        "Nej, det er ulovligt i hele EU at blande rød- og hvidvin",
+        "Kun til billig supermarkedsrosé, aldrig til ægte Champagne",
+        "Ja, Champagne er et af de få steder, hvor det er tilladt",
+        "Kun hvis der står 'saignée' på etiketten, som betyder blandet"
+      ],
+      "a": 2,
+      "why": "Det meste rosé-Champagne laves ved at blande lidt stille rød Champagne-vin (som regel ca. 5–20 %) i den hvide basisvin. Det er usædvanligt: i det meste af EU må rosévin ikke laves ved at blande rød og hvid. Den anden måde er \"saignée\" eller maceration: saften får lov at ligge kort på skallerne af røde druer, så den tager farve.",
+      "deeper": "Blanding giver vinmageren præcis kontrol over farve og stil, år efter år. Macererede (saignée) roséer er tit dybere i farven og mere vinøse. En god sætning: \"Begge metoder er traditionelle. Den blandede stil er som regel lettere og mere delikat.\""
+    },
+    {
+      "q": "Du opdager de små bogstaver \"RM\" på en Champagne-etiket. Hvad kan du fortælle gæsten?",
+      "opts": [
+        "En avlerchampagne, lavet af avlerens egne druer",
+        "En rosé lavet med saignée-metoden, tappet af fra røde druer",
+        "En reserve-aftapning af husets bedste og ældste vin",
+        "Lavet af et kooperativ, der samler medlemmernes druer"
+      ],
+      "a": 0,
+      "why": "RM står for récoltant-manipulant: en avler, der laver og sælger Champagne af druer fra sine egne vinmarker, på sin egen ejendom. NM (négociant-manipulant) er koden for de store huse, som køber druer, most eller vin fra avlere (mange ejer også selv vinmarker).",
+      "deeper": "Avlerchampagner viser tit karakteren fra én landsby eller nogle få marker. Husene (NM) blander bredt for at holde en ensartet husstil år efter år. Andre koder er bl.a. CM (coopérative de manipulation) for kooperativer. Ingen af koderne er i sig selv en garanti for kvalitet."
+    },
+    {
+      "q": "Du åbner Champagne ved et roligt bord og vil have den til at åbne med et blødt suk, ikke et højt knald. Hvad er den rigtige teknik?",
+      "opts": [
+        "Tag kurven af, peg flasken opad, og skub proppen med tommelfingrene",
+        "Ryst den let først, så proppen glider lettere ud",
+        "Drej hurtigt proppen, mens du holder flasken stille og lodret",
+        "Hold om proppen, vip flasken til 45°, og drej langsomt flasken"
+      ],
+      "a": 3,
+      "why": "Trykket i en flaske Champagne er ca. 5–6 bar, omtrent tre gange så meget som i et bildæk, så en løs prop er en reel risiko for øjenskader. Hold tommelfingeren på proppen, fra du løsner kurven. Når du drejer flaskens bund og holder proppen stille, har du kontrol, og når du lirker proppen langsomt ud, slipper gassen stille ud.",
+      "deeper": "Peg flasken væk fra gæsterne og fra dig selv. Vipper du den til ca. 45°, stopper det vinen i at fosse ud, når trykket slipper. Skænk i to omgange: en første sjat, lad skummet lægge sig, og fyld så op."
+    },
+    {
+      "q": "En gæst, der bestiller en seriøs årgangschampagne, spørger, hvilket glas der bedst får duftene frem. Hvad tager du med?",
+      "opts": [
+        "En bred, flad coupe for det klassiske look",
+        "Et tulipanformet glas eller et hvidvinsglas",
+        "Et lille, lige vandglas med tung bund",
+        "En fløjte, kølet i fryseren, til den er rimet"
+      ],
+      "a": 1,
+      "why": "En tulipanform eller et almindeligt hvidvinsglas har kumme nok til at svinge vinen og en smallere kant, der samler duftene ved næsen. En coupe lader både duft og bobler slippe hurtigt ud. Et rimet glas bedøver duftene, og vandet fra rimen fortynder vinen og gør boblerne flade.",
+      "deeper": "Mange sommelierer serverer i dag komplekse Champagner i hvidvinsglas af den grund. Smalle fløjter holder godt på boblerne, men gør duftene sværere at fange. Til en enkel, frugtig Prosecco til en fest er en fløjte helt fin. Et servicetip: brug altid meget rene, godt skyllede glas. Rester af sæbe og støv påvirker boblerne."
+    },
+    {
+      "q": "Et bord med otte personer vil have \"en magnum Champagne\". Hvor meget vin er der i en magnum?",
+      "opts": [
+        "1 liter (ca. en og en tredjedel flaske)",
+        "3 liter (fire almindelige flasker)",
+        "1,5 liter (to almindelige flasker)",
+        "375 ml (en halv almindelig flaske)"
+      ],
+      "a": 2,
+      "why": "En magnum rummer 1,5 liter, det samme som to almindelige flasker på 75 cl. Det er ca. 12 til 15 glas mousserende vin, afhængigt af skænkningen. Til otte gæster giver én magnum alle en skål plus en påfyldning.",
+      "deeper": "I Champagne er de større størrelser Jeroboam (3 L, fire flasker), Rehoboam (4,5 L), Methuselah (6 L) og opefter. Bemærk, at nogle af navnene betyder andre størrelser i Bordeaux. Mange vinelskere mener, at vin lagrer langsommere i magnum, fordi der er mindre ilt pr. liter vin. En flaske på 37,5 cl er en \"halvflaske\"."
+    }
+  ]
+}

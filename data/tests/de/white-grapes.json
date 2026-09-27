@@ -1,0 +1,128 @@
+{
+  "slug": "white-grapes",
+  "title": "Weiße Rebsorten",
+  "summary": "Lerne die neun weißen Rebsorten kennen, die überall auftauchen, wie sie schmecken und welche Rebsorte sich hinter einem berühmten Ortsnamen versteckt.",
+  "level": 1,
+  "questions": [
+    {
+      "q": "Ein Gast sagt: „Ich mag keinen buttrigen Chardonnay mit viel Holz, aber ich liebe knackige, frische Weißweine.“ Welcher Wein aus Chardonnay ist der sicherste Vorschlag?",
+      "opts": [
+        "Ein kräftiger Chardonnay aus dem Holz aus einer warmen Region",
+        "Sauternes",
+        "Chablis",
+        "Viognier"
+      ],
+      "a": 2,
+      "why": "Chablis ist zu 100 % Chardonnay, wächst aber in einem kühlen Teil des nördlichen Burgunds und wird meist mit wenig oder gar keinem Holz ausgebaut. Er schmeckt nach grünem Apfel und Zitrone und hat eine straffe, frische Säure. Damit ist er die klassische Antwort für einen Gast, der glaubt, keinen Chardonnay zu mögen.",
+      "deeper": "Die meisten Petit Chablis und Chablis (Village) sehen wenig oder kein neues Holz, manche Erzeuger nutzen aber ältere Fässer; einige Erzeuger von Premier Cru und Grand Cru setzen mehr Holz ein, sodass die Spitzenflaschen etwas runder ausfallen können. Service-Tipp: „Der könnte Ihnen richtig gut gefallen. Es ist Chardonnay, aber die knackige Sorte, meist ohne Holz.“"
+    },
+    {
+      "q": "Ein Gast zeigt auf „Sancerre“ auf der Karte und fragt, welche Rebsorte das ist. Was sagst du?",
+      "opts": [
+        "Sauvignon Blanc",
+        "Chardonnay",
+        "Chenin Blanc",
+        "Riesling"
+      ],
+      "a": 0,
+      "why": "Weißer Sancerre aus dem östlichen Loiretal in Frankreich wird aus Sauvignon Blanc gemacht. Erwarte einen trockenen, knackigen Weißwein mit Zitrus, grünen und manchmal feuersteinartigen Noten. Französische Etiketten nennen meist den Ort, nicht die Rebsorte, deshalb lohnt es sich, das auswendig zu wissen.",
+      "deeper": "Pouilly-Fumé, gleich auf der anderen Flussseite, ist ebenfalls Sauvignon Blanc. Es gibt auch roten Sancerre und Rosé-Sancerre, und die werden aus Pinot Noir gemacht. Liebt ein Gast Sauvignon Blanc aus Neuseeland (Marlborough), ist Sancerre die zurückhaltendere, mineralischere französische Version derselben Rebsorte."
+    },
+    {
+      "q": "Ein Gast sagt: „Für mich keinen Riesling, der ist immer süß.“ Was ist die ehrliche Antwort?",
+      "opts": [
+        "Er hat recht: Riesling ist immer ein Dessertwein",
+        "Riesling ist nur süß, wenn er aus Australien kommt",
+        "Riesling ist immer trocken; die Süße ist ein Mythos",
+        "Riesling reicht von knochentrocken bis sehr süß; „trocken“ heißt trocken"
+      ],
+      "a": 3,
+      "why": "Riesling gibt es in jedem Stil, von ganz trocken bis üppig süß. Seine hohe natürliche Säure hält selbst die süßen frisch. Steht auf einem deutschen Etikett „trocken“, ist der Wein trocken; „halbtrocken“ (und meist auch „feinherb“, das rechtlich nicht definiert ist) bedeutet eine leichte Restsüße.",
+      "deeper": "Mit dem Alter kann Riesling eine Note entwickeln, die oft als „Petrol“ oder Kerosin beschrieben wird. Sie stammt von einer Verbindung namens TDN und gilt weithin als klassisches Zeichen für gereiften Riesling und nicht als Fehler, auch wenn zu viel davon nicht jedermanns Sache ist. Seine hohe Säure ist auch der Grund, warum die besten Rieslinge jahrzehntelang reifen können."
+    },
+    {
+      "q": "Ein Gast fragt: „Was ist der Unterschied zwischen Pinot Grigio und Pinot Gris?“",
+      "opts": [
+        "Es sind zwei nicht verwandte Rebsorten",
+        "Dieselbe Rebsorte: italienisch meist leichter und knackiger, französisch (Elsass) voller",
+        "Pinot Gris ist ein Rotwein und Pinot Grigio ein Weißwein",
+        "Pinot Grigio ist eine Cuvée aus Pinot Gris und Chardonnay"
+      ],
+      "a": 1,
+      "why": "Es ist dieselbe Rebsorte. „Grigio“ ist Italienisch und „Gris“ Französisch, beides heißt grau. Der Name auf dem Etikett gibt oft einen Hinweis auf den Stil. Italienischer Pinot Grigio ist meist leicht, hell und knackig. Pinot Gris aus dem Elsass ist meist voller, reicher und aromatischer.",
+      "deeper": "Pinot Gris ist eine Farbmutation von Pinot Noir. Die beiden haben fast identische DNA, und die grau-rosa Beerenhaut ist der wichtigste sichtbare Unterschied. Erzeuger in anderen Ländern wählen den Namen, der zu dem Stil passt, den sie machen."
+    },
+    {
+      "q": "Auf der Karte steht eine Flasche Vouvray von der Loire. Aus welcher Rebsorte wird er gemacht?",
+      "opts": [
+        "Sauvignon Blanc",
+        "Viognier",
+        "Chenin Blanc",
+        "Gewürztraminer"
+      ],
+      "a": 2,
+      "why": "Vouvray wird aus Chenin Blanc gemacht. Chenin hat eine hohe Säure und Aromen von Apfel, Birne, Quitte und Honig. Prüfe immer die Süße auf dem Etikett, denn Vouvray kann trocken (sec), halbtrocken (demi-sec), süß (moelleux) oder schäumend sein.",
+      "deeper": "Chenin Blanc ist auch die wichtigste weiße Rebsorte in Südafrika, wo sie manchmal Steen heißt. Service-Tipp: Bevor du einen Vouvray empfiehlst, frag, ob der Gast es trocken oder mit einem Hauch Süße möchte, und prüfe, welchen Stil ihr tatsächlich habt."
+    },
+    {
+      "q": "Mit welchem Land verbindet man Grüner Veltliner am meisten?",
+      "opts": [
+        "Österreich",
+        "Deutschland",
+        "Italien",
+        "Neuseeland"
+      ],
+      "a": 0,
+      "why": "Grüner Veltliner ist die Leitsorte Österreichs und die meistgepflanzte Rebsorte des Landes, mit rund 30 % der Rebfläche. Meist ergibt er einen trockenen, frischen Weißwein mit Noten von Zitrus, grünem Apfel und Kräutern. Er ist ein toller Essensbegleiter und eine gute Wahl für schwierige Gemüse wie Spargel.",
+      "deeper": "Zu den Top-Gebieten gehören die Wachau, das Kamptal, das Kremstal und das Weinviertel. Der Grüne ist berühmt für sein „Pfefferl“, eine Note von weißem Pfeffer (von Rotundon, derselben Verbindung wie in Pfefferkörnern), aber wie stark sie ist, schwankt von Wein zu Wein sehr, also versprich sie einem Gast nicht."
+    },
+    {
+      "q": "Ein Tisch hat Austern und gegrillten Fisch bestellt und möchte einen frischen, spritzigen Weißwein aus Spanien. Welche Rebsorte passt am besten?",
+      "opts": [
+        "Tempranillo",
+        "Albariño",
+        "Gewürztraminer",
+        "Viognier"
+      ],
+      "a": 1,
+      "why": "Albariño kommt vor allem aus Rías Baixas in Galicien, an Spaniens regenreicher Atlantikküste, wo er den allergrößten Teil der Rebfläche ausmacht. Er ist leicht bis mittelgewichtig, hat eine hohe Säure und Aromen von Zitrus und Steinobst. Genau diese Frische brauchen Schalentiere und weißer Fisch.",
+      "deeper": "Jenseits der Grenze in Portugal heißt dieselbe Rebsorte Alvarinho und wird für Vinho Verde verwendet (vor allem rund um Monção und Melgaço). Tempranillo ist eine rote Rebsorte, eine häufige Verwechslung, weil sie ebenfalls aus Spanien stammt."
+    },
+    {
+      "q": "Ein Gast isst ein leicht scharfes Thai-Curry und möchte einen aromatischen Weißwein. Welche Rebsorte, bekannt für Litschi- und Rosenaromen, ist eine klassische Kombination?",
+      "opts": [
+        "Chardonnay im Chablis-Stil",
+        "Sauvignon Blanc",
+        "Pinot Grigio",
+        "Gewürztraminer"
+      ],
+      "a": 3,
+      "why": "Gewürztraminer hat einen unverwechselbaren Duft nach Litschi und Rose. Er ist vollmundig, eher säurearm und oft mit leichter Restsüße ausgebaut. Diese Spur Süße und das intensive Aroma halten sanfter Schärfe und aromatischen asiatischen Gerichten gut stand (sehr scharfes Essen ist schwieriger, weil sein hoher Alkohol die Chilischärfe verstärken kann).",
+      "deeper": "„Gewürz“ steckt schon im Namen, und die berühmteste Heimat der Rebsorte ist das Elsass in Frankreich. Gewürztraminer und Litschis teilen tatsächlich wichtige Aromastoffe, vor allem cis-Rosenoxid, deshalb ist der Vergleich so treffend."
+    },
+    {
+      "q": "Condrieu aus dem nördlichen Rhônetal in Frankreich wird aus welcher Rebsorte gemacht?",
+      "opts": [
+        "Chardonnay",
+        "Riesling",
+        "Viognier",
+        "Chenin Blanc"
+      ],
+      "a": 2,
+      "why": "Condrieu ist zu 100 % Viognier. Viognier ergibt vollmundige Weißweine mit üppigen Aromen von Aprikose, Pfirsich und Blüten und eher niedriger Säure. Er passt zu einem Gast, der reiche Weißweine mag, dem aber ein Chardonnay mit viel Holz zu holzlastig ist.",
+      "deeper": "Viognier wäre in den 1960er-Jahren fast verschwunden, als nur noch eine Handvoll Hektar übrig war, bevor ab den 1990ern ein großes Comeback kam. Die meisten Viogniers trinkt man am besten jung, solange ihr blumiger Duft frisch ist. In der benachbarten Côte-Rôtie wird manchmal etwas Viognier zusammen mit der roten Rebsorte Syrah vergoren."
+    },
+    {
+      "q": "Woher kommt der „buttrige“ Geschmack mancher Chardonnays hauptsächlich?",
+      "opts": [
+        "Vom biologischen Säureabbau, einem Schritt der Weinbereitung, der eine nach Butter riechende Verbindung bildet",
+        "Von Butter, die während der Gärung zugegeben wird",
+        "Von sehr reifen Trauben aus heißen Weinbergen",
+        "Davon, dass die Flasche zu lange offen stand"
+      ],
+      "a": 0,
+      "why": "Viele Chardonnays durchlaufen den biologischen Säureabbau (malolaktische Umwandlung). Bakterien wandeln die herbe Äpfelsäure (wie in grünen Äpfeln) in mildere Milchsäure (wie in Milch) um, und ein Nebenprodukt ist Diacetyl, das nach Butter riecht. Eichenfässer bringen andere Aromen wie Vanille und Röstnoten.",
+      "deeper": "Derselbe Schritt ist bei den meisten Rotweinen Standard, wo er die Säure abmildert. Winzer, die einen knackigen, fruchtigen Weißwein wollen, können ihn unterbinden, und das ist ein Hauptgrund, warum frische Chardonnays ohne Holz so anders schmecken als reiche, cremige."
+    }
+  ]
+}

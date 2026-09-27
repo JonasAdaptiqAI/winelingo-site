@@ -1,0 +1,138 @@
+{
+  "slug": "labels-and-lists",
+  "title": "Labels and lists",
+  "summary": "Decode the words on a wine label or list and explain them to a guest in plain language.",
+  "level": 2,
+  "questions": [
+    {
+      "q": "A guest points at \"Gevrey-Chambertin\" on the list and asks, \"Where does it say the grape?\" What do you explain?",
+      "opts": [
+        "It is a blend, so French rules forbid naming any grape",
+        "The grape is always printed on the back label in France",
+        "The place tells you the grape: here, Pinot Noir",
+        "Gevrey-Chambertin is the local name of the grape itself"
+      ],
+      "a": 2,
+      "why": "Many Old World (European) labels name where the wine comes from, not the grape. The local rules decide which grapes can be used. Gevrey-Chambertin is a red Burgundy, and red Burgundy is made from Pinot Noir.",
+      "deeper": "The idea is that the place matters more than the grape. Learning a few key regions and their grapes lets you read much of a French list: Chablis is Chardonnay, white Sancerre is Sauvignon Blanc, red Burgundy from the Côte d'Or is Pinot Noir.",
+      "source": "https://www.bourgogne-wines.com/wine-and-terroir/decoding-the-aocs/bourgogne-wines-decoding-the-aocs,2467,9263.html"
+    },
+    {
+      "q": "A guest compares a red Rioja Crianza with a Rioja Gran Reserva. What is the key difference?",
+      "opts": [
+        "Gran Reserva is made from a different and rarer grape",
+        "Gran Reserva is aged at least 5 years, 2 of them in oak",
+        "Crianza is always sweeter, with more sugar left in it",
+        "Crianza is aged for longer, but in steel tanks rather than oak"
+      ],
+      "a": 1,
+      "why": "In Rioja, the ageing terms are legal minimums. A red Crianza needs at least 2 years of ageing, with at least 1 year in oak barrels. A red Gran Reserva needs at least 5 years, with at least 2 in oak and 2 in bottle.",
+      "deeper": "In between sits Reserva: at least 3 years for reds, including 1 year in oak and 6 months in bottle. Rioja's rules specify 225-litre oak barrels, and longer ageing usually brings softer tannins and savoury notes like leather and dried fruit.",
+      "source": "https://riojawine.com/en-gb/the-designation/classification/"
+    },
+    {
+      "q": "A guest asks what \"Grand Cru\" means on a red Burgundy label. What is accurate?",
+      "opts": [
+        "It comes from one of Burgundy's top-ranked vineyards",
+        "It is the producer's own best blend from several sites",
+        "The wine was aged for extra years before release",
+        "It comes from the highest-ranked château in the village"
+      ],
+      "a": 0,
+      "why": "In Burgundy, rankings belong to vineyards (called \"climats\"), not to producers. Grand Cru is the top tier, above Premier Cru, village and regional wines. There are 33 Grand Cru appellations in Burgundy.",
+      "deeper": "Most Burgundy Grand Cru labels show only the vineyard name, such as Montrachet or Clos de Tart, without the village (Chablis is the exception: \"Chablis Grand Cru\" plus the vineyard). Premier Cru labels show the village plus the vineyard name.",
+      "source": "https://www.bourgogne-wines.com/wine-and-terroir/decoding-the-aocs/bourgogne-wines-decoding-the-aocs,2467,9263.html"
+    },
+    {
+      "q": "A guest says, \"Premier Cru is the second level in Burgundy, so a Bordeaux 'Premier Cru' must be second-best too.\" What do you explain?",
+      "opts": [
+        "They are right: Premier Cru means the second tier in every region",
+        "Bordeaux does not use the word Cru on any of its labels",
+        "In Bordeaux, Premier Cru is a vineyard tier, just as in Burgundy",
+        "In Bordeaux's 1855 ranking, it is the top rank, given to estates"
+      ],
+      "a": 3,
+      "why": "The same words mean different things in each region. In Burgundy, Premier Cru is a vineyard tier just below Grand Cru. In Bordeaux's 1855 Médoc classification of red wines, \"Premier Cru\" (first growth) is the highest rank, and it is given to a château (an estate), not a single vineyard.",
+      "deeper": "The 1855 red-wine classification has five levels. Four châteaux were ranked first growths in 1855, and Mouton Rothschild was promoted in 1973, making five today. In the 1855 Sauternes list, Château d'Yquem sits alone above the first growths as \"Premier Cru Supérieur\".",
+      "source": "https://www.bordeaux.com/en/classifications/classifications-1855/"
+    },
+    {
+      "q": "A guest points at \"Vieilles Vignes\" on a French label and asks what it means. What is the honest answer?",
+      "opts": [
+        "The wine has been aged for at least ten years before release",
+        "\"Old vines\", but France sets no legal minimum vine age",
+        "It means the vines must be over 50 years old by law",
+        "It is the name of a Grand Cru vineyard in Burgundy"
+      ],
+      "a": 1,
+      "why": "Vieilles Vignes means \"old vines\". Old vines usually give smaller crops, which can mean more concentrated wine. But in France there is no legal definition, so each producer decides what \"old\" means.",
+      "deeper": "Many producers use it for vines of roughly 30 to 40 years or more; others for much older ones. In 2024 the OIV (the international vine and wine organisation) adopted 35 years as its benchmark for an \"old grapevine\", but that is guidance, not French label law.",
+      "source": "https://www.oiv.int/node/3806"
+    },
+    {
+      "q": "A guest sees \"Reserve\" on a Californian wine and assumes it has been aged for a set time. What do you tell them?",
+      "opts": [
+        "It has no US federal legal definition; the producer decides",
+        "It means at least 3 years of ageing, as required by US federal law",
+        "It means the wine comes from a single named vineyard",
+        "It means the wine is certified organic by the USDA"
+      ],
+      "a": 0,
+      "why": "US federal label rules do not define \"Reserve\". It may mean the producer's best wine, or it may just be marketing. Look at the producer and the price, not the word.",
+      "deeper": "Washington State's wine industry has a voluntary Reserve standard, but it is not federal law. In some countries the equivalent word is legally defined: in Spain \"Reserva\" and in Italy \"Riserva\" come with minimum ageing rules set for each wine, as in Rioja or Chianti Classico.",
+      "source": "https://www.govinfo.gov/content/pkg/FR-2010-11-03/html/2010-27737.htm"
+    },
+    {
+      "q": "A guest asks, \"This European wine says 2019 on the label. Does every single grape come from 2019?\" What is accurate?",
+      "opts": [
+        "Yes, EU law requires 100% of the grapes to come from that year",
+        "No, the year only shows when the wine was bottled",
+        "No: under EU rules, at least 85% must come from that year",
+        "No, the year shows when the vines were first planted"
+      ],
+      "a": 2,
+      "why": "The vintage is the year the grapes were harvested. EU rules require at least 85% of the grapes to come from the stated year. A wine with no year on the label is non-vintage (NV), usually a blend of several harvests.",
+      "deeper": "Non-vintage blending is common in Champagne, where houses mix wines from different years to keep the same house style every year. A vintage wine instead shows the character of one particular year.",
+      "source": "https://www.legislation.gov.uk/eur/2019/33/article/49"
+    },
+    {
+      "q": "A guest wants a light, refreshing white. The list shows two unfamiliar dry whites: one at 11.5% alcohol, one at 14.5%. What does the label suggest?",
+      "opts": [
+        "The 14.5% wine will be lighter and more delicate",
+        "Alcohol has nothing to do with how a wine feels",
+        "The 11.5% wine must be sweet, so it will feel heavier",
+        "The 11.5% wine is likely lighter; the 14.5% fuller"
+      ],
+      "a": 3,
+      "why": "Alcohol adds weight and warmth to a wine, so it is a useful clue to body. A lower-alcohol dry white will usually feel lighter, while one at 14% or more will usually feel fuller and richer.",
+      "deeper": "It is a hint, not a rule: sugar, oak and extract also add body. The figure on a label may also differ slightly from the real level; in the EU the allowed difference is 0.5% vol for most still wines (0.8% vol for sparkling, fortified and some older wines).",
+      "source": "https://www.legislation.gov.uk/eur/2019/33/article/44"
+    },
+    {
+      "q": "A guest who dislikes sweet wine sees \"Riesling Spätlese trocken\" and worries it is sweet. What does Spätlese tell you?",
+      "opts": [
+        "How ripe the grapes were at harvest; 'trocken' means dry",
+        "That the wine is always sweet, whatever else the label says",
+        "That the wine was aged in oak for a late release",
+        "That the grapes were frozen on the vine before picking"
+      ],
+      "a": 0,
+      "why": "German terms like Kabinett, Spätlese and Auslese describe how ripe the grapes were when picked, not how sweet the finished wine is. The word \"trocken\" (dry) on the label tells you the sweetness. A Spätlese trocken is a dry wine with extra ripeness and intensity.",
+      "deeper": "The ladder runs Kabinett, Spätlese, Auslese, Beerenauslese and Trockenbeerenauslese, with Eiswein made from grapes frozen on the vine. Beerenauslese, Trockenbeerenauslese and Eiswein are almost always sweet. None of these Prädikat wines may have sugar added before fermentation.",
+      "source": "https://www.winesofgermany.com/our-wine/quality-standards/quality-standard/449/pr%C3%A4dikat-categories"
+    },
+    {
+      "q": "A guest asks what \"DOCG\" on an Italian label and \"AOP\" on a French label have in common. What do you say?",
+      "opts": [
+        "Both mean the wine is certified organic under EU law",
+        "Both are protected designations of origin with strict rules",
+        "Both mean it is a basic table wine with no regional rules at all",
+        "Both mean the wine was aged in oak for a minimum time"
+      ],
+      "a": 1,
+      "why": "Both are protected designations of origin (PDO), the EU's strictest tier of origin rules. The wine must come from a defined area and follow rules on grapes, yields and winemaking. DOCG is Italy's top tier, above DOC; AOP is the French term for PDO, and many French labels still use the older national term AOC.",
+      "deeper": "Below PDO sits PGI (Protected Geographical Indication), with looser rules: IGT (or IGP) in Italy, IGP in France. PGI doesn't mean poor wine: several famous \"Super Tuscan\" reds, which use grapes like Cabernet Sauvignon that the local rules once excluded, have been sold as IGT Toscana.",
+      "source": "https://www.inao.gouv.fr/en/aop-appellation-origine-protegee"
+    }
+  ]
+}

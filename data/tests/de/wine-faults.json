@@ -1,0 +1,128 @@
+{
+  "slug": "wine-faults",
+  "title": "Weinfehler",
+  "summary": "Erkenne die häufigsten Weinfehler, unterscheide sie von harmlosen Eigenheiten und geh ruhig und fair mit der Reklamation eines Gastes um.",
+  "level": 2,
+  "questions": [
+    {
+      "q": "Ein Gast schickt eine Flasche zurück und sagt, der Wein „korkt“. Was würdest du riechen, wenn er recht hat?",
+      "opts": [
+        "Kleine Korkstückchen im Glas, dazu ein holziger Geruch",
+        "Einen stechenden Geruch nach Essig und Nagellackentferner",
+        "Muffig nach feuchter Pappe oder nassem Keller, mit gedämpfter Frucht",
+        "Einen süßen, marmeladigen Geruch nach Pflaumenkompott und gebackener Frucht"
+      ],
+      "a": 2,
+      "why": "„Korkt“ bedeutet, dass der Wein mit einer Verbindung namens TCA belastet ist, die muffig riecht, wie feuchte Pappe oder ein nasser Keller, und die Frucht verflacht. Es ist ein Geruchsproblem. Korkstückchen im Glas sind kein Fehler: Schenk einfach ein frisches Glas ein oder fisch sie heraus.",
+      "deeper": "TCA (2,4,6-Trichloranisol) entsteht, wenn Schimmelpilze Chlorphenole umwandeln, Verbindungen, die mit Chlorbehandlungen und alten Holzschutzmitteln zusammenhängen. Geschulte Verkoster nehmen es schon bei etwa 1–2 Teilen pro Billion wahr, und die Empfindlichkeit ist von Mensch zu Mensch sehr unterschiedlich. Leichte Fälle lassen einen Wein manchmal nur matt wirken, nicht offensichtlich schimmlig."
+    },
+    {
+      "q": "Du öffnest einen Weißwein, der tief goldbraun geworden ist. Er riecht flach, nach angestoßenem Apfel und Nüssen, mit wenig frischer Frucht. Was ist am wahrscheinlichsten los?",
+      "opts": [
+        "Oxidation: zu viel Kontakt mit Luft",
+        "Korkfehler: TCA aus einem belasteten Korken",
+        "Weinstein: eine Reaktion auf kalte Lagerung",
+        "Reduktion: zu wenig Kontakt mit Luft"
+      ],
+      "a": 0,
+      "why": "Zu viel Sauerstoff färbt Weißwein braun und verwandelt frische Frucht in Noten von angestoßenem Apfel, Nüssen oder Sherry. Das kann bei einer alten Flasche passieren, bei einem undichten Verschluss oder bei einer Flasche, die hinter der Bar zu lange offen stand.",
+      "deeper": "Der Zusammenhang zählt: Sherry, Tawny Port und manche gereiften oder Orange-Weine werden bewusst oxidativ ausgebaut, dort ist eine nussige Note also kein Fehler. Offene Flaschen an der Bar solltest du datieren, wieder verschließen und gekühlt halten, um die Oxidation zu bremsen."
+    },
+    {
+      "q": "Eine Flasche kommt mit leicht herausgedrücktem Korken und klebrigem Wein unter der Kapsel. Der Rotwein schmeckt nach marmeladiger, gekochter Frucht. Was ist die wahrscheinliche Ursache?",
+      "opts": [
+        "Er braucht nach dem Öffnen mehr Zeit zum Atmen",
+        "Korkfehler durch einen fehlerhaften, schimmligen Korken",
+        "Zu viel Depot durch lange Reife in der Flasche",
+        "Hitzeschaden: Die Flasche ist zu heiß geworden"
+      ],
+      "a": 3,
+      "why": "Hitze lässt den Wein sich ausdehnen, was den Korken hochdrücken und den Wein austreten lassen kann. Hitze „kocht“ den Wein außerdem, sodass frische Frucht gekocht, marmeladig oder gebacken wirkt. Luft hilft da nicht; der Schaden ist dauerhaft.",
+      "deeper": "Er ist nicht gesundheitsschädlich, nur weniger genussvoll. Ein hochgedrückter Korken oder Spuren von ausgelaufenem Wein sind nützliche Warnzeichen bei der Warenannahme: Stell diese Flaschen beiseite und probiere eine, bevor sie in den Verkauf gehen."
+    },
+    {
+      "q": "Ein frisch geöffneter Rotwein riecht nach abgebranntem Streichholz oder leicht nach faulem Ei. Was ist der beste erste Schritt?",
+      "opts": [
+        "Dem Gast sagen, dass er korkt, und eine neue öffnen",
+        "Luft geben: schwenken oder dekantieren, dann neu riechen",
+        "Einen Eiswürfel ins Glas geben, um den Geruch zu dämpfen",
+        "Nichts, so riecht diese Rebsorte eben immer"
+      ],
+      "a": 1,
+      "why": "Das ist „Reduktion“ (Böckser): Schwefelgerüche, die entstehen, wenn ein Wein sehr wenig Sauerstoff hatte. Leichte Reduktion verschwindet oft durch Schwenken oder Dekantieren. Verfliegt sie, ist der Wein in Ordnung; bleibt ein starker Geruch nach faulem Ei oder Kohl, behandle ihn als fehlerhaft.",
+      "deeper": "Ein Hauch von abgebranntem Streichholz kann bei manchen Weißweinen, etwa bestimmten Chardonnays, sogar ein bewusstes Stilmerkmal sein. Service-Tipp: Bemerkt ein Gast den Geruch, biete an zu dekantieren und komm nach ein paar Minuten wieder; oft ist das Problem dann gelöst."
+    },
+    {
+      "q": "Ein Gast sagt, sein traditioneller Rotwein rieche „nach Bauernhof, verschwitztem Sattel und Pflaster“. Was ist die wahrscheinlichste Erklärung, und wie gehst du damit um?",
+      "opts": [
+        "Korkfehler; die Flasche sofort und ohne Diskussion ersetzen",
+        "Hitzeschaden; der Wein ist gekocht und nicht mehr trinkbar",
+        "Brett, eine Hefe: etwas mögen manche, viel ist ein Fehler",
+        "Weinstein; harmlos, also einfach ein frisches Glas einschenken"
+      ],
+      "a": 2,
+      "why": "Brett (Brettanomyces) ist eine Hefe, die Gerüche nach Stall, Leder, Rauch oder Medizin (Pflaster) erzeugt. Die Meinungen gehen auseinander: Manche mögen einen Hauch davon in bestimmten traditionellen Rotweinen, während starkes Brett, das die Frucht überdeckt, weithin als Fehler gilt. Wenn der Gast es nicht mag, respektiere das.",
+      "deeper": "Geringe Mengen Brett sind in manchen traditionell gemachten Rotweinen aus Gegenden wie Bordeaux oder der Rhône nicht ungewöhnlich. Weil es umstritten ist, sag einem Gast lieber nicht „so soll er schmecken“. Biete stattdessen einen anderen Wein an."
+    },
+    {
+      "q": "Ein Glas Rotwein riecht stechend nach Essig, mit einem Hauch Nagellackentferner. Welcher Fehler ist das?",
+      "opts": [
+        "Reduktion (Schwefelverbindungen)",
+        "Weinstein (Weinsäure)",
+        "Korkfehler (die Verbindung TCA)",
+        "Hohe flüchtige Säure (VA)"
+      ],
+      "a": 3,
+      "why": "Flüchtige Säure stammt hauptsächlich von Essigsäure (Essig) und ihrem Begleiter Ethylacetat (Geruch nach Nagellack). Sie wird meist von Essigsäurebakterien verursacht, die mit Luft arbeiten, und manche Hefen tragen dazu bei. In hohen Mengen ist sie ein klarer Fehler, und Luft beseitigt sie nicht.",
+      "deeper": "Jeder Wein hat ein wenig flüchtige Säure, und in geringen Mengen kann sie dem Aroma Frische und Lebendigkeit geben. Manche bekannten traditionellen Weine haben deutlich spürbare flüchtige Säure als Teil ihres Stils. Zum Fehler wird sie, wenn die Essignote dominiert."
+    },
+    {
+      "q": "Ein Gast findet kleine, glasartige Kristalle am Boden seines Weißweins und befürchtet, es sei Glasbruch. Was sagst du?",
+      "opts": [
+        "Harmloser Weinstein, der sich bei Kälte natürlich bildet",
+        "Ungelöster Zucker, also wird der Wein süßer schmecken",
+        "Ein Zeichen, dass der Wein korkt und zurückgehen sollte",
+        "Glas aus der Abfüllanlage, die Flasche muss zurückgerufen werden"
+      ],
+      "a": 0,
+      "why": "Weinstein sind natürliche Kristalle aus Kalium und Weinsäure aus den Trauben. Sie bilden sich, wenn Wein kalt wird, und beeinflussen weder Geschmack noch Sicherheit. Dieselbe Verbindung wird in der Küche als Weinsteinpulver verwendet. Manchmal nennt man sie „Weindiamanten“.",
+      "deeper": "Im Rotwein sehen sie rötlich aus, weil sie Farbe aufnehmen. Rotweine können mit dem Alter auch Depot bilden (dunkle, körnige Ablagerungen aus Farb- und Gerbstoffen). Beides ist harmlos; Dekantieren oder vorsichtiges Einschenken hält es aus dem Glas."
+    },
+    {
+      "q": "Ein Gast sagt, sein Rotwein „schmeckt heiß und suppig, fast nur nach Alkohol“. Die Flasche stand neben der Küche. Wie reagierst du am besten?",
+      "opts": [
+        "Sagen, dass er korkt, dich entschuldigen und die Flasche ersetzen",
+        "Sagen, er sei nur zu warm, nicht fehlerhaft; im Eiskübel kühlen",
+        "Sagen, dass Rotwein immer auf Zimmertemperatur serviert wird",
+        "Einen Eiswürfel ins Glas geben, um die Temperatur zu senken"
+      ],
+      "a": 1,
+      "why": "Zu warm ist ein Serviceproblem, kein Weinfehler. Warme Rotweine schmecken alkoholisch und plump. Ein paar Minuten im Eiskübel bringen die meisten Rotweine wieder auf eine angenehme, leicht kühle Temperatur.",
+      "deeper": "„Zimmertemperatur“ stammt aus der Zeit vor der Zentralheizung; die meisten Rotweine zeigen sich etwas kühler als in einem warmen modernen Raum am besten. Umgekehrt passiert es auch: Ein eiskalt servierter Weißwein wirkt manchmal aromalos und öffnet sich erst, wenn er wärmer wird."
+    },
+    {
+      "q": "Ein Gast sagt: „Der hat einen Schraubverschluss, also kann er ja nicht fehlerhaft sein, oder?“ Was ist die richtige Antwort?",
+      "opts": [
+        "Stimmt, Weine mit Schraubverschluss können nie fehlerhaft sein",
+        "Schraubverschlüsse verursachen sogar öfter Korkfehler als Naturkorken",
+        "Schraubverschlüsse versagen nur bei Rotwein, der zum Reifen Luft braucht",
+        "Der Verschluss verursacht keinen Korkfehler, aber andere Fehler gibt es"
+      ],
+      "a": 3,
+      "why": "Das meiste TCA stammt aus Naturkorken, Schraubverschlüsse beseitigen dieses Risiko also weitgehend. TCA kann aber auch aus einem belasteten Weingut kommen (Fässer, Holzkonstruktionen, behandeltes Wasser), und andere Fehler wie Oxidation, Hitzeschaden oder Reduktion können trotzdem auftreten.",
+      "deeper": "Weil Schraubverschlüsse sehr wenig Sauerstoff durchlassen, werden Weine mit Schraubverschluss oft im Zusammenhang mit Reduktion genannt, deshalb kann kurzes Schwenken helfen. Weine mit Schraubverschluss sind viel seltener von TCA betroffen als Weine mit Korken."
+    },
+    {
+      "q": "Ein Gast sagt, mit seinem Wein stimme etwas nicht. Du probierst und findest ihn ehrlich gesagt in Ordnung. Wie gehst du am besten damit um?",
+      "opts": [
+        "Bestimmt, aber höflich erklären, dass der Wein stimmt und der Gast sich irrt",
+        "Die zweite Flasche berechnen, weil die erste ja nicht fehlerhaft war",
+        "Freundlich bleiben, Ersatz anbieten, Flasche zum Prüfen beiseitestellen",
+        "Das Glas stillschweigend abräumen, ohne dem Gast etwas zu sagen"
+      ],
+      "a": 2,
+      "why": "Das Ziel ist ein zufriedener Gast, nicht die gewonnene Diskussion. Probier eine kleine Menge abseits vom Tisch, wenn dein Betrieb das erlaubt, und biete dann eine frische Flasche oder einen anderen Wein an. Heb die Flasche auf, beschrifte sie und lass deine Führungskraft entscheiden, ob sie an den Lieferanten zurückgeht.",
+      "deeper": "Viele Lieferanten schreiben wirklich fehlerhafte Flaschen gut, deshalb schützt es den Betrieb, die Flasche aufzubewahren und Datum und Problem zu notieren. Ist der Wein in Ordnung, trifft aber nicht den Geschmack des Gastes, tauschen viele Betriebe trotzdem und verkaufen die geöffnete Flasche glasweise. Halte dich an die Regeln deines Hauses."
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "slug": "red-grapes",
+  "title": "Rote Rebsorten",
+  "summary": "Lerne die zehn roten Rebsorten kennen, auf denen jede Weinkarte aufbaut, von leicht bis vollmundig, und welche Rebsorte hinter Barolo, Rioja, Chianti und Beaujolais steckt.",
+  "level": 1,
+  "questions": [
+    {
+      "q": "Ein Gast liebt Pinot Noir, möchte aber etwas Ähnliches, das meist ein besseres Preis-Leistungs-Verhältnis hat. Was ist ein guter Vorschlag?",
+      "opts": [
+        "Ein Shiraz aus dem Barossa Valley in Südaustralien",
+        "Ein Cru-Beaujolais wie Morgon oder Fleurie",
+        "Ein Cabernet Sauvignon aus dem Napa Valley",
+        "Ein argentinischer Malbec aus Mendoza"
+      ],
+      "a": 1,
+      "why": "Beaujolais wird aus Gamay gemacht, der wie Pinot Noir dünnschalig ist und leichte, tanninarme Rotweine mit heller roter Frucht und frischer Säure ergibt. Die zehn benannten „Cru“-Orte wie Morgon und Fleurie liefern die ernsthaftesten Versionen. Die anderen Optionen sind alle deutlich voller und tanninreicher.",
+      "deeper": "Das Beaujolais liegt am südlichen Ende des erweiterten Burgunds, der Heimat des Pinot Noir. Viele Beaujolais werden aus ganzen, unzerdrückten Trauben gemacht (Kohlensäuremaischung bzw. semi-carbonique), was saftige, fruchtige Weine mit wenig Tannin ergibt. Leichter Beaujolais wird oft etwas kühler serviert als andere Rotweine."
+    },
+    {
+      "q": "Ein Gast schaut auf ein Glas Barolo und sagt: „Der ist so hell, das muss ein leichter Wein sein.“ Was sagst du?",
+      "opts": [
+        "Ja, Barolo ist ein leichter, einfacher, unkomplizierter Rotwein",
+        "Barolo ist hell, weil er eigentlich ein Rosé ist",
+        "Er ist hell, weil Barolo mit weißen Trauben verschnitten wird",
+        "Barolos Nebbiolo ist hell, aber reich an Tannin und Säure"
+      ],
+      "a": 3,
+      "why": "Barolo ist zu 100 % Nebbiolo. Nebbiolo ist der klassische Fall, bei dem die Farbe täuscht: Der Wein sieht leicht und orange schimmernd aus, packt aber mit kräftigem Tannin und hoher Säure zu. Er braucht Essen, am besten kräftige Fleischgerichte, Pilze oder Trüffel.",
+      "deeper": "Nebbiolo ist berühmt für Aromen von „Teer und Rosen“. Barbaresco aus demselben Teil des Piemonts ist ebenfalls Nebbiolo. Gesetzlich muss Barolo vor der Freigabe mindestens 38 Monate (gut drei Jahre) reifen, davon mindestens 18 Monate im Holz."
+    },
+    {
+      "q": "Welche Rebsorte macht beim roten Rioja meist den größten Teil der Cuvée aus?",
+      "opts": [
+        "Tempranillo",
+        "Garnacha (Grenache)",
+        "Merlot",
+        "Sangiovese"
+      ],
+      "a": 0,
+      "why": "Roter Rioja ist hauptsächlich Tempranillo, der rote und schwarze Kirschfrucht und mittleres bis hohes Tannin mitbringt. Rioja ist bekannt für den Ausbau im Eichenfass, der Vanille, Kokos und Würze beisteuert. Die Begriffe Crianza, Reserva und Gran Reserva auf dem Etikett sagen dir, wie lange der Wein gereift ist, von kurz bis lang.",
+      "deeper": "Garnacha, Graciano und Mazuelo (Carignan) sind die traditionellen Begleitsorten. Tempranillo macht den weitaus größten Teil der roten Rebfläche in Rioja aus. Service-Tipp: Ein Gast, der weiche Rotweine mit Holznoten mag, wird oft an einer Reserva Freude haben."
+    },
+    {
+      "q": "Ein Tisch hat Pasta mit Tomatensoße bestellt und möchte einen italienischen Rotwein. Welche Rebsorte, die Hauptrebsorte des Chianti, passt ganz natürlich dazu?",
+      "opts": [
+        "Nebbiolo",
+        "Pinot Noir",
+        "Sangiovese",
+        "Malbec"
+      ],
+      "a": 2,
+      "why": "Chianti wird hauptsächlich aus Sangiovese gemacht. Sangiovese hat eine hohe Säure und Aromen von Kirsche und Kräutern. Tomatensoße ist ebenfalls säurebetont, und ein Wein mit hoher Säure bleibt daneben frisch, während ein säurearmer Wein flach schmecken würde.",
+      "deeper": "Chianti Classico, das historische Herz des Chianti-Gebiets, muss mindestens 80 % Sangiovese enthalten. Brunello di Montalcino, ebenfalls aus der Toskana, wird zu 100 % aus Sangiovese gemacht."
+    },
+    {
+      "q": "Ein Gast fragt: „Was ist der Unterschied zwischen Syrah und Shiraz?“",
+      "opts": [
+        "Syrah ist eine rote Rebsorte und Shiraz eine weiße",
+        "Dieselbe Rebsorte; „Shiraz“ ist ihr australischer Name",
+        "Shiraz ist eine Cuvée aus Syrah und Grenache aus Australien",
+        "Nicht verwandte Rebsorten, die nur zufällig ähnlich klingen"
+      ],
+      "a": 1,
+      "why": "Syrah und Shiraz sind dieselbe Rebsorte. In Europa sagt man meist Syrah, in Australien (und oft in Südafrika) Shiraz. Shiraz aus warmem Klima (zum Beispiel Barossa) ist eher vollmundig und reif mit dunkler, marmeladiger Frucht; Syrah aus kühlerem Klima ist herzhafter, mit Noten von Brombeere und schwarzem Pfeffer.",
+      "deeper": "Die klassische Heimat der Rebsorte ist die nördliche Rhône in Frankreich, mit Weinen wie Hermitage, Côte-Rôtie und Cornas. Manche Erzeuger außerhalb Australiens nutzen den Namen auf dem Etikett, um den angestrebten Stil zu signalisieren."
+    },
+    {
+      "q": "Ein Gast bestellt ein Steak und möchte einen dunklen, vollen, fruchtigen Rotwein mit weichen Tanninen, „wie die aus Argentinien“. An welche Rebsorte denkt er höchstwahrscheinlich?",
+      "opts": [
+        "Malbec",
+        "Gamay",
+        "Pinot Noir",
+        "Nebbiolo"
+      ],
+      "a": 0,
+      "why": "Malbec ist die Leitsorte Argentiniens, besonders aus Mendoza. Er ergibt tieffarbige Weine mit reifer Pflaumen- und Brombeerfrucht und einer weichen, samtigen Textur. Diese Kombination kommt zu gegrilltem Rind fast immer gut an.",
+      "deeper": "Malbec stammt ursprünglich aus Frankreich. In Cahors im Südwesten, wo er auch Côt heißt, ergibt er dunklere, festere, rustikalere Weine. Früher war er auch in Bordeaux verbreitet, doch nach dem Frost von 1956 ging die Rebfläche dort stark zurück."
+    },
+    {
+      "q": "Welche Rebsorte ist meist die Hauptrebsorte im roten Châteauneuf-du-Pape?",
+      "opts": [
+        "Cabernet Sauvignon",
+        "Pinot Noir",
+        "Tempranillo",
+        "Grenache"
+      ],
+      "a": 3,
+      "why": "Grenache dominiert den roten Châteauneuf-du-Pape an der südlichen Rhône, meist verschnitten mit Syrah und Mourvèdre. Grenache bringt reife Erdbeer- und Himbeerfrucht, eine würzige Note, weiche Tannine und oft viel Alkohol.",
+      "deeper": "In Spanien heißt die Rebsorte Garnacha, und alte Reben im Priorat ergeben dichte, kraftvolle Rotweine. Weil Grenache dünne, helle Schalen hat, ist er auch für Rosé sehr beliebt, zum Beispiel in Tavel und der Provence."
+    },
+    {
+      "q": "Ein Gast fragt, welche Rebsorte in einem Pauillac vom linken Ufer in Bordeaux steckt. Was ist die beste Antwort?",
+      "opts": [
+        "Hauptsächlich Merlot, verschnitten mit Cabernet Franc",
+        "Nur Pinot Noir, dieselbe Rebsorte wie roter Burgunder",
+        "Hauptsächlich Cabernet Sauvignon, verschnitten mit Merlot",
+        "Hauptsächlich Syrah, verschnitten mit Grenache und Mourvèdre"
+      ],
+      "a": 2,
+      "why": "Am linken Ufer von Bordeaux (im Médoc, einschließlich Pauillac) führt meist Cabernet Sauvignon die Cuvée an. Cabernet hat dicke Schalen und ergibt deshalb vollmundige Weine mit festem Tannin und Aromen von schwarzer Johannisbeere. Bordeaux-Etiketten nennen den Ort, nicht die Rebsorten, deshalb lohnt es sich, das zu wissen.",
+      "deeper": "DNA-Untersuchungen in den 1990er-Jahren zeigten, dass Cabernet Sauvignon eine natürliche Kreuzung aus Cabernet Franc und Sauvignon Blanc ist, wahrscheinlich aus Südwestfrankreich. Tannin und Säure sind der Grund, warum Spitzen-Bordeaux vom linken Ufer jahrzehntelang reifen kann."
+    },
+    {
+      "q": "Ein Gast möchte einen Rotwein im Bordeaux-Stil, findet Cabernet Sauvignon aber „zu hart und austrocknend“. Was ist ein guter Vorschlag?",
+      "opts": [
+        "Ein Barolo, der berühmte Rotwein aus dem Piemont",
+        "Ein Saint-Émilion oder Pomerol auf Merlot-Basis",
+        "Ein junger Nebbiolo aus Norditalien",
+        "Ein Cabernet aus einem sehr kühlen Jahrgang"
+      ],
+      "a": 1,
+      "why": "Merlot ist weicher, runder und tanninärmer als Cabernet Sauvignon, mit Frucht von Pflaume und roten Beeren. Am rechten Ufer von Bordeaux (Saint-Émilion, Pomerol) führt meist Merlot die Cuvée an. Das austrocknende Gefühl, das der Gast beschreibt, ist Tannin, und Barolo oder junger Nebbiolo hätten davon noch mehr.",
+      "deeper": "Merlot und Cabernet werden so oft verschnitten, weil sie sich ergänzen: Cabernet bringt Struktur, Merlot Fülle und Weichheit. In Pomerol geben Lehmböden dem Merlot zusätzliches Rückgrat, und einige der berühmtesten Weine der Welt von dort sind fast reiner Merlot."
+    },
+    {
+      "q": "Ein Gast bittet dich, drei Rotweine vom leichtesten zum vollsten Körper zu ordnen. Welche Reihenfolge stimmt in der Regel?",
+      "opts": [
+        "Pinot Noir, Merlot, Cabernet Sauvignon",
+        "Cabernet Sauvignon, Merlot, Pinot Noir",
+        "Merlot, Pinot Noir, Cabernet Sauvignon",
+        "Pinot Noir, Cabernet Sauvignon, Merlot"
+      ],
+      "a": 0,
+      "why": "Pinot Noir ist dünnschalig und ergibt hellfarbige, tanninarme, leichte bis mittelgewichtige Rotweine. Merlot ist weicher und fleischiger, aber voller. Cabernet Sauvignon mit seinen dicken Schalen ist meist der vollste und tanninreichste der drei.",
+      "deeper": "Klima und Weinbereitung können das verschieben: Ein reifer Pinot mit Holz aus einer warmen Region kann voller sein als ein schlanker Merlot aus kühlem Klima. Als grobe Leiter von leicht bis voll: Gamay und Pinot Noir; dann Grenache, Sangiovese, Tempranillo und Merlot; dann Nebbiolo, Syrah, Malbec und Cabernet Sauvignon."
+    }
+  ]
+}

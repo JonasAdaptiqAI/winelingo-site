@@ -1,0 +1,138 @@
+{
+  "slug": "guest-questions",
+  "title": "Answering guest questions",
+  "summary": "Answer the questions guests actually ask at the table in plain, honest words that help them choose.",
+  "level": 1,
+  "questions": [
+    {
+      "q": "A guest says, \"I want a dry white, but I love fruity wines.\" What should you understand from this?",
+      "opts": [
+        "Dry and fruity are opposites, so the guest has to choose one of them",
+        "Dry means not sweet; fruity is a flavour, so a wine can be both",
+        "Dry means low in alcohol, and fruity means high in alcohol",
+        "Dry means oak-aged, which hides the fruit in the wine"
+      ],
+      "a": 1,
+      "why": "\"Dry\" is about sugar: very little is left after fermentation, so the wine does not taste sweet. \"Fruity\" is about aromas and flavours like citrus or peach. Many dry wines smell very fruity, so the guest's request makes perfect sense.",
+      "deeper": "Ripe fruit smells can trick the brain into expecting sweetness, which is why guests often mix the two up. A helpful line: \"This one is dry, so not sweet at all, but it's full of ripe fruit flavour.\"",
+      "source": "https://winefolly.com/deep-dive/what-is-residual-sugar-in-wine/"
+    },
+    {
+      "q": "A guest asks, \"What does 'tannin' mean?\" Which answer is accurate and easy to understand?",
+      "opts": [
+        "The sweetness left in the wine, like sugar in a cup of tea",
+        "Another word for the alcohol level, the warm burn in your throat",
+        "The sour, mouth-watering taste, like a squeeze of lemon juice",
+        "A drying, grippy feel in the mouth, like strong black tea"
+      ],
+      "a": 3,
+      "why": "Tannins are natural compounds from grape skins, seeds and stems, and sometimes from oak barrels. They bind with proteins in your saliva, which is why your mouth feels dry and slightly rough. The strong-tea comparison works for almost every guest.",
+      "deeper": "Red wines have much more tannin than whites because the juice ferments together with the skins. Tannin also gives a red its structure and helps it age; with food, especially protein and fat, it tends to feel softer.",
+      "source": "https://www.wineenthusiast.com/culture/wine/tannins-wine-guide/"
+    },
+    {
+      "q": "A guest says, \"I usually drink Sauvignon Blanc, but I'd like to try something different.\" Which is the best suggestion?",
+      "opts": [
+        "Grüner Veltliner from Austria: dry, crisp, with a peppery edge",
+        "A rich, oaky Chardonnay from California, with butter and vanilla",
+        "Moscato d'Asti: sweet, lightly sparkling and low in alcohol",
+        "White Zinfandel, a sweet-ish pink wine from California"
+      ],
+      "a": 0,
+      "why": "A Sauvignon Blanc lover likes dry, crisp, fresh whites with high acidity. Grüner Veltliner gives them that same freshness with a new flavour. The other choices are much richer or sweeter.",
+      "deeper": "Other good swaps are Verdejo from Rueda in Spain, Albariño, Vermentino or Assyrtiko. Try saying, \"If you like Sauvignon Blanc's freshness, this has the same zing with a slightly different twist.\"",
+      "source": "https://winefolly.com/tips/savvy-sauvignon-blanc-substitutes/"
+    },
+    {
+      "q": "A couple wants a bottle recommendation. How do you handle price without being pushy?",
+      "opts": [
+        "Recommend the most expensive bottle on the list as the safest bet",
+        "Only suggest the cheapest bottles, so nobody feels uncomfortable",
+        "Offer two or three wines at different prices and let them choose",
+        "Wait until they tell you their exact budget out loud at the table"
+      ],
+      "a": 2,
+      "why": "Offering a few options at different prices lets guests pick their comfort level without having to say a number in front of others. It also shows you're recommending on taste, not on price.",
+      "deeper": "Many guests signal a budget by pointing at a price on the list and saying \"something around here\"; take the hint without comment. Honest upselling means explaining what a slightly pricier bottle gives them, then being happy with whatever they choose.",
+      "source": "https://www.decanter.com/learn/what-to-say-to-a-sommelier-budget-357232/"
+    },
+    {
+      "q": "A guest tastes their wine and says, \"I think this tastes off.\" What do you do?",
+      "opts": [
+        "Explain that this is simply how the wine is meant to taste, and move on",
+        "Apologise, take the bottle to be checked, and offer a replacement",
+        "Point out that they already approved the tasting sample earlier",
+        "Taste it from the guest's own glass at the table to prove your point"
+      ],
+      "a": 1,
+      "why": "Don't argue with the guest. Take the bottle back, let a manager or sommelier check it, and offer a fresh bottle or a different wine. Keeping the guest happy matters more than proving who is right.",
+      "deeper": "Sometimes a wine really is faulty, for example \"corked\". Other times the guest just doesn't like the style, and many restaurants will still swap it and sell the bottle by the glass. Follow your venue's policy.",
+      "source": "https://annemchale.com/why-do-i-get-given-the-wine-to-taste-in-a-restaurant/"
+    },
+    {
+      "q": "Why do you pour a small taste for the person who ordered the bottle before serving the table?",
+      "opts": [
+        "So they can decide whether they want to pay for the bottle",
+        "To show the table how much wine a full glass will contain",
+        "So they can check the alcohol level is what the label says",
+        "So they can check the wine is sound and not faulty"
+      ],
+      "a": 3,
+      "why": "The taste is a quality check: the host makes sure the wine is sound, without a fault such as cork taint. It is not really a chance to decide whether they like the style.",
+      "deeper": "Pour a small splash for the host, wait for their nod, then serve the other guests before topping up the host's glass last. If the host looks unsure, a friendly \"Is it showing well?\" helps them relax.",
+      "source": "https://www.winespectator.com/articles/what-s-the-proper-etiquette-when-a-waiter-pours-you-a-small-taste-of-wine"
+    },
+    {
+      "q": "A guest asks, \"Is this wine organic?\" The label has no organic logo or certification. What's the honest answer?",
+      "opts": [
+        "\"It isn't certified organic, as far as the label shows.\"",
+        "\"Yes, pretty much all wine is organic, since it's made from grapes.\"",
+        "\"Yes, the label says 'estate grown', which means the same thing.\"",
+        "\"Yes, you can tell because it doesn't contain any sulfites.\""
+      ],
+      "a": 0,
+      "why": "\"Organic\" is a legally protected term in the EU, the US and many other places, and certified wines carry a logo or statement. Without certification, don't claim it is organic, even if the producer farms carefully. You can still tell the guest what you know about how the wine is made.",
+      "deeper": "The rules differ by country. EU organic wine may contain added sulfites, but at lower limits than regular wine. In the US, wine labelled \"organic\" cannot have added sulfites, while \"made with organic grapes\" can.",
+      "source": "https://www.usda.gov/about-usda/news/blog/organic-101-organic-wine"
+    },
+    {
+      "q": "A guest asks, \"Is 'natural wine' an official category, like organic?\" What's accurate?",
+      "opts": [
+        "Yes, natural wine is strictly defined by law in every country",
+        "Yes, it is simply another official name for certified organic wine",
+        "Generally no; it loosely means wine made with minimal intervention",
+        "Yes, it is the legal term for wine made with no alcohol at all"
+      ],
+      "a": 2,
+      "why": "There is generally no legal definition of natural wine, so the term means different things to different producers. It usually describes organically grown grapes and minimal additives in the cellar.",
+      "deeper": "France approved a voluntary label, \"Vin Méthode Nature\", from the 2020 vintage. It requires hand-harvested, certified organic grapes, native yeasts and at most 30 mg/L of added sulfites, but it is a private producers' label, not a legal definition of natural wine.",
+      "source": "https://www.decanter.com/wine-news/natural-wine-receives-formal-recognition-vin-methode-nature-435358/"
+    },
+    {
+      "q": "A guest asks, \"What does 'Old World' and 'New World' mean?\" Which one-sentence answer is best?",
+      "opts": [
+        "Old World means wines from old vintages; New World means wines from the most recent vintages",
+        "Old World is Europe and the Mediterranean; New World is places like the Americas and Australia",
+        "Old World means cheap everyday wines; New World means expensive premium ones",
+        "Old World means wines made from old vines; New World means wines made from young vines"
+      ],
+      "a": 1,
+      "why": "Old World means Europe and the long-established wine regions around the Mediterranean; New World means places like the Americas, Australia, New Zealand and South Africa. The terms describe where a wine is from, not its age or price. Old World regions have made wine for many centuries; New World regions took up winemaking more recently, mostly from the age of exploration onwards.",
+      "deeper": "As a loose style rule, Old World wines are often lighter and more savoury, and New World wines riper and fruitier. There are many exceptions, because climate and the winemaker's choices matter more than the label.",
+      "source": "https://winefolly.com/deep-dive/new-world-vs-old-world-wine/"
+    },
+    {
+      "q": "A guest says red wine often makes their mouth feel dry and \"furry\", but they'd like a red tonight. What do you suggest?",
+      "opts": [
+        "A lighter, low-tannin red like Pinot Noir or Beaujolais",
+        "A young Cabernet Sauvignon from a warm region such as Napa",
+        "A Barolo, made from Nebbiolo in Piedmont, north-west Italy",
+        "A young Madiran from south-west France, made from Tannat"
+      ],
+      "a": 0,
+      "why": "The dry, furry feeling comes from tannin. Pinot Noir and Gamay are naturally lower in tannin, so they feel smoother. Cabernet Sauvignon, Nebbiolo and Tannat are among the most tannic grapes.",
+      "deeper": "Serving a light red slightly cool makes it even fresher. A useful line: \"This one is soft and silky, without that drying grip.\"",
+      "source": "https://winefolly.com/tips/low-tannin-red-wines/"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "slug": "guest-questions",
+  "title": "Fragen von Gästen beantworten",
+  "summary": "Beantworte die Fragen, die Gäste am Tisch wirklich stellen, in einfachen, ehrlichen Worten, die ihnen bei der Wahl helfen.",
+  "level": 1,
+  "questions": [
+    {
+      "q": "Ein Gast sagt: „Ich möchte einen trockenen Weißwein, aber ich liebe fruchtige Weine.“ Was solltest du daraus verstehen?",
+      "opts": [
+        "Trocken und fruchtig sind Gegensätze, der Gast muss sich also für eins entscheiden",
+        "Trocken heißt nicht süß; fruchtig ist ein Geschmack, ein Wein kann also beides sein",
+        "Trocken heißt wenig Alkohol, und fruchtig heißt viel Alkohol",
+        "Trocken heißt im Holz gereift, und das überdeckt die Frucht im Wein"
+      ],
+      "a": 1,
+      "why": "„Trocken“ bezieht sich auf den Zucker: Nach der Gärung ist nur sehr wenig übrig, deshalb schmeckt der Wein nicht süß. „Fruchtig“ beschreibt Aromen und Geschmack wie Zitrus oder Pfirsich. Viele trockene Weine duften sehr fruchtig, der Wunsch des Gastes ergibt also absolut Sinn.",
+      "deeper": "Reife Fruchtaromen können dem Gehirn vorgaukeln, dass Süße kommt, deshalb verwechseln Gäste die beiden oft. Ein hilfreicher Satz: „Der ist trocken, also überhaupt nicht süß, aber voller reifer Frucht.“"
+    },
+    {
+      "q": "Ein Gast fragt: „Was bedeutet eigentlich ‚Tannin‘?“ Welche Antwort ist richtig und leicht verständlich?",
+      "opts": [
+        "Die Süße, die im Wein bleibt, wie Zucker in einer Tasse Tee",
+        "Ein anderes Wort für den Alkoholgehalt, das warme Brennen im Hals",
+        "Der saure Geschmack, der das Wasser im Mund zusammenlaufen lässt, wie Zitrone",
+        "Ein trocknendes, griffiges Gefühl im Mund, wie bei starkem schwarzem Tee"
+      ],
+      "a": 3,
+      "why": "Tannine (Gerbstoffe) sind natürliche Verbindungen aus Beerenhäuten, Kernen und Stielen, manchmal auch aus Eichenfässern. Sie binden sich an Eiweiße im Speichel, deshalb fühlt sich der Mund trocken und leicht rau an. Der Vergleich mit starkem Tee funktioniert bei fast jedem Gast.",
+      "deeper": "Rotweine haben viel mehr Tannin als Weißweine, weil der Saft zusammen mit den Beerenhäuten vergärt. Tannin gibt einem Rotwein außerdem Struktur und hilft ihm beim Reifen; zum Essen, besonders zu Eiweiß und Fett, wirkt es meist weicher."
+    },
+    {
+      "q": "Ein Gast sagt: „Normalerweise trinke ich Sauvignon Blanc, aber ich würde gern mal etwas anderes probieren.“ Was ist der beste Vorschlag?",
+      "opts": [
+        "Grüner Veltliner aus Österreich: trocken, knackig, mit pfeffriger Note",
+        "Ein üppiger Chardonnay aus Kalifornien mit Holz, Butter und Vanille",
+        "Moscato d'Asti: süß, leicht perlend und mit wenig Alkohol",
+        "White Zinfandel, ein eher süßlicher Rosé aus Kalifornien"
+      ],
+      "a": 0,
+      "why": "Wer Sauvignon Blanc liebt, mag trockene, knackige, frische Weißweine mit hoher Säure. Grüner Veltliner bietet dieselbe Frische mit einem neuen Geschmack. Die anderen Optionen sind deutlich üppiger oder süßer.",
+      "deeper": "Weitere gute Alternativen sind Verdejo aus Rueda in Spanien, Albariño, Vermentino oder Assyrtiko. Probier es mit: „Wenn Sie die Frische von Sauvignon Blanc mögen, hat der hier denselben Pfiff, nur mit einem etwas anderen Dreh.“"
+    },
+    {
+      "q": "Ein Paar möchte eine Flaschenempfehlung. Wie gehst du mit dem Preis um, ohne aufdringlich zu sein?",
+      "opts": [
+        "Die teuerste Flasche der Karte als sicherste Wahl empfehlen",
+        "Nur die günstigsten Flaschen vorschlagen, damit sich niemand unwohl fühlt",
+        "Zwei oder drei Weine in verschiedenen Preislagen anbieten und wählen lassen",
+        "Warten, bis sie ihr genaues Budget am Tisch laut aussprechen"
+      ],
+      "a": 2,
+      "why": "Wenn du ein paar Optionen in verschiedenen Preislagen anbietest, können Gäste ihre Wohlfühlgrenze wählen, ohne vor anderen eine Zahl nennen zu müssen. Außerdem zeigst du so, dass du nach Geschmack empfiehlst, nicht nach Preis.",
+      "deeper": "Viele Gäste signalisieren ihr Budget, indem sie auf einen Preis in der Karte zeigen und „so in dieser Richtung“ sagen; nimm den Hinweis kommentarlos auf. Ehrliches Upselling heißt, zu erklären, was eine etwas teurere Flasche ihnen bietet, und dann mit jeder Wahl zufrieden zu sein."
+    },
+    {
+      "q": "Ein Gast probiert seinen Wein und sagt: „Ich glaube, mit dem stimmt was nicht.“ Was tust du?",
+      "opts": [
+        "Erklären, dass der Wein einfach so schmecken soll, und weitermachen",
+        "Dich entschuldigen, die Flasche prüfen lassen und Ersatz anbieten",
+        "Darauf hinweisen, dass der Probeschluck vorhin schon abgenickt wurde",
+        "Am Tisch aus dem Glas des Gastes probieren, um recht zu behalten"
+      ],
+      "a": 1,
+      "why": "Diskutiere nicht mit dem Gast. Nimm die Flasche zurück, lass sie von einer Führungskraft oder dem Sommelier prüfen und biete eine neue Flasche oder einen anderen Wein an. Ein zufriedener Gast ist wichtiger, als recht zu haben.",
+      "deeper": "Manchmal ist ein Wein wirklich fehlerhaft, zum Beispiel „korkt“ er. Manchmal mag der Gast einfach den Stil nicht, und viele Restaurants tauschen ihn trotzdem und verkaufen die Flasche glasweise. Halte dich an die Regeln deines Betriebs."
+    },
+    {
+      "q": "Warum schenkst du der Person, die die Flasche bestellt hat, einen kleinen Probeschluck ein, bevor du den Tisch bedienst?",
+      "opts": [
+        "Damit sie entscheiden kann, ob sie die Flasche bezahlen will",
+        "Um dem Tisch zu zeigen, wie viel Wein in ein volles Glas kommt",
+        "Damit sie prüfen kann, ob der Alkoholgehalt dem Etikett entspricht",
+        "Damit sie prüfen kann, ob der Wein einwandfrei und ohne Fehler ist"
+      ],
+      "a": 3,
+      "why": "Der Probeschluck ist eine Qualitätskontrolle: Der Gastgeber stellt sicher, dass der Wein in Ordnung ist, ohne Fehler wie Korkgeschmack. Es geht eigentlich nicht darum zu entscheiden, ob ihm der Stil gefällt.",
+      "deeper": "Schenk dem Gastgeber einen kleinen Schluck ein, warte auf sein Nicken, bediene dann die anderen Gäste und füll das Glas des Gastgebers zuletzt auf. Wirkt der Gastgeber unsicher, hilft ein freundliches „Ist er in Ordnung?“, damit er sich entspannt."
+    },
+    {
+      "q": "Ein Gast fragt: „Ist dieser Wein bio?“ Auf dem Etikett gibt es kein Bio-Logo und keine Zertifizierung. Was ist die ehrliche Antwort?",
+      "opts": [
+        "„Soweit das Etikett zeigt, ist er nicht bio-zertifiziert.“",
+        "„Ja, eigentlich ist fast jeder Wein bio, er wird ja aus Trauben gemacht.“",
+        "„Ja, auf dem Etikett steht ‚aus eigenem Anbau‘, das heißt dasselbe.“",
+        "„Ja, das erkennt man daran, dass er keine Sulfite enthält.“"
+      ],
+      "a": 0,
+      "why": "„Bio“ bzw. „ökologisch“ ist in der EU, in den USA und vielen anderen Ländern ein rechtlich geschützter Begriff, und zertifizierte Weine tragen ein Logo oder einen entsprechenden Hinweis. Ohne Zertifizierung solltest du nicht behaupten, dass er bio ist, auch wenn der Erzeuger sorgfältig arbeitet. Du kannst dem Gast trotzdem erzählen, was du darüber weißt, wie der Wein gemacht wird.",
+      "deeper": "Die Regeln sind von Land zu Land verschieden. EU-Biowein darf zugesetzte Sulfite enthalten, aber mit niedrigeren Grenzwerten als konventioneller Wein. In den USA darf Wein mit der Angabe „organic“ keine zugesetzten Sulfite haben, Wein „made with organic grapes“ dagegen schon."
+    },
+    {
+      "q": "Ein Gast fragt: „Ist ‚Naturwein‘ eine offizielle Kategorie, so wie bio?“ Was ist richtig?",
+      "opts": [
+        "Ja, Naturwein ist in jedem Land gesetzlich genau definiert",
+        "Ja, das ist nur ein anderer offizieller Name für zertifizierten Biowein",
+        "Im Allgemeinen nein; grob heißt es Wein mit möglichst wenig Eingriffen",
+        "Ja, das ist der gesetzliche Begriff für Wein ganz ohne Alkohol"
+      ],
+      "a": 2,
+      "why": "Für Naturwein gibt es im Allgemeinen keine gesetzliche Definition, deshalb versteht jeder Erzeuger etwas anderes darunter. Meist beschreibt der Begriff biologisch angebaute Trauben und möglichst wenige Zusätze im Keller.",
+      "deeper": "Frankreich hat ab dem Jahrgang 2020 ein freiwilliges Label genehmigt, „Vin Méthode Nature“. Es verlangt handgelesene, bio-zertifizierte Trauben, natürliche Hefen und höchstens 30 mg/L zugesetzte Sulfite, ist aber ein privates Erzeugerlabel und keine gesetzliche Definition von Naturwein."
+    },
+    {
+      "q": "Ein Gast fragt: „Was bedeuten ‚Alte Welt‘ und ‚Neue Welt‘?“ Welche Antwort in einem Satz ist die beste?",
+      "opts": [
+        "Alte Welt heißt Weine aus alten Jahrgängen; Neue Welt heißt Weine aus den neuesten Jahrgängen",
+        "Alte Welt ist Europa und der Mittelmeerraum; Neue Welt sind Länder wie Amerika und Australien",
+        "Alte Welt heißt billige Alltagsweine; Neue Welt heißt teure Premiumweine",
+        "Alte Welt heißt Weine von alten Reben; Neue Welt heißt Weine von jungen Reben"
+      ],
+      "a": 1,
+      "why": "Alte Welt bedeutet Europa und die seit Langem etablierten Weinregionen rund ums Mittelmeer; Neue Welt bedeutet Länder wie Nord- und Südamerika, Australien, Neuseeland und Südafrika. Die Begriffe beschreiben, woher ein Wein kommt, nicht sein Alter oder seinen Preis. In der Alten Welt wird seit vielen Jahrhunderten Wein gemacht; die Neue Welt hat erst später mit dem Weinbau begonnen, meist ab dem Zeitalter der Entdeckungen.",
+      "deeper": "Als grobe Stilregel sind Weine aus der Alten Welt oft leichter und herzhafter, Weine aus der Neuen Welt reifer und fruchtiger. Es gibt viele Ausnahmen, denn Klima und die Entscheidungen des Winzers zählen mehr als die Herkunftsangabe."
+    },
+    {
+      "q": "Ein Gast sagt, Rotwein hinterlasse bei ihm oft ein trockenes, „pelziges“ Gefühl im Mund, aber heute Abend hätte er gern einen Roten. Was schlägst du vor?",
+      "opts": [
+        "Einen leichteren, tanninarmen Rotwein wie Pinot Noir oder Beaujolais",
+        "Einen jungen Cabernet Sauvignon aus warmer Region wie dem Napa Valley",
+        "Einen Barolo, aus Nebbiolo im Piemont im Nordwesten Italiens",
+        "Einen jungen Madiran aus Südwestfrankreich, aus Tannat gemacht"
+      ],
+      "a": 0,
+      "why": "Das trockene, pelzige Gefühl kommt vom Tannin. Pinot Noir und Gamay haben von Natur aus weniger Tannin, deshalb wirken sie geschmeidiger. Cabernet Sauvignon, Nebbiolo und Tannat gehören zu den tanninreichsten Rebsorten.",
+      "deeper": "Wenn du einen leichten Rotwein leicht kühl servierst, wirkt er noch frischer. Ein nützlicher Satz: „Der ist weich und seidig, ohne dieses austrocknende Gefühl.“"
+    }
+  ]
+}

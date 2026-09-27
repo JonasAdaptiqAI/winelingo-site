@@ -1,0 +1,128 @@
+{
+  "slug": "sparkling-wine",
+  "title": "Vinos espumosos",
+  "summary": "Explica en qué se diferencian el Champagne, el Prosecco, el Cava y el Crémant, lee una etiqueta de espumoso y abre y sirve una botella con seguridad.",
+  "level": 2,
+  "questions": [
+    {
+      "q": "Un cliente pide un Champagne Blanc de Noirs y pregunta por qué es dorado y no tinto. ¿Con qué uvas se elabora?",
+      "opts": [
+        "Solo Chardonnay, la principal uva blanca",
+        "Uvas tintas: Pinot Noir y/o Meunier",
+        "Una mezcla de vino tinto tranquilo y vino blanco",
+        "Uvas blancas: Sauvignon Blanc y Riesling"
+      ],
+      "a": 1,
+      "why": "Blanc de Noirs significa \"blanco de tintas\". Las uvas tintas se prensan con suavidad, así que el mosto incoloro se separa de las pieles (donde está el color). Su opuesto, el Blanc de Blancs, es \"blanco de blancas\", que en Champagne casi siempre significa Chardonnay.",
+      "deeper": "El Champagne se basa en tres uvas principales: Chardonnay, Pinot Noir y Meunier. También se permiten unas pocas variedades antiguas y raras (como Arbane, Petit Meslier, Pinot Blanc y Pinot Gris), pero ocupan bastante menos del 1 % del viñedo. El Blanc de Noirs suele resultar más redondo y con más cuerpo; el Blanc de Blancs suele ser más tenso, cítrico y elegante."
+    },
+    {
+      "q": "Un cliente pregunta por qué una copa de Champagne cuesta mucho más que una de Prosecco. ¿Cuál es la principal diferencia en cómo se elaboran?",
+      "opts": [
+        "El Champagne refermenta en cada botella; casi todo el Prosecco, en depósito",
+        "Al Champagne se le añade gas carbónico de una bombona; al Prosecco no",
+        "El Prosecco pasa mucho más tiempo sobre lías antes de salir al mercado",
+        "El Champagne siempre se hace con uva tinta; el Prosecco, con uva blanca"
+      ],
+      "a": 0,
+      "why": "Los dos vinos consiguen la burbuja con una segunda fermentación que atrapa el gas. El Champagne la hace botella a botella (el método tradicional) y luego reposa sobre las levaduras muertas durante meses o años, lo que es lento y exige mucha mano de obra. La mayoría del Prosecco la hace en un depósito cerrado (el método Charmat o de depósito), que es más rápido y mantiene el estilo fresco y afrutado, de pera y manzana.",
+      "deeper": "El tiempo sobre las levaduras muertas (las lías) es lo que da a los vinos de método tradicional sus notas de pan, brioche y tostado. Los vinos de método Charmat se saltan casi todo eso a propósito: el objetivo es una fruta viva y fresca. Ningún método es \"mejor\"; dan estilos distintos."
+    },
+    {
+      "q": "A un cliente le encanta el estilo tostado del Champagne, pero quiere algo más barato elaborado de la misma forma. ¿Qué sugerencia encaja?",
+      "opts": [
+        "Un Prosecco del Véneto, en el noreste de Italia",
+        "Un Moscato d'Asti del Piamonte, en el noroeste de Italia",
+        "Un Crémant de Francia o un Cava de España",
+        "Cualquier espumoso etiquetado como \"Extra Dry\""
+      ],
+      "a": 2,
+      "why": "El Crémant y el Cava se elaboran por el método tradicional, con la segunda fermentación en botella, igual que el Champagne. Los dos deben pasar al menos 9 meses sobre lías, así que a menudo muestran algo de ese carácter a pan a un precio más bajo.",
+      "deeper": "El Crémant viene de varias regiones francesas (Crémant de Loire, d'Alsace, de Bourgogne y más), cada una con sus propias uvas. El Cava usa sobre todo uvas autóctonas españolas como Macabeo, Xarel·lo y Parellada. Una buena frase de sala: \"Si te gusta el Champagne, prueba este Crémant: mismo método y una relación calidad-precio estupenda\"."
+    },
+    {
+      "q": "Un cliente dice: \"Quiero el espumoso más seco que tengas, así que me quedo con el Extra Dry\". ¿Qué deberías saber?",
+      "opts": [
+        "El Extra Dry es el estilo más seco que existe",
+        "El Extra Dry y el Brut son lo mismo",
+        "Extra Dry significa que el vino no tiene alcohol",
+        "El Extra Dry es un poco más dulce que el Brut"
+      ],
+      "a": 3,
+      "why": "Los nombres confunden. Según la normativa de la UE, el Brut tiene menos de 12 g de azúcar por litro, mientras que el Extra Dry está entre 12 y 17 g/L. Así que el Extra Dry es algo más dulce. Para un vino realmente seco, lleva al cliente hacia un Brut, un Extra Brut (0–6 g/L) o un Brut Nature (menos de 3 g/L, sin azúcar añadido).",
+      "deeper": "La escala completa de la UE, del más seco al más dulce: Brut Nature (menos de 3 g/L, sin azúcar añadido), Extra Brut (0–6), Brut (menos de 12), Extra Dry (12–17), Sec (17–32), Demi-Sec (32–50), Doux (más de 50). La acidez alta y la burbuja hacen que el azúcar se note menos, y por eso un Brut rara vez sabe azucarado."
+    },
+    {
+      "q": "Un cliente pregunta cuál es la crianza mínima de un Champagne sin añada (NV). ¿Cuál es la norma?",
+      "opts": [
+        "No hay mínimo; se puede vender en cuanto tiene burbuja",
+        "15 meses en total, 12 de ellos sobre lías",
+        "3 años en total, 2 de ellos sobre lías",
+        "10 años en total, 5 de ellos sobre lías"
+      ],
+      "a": 1,
+      "why": "El Champagne sin añada no puede salir al mercado hasta al menos 15 meses después de embotellarse para la segunda fermentación, y al menos 12 de esos meses debe reposar sobre las lías. El Champagne de añada, elaborado con la cosecha de un solo año, necesita al menos 3 años.",
+      "deeper": "Son solo mínimos; en la práctica, la mayoría de las casas crían su NV dos o tres años, y los de añada a menudo mucho más. El Champagne NV es un coupage de varios años, incluidos \"vinos de reserva\" más viejos, para que el estilo de la casa se mantenga constante. Normalmente solo se declara añada en los mejores años."
+    },
+    {
+      "q": "A un cliente le sorprende saber que algunos Champagne rosados se elaboran mezclando vino tinto y blanco. ¿Es verdad?",
+      "opts": [
+        "No, mezclar tinto y blanco está prohibido en toda la UE",
+        "Solo en rosados baratos de supermercado, nunca en Champagne",
+        "Sí, Champagne es uno de los pocos sitios donde se permite mezclarlos",
+        "Solo si la etiqueta dice \"saignée\", que significa mezclado"
+      ],
+      "a": 2,
+      "why": "La mayoría del Champagne rosado se elabora añadiendo un poco de vino tinto tranquilo de Champagne (normalmente alrededor del 5–20 %) al vino base blanco. Es algo poco habitual: en casi toda la UE no se puede elaborar rosado mezclando tinto y blanco. La otra forma es el \"saignée\" o maceración: dejar el mosto un rato en contacto con las pieles de uva tinta para que tome color.",
+      "deeper": "El coupage da al enólogo un control preciso y repetible del color y del estilo. Los rosados de maceración (saignée) suelen tener un color más intenso y ser más vinosos. Frase de sala: \"Los dos métodos son tradicionales; el estilo de coupage suele ser más ligero y delicado\"."
+    },
+    {
+      "q": "Ves las letras pequeñas \"RM\" en una etiqueta de Champagne. ¿Qué le puedes contar al cliente?",
+      "opts": [
+        "Es un \"Champagne de viticultor\", hecho con uva propia",
+        "Es un rosado de sangrado (saignée), a partir de uva tinta",
+        "Es una reserva con el mejor y más viejo vino de la casa",
+        "Lo elabora una cooperativa que junta la uva de sus socios"
+      ],
+      "a": 0,
+      "why": "RM significa récoltant-manipulant: un viticultor que elabora y vende Champagne con uva de sus propios viñedos, en sus propias instalaciones. NM (négociant-manipulant) es el código que usan las grandes casas, que compran uva, mosto o vino a los viticultores (muchas también tienen viñedos propios).",
+      "deeper": "Los Champagne de viticultor suelen mostrar el carácter de un pueblo o de unas pocas parcelas. Las casas (NM) mezclan de muchas procedencias para mantener un estilo de la casa constante año tras año. Otros códigos son CM (coopérative de manipulation) para las cooperativas. Ningún código es por sí solo una garantía de calidad."
+    },
+    {
+      "q": "Estás abriendo un Champagne en una mesa tranquila y quieres que se abra con un suspiro suave, no con un taponazo. ¿Cuál es la técnica correcta?",
+      "opts": [
+        "Quitar el morrión, apuntar la botella hacia arriba y empujar el corcho con los pulgares",
+        "Agitarla un poco antes para que el corcho salga con más facilidad",
+        "Girar el corcho rápido mientras sujetas la botella quieta y derecha",
+        "Sujetar el corcho, inclinar la botella a 45° y girar la botella despacio"
+      ],
+      "a": 3,
+      "why": "La presión dentro de una botella de Champagne es de unos 5–6 bares, aproximadamente el triple que la de un neumático de coche, así que un corcho suelto es un riesgo real de lesión en los ojos. Mantén el pulgar sobre el corcho desde que aflojas el morrión. Girar la base de la botella mientras sujetas el corcho te da el control, y sacar el corcho despacio deja que el gas salga sin ruido.",
+      "deeper": "Apunta la botella lejos de los clientes y de ti. Inclinarla unos 45° ayuda a que el vino no salga a borbotones al liberarse la presión. Sirve en dos tiempos: un primer chorrito, deja que baje la espuma y luego completa."
+    },
+    {
+      "q": "Un cliente que pide un Champagne de añada serio pregunta qué copa le dejará disfrutar mejor de los aromas. ¿Qué le llevas?",
+      "opts": [
+        "Una copa pompadour ancha y baja, por el aspecto clásico",
+        "Una copa de tulipa o una copa de vino blanco",
+        "Un vaso pequeño y recto con el fondo grueso",
+        "Una flauta enfriada en el congelador hasta escarcharse"
+      ],
+      "a": 1,
+      "why": "Una copa de tulipa, o una copa normal de vino blanco, tiene cáliz suficiente para mover el vino y un borde más estrecho que concentra los aromas en la nariz. Una copa pompadour deja escapar rápido tanto el aroma como la burbuja. Una copa escarchada adormece los aromas, y el agua de la escarcha diluye el vino y apaga la burbuja.",
+      "deeper": "Por eso muchos sumilleres sirven hoy los Champagne complejos en copas de vino blanco; las flautas estrechas conservan bien la burbuja pero hacen más difícil percibir los aromas. Para un Prosecco sencillo y afrutado en una fiesta, una flauta está perfectamente bien. Consejo de sala: usa siempre copas muy limpias y bien aclaradas; los restos de jabón y polvo afectan a la burbuja."
+    },
+    {
+      "q": "Una mesa de ocho quiere \"un mágnum de Champagne\". ¿Cuánto vino cabe en un mágnum?",
+      "opts": [
+        "1 litro (una botella y un tercio, aprox.)",
+        "3 litros (cuatro botellas estándar)",
+        "1,5 litros (dos botellas estándar)",
+        "375 ml (media botella estándar)"
+      ],
+      "a": 2,
+      "why": "Un mágnum contiene 1,5 litros, lo mismo que dos botellas estándar de 75 cl. Eso son aproximadamente de 12 a 15 copas de espumoso, según lo que sirvas. Para ocho clientes, un mágnum da para un brindis y una segunda copa para todos.",
+      "deeper": "En Champagne los formatos mayores son Jeroboam (3 L, cuatro botellas), Rehoboam (4,5 L), Methuselah (6 L) y más; ojo, porque en Burdeos algunos de estos nombres corresponden a tamaños distintos. Muchos aficionados creen que el vino evoluciona más despacio en mágnum porque hay menos oxígeno por litro de vino. Una botella de 37,5 cl es una \"media botella\"."
+    }
+  ]
+}

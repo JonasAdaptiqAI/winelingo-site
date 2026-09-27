@@ -1,0 +1,128 @@
+{
+  "slug": "sparkling-wine",
+  "title": "Schaumwein",
+  "summary": "Erkläre, wie sich Champagner, Prosecco, Cava und Crémant unterscheiden, lies ein Schaumwein-Etikett und öffne und schenke eine Flasche souverän aus.",
+  "level": 2,
+  "questions": [
+    {
+      "q": "Ein Gast bestellt einen Blanc de Noirs Champagner und fragt, warum er golden und nicht rot ist. Aus welchen Trauben wird er gemacht?",
+      "opts": [
+        "Nur Chardonnay, die wichtigste weiße Rebsorte",
+        "Rote Trauben: Pinot Noir und/oder Meunier",
+        "Eine Mischung aus rotem Stillwein und Weißwein",
+        "Weiße Trauben: Sauvignon Blanc und Riesling"
+      ],
+      "a": 1,
+      "why": "Blanc de Noirs bedeutet „Weißer aus Schwarzen“, also aus roten Trauben. Die Trauben werden sanft gepresst, sodass der farblose Saft die Beerenhäute (in denen die Farbe steckt) zurücklässt. Das Gegenstück, Blanc de Blancs, ist „Weißer aus Weißen“, was in der Champagne fast immer Chardonnay bedeutet.",
+      "deeper": "Champagner beruht auf drei Hauptrebsorten: Chardonnay, Pinot Noir und Meunier. Eine Handvoll seltener alter Sorten (etwa Arbane, Petit Meslier, Pinot Blanc und Pinot Gris) ist ebenfalls erlaubt, macht aber deutlich unter 1 % der Rebfläche aus. Blanc de Noirs wirkt meist runder und voller; Blanc de Blancs eher schlanker, zitrusfrisch und elegant."
+    },
+    {
+      "q": "Ein Gast fragt, warum ein Glas Champagner so viel mehr kostet als ein Glas Prosecco. Was ist der wichtigste Unterschied in der Herstellung?",
+      "opts": [
+        "Champagner gärt ein zweites Mal in jeder Flasche, die meisten Prosecco im Tank",
+        "Champagner bekommt Kohlensäure aus einer Gasflasche zugesetzt, Prosecco nicht",
+        "Prosecco reift vor dem Verkauf viel länger auf der Hefe als Champagner",
+        "Champagner wird immer aus roten Trauben gemacht, Prosecco aus weißen"
+      ],
+      "a": 0,
+      "why": "Beide Weine bekommen ihre Perlage durch eine zweite Gärung, bei der die Kohlensäure eingeschlossen wird. Beim Champagner passiert das Flasche für Flasche (traditionelle Methode, Flaschengärung), danach ruht er Monate oder Jahre auf der abgestorbenen Hefe, was langsam und arbeitsintensiv ist. Die meisten Prosecco vergären in einem geschlossenen Tank (Tankgärung oder Charmat-Methode), was schneller geht und den frischen, fruchtigen Stil nach Birne und Apfel bewahrt.",
+      "deeper": "Die Zeit auf den abgestorbenen Hefezellen (dem Hefelager) gibt Weinen aus traditioneller Methode ihre Noten von Brot, Brioche und Röstaromen. Weine aus Tankgärung verzichten bewusst weitgehend darauf: Das Ziel ist helle, frische Frucht. Keine der beiden Methoden ist „besser“; sie ergeben unterschiedliche Stile."
+    },
+    {
+      "q": "Ein Gast liebt den röstigen Stil von Champagner, möchte aber etwas Günstigeres, das auf dieselbe Weise gemacht wird. Welcher Vorschlag passt?",
+      "opts": [
+        "Ein Prosecco aus Venetien im Nordosten Italiens",
+        "Ein Moscato d'Asti aus dem Piemont im Nordwesten Italiens",
+        "Ein Crémant aus Frankreich oder ein Cava aus Spanien",
+        "Jeder Schaumwein mit der Angabe „Extra Dry“"
+      ],
+      "a": 2,
+      "why": "Crémant und Cava werden beide nach der traditionellen Methode gemacht, mit der zweiten Gärung in der Flasche, genau wie Champagner. Beide müssen mindestens 9 Monate auf der Hefe liegen, deshalb zeigen sie oft etwas von diesem brotigen Charakter zu einem niedrigeren Preis.",
+      "deeper": "Crémant kommt aus mehreren französischen Regionen (Crémant de Loire, d'Alsace, de Bourgogne und weitere), jede mit eigenen Rebsorten. Cava verwendet meist einheimische spanische Sorten wie Macabeo, Xarel·lo und Parellada. Guter Satz im Service: „Wenn Sie Champagner mögen, probieren Sie diesen Crémant: gleiche Methode, tolles Preis-Leistungs-Verhältnis.“"
+    },
+    {
+      "q": "Ein Gast sagt: „Ich möchte den trockensten Schaumwein, den ihr habt, also nehme ich den Extra Dry.“ Was solltest du wissen?",
+      "opts": [
+        "Extra Dry ist der trockenste Stil, den es gibt",
+        "Extra Dry und Brut sind genau dasselbe",
+        "Extra Dry heißt, der Wein hat keinen Alkohol",
+        "Extra Dry ist etwas süßer als Brut"
+      ],
+      "a": 3,
+      "why": "Die Bezeichnungen sind verwirrend. Nach EU-Recht hat Brut weniger als 12 g Zucker pro Liter, während Extra Dry zwischen 12 und 17 g/L liegt. Extra Dry ist also etwas süßer. Für einen wirklich trockenen Wein verweise den Gast auf Brut, Extra Brut (0–6 g/L) oder Brut Nature (unter 3 g/L, ohne Zuckerzusatz).",
+      "deeper": "Die komplette EU-Skala, von trocken bis süß: Brut Nature (unter 3 g/L, ohne Zuckerzusatz), Extra Brut (0–6), Brut (unter 12), Extra Dry (12–17), Sec (17–32), Demi-Sec (32–50), Doux (über 50). Hohe Säure und Kohlensäure lassen Zucker weniger süß schmecken, deshalb wirkt ein Brut selten zuckrig."
+    },
+    {
+      "q": "Ein Gast fragt, wie lange ein Champagner ohne Jahrgang (NV) mindestens reifen muss. Was ist die Regel?",
+      "opts": [
+        "Kein Minimum; er darf verkauft werden, sobald er perlt",
+        "15 Monate insgesamt, davon 12 auf der Hefe",
+        "3 Jahre insgesamt, davon 2 auf der Hefe",
+        "10 Jahre insgesamt, davon 5 auf der Hefe"
+      ],
+      "a": 1,
+      "why": "Champagner ohne Jahrgang darf frühestens 15 Monate nach der Abfüllung für die zweite Gärung verkauft werden, und mindestens 12 dieser Monate muss er auf dem Hefelager ruhen. Jahrgangschampagner aus der Ernte eines einzigen Jahres braucht mindestens 3 Jahre.",
+      "deeper": "Das sind nur Mindestwerte; in der Praxis lassen die meisten Häuser ihren NV zwei bis drei Jahre reifen, Jahrgangsweine oft deutlich länger. NV-Champagner ist eine Cuvée aus mehreren Jahren, einschließlich älterer „Reserveweine“, damit der Hausstil gleich bleibt. Einen Jahrgang gibt es meist nur in den besseren Jahren."
+    },
+    {
+      "q": "Ein Gast ist überrascht zu hören, dass mancher Rosé-Champagner durch Mischen von Rot- und Weißwein entsteht. Stimmt das?",
+      "opts": [
+        "Nein, Rot- und Weißwein zu mischen ist überall in der EU verboten",
+        "Nur bei billigem Supermarkt-Rosé, nie bei echtem Champagner",
+        "Ja, die Champagne ist eine der wenigen Regionen, die das darf",
+        "Nur wenn „saignée“ auf dem Etikett steht, das heißt gemischt"
+      ],
+      "a": 2,
+      "why": "Der meiste Rosé-Champagner entsteht, indem man etwas roten Stillwein aus der Champagne (meist etwa 5–20 %) zum weißen Grundwein gibt. Das ist ungewöhnlich: In den meisten Teilen der EU darf Rosé nicht durch Mischen von Rot- und Weißwein hergestellt werden. Der andere Weg ist „Saignée“ oder Maischestandzeit: Man lässt den Saft kurz auf den Häuten roter Trauben, damit er Farbe annimmt.",
+      "deeper": "Das Verschneiden gibt dem Kellermeister eine präzise, wiederholbare Kontrolle über Farbe und Stil. Rosés aus Maischestandzeit (Saignée) sind oft dunkler in der Farbe und weiniger. Satz im Service: „Beide Methoden sind traditionell; der verschnittene Stil ist meist leichter und feiner.“"
+    },
+    {
+      "q": "Du entdeckst die kleinen Buchstaben „RM“ auf einem Champagner-Etikett. Was kannst du dem Gast sagen?",
+      "opts": [
+        "Ein „Winzerchampagner“ aus den eigenen Trauben des Winzers",
+        "Ein Rosé nach der Saignée-Methode, von roten Trauben abgezogen",
+        "Eine Reserve-Abfüllung mit dem besten, ältesten Wein des Hauses",
+        "Von einer Genossenschaft, die die Trauben ihrer Mitglieder bündelt"
+      ],
+      "a": 0,
+      "why": "RM steht für Récoltant-Manipulant: ein Winzer, der Champagner aus Trauben seiner eigenen Weinberge im eigenen Betrieb herstellt und verkauft. NM (Négociant-Manipulant) ist der Code der großen Häuser, die Trauben, Most oder Wein von Winzern zukaufen (viele besitzen auch eigene Weinberge).",
+      "deeper": "Winzerchampagner zeigen oft den Charakter eines einzelnen Dorfes oder weniger Parzellen. Die Häuser (NM) verschneiden aus vielen Quellen, um Jahr für Jahr einen gleichbleibenden Hausstil zu halten. Weitere Codes sind etwa CM (Coopérative de Manipulation) für Genossenschaften. Keiner dieser Codes ist für sich allein eine Qualitätsgarantie."
+    },
+    {
+      "q": "Du öffnest Champagner an einem ruhigen Tisch und möchtest, dass er mit einem leisen Seufzen aufgeht, nicht mit einem lauten Knall. Was ist die richtige Technik?",
+      "opts": [
+        "Drahtkörbchen (Agraffe) ab, Flasche nach oben, Korken mit den Daumen hochdrücken",
+        "Die Flasche erst leicht schütteln, damit der Korken leichter herausgleitet",
+        "Den Korken schnell drehen, die Flasche dabei still und aufrecht halten",
+        "Den Korken halten, die Flasche auf 45° neigen und langsam die Flasche drehen"
+      ],
+      "a": 3,
+      "why": "Der Druck in einer Champagnerflasche liegt bei etwa 5–6 bar, ungefähr dem Dreifachen eines Autoreifens, ein loser Korken ist also ein echtes Risiko für Augenverletzungen. Lass den Daumen ab dem Moment auf dem Korken, in dem du die Agraffe lockerst. Wenn du den Flaschenboden drehst und den Korken festhältst, hast du die Kontrolle, und wenn du den Korken langsam herausgleiten lässt, entweicht das Gas leise.",
+      "deeper": "Richte die Flasche weg von den Gästen und von dir selbst. Eine Neigung von etwa 45° hilft zu verhindern, dass der Wein beim Druckablass herausschäumt. Schenk in zwei Schritten ein: erst einen Schluck, Schaum setzen lassen, dann auffüllen."
+    },
+    {
+      "q": "Ein Gast bestellt einen hochwertigen Jahrgangschampagner und fragt, in welchem Glas er die Aromen am besten genießen kann. Was bringst du?",
+      "opts": [
+        "Eine breite, flache Coupe für den klassischen Look",
+        "Ein tulpenförmiges Glas oder ein Weißweinglas",
+        "Einen kleinen, geraden Tumbler mit schwerem Boden",
+        "Eine Flöte, im Gefrierfach eisig vorgekühlt"
+      ],
+      "a": 1,
+      "why": "Eine Tulpenform oder ein normales Weißweinglas hat genug Kelch zum Schwenken und einen engeren Rand, der die Aromen an der Nase bündelt. In einer Coupe entweichen Aroma und Perlage schnell. Ein vereistes Glas betäubt die Aromen, und das Tauwasser verdünnt den Wein und lässt die Perlage schneller verfliegen.",
+      "deeper": "Viele Sommeliers servieren komplexe Champagner heute aus diesem Grund in Weißweingläsern; schmale Flöten halten die Perlage gut, machen es aber schwerer, die Aromen zu riechen. Für einen einfachen, fruchtigen Prosecco auf einer Party ist eine Flöte völlig in Ordnung. Service-Tipp: Verwende immer sehr saubere, gut ausgespülte Gläser; Spülmittel- und Staubreste beeinträchtigen die Perlage."
+    },
+    {
+      "q": "Ein Tisch mit acht Personen möchte „eine Magnum Champagner“. Wie viel Wein ist in einer Magnum?",
+      "opts": [
+        "1 Liter (etwa eineindrittel normale Flaschen)",
+        "3 Liter (vier normale Flaschen)",
+        "1,5 Liter (zwei normale Flaschen)",
+        "375 ml (eine halbe normale Flasche)"
+      ],
+      "a": 2,
+      "why": "Eine Magnum fasst 1,5 Liter, so viel wie zwei normale 75-cl-Flaschen. Das sind je nach Einschenkmenge etwa 12 bis 15 Gläser Schaumwein. Bei acht Gästen reicht eine Magnum für einen Toast und ein Nachschenken für alle.",
+      "deeper": "In der Champagne heißen die größeren Formate Jeroboam (3 L, vier Flaschen), Rehoboam (4,5 L), Methusalem (6 L) und so weiter; Achtung, in Bordeaux stehen manche dieser Namen für andere Größen. Viele Weinliebhaber sind überzeugt, dass Wein in der Magnum langsamer reift, weil pro Liter Wein weniger Sauerstoff vorhanden ist. Eine 37,5-cl-Flasche ist eine „halbe Flasche“."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+/* Winelingo wine tests — player + hub. Uses the tokens from site.css. */
+.qz-wrap{max-width:640px;margin:0 auto;padding:8px 20px 56px;display:flex;flex-direction:column;gap:18px}
+.qz-langs{display:flex;flex-wrap:wrap;gap:6px}
+.qz-lang{font:600 13px/1 var(--font-body);padding:8px 12px;border-radius:var(--r-pill,999px);border:1px solid var(--line);background:var(--paper-raised);color:var(--ink);cursor:pointer}
+.qz-lang[aria-pressed="true"]{background:var(--wine);border-color:var(--wine);color:#fff}
+.qz-lang:focus-visible,.qz-opt:focus-visible,.qz-card:focus-visible{outline:2px solid var(--wine);outline-offset:2px}
+.qz-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.qz-level{font:700 11px/1 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--wine)}
+.qz-progress{display:flex;align-items:center;gap:12px;font:500 13px/1 var(--font-body);color:var(--muted);font-variant-numeric:tabular-nums}
+.qz-track{flex:1;height:4px;background:var(--line);border-radius:2px;overflow:hidden}
+.qz-fill{height:100%;background:var(--gold);transition:width .35s ease}
+.qz-card-play{background:var(--paper-raised);border:1px solid var(--line);border-radius:var(--r-card,16px);padding:24px 20px;display:flex;flex-direction:column;gap:16px;scroll-margin-top:90px}
+.qz-q{font:600 22px/1.3 var(--font-display);color:var(--wine-deep);margin:0;text-wrap:balance}
+.qz-opts{display:flex;flex-direction:column;gap:10px}
+.qz-opt{display:flex;gap:12px;align-items:flex-start;width:100%;text-align:left;padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper-raised);color:var(--ink);font:500 15px/1.4 var(--font-body);cursor:pointer;transition:border-color .15s,background .15s}
+.qz-opt:hover:not([disabled]){border-color:var(--wine)}
+.qz-opt[disabled]{cursor:default}
+.qz-opt .k{font:600 12px/1.6 var(--font-body);color:var(--muted);flex:none;width:16px}
+.qz-opt.right{border-color:var(--vine);background:#EDF0E4}
+.qz-opt.wrong{border-color:#B0463A;background:#F8E6E2}
+.qz-opt.dim{opacity:.55}
+.qz-answer{display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--line);padding-top:16px}
+.qz-answer p{margin:0}
+.qz-verdict{font:600 15px/1.3 var(--font-body)}
+.qz-verdict.ok{color:var(--vine-text,var(--vine))}
+.qz-verdict.no{color:#B0463A}
+.qz-answer details{color:var(--muted);font-size:15px}
+.qz-answer summary{cursor:pointer;color:var(--wine);font-weight:600;font-size:14px}
+.qz-answer details p{margin-top:8px}
+.qz-next{align-self:stretch;text-align:center}
+.qz-score{font:600 64px/1 var(--font-display);color:var(--wine-deep);font-variant-numeric:tabular-nums}
+.qz-score small{font-size:28px;color:var(--muted)}
+.qz-row{display:flex;gap:10px;flex-wrap:wrap}
+.qz-row .btn{flex:1;min-width:150px;text-align:center}
+.qz-cta,.qz-biz{border-top:1px solid var(--line);padding-top:16px;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.qz-cta h3,.qz-biz h3{font:600 19px/1.2 var(--font-display);color:var(--wine-deep);margin:0}
+.qz-cta p,.qz-biz p{margin:0;color:var(--muted)}
+.qz-mail{color:var(--wine);font-weight:600;user-select:all}
+.qz-hub{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin-top:14px}
+.qz-card{display:flex;flex-direction:column;gap:8px;padding:18px;border:1px solid var(--line);border-radius:var(--r-card,16px);background:var(--paper-raised);color:var(--ink);text-decoration:none;transition:border-color .15s}
+.qz-card:hover{border-color:var(--wine)}
+.qz-card h3{font:600 20px/1.2 var(--font-display);color:var(--wine-deep);margin:0}
+.qz-card p{margin:0;color:var(--muted);font-size:15px}
+.qz-hubwrap{max-width:var(--maxw,1100px);margin:0 auto;padding:8px 20px 56px}
+@media (prefers-reduced-motion:reduce){.qz-fill,.qz-opt{transition:none}}

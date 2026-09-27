@@ -1,0 +1,138 @@
+{
+  "slug": "sparkling-wine",
+  "title": "Sparkling wine",
+  "summary": "Explain how Champagne, Prosecco, Cava and Crémant differ, read a sparkling label, and open and pour a bottle with confidence.",
+  "level": 2,
+  "questions": [
+    {
+      "q": "A guest orders a Blanc de Noirs Champagne and asks why it is golden, not red. Which grapes is it made from?",
+      "opts": [
+        "Only Chardonnay, the main white grape",
+        "Black grapes: Pinot Noir and/or Meunier",
+        "A blend of still red wine and white wine",
+        "White grapes: Sauvignon Blanc and Riesling"
+      ],
+      "a": 1,
+      "why": "Blanc de Noirs means 'white from blacks'. The black grapes are pressed gently, so the colourless juice leaves the skins (where the colour is) behind. Its opposite, Blanc de Blancs, is 'white from whites', which in Champagne almost always means Chardonnay.",
+      "deeper": "Champagne is built on three main grapes: Chardonnay, Pinot Noir and Meunier. A handful of rare old varieties (such as Arbane, Petit Meslier, Pinot Blanc and Pinot Gris) are also allowed but cover well under 1% of the vineyard. Blanc de Noirs tends to feel rounder and fuller; Blanc de Blancs tends to be leaner, citrusy and elegant.",
+      "source": "https://www.champagne.fr/en/about-champagne/a-great-blended-wine/champagne-and-its-grape-varieties"
+    },
+    {
+      "q": "A guest asks why a glass of Champagne costs so much more than a glass of Prosecco. What is the main difference in how they are made?",
+      "opts": [
+        "Champagne ferments a second time in each bottle; most Prosecco in a tank",
+        "Champagne has carbon dioxide added from a gas cylinder; Prosecco does not",
+        "Prosecco is aged much longer on its lees before it is released",
+        "Champagne is always made from red grapes; Prosecco from white ones"
+      ],
+      "a": 0,
+      "why": "Both wines are made fizzy by a second fermentation that traps the bubbles. Champagne does it bottle by bottle (the traditional method), then rests on the dead yeast for months or years, which is slow and labour-heavy. Most Prosecco does it in a sealed tank (the tank or Charmat method), which is quicker and keeps the fresh, fruity pear-and-apple style.",
+      "deeper": "Time on the dead yeast cells (the lees) is what gives traditional-method wines their bready, brioche, toasty notes. Tank-method wines skip most of that on purpose: the goal is bright, fresh fruit. Neither method is 'better'; they make different styles.",
+      "source": "https://www.champagne.fr/en/about-champagne/how-champagne-is-made/bottling-and-second-fermentation"
+    },
+    {
+      "q": "A guest loves Champagne's toasty style but wants something cheaper made the same way. Which suggestion fits?",
+      "opts": [
+        "A Prosecco from the Veneto, in north-east Italy",
+        "A Moscato d'Asti from Piedmont, in north-west Italy",
+        "A Crémant from France or a Cava from Spain",
+        "Any sparkling wine labelled 'Extra Dry'"
+      ],
+      "a": 2,
+      "why": "Crémant and Cava are both made by the traditional method, with the second fermentation in the bottle, just like Champagne. Both must spend at least 9 months on the lees, so they often show some of that bready character at a lower price.",
+      "deeper": "Crémant comes from several French regions (Crémant de Loire, d'Alsace, de Bourgogne and more), each with its own grapes. Cava mostly uses local Spanish grapes such as Macabeo, Xarel·lo and Parellada. Good service line: 'If you like Champagne, try this Crémant: same method, great value.'",
+      "source": "https://www.cava.wine/en/categories-types/cava-de-guarda/"
+    },
+    {
+      "q": "A guest says, 'I want the driest bubbly you have, so I'll take the Extra Dry.' What should you know?",
+      "opts": [
+        "Extra Dry is the driest style you can buy",
+        "Extra Dry and Brut are the same thing",
+        "Extra Dry means the wine has no alcohol",
+        "Extra Dry is a little sweeter than Brut"
+      ],
+      "a": 3,
+      "why": "The names are confusing. Under EU rules, Brut has less than 12 g of sugar per litre, while Extra Dry sits between 12 and 17 g/L. So Extra Dry is slightly sweeter. For a really dry wine, point the guest to Brut, Extra Brut (0–6 g/L) or Brut Nature (under 3 g/L, with no sugar added).",
+      "deeper": "The full EU scale, driest to sweetest: Brut Nature (under 3 g/L, no added sugar), Extra Brut (0–6), Brut (under 12), Extra Dry (12–17), Sec (17–32), Demi-Sec (32–50), Doux (over 50). High acidity and bubbles make sugar taste less sweet, which is why a Brut rarely tastes sugary.",
+      "source": "https://eur-lex.europa.eu/eli/reg_del/2019/33/oj"
+    },
+    {
+      "q": "A guest asks what the minimum ageing is for a non-vintage (NV) Champagne. What is the rule?",
+      "opts": [
+        "No minimum; it can be sold as soon as it is fizzy",
+        "15 months in total, 12 of them on the lees",
+        "3 years in total, 2 of them on the lees",
+        "10 years in total, 5 of them on the lees"
+      ],
+      "a": 1,
+      "why": "Non-vintage Champagne cannot be released until at least 15 months after it was bottled for its second fermentation, and at least 12 of those months must be spent resting on the yeast lees. Vintage Champagne, made from a single year's harvest, needs at least 3 years.",
+      "deeper": "These are only minimums; in practice most houses age their NV for two to three years, and vintage wines often for far longer. NV Champagne is a blend of several years, including older 'reserve wines', so the house style stays consistent. A vintage is usually declared only in the better years.",
+      "source": "https://www.champagne.fr/en/about-champagne/how-champagne-is-made/maturation"
+    },
+    {
+      "q": "A guest is surprised to hear that some rosé Champagne is made by mixing red and white wine. Is that true?",
+      "opts": [
+        "No, mixing red and white wine is illegal everywhere in the EU",
+        "Only for cheap supermarket rosé, never for proper Champagne",
+        "Yes, Champagne is one of the few places allowed to blend them",
+        "Only if the label says 'saignée', which means blended"
+      ],
+      "a": 2,
+      "why": "Most rosé Champagne is made by blending a little still red Champagne wine (usually around 5–20%) into white base wine. This is unusual: in most of the EU, rosé wine may not be made by mixing red and white. The other way is 'saignée' or maceration: leaving the juice briefly on black grape skins so it takes on colour.",
+      "deeper": "Blending gives the winemaker precise, repeatable control over colour and style. Macerated (saignée) rosés are often deeper in colour and more vinous. Service line: 'Both methods are traditional; the blended style is usually lighter and more delicate.'",
+      "source": "https://www.champagne.fr/en/champagne-tasting/choosing-your-champagne/champagne-rose"
+    },
+    {
+      "q": "You spot the small letters 'RM' on a Champagne label. What can you tell the guest?",
+      "opts": [
+        "A 'grower Champagne', made from the grower's own grapes",
+        "A rosé made by the saignée method, bled from black grapes",
+        "A reserve bottling of the house's best and oldest wine",
+        "Made by a co-operative that pools members' grapes"
+      ],
+      "a": 0,
+      "why": "RM stands for récoltant-manipulant: a grower who makes and sells Champagne from grapes grown in their own vineyards, on their own premises. NM (négociant-manipulant) is the code used by the big houses, which buy grapes, juice or wine from growers (many also own vineyards).",
+      "deeper": "Grower Champagnes often show the character of one village or a few plots. Houses (NM) blend widely to keep a consistent house style year after year. Other codes include CM (co-opérative de manipulation) for co-ops. Neither code is a guarantee of quality on its own.",
+      "source": "https://www.champagne.fr/en/from-vine-to-wine/labelling/the-label"
+    },
+    {
+      "q": "You are opening Champagne at a quiet table and want it to open with a soft sigh, not a loud pop. What is the right technique?",
+      "opts": [
+        "Remove the cage, point the bottle up and push the cork with your thumbs",
+        "Shake it gently first so the cork eases out more easily",
+        "Twist the cork quickly while holding the bottle still and upright",
+        "Hold the cork, tilt the bottle to 45° and slowly turn the bottle"
+      ],
+      "a": 3,
+      "why": "The pressure in a Champagne bottle is about 5–6 bar, roughly three times that of a car tyre, so a loose cork is a real eye-injury risk. Keep your thumb on the cork from the moment you loosen the cage. Turning the base of the bottle while holding the cork gives you control, and easing the cork out slowly lets the gas escape quietly.",
+      "deeper": "Point the bottle away from guests and from yourself. Tilting it at about 45° helps stop the wine gushing out as the pressure is released. Pour in two stages: a first splash, let the foam settle, then top up.",
+      "source": "https://www.champagne.fr/en/enjoying-champagne/prepare-to-enjoy-champagne/opening-a-bottle-of-champagne"
+    },
+    {
+      "q": "A guest ordering a serious vintage Champagne asks which glass will let them enjoy the aromas best. What do you bring?",
+      "opts": [
+        "A wide, shallow coupe for the classic look",
+        "A tulip-shaped glass or a white wine glass",
+        "A small straight tumbler with a heavy base",
+        "A flute chilled in the freezer until frosted"
+      ],
+      "a": 1,
+      "why": "A tulip shape, or a standard white wine glass, has enough bowl to swirl and a narrower rim that gathers the aromas at your nose. A coupe lets both aroma and bubbles escape fast. A frosted glass numbs the aromas, and water from the frost dilutes the wine and flattens the bubbles.",
+      "deeper": "Many sommeliers now serve complex Champagnes in white wine glasses for this reason; narrow flutes keep bubbles well but make aromas harder to smell. For a simple, fruity Prosecco at a party, a flute is perfectly fine. Service tip: always use very clean, well-rinsed glasses; soap and dust residue affect the bubbles.",
+      "source": "https://www.laurent-perrier.com/en/guide-and-tips/explore-the-savoir-faire-of-champagne/champagne-service/best-glass-for-champagne/"
+    },
+    {
+      "q": "A table of eight wants 'a magnum of Champagne'. How much wine is in a magnum?",
+      "opts": [
+        "1 litre (about one and a third bottles)",
+        "3 litres (four standard bottles)",
+        "1.5 litres (two standard bottles)",
+        "375 ml (half a standard bottle)"
+      ],
+      "a": 2,
+      "why": "A magnum holds 1.5 litres, the same as two standard 75 cl bottles. That is roughly 12 to 15 glasses of sparkling wine, depending on the pour. For eight guests, one magnum gives everyone a toast plus a top-up.",
+      "deeper": "In Champagne the bigger sizes are Jeroboam (3 L, four bottles), Rehoboam (4.5 L), Methuselah (6 L) and upward; note that in Bordeaux some of these names mean different sizes. Many wine lovers believe wine ages more slowly in magnum because there is less oxygen per litre of wine. A 37.5 cl bottle is a 'half-bottle'.",
+      "source": "https://www.champagne.fr/en/tasting-and-appreciation/choosing-a-champagne-wine/champagne-bottles"
+    }
+  ]
+}

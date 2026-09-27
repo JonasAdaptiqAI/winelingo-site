@@ -1,0 +1,128 @@
+{
+  "slug": "guest-questions",
+  "title": "Responder a los clientes",
+  "summary": "Responde a las preguntas que los clientes hacen de verdad en la mesa, con palabras claras y honestas que les ayuden a elegir.",
+  "level": 1,
+  "questions": [
+    {
+      "q": "Un cliente dice: \"Quiero un blanco seco, pero me encantan los vinos afrutados\". ¿Qué deberías entender de esto?",
+      "opts": [
+        "Seco y afrutado son opuestos, así que el cliente tiene que elegir uno de los dos",
+        "Seco significa no dulce; afrutado es un sabor, así que puede ser ambas cosas",
+        "Seco significa poco alcohol, y afrutado significa mucho alcohol",
+        "Seco significa criado en roble, lo que esconde la fruta del vino"
+      ],
+      "a": 1,
+      "why": "\"Seco\" tiene que ver con el azúcar: queda muy poco después de la fermentación, así que el vino no sabe dulce. \"Afrutado\" tiene que ver con aromas y sabores como los cítricos o el melocotón. Muchos vinos secos huelen muy afrutados, así que la petición del cliente tiene todo el sentido.",
+      "deeper": "Los aromas de fruta madura pueden engañar al cerebro para que espere dulzor, y por eso los clientes suelen confundir las dos cosas. Una frase útil: \"Este es seco, nada dulce, pero está lleno de sabor a fruta madura\"."
+    },
+    {
+      "q": "Un cliente pregunta: \"¿Qué significa 'tanino'?\". ¿Qué respuesta es correcta y fácil de entender?",
+      "opts": [
+        "El dulzor que queda en el vino, como el azúcar en una taza de té",
+        "Otra forma de decir el grado alcohólico, el calor en la garganta",
+        "El sabor ácido que hace salivar, como un chorrito de limón",
+        "Una sensación secante y áspera en la boca, como un té negro fuerte"
+      ],
+      "a": 3,
+      "why": "Los taninos son compuestos naturales de la piel, las pepitas y los raspones de la uva, y a veces de las barricas de roble. Se unen a las proteínas de la saliva, y por eso notas la boca seca y algo áspera. La comparación con el té fuerte funciona con casi todos los clientes.",
+      "deeper": "Los tintos tienen mucho más tanino que los blancos porque el mosto fermenta junto con las pieles. El tanino también da estructura al tinto y le ayuda a envejecer; con comida, sobre todo con proteína y grasa, suele notarse más suave."
+    },
+    {
+      "q": "Un cliente dice: \"Normalmente bebo Sauvignon Blanc, pero me gustaría probar algo distinto\". ¿Cuál es la mejor sugerencia?",
+      "opts": [
+        "Grüner Veltliner de Austria: seco, vivo y con un toque a pimienta",
+        "Un Chardonnay californiano potente y con roble, a mantequilla y vainilla",
+        "Moscato d'Asti: dulce, ligeramente espumoso y con poco alcohol",
+        "White Zinfandel, un rosado tirando a dulce de California"
+      ],
+      "a": 0,
+      "why": "A quien le gusta el Sauvignon Blanc le gustan los blancos secos, vivos y frescos, con acidez alta. La Grüner Veltliner le da esa misma frescura con un sabor nuevo. Las otras opciones son mucho más ricas o más dulces.",
+      "deeper": "Otras buenas alternativas son el Verdejo de Rueda, el Albariño, el Vermentino o el Assyrtiko. Prueba a decir: \"Si te gusta la frescura del Sauvignon Blanc, este tiene la misma chispa con un giro un poco distinto\"."
+    },
+    {
+      "q": "Una pareja quiere que le recomiendes una botella. ¿Cómo gestionas el precio sin agobiarles?",
+      "opts": [
+        "Recomendar la botella más cara de la carta como apuesta segura",
+        "Sugerir solo las botellas más baratas para que nadie se sienta incómodo",
+        "Ofrecer dos o tres vinos de precios distintos y dejar que elijan",
+        "Esperar a que te digan su presupuesto exacto en voz alta en la mesa"
+      ],
+      "a": 2,
+      "why": "Ofrecer varias opciones de distintos precios deja que los clientes elijan con lo que se sienten cómodos sin tener que decir una cifra delante de los demás. También demuestra que recomiendas por gusto, no por precio.",
+      "deeper": "Muchos clientes indican su presupuesto señalando un precio de la carta y diciendo \"algo por aquí\"; capta la indirecta sin comentarla. Vender más de forma honesta es explicar qué les aporta una botella algo más cara y quedarte contento elijan lo que elijan."
+    },
+    {
+      "q": "Un cliente prueba su vino y dice: \"Creo que este vino está mal\". ¿Qué haces?",
+      "opts": [
+        "Explicarle que el vino simplemente sabe así y seguir con el servicio",
+        "Disculparte, llevarte la botella para que la revisen y ofrecer otra",
+        "Recordarle que ya había dado el visto bueno a la prueba",
+        "Probarlo de la copa del propio cliente en la mesa para demostrarlo"
+      ],
+      "a": 1,
+      "why": "No discutas con el cliente. Llévate la botella, deja que la revise un encargado o el sumiller y ofrece una botella nueva u otro vino. Que el cliente esté contento importa más que demostrar quién tiene razón.",
+      "deeper": "A veces el vino tiene un defecto de verdad, por ejemplo está \"acorchado\". Otras veces al cliente simplemente no le gusta el estilo, y muchos restaurantes igualmente se lo cambian y venden la botella por copas. Sigue la política de tu local."
+    },
+    {
+      "q": "¿Por qué sirves una pequeña prueba a la persona que pidió la botella antes de servir a la mesa?",
+      "opts": [
+        "Para que decida si quiere pagar la botella o no",
+        "Para enseñar a la mesa cuánto vino llevará una copa llena",
+        "Para que compruebe que el grado es el que indica la etiqueta",
+        "Para que compruebe que el vino está bien y no tiene defectos"
+      ],
+      "a": 3,
+      "why": "La prueba es un control de calidad: el anfitrión se asegura de que el vino está en buen estado, sin un defecto como el olor a corcho. No es realmente el momento de decidir si le gusta el estilo.",
+      "deeper": "Sirve un chorrito al anfitrión, espera a que asienta y luego sirve al resto de comensales antes de rellenar la copa del anfitrión al final. Si el anfitrión duda, un amable \"¿Qué tal está?\" le ayuda a relajarse."
+    },
+    {
+      "q": "Un cliente pregunta: \"¿Este vino es ecológico?\". La etiqueta no lleva ningún logo ni certificación ecológica. ¿Cuál es la respuesta honesta?",
+      "opts": [
+        "\"Por lo que indica la etiqueta, no tiene certificación ecológica.\"",
+        "\"Sí, prácticamente todo el vino es ecológico, porque se hace con uva.\"",
+        "\"Sí, la etiqueta dice 'estate grown', que viene a ser lo mismo.\"",
+        "\"Sí, se nota porque no contiene nada de sulfitos.\""
+      ],
+      "a": 0,
+      "why": "\"Ecológico\" es un término protegido por ley en la UE, en EE. UU. y en muchos otros sitios, y los vinos certificados llevan un logo o una mención. Sin certificación, no digas que es ecológico, aunque el productor trabaje con cuidado. Aun así, puedes contarle al cliente lo que sabes sobre cómo se elabora el vino.",
+      "deeper": "Las normas cambian según el país. El vino ecológico de la UE puede llevar sulfitos añadidos, pero con límites más bajos que el vino convencional. En EE. UU., el vino etiquetado como \"organic\" no puede llevar sulfitos añadidos, mientras que el \"made with organic grapes\" sí."
+    },
+    {
+      "q": "Un cliente pregunta: \"¿El 'vino natural' es una categoría oficial, como el ecológico?\". ¿Qué es lo correcto?",
+      "opts": [
+        "Sí, el vino natural está definido estrictamente por ley en todos los países",
+        "Sí, es simplemente otro nombre oficial del vino ecológico certificado",
+        "En general no; viene a ser vino hecho con la mínima intervención",
+        "Sí, es el término legal para el vino elaborado sin nada de alcohol"
+      ],
+      "a": 2,
+      "why": "En general no existe una definición legal de vino natural, así que el término significa cosas distintas para cada productor. Suele describir uva de cultivo ecológico y el mínimo de aditivos en bodega.",
+      "deeper": "Francia aprobó una etiqueta voluntaria, \"Vin Méthode Nature\", a partir de la añada 2020. Exige uva vendimiada a mano y con certificación ecológica, levaduras autóctonas y como máximo 30 mg/L de sulfitos añadidos, pero es una etiqueta privada de productores, no una definición legal de vino natural."
+    },
+    {
+      "q": "Un cliente pregunta: \"¿Qué significan 'Viejo Mundo' y 'Nuevo Mundo'?\". ¿Qué respuesta en una frase es la mejor?",
+      "opts": [
+        "Viejo Mundo son vinos de añadas antiguas; Nuevo Mundo son vinos de las añadas más recientes",
+        "Viejo Mundo es Europa y el Mediterráneo; Nuevo Mundo son lugares como América y Australia",
+        "Viejo Mundo son vinos baratos del día a día; Nuevo Mundo son vinos caros de gama alta",
+        "Viejo Mundo son vinos de cepas viejas; Nuevo Mundo son vinos de cepas jóvenes"
+      ],
+      "a": 1,
+      "why": "Viejo Mundo significa Europa y las regiones vinícolas de larga tradición alrededor del Mediterráneo; Nuevo Mundo significa lugares como América, Australia, Nueva Zelanda y Sudáfrica. Los términos describen de dónde es un vino, no su edad ni su precio. Las regiones del Viejo Mundo llevan muchos siglos elaborando vino; las del Nuevo Mundo empezaron más tarde, sobre todo a partir de la época de los descubrimientos.",
+      "deeper": "Como regla general de estilo, los vinos del Viejo Mundo suelen ser más ligeros y menos frutales, y los del Nuevo Mundo más maduros y afrutados. Hay muchas excepciones, porque el clima y las decisiones del enólogo importan más que la etiqueta."
+    },
+    {
+      "q": "Un cliente dice que el tinto a menudo le deja la boca seca y \"acartonada\", pero esta noche le apetece un tinto. ¿Qué le sugieres?",
+      "opts": [
+        "Un tinto ligero y poco tánico, como un Pinot Noir o un Beaujolais",
+        "Un Cabernet Sauvignon joven de una zona cálida como Napa",
+        "Un Barolo, elaborado con Nebbiolo en el Piamonte, al noroeste de Italia",
+        "Un Madiran joven del suroeste de Francia, elaborado con Tannat"
+      ],
+      "a": 0,
+      "why": "Esa sensación seca y acartonada viene del tanino. El Pinot Noir y el Gamay tienen de forma natural menos tanino, así que se notan más suaves. La Cabernet Sauvignon, la Nebbiolo y la Tannat están entre las uvas más tánicas.",
+      "deeper": "Servir un tinto ligero un poco fresco lo hace todavía más fresco. Una frase útil: \"Este es suave y sedoso, sin ese agarre secante\"."
+    }
+  ]
+}

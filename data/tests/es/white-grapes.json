@@ -1,0 +1,128 @@
+{
+  "slug": "white-grapes",
+  "title": "Uvas blancas",
+  "summary": "Conoce las nueve uvas blancas que aparecen en todas partes, a qué saben y qué uva se esconde detrás de un nombre de lugar famoso.",
+  "level": 1,
+  "questions": [
+    {
+      "q": "Un cliente dice: \"Odio el Chardonnay mantecoso y con mucha madera, pero me encantan los blancos frescos y vivos\". ¿Qué vino a base de Chardonnay es la sugerencia más segura?",
+      "opts": [
+        "Un Chardonnay potente con roble de una zona cálida",
+        "Sauternes",
+        "Chablis",
+        "Viognier"
+      ],
+      "a": 2,
+      "why": "El Chablis es 100 % Chardonnay, pero se cultiva en una parte fresca del norte de Borgoña y suele elaborarse con poco o nada de roble. Sabe a manzana verde y limón, con una acidez viva y fresca. Por eso es la respuesta clásica para un cliente que cree que no le gusta el Chardonnay.",
+      "deeper": "La mayoría de los Petit Chablis y Chablis de pueblo ven poco o nada de roble nuevo, aunque algunos productores usan barricas usadas; algunos productores de Premier Cru y Grand Cru usan más roble, así que las mejores botellas pueden ser algo más redondas. Consejo de sala: \"Puede que este te encante. Es Chardonnay, pero del tipo fresco y casi sin madera\"."
+    },
+    {
+      "q": "Un cliente señala \"Sancerre\" en la carta y pregunta de qué uva es. ¿Qué le dices?",
+      "opts": [
+        "Sauvignon Blanc",
+        "Chardonnay",
+        "Chenin Blanc",
+        "Riesling"
+      ],
+      "a": 0,
+      "why": "El Sancerre blanco, del este del Valle del Loira en Francia, se elabora con Sauvignon Blanc. Espera un blanco seco y vivo, con notas cítricas, vegetales y a veces de pedernal. Las etiquetas francesas suelen indicar el lugar, no la uva, así que merece la pena memorizarlo.",
+      "deeper": "El Pouilly-Fumé, justo al otro lado del río, también es Sauvignon Blanc. También existen Sancerre tinto y rosado, y se elaboran con Pinot Noir. Si a un cliente le encanta el Sauvignon Blanc de Nueva Zelanda (Marlborough), el Sancerre es la versión francesa, más contenida y mineral, de la misma uva."
+    },
+    {
+      "q": "Un cliente dice: \"Riesling no, que siempre es dulce\". ¿Cuál es la respuesta honesta?",
+      "opts": [
+        "Tiene razón: el Riesling siempre es un vino de postre",
+        "El Riesling solo es dulce cuando viene de Australia",
+        "El Riesling siempre es seco; lo del dulzor es un mito",
+        "El Riesling va de muy seco a muy dulce; en las etiquetas alemanas \"trocken\" significa seco"
+      ],
+      "a": 3,
+      "why": "El Riesling se elabora en todos los estilos, desde totalmente seco hasta untuosamente dulce. Su alta acidez natural mantiene frescos incluso los dulces. Si una etiqueta alemana dice \"trocken\", el vino es seco; \"halbtrocken\" (y normalmente \"feinherb\", que no está definido legalmente) significa semiseco.",
+      "deeper": "Con la edad, el Riesling puede desarrollar una nota que se suele describir como \"petróleo\" o queroseno. Viene de un compuesto llamado TDN y se considera en general un rasgo clásico del Riesling maduro más que un defecto, aunque en exceso no gusta a todo el mundo. Su alta acidez es también la razón por la que los mejores Riesling pueden envejecer durante décadas."
+    },
+    {
+      "q": "Un cliente pregunta: \"¿Qué diferencia hay entre Pinot Grigio y Pinot Gris?\"",
+      "opts": [
+        "Son dos uvas sin relación entre sí",
+        "Misma uva: el nombre italiano suele indicar un estilo más ligero y vivo, el francés (Alsacia) uno más rico y con más cuerpo",
+        "El Pinot Gris es un tinto y el Pinot Grigio es blanco",
+        "El Pinot Grigio es un coupage de Pinot Gris y Chardonnay"
+      ],
+      "a": 1,
+      "why": "Es la misma uva. \"Grigio\" es italiano y \"Gris\" es francés, y los dos significan gris. El nombre de la etiqueta suele dar una pista del estilo. El Pinot Grigio italiano suele ser ligero, pálido y vivo. El Pinot Gris de Alsacia suele tener más cuerpo, ser más rico y más aromático.",
+      "deeper": "El Pinot Gris es una mutación de color del Pinot Noir. Los dos tienen un ADN casi idéntico, y la piel entre gris y rosada es la principal diferencia visible. Los productores de otros países eligen el nombre que encaja con el estilo que elaboran."
+    },
+    {
+      "q": "En la carta hay una botella de Vouvray, del Valle del Loira. ¿Con qué uva se elabora?",
+      "opts": [
+        "Sauvignon Blanc",
+        "Viognier",
+        "Chenin Blanc",
+        "Gewürztraminer"
+      ],
+      "a": 2,
+      "why": "El Vouvray se elabora con Chenin Blanc. La Chenin tiene una acidez alta y sabores de manzana, pera, membrillo y miel. Mira siempre el dulzor en la etiqueta, porque el Vouvray puede ser seco (sec), semiseco (demi-sec), dulce (moelleux) o espumoso.",
+      "deeper": "La Chenin Blanc es también la uva blanca más importante de Sudáfrica, donde a veces se llama Steen. Consejo de sala: antes de recomendar un Vouvray, pregunta si el cliente lo quiere seco o con un punto de dulzor, y comprueba qué estilo tienes de verdad."
+    },
+    {
+      "q": "¿Con qué país se asocia sobre todo la Grüner Veltliner?",
+      "opts": [
+        "Austria",
+        "Alemania",
+        "Italia",
+        "Nueva Zelanda"
+      ],
+      "a": 0,
+      "why": "La Grüner Veltliner es la uva blanca emblemática de Austria y su variedad más plantada, con aproximadamente el 30 % de los viñedos del país. Suele dar un blanco seco y fresco, con notas cítricas, de manzana verde y herbáceas. Es un gran vino para la mesa y una buena opción para verduras complicadas como los espárragos.",
+      "deeper": "Entre las mejores zonas están Wachau, Kamptal, Kremstal y Weinviertel. La Grüner es famosa por una nota de \"pimienta blanca\" (de la rotundona, el mismo compuesto que hay en los granos de pimienta), pero su intensidad varía mucho de un vino a otro, así que no se la prometas a un cliente."
+    },
+    {
+      "q": "Una mesa ha pedido ostras y pescado a la plancha y quiere un blanco español fresco y vivo. ¿Qué uva encaja mejor?",
+      "opts": [
+        "Tempranillo",
+        "Albariño",
+        "Gewürztraminer",
+        "Viognier"
+      ],
+      "a": 1,
+      "why": "El Albariño viene sobre todo de Rías Baixas, en Galicia, en la lluviosa costa atlántica de España, donde supone la inmensa mayoría de lo plantado. Tiene cuerpo ligero a medio, acidez alta y aromas cítricos y de fruta de hueso. Esa frescura es justo lo que piden el marisco y el pescado blanco.",
+      "deeper": "Al otro lado de la frontera, en Portugal, la misma uva se llama Alvarinho y se usa en el Vinho Verde (sobre todo en Monção y Melgaço). El Tempranillo es una uva tinta; es una confusión habitual porque también es española."
+    },
+    {
+      "q": "Un cliente toma un curry tailandés ligeramente picante y quiere un blanco aromático. ¿Qué uva, conocida por sus aromas de lichi y rosa, es una combinación clásica?",
+      "opts": [
+        "Chardonnay estilo Chablis",
+        "Sauvignon Blanc",
+        "Pinot Grigio",
+        "Gewürztraminer"
+      ],
+      "a": 3,
+      "why": "La Gewürztraminer tiene un perfume inconfundible de lichi y rosa. Tiene mucho cuerpo, una acidez bastante baja y a menudo es ligeramente semiseca. Ese punto de dulzor y su gran aroma aguantan bien el picante suave y los platos asiáticos aromáticos (la comida muy picante es más difícil, porque su alto grado alcohólico puede hacer que el chile pique más).",
+      "deeper": "\"Gewürz\" significa especia en alemán, y la zona más famosa de esta uva es Alsacia, en Francia. La Gewürztraminer y el lichi comparten de verdad compuestos aromáticos clave, sobre todo el cis-óxido de rosa, y por eso la comparación es tan acertada."
+    },
+    {
+      "q": "El Condrieu, del norte del Valle del Ródano en Francia, ¿con qué uva se elabora?",
+      "opts": [
+        "Chardonnay",
+        "Riesling",
+        "Viognier",
+        "Chenin Blanc"
+      ],
+      "a": 2,
+      "why": "El Condrieu es 100 % Viognier. La Viognier da blancos con mucho cuerpo, aromas intensos de albaricoque, melocotón y flores, y una acidez bastante baja. Le va bien a un cliente al que le gustan los blancos ricos pero encuentra que el Chardonnay con roble tiene demasiada madera.",
+      "deeper": "La Viognier casi desapareció en los años sesenta, cuando solo quedaban unas pocas hectáreas, antes de un gran resurgimiento a partir de los noventa. La mayoría de los Viognier se disfrutan mejor jóvenes, mientras su perfume floral está fresco. En la cercana Côte-Rôtie, a veces se fermenta un poco de Viognier junto con la uva tinta Syrah."
+    },
+    {
+      "q": "¿De dónde viene principalmente el sabor \"mantecoso\" de algunos Chardonnay?",
+      "opts": [
+        "De la maloláctica, un paso de la elaboración que crea un compuesto con olor a mantequilla",
+        "De mantequilla añadida durante la fermentación",
+        "De uvas muy maduras de viñedos calurosos",
+        "De dejar la botella abierta demasiado tiempo"
+      ],
+      "a": 0,
+      "why": "Muchos Chardonnay hacen la fermentación maloláctica. Unas bacterias transforman el ácido málico, más punzante (como el de la manzana verde), en ácido láctico, más suave (como el de la leche), y uno de los subproductos es el diacetilo, que huele a mantequilla. Las barricas de roble aportan otros sabores, como vainilla y tostado.",
+      "deeper": "Ese mismo paso es habitual en la mayoría de los tintos, donde suaviza la acidez. Los enólogos que buscan un blanco vivo y afrutado pueden bloquearla, y esa es una de las grandes razones por las que los Chardonnay frescos y sin roble saben tan distintos de los ricos y cremosos."
+    }
+  ]
+}

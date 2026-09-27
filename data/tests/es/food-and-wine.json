@@ -1,0 +1,128 @@
+{
+  "slug": "food-and-wine",
+  "title": "Vino y comida",
+  "summary": "Usa unos pocos principios sencillos de maridaje para sugerir un vino que haga que tanto el plato como la copa sepan mejor.",
+  "level": 2,
+  "questions": [
+    {
+      "q": "Un cliente pide calamares fritos con un chorrito de limón y quiere un vino blanco. ¿Qué estilo funcionará mejor?",
+      "opts": [
+        "Un blanco rico, con roble y poca acidez",
+        "Un blanco vivo, de acidez alta y sin roble",
+        "Un vino dulce de postre y con poca acidez",
+        "Un blanco con mucho alcohol y poca frescura"
+      ],
+      "a": 1,
+      "why": "La comida frita y salada pide acidez. Un blanco vivo corta el aceite y refresca la boca como un chorrito de limón. El limón del plato, además, hace que un vino de acidez alta se note más suave y redondo.",
+      "deeper": "La acidez de la comida reduce la acidez que percibimos en el vino. Por eso un vino muy punzante que solo parece demasiado ácido puede resultar equilibrado junto a un plato con limón o vinagre."
+    },
+    {
+      "q": "Un cliente que pide un chuletón con mucha grasa pregunta por qué se recomienda con la carne un tinto firme y tánico, como un Cabernet Sauvignon joven. ¿Qué le dices?",
+      "opts": [
+        "La carne hace que el vino sepa más dulce y afrutado de lo que es",
+        "El tinto siempre va con la carne roja, sea cual sea su estilo o peso",
+        "El alto grado alcohólico del vino disuelve y anula la grasa",
+        "La grasa, la proteína y la sal de la carne suavizan el tanino"
+      ],
+      "a": 3,
+      "why": "El tanino es la sensación secante y áspera del vino tinto. La grasa, la proteína y la sal de la carne suavizan ese agarre, así que el vino se nota más suave. Al mismo tiempo, la acidez y el tanino del vino refrescan la boca entre bocados contundentes.",
+      "deeper": "El mismo vino tánico puede resultar áspero con un plato magro y suave con uno graso. Si a un cliente un tinto potente le parece demasiado secante solo, sugiérele que lo vuelva a probar con un bocado de la carne."
+    },
+    {
+      "q": "Un cliente quiere seguir bebiendo su Champagne Brut seco con un postre dulce de chocolate. ¿Qué le pasará probablemente al vino?",
+      "opts": [
+        "Sabrá más delgado, más punzante y más amargo",
+        "Sabrá más dulce, más rico y más redondo",
+        "Sabrá exactamente igual que antes",
+        "Perderá la burbuja mucho más rápido en la copa"
+      ],
+      "a": 0,
+      "why": "La comida dulce hace que un vino sepa menos dulce y menos afrutado, y más ácido y amargo. Un vino seco junto a un postre dulce puede saber agrio y delgado. La regla general es que el vino sea al menos tan dulce como el postre.",
+      "deeper": "Una buena frase de sala: \"El Champagne está buenísimo, pero el postre lo va a hacer saber punzante. Una copita de un vino dulce le iría de maravilla\". Es una venta adicional honesta que mejora la comida."
+    },
+    {
+      "q": "Un cliente pide un plato muy picante y un tinto tánico de 15 % de alcohol. ¿De qué deberías avisarle con tacto?",
+      "opts": [
+        "El vino sabrá más dulce, más suave y más afrutado",
+        "El picor del chile desaparecerá con cada sorbo",
+        "El vino se notará más caliente, más amargo y más secante",
+        "Nada, porque un vino potente y una comida potente siempre combinan"
+      ],
+      "a": 2,
+      "why": "El picante del chile hace que el alcohol se note más caliente y el tanino más amargo y secante. También le quita fruta y dulzor al vino. Un vino con menos alcohol, con fruta y un punto de dulzor suele ser mucho más cómodo.",
+      "deeper": "Funciona en los dos sentidos: el alcohol alto también hace que el chile pique más. Si el cliente insiste en un tinto, llévalo hacia un estilo jugoso, con poco tanino y menos alcohol, en lugar de uno potente y con roble."
+    },
+    {
+      "q": "Un cliente pide salmón a la plancha, pero solo bebe vino tinto. ¿Cuál es la mejor sugerencia?",
+      "opts": [
+        "Un tinto con mucho cuerpo y muy tánico, como un Barolo joven",
+        "Un tinto ligero y con poco tanino, servido un poco fresco",
+        "Un tinto dulce de postre, como un Oporto ruby",
+        "Decirle que el tinto nunca va con el pescado"
+      ],
+      "a": 1,
+      "why": "\"Tinto con pescado\" puede funcionar cuando el pescado es carnoso y el tinto es ligero. Los tintos potentes y tánicos suelen saber ásperos o metálicos con el pescado, así que un tinto con poco tanino y acidez fresca es la opción más segura. El Pinot Noir o el Gamay son elecciones habituales con salmón o atún.",
+      "deeper": "Un estudio japonés de 2009 con 64 vinos catados con vieiras descubrió que los vinos con más hierro dejaban un regusto a pescado más intenso. Lo que importaba era el nivel de hierro, no simplemente el color, y por eso algunos tintos funcionan con marisco y otros no."
+    },
+    {
+      "q": "Una mesa pide aperitivos fritos y salados y una botella de Champagne. ¿Por qué combinan tan bien?",
+      "opts": [
+        "La sal suaviza el vino; la acidez y la burbuja cortan la grasa",
+        "La burbuja hace que la comida salada sepa más dulce y ligera",
+        "La sal hace que el vino sepa más amargo, lo que equilibra la grasa",
+        "No combinan; el espumoso solo debe tomarse con el postre"
+      ],
+      "a": 0,
+      "why": "La sal hace que el vino sepa más suave y con más cuerpo, y menos amargo o punzante, así que favorece a casi cualquier vino. El espumoso aporta acidez alta y una burbuja que limpia el aceite del paladar. Por eso las patatas fritas, el pollo frito y el Champagne son una combinación tan popular.",
+      "deeper": "La sal es uno de los sabores de la comida que mejor se llevan con el vino. Los vinos muy secos y de acidez alta, que solos pueden parecer austeros, a menudo brillan junto a platos salados."
+    },
+    {
+      "q": "Un cliente pide choucroute garnie, el plato alsaciano de chucrut, salchichas y cerdo, y pregunta qué beber. Siguiendo lo de \"lo que crece junto, va junto\", ¿qué le sugieres?",
+      "opts": [
+        "Un Shiraz potente y maduro del Barossa Valley australiano",
+        "Un Oporto vintage dulce del valle del Duero portugués",
+        "Un Chardonnay californiano con mucho roble",
+        "Un blanco seco de Alsacia, como un Riesling"
+      ],
+      "a": 3,
+      "why": "\"Lo que crece junto, va junto\" significa maridar un plato con un vino de la misma región. La comida y el vino locales han evolucionado a la par, así que a menudo se entienden bien. Un Riesling seco de Alsacia tiene la acidez para cortar la grasa del cerdo y plantar cara al chucrut ácido.",
+      "deeper": "Es un atajo útil cuando no conoces bien un plato: averigua de dónde viene y ofrece un vino de allí. Es un punto de partida, no una garantía, y funciona mejor con la comida regional tradicional de zonas vinícolas."
+    },
+    {
+      "q": "Dos clientes comparten una botella: uno pide pescado a la plancha y el otro un chuletón. ¿Qué botella es el mejor término medio?",
+      "opts": [
+        "Un Cabernet Sauvignon joven y muy tánico",
+        "Un Moscato d'Asti dulce y ligeramente espumoso",
+        "Un rosado seco o un tinto ligero y poco tánico",
+        "Un blanco muy ligero y neutro, casi sin cuerpo"
+      ],
+      "a": 2,
+      "why": "Necesitas un vino intermedio: con cuerpo y sabor suficientes para la carne, pero sin tanto tanino que choque con el pescado. Un rosado seco o un tinto ligero con acidez fresca sirve de puente entre los dos platos.",
+      "deeper": "Otra opción es ofrecer vino por copas para que cada cliente tenga su propio maridaje. Mencionarlo es un buen servicio, no una forma de presionar, cuando los platos son muy distintos."
+    },
+    {
+      "q": "Un cliente pide una ensalada de queso de cabra y dice: \"El tinto va con el queso, así que tomaré el Cabernet\". ¿Qué sugerencia es más fiable?",
+      "opts": [
+        "Un Sauvignon Blanc seco y vivo, como un Sancerre",
+        "Un tinto con mucho cuerpo y roble, como un Cabernet de Napa",
+        "Un tinto dulce generoso, como un Oporto ruby",
+        "Un blanco pesado, con mucho alcohol y poca acidez"
+      ],
+      "a": 0,
+      "why": "Lo de \"tinto con queso\" no es una regla fiable. El queso de cabra fresco es ácido y cremoso, y un tinto potente y tánico puede resultar áspero con él. Un Sauvignon Blanc vivo acompaña su acidez; el Sancerre con queso de cabra local del Loira es un maridaje regional famoso.",
+      "deeper": "En un pequeño estudio sensorial de 2016 en Dijon (Francia), la investigadora principal lo resumió así: el tinto puede ir muy bien o no tan bien con el queso, mientras que el blanco es menos arriesgado. Para una tabla de quesos variada, un blanco suele ser la apuesta más segura."
+    },
+    {
+      "q": "Un cliente pide un plato de Roquefort, un queso azul salado, y quiere un vino. ¿Cuál es la combinación clásica?",
+      "opts": [
+        "Un Pinot Grigio seco, ligero y neutro",
+        "Un Cabernet Sauvignon joven y tánico",
+        "Un espumoso rosado seco, servido bien frío",
+        "Un vino dulce como un Sauternes"
+      ],
+      "a": 3,
+      "why": "Un queso azul salado e intenso se equilibra con un vino dulce. La sal hace que el vino resulte menos empalagoso y el dulzor doma la fuerza del queso. El Sauternes con Roquefort y el Oporto con Stilton son ejemplos clásicos.",
+      "deeper": "Es un maridaje por contraste: la sal y el azúcar funcionan juntos, como en el caramelo salado. Es una buena venta adicional honesta en el momento de los quesos, porque a menudo una copita de vino dulce es todo lo que necesita la mesa."
+    }
+  ]
+}
