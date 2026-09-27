@@ -10,6 +10,7 @@
 // stay in step with the rest of the site.
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
+import { createHash } from "node:crypto";
 
 const ROOT = new URL("..", import.meta.url).pathname;
 const DATA = join(ROOT, "data/tests");
@@ -23,6 +24,11 @@ const header = cut(tpl, '<a class="skip"', "</header>");
 const footer = tpl.slice(tpl.indexOf('<footer class="site-footer">'), tpl.indexOf("</body>"));
 const analytics = cut(tpl, "<!-- growth:analytics -->", "<!-- /growth:analytics -->");
 const fontHref = tpl.match(/<link rel="stylesheet" href="(https:\/\/fonts\.googleapis\.com[^"]+)"/)[1];
+
+// Version the shared assets by content so browsers pick up a new quiz.js/css at
+// once instead of serving a cached copy for up to 10 minutes (GitHub Pages).
+const ver = (f) => createHash("sha1").update(readFileSync(join(ROOT, f))).digest("hex").slice(0, 8);
+const JS_V = ver("assets/quiz.js"), CSS_V = ver("assets/quiz.css");
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 // JSON inside <script type="application/json">: only "</" can break out.
@@ -105,7 +111,7 @@ function page({ path, title, desc, crumbs, body, data }) {
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="${fontHref}">
 <link rel="stylesheet" href="/assets/site.css">
-<link rel="stylesheet" href="/assets/quiz.css">
+<link rel="stylesheet" href="/assets/quiz.css?v=${CSS_V}">
 <script type="application/ld+json">${inlineJson(ld)}</script>
 ${analytics}
 </head>
@@ -115,7 +121,7 @@ ${header}
 ${body}
 <script type="application/json" id="quiz-data">${inlineJson(data)}</script>
 </main>
-${footer}<script src="/assets/quiz.js" defer></script>
+${footer}<script src="/assets/quiz.js?v=${JS_V}" defer></script>
 </body>
 </html>
 `;
