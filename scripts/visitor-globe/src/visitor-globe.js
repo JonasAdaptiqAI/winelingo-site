@@ -7,6 +7,8 @@
 //        data-endpoint="https://…/functions/v1/site-visitors"></div>
 //   <span data-vg="visitors"></span> <span data-vg="active"></span> <span data-vg="countries"></span>
 //   Elements with data-vg-when-active are hidden unless someone is on the site right now.
+//   Unit words follow their count: <span data-vg-unit="visitors" data-one="visit" data-many="visits"></span>
+//   [data-vg-ready] flips to "true" only once there is at least one visit, so a page never says "0".
 //
 // Optional attributes: data-land / data-ocean / data-grid / data-dot / data-rim / data-halo (colours),
 // data-demo (use built-in sample data, for previews only — never on a live page).
@@ -58,7 +60,12 @@ function fill(root, data) {
     else if (k === "countries") el.textContent = fmt(data.countries.length);
   }
   for (const el of scope.querySelectorAll("[data-vg-when-active]")) el.hidden = !(data.active > 0);
-  scope.querySelectorAll("[data-vg-ready]").forEach((el) => el.setAttribute("data-vg-ready", "true"));
+  const counts = { visitors: data.visitors, active: data.active, countries: data.countries.length };
+  for (const el of scope.querySelectorAll("[data-vg-unit]")) {
+    const n = counts[el.getAttribute("data-vg-unit")] ?? 0;
+    el.textContent = n === 1 ? el.getAttribute("data-one") ?? "" : el.getAttribute("data-many") ?? "";
+  }
+  if (data.visitors > 0) scope.querySelectorAll("[data-vg-ready]").forEach((el) => el.setAttribute("data-vg-ready", "true"));
 }
 
 function mount(root) {
