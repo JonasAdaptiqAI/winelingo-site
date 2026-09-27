@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-itunes-app" content="app-id=6785896824">
+<!-- Private pitch demo for Hotel d'Angleterre — never index it. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Balthazar Personaletest — Winelingo</title>
+<meta name="description" content="Demo: en personaletest bygget på Balthazar Champagne Bars champagnekort.">
+<meta name="theme-color" content="#7b1e3b">
+<meta name="color-scheme" content="light">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --ground:#FBF7F4; --surface:#FFFDFB; --ink:#2B2B2B; --muted:#8A7F86; --line:#EFE5EA; --parchment:#F3ECE3;
+  --wine:#7B1E3B; --wine-deep:#2B2B2B; --gold:#B08A34; --on-wine:#FFFDFB;
+  --ok:#5D6A45; --ok-soft:#EDF0E4; --bad:#B0463A; --bad-soft:#F8E6E2;
+  --display:"Fraunces", Georgia, "Times New Roman", serif;
+  --body:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"Inter", system-ui, sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.55 var(--body);padding-inline:16px;padding-block:28px 48px}
+.wrap{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
+header{display:flex;flex-direction:column;gap:6px}
+.brand{font:700 12px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--wine)}
+h1{color:var(--wine-deep);font:600 clamp(30px,7vw,40px)/1.05 var(--display);margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:0;font-size:15px}
+.demo-note{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px;margin:4px 0 0}
+
+.progress{display:flex;align-items:center;gap:12px;font:500 13px/1 var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.track{flex:1;height:4px;background:var(--line);border-radius:2px;overflow:hidden}
+.fill{height:100%;background:var(--gold);width:0;transition:width .35s ease}
+
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 20px;display:flex;flex-direction:column;gap:16px}
+.topic{font:700 11px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--wine)}
+.q{color:var(--wine-deep);font:600 21px/1.3 var(--display);margin:0;text-wrap:balance}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{all:unset;box-sizing:border-box;display:flex;gap:12px;align-items:flex-start;width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;cursor:pointer;background:var(--surface);color:var(--ink);font:500 15px/1.4 var(--body);transition:border-color .15s,background .15s}
+.opt:hover:not([disabled]){border-color:var(--wine)}
+.opt:focus-visible{outline:2px solid var(--wine);outline-offset:2px}
+.opt .k{font:500 12px/1.6 var(--mono);color:var(--muted);flex:none;width:16px}
+.opt[disabled]{cursor:default}
+.opt.right{border-color:var(--ok);background:var(--ok-soft)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.opt.dim{opacity:.55}
+
+.answer{display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--line);padding-top:16px}
+.verdict{font:600 15px/1.3 var(--body)}
+.verdict.ok{color:var(--ok)} .verdict.no{color:var(--bad)}
+.answer p,.card p{margin:0}
+.bottle{display:flex;justify-content:space-between;gap:12px;align-items:baseline;background:var(--parchment);border-radius:10px;padding:12px 14px}
+.bottle .lbl{font:600 11px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--wine);display:block;margin-bottom:6px}
+.bottle .name{font-weight:500}
+.bottle .price{font:500 14px/1 var(--mono);white-space:nowrap;font-variant-numeric:tabular-nums}
+details{font-size:15px;color:var(--muted)}
+summary{cursor:pointer;color:var(--wine);font-weight:600;font-size:14px}
+summary:focus-visible{outline:2px solid var(--wine);outline-offset:2px}
+details p{margin-top:8px!important}
+
+.btn{all:unset;box-sizing:border-box;text-align:center;padding:14px 18px;border-radius:10px;background:var(--wine);color:var(--on-wine);font:600 15px/1 var(--body);cursor:pointer}
+.btn:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.btn.ghost{background:transparent;color:var(--wine);border:1px solid var(--line)}
+
+.score{font:700 64px/1 var(--display);font-variant-numeric:tabular-nums}
+.score small{font-size:28px;color:var(--muted)}
+.next{display:flex;flex-direction:column;gap:10px}
+.next h2{font:700 22px/1.2 var(--display);margin:0}
+.next ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:8px}
+footer{font-size:13px;color:var(--muted);display:flex;flex-direction:column;gap:6px;text-align:center}
+footer a{color:var(--wine);font-weight:600}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <span class="brand">Winelingo · Personaletest</span>
+    <h1>Balthazar Champagne Bar</h1>
+    <p class="sub">Ti spørgsmål, som man møder dem ved baren. Hvert svar peger på en flaske fra jeres eget kort.</p>
+    <p class="demo-note">Demo lavet af Winelingo ud fra Balthazars offentlige champagnekort (20.08.2026). Priser i DKK som på kortet.</p>
+  </header>
+
+  <div class="progress"><span id="count">1 / 10</span><div class="track"><div class="fill" id="fill"></div></div></div>
+
+  <section class="card" id="card" aria-live="polite"></section>
+
+  <footer>
+    <a href="https://apps.apple.com/app/id6785896824">Hent Winelingo i App Store</a>
+    <span>17+ · Nyd vin med omtanke</span>
+  </footer>
+</div>
+
+<script>
+const Q = [
+ {topic:"Servering", q:"En gæst bestiller en flaske Dom Pérignon 2012. Hvilket glas giver vinen bedst plads?",
+  opts:["En smal fløjte","En coupe (skål)","Et tulipanformet glas eller et hvidvinsglas","Et bredt Bourgogne-rødvinsglas"], a:2,
+  why:"En moden prestige-champagne har mange aromaer. Et tulipanformet glas eller et hvidvinsglas giver dem plads og samler duften i toppen. Boblerne holder stadig fint.",
+  bottle:["Dom Pérignon 2012","6.000 kr."],
+  deeper:"Fløjten holder godt på boblerne, men lukker for duften, så den passer bedst til en frisk, ung Brut. Coupen ser festlig ud, men boblerne og duften forsvinder hurtigt. Serveringstemperatur: unge champagner ved 6–8 °C, modne og prestige-champagner lidt varmere, ved 9–11 °C."},
+ {topic:"Gæstens ønske", q:"En gæst siger: “Jeg vil have noget helt tørt, uden sukker.” Hvilket ord på etiketten skal du kigge efter?",
+  opts:["Brut","Extra Brut","Brut Nature","Sec"], a:2,
+  why:"Brut Nature (også kaldt Dosage Zéro eller Non Dosé) betyder, at der ikke er tilsat sukker efter degorgeringen. Den har under 3 g sukker pr. liter.",
+  bottle:["Les Cinq Filles, Blanc de Blancs, Dosage Zero","2.400 kr."],
+  deeper:"Skalaen fra tørrest til sødest: Brut Nature (0–3 g/l), Extra Brut (0–6), Brut (under 12), Extra Dry (12–17), Sec (17–32), Demi-Sec (32–50), Doux (over 50). Pas på ordet “Sec”: det betyder tør på fransk, men i champagne er Sec sødere end Brut. Les Cinq Filles laves af danske Yvonne Seier Christensen, og det er en god historie at fortælle."},
+ {topic:"Druen", q:"En gæst beder om en Blanc de Blancs. Hvilken drue er i glasset?",
+  opts:["Pinot Noir, presset hvidt","Chardonnay","Meunier","En blanding af alle tre"], a:1,
+  why:"Blanc de Blancs betyder “hvid af hvide”: vin kun af hvide druer. I Champagne er det næsten altid ren Chardonnay, som giver en frisk, citrusagtig og mineralsk stil.",
+  bottle:["Vauversin Brut Original, Blanc de Blancs","1.200 kr."],
+  deeper:"Det modsatte er Blanc de Noirs: hvid vin af blå druer (Pinot Noir og/eller Meunier), fyldigere og med mere rød frugt. På jeres kort: Bérèche Montagne Blanc de Noirs, Verzenay 2008 (4.000 kr.)."},
+ {topic:"Druen", q:"Météyer Père & Fils har Meunier-stokke på over 75 år. Hvad giver Meunier typisk til en champagne?",
+  opts:["Syre og citrus, som Chardonnay","Saftig frugt og en rund, blød stil","Tanniner og bitterhed","Sødme, så der skal mindre sukker i"], a:1,
+  why:"Meunier er den tredje store drue i Champagne. Den giver saftig frugt og rundhed, så vinen er indbydende tidligt. Gamle stokke giver ekstra koncentration.",
+  bottle:["Météyer Père & Fils NV Marine Brut","1.200 kr."],
+  deeper:"Meunier trives i Vallée de la Marne, hvor Météyer ligger. Pinot Noir giver struktur og fylde, og Chardonnay giver friskhed og finesse. Billecart-Salmon er også kendt for sin brug af Meunier."},
+ {topic:"Anbefaling", q:"En gæst vil have en fyldig, kraftig champagne, der kan klare mad. Hvilket hus peger du på?",
+  opts:["Bollinger","Ruinart","Delamotte","Le Mesnil"], a:0,
+  why:"Bollinger bygger på Pinot Noir (typisk 60–70 %) og er kendt for en fyldig, vinøs stil. De tre andre er Chardonnay-huse med en lettere, mere mineralsk stil.",
+  bottle:["Bollinger Special Cuvée Brut","1.400 kr."],
+  deeper:"Vil gæsten gå et skridt op i samme stil, er Bollinger La Grande Année 2014 (5.000 kr.) det naturlige næste valg."},
+ {topic:"Kortet", q:"En gæst er nysgerrig på Salon, men 32.000 kr. er for meget. Hvilken flaske kommer fra Salons søsterhus?",
+  opts:["Delamotte Brut","Taittinger Brut Réserve","Deutz Classic Brut","Henriot Blanc de Blancs"], a:0,
+  why:"Delamotte er Salons søsterhus i Le Mesnil-sur-Oger og får druer derfra. Det er en elegant vej ind i samme univers til en brøkdel af prisen.",
+  bottle:["Delamotte NV Brut","1.200 kr."],
+  deeper:"Salon laves kun af Chardonnay fra Le Mesnil-sur-Oger og kun i særlige årgange. I de andre år går druerne typisk til Delamotte."},
+ {topic:"Hvad siger du til gæsten?", q:"“Hvorfor koster Moët 2015 mere end Brut Impérial?” Hvad er det bedste svar?",
+  opts:["2015 er lavet af en finere drue","Brut Impérial er en blanding af flere år, mens 2015 kun er fra ét godt år og har lagret længere","2015 har mere sukker","2015 er fra en anden region"], a:1,
+  why:"NV (uden årgang) blandes af flere års vine, så husets stil smager ens år efter år. En årgangschampagne er kun fra ét år, laves kun i gode år og lagrer længere, før den sælges.",
+  bottle:["Moët & Chandon 2015 · Brut Impérial NV","1.700 · 995 kr."],
+  deeper:"Årgangschampagne skal efter reglerne lagre mindst 3 år før salg, uden årgang mindst 15 måneder. De fleste gode huse lagrer langt længere."},
+ {topic:"Gæstens ønske", q:"En gæst beder om “grower champagne”. Hvilken af disse er en vinbonde, der selv dyrker druerne og laver vinen?",
+  opts:["Moët & Chandon","Veuve Clicquot","Jacques Selosse","Taittinger"], a:2,
+  why:"Jacques Selosse i Avize er en af de mest berømte vinbønder i Champagne. De tre andre er store huse, der også køber druer.",
+  bottle:["Jacques Selosse Initial, Blanc de Blancs Grand Cru","6.300 kr."],
+  deeper:"Se efter de små bogstaver på etiketten: RM (récoltant-manipulant) betyder vinbonde, NM (négociant-manipulant) betyder et hus, der må købe druer. Andre vinbønder på jeres kort: Agrapart, Larmandier-Bernier og Bérèche."},
+ {topic:"Hvad siger du til gæsten?", q:"“Hvordan får man farven i en rosé-champagne?” Hvad svarer du?",
+  opts:["Man blander lidt rødvin i den hvide basisvin","Man farver med skaller af hvide druer","Man tilsætter hindbærsaft ved dosagen","Pinot Noir er rød indeni"], a:0,
+  why:"De fleste rosé-champagner laves ved at blande lidt rødvin fra Champagne i den hvide basisvin. I EU må man normalt ikke lave rosé på den måde, men mousserende vin som champagne er undtagelsen.",
+  bottle:["Billecart-Salmon Brut Rosé","1.875 kr."],
+  deeper:"Den anden metode hedder saignée: De blå druer ligger kort på skallerne, så farven trækkes ud. Resultatet er ofte dybere i farven og mere vinøst. Jeres eksempel: Francis Boulard Rosé de Saignée, Extra Brut (1.200 kr.)."},
+ {topic:"Kortet", q:"Krug Grande Cuvée “173ème Édition”. Hvad fortæller tallet?",
+  opts:["Årgangen","At det er den 173. udgave af Grande Cuvée-blandingen","Antal vine i blandingen","Antal måneder på bærmen"], a:1,
+  why:"Grande Cuvée er uden årgang, men hver udgave nummereres. 173ème Édition er den 173. version af blandingen.",
+  bottle:["Krug Grande Cuvée, 173ème Édition","3.500 kr."],
+  deeper:"Hver udgave bygges omkring én høst og blandes med reservevine fra mange år. I har også 164ème Édition (13.000 kr.), så gæster kan smage, hvordan Krug udvikler sig med alderen."}
+];
+
+function el(tag, props, kids){
+  const n = document.createElement(tag);
+  if (props) for (const k in props) { if (k === 'cls') n.className = props[k]; else if (k === 'text') n.textContent = props[k]; else n.setAttribute(k, props[k]); }
+  (kids || []).forEach(c => c && n.append(c));
+  return n;
+}
+
+let i = 0, score = 0;
+const card = document.getElementById('card'), count = document.getElementById('count'), fill = document.getElementById('fill');
+
+function render(){
+  const x = Q[i];
+  count.textContent = (i+1) + ' / ' + Q.length;
+  fill.style.width = (i / Q.length * 100) + '%';
+  const opts = el('div', {cls:'opts'}, x.opts.map((o,n) => {
+    const b = el('button', {cls:'opt', id:'opt-'+i+'-'+n}, [el('span',{cls:'k',text:'ABCD'[n]}), el('span',{text:o})]);
+    b.addEventListener('click', () => pick(n, opts));
+    return b;
+  }));
+  card.replaceChildren(el('span',{cls:'topic',text:x.topic}), el('h2',{cls:'q',text:x.q}), opts);
+}
+
+function pick(n, opts){
+  const x = Q[i], ok = n === x.a, last = i === Q.length - 1;
+  if (ok) score++;
+  [...opts.children].forEach((b, m) => {
+    b.disabled = true;
+    b.classList.add(m === x.a ? 'right' : m === n ? 'wrong' : 'dim');
+  });
+  const next = el('button', {cls:'btn', id:'next', text: last ? 'Se resultat' : 'Næste spørgsmål'});
+  next.addEventListener('click', () => { if (last) done(); else { i++; render(); card.scrollIntoView({block:'start',behavior:'smooth'}); } });
+  card.append(el('div', {cls:'answer'}, [
+    el('span', {cls:'verdict ' + (ok?'ok':'no'), text: ok ? 'Rigtigt' : 'Ikke helt. Svaret er ' + 'ABCD'[x.a]}),
+    el('p', {text:x.why}),
+    el('div', {cls:'bottle'}, [
+      el('div', null, [el('span',{cls:'lbl',text:'Fra jeres kort'}), el('span',{cls:'name',text:x.bottle[0]})]),
+      el('span', {cls:'price', text:x.bottle[1]})
+    ]),
+    el('details', null, [el('summary',{text:'Nørd dybere'}), el('p',{text:x.deeper})]),
+    next
+  ]));
+  next.focus({preventScroll:true});
+}
+
+function done(){
+  fill.style.width = '100%';
+  count.textContent = Q.length + ' / ' + Q.length;
+  const msg = score >= 9 ? 'Klar til at stå bag baren.' : score >= 6 ? 'Godt fundament. Resten sidder efter næste runde.' : 'God start. Lektionerne i appen dækker det hele.';
+  const scoreEl = el('div', {cls:'score'}, [String(score), el('small',{text:' / ' + Q.length})]);
+  const again = el('button', {cls:'btn ghost', id:'again', text:'Tag testen igen'});
+  again.addEventListener('click', () => { i = 0; score = 0; render(); });
+  card.replaceChildren(
+    el('span',{cls:'topic',text:'Resultat'}), scoreEl, el('p',{text:msg}),
+    el('div', {cls:'next'}, [
+      el('h2', {text:'Sådan kan testen tilpasses jer'}),
+      el('ul', null, [
+        'Hele champagnekortet: cirka 200 flasker fra over 40 huse, ikke kun de ti her',
+        'Marchals vinkort og hotellets øvrige servering',
+        'Niveauer for nye medarbejdere og erfarne tjenere',
+        'Nye spørgsmål, når kortet ændres',
+        'På dansk og engelsk'
+      ].map(t => el('li',{text:t})))
+    ]),
+    again
+  );
+}
+render();
+</script>
+
+</body>
+</html>
