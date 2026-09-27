@@ -139,7 +139,7 @@ writeFileSync(join(ROOT, "tests/index.html"), page({
   desc: "Free wine quizzes on serving, grapes, food pairing, labels, sparkling wine and wine faults. Built for restaurant staff and anyone learning wine. In English, Danish, German and Spanish.",
   crumbs: hubCrumbs,
   body: hero(hubCrumbs, "Free wine tests", "Test what you know about wine",
-    "Ten questions each, with a short explanation after every answer. Made for restaurant staff and anyone who wants to learn wine.") +
+    "Ten questions each, with a short explanation after every answer. Made for restaurant staff and anyone who wants to learn wine.", true) +
     `\n<div class="qz-hubwrap" id="quiz"><noscript>Turn on JavaScript to take the tests.</noscript></div>`,
   data: { tests: tests.map((t) => ({ slug: t.slug, level: t.level, ...Object.fromEntries(LANGS.filter((l) => t[l]).map((l) => [l, { title: t[l].title, summary: t[l].summary }])) })) },
 }));
