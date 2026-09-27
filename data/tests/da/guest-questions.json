@@ -1,0 +1,128 @@
+{
+  "slug": "guest-questions",
+  "title": "Svar på gæsternes spørgsmål",
+  "summary": "Svar på de spørgsmål, gæster faktisk stiller ved bordet, med enkle og ærlige ord, der hjælper dem med at vælge.",
+  "level": 1,
+  "questions": [
+    {
+      "q": "En gæst siger: \"Jeg vil gerne have en tør hvidvin, men jeg elsker frugtige vine.\" Hvad skal du forstå af det?",
+      "opts": [
+        "Tør og frugtig er hinandens modsætninger, så gæsten må vælge den ene",
+        "Tør betyder ikke sød; frugtig er en smag, så en vin kan være begge",
+        "Tør betyder lav alkohol, og frugtig betyder høj alkohol",
+        "Tør betyder fadlagret, hvilket skjuler frugten i vinen"
+      ],
+      "a": 1,
+      "why": "\"Tør\" handler om sukker: der er meget lidt tilbage efter gæringen, så vinen smager ikke sødt. \"Frugtig\" handler om dufte og smage som citrus eller fersken. Mange tørre vine dufter meget frugtigt, så gæstens ønske giver god mening.",
+      "deeper": "Dufte af moden frugt kan snyde hjernen til at forvente sødme, og derfor blander gæster tit de to sammen. En god sætning: \"Den her er tør, så slet ikke sød, men den er fuld af moden frugt.\""
+    },
+    {
+      "q": "En gæst spørger: \"Hvad betyder 'tannin'?\" Hvilket svar er korrekt og let at forstå?",
+      "opts": [
+        "Sødmen, der er tilbage i vinen, ligesom sukker i en kop te",
+        "Et andet ord for alkoholprocenten, den varme brænden i halsen",
+        "Den sure smag, der får munden til at løbe i vand, som citronsaft",
+        "En tør, snerpende fornemmelse i munden, som stærk sort te"
+      ],
+      "a": 3,
+      "why": "Tanniner (garvesyre) er naturlige stoffer fra drueskaller, kerner og stilke og nogle gange fra egefade. De binder sig til proteinerne i dit spyt, og derfor føles munden tør og lidt ru. Sammenligningen med stærk te virker på næsten alle gæster.",
+      "deeper": "Rødvin har meget mere tannin end hvidvin, fordi saften gærer sammen med skallerne. Tannin giver også rødvinen struktur og hjælper den med at lagre. Til mad, især protein og fedt, føles den som regel blødere."
+    },
+    {
+      "q": "En gæst siger: \"Jeg drikker normalt Sauvignon Blanc, men jeg vil gerne prøve noget andet.\" Hvad er det bedste forslag?",
+      "opts": [
+        "Grüner Veltliner fra Østrig: tør, sprød, med et pebret strejf",
+        "En fyldig Chardonnay med meget fad fra Californien, med smør og vanilje",
+        "Moscato d'Asti: sød, let perlende og med lav alkohol",
+        "White Zinfandel, en sødlig lyserød vin fra Californien"
+      ],
+      "a": 0,
+      "why": "Den, der elsker Sauvignon Blanc, kan lide tørre, sprøde og friske hvidvine med høj syre. Grüner Veltliner giver den samme friskhed med en ny smag. De andre valg er meget fyldigere eller sødere.",
+      "deeper": "Andre gode bud er Verdejo fra Rueda i Spanien, Albariño, Vermentino eller Assyrtiko. Prøv at sige: \"Kan du lide friskheden i Sauvignon Blanc, har den her samme bid, bare med et lidt andet twist.\""
+    },
+    {
+      "q": "Et par vil gerne have en anbefaling til en flaske. Hvordan tackler du prisen uden at være påtrængende?",
+      "opts": [
+        "Anbefal den dyreste flaske på vinkortet som det sikreste valg",
+        "Foreslå kun de billigste flasker, så ingen føler sig utilpas",
+        "Tilbyd to-tre vine til forskellige priser, og lad dem vælge",
+        "Vent, til de siger deres præcise budget højt ved bordet"
+      ],
+      "a": 2,
+      "why": "Når du giver et par muligheder i forskellige prisklasser, kan gæsterne vælge det niveau, de er trygge ved, uden at skulle sige et beløb foran andre. Det viser også, at du anbefaler ud fra smag, ikke pris.",
+      "deeper": "Mange gæster viser deres budget ved at pege på en pris på vinkortet og sige \"noget i den her stil\". Tag imod hintet uden at kommentere det. Ærligt mersalg betyder, at du forklarer, hvad en lidt dyrere flaske giver dem, og så er glad for det, de end vælger."
+    },
+    {
+      "q": "En gæst smager på vinen og siger: \"Jeg synes, den smager forkert.\" Hvad gør du?",
+      "opts": [
+        "Forklar, at det bare er sådan, vinen skal smage, og gå videre",
+        "Undskyld, tag flasken med til tjek, og tilbyd en erstatning",
+        "Påpeg, at de allerede har godkendt smagsprøven tidligere",
+        "Smag selv fra gæstens glas ved bordet for at bevise din pointe"
+      ],
+      "a": 1,
+      "why": "Diskutér ikke med gæsten. Tag flasken med tilbage, lad en leder eller sommelier tjekke den, og tilbyd en ny flaske eller en anden vin. Det er vigtigere, at gæsten er glad, end at bevise, hvem der har ret.",
+      "deeper": "Nogle gange er vinen faktisk defekt, fx har den \"proptræk\". Andre gange kan gæsten bare ikke lide stilen, og mange restauranter bytter den alligevel og sælger flasken som glasvin. Følg dit steds regler."
+    },
+    {
+      "q": "Hvorfor skænker du en lille smagsprøve til den, der bestilte flasken, før du serverer for bordet?",
+      "opts": [
+        "Så de kan beslutte, om de vil betale for flasken",
+        "For at vise bordet, hvor meget vin et fuldt glas indeholder",
+        "Så de kan tjekke, at alkoholen passer med etiketten",
+        "Så de kan tjekke, at vinen er sund og ikke defekt"
+      ],
+      "a": 3,
+      "why": "Smagsprøven er et kvalitetstjek: værten sikrer sig, at vinen er sund og uden en fejl som proptræk. Det er egentlig ikke en chance for at afgøre, om de kan lide stilen.",
+      "deeper": "Skænk en lille sjat til værten, vent på et nik, og servér så for de andre gæster, før du fylder værtens glas op til sidst. Ser værten usikker ud, hjælper et venligt \"Smager den, som den skal?\" dem til at slappe af."
+    },
+    {
+      "q": "En gæst spørger: \"Er den her vin økologisk?\" Etiketten har intet økologimærke eller certificering. Hvad er det ærlige svar?",
+      "opts": [
+        "\"Den er ikke certificeret økologisk, så vidt etiketten viser.\"",
+        "\"Ja, næsten al vin er økologisk, fordi den er lavet af druer.\"",
+        "\"Ja, der står 'estate grown' på etiketten, og det er det samme.\"",
+        "\"Ja, det kan man se, fordi den ikke indeholder sulfitter.\""
+      ],
+      "a": 0,
+      "why": "\"Økologisk\" er et lovbeskyttet begreb i EU, USA og mange andre steder, og certificerede vine har et mærke eller en tekst på etiketten. Uden certificering skal du ikke påstå, at den er økologisk, heller ikke selvom producenten dyrker omhyggeligt. Du kan stadig fortælle gæsten, hvad du ved om, hvordan vinen er lavet.",
+      "deeper": "Reglerne varierer fra land til land. Økologisk vin i EU må godt have tilsat sulfitter, men med lavere grænser end almindelig vin. I USA må vin mærket \"organic\" ikke have tilsat sulfitter, mens \"made with organic grapes\" godt må."
+    },
+    {
+      "q": "En gæst spørger: \"Er 'naturvin' en officiel kategori ligesom økologisk?\" Hvad er korrekt?",
+      "opts": [
+        "Ja, naturvin er strengt defineret ved lov i alle lande",
+        "Ja, det er bare et andet officielt navn for certificeret økologisk vin",
+        "Generelt nej; det betyder løst vin lavet med minimalt indgreb",
+        "Ja, det er den juridiske betegnelse for vin helt uden alkohol"
+      ],
+      "a": 2,
+      "why": "Der findes generelt ingen lovmæssig definition af naturvin, så begrebet betyder forskellige ting for forskellige producenter. Det dækker som regel over økologisk dyrkede druer og et minimum af tilsætningsstoffer i kælderen.",
+      "deeper": "Frankrig godkendte et frivilligt mærke, \"Vin Méthode Nature\", fra årgang 2020. Det kræver håndplukkede, certificeret økologiske druer, naturlig gær og højst 30 mg/L tilsatte sulfitter, men det er et privat producentmærke, ikke en lovmæssig definition af naturvin."
+    },
+    {
+      "q": "En gæst spørger: \"Hvad betyder 'Den Gamle Verden' og 'Den Nye Verden'?\" Hvilket svar i én sætning er bedst?",
+      "opts": [
+        "Den Gamle Verden er vine fra gamle årgange; Den Nye Verden er vine fra de nyeste årgange",
+        "Den Gamle Verden er Europa og Middelhavet; Den Nye Verden er fx Amerika og Australien",
+        "Den Gamle Verden er billige hverdagsvine; Den Nye Verden er dyre topvine",
+        "Den Gamle Verden er vine fra gamle stokke; Den Nye Verden er vine fra unge stokke"
+      ],
+      "a": 1,
+      "why": "Den Gamle Verden er Europa og de gamle vinområder rundt om Middelhavet. Den Nye Verden er steder som Amerika, Australien, New Zealand og Sydafrika. Begreberne handler om, hvor en vin kommer fra, ikke om alder eller pris. Den Gamle Verdens områder har lavet vin i mange hundrede år. Den Nye Verdens områder begyndte senere, mest fra opdagelsesrejsernes tid og frem.",
+      "deeper": "Som en løs stilregel er vine fra Den Gamle Verden tit lettere og mere krydrede, og vine fra Den Nye Verden mere modne og frugtige. Der er mange undtagelser, for klima og vinmagerens valg betyder mere end etiketten."
+    },
+    {
+      "q": "En gæst siger, at rødvin tit gør munden tør og \"pelset\", men vil gerne have en rødvin i aften. Hvad foreslår du?",
+      "opts": [
+        "En let rødvin med lidt tannin, som Pinot Noir eller Beaujolais",
+        "En ung Cabernet Sauvignon fra et varmt område som fx Napa Valley",
+        "En Barolo, lavet på Nebbiolo i Piemonte i det nordvestlige Italien",
+        "En ung Madiran fra det sydvestlige Frankrig, lavet på Tannat"
+      ],
+      "a": 0,
+      "why": "Den tørre, pelsede fornemmelse kommer fra tannin. Pinot Noir og Gamay har naturligt mindre tannin, så de føles blødere. Cabernet Sauvignon, Nebbiolo og Tannat er blandt de druer, der har mest tannin.",
+      "deeper": "Serverer du en let rødvin lidt kølig, bliver den endnu friskere. En god sætning: \"Den her er blød og silkeagtig, uden den tørre snerp.\""
+    }
+  ]
+}

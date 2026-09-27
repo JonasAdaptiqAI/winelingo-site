@@ -1,0 +1,128 @@
+{
+  "slug": "labels-and-lists",
+  "title": "Etiquetas y cartas",
+  "summary": "Descifra las palabras de una etiqueta o de una carta de vinos y explícaselas a un cliente con palabras sencillas.",
+  "level": 2,
+  "questions": [
+    {
+      "q": "Un cliente señala \"Gevrey-Chambertin\" en la carta y pregunta: \"¿Dónde pone la uva?\". ¿Qué le explicas?",
+      "opts": [
+        "Es un coupage, así que las normas francesas prohíben nombrar ninguna uva",
+        "En Francia la uva siempre figura en la contraetiqueta",
+        "El lugar te dice la uva: en este caso, Pinot Noir",
+        "Gevrey-Chambertin es el nombre local de la propia uva"
+      ],
+      "a": 2,
+      "why": "Muchas etiquetas del Viejo Mundo (Europa) indican de dónde viene el vino, no la uva. Las normas locales deciden qué uvas se pueden usar. Gevrey-Chambertin es un Borgoña tinto, y el Borgoña tinto se elabora con Pinot Noir.",
+      "deeper": "La idea es que el lugar importa más que la uva. Aprenderte unas cuantas regiones clave y sus uvas te permite leer buena parte de una carta francesa: el Chablis es Chardonnay, el Sancerre blanco es Sauvignon Blanc y el Borgoña tinto de la Côte d'Or es Pinot Noir."
+    },
+    {
+      "q": "Un cliente compara un Rioja tinto Crianza con un Rioja Gran Reserva. ¿Cuál es la diferencia clave?",
+      "opts": [
+        "El Gran Reserva se elabora con una uva distinta y más rara",
+        "El Gran Reserva tiene al menos 5 años de crianza, 2 en roble",
+        "El Crianza siempre es más dulce, con más azúcar residual",
+        "El Crianza se cría más tiempo, pero en depósitos de acero y no en roble"
+      ],
+      "a": 1,
+      "why": "En Rioja, los términos de crianza son mínimos legales. Un Crianza tinto necesita al menos 2 años de crianza, con al menos 1 año en barrica de roble. Un Gran Reserva tinto necesita al menos 5 años, con al menos 2 en roble y 2 en botella.",
+      "deeper": "Entre medias está el Reserva: al menos 3 años para los tintos, con 1 año en roble y 6 meses en botella. Las normas de Rioja especifican barricas de roble de 225 litros, y una crianza más larga suele traer taninos más suaves y notas más evolucionadas, como cuero y fruta pasa."
+    },
+    {
+      "q": "Un cliente pregunta qué significa \"Grand Cru\" en la etiqueta de un Borgoña tinto. ¿Qué es lo correcto?",
+      "opts": [
+        "Viene de uno de los viñedos mejor clasificados de Borgoña",
+        "Es el mejor coupage del productor, de varias parcelas",
+        "El vino se crió años de más antes de salir al mercado",
+        "Viene del château mejor clasificado del pueblo"
+      ],
+      "a": 0,
+      "why": "En Borgoña, las clasificaciones corresponden a los viñedos (llamados \"climats\"), no a los productores. Grand Cru es el nivel más alto, por encima de Premier Cru, los vinos de pueblo y los regionales. Hay 33 denominaciones Grand Cru en Borgoña.",
+      "deeper": "La mayoría de las etiquetas de Grand Cru de Borgoña solo muestran el nombre del viñedo, como Montrachet o Clos de Tart, sin el pueblo (Chablis es la excepción: \"Chablis Grand Cru\" más el viñedo). Las etiquetas de Premier Cru muestran el pueblo más el nombre del viñedo."
+    },
+    {
+      "q": "Un cliente dice: \"Premier Cru es el segundo nivel en Borgoña, así que un 'Premier Cru' de Burdeos también será el segundo mejor\". ¿Qué le explicas?",
+      "opts": [
+        "Tiene razón: Premier Cru es el segundo nivel en todas las regiones",
+        "Burdeos no usa la palabra Cru en ninguna de sus etiquetas",
+        "En Burdeos, Premier Cru es un nivel de viñedo, igual que en Borgoña",
+        "En la clasificación de 1855 de Burdeos es el rango más alto, para fincas"
+      ],
+      "a": 3,
+      "why": "Las mismas palabras significan cosas distintas en cada región. En Borgoña, Premier Cru es un nivel de viñedo justo por debajo de Grand Cru. En la clasificación de 1855 de los tintos del Médoc, \"Premier Cru\" (primer cru) es el rango más alto, y se concede a un château (una finca), no a un viñedo concreto.",
+      "deeper": "La clasificación de tintos de 1855 tiene cinco niveles. Cuatro châteaux fueron clasificados como primeros crus en 1855, y Mouton Rothschild ascendió en 1973, así que hoy son cinco. En la lista de Sauternes de 1855, Château d'Yquem está solo por encima de los primeros crus como \"Premier Cru Supérieur\"."
+    },
+    {
+      "q": "Un cliente señala \"Vieilles Vignes\" en una etiqueta francesa y pregunta qué significa. ¿Cuál es la respuesta honesta?",
+      "opts": [
+        "El vino se ha criado al menos diez años antes de salir al mercado",
+        "\"Viñas viejas\", pero Francia no fija una edad mínima legal",
+        "Significa que por ley las cepas deben tener más de 50 años",
+        "Es el nombre de un viñedo Grand Cru de Borgoña"
+      ],
+      "a": 1,
+      "why": "Vieilles Vignes significa \"viñas viejas\". Las viñas viejas suelen dar cosechas más pequeñas, lo que puede traducirse en un vino más concentrado. Pero en Francia no hay una definición legal, así que cada productor decide qué significa \"viejo\".",
+      "deeper": "Muchos productores lo usan para cepas de unos 30 a 40 años o más; otros, para cepas mucho más viejas. En 2024 la OIV (la organización internacional de la viña y el vino) adoptó 35 años como referencia para una \"cepa vieja\", pero es una orientación, no una norma francesa de etiquetado."
+    },
+    {
+      "q": "Un cliente ve \"Reserve\" en un vino californiano y da por hecho que se ha criado durante un tiempo fijo. ¿Qué le dices?",
+      "opts": [
+        "No tiene definición legal federal en EE. UU.; lo decide el productor",
+        "Significa al menos 3 años de crianza, como exige la ley federal de EE. UU.",
+        "Significa que el vino viene de un único viñedo con nombre",
+        "Significa que el vino tiene la certificación ecológica del USDA"
+      ],
+      "a": 0,
+      "why": "Las normas federales de etiquetado de EE. UU. no definen \"Reserve\". Puede indicar el mejor vino del productor o ser simplemente marketing. Fíjate en el productor y en el precio, no en la palabra.",
+      "deeper": "El sector del vino del estado de Washington tiene una norma voluntaria para \"Reserve\", pero no es ley federal. En algunos países la palabra equivalente sí está definida por ley: en España \"Reserva\" y en Italia \"Riserva\" llevan normas de crianza mínima fijadas para cada vino, como en Rioja o Chianti Classico."
+    },
+    {
+      "q": "Un cliente pregunta: \"Este vino europeo pone 2019 en la etiqueta. ¿Todas las uvas son de 2019?\". ¿Qué es lo correcto?",
+      "opts": [
+        "Sí, la ley de la UE exige que el 100 % de la uva sea de ese año",
+        "No, el año solo indica cuándo se embotelló el vino",
+        "No: según la UE, al menos el 85 % debe ser de ese año",
+        "No, el año indica cuándo se plantaron las viñas"
+      ],
+      "a": 2,
+      "why": "La añada es el año en que se vendimió la uva. La normativa de la UE exige que al menos el 85 % de la uva proceda del año indicado. Un vino sin año en la etiqueta es un vino sin añada (NV), normalmente un coupage de varias cosechas.",
+      "deeper": "El coupage sin añada es habitual en Champagne, donde las casas mezclan vinos de distintos años para mantener el mismo estilo de la casa cada año. Un vino de añada, en cambio, muestra el carácter de un año concreto."
+    },
+    {
+      "q": "Un cliente quiere un blanco ligero y refrescante. En la carta hay dos blancos secos que no conoce: uno de 11,5 % de alcohol y otro de 14,5 %. ¿Qué te sugiere la etiqueta?",
+      "opts": [
+        "El de 14,5 % será más ligero y delicado",
+        "El alcohol no tiene nada que ver con cómo se nota un vino",
+        "El de 11,5 % debe de ser dulce, así que se notará más pesado",
+        "El de 11,5 %, seguramente más ligero; el de 14,5 %, más lleno"
+      ],
+      "a": 3,
+      "why": "El alcohol aporta peso y calidez al vino, así que es una pista útil sobre el cuerpo. Un blanco seco con menos alcohol suele notarse más ligero, mientras que uno de 14 % o más suele notarse con más cuerpo y más rico.",
+      "deeper": "Es una pista, no una regla: el azúcar, el roble y el extracto también aportan cuerpo. La cifra de la etiqueta también puede diferir un poco del grado real; en la UE la tolerancia es de 0,5 % vol para la mayoría de los vinos tranquilos (0,8 % vol para espumosos, generosos y algunos vinos más viejos)."
+    },
+    {
+      "q": "Un cliente al que no le gusta el vino dulce ve \"Riesling Spätlese trocken\" y le preocupa que sea dulce. ¿Qué te dice Spätlese?",
+      "opts": [
+        "Lo madura que estaba la uva al vendimiarla; \"trocken\" significa seco",
+        "Que el vino siempre es dulce, diga lo que diga el resto de la etiqueta",
+        "Que el vino se crió en roble para salir más tarde al mercado",
+        "Que la uva se congeló en la cepa antes de vendimiarla"
+      ],
+      "a": 0,
+      "why": "Términos alemanes como Kabinett, Spätlese y Auslese describen lo madura que estaba la uva al vendimiarla, no lo dulce que es el vino terminado. La palabra \"trocken\" (seco) de la etiqueta es la que te dice el dulzor. Un Spätlese trocken es un vino seco con más madurez e intensidad.",
+      "deeper": "La escala va Kabinett, Spätlese, Auslese, Beerenauslese y Trockenbeerenauslese, y el Eiswein se elabora con uva congelada en la cepa. Beerenauslese, Trockenbeerenauslese y Eiswein son casi siempre dulces. A ninguno de estos vinos Prädikat se le puede añadir azúcar antes de la fermentación."
+    },
+    {
+      "q": "Un cliente pregunta qué tienen en común \"DOCG\" en una etiqueta italiana y \"AOP\" en una francesa. ¿Qué le dices?",
+      "opts": [
+        "Los dos significan que el vino tiene certificación ecológica de la UE",
+        "Los dos son denominaciones de origen protegidas con normas estrictas",
+        "Los dos indican un vino de mesa básico sin ninguna norma regional",
+        "Los dos significan que el vino se crió en roble un tiempo mínimo"
+      ],
+      "a": 1,
+      "why": "Las dos son denominaciones de origen protegidas (DOP), el nivel más estricto de normas de origen de la UE. El vino debe proceder de una zona delimitada y cumplir normas sobre uvas, rendimientos y elaboración. La DOCG es el nivel más alto de Italia, por encima de la DOC; AOP es el término francés para DOP, y muchas etiquetas francesas aún usan el antiguo término nacional AOC.",
+      "deeper": "Por debajo de la DOP está la IGP (Indicación Geográfica Protegida), con normas más flexibles: IGT (o IGP) en Italia, IGP en Francia. IGP no significa vino malo: varios \"supertoscanos\" famosos, que usan uvas como la Cabernet Sauvignon que las normas locales antes excluían, se han vendido como IGT Toscana."
+    }
+  ]
+}

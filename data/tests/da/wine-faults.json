@@ -1,0 +1,128 @@
+{
+  "slug": "wine-faults",
+  "title": "Vinfejl",
+  "summary": "Genkend de almindelige vinfejl, skeln dem fra harmløse særheder, og håndtér en gæsts klage roligt og fair.",
+  "level": 2,
+  "questions": [
+    {
+      "q": "En gæst sender en flaske retur og siger, at den har proptræk. Hvad forventer du at dufte, hvis gæsten har ret?",
+      "opts": [
+        "Små stykker prop, der flyder i glasset, med en træagtig duft",
+        "En stærk, skarp duft af eddike og neglelakfjerner",
+        "Muggent, fugtigt pap eller en våd kælder, med dæmpet frugt",
+        "En sød, syltet duft af kogte blommer og bagt frugt"
+      ],
+      "a": 2,
+      "why": "Proptræk betyder, at vinen er forurenet med et stof, der hedder TCA. Det dufter muggent, som fugtigt pap eller en våd kælder, og gør frugten flad. Det er et duftproblem. Stykker af prop, der flyder i glasset, er ikke en fejl: skænk bare et nyt glas, eller fisk dem op.",
+      "deeper": "TCA (2,4,6-trichloranisol) dannes, når skimmelsvampe omdanner klorfenoler, stoffer der hænger sammen med klorbehandling og gamle træbeskyttelsesmidler. Trænede smagere kan opfange det ved ca. 1–2 dele pr. billion (ppt), og følsomheden varierer meget fra person til person. Milde tilfælde kan bare få en vin til at virke kedelig, uden at den tydeligt dufter af mug."
+    },
+    {
+      "q": "Du åbner en hvidvin, der er blevet dybt guldbrun. Den dufter flad, af stødte æbler og nødder, med meget lidt frisk frugt. Hvad er der mest sandsynligt galt?",
+      "opts": [
+        "Oxidation: for meget kontakt med luft",
+        "Proptræk: TCA fra en forurenet prop",
+        "Vinsten: en reaktion på kold opbevaring",
+        "Reduktion: for lidt kontakt med luft"
+      ],
+      "a": 0,
+      "why": "For meget ilt gør hvidvin brun og forvandler frisk frugt til noter af stødte æbler, nødder eller sherry. Det kan ske med en gammel flaske, en utæt lukning eller en flaske, der har stået for længe åben bag baren.",
+      "deeper": "Sammenhængen betyder noget: Sherry, tawny Port og nogle lagrede eller orange vine laves bevidst i en oxidativ stil, så en nøddeagtig note er ikke en fejl der. Åbne flasker i baren skal dateres, lukkes igen og holdes kolde, så oxidationen går langsommere."
+    },
+    {
+      "q": "En flaske kommer ind med proppen skubbet lidt op og klistret vin under kapslen. Rødvinen smager af syltet, kogt frugt. Hvad er den sandsynlige årsag?",
+      "opts": [
+        "Den skal have mere tid til at ånde efter åbning",
+        "Proptræk fra en defekt, muggen prop",
+        "For meget bundfald efter lang lagring på flaske",
+        "Varmeskade: flasken er blevet for varm"
+      ],
+      "a": 3,
+      "why": "Varme får vinen til at udvide sig, og det kan skubbe proppen op og få vinen til at sive ud. Varme \"koger\" også vinen, så frisk frugt bliver kogt, syltet eller bagt. Luft hjælper ikke. Skaden er permanent.",
+      "deeper": "Den er ikke skadelig at drikke, bare mindre god. En skubbet prop eller mærker efter udsivning er nyttige advarselstegn, når du tjekker en levering: stil de flasker til side, og smag på én, før de kommer til salg."
+    },
+    {
+      "q": "En nyåbnet rødvin dufter af tændstikker eller et strejf af rådne æg. Hvad er det bedste første skridt?",
+      "opts": [
+        "Sig til gæsten, at den har proptræk, og åbn en ny flaske",
+        "Giv den luft: sving eller dekantér den, og duft igen",
+        "Kom en isterning i glasset for at dæmpe duften",
+        "Ingenting, den duft er bare sådan, druen altid dufter"
+      ],
+      "a": 1,
+      "why": "Det er \"reduktion\": svovldufte, der opstår, når en vin har fået meget lidt ilt. Mild reduktion forsvinder tit, når du svinger glasset eller dekanterer. Forsvinder den, er vinen i orden. Bliver en stærk duft af rådne æg eller kål hængende, så behandl den som defekt.",
+      "deeper": "Et strejf af tændstik kan endda være en bevidst stilnote i nogle hvidvine, fx visse Chardonnay. Et servicetip: bemærker en gæst det, så tilbyd at dekantere og kom tilbage om et par minutter. Det løser tit problemet."
+    },
+    {
+      "q": "En gæst siger, at den traditionelle rødvin dufter \"af bondegård, svedig sadel og plaster\". Hvad er den mest sandsynlige forklaring, og hvordan skal du tage det?",
+      "opts": [
+        "Proptræk; udskift flasken med det samme uden diskussion",
+        "Varmeskade; vinen er kogt og kan ikke drikkes",
+        "Brett, en gær: nogle kan lide lidt; meget er en fejl",
+        "Vinsten; harmløst, så skænk bare et nyt glas"
+      ],
+      "a": 2,
+      "why": "Brett er en gær, der giver dufte af stald, læder, røg eller noget medicinsk (plaster). Meningerne er delte: nogle kan godt lide et strejf af det i visse traditionelle rødvine, mens kraftig Brett, der skjuler frugten, bredt ses som en fejl. Kan gæsten ikke lide det, så respektér det.",
+      "deeper": "Lave niveauer af Brett er ikke usædvanlige i nogle traditionelt lavede rødvine fra fx Bordeaux eller Rhône. Fordi det er omdiskuteret, så undgå at sige til en gæst, at \"sådan skal den smage\". Tilbyd i stedet en anden vin."
+    },
+    {
+      "q": "Et glas rødvin dufter skarpt af eddike med et strejf af neglelakfjerner. Hvilken fejl er det?",
+      "opts": [
+        "Reduktion (svovlforbindelser)",
+        "Vinstenskrystaller (vinsyre)",
+        "Proptræk (stoffet TCA)",
+        "Høj flygtig syre (VA)"
+      ],
+      "a": 3,
+      "why": "Flygtig syre kommer primært fra eddikesyre (eddike) og dens makker ethylacetat (duft af neglelak). Den skyldes mest eddikesyrebakterier, der arbejder, når der er luft til stede, og nogle gærtyper bidrager også. I høje niveauer er det en klar fejl, og luft fjerner den ikke.",
+      "deeper": "Al vin har lidt flygtig syre, og i små mængder kan det løfte duften. Nogle kendte traditionelle vine har tydelig flygtig syre som en del af deres stil. Det bliver en fejl, når eddikenoten tager over."
+    },
+    {
+      "q": "En gæst finder små glaslignende krystaller i bunden af sin hvidvin og er bange for, at det er glasskår. Hvad siger du?",
+      "opts": [
+        "Harmløse vinstenskrystaller, der dannes naturligt i kulde",
+        "Sukker, der ikke er opløst, så vinen smager sødere",
+        "Det er et tegn på, at vinen har proptræk og skal sendes retur",
+        "Glas fra tapperiet, så flasken skal kaldes tilbage"
+      ],
+      "a": 0,
+      "why": "Vinsten er naturlige krystaller af kalium og vinsyre fra druerne. De dannes, når vinen bliver kold, og påvirker hverken smag eller sikkerhed. Det samme stof sælges som vinsten (cream of tartar) til bagning. De kaldes nogle gange \"vindiamanter\".",
+      "deeper": "I rødvin ser de rødlige ud, fordi de tager farve fra vinen. Rødvin kan også danne bundfald (mørke, grynede aflejringer af farve og tannin), når den lagrer. Begge dele er harmløse. Dekantering eller forsigtig skænkning holder dem ude af glasset."
+    },
+    {
+      "q": "En gæst siger, at rødvinen \"smager varm og suppet, næsten som ren alkohol\". Flasken har stået ved siden af køkkenet. Hvad er det bedste svar?",
+      "opts": [
+        "Sig, at den har proptræk, undskyld, og udskift flasken",
+        "Sig, at den er for varm, ikke defekt, og køl den i isspand",
+        "Sig, at rødvin altid skal serveres ved stuetemperatur",
+        "Kom en isterning i gæstens glas for at få temperaturen ned"
+      ],
+      "a": 1,
+      "why": "For varm er et serviceproblem, ikke en vinfejl. Varm rødvin smager af alkohol og slap. Et par minutter i en isspand bringer de fleste rødvine tilbage til en behagelig, let kølig temperatur.",
+      "deeper": "\"Stuetemperatur\" stammer fra tiden før centralvarme. De fleste rødvine er bedst noget køligere end en varm, moderne stue. Det modsatte sker også: en iskold hvidvin kan virke helt uden duft og åbner sig, når den bliver lidt varmere."
+    },
+    {
+      "q": "En gæst siger: \"Den her har skruelåg, så den kan ikke være defekt, vel?\" Hvad er det korrekte svar?",
+      "opts": [
+        "Rigtigt, vine med skruelåg kan aldrig være defekte på nogen måde",
+        "Skruelåg giver faktisk oftere proptræk end naturkork gør",
+        "Skruelåg svigter kun på rødvin, som skal bruge luft for at lagre",
+        "Låget kan ikke give proptræk, men vinen kan stadig være defekt"
+      ],
+      "a": 3,
+      "why": "Det meste TCA kommer fra naturkork, så skruelåg fjerner stort set den risiko. Men TCA kan også komme fra en forurenet vingård (fade, træbjælker, behandlet vand), og andre fejl som oxidation, varmeskade eller reduktion kan stadig ske.",
+      "deeper": "Fordi skruelåg lukker meget lidt ilt ind, bliver vine med skruelåg tit nævnt i forbindelse med reduktion, og derfor kan et hurtigt sving i glasset hjælpe. Vine med skruelåg har meget sjældnere TCA end vine med prop."
+    },
+    {
+      "q": "En gæst siger, at vinen er forkert. Du smager på den og synes ærligt talt, at den er fin. Hvordan håndterer du det bedst?",
+      "opts": [
+        "Forklar bestemt, men høfligt, at vinen er i orden, og at de tager fejl",
+        "Tag betaling for den anden flaske, da den første ikke var defekt",
+        "Vær venlig, tilbyd en ny, og stil flasken til side til tjek",
+        "Tag stille glasset væk uden at sige noget til gæsten"
+      ],
+      "a": 2,
+      "why": "Målet er en glad gæst, ikke at vinde diskussionen. Smag en lille prøve væk fra bordet, hvis dit sted tillader det, og tilbyd så en ny flaske eller en anden vin. Gem flasken, mærk den, og lad din leder afgøre, om den skal retur til leverandøren.",
+      "deeper": "Mange leverandører krediterer flasker, der faktisk er defekte, så det beskytter forretningen at gemme flasken og notere dato og problem. Er vinen i orden, men ikke efter gæstens smag, bytter mange steder den alligevel og sælger den åbnede flaske som glasvin. Følg husets regler."
+    }
+  ]
+}

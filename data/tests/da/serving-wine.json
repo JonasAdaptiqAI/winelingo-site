@@ -1,0 +1,128 @@
+{
+  "slug": "serving-wine",
+  "title": "Servering af vin",
+  "summary": "Servér enhver flaske med ro i maven: det rigtige glas, den rigtige temperatur, en pæn åbning og den rigtige rækkefølge ved bordet.",
+  "level": 1,
+  "questions": [
+    {
+      "q": "Et bord bestiller en flaske Cabernet Sauvignon med masser af fylde. Hvilket glas tager du med?",
+      "opts": [
+        "Et smalt champagneglas (fløjte)",
+        "Et lille hvidvinsglas med en smal kumme",
+        "Et stort glas med en rummelig kumme",
+        "Et lavt vandglas"
+      ],
+      "a": 2,
+      "why": "Store rødvine serveres i glas med en stor kumme. Den ekstra plads gør, at du kan svinge vinen, så den får luft, og at duftene har plads til at samle sig over vinen.",
+      "deeper": "Hvidvin kommer som regel i mindre kummer. Så holder vinen sig køligere, og de friske dufte bliver samlet. Har stedet kun ét glas til det hele, fungerer en mellemstor tulipanform fint til næsten alt."
+    },
+    {
+      "q": "En gæst vil have sin kraftige rødvin \"stuetemperatur\". Hvilken temperatur passer bedst til en rødvin med meget fylde?",
+      "opts": [
+        "Køleskabskold, 4–6 °C",
+        "Let kølig, ca. 15–18 °C",
+        "Varm stuetemperatur, 22–24 °C",
+        "Lige under frysepunktet, 0–2 °C"
+      ],
+      "a": 1,
+      "why": "\"Stuetemperatur\" stammer fra kølige, uopvarmede stuer, ikke fra en moderne, varm restaurant. Er rødvinen for varm, smager den slap, og alkoholen brænder. Let kølig holder den frisk.",
+      "deeper": "Lettere rødvine som Pinot Noir eller Gamay er bedst lidt køligere, omkring 12–14 °C. Er en rødvin for varm, klarer 10–15 minutter i køleskabet eller en isspand det. Sig til gæsten: \"Jeg køler den lige lidt ned, så den viser sig fra sin bedste side.\""
+    },
+    {
+      "q": "Hvilken af disse vine skal serveres koldest?",
+      "opts": [
+        "Prosecco",
+        "En fyldig Chardonnay lagret på egefad",
+        "Pinot Noir",
+        "Cabernet Sauvignon"
+      ],
+      "a": 0,
+      "why": "Mousserende vin og lette, sprøde hvidvine serveres koldest, godt kølet (ca. 6–10 °C). Kulden holder boblerne fine og vinen forfriskende. Fyldigere hvidvine som fadlagret Chardonnay serveres lidt varmere, og rødvin endnu varmere.",
+      "deeper": "En grov stige: mousserende og lette hvidvine koldest, så rosé og fyldige hvidvine, så lette rødvine og til sidst kraftige rødvine. Mousserende vin i topkvalitet, fx årgangschampagne, viser flere dufte, hvis den får lov at blive lidt varmere i glasset."
+    },
+    {
+      "q": "Du kommer til bordet med den flaske, gæsten har bestilt. Hvad gør du, før du åbner den?",
+      "opts": [
+        "Åbner den i baren, så gæsten kun ser det skænkede glas",
+        "Skænker en smagsprøve til alle ved bordet",
+        "Fjerner etiketten, så det ser pænere ud",
+        "Viser etiketten til den, der bestilte, og bekræfter vin og årgang"
+      ],
+      "a": 3,
+      "why": "Når du præsenterer flasken, kan værten tjekke, at det er præcis det, der er bestilt, også årgangen, før noget bliver åbnet. Det forebygger fejl og viser gæsten respekt.",
+      "deeper": "Hold flasken nedefra med etiketten mod værten og sig navnet højt, fx \"2020 Rioja Crianza\". Årgange på vinkortet skifter nogle gange, så det er nu, du siger det, hvis året ikke passer med kortet."
+    },
+    {
+      "q": "Hvad er den sikreste måde at åbne en flaske Champagne ved bordet?",
+      "opts": [
+        "Tag trådkurven af, og skub proppen op med begge tommelfingre",
+        "Hold hånden fast over prop og kurv, vip flasken væk fra folk, og drej flasken, ikke proppen",
+        "Ryst flasken lidt først, så den er lettere at åbne",
+        "Peg proppen lige op, og lad den springe"
+      ],
+      "a": 1,
+      "why": "Trykket i flasken kan skyde proppen af så hårdt, at nogen kommer til skade. Hold tommelfingeren eller en serviet over proppen hele tiden, vend flasken væk fra folk, og drej langsomt flasken, mens du holder proppen stille.",
+      "deeper": "Gå efter et stille suk, ikke et højt knald. Et knald spilder bobler og kan få vinen til at sprøjte. Flasken skal være godt kølet, for en varm flaske springer lettere uventet."
+    },
+    {
+      "q": "En gæst bestiller en ung, kraftig Cabernet Sauvignon og spørger, om den skal dekanteres. Hvorfor kunne du foreslå det?",
+      "opts": [
+        "Luft hjælper en ung rødvin med meget tannin med at åbne sig og smage blødere",
+        "Dekantering fjerner alkoholen",
+        "Dekantering gør vinen sødere",
+        "Unge vine har altid meget bundfald"
+      ],
+      "a": 0,
+      "why": "Når du hælder en ung rødvin med meget tannin over i en karaffel, får den luft. Det hjælper duftene med at åbne sig og kan få tanninerne til at føles blødere.",
+      "deeper": "Typiske kandidater er ung Cabernet Sauvignon, Tempranillo og andre kraftige rødvine. Allerede 30 minutter til en time i karaffel kan gøre en tydelig forskel. Tilbyd det sådan her: \"Den her er ret ung. Skal jeg dekantere den, så den åbner sig?\""
+    },
+    {
+      "q": "En gæst bestiller en 20 år gammel rødvin med bundfald i flasken. Hvordan dekanterer du den?",
+      "opts": [
+        "Ryster den, så bundfaldet blandes op igen, og skænker hurtigt",
+        "Hælder den gennem et kaffefilter ved bordet",
+        "Stiller den op i forvejen, skænker langsomt og stopper, når bundfaldet når halsen",
+        "Lader den stå i karaflen i flere timer før servering"
+      ],
+      "a": 2,
+      "why": "Med en gammel vin er målet at skille den klare vin fra det grynede bundfald. Står flasken op, synker bundfaldet til bunds, og når du hælder langsomt og roligt, kan du se det komme og stoppe i tide.",
+      "deeper": "Stil helst flasken op et døgn eller mere, før du åbner den. Et lys (et stearinlys eller en lommelygte) under flaskehalsen gør bundfaldet let at se. Gamle vine kan være skrøbelige, så dekantér kort før servering (ca. 30 minutter) og ikke flere timer før, ellers kan duftene falme."
+    },
+    {
+      "q": "Dit sted skænker 150 ml pr. glas. Hvor mange glas får du ud af en almindelig flaske på 750 ml?",
+      "opts": [
+        "3",
+        "4",
+        "6",
+        "5"
+      ],
+      "a": 3,
+      "why": "750 ml delt med 150 ml giver 5 glas. Når du ved det, kan du fortælle et bord, om én flaske er nok til alle.",
+      "deeper": "150 ml bruges mange steder som et standardglas, men det varierer. En skænk på 125 ml giver 6 glas, og 175 ml giver lidt over 4. Når du skænker en flaske for et bord, så fordel den ligeligt, så den sidste gæst ikke står med et lille glas."
+    },
+    {
+      "q": "Et bord har bestilt en Sancerre (tør hvidvin), en Barolo (kraftig rødvin) og en Sauternes (sød vin). Hvilken rækkefølge serverer du dem i efter den klassiske tommelfingerregel?",
+      "opts": [
+        "Barolo, Sancerre, Sauternes",
+        "Sauternes, Sancerre, Barolo",
+        "Sancerre, Barolo, Sauternes",
+        "Barolo, Sauternes, Sancerre"
+      ],
+      "a": 2,
+      "why": "Den normale rækkefølge er let før tung, hvid før rød og tør før sød. Serverer du en sød vin først, smager de tørre vine bagefter surt og tyndt.",
+      "deeper": "Et helt forløb går tit sådan: mousserende, tørre hvidvine, rosé, lettere rødvine, fyldigere rødvine og til sidst søde eller hedvine. Der er klassiske undtagelser, fx et glas Sauternes til foie gras som forret, så følg værtens ønske, hvis de vil have en anden rækkefølge."
+    },
+    {
+      "q": "Ved lukketid er der en halv flaske rødvin tilbage til glassalg i morgen. Hvordan gemmer du den bedst?",
+      "opts": [
+        "Sætter proppen i og stiller den i køleskabet",
+        "Lader den stå åben i baren, så den kan ånde",
+        "Sætter proppen i og stiller den på en varm hylde bag baren",
+        "Hælder den i en karaffel og lader den stå fremme natten over"
+      ],
+      "a": 0,
+      "why": "Ilt og varme gør åbnet vin flad og træt. Lukker du den og køler den, går det langsommere, og det gælder også rødvin. Lad rødvinen blive lidt varmere, før du serverer den.",
+      "deeper": "Som en grov rettesnor holder de fleste åbnede rødvine sig i ca. 3–5 dage lukket i køleskabet, lette hvidvine og rosé op til ca. en uge og mousserende vin 1–3 dage med en ordentlig champagneprop. Smag altid på en åbnet flaske, før du skænker for en gæst."
+    }
+  ]
+}

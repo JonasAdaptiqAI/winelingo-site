@@ -1,0 +1,128 @@
+{
+  "slug": "serving-wine",
+  "title": "Servir el vino",
+  "summary": "Sirve cualquier botella con seguridad: la copa adecuada, la temperatura correcta, una apertura limpia y el orden adecuado en la mesa.",
+  "level": 1,
+  "questions": [
+    {
+      "q": "Una mesa pide una botella de Cabernet Sauvignon con mucho cuerpo. ¿Qué copa llevas?",
+      "opts": [
+        "Una flauta estrecha de Champagne",
+        "Una copa pequeña de blanco con el cáliz estrecho",
+        "Una copa grande con un cáliz amplio",
+        "Un vaso bajo"
+      ],
+      "a": 2,
+      "why": "Los tintos potentes se sirven en copas de cáliz grande. El espacio extra te permite mover el vino en la copa para que le llegue aire, y da sitio a los aromas para concentrarse por encima del vino.",
+      "deeper": "Los blancos suelen ir en cálices más pequeños, que los mantienen más fríos y concentran sus aromas más frescos. Si tu local solo tiene una copa multiusos, una forma de tulipa mediana funciona bastante bien para casi todo."
+    },
+    {
+      "q": "Un cliente pide su tinto potente \"a temperatura ambiente\". ¿Qué rango de temperatura le va mejor a un tinto con mucho cuerpo?",
+      "opts": [
+        "Frío de nevera, 4–6 °C",
+        "Ligeramente fresco, unos 15–18 °C",
+        "Temperatura de sala cálida, 22–24 °C",
+        "Justo por encima de la congelación, 0–2 °C"
+      ],
+      "a": 1,
+      "why": "Lo de \"temperatura ambiente\" viene de las habitaciones frescas y sin calefacción de antes, no de un restaurante moderno y caldeado. Si se sirve demasiado caliente, un tinto sabe blando y el alcohol quema; ligeramente fresco se mantiene vivo.",
+      "deeper": "Los tintos más ligeros, como el Pinot Noir o el Gamay, están mejor un poco más frescos, sobre 12–14 °C. Si una botella de tinto está demasiado caliente, 10–15 minutos en la nevera o en una cubitera lo arreglan; dile al cliente: \"Lo enfrío un poquito para que se exprese mejor\"."
+    },
+    {
+      "q": "¿Cuál de estos vinos se debe servir más frío?",
+      "opts": [
+        "Prosecco",
+        "Un Chardonnay con crianza en roble y mucho cuerpo",
+        "Pinot Noir",
+        "Cabernet Sauvignon"
+      ],
+      "a": 0,
+      "why": "Los espumosos y los blancos ligeros y frescos se sirven los más fríos, bien fríos (aproximadamente 6–10 °C). El frío mantiene la burbuja fina y el vino refrescante. Los blancos con más cuerpo, como un Chardonnay con roble, se sirven un poco menos fríos, y los tintos más templados todavía.",
+      "deeper": "Una escala aproximada: espumosos y blancos ligeros, los más fríos; luego rosados y blancos con cuerpo; después tintos ligeros, y por último tintos potentes. Un espumoso de primera calidad, como un Champagne de añada, muestra más aroma si se deja atemperar un poco en la copa."
+    },
+    {
+      "q": "Llegas a la mesa con la botella que ha pedido un cliente. ¿Qué haces antes de abrirla?",
+      "opts": [
+        "Abrirla en la barra para que el cliente solo vea la copa servida",
+        "Servir una prueba a todos los de la mesa",
+        "Quitar la etiqueta para que quede más limpia",
+        "Enseñar la etiqueta a quien la pidió y confirmar que es el vino y la añada correctos"
+      ],
+      "a": 3,
+      "why": "Presentar la botella permite al anfitrión comprobar que es exactamente lo que pidió, añada incluida, antes de abrir nada. Evita errores y es una muestra de respeto al cliente.",
+      "deeper": "Sujeta la botella por debajo con la etiqueta hacia el anfitrión y di su nombre en voz alta, por ejemplo \"el Rioja Crianza 2020\". Las añadas de una carta de vinos a veces cambian, así que este es el momento de avisar si el año no coincide con el de la carta."
+    },
+    {
+      "q": "¿Cuál es la forma más segura de abrir una botella de Champagne en la mesa?",
+      "opts": [
+        "Quitar el morrión y luego empujar el corcho hacia arriba con los dos pulgares",
+        "Mantener una mano firme sobre el corcho y el morrión, inclinar la botella lejos de la gente y girar la botella, no el corcho",
+        "Agitar un poco la botella antes para que se abra más fácil",
+        "Apuntar el corcho hacia arriba y dejar que salte"
+      ],
+      "a": 1,
+      "why": "La presión interior puede disparar un corcho con fuerza suficiente para herir a alguien. Mantén el pulgar o una servilleta sobre el corcho todo el rato, inclina la botella lejos de la gente y gira la botella despacio mientras sujetas el corcho quieto.",
+      "deeper": "Busca un suspiro suave, no un taponazo: el estallido desperdicia burbuja y puede derramar vino. La botella debe estar bien fría, porque una botella caliente tiene más probabilidades de saltar de golpe."
+    },
+    {
+      "q": "Un cliente pide un Cabernet Sauvignon joven y potente y pregunta si hay que decantarlo. ¿Por qué podrías recomendarlo?",
+      "opts": [
+        "El aire ayuda a que un tinto joven y tánico se suavice",
+        "Decantar elimina el alcohol",
+        "Decantar hace el vino más dulce",
+        "Los vinos jóvenes siempre tienen mucho sedimento"
+      ],
+      "a": 0,
+      "why": "Pasar un tinto joven y tánico a un decantador lo expone al aire. Eso ayuda a que se abran los aromas y puede hacer que los taninos se noten más suaves.",
+      "deeper": "Candidatos habituales son el Cabernet Sauvignon joven, el Tempranillo y otros tintos potentes. Incluso de 30 minutos a una hora en el decantador puede notarse bastante; ofrécelo así: \"Este es bastante joven; ¿quieres que lo decante para que se abra?\""
+    },
+    {
+      "q": "Un cliente pide un tinto de 20 años con sedimento en la botella. ¿Cómo lo decantas?",
+      "opts": [
+        "Agitarla para volver a mezclar el sedimento y servir rápido",
+        "Pasarlo por un filtro de café de papel en la mesa",
+        "Mantenerla de pie antes y luego verter despacio, parando cuando el sedimento llega al cuello",
+        "Dejarlo varias horas en el decantador antes de servirlo"
+      ],
+      "a": 2,
+      "why": "Con un vino viejo, el objetivo es separar el vino limpio del sedimento arenoso. Tener la botella de pie deja que el sedimento se asiente, y un vertido lento y constante te permite verlo venir y parar a tiempo.",
+      "deeper": "Lo ideal es tener la botella de pie un día o más antes de abrirla. Una luz (una vela o una linterna) bajo el cuello de la botella hace que el sedimento se vea fácilmente. Los vinos viejos pueden ser frágiles, así que decántalo poco antes de servir (unos 30 minutos) y no con horas de antelación, o sus aromas pueden apagarse."
+    },
+    {
+      "q": "En tu local se sirven 150 ml por copa. ¿Cuántas copas salen de una botella estándar de 750 ml?",
+      "opts": [
+        "3",
+        "4",
+        "6",
+        "5"
+      ],
+      "a": 3,
+      "why": "750 ml entre 150 ml son 5 copas. Saberlo te ayuda a decirle a una mesa si con una botella hay suficiente para todos.",
+      "deeper": "150 ml se usa mucho como copa estándar, pero cada local es distinto; con 125 ml salen 6 copas y con 175 ml algo más de 4. Cuando sirvas una botella en una mesa, repártela por igual para que al último cliente no le toque una copa escasa."
+    },
+    {
+      "q": "Una mesa ha pedido un Sancerre (blanco seco), un Barolo (tinto potente) y un Sauternes (vino dulce). Siguiendo la regla clásica, ¿en qué orden los sirves?",
+      "opts": [
+        "Barolo, Sancerre, Sauternes",
+        "Sauternes, Sancerre, Barolo",
+        "Sancerre, Barolo, Sauternes",
+        "Barolo, Sauternes, Sancerre"
+      ],
+      "a": 2,
+      "why": "El orden habitual es ligero antes que potente, blanco antes que tinto y seco antes que dulce. Un vino dulce servido primero haría que los vinos secos de después supieran ácidos y aguados.",
+      "deeper": "Una secuencia completa suele ser: espumoso, blancos secos, rosado, tintos más ligeros, tintos con más cuerpo y, al final, vinos dulces o generosos. Hay excepciones clásicas, como una copa de Sauternes con foie gras de entrante, así que sigue los deseos del anfitrión si pide otro orden."
+    },
+    {
+      "q": "Al cerrar queda media botella de tinto para el servicio por copas de mañana. ¿Cuál es la mejor forma de conservarla?",
+      "opts": [
+        "Volver a taparla y guardarla en la nevera",
+        "Dejarla abierta en la barra para que respire",
+        "Volver a taparla y dejarla en un estante cálido detrás de la barra",
+        "Pasarla a una jarra y dejarla fuera toda la noche"
+      ],
+      "a": 0,
+      "why": "El oxígeno y el calor hacen que el vino abierto se estropee. Cerrarlo y enfriarlo frena ese proceso, y funciona también con los tintos. Deja que el tinto se atempere un poco antes de servirlo.",
+      "deeper": "Como referencia, la mayoría de los tintos abiertos aguantan bien unos 3–5 días cerrados en la nevera, los blancos ligeros y rosados hasta una semana, y los espumosos 1–3 días con un tapón adecuado para espumosos. Prueba siempre una botella abierta antes de servírsela a un cliente."
+    }
+  ]
+}

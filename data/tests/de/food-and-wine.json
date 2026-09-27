@@ -1,0 +1,128 @@
+{
+  "slug": "food-and-wine",
+  "title": "Essen und Wein",
+  "summary": "Nutze ein paar einfache Grundregeln der Weinbegleitung, um einen Wein vorzuschlagen, der Gericht und Glas besser schmecken lässt.",
+  "level": 2,
+  "questions": [
+    {
+      "q": "Ein Gast bestellt frittierte Calamari mit einem Spritzer Zitrone und möchte einen Weißwein. Welcher Stil passt am besten?",
+      "opts": [
+        "Ein üppiger, holzbetonter, säurearmer Weißwein",
+        "Ein knackiger, säurereicher Weißwein ohne Holz",
+        "Ein süßer, säurearmer Dessertwein",
+        "Ein alkoholreicher Weißwein mit wenig Frische"
+      ],
+      "a": 1,
+      "why": "Frittiertes, salziges Essen braucht Säure. Ein knackiger Weißwein schneidet durch das Öl und erfrischt den Mund wie ein Spritzer Zitrone. Die Zitrone auf dem Teller lässt einen säurereichen Wein außerdem weicher und runder wirken.",
+      "deeper": "Säure im Essen senkt die wahrgenommene Säure des Weins. Deshalb kann ein sehr straffer Wein, der allein zu sauer wirkt, neben einem Gericht mit Zitrone oder Essig ausgewogen schmecken."
+    },
+    {
+      "q": "Ein Gast bestellt ein fettes Ribeye und fragt, warum man zum Steak einen festen, tanninreichen Rotwein wie einen jungen Cabernet Sauvignon empfiehlt. Was sagst du?",
+      "opts": [
+        "Das Steak lässt den Wein süßer und fruchtiger schmecken, als er ist",
+        "Rotwein passt immer zu rotem Fleisch, egal welcher Stil oder Körper",
+        "Der hohe Alkohol des Weins löst das Fett auf und hebt es auf",
+        "Fett, Eiweiß und Salz im Steak machen das Tannin weicher"
+      ],
+      "a": 3,
+      "why": "Tannin ist das trocknende, griffige Gefühl im Rotwein. Fett, Eiweiß und Salz im Fleisch machen diesen Griff weicher, sodass der Wein geschmeidiger schmeckt. Gleichzeitig erfrischen Säure und Tannin des Weins den Mund zwischen den gehaltvollen Bissen.",
+      "deeper": "Derselbe tanninreiche Wein kann zu einem mageren Gericht hart und zu einem fetten Gericht geschmeidig schmecken. Findet ein Gast einen kräftigen Rotwein allein zu austrocknend, schlag vor, ihn noch einmal mit einem Bissen Steak zu probieren."
+    },
+    {
+      "q": "Ein Gast möchte seinen trockenen Brut-Champagner zu einem süßen Schokoladendessert weitertrinken. Was passiert wahrscheinlich mit dem Wein?",
+      "opts": [
+        "Er schmeckt dünner, schärfer und bitterer",
+        "Er schmeckt süßer, voller und runder",
+        "Er schmeckt genau wie vorher",
+        "Er verliert im Glas viel schneller seine Perlage"
+      ],
+      "a": 0,
+      "why": "Süßes Essen lässt einen Wein weniger süß und weniger fruchtig, dafür saurer und bitterer schmecken. Ein trockener Wein neben einem süßen Dessert kann sauer und dünn wirken. Die Faustregel: Der Wein sollte mindestens so süß sein wie das Dessert.",
+      "deeper": "Ein guter Satz im Service: „Der Champagner ist wunderbar, aber das Dessert lässt ihn spitz schmecken. Ein kleines Glas Süßwein würde richtig gut dazu passen.“ Das ist ehrliches Upselling, das das Essen besser macht."
+    },
+    {
+      "q": "Ein Gast bestellt ein sehr scharfes Chili-Gericht und möchte einen tanninreichen Rotwein mit 15 % Alkohol. Wovor solltest du ihn behutsam warnen?",
+      "opts": [
+        "Der Wein wird süßer, weicher und fruchtiger schmecken",
+        "Die Chilischärfe verschwindet mit jedem Schluck",
+        "Der Wein wirkt heißer, bitterer und austrocknender",
+        "Vor nichts, kräftiger Wein und kräftiges Essen passen immer"
+      ],
+      "a": 2,
+      "why": "Chilischärfe lässt Alkohol heißer und Tannin bitterer und austrocknender wirken. Außerdem nimmt sie dem Wein Frucht und Süße. Ein Wein mit weniger Alkohol, mit Frucht und einem Hauch Süße ist meist viel angenehmer.",
+      "deeper": "Das wirkt in beide Richtungen: Viel Alkohol lässt auch das Chili schärfer wirken. Besteht der Gast auf Rotwein, lenk ihn zu einem saftigen, tanninarmen Stil mit weniger Alkohol statt zu einem großen, holzbetonten."
+    },
+    {
+      "q": "Ein Gast bestellt gegrillten Lachs, trinkt aber nur Rotwein. Was ist der beste Vorschlag?",
+      "opts": [
+        "Ein vollmundiger, sehr tanninreicher Rotwein wie ein junger Barolo",
+        "Ein leichter, tanninarmer Rotwein, leicht gekühlt serviert",
+        "Ein süßer roter Dessertwein wie ein Ruby Port",
+        "Ihm sagen, dass Rotwein nie zu Fisch passt"
+      ],
+      "a": 1,
+      "why": "„Rotwein zu Fisch“ kann funktionieren, wenn der Fisch fleischig und der Rotwein leicht ist. Große, tanninreiche Rotweine schmecken zu Fisch oft hart oder metallisch, deshalb ist ein tanninarmer Rotwein mit frischer Säure die sicherere Wahl. Pinot Noir oder Gamay sind beliebte Begleiter zu Lachs oder Thunfisch.",
+      "deeper": "Eine japanische Studie von 2009 mit 64 Weinen, die zu Jakobsmuscheln verkostet wurden, ergab, dass Weine mit mehr Eisen einen stärkeren fischigen Nachgeschmack erzeugten. Entscheidend war der Eisengehalt, nicht einfach die Farbe, deshalb passen manche Rotweine zu Meeresfrüchten und andere nicht."
+    },
+    {
+      "q": "Ein Tisch bestellt salzige frittierte Snacks und eine Flasche Champagner. Warum passt das so gut?",
+      "opts": [
+        "Salz macht den Wein weicher; Säure und Perlage schneiden durchs Fett",
+        "Die Perlage lässt das salzige Essen süßer und leichter schmecken",
+        "Salz lässt den Wein bitterer schmecken, was das Fett ausgleicht",
+        "Tut es nicht; Schaumwein trinkt man nur zum Dessert"
+      ],
+      "a": 0,
+      "why": "Salz lässt Wein weicher und voller, weniger bitter oder spitz schmecken, es schmeichelt also fast jedem Wein. Schaumwein bringt dazu hohe Säure und Perlage, die das Öl vom Gaumen wischen. Deshalb sind Chips, Fried Chicken und Champagner eine so beliebte Kombination.",
+      "deeper": "Salz ist einer der weinfreundlichsten Geschmäcker im Essen. Sehr trockene, säurereiche Weine, die allein streng wirken können, glänzen oft neben salzigen Gerichten."
+    },
+    {
+      "q": "Ein Gast bestellt Choucroute garnie, das elsässische Gericht aus Sauerkraut, Würsten und Schweinefleisch, und fragt, was er dazu trinken soll. Nach der Regel „Was zusammen wächst, passt zusammen“: Was schlägst du vor?",
+      "opts": [
+        "Einen kräftigen, reifen Shiraz aus dem australischen Barossa Valley",
+        "Einen süßen Vintage Port aus dem portugiesischen Douro-Tal",
+        "Einen stark holzbetonten Chardonnay aus Kalifornien",
+        "Einen trockenen Weißwein aus dem Elsass, etwa einen Riesling"
+      ],
+      "a": 3,
+      "why": "„Was zusammen wächst, passt zusammen“ heißt, ein Gericht mit Wein aus derselben Region zu kombinieren. Regionale Küche und Wein haben sich nebeneinander entwickelt, deshalb passen sie oft gut zusammen. Ein trockener Riesling aus dem Elsass hat die Säure, um durch das Schweinefett zu schneiden und dem säuerlichen Sauerkraut standzuhalten.",
+      "deeper": "Das ist eine nützliche Abkürzung, wenn du ein Gericht nicht gut kennst: Finde heraus, woher es kommt, und biete einen Wein von dort an. Es ist ein Ausgangspunkt, keine Garantie, und funktioniert am besten bei traditioneller Regionalküche aus Weinbaugebieten."
+    },
+    {
+      "q": "Zwei Gäste teilen sich eine Flasche: Einer bestellt gegrillten Fisch, der andere ein Steak. Welche Flasche ist der beste Kompromiss?",
+      "opts": [
+        "Ein junger, sehr tanninreicher Cabernet Sauvignon",
+        "Ein süßer, leicht perlender Moscato d'Asti",
+        "Ein trockener Rosé oder ein leichter, tanninarmer Rotwein",
+        "Ein sehr leichter, neutraler Weißwein fast ohne Körper"
+      ],
+      "a": 2,
+      "why": "Du brauchst einen Wein in der Mitte: genug Körper und Geschmack für das Steak, aber nicht so viel Tannin, dass er sich mit dem Fisch beißt. Ein trockener Rosé oder ein leichter Rotwein mit frischer Säure schlägt die Brücke zwischen beiden Tellern.",
+      "deeper": "Eine andere Möglichkeit ist, Wein glasweise anzubieten, damit jeder Gast seine eigene passende Begleitung bekommt. Wenn die Gerichte weit auseinanderliegen, ist dieser Hinweis hilfreicher Service und nicht aufdringlich."
+    },
+    {
+      "q": "Ein Gast bestellt einen Salat mit Ziegenkäse und sagt: „Zu Käse passt Rotwein, also nehme ich den Cabernet.“ Was ist ein verlässlicherer Vorschlag?",
+      "opts": [
+        "Ein knackiger, trockener Sauvignon Blanc, etwa ein Sancerre",
+        "Ein vollmundiger, holzbetonter Rotwein, etwa ein Napa Cabernet",
+        "Ein süßer, aufgespriteter Rotwein, etwa ein Ruby Port",
+        "Ein schwerer, alkoholreicher Weißwein mit wenig Säure"
+      ],
+      "a": 0,
+      "why": "„Rotwein zu Käse“ ist keine verlässliche Regel. Frischer Ziegenkäse ist säuerlich und cremig, und ein großer, tanninreicher Rotwein kann dazu hart schmecken. Ein knackiger Sauvignon Blanc passt zu seiner Säure; Sancerre mit Ziegenkäse von der Loire ist eine berühmte regionale Kombination.",
+      "deeper": "In einer kleinen sensorischen Studie von 2016 in Dijon, Frankreich, fasste die Studienleitung es so zusammen: Rotwein kann sehr gut oder weniger gut zu Käse passen, während Weißwein weniger riskant ist. Für eine gemischte Käseplatte ist ein Weißwein oft die sicherere Wahl."
+    },
+    {
+      "q": "Ein Gast bestellt einen Teller Roquefort, einen salzigen Blauschimmelkäse, und möchte einen Wein dazu. Was ist die klassische Kombination?",
+      "opts": [
+        "Ein leichter, neutraler, trockener Pinot Grigio",
+        "Ein junger, tanninreicher Cabernet Sauvignon",
+        "Ein trockener Rosé-Schaumwein, gut gekühlt",
+        "Ein Süßwein wie ein Sauternes"
+      ],
+      "a": 3,
+      "why": "Salziger, würziger Blauschimmelkäse wird durch einen Süßwein ausgeglichen. Das Salz lässt den Wein weniger mastig wirken, und die Süße zähmt die Schärfe des Käses. Sauternes zu Roquefort und Port zu Stilton sind klassische Beispiele.",
+      "deeper": "Das ist eine Kontrast-Kombination: Salz und Zucker wirken zusammen, ganz ähnlich wie bei gesalzenem Karamell. Beim Käsegang ist das gutes, ehrliches Upselling, denn oft braucht ein Tisch nur ein kleines Glas Süßwein."
+    }
+  ]
+}

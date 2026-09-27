@@ -1,0 +1,128 @@
+{
+  "slug": "red-grapes",
+  "title": "Røde druer",
+  "summary": "Kend de ti røde druer, som ethvert vinkort er bygget på, fra let til fyldig, og hvilken drue der gemmer sig bag Barolo, Rioja, Chianti og Beaujolais.",
+  "level": 1,
+  "questions": [
+    {
+      "q": "En gæst elsker Pinot Noir, men vil gerne have noget lignende, der som regel er mere vin for pengene. Hvad er et godt forslag?",
+      "opts": [
+        "En Shiraz fra Barossa Valley i South Australia",
+        "En cru-Beaujolais som Morgon eller Fleurie",
+        "En Cabernet Sauvignon fra Napa Valley",
+        "En argentinsk Malbec fra Mendoza"
+      ],
+      "a": 1,
+      "why": "Beaujolais er lavet på Gamay, som ligesom Pinot Noir har tynd skal og giver lette rødvine med lidt tannin, klar rød frugt og frisk syre. De ti navngivne \"cru\"-landsbyer, fx Morgon og Fleurie, laver de mest seriøse udgaver. De andre muligheder har alle meget mere fylde og tannin.",
+      "deeper": "Beaujolais ligger i den sydlige ende af det store Bourgogne, Pinot Noirs hjem. Mange Beaujolais laves af hele, uknuste klaser (kulsyremaceration eller semi-kulsyremaceration), som giver saftige, frugtige vine med lidt tannin. Let Beaujolais serveres tit lidt køligere end andre rødvine."
+    },
+    {
+      "q": "En gæst kigger på et glas Barolo og siger: \"Den er så lys, den må være en let vin.\" Hvad siger du?",
+      "opts": [
+        "Ja, Barolo er en let, enkel og meget letdrikkelig rødvin",
+        "Barolo er lys, fordi den i virkeligheden er en rosé",
+        "Den er lys, fordi Barolo er blandet med hvide druer",
+        "Barolos Nebbiolo er lys, men rig på tannin og syre"
+      ],
+      "a": 3,
+      "why": "Barolo er 100 % Nebbiolo. Nebbiolo er det klassiske eksempel på, at farven snyder: vinen ser let og orangestødt ud, men griber fat i munden med kraftig tannin og høj syre. Den har brug for mad, helst fyldige kødretter, svampe eller trøfler.",
+      "deeper": "Nebbiolo er kendt for dufte af \"tjære og roser\". Barbaresco fra samme del af Piemonte er også Nebbiolo. Ifølge loven skal Barolo lagres i mindst 38 måneder (lidt over tre år), før den sendes på markedet, heraf mindst 18 måneder på træ."
+    },
+    {
+      "q": "Hvilken drue udgør som regel det meste af blandingen i rød Rioja?",
+      "opts": [
+        "Tempranillo",
+        "Garnacha (Grenache)",
+        "Merlot",
+        "Sangiovese"
+      ],
+      "a": 0,
+      "why": "Rød Rioja er primært Tempranillo, som giver røde og sorte kirsebær og middel til høj tannin. Rioja er kendt for fadlagring, som giver vanilje, kokos og krydderi. Ordene Crianza, Reserva og Gran Reserva på etiketten fortæller, hvor længe vinen er lagret, fra kortest til længst.",
+      "deeper": "Garnacha, Graciano og Mazuelo (Carignan) er de traditionelle støttedruer. Tempranillo udgør langt størstedelen af de røde druer i Rioja. Et servicetip: en gæst, der kan lide bløde rødvine med fad, vil tit synes om en Reserva."
+    },
+    {
+      "q": "Et bord har bestilt pasta med tomatsauce og beder om en italiensk rødvin. Hvilken drue, hoveddruen i Chianti, er et naturligt match?",
+      "opts": [
+        "Nebbiolo",
+        "Pinot Noir",
+        "Sangiovese",
+        "Malbec"
+      ],
+      "a": 2,
+      "why": "Chianti er primært lavet på Sangiovese. Sangiovese har høj syre og smag af kirsebær og urter. Tomatsauce er også syrlig, og en vin med høj syre holder sig frisk ved siden af, mens en vin med lav syre ville smage flad.",
+      "deeper": "Chianti Classico, det historiske hjerte i Chianti-området, skal indeholde mindst 80 % Sangiovese. Brunello di Montalcino, også fra Toscana, er lavet på 100 % Sangiovese."
+    },
+    {
+      "q": "En gæst spørger: \"Hvad er forskellen på Syrah og Shiraz?\"",
+      "opts": [
+        "Syrah er en rød drue, og Shiraz er en hvid",
+        "Samme drue; 'Shiraz' er det australske navn",
+        "Shiraz er en australsk blanding af Syrah og Grenache",
+        "To forskellige druer, der bare tilfældigvis lyder ens"
+      ],
+      "a": 1,
+      "why": "Syrah og Shiraz er den samme drue. I Europa siger man mest Syrah, mens man i Australien (og tit Sydafrika) siger Shiraz. Shiraz fra varmt klima (fx Barossa) har tit meget fylde og modenhed med mørk, syltet frugt. Køligere Syrah er mere krydret og saltet, med noter af brombær og sort peber.",
+      "deeper": "Druens klassiske hjem er den nordlige Rhône i Frankrig, i vine som Hermitage, Côte-Rôtie og Cornas. Nogle producenter uden for Australien bruger navnet på etiketten til at signalere, hvilken stil de går efter."
+    },
+    {
+      "q": "En gæst, der bestiller bøf, vil have en mørk, fyldig, frugtig rødvin med bløde tanniner, \"ligesom dem fra Argentina\". Hvilken drue tænker de sandsynligvis på?",
+      "opts": [
+        "Malbec",
+        "Gamay",
+        "Pinot Noir",
+        "Nebbiolo"
+      ],
+      "a": 0,
+      "why": "Malbec er Argentinas signaturdrue, især fra Mendoza. Den giver dybfarvede vine med moden blomme og brombær og en blød, fløjlsagtig tekstur. Den kombination er et sikkert hit til grillet oksekød.",
+      "deeper": "Malbec kommer oprindeligt fra Frankrig. I Cahors i sydvest, hvor den også kaldes Côt, giver den mørkere, strammere og mere rustikke vine. Den var engang også udbredt i Bordeaux, men plantningerne der faldt kraftigt efter frosten i 1956."
+    },
+    {
+      "q": "Hvilken drue er som regel hoveddruen i rød Châteauneuf-du-Pape?",
+      "opts": [
+        "Cabernet Sauvignon",
+        "Pinot Noir",
+        "Tempranillo",
+        "Grenache"
+      ],
+      "a": 3,
+      "why": "Grenache dominerer rød Châteauneuf-du-Pape i den sydlige Rhône, som regel blandet med Syrah og Mourvèdre. Grenache giver moden jordbær og hindbær, et krydret strejf, bløde tanniner og tit høj alkohol.",
+      "deeper": "I Spanien hedder druen Garnacha, og gamle stokke i Priorat giver tætte, kraftige rødvine. Fordi Grenache har tynde, lyse skaller, er den også en favorit til rosé, fx i Tavel og Provence."
+    },
+    {
+      "q": "En gæst spørger, hvilken drue der er i en Pauillac fra Bordeaux' venstre bred. Hvad er det bedste svar?",
+      "opts": [
+        "Primært Merlot, blandet med Cabernet Franc",
+        "Kun Pinot Noir, samme drue som rød Bourgogne",
+        "Primært Cabernet Sauvignon, blandet med Merlot",
+        "Primært Syrah, blandet med Grenache og Mourvèdre"
+      ],
+      "a": 2,
+      "why": "På Bordeaux' venstre bred (Médoc, herunder Pauillac) er det som regel Cabernet Sauvignon, der fører an i blandingen. Cabernet har tykke skaller, så den giver vine med meget fylde, fast tannin og smag af solbær. Bordeaux-etiketter nævner stedet, ikke druerne, så det er værd at vide.",
+      "deeper": "DNA-forskning i 1990'erne viste, at Cabernet Sauvignon er en naturlig krydsning af Cabernet Franc og Sauvignon Blanc, sandsynligvis fra det sydvestlige Frankrig. Dens tannin og syre er grunden til, at den bedste Bordeaux fra venstre bred kan lagre i årtier."
+    },
+    {
+      "q": "En gæst vil have en rødvin i Bordeaux-stil, men synes, at Cabernet Sauvignon er \"for hård og udtørrende\". Hvad er et godt forslag?",
+      "opts": [
+        "En Barolo, den berømte rødvin fra Piemonte",
+        "En Saint-Émilion eller Pomerol med Merlot",
+        "En ung Nebbiolo fra det nordlige Italien",
+        "En Cabernet fra en meget kølig årgang"
+      ],
+      "a": 1,
+      "why": "Merlot er blødere, rundere og har mindre tannin end Cabernet Sauvignon, med blomme og røde bær. På Bordeaux' højre bred (Saint-Émilion, Pomerol) er det som regel Merlot, der fører an i blandingen. Den tørre fornemmelse, gæsten beskriver, er tannin, og Barolo eller ung Nebbiolo ville have endnu mere.",
+      "deeper": "Merlot og Cabernet blandes så tit, fordi de supplerer hinanden: Cabernet giver struktur, Merlot giver kød og blødhed. I Pomerol giver lerjorden Merlot ekstra rygrad, og nogle af verdens mest berømte vine derfra er næsten ren Merlot."
+    },
+    {
+      "q": "En gæst beder dig rangere tre rødvine fra lettest til mest fylde. Hvilken rækkefølge er typisk rigtig?",
+      "opts": [
+        "Pinot Noir, Merlot, Cabernet Sauvignon",
+        "Cabernet Sauvignon, Merlot, Pinot Noir",
+        "Merlot, Pinot Noir, Cabernet Sauvignon",
+        "Pinot Noir, Cabernet Sauvignon, Merlot"
+      ],
+      "a": 0,
+      "why": "Pinot Noir har tynd skal og giver lyse rødvine med lidt tannin og let til middel fylde. Merlot er blødere og mere kødfuld, men har mere fylde. Cabernet Sauvignon med sine tykke skaller har som regel mest fylde og tannin af de tre.",
+      "deeper": "Klima og vinfremstilling kan rykke rundt på det: en moden Pinot med fad fra et varmt område kan have mere fylde end en slank Merlot fra køligt klima. En grov stige fra let til fyldig: Gamay og Pinot Noir, så Grenache, Sangiovese, Tempranillo og Merlot, og så Nebbiolo, Syrah, Malbec og Cabernet Sauvignon."
+    }
+  ]
+}

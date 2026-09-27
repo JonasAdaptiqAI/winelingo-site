@@ -1,0 +1,128 @@
+{
+  "slug": "red-grapes",
+  "title": "Uvas tintas",
+  "summary": "Conoce las diez uvas tintas sobre las que se construye cualquier carta, de las más ligeras a las de más cuerpo, y qué uva se esconde detrás de Barolo, Rioja, Chianti y Beaujolais.",
+  "level": 1,
+  "questions": [
+    {
+      "q": "A un cliente le encanta el Pinot Noir, pero quiere algo parecido que suela tener mejor relación calidad-precio. ¿Qué le sugieres?",
+      "opts": [
+        "Un Shiraz del Barossa Valley, en Australia Meridional",
+        "Un cru de Beaujolais como Morgon o Fleurie",
+        "Un Cabernet Sauvignon del Napa Valley",
+        "Un Malbec argentino de Mendoza"
+      ],
+      "a": 1,
+      "why": "El Beaujolais se elabora con Gamay, que, como el Pinot Noir, es de piel fina y da tintos ligeros y con poco tanino, de fruta roja viva y acidez fresca. Los diez pueblos \"cru\", como Morgon y Fleurie, elaboran las versiones más serias. Las demás opciones tienen todas mucho más cuerpo y más tanino.",
+      "deeper": "Beaujolais está en el extremo sur de la gran Borgoña, la cuna del Pinot Noir. Muchos Beaujolais se elaboran con racimos enteros sin estrujar (maceración carbónica o semicarbónica), lo que da vinos jugosos y afrutados con poco tanino. El Beaujolais ligero se suele servir un poco más fresco que otros tintos."
+    },
+    {
+      "q": "Un cliente mira una copa de Barolo y dice: \"Qué pálido, debe de ser un vino ligero\". ¿Qué le dices?",
+      "opts": [
+        "Sí, el Barolo es un tinto ligero, sencillo y fácil de beber",
+        "El Barolo es pálido porque en realidad es un rosado",
+        "Es pálido porque el Barolo lleva uvas blancas en el coupage",
+        "La Nebbiolo del Barolo es pálida, pero tánica y ácida"
+      ],
+      "a": 3,
+      "why": "El Barolo es 100 % Nebbiolo. La Nebbiolo es el caso clásico en el que el color engaña: el vino parece ligero y con tonos anaranjados, pero agarra la boca con un tanino potente y una acidez alta. Necesita comida, idealmente carnes contundentes, setas o trufa.",
+      "deeper": "La Nebbiolo es famosa por sus aromas de \"alquitrán y rosas\". El Barbaresco, de la misma zona del Piamonte, también es Nebbiolo. Por ley, el Barolo debe tener una crianza de al menos 38 meses (algo más de tres años) antes de salir al mercado, de los cuales al menos 18 meses en madera."
+    },
+    {
+      "q": "¿Qué uva suele ser la mayor parte del coupage en un Rioja tinto?",
+      "opts": [
+        "Tempranillo",
+        "Garnacha (Grenache)",
+        "Merlot",
+        "Sangiovese"
+      ],
+      "a": 0,
+      "why": "El Rioja tinto es sobre todo Tempranillo, que aporta fruta de cereza roja y negra y un tanino medio a alto. Rioja es conocida por la crianza en roble, que añade vainilla, coco y especias. Las palabras Crianza, Reserva y Gran Reserva de la etiqueta te dicen cuánto tiempo se ha criado el vino, de menos a más.",
+      "deeper": "Garnacha, Graciano y Mazuelo (Cariñena) son las uvas acompañantes tradicionales. El Tempranillo supone la gran mayoría del viñedo tinto de Rioja. Consejo de sala: a un cliente al que le gustan los tintos suaves y con madera, un Reserva suele encantarle."
+    },
+    {
+      "q": "Una mesa ha pedido pasta con salsa de tomate y quiere un tinto italiano. ¿Qué uva, la principal del Chianti, es una combinación natural?",
+      "opts": [
+        "Nebbiolo",
+        "Pinot Noir",
+        "Sangiovese",
+        "Malbec"
+      ],
+      "a": 2,
+      "why": "El Chianti se elabora principalmente con Sangiovese. La Sangiovese tiene una acidez alta y sabores de cereza y hierbas. La salsa de tomate también es ácida, y un vino con mucha acidez se mantiene fresco a su lado, mientras que uno con poca acidez sabría plano.",
+      "deeper": "El Chianti Classico, el corazón histórico de la zona de Chianti, debe contener al menos un 80 % de Sangiovese. El Brunello di Montalcino, también en la Toscana, se elabora con un 100 % de Sangiovese."
+    },
+    {
+      "q": "Un cliente pregunta: \"¿Qué diferencia hay entre Syrah y Shiraz?\"",
+      "opts": [
+        "La Syrah es una uva tinta y la Shiraz es una blanca",
+        "Es la misma uva; \"Shiraz\" es su nombre en Australia",
+        "La Shiraz es un coupage australiano de Syrah y Grenache",
+        "Son uvas sin relación que simplemente suenan parecido"
+      ],
+      "a": 1,
+      "why": "Syrah y Shiraz son la misma uva. En Europa se dice sobre todo Syrah, mientras que en Australia (y a menudo en Sudáfrica) se dice Shiraz. La Shiraz de clima cálido (por ejemplo, de Barossa) suele tener mucho cuerpo y ser madura, con fruta negra y golosa; la Syrah de clima más fresco es menos frutal y más sabrosa, con notas de mora y pimienta negra.",
+      "deeper": "La cuna clásica de la uva es el norte del Ródano, en Francia, en vinos como Hermitage, Côte-Rôtie y Cornas. Algunos productores fuera de Australia usan un nombre u otro en la etiqueta para indicar el estilo que buscan."
+    },
+    {
+      "q": "Un cliente que pide un chuletón quiere un tinto oscuro, con cuerpo, afrutado y de taninos suaves, \"como los de Argentina\". ¿En qué uva está pensando probablemente?",
+      "opts": [
+        "Malbec",
+        "Gamay",
+        "Pinot Noir",
+        "Nebbiolo"
+      ],
+      "a": 0,
+      "why": "La Malbec es la uva emblemática de Argentina, sobre todo de Mendoza. Da vinos de color intenso, con fruta de ciruela madura y mora y una textura suave y aterciopelada. Esa combinación gusta a casi todo el mundo con la carne a la brasa.",
+      "deeper": "La Malbec es originaria de Francia. En Cahors, en el suroeste, donde también se conoce como Côt, da vinos más oscuros, firmes y rústicos. También fue común en Burdeos, pero allí su superficie cayó en picado tras la helada de 1956."
+    },
+    {
+      "q": "¿Qué uva suele ser la principal del Châteauneuf-du-Pape tinto?",
+      "opts": [
+        "Cabernet Sauvignon",
+        "Pinot Noir",
+        "Tempranillo",
+        "Grenache"
+      ],
+      "a": 3,
+      "why": "La Grenache domina el Châteauneuf-du-Pape tinto, en el sur del Ródano, normalmente en coupage con Syrah y Mourvèdre. La Grenache aporta fruta madura de fresa y frambuesa, un toque especiado, taninos suaves y a menudo un grado alcohólico alto.",
+      "deeper": "En España la uva se llama Garnacha, y las cepas viejas del Priorat dan tintos densos y potentes. Como la Grenache tiene la piel fina y poco color, también es una de las favoritas para rosado, por ejemplo en Tavel y en la Provenza."
+    },
+    {
+      "q": "Un cliente pregunta qué uva lleva un Pauillac, de la orilla izquierda de Burdeos. ¿Cuál es la mejor respuesta?",
+      "opts": [
+        "Principalmente Merlot, en coupage con Cabernet Franc",
+        "Solo Pinot Noir, la misma uva que el Borgoña tinto",
+        "Principalmente Cabernet Sauvignon, en coupage con Merlot",
+        "Principalmente Syrah, con Grenache y Mourvèdre"
+      ],
+      "a": 2,
+      "why": "En la orilla izquierda de Burdeos (el Médoc, que incluye Pauillac), la Cabernet Sauvignon suele llevar el peso del coupage. La Cabernet tiene la piel gruesa, así que da vinos con mucho cuerpo, tanino firme y sabor a grosella negra. Las etiquetas de Burdeos indican el lugar, no las uvas, así que conviene saberlo.",
+      "deeper": "Estudios de ADN de los años noventa demostraron que la Cabernet Sauvignon es un cruce natural de Cabernet Franc y Sauvignon Blanc, probablemente del suroeste de Francia. Su tanino y su acidez explican por qué los grandes Burdeos de la orilla izquierda pueden envejecer durante décadas."
+    },
+    {
+      "q": "Un cliente quiere un tinto estilo Burdeos, pero dice que la Cabernet Sauvignon le resulta \"demasiado áspera y secante\". ¿Qué le sugieres?",
+      "opts": [
+        "Un Barolo, el famoso tinto del Piamonte",
+        "Un Saint-Émilion o Pomerol a base de Merlot",
+        "Un Nebbiolo joven del norte de Italia",
+        "Un Cabernet de una añada muy fría"
+      ],
+      "a": 1,
+      "why": "La Merlot es más suave, redonda y menos tánica que la Cabernet Sauvignon, con fruta de ciruela y frutos rojos. En la orilla derecha de Burdeos (Saint-Émilion, Pomerol) la Merlot suele llevar el peso del coupage. La sensación secante que describe el cliente es el tanino, y un Barolo o un Nebbiolo joven tendrían todavía más.",
+      "deeper": "La Merlot y la Cabernet se mezclan tan a menudo porque se complementan: la Cabernet aporta estructura y la Merlot, carnosidad y suavidad. En Pomerol, los suelos arcillosos dan a la Merlot más estructura, y algunos de los vinos más famosos del mundo de allí son casi enteramente Merlot."
+    },
+    {
+      "q": "Un cliente te pide que ordenes tres tintos del más ligero al de más cuerpo. ¿Qué orden suele ser el correcto?",
+      "opts": [
+        "Pinot Noir, Merlot, Cabernet Sauvignon",
+        "Cabernet Sauvignon, Merlot, Pinot Noir",
+        "Merlot, Pinot Noir, Cabernet Sauvignon",
+        "Pinot Noir, Cabernet Sauvignon, Merlot"
+      ],
+      "a": 0,
+      "why": "La Pinot Noir es de piel fina y da tintos de color claro, con poco tanino y cuerpo ligero a medio. La Merlot es más suave y carnosa, pero con más cuerpo. La Cabernet Sauvignon, con su piel gruesa, suele ser la de más cuerpo y más tánica de las tres.",
+      "deeper": "El clima y la elaboración pueden cambiar esto: un Pinot maduro y con roble de una zona cálida puede tener más cuerpo que un Merlot delgado de clima fresco. Como escala aproximada de ligero a potente: Gamay y Pinot Noir; luego Grenache, Sangiovese, Tempranillo y Merlot; después Nebbiolo, Syrah, Malbec y Cabernet Sauvignon."
+    }
+  ]
+}

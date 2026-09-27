@@ -1,0 +1,128 @@
+{
+  "slug": "wine-faults",
+  "title": "Defectos del vino",
+  "summary": "Reconoce los defectos más comunes del vino, distínguelos de rarezas inofensivas y gestiona la queja de un cliente con calma y de forma justa.",
+  "level": 2,
+  "questions": [
+    {
+      "q": "Un cliente devuelve una botella diciendo que está \"acorchada\". ¿Qué esperarías oler si tiene razón?",
+      "opts": [
+        "Trocitos de corcho flotando en la copa, con olor a madera",
+        "Un olor fuerte y punzante a vinagre y quitaesmalte",
+        "Cartón húmedo a moho o bodega mojada, con la fruta apagada",
+        "Un olor dulce y a mermelada, de ciruelas guisadas y fruta al horno"
+      ],
+      "a": 2,
+      "why": "\"Acorchado\" significa que el vino está contaminado por un compuesto llamado TCA, que huele a moho, como a cartón húmedo o a sótano mojado, y apaga la fruta. Es un problema de olor. Los trocitos de corcho flotando en la copa no son un defecto: basta con servir una copa nueva o sacarlos.",
+      "deeper": "El TCA (2,4,6-tricloroanisol) se forma cuando los mohos transforman clorofenoles, compuestos relacionados con tratamientos con cloro y antiguos protectores de la madera. Los catadores entrenados pueden detectarlo a partir de 1–2 partes por billón, y la sensibilidad varía mucho de una persona a otra. Los casos leves pueden hacer simplemente que el vino parezca apagado, sin oler claramente a moho."
+    },
+    {
+      "q": "Abres un vino blanco que se ha vuelto de un dorado oscuro tirando a marrón. Huele plano, a manzana golpeada y frutos secos, con poca fruta fresca. ¿Qué es lo más probable?",
+      "opts": [
+        "Oxidación: demasiado contacto con el aire",
+        "Olor a corcho: TCA de un corcho contaminado",
+        "Cristales de tartrato: reacción al frío",
+        "Reducción: muy poco contacto con el aire"
+      ],
+      "a": 0,
+      "why": "El exceso de oxígeno oscurece el vino blanco y convierte la fruta fresca en notas de manzana golpeada, frutos secos o de jerez. Puede pasar con una botella vieja, un cierre que no sella bien o una botella que lleva demasiado tiempo abierta detrás de la barra.",
+      "deeper": "El contexto importa: el Jerez, el Oporto tawny y algunos vinos con crianza o vinos naranja se elaboran a propósito con un estilo oxidativo, así que ahí una nota de frutos secos no es un defecto. Con las botellas abiertas en la barra, ponles la fecha, vuelve a cerrarlas y mantenlas frías para frenar la oxidación."
+    },
+    {
+      "q": "Llega una botella con el corcho un poco levantado y vino pegajoso bajo la cápsula. El tinto sabe a fruta en mermelada y guisada. ¿Cuál es la causa probable?",
+      "opts": [
+        "Necesita más tiempo para respirar después de abrirla",
+        "Olor a corcho por un tapón defectuoso y con moho",
+        "Demasiado sedimento por una larga crianza en botella",
+        "Daño por calor: la botella se calentó demasiado"
+      ],
+      "a": 3,
+      "why": "El calor hace que el vino se dilate, lo que puede empujar el corcho hacia arriba y provocar fugas. El calor también \"cuece\" el vino, así que la fruta fresca pasa a saber guisada, a mermelada o al horno. El aire no lo arregla; el daño es permanente.",
+      "deeper": "No es perjudicial beberlo, solo menos agradable. Un corcho levantado o manchas de fuga son buenas señales de alarma al revisar un pedido: aparta esas botellas y prueba una antes de ponerlas a la venta."
+    },
+    {
+      "q": "Un tinto recién abierto huele a cerilla recién encendida o tiene un toque a huevo podrido. ¿Cuál es el mejor primer paso?",
+      "opts": [
+        "Decirle al cliente que está acorchado y abrir otra",
+        "Airearlo: moverlo en la copa o decantarlo y volver a olerlo",
+        "Echar un cubito de hielo en la copa para suavizar el olor",
+        "Nada, es el olor que esta uva tiene siempre"
+      ],
+      "a": 1,
+      "why": "Esto es \"reducción\": olores azufrados que aparecen cuando un vino ha tenido muy poco oxígeno. La reducción leve suele desaparecer al mover el vino en la copa o decantarlo. Si se va, el vino está bien; si persiste un olor fuerte a huevo podrido o a col, trátalo como defectuoso.",
+      "deeper": "Un toque de cerilla puede ser incluso una nota de estilo buscada en algunos blancos, como ciertos Chardonnay. Consejo de sala: si un cliente lo nota, ofrécete a decantarlo y vuelve en unos minutos; a menudo se soluciona así."
+    },
+    {
+      "q": "Un cliente dice que su tinto tradicional huele \"a corral, a silla de montar sudada y a tirita\". ¿Cuál es la explicación más probable y cómo debes tratarlo?",
+      "opts": [
+        "Olor a corcho; cambiar la botella al momento sin discutir",
+        "Daño por calor; el vino está cocido y no se puede beber",
+        "Brett, una levadura: a algunos les gusta un poco; mucho es defecto",
+        "Cristales de tartrato; inofensivos, basta con servir otra copa"
+      ],
+      "a": 2,
+      "why": "El Brett es una levadura que genera olores a establo, cuero, ahumado o medicinales (a tirita). Las opiniones varían: a algunos les gusta un toque en ciertos tintos tradicionales, mientras que un Brett fuerte que tapa la fruta se considera en general un defecto. Si al cliente no le gusta, respétalo.",
+      "deeper": "Niveles bajos de Brett no son raros en algunos tintos de elaboración tradicional de zonas como Burdeos o el Ródano. Como es un tema discutido, evita decirle a un cliente \"es que tiene que saber así\". Ofrécele otro vino."
+    },
+    {
+      "q": "Una copa de tinto huele intensamente a vinagre, con un toque a quitaesmalte. ¿Qué defecto es?",
+      "opts": [
+        "Reducción (compuestos azufrados)",
+        "Cristales de tartrato (ácido tartárico)",
+        "Olor a corcho (el compuesto TCA)",
+        "Acidez volátil alta (AV)"
+      ],
+      "a": 3,
+      "why": "La acidez volátil viene sobre todo del ácido acético (vinagre) y de su compañero, el acetato de etilo (olor a quitaesmalte). La causan principalmente las bacterias acéticas cuando actúan en presencia de aire, y algunas levaduras contribuyen. En niveles altos es un defecto claro, y el aire no la elimina.",
+      "deeper": "Todo vino tiene algo de acidez volátil, y en niveles bajos puede dar viveza al aroma. Algunos vinos tradicionales muy conocidos tienen una acidez volátil apreciable como parte de su estilo. Se convierte en defecto cuando domina la nota a vinagre."
+    },
+    {
+      "q": "Un cliente encuentra pequeños cristales parecidos al vidrio en el fondo de su vino blanco y le preocupa que sea vidrio roto. ¿Qué le dices?",
+      "opts": [
+        "Son cristales de tartrato inofensivos que se forman con el frío",
+        "Es azúcar que no se disolvió, así que el vino sabrá más dulce",
+        "Es señal de que el vino está acorchado y hay que devolverlo",
+        "Es vidrio de la línea de embotellado y hay que retirar la botella"
+      ],
+      "a": 0,
+      "why": "Los tartratos son cristales naturales de potasio y ácido tartárico procedentes de la uva. Se forman cuando el vino se enfría y no afectan ni al sabor ni a la seguridad. El mismo compuesto se vende en cocina como crémor tártaro. A veces se les llama \"diamantes del vino\".",
+      "deeper": "En el vino tinto se ven rojizos porque se tiñen con el color. Los tintos también pueden soltar sedimento (depósitos oscuros y granulosos de color y tanino) al envejecer. Las dos cosas son inofensivas; decantar o servir con cuidado las mantiene fuera de la copa."
+    },
+    {
+      "q": "Un cliente dice que su tinto \"sabe caliente y pastoso, casi a alcohol\". La botella ha estado junto a la cocina. ¿Cuál es la mejor respuesta?",
+      "opts": [
+        "Decirle que está acorchado, disculparte y cambiar la botella",
+        "Decirle que está caliente, no defectuoso, y enfriarlo en cubitera",
+        "Decirle que el tinto siempre se sirve a temperatura ambiente",
+        "Echar un cubito de hielo en su copa para bajar la temperatura"
+      ],
+      "a": 1,
+      "why": "Estar demasiado caliente es un problema de servicio, no un defecto del vino. Los tintos calientes saben alcohólicos y blandos. Unos minutos en una cubitera devuelven a la mayoría de los tintos a una temperatura agradable, ligeramente fresca.",
+      "deeper": "Lo de \"temperatura ambiente\" viene de antes de la calefacción central; la mayoría de los tintos se expresan mejor algo más frescos que una sala moderna y caldeada. También pasa lo contrario: un blanco servido helado puede parecer que no tiene aroma, y se abre a medida que se atempera."
+    },
+    {
+      "q": "Un cliente dice: \"Este lleva tapón de rosca, así que no puede tener defectos, ¿no?\". ¿Cuál es la respuesta correcta?",
+      "opts": [
+        "Correcto, los vinos con tapón de rosca nunca pueden tener ningún defecto",
+        "El tapón de rosca en realidad causa olor a corcho más a menudo que el corcho natural",
+        "El tapón de rosca solo falla con el tinto, que necesita aire para envejecer",
+        "El tapón no puede causar olor a corcho, pero el vino puede tener otros defectos"
+      ],
+      "a": 3,
+      "why": "La mayor parte del TCA viene del corcho natural, así que el tapón de rosca elimina en gran medida ese riesgo. Pero el TCA también puede venir de una bodega contaminada (barricas, estructuras de madera, agua tratada), y otros defectos como la oxidación, el daño por calor o la reducción pueden seguir apareciendo.",
+      "deeper": "Como el tapón de rosca deja pasar muy poco oxígeno, los vinos con este cierre se asocian a menudo con la reducción, y por eso moverlo un poco en la copa puede ayudar. Los vinos con tapón de rosca tienen TCA con mucha menos frecuencia que los cerrados con corcho."
+    },
+    {
+      "q": "Un cliente dice que su vino está mal. Lo pruebas y, sinceramente, crees que está bien. ¿Cuál es la mejor forma de gestionarlo?",
+      "opts": [
+        "Explicarle con firmeza pero con educación que el vino está bien y que se equivoca",
+        "Cobrarle la segunda botella, ya que la primera no tenía ningún defecto",
+        "Ser amable, ofrecerle otra botella y apartar la botella para revisarla",
+        "Retirar la copa discretamente sin decirle nada al cliente"
+      ],
+      "a": 2,
+      "why": "El objetivo es un cliente contento, no ganar la discusión. Prueba una pequeña muestra lejos de la mesa si tu local lo permite y luego ofrece una botella nueva u otro vino. Guarda la botella, etiquétala y deja que tu encargado decida si se devuelve al proveedor.",
+      "deeper": "Muchos proveedores abonan las botellas que de verdad tienen defectos, así que guardar la botella y anotar la fecha y el problema protege al negocio. Si el vino está bien pero no es del gusto del cliente, muchos locales igualmente se lo cambian y venden la botella abierta por copas. Sigue la política de la casa."
+    }
+  ]
+}

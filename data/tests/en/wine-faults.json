@@ -1,0 +1,138 @@
+{
+  "slug": "wine-faults",
+  "title": "Wine faults",
+  "summary": "Recognise the common wine faults, tell them apart from harmless quirks, and handle a guest's complaint calmly and fairly.",
+  "level": 2,
+  "questions": [
+    {
+      "q": "A guest sends back a bottle, saying it is 'corked'. What would you expect to smell if they are right?",
+      "opts": [
+        "Small pieces of cork floating in the glass, with a woody smell",
+        "A strong, sharp smell of vinegar and nail-polish remover",
+        "Musty damp cardboard or a wet cellar, with muted fruit",
+        "A sweet, jammy smell of stewed plums and baked fruit"
+      ],
+      "a": 2,
+      "why": "'Corked' means the wine is tainted by a compound called TCA, which smells musty, like damp cardboard or a wet basement, and flattens the fruit. It is a smell problem. Bits of cork floating in the glass are not a fault: just pour a fresh glass or fish them out.",
+      "deeper": "TCA (2,4,6-trichloroanisole) forms when moulds convert chlorophenols, compounds linked to chlorine treatments and old wood preservatives. Trained tasters can detect it at around 1–2 parts per trillion, and sensitivity varies a lot between people. Mild cases may just make a wine seem dull, not obviously mouldy.",
+      "source": "https://www.awri.com.au/industry_support/winemaking_resources/sensory_assessment/recognition-of-wine-faults-and-taints/wine_faults/"
+    },
+    {
+      "q": "You open a white wine that has turned deep gold-brown. It smells flat, of bruised apple and nuts, with little fresh fruit. What is most likely going on?",
+      "opts": [
+        "Oxidation: too much contact with air",
+        "Cork taint: TCA from a contaminated cork",
+        "Tartrate crystals: a reaction to cold storage",
+        "Reduction: too little contact with air"
+      ],
+      "a": 0,
+      "why": "Too much oxygen browns white wine and turns fresh fruit into bruised apple, nutty or sherry-like notes. It can happen with an old bottle, a leaky closure, or a bottle left open too long behind the bar.",
+      "deeper": "Context matters: Sherry, tawny Port and some aged or orange wines are made in an oxidative style on purpose, so a nutty note there is not a fault. For open bottles at the bar, date them, re-seal them and keep them chilled to slow oxidation.",
+      "source": "https://www.awri.com.au/industry_support/winemaking_resources/sensory_assessment/recognition-of-wine-faults-and-taints/wine_faults/"
+    },
+    {
+      "q": "A bottle arrives with the cork pushed slightly up and sticky wine under the capsule. The red tastes of jammy, stewed fruit. What is the likely cause?",
+      "opts": [
+        "It needs more time to breathe after opening",
+        "Cork taint from a faulty, mouldy cork",
+        "Too much sediment from long bottle ageing",
+        "Heat damage: the bottle got too hot"
+      ],
+      "a": 3,
+      "why": "Heat makes the wine expand, which can push the cork up and cause seepage. Heat also 'cooks' the wine, so fresh fruit turns stewed, jammy or baked. Air will not fix it; the damage is permanent.",
+      "deeper": "It is not harmful to drink, just less enjoyable. A pushed cork or seepage stains are useful warning signs when checking deliveries: set those bottles aside and taste one before putting them on sale.",
+      "source": "https://www.winespectator.com/articles/cork-pushed-out-wine-bottle-ok-to-drink"
+    },
+    {
+      "q": "A freshly opened red smells of struck matches or a hint of rotten egg. What is the best first step?",
+      "opts": [
+        "Tell the guest it is corked and open another",
+        "Give it air: swirl or decant it, then smell again",
+        "Add an ice cube to the glass to calm the smell",
+        "Nothing, that smell is how this grape always smells"
+      ],
+      "a": 1,
+      "why": "This is 'reduction': sulphur smells that build up when a wine has had very little oxygen. Mild reduction often fades with swirling or decanting. If it clears, the wine is fine; if a strong rotten-egg or cabbage smell stays, treat it as faulty.",
+      "deeper": "A hint of struck match can even be a deliberate style note in some white wines, such as certain Chardonnays. Service tip: if a guest notices it, offer to decant and come back in a few minutes; it often solves the problem.",
+      "source": "https://www.awri.com.au/industry_support/winemaking_resources/sensory_assessment/recognition-of-wine-faults-and-taints/wine_faults/"
+    },
+    {
+      "q": "A guest says their traditional red smells 'like a farmyard, sweaty saddle and Band-Aid'. What is the most likely explanation, and how should you treat it?",
+      "opts": [
+        "Cork taint; replace the bottle at once without question",
+        "Heat damage; the wine is cooked and cannot be drunk",
+        "Brett, a yeast: some like a little; a lot is a fault",
+        "Tartrate crystals; harmless, so just pour a fresh glass"
+      ],
+      "a": 2,
+      "why": "Brett is a yeast that creates barnyard, leather, smoky or medicinal (Band-Aid) smells. Opinions differ: some drinkers enjoy a touch of it in certain traditional reds, while strong Brett that hides the fruit is widely seen as a fault. If the guest dislikes it, respect that.",
+      "deeper": "Low levels of Brett are not unusual in some traditionally made reds from places like Bordeaux or the Rhône. Because it is debated, avoid telling a guest 'that is how it's supposed to taste'. Offer an alternative wine instead.",
+      "source": "https://www.winescholarguild.com/studio/item/10072/identifying-wine-faults"
+    },
+    {
+      "q": "A glass of red smells sharply of vinegar, with a hint of nail-polish remover. Which fault is this?",
+      "opts": [
+        "Reduction (sulphur compounds)",
+        "Tartrate crystals (tartaric acid)",
+        "Cork taint (the compound TCA)",
+        "High volatile acidity (VA)"
+      ],
+      "a": 3,
+      "why": "Volatile acidity comes mainly from acetic acid (vinegar) and its partner ethyl acetate (nail-polish smell). It is mostly caused by acetic acid bacteria working in the presence of air, and some yeasts add to it. At high levels it is a clear fault, and air will not remove it.",
+      "deeper": "All wine has a little VA, and at low levels it can add lift to the aroma. Some well-known traditional wines carry noticeable VA as part of their style. It becomes a fault when the vinegar note dominates.",
+      "source": "https://www.awri.com.au/industry_support/winemaking_resources/sensory_assessment/recognition-of-wine-faults-and-taints/wine_faults/"
+    },
+    {
+      "q": "A guest finds small glass-like crystals at the bottom of their white wine and worries it is broken glass. What do you tell them?",
+      "opts": [
+        "Harmless tartrate crystals that form naturally in the cold",
+        "Sugar that did not dissolve, so the wine will taste sweeter",
+        "It is a sign the wine is corked and should be sent back",
+        "Glass from the bottling line, so the bottle must be recalled"
+      ],
+      "a": 0,
+      "why": "Tartrates are natural crystals of potassium and tartaric acid from the grapes. They form when wine gets cold, and they do not affect taste or safety. The same compound is sold as cream of tartar in kitchens. They are sometimes called 'wine diamonds'.",
+      "deeper": "In red wine they look reddish because they pick up colour. Red wines can also throw sediment (dark, grainy deposits of colour and tannin) as they age. Both are harmless; decanting or pouring carefully keeps them out of the glass.",
+      "source": "https://www.decanter.com/learn/advice/tartrate-crystals-in-wine-346248/"
+    },
+    {
+      "q": "A guest says their red 'tastes hot and soupy, almost like alcohol'. The bottle has been sitting next to the kitchen. What is the best response?",
+      "opts": [
+        "Tell them it is corked, apologise and replace the bottle",
+        "Say it is too warm, not faulty, and chill it in an ice bucket",
+        "Tell them red wine should always be served at room temperature",
+        "Add an ice cube to their glass to bring the temperature down"
+      ],
+      "a": 1,
+      "why": "Too warm is a service problem, not a wine fault. Warm reds taste alcoholic and flabby. A few minutes in an ice bucket brings most reds back to a pleasant, slightly cool temperature.",
+      "deeper": "'Room temperature' comes from a time before central heating; most reds show best somewhat cooler than a warm modern room. The opposite also happens: a white served ice-cold can seem to have no aroma, and it opens up as it warms.",
+      "source": "https://winefolly.com/tips/wine-serving-temperature/"
+    },
+    {
+      "q": "A guest says, 'This has a screw cap, so it can't be faulty, right?' What is the accurate answer?",
+      "opts": [
+        "Right, screw-cap wines can never be faulty in any way",
+        "Screw caps actually cause cork taint more often than natural corks do",
+        "Screw caps only fail on red wine, which needs air to age",
+        "The cap can't cause cork taint, but the wine can still be faulty"
+      ],
+      "a": 3,
+      "why": "Most TCA comes from natural cork, so screw caps largely remove that risk. But TCA can also come from a contaminated winery (barrels, wood structures, treated water), and other faults such as oxidation, heat damage or reduction can still happen.",
+      "deeper": "Because screw caps let in very little oxygen, wines under screw cap are often discussed in connection with reduction, which is why a quick swirl can help. Screw-cap wines are TCA-tainted much less often than cork-sealed ones.",
+      "source": "https://www.awri.com.au/industry_support/winemaking_resources/sensory_assessment/recognition-of-wine-faults-and-taints/wine_faults/"
+    },
+    {
+      "q": "A guest says their wine is off. You taste it and honestly think it is fine. What is the best way to handle it?",
+      "opts": [
+        "Explain firmly but politely that the wine is correct and they are wrong",
+        "Charge them for the second bottle, since the first one was not faulty",
+        "Stay friendly, offer a replacement, and set the bottle aside to check",
+        "Quietly take the glass away without saying anything to the guest"
+      ],
+      "a": 2,
+      "why": "The goal is a happy guest, not winning the argument. Taste a small sample away from the table if your venue allows it, then offer a fresh bottle or a different wine. Keep the bottle, label it, and let your manager decide whether it goes back to the supplier.",
+      "deeper": "Many suppliers credit genuinely faulty bottles, so keeping the bottle and noting the date and problem protects the business. If the wine is sound but not to the guest's taste, many venues still swap it and sell the opened bottle by the glass. Follow your house policy.",
+      "source": "https://www.winespectator.com/articles/47025"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "slug": "food-and-wine",
+  "title": "Food and wine",
+  "summary": "Use a handful of simple pairing principles to suggest a wine that makes both the dish and the glass taste better.",
+  "level": 2,
+  "questions": [
+    {
+      "q": "A guest orders fried calamari with a squeeze of lemon and wants a white wine. Which style will work best?",
+      "opts": [
+        "A rich, oaky, low-acid white",
+        "A crisp, high-acid, unoaked white",
+        "A sweet, low-acid dessert wine",
+        "A high-alcohol white with little freshness"
+      ],
+      "a": 1,
+      "why": "Fried, salty food needs acidity. A crisp white cuts through the oil and refreshes the mouth like a squeeze of lemon. The lemon on the plate also makes a high-acid wine feel softer and rounder.",
+      "deeper": "Acid in food lowers the perceived acidity of the wine. That is why a very sharp wine that seems too tart on its own can taste balanced next to a lemony or vinegary dish.",
+      "source": "https://www.wsetglobal.com/knowledge-centre/blog/2023/july/13/four-rules-to-masterful-food-and-wine-pairing"
+    },
+    {
+      "q": "A guest ordering a fatty ribeye asks why a firm, tannic red like young Cabernet Sauvignon is suggested with steak. What do you tell them?",
+      "opts": [
+        "The steak makes the wine taste sweeter and fruitier than it is",
+        "Red wine always goes with red meat, whatever its style or weight",
+        "The wine's high alcohol dissolves and cancels out the fat",
+        "Fat, protein and salt in the steak soften the tannin"
+      ],
+      "a": 3,
+      "why": "Tannin is the drying, grippy feel in red wine. Fat, protein and salt in the meat soften that grip, so the wine tastes smoother. At the same time, the wine's acidity and tannin refresh the mouth between rich bites.",
+      "deeper": "The same tannic wine can taste harsh with a lean dish and smooth with a fatty one. When a guest finds a big red too drying on its own, suggest trying it again with a bite of the steak.",
+      "source": "https://www.wsetglobal.com/knowledge-centre/blog/2023/july/13/four-rules-to-masterful-food-and-wine-pairing"
+    },
+    {
+      "q": "A guest wants to keep drinking their dry Brut Champagne with a sweet chocolate dessert. What will probably happen to the wine?",
+      "opts": [
+        "It will taste thinner, sharper and more bitter",
+        "It will taste sweeter, richer and rounder",
+        "It will taste exactly the same as before",
+        "It will lose its bubbles much faster in the glass"
+      ],
+      "a": 0,
+      "why": "Sweet food makes a wine taste less sweet and less fruity, and more acidic and bitter. A dry wine next to a sweet dessert can taste sour and thin. The rule of thumb is that the wine should be at least as sweet as the dessert.",
+      "deeper": "A good service line: \"The Champagne is lovely, but the dessert will make it taste sharp. A small glass of a sweet wine would really suit it.\" That is an honest upsell that improves the meal.",
+      "source": "https://www.decanterchina.com/en/knowledge/wset/wset-level-2-chinese-food-and-wine-matching"
+    },
+    {
+      "q": "A guest orders a very spicy chilli dish and asks for a 15% alcohol, tannic red. What should you gently warn them about?",
+      "opts": [
+        "The wine will taste sweeter, softer and fruitier",
+        "The chilli heat will disappear with each sip",
+        "The wine will taste hotter, more bitter and drying",
+        "Nothing, since strong wine and strong food always match"
+      ],
+      "a": 2,
+      "why": "Chilli heat makes alcohol feel hotter and tannin feel more bitter and drying. It also strips fruit and sweetness from the wine. A lower-alcohol wine with fruit and a touch of sweetness is usually far more comfortable.",
+      "deeper": "It works both ways: high alcohol also makes the chilli feel hotter. If the guest insists on red, steer them to a juicy, low-tannin, lighter-alcohol style rather than a big, oaky one.",
+      "source": "https://www.decanterchina.com/en/knowledge/wset/wset-level-2-chinese-food-and-wine-matching"
+    },
+    {
+      "q": "A guest orders grilled salmon but only drinks red wine. What is the best suggestion?",
+      "opts": [
+        "A full-bodied, very tannic red such as a young Barolo",
+        "A light, low-tannin red served slightly cool",
+        "A sweet red dessert wine such as ruby Port",
+        "Tell them red wine never works with fish"
+      ],
+      "a": 1,
+      "why": "\"Red wine with fish\" can work when the fish is meaty and the red is light. Big, tannic reds often taste harsh or metallic with fish, so a low-tannin red with fresh acidity is the safer choice. Pinot Noir or Gamay are common choices with salmon or tuna.",
+      "deeper": "A 2009 Japanese study of 64 wines tasted with scallops found that the wines with more iron gave a stronger fishy aftertaste. It was the iron level, not simply the colour, that mattered, which is why some reds work with seafood and others don't.",
+      "source": "https://pubs.acs.org/doi/10.1021/jf901656k"
+    },
+    {
+      "q": "A table orders salty fried snacks and a bottle of Champagne. Why is this such a good match?",
+      "opts": [
+        "Salt softens the wine; acidity and bubbles cut the fat",
+        "The bubbles make the salty food taste sweeter and lighter",
+        "Salt makes the wine taste more bitter, which balances the fat",
+        "It isn't; sparkling wine should only be drunk with dessert"
+      ],
+      "a": 0,
+      "why": "Salt makes wine taste softer and fuller, and less bitter or sharp, so it flatters almost any wine. Sparkling wine adds high acidity and bubbles that scrub oil from the palate. That is why crisps, fried chicken and Champagne are such a popular combination.",
+      "deeper": "Salt is one of the most wine-friendly tastes in food. Very dry, high-acid wines that can taste austere on their own often shine next to salty dishes.",
+      "source": "https://www.decanterchina.com/en/knowledge/wset/wset-level-2-chinese-food-and-wine-matching"
+    },
+    {
+      "q": "A guest orders choucroute garnie, the Alsace dish of sauerkraut, sausages and pork, and asks what to drink. Following \"what grows together goes together\", what do you suggest?",
+      "opts": [
+        "A big, ripe Shiraz from Australia's Barossa Valley",
+        "A sweet vintage Port from Portugal's Douro Valley",
+        "A heavily oaked Californian Chardonnay",
+        "A dry Alsace white, such as Riesling"
+      ],
+      "a": 3,
+      "why": "\"What grows together goes together\" means pairing a dish with wine from the same region. Local food and wine grew up side by side, so they often suit each other. A dry Alsace Riesling has the acidity to cut the pork fat and stand up to the tangy sauerkraut.",
+      "deeper": "This is a useful shortcut when you don't know a dish well: find where it comes from and offer a wine from there. It is a starting point, not a guarantee, and works best for traditional regional food from wine-growing areas.",
+      "source": "https://food52.com/story/28039-what-grows-together-goes-together-a-wine-pairing-ethos"
+    },
+    {
+      "q": "Two guests share one bottle: one orders grilled fish, the other a steak. Which bottle is the best compromise?",
+      "opts": [
+        "A young, very tannic Cabernet Sauvignon",
+        "A sweet, lightly sparkling Moscato d'Asti",
+        "A dry rosé or a light, fresh, low-tannin red",
+        "A very light, neutral white with almost no body"
+      ],
+      "a": 2,
+      "why": "You need a wine in the middle: enough body and flavour for the steak, but not so much tannin that it clashes with the fish. A dry rosé or a light red with fresh acidity bridges both plates.",
+      "deeper": "Another option is offering wine by the glass so each guest gets their own match. Mentioning it is helpful service, not pushy, when the dishes are far apart.",
+      "source": "https://www.wsetglobal.com/knowledge-centre/blog/2023/july/13/four-rules-to-masterful-food-and-wine-pairing"
+    },
+    {
+      "q": "A guest orders a goat's cheese salad and says, \"Red wine goes with cheese, so I'll have the Cabernet.\" What is a more reliable suggestion?",
+      "opts": [
+        "A crisp, dry Sauvignon Blanc, such as Sancerre",
+        "A full-bodied, oaky red, such as a Napa Cabernet",
+        "A sweet fortified red, such as a ruby Port",
+        "A heavy, high-alcohol white with little acidity"
+      ],
+      "a": 0,
+      "why": "\"Red wine with cheese\" is not a reliable rule. Fresh goat's cheese is tangy and creamy, and a big tannic red can taste harsh with it. A crisp Sauvignon Blanc matches its tang; Sancerre with local Loire goat's cheese is a famous regional pairing.",
+      "deeper": "In a small 2016 sensory study in Dijon, France, the lead researcher summed it up: red wine can go really well or not so well with cheese, while white is less risky. For a mixed cheese board, a white is often the safer bet.",
+      "source": "https://www.npr.org/sections/thesalt/2016/11/08/501073142/pairing-wine-and-cheese-science-says-white-may-be-a-better-choice-than-red"
+    },
+    {
+      "q": "A guest orders a plate of Roquefort, a salty blue cheese, and asks for a wine. Which is the classic match?",
+      "opts": [
+        "A light, neutral, dry Pinot Grigio",
+        "A young, tannic Cabernet Sauvignon",
+        "A dry sparkling rosé, served well chilled",
+        "A sweet wine such as Sauternes"
+      ],
+      "a": 3,
+      "why": "Salty, pungent blue cheese is balanced by a sweet wine. The salt makes the wine feel less cloying and the sweetness tames the cheese's bite. Sauternes with Roquefort and Port with Stilton are classic examples.",
+      "deeper": "This is a contrast pairing: salt and sugar work together much like salted caramel. It is a good honest upsell at the cheese course, since a small glass of sweet wine is often all a table needs.",
+      "source": "https://www.matchingfoodandwine.com/news/pairings/the-best-wine-pairings-with-roquefort-and-a-sensational-whisky-match/"
+    }
+  ]
+}

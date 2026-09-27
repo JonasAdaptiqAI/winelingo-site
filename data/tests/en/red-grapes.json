@@ -1,0 +1,138 @@
+{
+  "slug": "red-grapes",
+  "title": "Red grapes",
+  "summary": "Know the ten red grapes every list is built on, from light to full, and which grape hides behind Barolo, Rioja, Chianti and Beaujolais.",
+  "level": 1,
+  "questions": [
+    {
+      "q": "A guest loves Pinot Noir but wants something similar that is usually better value. What is a good suggestion?",
+      "opts": [
+        "A Barossa Valley Shiraz from South Australia",
+        "A cru Beaujolais such as Morgon or Fleurie",
+        "A Napa Valley Cabernet Sauvignon",
+        "An Argentine Malbec from Mendoza"
+      ],
+      "a": 1,
+      "why": "Beaujolais is made from Gamay, which, like Pinot Noir, is thin-skinned and makes light, low-tannin reds with bright red fruit and fresh acidity. The ten named \"cru\" villages, such as Morgon and Fleurie, make the most serious versions. The other options are all much fuller and more tannic.",
+      "deeper": "Beaujolais sits at the southern end of greater Burgundy, the home of Pinot Noir. Many Beaujolais are made from whole, uncrushed bunches (carbonic or semi-carbonic maceration), which gives juicy, fruity wines with little tannin. Light Beaujolais is often served a little cooler than other reds.",
+      "source": "https://en.wikipedia.org/wiki/Beaujolais"
+    },
+    {
+      "q": "A guest looks at a glass of Barolo and says: \"It's so pale, it must be a light wine.\" What do you tell them?",
+      "opts": [
+        "Yes, Barolo is a light, simple and easy-drinking red",
+        "Barolo is pale because it is actually a rosé wine",
+        "It is pale because Barolo is blended with white grapes",
+        "Barolo's Nebbiolo is pale but high in tannin and acid"
+      ],
+      "a": 3,
+      "why": "Barolo is 100% Nebbiolo. Nebbiolo is the classic case where colour misleads: the wine looks light and orange-tinged, but it grips your mouth with strong tannin and high acidity. It needs food, ideally rich meat dishes, mushrooms or truffles.",
+      "deeper": "Nebbiolo is famous for aromas of \"tar and roses\". Barbaresco, from the same part of Piedmont, is also Nebbiolo. By law, Barolo must be aged for at least 38 months (just over three years) before release, at least 18 months of it in wood.",
+      "source": "https://italianwinecentral.com/denomination/barolo-docg/"
+    },
+    {
+      "q": "Which grape usually makes up most of the blend in red Rioja?",
+      "opts": [
+        "Tempranillo",
+        "Garnacha (Grenache)",
+        "Merlot",
+        "Sangiovese"
+      ],
+      "a": 0,
+      "why": "Red Rioja is mainly Tempranillo, which gives red and black cherry fruit and medium to high tannin. Rioja is known for oak ageing, which adds vanilla, coconut and spice. The words Crianza, Reserva and Gran Reserva on the label tell you how long the wine was aged, from least to most.",
+      "deeper": "Garnacha, Graciano and Mazuelo (Carignan) are the traditional supporting grapes. Tempranillo makes up the large majority of red plantings in Rioja. Service tip: a guest who likes soft, oaky reds will often enjoy a Reserva.",
+      "source": "https://en.wikipedia.org/wiki/Rioja_(wine)"
+    },
+    {
+      "q": "A table has ordered pasta with tomato sauce and asks for an Italian red. Which grape, the main grape of Chianti, is a natural match?",
+      "opts": [
+        "Nebbiolo",
+        "Pinot Noir",
+        "Sangiovese",
+        "Malbec"
+      ],
+      "a": 2,
+      "why": "Chianti is made mainly from Sangiovese. Sangiovese has high acidity and cherry and herbal flavours. Tomato sauce is also acidic, and a high-acid wine stays fresh next to it, while a low-acid wine would taste flat.",
+      "deeper": "Chianti Classico, the historic heart of the Chianti area, must contain at least 80% Sangiovese. Brunello di Montalcino, also in Tuscany, is made from 100% Sangiovese.",
+      "source": "https://www.chianticlassico.com/wp-content/uploads/2020/11/disciplinare-Chianti-Classico.pdf"
+    },
+    {
+      "q": "A guest asks: \"What's the difference between Syrah and Shiraz?\"",
+      "opts": [
+        "Syrah is a red grape and Shiraz is a white one",
+        "The same grape; 'Shiraz' is the Australian name for it",
+        "Shiraz is a blend of Syrah and Grenache from Australia",
+        "They are unrelated grapes that just happen to sound alike"
+      ],
+      "a": 1,
+      "why": "Syrah and Shiraz are the same grape. Europe mostly says Syrah, while Australia (and often South Africa) says Shiraz. Warm-climate Shiraz (for example Barossa) tends to be full-bodied and ripe with dark, jammy fruit; cooler Syrah is more savoury, with blackberry and black pepper notes.",
+      "deeper": "The grape's classic home is the northern Rhône in France, in wines such as Hermitage, Côte-Rôtie and Cornas. Some producers outside Australia use the name on the label to signal the style they are aiming for.",
+      "source": "https://en.wikipedia.org/wiki/Syrah"
+    },
+    {
+      "q": "A guest ordering a steak wants a dark, full, fruity red with soft tannins, \"like the ones from Argentina\". Which grape are they most likely thinking of?",
+      "opts": [
+        "Malbec",
+        "Gamay",
+        "Pinot Noir",
+        "Nebbiolo"
+      ],
+      "a": 0,
+      "why": "Malbec is Argentina's signature grape, especially from Mendoza. It gives deep-coloured wines with ripe plum and blackberry fruit and a soft, velvety texture. That combination is a crowd-pleaser with grilled beef.",
+      "deeper": "Malbec originally comes from France. In Cahors, in the southwest, where it is also known as Côt, it makes darker, firmer, more rustic wines. It was once common in Bordeaux too, but plantings there dropped sharply after the 1956 frost.",
+      "source": "https://en.wikipedia.org/wiki/Malbec"
+    },
+    {
+      "q": "Which grape is usually the main grape in red Châteauneuf-du-Pape?",
+      "opts": [
+        "Cabernet Sauvignon",
+        "Pinot Noir",
+        "Tempranillo",
+        "Grenache"
+      ],
+      "a": 3,
+      "why": "Grenache dominates red Châteauneuf-du-Pape in the southern Rhône, usually blended with Syrah and Mourvèdre. Grenache gives ripe strawberry and raspberry fruit, a spicy edge, soft tannins and often high alcohol.",
+      "deeper": "In Spain the grape is called Garnacha, and old vines in Priorat make dense, powerful reds. Because Grenache has thin, pale skins, it is also a favourite for rosé, for example in Tavel and Provence.",
+      "source": "https://en.wikipedia.org/wiki/Ch%C3%A2teauneuf-du-Pape_AOC"
+    },
+    {
+      "q": "A guest asks what grape is in a Pauillac, from Bordeaux's Left Bank. What is the best answer?",
+      "opts": [
+        "Mainly Merlot, blended with Cabernet Franc",
+        "Only Pinot Noir, the same grape as red Burgundy",
+        "Mainly Cabernet Sauvignon, blended with Merlot",
+        "Mainly Syrah, blended with Grenache and Mourvèdre"
+      ],
+      "a": 2,
+      "why": "On Bordeaux's Left Bank (the Médoc, including Pauillac), Cabernet Sauvignon usually leads the blend. Cabernet has thick skins, so it gives full-bodied wines with firm tannin and blackcurrant flavour. Bordeaux labels name the place, not the grapes, so this is worth knowing.",
+      "deeper": "DNA research in the 1990s showed that Cabernet Sauvignon is a natural cross of Cabernet Franc and Sauvignon Blanc, probably from southwest France. Its tannin and acidity are why top Left Bank Bordeaux can age for decades.",
+      "source": "https://en.wikipedia.org/wiki/Bordeaux_wine"
+    },
+    {
+      "q": "A guest wants a Bordeaux-style red but says Cabernet Sauvignon is \"too harsh and drying\" for them. What is a good suggestion?",
+      "opts": [
+        "A Barolo, the famous red wine from Piedmont",
+        "A Merlot-based Saint-Émilion or Pomerol",
+        "A young Nebbiolo from northern Italy",
+        "A Cabernet from a very cool vintage"
+      ],
+      "a": 1,
+      "why": "Merlot is softer, rounder and less tannic than Cabernet Sauvignon, with plum and red-berry fruit. On Bordeaux's Right Bank (Saint-Émilion, Pomerol) Merlot usually leads the blend. The drying feeling the guest describes is tannin, and Barolo or young Nebbiolo would have even more.",
+      "deeper": "Merlot and Cabernet are blended so often because they complement each other: Cabernet brings structure, Merlot brings flesh and softness. In Pomerol, clay soils give Merlot extra backbone, and some of the world's most famous wines there are almost entirely Merlot.",
+      "source": "https://en.wikipedia.org/wiki/Merlot"
+    },
+    {
+      "q": "A guest asks you to rank three reds from lightest to fullest body. Which order is typically right?",
+      "opts": [
+        "Pinot Noir, Merlot, Cabernet Sauvignon",
+        "Cabernet Sauvignon, Merlot, Pinot Noir",
+        "Merlot, Pinot Noir, Cabernet Sauvignon",
+        "Pinot Noir, Cabernet Sauvignon, Merlot"
+      ],
+      "a": 0,
+      "why": "Pinot Noir is thin-skinned and makes light-coloured, low-tannin, light- to medium-bodied reds. Merlot is softer and fleshier but fuller. Cabernet Sauvignon, with its thick skins, is usually the fullest and most tannic of the three.",
+      "deeper": "Climate and winemaking can shift this: a ripe, oaky Pinot from a warm region can be fuller than a lean, cool-climate Merlot. As a rough light-to-full ladder: Gamay and Pinot Noir; then Grenache, Sangiovese, Tempranillo and Merlot; then Nebbiolo, Syrah, Malbec and Cabernet Sauvignon.",
+      "source": "https://en.wikipedia.org/wiki/Pinot_noir"
+    }
+  ]
+}

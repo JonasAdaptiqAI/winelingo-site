@@ -1,0 +1,128 @@
+{
+  "slug": "food-and-wine",
+  "title": "Mad og vin",
+  "summary": "Brug en håndfuld enkle principper for mad og vin til at foreslå en vin, der får både retten og glasset til at smage bedre.",
+  "level": 2,
+  "questions": [
+    {
+      "q": "En gæst bestiller friturestegt blæksprutte med et skvæt citron og vil have en hvidvin. Hvilken stil fungerer bedst?",
+      "opts": [
+        "En fyldig hvidvin med meget fad og lav syre",
+        "En sprød hvidvin med høj syre og uden fad",
+        "En sød dessertvin med lav syre",
+        "En hvidvin med høj alkohol og meget lidt friskhed"
+      ],
+      "a": 1,
+      "why": "Friturestegt, salt mad har brug for syre. En sprød hvidvin skærer gennem olien og frisker munden op ligesom et skvæt citron. Citronen på tallerkenen får også en vin med høj syre til at føles blødere og rundere.",
+      "deeper": "Syre i maden sænker den syre, du oplever i vinen. Derfor kan en meget skarp vin, der virker for syrlig alene, smage afbalanceret ved siden af en ret med citron eller eddike."
+    },
+    {
+      "q": "En gæst, der bestiller en fed ribeye, spørger, hvorfor man foreslår en fast rødvin med meget tannin, som en ung Cabernet Sauvignon, til bøf. Hvad siger du?",
+      "opts": [
+        "Bøffen får vinen til at smage sødere og mere frugtig, end den er",
+        "Rødvin passer altid til rødt kød, uanset stil og fylde",
+        "Vinens høje alkohol opløser fedtet og ophæver det",
+        "Fedt, protein og salt i bøffen blødgør tanninen"
+      ],
+      "a": 3,
+      "why": "Tannin er den tørre, snerpende fornemmelse i rødvin. Fedt, protein og salt i kødet blødgør det greb, så vinen smager blødere. Samtidig frisker vinens syre og tannin munden op mellem de fede bidder.",
+      "deeper": "Den samme vin med meget tannin kan smage hård til en mager ret og blød til en fed. Synes en gæst, at en kraftig rødvin er for udtørrende alene, så foreslå at smage den igen sammen med en bid af bøffen."
+    },
+    {
+      "q": "En gæst vil blive ved med at drikke sin tørre Brut Champagne til en sød chokoladedessert. Hvad sker der sandsynligvis med vinen?",
+      "opts": [
+        "Den vil smage tyndere, skarpere og mere bitter",
+        "Den vil smage sødere, fyldigere og rundere",
+        "Den vil smage fuldstændig ligesom før",
+        "Den vil miste boblerne meget hurtigere i glasset"
+      ],
+      "a": 0,
+      "why": "Sød mad får en vin til at smage mindre sød og mindre frugtig og mere syrlig og bitter. En tør vin ved siden af en sød dessert kan smage sur og tynd. Tommelfingerreglen er, at vinen skal være mindst lige så sød som desserten.",
+      "deeper": "En god sætning: \"Champagnen er dejlig, men desserten får den til at smage skarp. Et lille glas dessertvin ville passe rigtig godt til den.\" Det er ærligt mersalg, der gør måltidet bedre."
+    },
+    {
+      "q": "En gæst bestiller en meget stærk chiliret og beder om en rødvin på 15 % med meget tannin. Hvad skal du venligt advare om?",
+      "opts": [
+        "Vinen vil smage sødere, blødere og mere frugtig",
+        "Chiliens styrke forsvinder med hver slurk",
+        "Vinen vil smage varmere, mere bitter og udtørrende",
+        "Ingenting, for kraftig vin og kraftig mad passer altid sammen"
+      ],
+      "a": 2,
+      "why": "Chili får alkohol til at føles varmere og tannin til at føles mere bitter og udtørrende. Den tager også frugt og sødme fra vinen. En vin med lavere alkohol, frugt og en anelse sødme er som regel langt mere behagelig.",
+      "deeper": "Det virker begge veje: høj alkohol får også chilien til at føles stærkere. Insisterer gæsten på rødvin, så styr dem mod en saftig stil med lidt tannin og lavere alkohol frem for en stor rødvin med meget fad."
+    },
+    {
+      "q": "En gæst bestiller grillet laks, men drikker kun rødvin. Hvad er det bedste forslag?",
+      "opts": [
+        "En fyldig rødvin med meget tannin, fx en ung Barolo",
+        "En let rødvin med lidt tannin, serveret let kølig",
+        "En sød rød dessertvin, fx ruby Port",
+        "Sig, at rødvin aldrig passer til fisk"
+      ],
+      "a": 1,
+      "why": "\"Rødvin til fisk\" kan fungere, når fisken er kødfuld og rødvinen er let. Store rødvine med meget tannin smager tit hårde eller metalliske til fisk, så en rødvin med lidt tannin og frisk syre er det sikre valg. Pinot Noir eller Gamay er almindelige valg til laks eller tun.",
+      "deeper": "Et japansk studie fra 2009 af 64 vine, smagt til kammuslinger, viste, at vinene med mere jern gav en stærkere fiskeagtig eftersmag. Det var jernindholdet, ikke bare farven, der betød noget, og derfor fungerer nogle rødvine til skaldyr og andre ikke."
+    },
+    {
+      "q": "Et bord bestiller salte, friturestegte snacks og en flaske Champagne. Hvorfor er det så godt et match?",
+      "opts": [
+        "Salt blødgør vinen; syre og bobler skærer gennem fedtet",
+        "Boblerne får den salte mad til at smage sødere og lettere",
+        "Salt får vinen til at smage mere bitter, hvilket balancerer fedtet",
+        "Det er det ikke; mousserende vin hører kun til dessert"
+      ],
+      "a": 0,
+      "why": "Salt får vin til at smage blødere og fyldigere og mindre bitter eller skarp, så det klæder næsten enhver vin. Mousserende vin giver høj syre og bobler, der skrubber olien væk fra ganen. Derfor er chips, friturestegt kylling og Champagne så populær en kombination.",
+      "deeper": "Salt er en af de mest vinvenlige smage i mad. Meget tørre vine med høj syre, som kan virke stramme alene, skinner tit ved siden af salte retter."
+    },
+    {
+      "q": "En gæst bestiller choucroute garnie, Alsace-retten med surkål, pølser og svinekød, og spørger, hvad de skal drikke. Efter princippet \"det, der gror sammen, passer sammen\", hvad foreslår du?",
+      "opts": [
+        "En stor, moden Shiraz fra Australiens Barossa Valley",
+        "En sød årgangsportvin fra Portugals Douro-dal",
+        "En Chardonnay fra Californien med meget fad",
+        "En tør hvidvin fra Alsace, fx Riesling"
+      ],
+      "a": 3,
+      "why": "\"Det, der gror sammen, passer sammen\" betyder, at man parrer en ret med vin fra samme område. Lokal mad og vin er vokset op side om side, så de passer tit til hinanden. En tør Riesling fra Alsace har syren til at skære gennem svinefedtet og klare den syrlige surkål.",
+      "deeper": "Det er en nyttig genvej, når du ikke kender en ret godt: find ud af, hvor den kommer fra, og tilbyd en vin derfra. Det er et udgangspunkt, ikke en garanti, og det virker bedst til traditionel, regional mad fra vinområder."
+    },
+    {
+      "q": "To gæster deler én flaske: den ene bestiller grillet fisk, den anden en bøf. Hvilken flaske er det bedste kompromis?",
+      "opts": [
+        "En ung Cabernet Sauvignon med meget tannin",
+        "En sød, let perlende Moscato d'Asti",
+        "En tør rosé eller let rødvin med lidt tannin",
+        "En meget let, neutral hvidvin med næsten ingen fylde"
+      ],
+      "a": 2,
+      "why": "Du skal bruge en vin i midten: fylde og smag nok til bøffen, men ikke så meget tannin, at den kolliderer med fisken. En tør rosé eller en let rødvin med frisk syre bygger bro mellem begge tallerkener.",
+      "deeper": "En anden mulighed er at tilbyde vin pr. glas, så hver gæst får sit eget match. Når retterne ligger langt fra hinanden, er det god service at nævne det, ikke påtrængende."
+    },
+    {
+      "q": "En gæst bestiller en salat med gedeost og siger: \"Rødvin passer til ost, så jeg tager Cabernet'en.\" Hvad er et mere sikkert forslag?",
+      "opts": [
+        "En sprød, tør Sauvignon Blanc, fx Sancerre",
+        "En fyldig rødvin med meget fad, fx en Cabernet fra Napa",
+        "En sød rød hedvin, fx ruby Port",
+        "En tung hvidvin med høj alkohol og lidt syre"
+      ],
+      "a": 0,
+      "why": "\"Rødvin til ost\" er ikke en pålidelig regel. Frisk gedeost er syrlig og cremet, og en stor rødvin med meget tannin kan smage hård til den. En sprød Sauvignon Blanc matcher syrligheden. Sancerre med lokal gedeost fra Loire er et berømt regionalt match.",
+      "deeper": "I et lille smagsstudie fra 2016 i Dijon i Frankrig opsummerede den ledende forsker det sådan: rødvin kan passe rigtig godt eller knap så godt til ost, mens hvidvin er mindre risikabelt. Til et blandet ostebord er en hvidvin tit det sikreste valg."
+    },
+    {
+      "q": "En gæst bestiller en tallerken Roquefort, en salt blåskimmelost, og beder om en vin. Hvad er det klassiske match?",
+      "opts": [
+        "En let, neutral, tør Pinot Grigio",
+        "En ung Cabernet Sauvignon med meget tannin",
+        "En tør mousserende rosé, serveret godt kølet",
+        "En sød vin som Sauternes"
+      ],
+      "a": 3,
+      "why": "Salt, kraftig blåskimmelost balanceres af en sød vin. Saltet får vinen til at føles mindre klistret, og sødmen tæmmer ostens bid. Sauternes til Roquefort og Port til Stilton er klassiske eksempler.",
+      "deeper": "Det er et kontrastmatch: salt og sukker arbejder sammen, lidt ligesom saltkaramel. Det er godt og ærligt mersalg til osteretten, for et lille glas sød vin er tit alt, et bord har brug for."
+    }
+  ]
+}

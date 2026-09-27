@@ -1,0 +1,128 @@
+{
+  "slug": "serving-wine",
+  "title": "Wein servieren",
+  "summary": "Serviere jede Flasche mit Sicherheit: das richtige Glas, die richtige Temperatur, sauberes Öffnen und die richtige Reihenfolge am Tisch.",
+  "level": 1,
+  "questions": [
+    {
+      "q": "Ein Tisch bestellt eine Flasche kräftigen Cabernet Sauvignon. Welches Glas bringst du?",
+      "opts": [
+        "Eine schmale Champagnerflöte",
+        "Ein kleines Weißweinglas mit schmalem Kelch",
+        "Ein großes Glas mit bauchigem Kelch",
+        "Einen niedrigen Tumbler"
+      ],
+      "a": 2,
+      "why": "Kräftige Rotweine serviert man in Gläsern mit großem Kelch. Der zusätzliche Raum lässt dich den Wein schwenken, damit er Luft bekommt, und die Aromen können sich über dem Wein sammeln.",
+      "deeper": "Weißweine kommen meist in kleinere Kelche, die sie kühler halten und ihre frischeren Aromen bündeln. Hat dein Betrieb nur ein Universalglas, funktioniert eine mittelgroße Tulpenform für fast alles ganz ordentlich."
+    },
+    {
+      "q": "Ein Gast möchte seinen kräftigen Rotwein auf „Zimmertemperatur“. Welcher Temperaturbereich passt am besten zu einem vollmundigen Rotwein?",
+      "opts": [
+        "Kühlschrankkalt, 4–6 °C",
+        "Leicht kühl, etwa 15–18 °C",
+        "Warme Raumtemperatur, 22–24 °C",
+        "Knapp unter dem Gefrierpunkt, 0–2 °C"
+      ],
+      "a": 1,
+      "why": "„Zimmertemperatur“ stammt aus der Zeit kühler, ungeheizter Räume, nicht aus einem warmen modernen Restaurant. Zu warm serviert schmeckt ein Rotwein plump und der Alkohol brennt; leicht kühl bleibt er frisch.",
+      "deeper": "Leichtere Rotweine wie Pinot Noir oder Gamay sind etwas kühler schöner, um 12–14 °C. Ist eine Rotweinflasche zu warm, helfen 10–15 Minuten im Kühlschrank oder im Eiskübel; sag dem Gast: „Ich kühle ihn kurz ein bisschen herunter, dann zeigt er sich von seiner besten Seite.“"
+    },
+    {
+      "q": "Welcher dieser Weine sollte am kältesten serviert werden?",
+      "opts": [
+        "Prosecco",
+        "Ein im Holz ausgebauter, vollmundiger Chardonnay",
+        "Pinot Noir",
+        "Cabernet Sauvignon"
+      ],
+      "a": 0,
+      "why": "Schaumweine und leichte, frische Weißweine serviert man am kältesten, gut gekühlt (etwa 6–10 °C). Die Kälte hält die Perlage fein und den Wein erfrischend. Vollere Weißweine wie ein Chardonnay aus dem Holz serviert man etwas wärmer, Rotweine noch wärmer.",
+      "deeper": "Eine grobe Leiter: Schaumwein und leichte Weißweine am kältesten, dann Rosé und vollmundige Weißweine, dann leichte Rotweine, dann kräftige Rotweine. Hochwertiger Schaumwein, etwa Jahrgangschampagner, zeigt mehr Aroma, wenn er sich im Glas etwas erwärmen darf."
+    },
+    {
+      "q": "Du kommst mit der bestellten Flasche an den Tisch. Was machst du, bevor du sie öffnest?",
+      "opts": [
+        "Sie an der Bar öffnen, damit der Gast nur das eingeschenkte Glas sieht",
+        "Allen am Tisch einen Probeschluck einschenken",
+        "Das Etikett entfernen, damit es ordentlicher aussieht",
+        "Dem Besteller das Etikett zeigen und bestätigen, dass Wein und Jahrgang stimmen"
+      ],
+      "a": 3,
+      "why": "Durch das Präsentieren der Flasche kann der Gastgeber prüfen, ob es genau der bestellte Wein ist, inklusive Jahrgang, bevor irgendetwas geöffnet wird. Das vermeidet Fehler und zeigt Respekt gegenüber dem Gast.",
+      "deeper": "Halte die Flasche von unten, das Etikett zum Gastgeber gedreht, und nenne sie laut, zum Beispiel „der Rioja Crianza 2020“. Jahrgänge auf der Weinkarte ändern sich manchmal, also ist das der Moment, darauf hinzuweisen, wenn das Jahr von der Karte abweicht."
+    },
+    {
+      "q": "Wie öffnest du eine Flasche Champagner am Tisch am sichersten?",
+      "opts": [
+        "Das Drahtkörbchen (Agraffe) abnehmen und den Korken mit beiden Daumen hochdrücken",
+        "Die Hand fest auf Korken und Agraffe halten, die Flasche von Personen weg neigen und die Flasche drehen, nicht den Korken",
+        "Die Flasche vorher leicht schütteln, damit sie leichter aufgeht",
+        "Den Korken gerade nach oben richten und knallen lassen"
+      ],
+      "a": 1,
+      "why": "Der Druck in der Flasche kann einen Korken so stark herausschießen, dass jemand verletzt wird. Halte die ganze Zeit den Daumen oder eine Serviette auf dem Korken, neige die Flasche von Personen weg und drehe langsam die Flasche, während du den Korken festhältst.",
+      "deeper": "Ziel ist ein leises Seufzen, kein lauter Knall: Ein Knall verschwendet Kohlensäure und kann Wein verschütten. Die Flasche sollte gut gekühlt sein, denn eine warme Flasche knallt eher unerwartet."
+    },
+    {
+      "q": "Ein Gast bestellt einen jungen, kraftvollen Cabernet Sauvignon und fragt, ob man ihn dekantieren sollte. Warum könntest du es vorschlagen?",
+      "opts": [
+        "Luft öffnet einen jungen, tanninreichen Rotwein und macht ihn weicher",
+        "Dekantieren entfernt den Alkohol aus dem Wein",
+        "Dekantieren macht den Wein spürbar süßer",
+        "Junge Weine haben immer sehr viel Depot"
+      ],
+      "a": 0,
+      "why": "Wenn du einen jungen, tanninreichen Rotwein in eine Karaffe umfüllst, kommt er mit Luft in Kontakt. Das hilft den Aromen, sich zu öffnen, und kann die Tannine geschmeidiger wirken lassen.",
+      "deeper": "Typische Kandidaten sind junger Cabernet Sauvignon, Tempranillo und andere kräftige Rotweine. Schon 30 Minuten bis eine Stunde in der Karaffe können einen deutlichen Unterschied machen; biete es so an: „Der ist noch recht jung; soll ich ihn für Sie dekantieren, damit er sich öffnet?“"
+    },
+    {
+      "q": "Ein Gast bestellt einen 20 Jahre alten Rotwein mit Depot in der Flasche. Wie dekantierst du ihn?",
+      "opts": [
+        "Schütteln, damit sich das Depot wieder verteilt, dann zügig einschenken",
+        "Am Tisch durch einen Kaffeefilter aus Papier gießen",
+        "Vorher aufrecht stellen, dann langsam gießen und aufhören, wenn das Depot den Hals erreicht",
+        "Vor dem Servieren mehrere Stunden in der Karaffe stehen lassen"
+      ],
+      "a": 2,
+      "why": "Bei einem alten Wein geht es darum, den klaren Wein vom körnigen Depot zu trennen. Steht die Flasche aufrecht, setzt sich das Depot ab, und wenn du langsam und gleichmäßig gießt, siehst du es kommen und kannst rechtzeitig stoppen.",
+      "deeper": "Stell die Flasche am besten einen Tag oder länger vor dem Öffnen aufrecht hin. Ein Licht (Kerze oder Taschenlampe) unter dem Flaschenhals macht das Depot gut sichtbar. Alte Weine können empfindlich sein, also dekantiere kurz vor dem Servieren (etwa 30 Minuten) statt Stunden vorher, sonst können die Aromen verblassen."
+    },
+    {
+      "q": "Dein Betrieb schenkt 150 ml pro Glas aus. Wie viele Gläser bekommst du aus einer normalen 750-ml-Flasche?",
+      "opts": [
+        "3",
+        "4",
+        "6",
+        "5"
+      ],
+      "a": 3,
+      "why": "750 ml geteilt durch 150 ml ergibt 5 Gläser. Wenn du das weißt, kannst du einem Tisch sagen, ob eine Flasche für alle reicht.",
+      "deeper": "150 ml gelten vielerorts als Standardglas, aber das ist von Betrieb zu Betrieb verschieden; bei 125 ml sind es 6 Gläser, bei 175 ml etwas mehr als 4. Wenn du eine Flasche für einen Tisch einschenkst, verteile sie gleichmäßig, damit der letzte Gast nicht mit einem halbvollen Glas dasitzt."
+    },
+    {
+      "q": "Ein Tisch hat einen Sancerre (trockener Weißwein), einen Barolo (kraftvoller Rotwein) und einen Sauternes (Süßwein) bestellt. In welcher Reihenfolge servierst du sie nach der klassischen Faustregel?",
+      "opts": [
+        "Barolo, Sancerre, Sauternes",
+        "Sauternes, Sancerre, Barolo",
+        "Sancerre, Barolo, Sauternes",
+        "Barolo, Sauternes, Sancerre"
+      ],
+      "a": 2,
+      "why": "Die übliche Reihenfolge ist leicht vor schwer, weiß vor rot und trocken vor süß. Ein Süßwein zuerst würde die trockenen Weine danach sauer und dünn schmecken lassen.",
+      "deeper": "Eine komplette Abfolge sieht oft so aus: Schaumwein, trockene Weißweine, Rosé, leichtere Rotweine, vollere Rotweine, dann süße oder aufgespritete Weine. Es gibt klassische Ausnahmen, etwa ein Glas Sauternes zur Foie gras als Vorspeise; wünscht der Gastgeber eine andere Reihenfolge, richte dich danach."
+    },
+    {
+      "q": "Bei Feierabend ist noch eine halbe Flasche Rotwein übrig, die morgen glasweise ausgeschenkt werden soll. Wie bewahrst du sie am besten auf?",
+      "opts": [
+        "Wieder verschließen und im Kühlschrank lagern",
+        "Offen auf der Bar stehen lassen, damit er atmen kann",
+        "Wieder verschließen und auf einem warmen Regal hinter der Bar aufbewahren",
+        "In eine Karaffe füllen und über Nacht stehen lassen"
+      ],
+      "a": 0,
+      "why": "Sauerstoff und Wärme lassen geöffneten Wein schal werden. Verschließen und Kühlen bremst das, und zwar auch bei Rotwein. Lass einen Rotwein vor dem Servieren etwas wärmer werden.",
+      "deeper": "Als grobe Richtlinie bleiben die meisten geöffneten Rotweine verschlossen im Kühlschrank etwa 3–5 Tage gut, leichte Weißweine und Rosés bis zu etwa einer Woche und Schaumwein 1–3 Tage mit einem richtigen Schaumweinverschluss. Probiere eine geöffnete Flasche immer, bevor du einem Gast daraus einschenkst."
+    }
+  ]
+}
