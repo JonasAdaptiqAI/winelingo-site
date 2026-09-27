@@ -14,7 +14,11 @@
 // data-demo (use built-in sample data, for previews only — never on a live page).
 //
 // Data contract (GET {endpoint}?site={site}):
-//   { visitors: number, active: number, countries: [{ code: "DK", visitors: 12 }] }
+//   { visitors: number, active: number, countries: [{ code: "DK", visitors: 12 }],
+//     downloads?: { total: number, countries: [{ code: "US", downloads: 3 }] } }
+// Visits are filled glowing dots; App Store downloads are rings (drawn around the
+// dot when a country has both). Extra fields: data-vg="downloads" / "download-countries",
+// data-vg-unit="downloads", and data-vg-when-downloads (hidden until there is one).
 
 import { geoOrthographic, geoPath, geoGraticule10, geoDistance } from "d3-geo";
 import { feature } from "topojson-client";
@@ -27,9 +31,9 @@ const sphere = { type: "Sphere" };
 
 const THEMES = {
   // Winelingo: warm and light, burgundy leads, gold is a thin accent line.
-  light: { ocean: "#FBF7F4", oceanEdge: "#F3ECE3", land: "#E9DCCF", grid: "rgba(123,30,59,0.07)", dot: "#7B1E3B", rim: "rgba(201,162,74,0.55)" },
+  light: { ocean: "#FBF7F4", oceanEdge: "#F3ECE3", land: "#E9DCCF", grid: "rgba(123,30,59,0.07)", dot: "#7B1E3B", ring: "#7B1E3B", rim: "rgba(201,162,74,0.55)" },
   // The dark shell from the reference: graphite globe, gold dots.
-  dark: { ocean: "#15141A", oceanEdge: "#0C0B10", land: "#2A2833", grid: "rgba(255,255,255,0.05)", dot: "#F5B321", rim: "rgba(245,179,33,0.45)", halo: "rgba(245,179,33,0.22)" },
+  dark: { ocean: "#15141A", oceanEdge: "#0C0B10", land: "#2A2833", grid: "rgba(255,255,255,0.05)", dot: "#F5B321", ring: "#FFE2A0", rim: "rgba(245,179,33,0.45)", halo: "rgba(245,179,33,0.22)" },
 };
 
 const DEMO = {
@@ -39,6 +43,7 @@ const DEMO = {
     { code: "DE", visitors: 90 }, { code: "SE", visitors: 60 }, { code: "BR", visitors: 25 },
     { code: "AU", visitors: 20 }, { code: "ES", visitors: 30 }, { code: "FR", visitors: 45 },
   ],
+  downloads: { total: 9, countries: [{ code: "US", downloads: 3 }, { code: "DK", downloads: 2 }, { code: "AR", downloads: 1 }, { code: "FR", downloads: 1 }, { code: "CA", downloads: 2 }] },
 };
 
 function hexToRgb(c) {
@@ -60,17 +65,20 @@ function fill(root, data) {
     else if (k === "countries") el.textContent = fmt(data.countries.length);
   }
   for (const el of scope.querySelectorAll("[data-vg-when-active]")) el.hidden = !(data.active > 0);
-  const counts = { visitors: data.visitors, active: data.active, countries: data.countries.length };
+  for (const el of scope.querySelectorAll("[data-vg-when-downloads]")) el.hidden = !(data.downloads > 0);
+  for (const el of scope.querySelectorAll('[data-vg="downloads"]')) el.textContent = fmt(data.downloads);
+  for (const el of scope.querySelectorAll('[data-vg="download-countries"]')) el.textContent = fmt(data.downloadCountries);
+  const counts = { visitors: data.visitors, active: data.active, countries: data.countries.length, downloads: data.downloads, "download-countries": data.downloadCountries };
   for (const el of scope.querySelectorAll("[data-vg-unit]")) {
     const n = counts[el.getAttribute("data-vg-unit")] ?? 0;
     el.textContent = n === 1 ? el.getAttribute("data-one") ?? "" : el.getAttribute("data-many") ?? "";
   }
-  if (data.visitors > 0) scope.querySelectorAll("[data-vg-ready]").forEach((el) => el.setAttribute("data-vg-ready", "true"));
+  if (data.visitors > 0 || data.downloads > 0) scope.querySelectorAll("[data-vg-ready]").forEach((el) => el.setAttribute("data-vg-ready", "true"));
 }
 
 function mount(root) {
   const t = { ...(THEMES[root.dataset.theme] || THEMES.dark) };
-  for (const k of ["land", "ocean", "grid", "dot", "rim", "halo"]) if (root.dataset[k]) t[k] = root.dataset[k];
+  for (const k of ["land", "ocean", "grid", "dot", "ring", "rim", "halo"]) if (root.dataset[k]) t[k] = root.dataset[k];
 
   const canvas = document.createElement("canvas");
   canvas.setAttribute("aria-hidden", "true");
@@ -82,7 +90,7 @@ function mount(root) {
   const projection = geoOrthographic().clipAngle(90).precision(0.6);
   const path = geoPath(projection, ctx);
   let rot = [-10, -22, 0]; // start over the Atlantic, tilted to show the north
-  let points = [];
+  let points = [], rings = [];
   let size = 0, dpr = 1, visible = false, raf = 0, last = 0, dragging = null;
 
   function resize() {
@@ -128,6 +136,19 @@ function mount(root) {
       ctx.fillStyle = rgba(t.dot, 0.95 * edge); ctx.beginPath(); ctx.arc(x, y, base, 0, 2 * Math.PI); ctx.fill();
     }
 
+    // Download rings: a thin circle, sized by downloads, around any visit dot there.
+    const maxD = rings.reduce((m, p) => Math.max(m, p.v), 1);
+    for (const p of rings) {
+      const d = geoDistance(p.ll, centre);
+      if (d > Math.PI / 2 - 0.02) continue;
+      const [x, y] = projection(p.ll);
+      const edge = Math.min(1, (Math.PI / 2 - d) / 0.35);
+      const dot = points.find((q) => q.ll[0] === p.ll[0] && q.ll[1] === p.ll[1]);
+      const inner = dot ? Math.max(2.2, Math.sqrt(dot.v / max) * size * 0.022) + 3 : 0;
+      const rad = Math.max(inner, 3.5 + Math.sqrt(p.v / maxD) * size * 0.018);
+      ctx.strokeStyle = rgba(t.ring, 0.9 * edge); ctx.lineWidth = Math.max(1.2, size * 0.004);
+      ctx.beginPath(); ctx.arc(x, y, rad, 0, 2 * Math.PI); ctx.stroke();
+    }
     ctx.restore();
 
     // Rim: a hairline in the accent colour.
@@ -162,9 +183,14 @@ function mount(root) {
       .map((c) => ({ ll: CENTROIDS[String(c.code || "").toUpperCase()], v: Number(c.visitors) || 0 }))
       .filter((p) => p.ll && p.v > 0)
       .map((p, i) => ({ ...p, ll: [p.ll[1], p.ll[0]], phase: i * 1.7 })); // table is [lat, lng]
+    rings = ((data.downloads && data.downloads.countries) || [])
+      .map((c) => ({ ll: CENTROIDS[String(c.code || "").toUpperCase()], v: Number(c.downloads) || 0 }))
+      .filter((p) => p.ll && p.v > 0)
+      .map((p) => ({ ...p, ll: [p.ll[1], p.ll[0]] }));
     // Reduced motion: no spin, so face the biggest audience instead of the Atlantic.
     if (reduced && points.length) { const top = points.reduce((a, b) => (b.v > a.v ? b : a)); rot = [-top.ll[0], -Math.max(-40, Math.min(40, top.ll[1])), 0]; }
-    fill(root, { visitors: data.visitors || 0, active: data.active || 0, countries: points });
+    fill(root, { visitors: data.visitors || 0, active: data.active || 0, countries: points,
+      downloads: (data.downloads && data.downloads.total) || 0, downloadCountries: rings.length });
     draw(performance.now());
   }
 

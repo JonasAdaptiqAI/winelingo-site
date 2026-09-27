@@ -683,11 +683,13 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
     <div class="globe-copy">
       <p class="eyebrow reveal">Around the world</p>
       <h2 class="reveal">Wine lovers, everywhere</h2>
-      <p class="reveal d1">People are reading winelingo.app from all over the map. Every glowing dot is a country a visit came from.</p>
+      <p class="reveal d1">People are reading winelingo.app from all over the map. Every glowing dot is a country a visit came from, and every ring a country someone downloaded the app in.</p>
       <div class="globe-stats" data-vg-ready="false">
         <p class="globe-big"><span data-vg="visitors"></span> <span data-vg-unit="visitors" data-one="visit" data-many="visits">visits</span></p>
         <p class="globe-sub">from <span data-vg="countries"></span> <span data-vg-unit="countries" data-one="country" data-many="countries">countries</span><span data-vg-when-active hidden> · <span data-vg="active"></span> here right now</span></p>
-        <p class="globe-note">Counted anonymously, one per browser session. We keep the country and the count, nothing else: no cookies, no IP addresses.</p>
+        <p class="globe-dl" data-vg-when-downloads hidden><span data-vg="downloads"></span> app <span data-vg-unit="downloads" data-one="download" data-many="downloads">downloads</span> from <span data-vg="download-countries"></span> <span data-vg-unit="download-countries" data-one="country" data-many="countries">countries</span></p>
+        <p class="globe-legend" data-vg-when-downloads hidden><span class="lg lg-dot" aria-hidden="true"></span>Site visits <span class="lg lg-ring" aria-hidden="true"></span>App downloads</p>
+        <p class="globe-note">Visits are counted anonymously, one per browser session: we keep the country and the count, nothing else. No cookies, no IP addresses. Downloads are first-time App Store downloads of Winelingo, from Apple’s daily report.</p>
       </div>
     </div>
     <div class="globe-canvas" data-visitor-globe data-theme="light" data-site="winelingo"
@@ -872,6 +874,6 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
   }
 
 </script>
-<script defer src="/assets/visitor-globe.js?v=2"></script>
+<script defer src="/assets/visitor-globe.js?v=3"></script>
 </body>
 </html>
