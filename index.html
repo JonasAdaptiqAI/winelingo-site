@@ -667,6 +667,24 @@ document.addEventListener('click',function(e){
   </div>
 </section>
 
+<!-- ============ VISITOR GLOBE (live Umami counts via the site-visitors function) ============ -->
+<section class="section globe-section" id="around-the-world" data-visitor-globe-scope>
+  <div class="wrap globe-grid">
+    <div class="globe-copy">
+      <p class="eyebrow reveal">Around the world</p>
+      <h2 class="reveal">Wine lovers, everywhere</h2>
+      <p class="reveal d1">People are reading winelingo.app from all over the map. Every glowing dot is a country someone visited from.</p>
+      <div class="globe-stats" data-vg-ready="false">
+        <p class="globe-big"><span data-vg="visitors"></span> visitors</p>
+        <p class="globe-sub">from <span data-vg="countries"></span> countries<span data-vg-when-active hidden> · <span data-vg="active"></span> here right now</span></p>
+        <p class="globe-note">Counted by privacy-friendly analytics since August 2026. No cookies, no personal data.</p>
+      </div>
+    </div>
+    <div class="globe-canvas" data-visitor-globe data-theme="light" data-site="winelingo"
+         data-endpoint="https://pzrqsjcpflvbgptppcep.supabase.co/functions/v1/site-visitors"></div>
+  </div>
+</section>
+
 <!-- ============ LEARN HUB TEASER ============ -->
 <section class="section" id="learn-teaser" style="padding-bottom:40px">
   <div class="wrap">
@@ -844,5 +862,6 @@ document.addEventListener('click',function(e){
   }
 
 </script>
+<script defer src="/assets/visitor-globe.js?v=1"></script>
 </body>
 </html>

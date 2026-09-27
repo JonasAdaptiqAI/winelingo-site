@@ -402,3 +402,22 @@ a.pairpill:hover{border-color:rgba(123,30,59,.35); color:var(--wine); text-decor
 .map-fig figcaption{margin-top:10px; font-size:13.5px; color:var(--muted)}
 .map-fig .swipe{display:none}
 @media (max-width:647px){ .map-fig .swipe{display:inline} }
+
+/* ============ Visitor globe (assets/visitor-globe.js) ============ */
+.globe-section{padding:72px 0}
+.globe-grid{display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center}
+.globe-copy h2{font-size:clamp(30px,4.4vw,46px); color:var(--wine-deep)}
+.globe-copy > p:not(.eyebrow){color:var(--sec); font-size:18px; margin-top:16px; max-width:46ch}
+.globe-canvas{width:100%; max-width:460px; aspect-ratio:1; margin:0 auto}
+.globe-stats{margin-top:28px; transition:opacity .6s ease}
+.globe-stats[data-vg-ready="false"]{opacity:0}
+.globe-big{font-family:var(--font-display); font-size:clamp(34px,4.6vw,48px); font-weight:600; color:var(--wine-deep); letter-spacing:-.02em; line-height:1.05; margin:0}
+.globe-sub{color:var(--sec); font-size:16px; margin:8px 0 0}
+.globe-note{color:var(--muted); font-size:13px; margin:14px 0 0}
+@media (max-width:820px){
+  .globe-grid{grid-template-columns:1fr; gap:28px; text-align:center}
+  .globe-copy > p:not(.eyebrow){margin-left:auto; margin-right:auto}
+  .globe-copy .eyebrow{justify-content:center}
+  .globe-canvas{max-width:340px}
+}
+@media (prefers-reduced-motion:reduce){.globe-stats{transition:none}}
