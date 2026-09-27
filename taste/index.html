@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6785896824">
+<!-- Taste Together table links (winelingo.app/taste/?c=CODE) — personal and short-lived; never index them. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Join the tasting at your table — Winelingo</title>
+<meta name="description" content="Someone at your table started a blind tasting on Winelingo. Join, write your notes, and see who has the sharpest palate.">
+<meta name="theme-color" content="#7b1e3b">
+<meta name="color-scheme" content="light">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Winelingo">
+<meta property="og:title" content="Join our blind tasting on Winelingo 🍷">
+<meta property="og:description" content="Write your notes without peeking — then the reveal: the wine, and who has the sharpest palate.">
+<meta property="og:image" content="https://winelingo.app/assets/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+  body { background: var(--paper, #fbf7f4); }
+  .inv { min-height: 100svh; display: grid; place-items: center; padding: 32px 16px; }
+  .inv-card { width: 100%; max-width: 420px; background: #fffdfb; border: 1px solid #efe5ea;
+    border-radius: 24px; padding: 32px 24px; text-align: center; box-shadow: var(--shadow-md, 0 10px 30px rgba(59,10,30,.08)); }
+  .inv-glass { font-size: 52px; line-height: 1; }
+  .inv h1 { font-family: var(--font-display, "Fraunces", serif); font-weight: 600; color: #3b0a1e;
+    font-size: 30px; line-height: 1.15; margin: 14px 0 8px; }
+  .inv p { font-family: var(--font-body, "Inter", sans-serif); color: #6f636b; font-size: 16px; line-height: 1.5; margin: 0; }
+  .inv-btn { display: block; margin-top: 22px; padding: 16px; border-radius: 14px; background: #7b1e3b;
+    color: #fff; font: 700 16px var(--font-body, "Inter", sans-serif); text-decoration: none; }
+  .inv-btn.alt { margin-top: 10px; background: transparent; color: #7b1e3b; border: 1.5px solid #7b1e3b; }
+  .inv-code { margin-top: 22px; padding: 14px; border-radius: 14px; background: #f7edf0; }
+  .inv-code small { display: block; color: #6f636b; font: 500 13px var(--font-body, "Inter", sans-serif); }
+  .inv-code strong { display: block; margin-top: 4px; font: 700 22px ui-monospace, SFMono-Regular, Menlo, monospace;
+    letter-spacing: 2px; color: #3b0a1e; user-select: all; }
+  .inv-steps { text-align: left; margin: 18px 0 0; padding-left: 20px; color: #6f636b;
+    font: 400 14px/1.5 var(--font-body, "Inter", sans-serif); }
+  .inv-foot { margin-top: 22px; font: 400 12px var(--font-body, "Inter", sans-serif); color: #8a7f86; }
+  .inv-foot a { color: inherit; }
+</style>
+</head>
+<body>
+<main class="inv">
+  <div class="inv-card">
+    <div class="inv-glass" aria-hidden="true">🥂</div>
+    <h1>Join the tasting at your table</h1>
+    <p>Someone at your table started a blind tasting on Winelingo. Write your notes without peeking — then the reveal: the wine, where you agreed, and who has the sharpest palate.</p>
+
+    <a class="inv-btn" id="open" href="winelingo://taste/">Open in Winelingo</a>
+    <a class="inv-btn alt" href="https://apps.apple.com/app/id6785896824">Get Winelingo on the App Store</a>
+
+    <div class="inv-code" id="codebox" hidden>
+      <small>Table code</small>
+      <strong id="code"></strong>
+    </div>
+    <ol class="inv-steps">
+      <li>Install Winelingo and sign in.</li>
+      <li>Scan the QR again — or go to <b>Journal → Friends → Taste together</b> and enter the code.</li>
+      <li>Taste, guess, reveal. Skål!</li>
+    </ol>
+
+    <p class="inv-foot">Free to download, with Premium for unlimited scans. 17+ · Please drink responsibly.<br>
+      <a href="/">winelingo.app</a> · <a href="/privacy">Privacy</a></p>
+  </div>
+</main>
+<script>
+  // The table code only ever lives in the URL and the app; this page just hands it on.
+  (function () {
+    var m = location.search.match(/[?&]c=([A-Za-z0-9]{6})/);
+    if (!m) return;
+    var code = m[1].toUpperCase();
+    var deep = "winelingo://taste/" + code;
+    document.getElementById("open").href = deep;
+    document.getElementById("code").textContent = code;
+    document.getElementById("codebox").hidden = false;
+    // On iPhone, try the app straight away; if it isn't installed nothing
+    // happens and the page (with the App Store button) stays put.
+    if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+      setTimeout(function () { location.href = deep; }, 350);
+    }
+  })();
+</script>
+</body>
+</html>
