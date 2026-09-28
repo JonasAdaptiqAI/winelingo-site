@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Short link behind the site's QR codes (and anywhere a tidy URL helps: bios,
+     table cards, print). It forwards to the App Store; the Umami pageview it
+     sends on the way is how QR scans get counted. Never index it. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Get Winelingo on the App Store</title>
+<meta name="description" content="Winelingo is a wine app for iPhone: scan a label, learn the wine, build your palate.">
+<meta name="theme-color" content="#7b1e3b">
+<meta name="color-scheme" content="light">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<noscript><meta http-equiv="refresh" content="0;url=https://apps.apple.com/app/id6785896824"></noscript>
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+  body{background:var(--paper)}
+  .go{min-height:100svh; display:grid; place-items:center; padding:32px 16px; text-align:center}
+  .go-card{max-width:380px}
+  .go-card img.icon{width:84px; height:84px; border-radius:20px; margin:0 auto 22px; box-shadow:var(--shadow-md)}
+  .go-card h1{font-family:var(--font-display); font-weight:600; color:var(--wine-deep); font-size:28px; line-height:1.15}
+  .go-card p{color:var(--sec); font-size:16px; margin-top:10px}
+  .go-card .badge-link{margin-top:24px}
+  .go-card .fine{font-size:13px; color:var(--muted); margin-top:22px}
+  .go-card .fine a{color:var(--wine)}
+</style>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531" data-domains="winelingo.app" data-auto-track="false"></script>
+</head>
+<body>
+<main class="go">
+  <div class="go-card" id="go-ios">
+    <img class="icon" src="/assets/icon-192.png" alt="" width="84" height="84">
+    <h1>Opening the App Store…</h1>
+    <p>Winelingo for iPhone: scan a label, learn the wine, build your palate.</p>
+    <a class="badge-link" href="https://apps.apple.com/app/id6785896824"><img src="/assets/appstore-badge.svg" alt="Download Winelingo on the App Store" width="156" height="52"></a>
+    <p class="fine">Free to download, with Premium for unlimited scans. 17+ · Please enjoy wine responsibly.<br><a href="/">winelingo.app</a></p>
+  </div>
+  <div class="go-card" id="go-android" hidden>
+    <img class="icon" src="/assets/icon-192.png" alt="" width="84" height="84">
+    <h1>Winelingo is an iPhone app</h1>
+    <p>It isn’t on Android yet. Everything on <a href="/">winelingo.app</a> is free to read in the meantime, from grapes to food pairings.</p>
+    <p class="fine">17+ · Please enjoy wine responsibly.</p>
+  </div>
+</main>
+<script>
+(function () {
+  var APP = 'https://apps.apple.com/app/id6785896824';
+  // Winelingo is iPhone-only. Sending an Android phone to the App Store is a dead
+  // end, so say so plainly and point at the free guides instead.
+  var android = /Android/i.test(navigator.userAgent);
+  if (android) {
+    document.getElementById('go-ios').hidden = true;
+    document.getElementById('go-android').hidden = false;
+  }
+  var left = false;
+  function leave() { if (!android && !left) { left = true; location.replace(APP); } }
+  // Count the scan, then go. Umami posts with keepalive, so the redirect can
+  // follow at once; if the tracker is blocked we still go after a short wait.
+  var tries = 0;
+  (function wait() {
+    try { if (window.umami) { umami.track(); return setTimeout(leave, 120); } } catch (e) {}
+    if (++tries > 12) return leave();
+    setTimeout(wait, 100);
+  })();
+})();
+</script>
+</body>
+</html>

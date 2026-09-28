@@ -44,14 +44,14 @@
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What wine goes with Mexican food?","acceptedAnswer":{"@type":"Answer","text":"Albariño or Verdejo for lime and seafood dishes, Garnacha for pork and beef, and Cava or a dry rosado for a mixed table."}},{"@type":"Question","name":"What wine goes with mole?","acceptedAnswer":{"@type":"Answer","text":"Mole is the exception that takes a fuller red — Primitivo or Zinfandel, whose brambly fruit meets the dried fruit and chocolate. Watch the alcohol if it is hot."}},{"@type":"Question","name":"Does Sauvignon Blanc work with Mexican food?","acceptedAnswer":{"@type":"Answer","text":"Less well than you would think. Fresh coriander already brings a green, pungent edge, and a grassy Sauvignon doubles it. Albariño is aromatic without being herbaceous."}},{"@type":"Question","name":"Why avoid big reds with Mexican food?","acceptedAnswer":{"@type":"Answer","text":"Lime raises the acidity the wine has to match, and chilli heat is amplified by alcohol and sharpened by tannin. Big oaked reds lose on both counts."}},{"@type":"Question","name":"What wine goes with enchiladas?","acceptedAnswer":{"@type":"Answer","text":"It depends on the sauce. Green enchiladas in tomatillo sauce want a tart, herbal white such as Verdejo or Grüner Veltliner. Red enchiladas in a dried-chilli sauce take a cool, fruity Garnacha or a dry rosé. Avoid oaked, tannic reds with both."}},{"@type":"Question","name":"Is Mexican wine good with Mexican food?","acceptedAnswer":{"@type":"Answer","text":"Often, yes. Most Mexican wine comes from the Valle de Guadalupe in Baja California, and its ripe reds from Tempranillo and Grenache suit grilled meat such as carne asada. For very hot or lime-heavy dishes, a high-acid white is still the safer choice."}}]}
 </script>
 <!-- growth:analytics -->
-<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531" data-domains="winelingo.app"></script>
 <script>
 /* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
    and capture-phase so it still fires if something else stops propagation. */
 document.addEventListener('click',function(e){
   var t=e.target;if(!t||!t.closest)return;
   var a=t.closest('a[href*="apps.apple.com"]');
-  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname,cta:a.getAttribute('data-cta')||a.className||'link'});
 },true);
 </script>
 <!-- /growth:analytics -->
@@ -119,5 +119,6 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
   if(rd||!('IntersectionObserver' in window)){rv.forEach(function(e){e.classList.add('in');});}
   else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});rv.forEach(function(e){io.observe(e);});}
 </script>
+<script defer src="/assets/get-app.js?v=1"></script>
 </body>
 </html>

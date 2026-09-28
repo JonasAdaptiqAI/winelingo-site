@@ -44,14 +44,14 @@
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What wine goes with mac and cheese?","acceptedAnswer":{"@type":"Answer","text":"A Chardonnay with restrained oak, a dry sparkling like Cava, or a Barbera if you want red. Acidity is the only contrast available."}},{"@type":"Question","name":"Why is mac and cheese hard to pair?","acceptedAnswer":{"@type":"Answer","text":"Because nothing on the plate provides contrast. Cheese sauce and pasta both coat the palate and neither is acidic, so a soft wine merges into the dish and both disappear."}},{"@type":"Question","name":"Can I drink red wine with mac and cheese?","acceptedAnswer":{"@type":"Answer","text":"Only a high-acid, low-tannin one — Barbera is the shape that works. Dairy coats rather than binds tannin, so a firm red tastes hard and dusty."}},{"@type":"Question","name":"Does oaked Chardonnay work?","acceptedAnswer":{"@type":"Answer","text":"Lightly oaked, yes — this is one of the few dishes where oak helps, because the butter in the wine meets the butter in the sauce. Heavily toasted styles tip the plate into sameness."}}]}
 </script>
 <!-- growth:analytics -->
-<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531" data-domains="winelingo.app"></script>
 <script>
 /* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
    and capture-phase so it still fires if something else stops propagation. */
 document.addEventListener('click',function(e){
   var t=e.target;if(!t||!t.closest)return;
   var a=t.closest('a[href*="apps.apple.com"]');
-  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname,cta:a.getAttribute('data-cta')||a.className||'link'});
 },true);
 </script>
 <!-- /growth:analytics -->
@@ -119,5 +119,6 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
   if(rd||!('IntersectionObserver' in window)){rv.forEach(function(e){e.classList.add('in');});}
   else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});rv.forEach(function(e){io.observe(e);});}
 </script>
+<script defer src="/assets/get-app.js?v=1"></script>
 </body>
 </html>
