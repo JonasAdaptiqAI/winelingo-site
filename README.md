@@ -40,7 +40,7 @@ DefinedTermSet / BreadcrumbList as appropriate). Header/footer are identical acr
 ## Honesty rules for copy
 
 The site must match the shipped app: **free, no in-app purchases**; **coming soon** framing (no live
-download link until approved); **17+ / drink responsibly**; and **no fabricated ratings, reviews or
+download link until approved); **18+ / drink responsibly**; and **no fabricated ratings, reviews or
 press**. The launch app genuinely ships 4 languages (EN/DA/ES/DE) and an "About the winery" scan note.
 
 ## Before it goes fully live — two follow-ups
