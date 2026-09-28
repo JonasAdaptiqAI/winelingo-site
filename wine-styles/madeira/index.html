@@ -44,14 +44,14 @@
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Madeira?","acceptedAnswer":{"@type":"Answer","text":"Madeira is a fortified wine from Madeira, Portugal. A fortified wine from the Portuguese island of Madeira, deliberately heated and oxidised until it is nearly indestructible."}},{"@type":"Question","name":"What grapes are used in Madeira?","acceptedAnswer":{"@type":"Answer","text":"Madeira is made from Tinta Negra, Sercial, Verdelho, Bual, Malvasia."}},{"@type":"Question","name":"How do you serve Madeira?","acceptedAnswer":{"@type":"Answer","text":"Serve dry styles chilled (10-12°C) and sweet ones cooler than room temperature (14-16°C) in a small glass; lovely with nuts, cheese or cake."}},{"@type":"Question","name":"What food goes with Madeira?","acceptedAnswer":{"@type":"Answer","text":"It depends on the style. Dry Sercial works chilled as an aperitif with olives and almonds; off-dry Verdelho suits charcuterie and smoked food; sweet Bual and Malmsey handle dark chocolate, tiramisu, caramel desserts and blue cheese. An open bottle keeps for months."}}]}
 </script>
 <!-- growth:analytics -->
-<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531" data-domains="winelingo.app"></script>
 <script>
 /* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
    and capture-phase so it still fires if something else stops propagation. */
 document.addEventListener('click',function(e){
   var t=e.target;if(!t||!t.closest)return;
   var a=t.closest('a[href*="apps.apple.com"]');
-  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname,cta:a.getAttribute('data-cta')||a.className||'link'});
 },true);
 </script>
 <!-- /growth:analytics -->
@@ -160,5 +160,6 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
   if(rd||!('IntersectionObserver' in window)){rv.forEach(function(e){e.classList.add('in');});}
   else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});rv.forEach(function(e){io.observe(e);});}
 </script>
+<script defer src="/assets/get-app.js?v=1"></script>
 </body>
 </html>

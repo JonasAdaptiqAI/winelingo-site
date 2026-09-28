@@ -44,14 +44,14 @@
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Grüner Veltliner a red or white wine?","acceptedAnswer":{"@type":"Answer","text":"Grüner Veltliner is a white wine grape. Grüner Veltliner is Austria's flagship white grape, producing dry, crisp wines known for a distinctive peppery, herbal character."}},{"@type":"Question","name":"What food pairs with Grüner Veltliner?","acceptedAnswer":{"@type":"Answer","text":"Zesty and peppery, this Austrian star is one of the most food-friendly whites, great with schnitzel, salads, and tricky veggies like asparagus. Its green apple, white pepper, and lime keep things bright."}},{"@type":"Question","name":"How should I serve Grüner Veltliner?","acceptedAnswer":{"@type":"Answer","text":"Serve at 8–10°C / 46–50°F. Use a universal or white glass."}},{"@type":"Question","name":"What food goes with Grüner Veltliner?","acceptedAnswer":{"@type":"Answer","text":"Vegetables that defeat most wines — asparagus, artichoke and brassicas — plus dishes led by onion, leek, garlic or raw herbs. It is unoaked and aromatic without being grassy, so it copes where Sauvignon Blanc would double the green. Also the traditional match for Wiener Schnitzel."}}]}
 </script>
 <!-- growth:analytics -->
-<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531" data-domains="winelingo.app"></script>
 <script>
 /* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
    and capture-phase so it still fires if something else stops propagation. */
 document.addEventListener('click',function(e){
   var t=e.target;if(!t||!t.closest)return;
   var a=t.closest('a[href*="apps.apple.com"]');
-  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname,cta:a.getAttribute('data-cta')||a.className||'link'});
 },true);
 </script>
 <!-- /growth:analytics -->
@@ -166,5 +166,6 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
   if(rd||!('IntersectionObserver' in window)){rv.forEach(function(e){e.classList.add('in');});}
   else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});rv.forEach(function(e){io.observe(e);});}
 </script>
+<script defer src="/assets/get-app.js?v=1"></script>
 </body>
 </html>

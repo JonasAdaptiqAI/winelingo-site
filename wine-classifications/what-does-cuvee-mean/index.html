@@ -44,14 +44,14 @@
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does cuvée mean the wine is better quality?","acceptedAnswer":{"@type":"Answer","text":"No. Cuvée simply means a blend or a batch, and it has no quality meaning in law. Producers use it freely at every price level."}},{"@type":"Question","name":"What does Grande Cuvée mean on Champagne?","acceptedAnswer":{"@type":"Answer","text":"Literally “great blend”. It usually signals a house's flagship bottling — Krug Grande Cuvée is the famous example — but the term is unregulated, so any producer can use it."}},{"@type":"Question","name":"What is a tête de cuvée?","acceptedAnswer":{"@type":"Answer","text":"Trade shorthand for a producer's very top wine, such as Dom Pérignon at Moët, or Cristal at Louis Roederer. The phrase itself rarely appears on the label."}},{"@type":"Question","name":"What is the difference between cuvée and taille in Champagne?","acceptedAnswer":{"@type":"Answer","text":"They are the two legal fractions of the press. From 4,000kg of grapes, the first 2,050 litres of juice are the cuvée and the next 500 the taille. Cuvée juice is finer and better balanced."}},{"@type":"Question","name":"What does brut cuvée mean?","acceptedAnswer":{"@type":"Answer","text":"Two words doing two different jobs. Brut is a regulated sweetness level for sparkling wine, under 12 grams of residual sugar per litre, so dry. Cuvée just means the blend. Put together, brut cuvée is a producer’s dry sparkling blend, usually its standard non-vintage bottling, and the phrase promises nothing about quality."}},{"@type":"Question","name":"Is cuvée a sign of quality?","acceptedAnswer":{"@type":"Answer","text":"No. Cuvée has no quality meaning in law and appears on wines at every price. The one exception is technical: in Champagne, cuvée is the name of the first and finest 2,050 litres of juice from each 4,000 kg press load, so “100% cuvée” on a back label is a real claim. Everywhere else, judge the bottle by its appellation, producer and vintage instead."}},{"@type":"Question","name":"How do you pronounce cuvée?","acceptedAnswer":{"@type":"Answer","text":"Koo-VAY, with the stress on the second syllable. The accent on the final é means the vowel is sounded; it is not “koove”. The word comes from cuve, the French for a vat or tank: a cuvée is what came out of one."}}]}
 </script>
 <!-- growth:analytics -->
-<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531" data-domains="winelingo.app"></script>
 <script>
 /* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
    and capture-phase so it still fires if something else stops propagation. */
 document.addEventListener('click',function(e){
   var t=e.target;if(!t||!t.closest)return;
   var a=t.closest('a[href*="apps.apple.com"]');
-  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname,cta:a.getAttribute('data-cta')||a.className||'link'});
 },true);
 </script>
 <!-- /growth:analytics -->
@@ -145,5 +145,6 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
   if(rd||!('IntersectionObserver' in window)){rv.forEach(function(e){e.classList.add('in');});}
   else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});rv.forEach(function(e){io.observe(e);});}
 </script>
+<script defer src="/assets/get-app.js?v=1"></script>
 </body>
 </html>

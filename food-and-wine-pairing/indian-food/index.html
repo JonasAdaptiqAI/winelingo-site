@@ -44,14 +44,14 @@
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What wine goes with Indian food?","acceptedAnswer":{"@type":"Answer","text":"An off-dry Riesling or a Gewürztraminer. Both are aromatic enough for the spice, low enough in alcohol for the chilli, and carry a little sugar that damps the heat."}},{"@type":"Question","name":"Why does wine taste worse with spicy food?","acceptedAnswer":{"@type":"Answer","text":"Capsaicin heat is amplified by alcohol and sharpened by tannin. A strong, tannic red makes the dish taste hotter and itself taste harder. Lower alcohol, colder serving and a touch of sweetness all reduce the burn."}},{"@type":"Question","name":"Can I drink red wine with a curry?","acceptedAnswer":{"@type":"Answer","text":"Yes, if it is fruity and low in tannin — a soft Grenache or a chilled Gamay. Cabernet Sauvignon and oaked reds are the usual mistakes."}},{"@type":"Question","name":"What wine goes with a very hot curry?","acceptedAnswer":{"@type":"Answer","text":"Honestly, the lowest-alcohol off-dry Riesling you can find, served very cold. Beyond a certain heat, beer or a lassi genuinely works better than wine."}},{"@type":"Question","name":"What wine goes with tandoori chicken?","acceptedAnswer":{"@type":"Answer","text":"A light, fruity red such as Pinot Noir or a chilled Gamay, or a dry rosé. Tandoori dishes are dry-cooked and charred rather than saucy, and usually milder than their colour suggests, so they take red far better than a hot curry does."}},{"@type":"Question","name":"Does Prosecco go with curry?","acceptedAnswer":{"@type":"Answer","text":"Yes, especially with mild to medium dishes and fried starters. The bubbles and cold temperature soften chilli, the alcohol is usually low, and an Extra Dry Prosecco has a touch of sweetness that helps against heat."}}]}
 </script>
 <!-- growth:analytics -->
-<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531" data-domains="winelingo.app"></script>
 <script>
 /* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
    and capture-phase so it still fires if something else stops propagation. */
 document.addEventListener('click',function(e){
   var t=e.target;if(!t||!t.closest)return;
   var a=t.closest('a[href*="apps.apple.com"]');
-  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname,cta:a.getAttribute('data-cta')||a.className||'link'});
 },true);
 </script>
 <!-- /growth:analytics -->
@@ -119,5 +119,6 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
   if(rd||!('IntersectionObserver' in window)){rv.forEach(function(e){e.classList.add('in');});}
   else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});rv.forEach(function(e){io.observe(e);});}
 </script>
+<script defer src="/assets/get-app.js?v=1"></script>
 </body>
 </html>

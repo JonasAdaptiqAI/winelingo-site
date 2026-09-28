@@ -6,9 +6,10 @@ served by **GitHub Pages** (custom domain in `CNAME`, `.nojekyll` present).
 ## Structure
 
 ```
-index.html                                  Landing page (hero, features, learn teaser, waitlist, FAQ)
+index.html                                  Landing page (hero, features, reviews, FAQ, closing CTA, learn hub)
 assets/
   site.css                                  Shared design system (tokens, header/footer, components)
+  get-app.js · qr-get.svg                   Sitewide App Store kit: sticky bar on phones, QR on desktop
   logo.png                                  Small nav/footer logo (real app icon, 128px)
   icon.png / icon-512 / icon-192            App icon at various sizes
   favicon-32 / favicon-16 / apple-touch-icon
@@ -20,6 +21,7 @@ tools/                                      Tools hub + free interactive tools
   index.html · wine-serving-temperature/ · wine-calories/
 about/ · support/                           Company pages
 privacy/ · terms/                           Legal pages — DO NOT rename or move (see below)
+get/                                        Short link behind the QR codes: counts the scan, forwards to the App Store
 sitemap.xml · robots.txt · site.webmanifest
 ```
 

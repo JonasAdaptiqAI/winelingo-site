@@ -44,14 +44,14 @@
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What wine goes with fish and chips?","acceptedAnswer":{"@type":"Answer","text":"Champagne or another traditional-method sparkling, Muscadet made from Melon de Bourgogne, or Assyrtiko if you want a still wine sharp enough for the vinegar."}},{"@type":"Question","name":"Why does malt vinegar ruin the wine?","acceptedAnswer":{"@type":"Answer","text":"Acetic acid is more aggressive than the acid in wine. Once your palate has adjusted to it, a moderately acidic wine tastes flabby and slightly sweet — it does not clash so much as disappear."}},{"@type":"Question","name":"Is Champagne with fish and chips a gimmick?","acceptedAnswer":{"@type":"Answer","text":"No, it is mechanically sound. Carbonation lifts the frying fat off the palate, the acidity cuts it, and the salt on the chips softens the wine and makes it taste fruitier."}},{"@type":"Question","name":"What should I avoid?","acceptedAnswer":{"@type":"Answer","text":"Oak and red wine. Oaked Chardonnay makes everything on the palate rich with nothing to refresh it, and tannin against white fish and vinegar is the least promising combination on this site."}}]}
 </script>
 <!-- growth:analytics -->
-<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531"></script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531" data-domains="winelingo.app"></script>
 <script>
 /* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
    and capture-phase so it still fires if something else stops propagation. */
 document.addEventListener('click',function(e){
   var t=e.target;if(!t||!t.closest)return;
   var a=t.closest('a[href*="apps.apple.com"]');
-  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname});
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname,cta:a.getAttribute('data-cta')||a.className||'link'});
 },true);
 </script>
 <!-- /growth:analytics -->
@@ -119,5 +119,6 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
   if(rd||!('IntersectionObserver' in window)){rv.forEach(function(e){e.classList.add('in');});}
   else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});rv.forEach(function(e){io.observe(e);});}
 </script>
+<script defer src="/assets/get-app.js?v=1"></script>
 </body>
 </html>
