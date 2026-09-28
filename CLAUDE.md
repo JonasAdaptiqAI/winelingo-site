@@ -34,7 +34,7 @@ Everything is hand-written static HTML/CSS/JS.
 - ⚠️ A claim frozen into static HTML has to be true at the far end of the roadmap, not
   just today. That is the lesson these two bullets encode; it cost a near-miss on the
   carousels to learn.
-- Include a **17+ / drink responsibly** line. Legal entity/contact: **Jonas Egeskov, Denmark**,
+- Include an **18+ / drink responsibly** line (the App Store rating; Apple retired 17+). Legal entity/contact: **Jonas Egeskov, Denmark**,
   jonsegeskov29@gmail.com.
 
 ## Design system (single source of truth: app repo `design/Design-Guide.md`)
