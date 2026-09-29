@@ -1,0 +1,18 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["W5RTVGJZL4.com.winelingo.app"],
+        "components": [
+          { "/": "/invite", "comment": "friend invite: /invite/?c=CODE" },
+          { "/": "/invite/*" },
+          { "/": "/taste", "comment": "taste together: /taste/?c=CODE" },
+          { "/": "/taste/*" }
+        ],
+        "appID": "W5RTVGJZL4.com.winelingo.app",
+        "paths": ["/invite", "/invite/*", "/taste", "/taste/*"]
+      }
+    ]
+  }
+}
