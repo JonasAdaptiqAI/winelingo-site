@@ -90,11 +90,10 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
     document.getElementById("open").href = deep;
     document.getElementById("code").textContent = code;
     document.getElementById("codebox").hidden = false;
-    // On iPhone, try the app straight away; if it isn't installed nothing
-    // happens and the page (with the App Store button) stays put.
-    if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
-      setTimeout(function () { location.href = deep; }, 350);
-    }
+    // No automatic jump to the app: with Winelingo installed (1.3.1+) iOS opens the app
+    // straight from the tapped link and this page never shows. Seeing it means the app is
+    // missing or older, and a scripted jump then only produced Safari's "address is invalid"
+    // alert. The button still opens the app with a tap.
   })();
 </script>
 </body>
