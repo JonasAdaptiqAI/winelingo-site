@@ -115,6 +115,22 @@
       }
     },
     {
+      "@type": "VideoObject",
+      "@id": "https://winelingo.app/#film",
+      "name": "Winelingo in one minute",
+      "description": "A one-minute tour of Winelingo: learn wine in short lessons, scan any label, order from a restaurant wine list, remember every glass, taste with friends and win the weekly league.",
+      "thumbnailUrl": "https://winelingo.app/assets/video/winelingo-in-a-minute-poster.jpg",
+      "contentUrl": "https://winelingo.app/assets/video/winelingo-in-a-minute.mp4",
+      "uploadDate": "2026-10-01",
+      "duration": "PT59S",
+      "width": 720,
+      "height": 1280,
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://winelingo.app/#organization"
+      }
+    },
+    {
       "@type": "FAQPage",
       "@id": "https://winelingo.app/#faq",
       "mainEntity": [
@@ -197,7 +213,7 @@
   .hero-actions .badge-link img{height:56px}
   .hero-how{display:inline-flex; align-items:center; gap:6px; font-weight:600; font-size:15.5px; color:var(--wine)}
   .hero-how svg{transition:transform .25s var(--ease)}
-  .hero-how:hover{text-decoration:none} .hero-how:hover svg{transform:translateY(2px)}
+  .hero-how:hover{text-decoration:none} .hero-how:hover svg{transform:scale(1.15)}
   .hero-fine{margin-top:18px; font-size:14px; color:var(--muted)}
   .hero-fine b{color:var(--vine-text); font-weight:600}
   .hero-review{margin:30px 0 0; padding-top:22px; border-top:1px solid var(--line); max-width:430px}
@@ -205,22 +221,30 @@
   .hero-review cite{display:block; font-style:normal; font-size:12.5px; color:var(--muted); margin-top:6px}
   .stars{display:inline-flex; gap:2px; color:var(--gold); vertical-align:middle}
 
-  /* Two real screens, the scan result in front and the palate profile behind */
-  .stage{position:relative; height:650px}
+  /* The one-minute film (assets/video), in place of the hero's phones */
+  .film-stage{position:relative; display:flex; justify-content:center; align-items:center; min-height:640px}
   .stage-glow{position:absolute; width:86%; height:70%; top:14%; left:7%; z-index:0;
     background:radial-gradient(closest-side, rgba(123,30,59,.24), transparent 72%); filter:blur(34px)}
-  .phone{position:relative; border-radius:46px; padding:9px;
-    background:linear-gradient(160deg,#2a1320,#3b0a1e 55%,#1c0712);
-    box-shadow:var(--shadow-lg), inset 0 0 0 1.5px rgba(255,255,255,.07)}
-  .phone img{display:block; width:100%; height:auto; border-radius:37px; background:var(--paper)}
-  .stage .phone-front{position:absolute; z-index:2; width:292px; left:4%; top:6px}
-  .stage .phone-back{position:absolute; z-index:1; width:248px; right:0; top:74px; transform:rotate(5deg); border-radius:40px; padding:8px}
-  .stage .phone-back img{border-radius:32px}
-  .float-chip{position:absolute; z-index:4; background:var(--paper-raised); border:1px solid var(--line); border-radius:13px; box-shadow:var(--shadow-md); padding:10px 14px 10px 10px; display:flex; align-items:center; gap:10px; font-size:13px; font-weight:500; color:var(--ink); white-space:nowrap}
-  .float-chip .ico{width:30px; height:30px; border-radius:9px; display:grid; place-items:center; flex:0 0 auto}
-  .chip-1{top:58px; left:-5%}
-  .chip-2{bottom:92px; left:-1%}
-  .chip-3{top:30px; right:4%}
+  .film{position:relative; z-index:2; margin:0; width:340px; aspect-ratio:9/16; border-radius:30px; overflow:hidden;
+    background:#2a0b18; box-shadow:var(--shadow-lg), 0 0 0 1px rgba(59,10,30,.1)}
+  .film video{display:block; width:100%; height:100%; object-fit:cover}
+  .film-play{position:absolute; inset:0; display:flex; align-items:flex-end; justify-content:center; padding:0 0 22px;
+    border:0; background:linear-gradient(180deg, rgba(30,8,16,0) 58%, rgba(30,8,16,.5)); font:inherit; cursor:pointer}
+  .fp-pill{display:flex; align-items:center; gap:12px; padding:7px 22px 7px 7px; border-radius:var(--r-pill);
+    background:rgba(255,253,251,.96); box-shadow:0 16px 36px -14px rgba(0,0,0,.65); transition:transform .3s var(--ease)}
+  .fp-btn{width:48px; height:48px; border-radius:50%; display:grid; place-items:center; padding-left:3px; background:var(--wine); color:#fff;
+    animation:fp-pulse 2.6s var(--ease) infinite}
+  @keyframes fp-pulse{0%{box-shadow:0 0 0 0 rgba(123,30,59,.45)} 70%,100%{box-shadow:0 0 0 14px rgba(123,30,59,0)}}
+  .fp-lbl{display:flex; flex-direction:column; align-items:flex-start; font-weight:600; font-size:15px; line-height:1.3; color:var(--wine-deep)}
+  .fp-lbl small{font-weight:500; font-size:12px; color:var(--muted)}
+  .film-play:hover .fp-pill{transform:translateY(-2px)}
+  .film-play:focus-visible{outline:none} .film-play:focus-visible .fp-pill{outline:3px solid var(--gold); outline-offset:3px}
+  .film-play[hidden], .film-end[hidden]{display:none}
+  .film-end{position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px;
+    padding:28px; text-align:center; background:rgba(30,8,16,.74); -webkit-backdrop-filter:blur(4px); backdrop-filter:blur(4px)}
+  .fe-t{font-family:var(--font-display); font-weight:600; font-size:25px; line-height:1.2; color:#fff; max-width:13ch}
+  .fe-replay{padding:9px 18px; border:1px solid rgba(255,255,255,.4); border-radius:var(--r-pill); background:transparent; color:#fff; font:600 14px var(--font-body); cursor:pointer}
+  .fe-replay:hover{background:rgba(255,255,255,.1)}
 
   .strip{border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--paper-raised); padding:22px 0; margin-top:28px}
   .strip-inner{display:flex; align-items:center; justify-content:center; gap:12px 34px; flex-wrap:wrap; text-align:center}
@@ -353,11 +377,7 @@
   /* The hero's "See how it works" link gives way to the QR on computers */
   @media (hover:hover) and (pointer:fine) and (min-width:901px){ .hero-how{display:none} }
 
-  @media (max-width:1060px){
-    .stage .phone-front{width:270px; left:0}
-    .stage .phone-back{width:226px}
-    .chip-1{left:-2%}
-  }
+  @media (max-width:1060px){ .film{width:310px} }
   @media (max-width:900px){
     .hero{padding-top:40px}
     .hero-grid{grid-template-columns:1fr; gap:36px; text-align:center}
@@ -365,12 +385,8 @@
     .hero-actions{justify-content:center}
     .hero-copy .eyebrow{justify-content:center}
     .hero-review{margin-left:auto; margin-right:auto}
-    /* One phone, faded out part-way down, so the story starts sooner */
-    .stage{height:470px; max-width:420px; margin:0 auto; width:100%}
-    .stage .phone-front{width:268px; left:50%; margin-left:-134px;
-      -webkit-mask-image:linear-gradient(180deg,#000 320px,transparent 460px); mask-image:linear-gradient(180deg,#000 320px,transparent 460px)}
-    .stage .phone-back, .chip-2, .chip-3{display:none}
-    .chip-1{top:40px; left:0}
+    .film-stage{min-height:0}
+    .film{width:min(320px, 84vw)}
     .steps{grid-template-columns:1fr; gap:34px}
     .steps::before{display:none}
     .showcase{grid-template-columns:1fr; gap:38px}
@@ -389,14 +405,8 @@
     .lang-toasts{justify-content:center}
   }
   @media (max-width:560px){
-    .stage{height:420px}
-    .stage .phone-front{width:240px; margin-left:-120px;
-      -webkit-mask-image:linear-gradient(180deg,#000 280px,transparent 410px); mask-image:linear-gradient(180deg,#000 280px,transparent 410px)}
     .strip-inner{flex-direction:column; gap:10px}
     .strip-sep{display:none}
-    .float-chip{font-size:12px; padding:8px 11px 8px 8px}
-    .float-chip .ico{width:26px; height:26px}
-    .chip-1{left:-6px}
     .duo{height:440px; max-width:340px}
     .duo .phone{width:180px; border-radius:36px; padding:7px}
     .duo .phone img{border-radius:30px}
@@ -471,7 +481,7 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
       <div class="hero-actions" data-get-app-zone>
         <a class="badge-link" href="https://apps.apple.com/app/id6785896824" data-cta="hero"><img src="/assets/appstore-badge.svg" alt="Download Winelingo on the App Store" width="168" height="56"></a>
         <div class="qr-card"><img src="/assets/qr-get.svg" alt="QR code that opens Winelingo on the App Store" width="80" height="80"><span class="qr-txt"><b>On a computer?</b>Point your iPhone camera here to get the app.</span></div>
-        <a class="hero-how" href="#how">See how it works <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 5v14m0 0-6-6m6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="hero-how" href="#film"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.6v12.8c0 .8.9 1.3 1.6.9l10-6.4c.6-.4.6-1.4 0-1.8l-10-6.4C8.9 4.3 8 4.8 8 5.6Z"/></svg> Watch the 1-minute film</a>
       </div>
       <p class="hero-fine"><b>Free to download</b>, with Premium for unlimited scans · iPhone · 18+</p>
       <figure class="hero-review">
@@ -481,23 +491,26 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
       </figure>
     </div>
 
-    <!-- Real screens: the scan result in front, the palate profile behind -->
-    <div class="stage" aria-hidden="true">
-      <div class="stage-glow"></div>
-      <div class="phone phone-back"><img src="/assets/shots/passport.jpg" alt="" width="640" height="1391" decoding="async"></div>
-      <div class="phone phone-front"><img src="/assets/shots/result.jpg" alt="" width="640" height="1391" fetchpriority="high" decoding="async"></div>
-      <div class="float-chip chip-1">
-        <span class="ico" style="background:rgba(110,123,84,.14); color:var(--vine)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        Identified in seconds
-      </div>
-      <div class="float-chip chip-2">
-        <span class="ico" style="background:rgba(123,30,59,.08); color:var(--wine)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 19V5a2 2 0 0 1 2-2h11a1 1 0 0 1 1 1v13" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6 17h12v3a1 1 0 0 1-1 1H7a2 2 0 0 1 0-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
-        Why it tastes like this
-      </div>
-      <div class="float-chip chip-3">
-        <span class="ico" style="background:rgba(201,162,74,.18); color:var(--gold)"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2s5 4 5 9a5 5 0 0 1-10 0c0-1 .3-1.8.3-1.8S8 11 9 12c0-2 1-4 3-5-.3 2 1 3 1.8 3.8C14.6 8 14 5 12 2Z"/></svg></span>
-        +1 day streak
-      </div>
+    <!-- The one-minute film: poster first, plays with sound only when asked -->
+    <div class="film-stage">
+      <div class="stage-glow" aria-hidden="true"></div>
+      <figure class="film" id="film" data-get-app-zone>
+        <video playsinline preload="none" poster="/assets/video/winelingo-in-a-minute-poster.jpg" width="720" height="1280"
+          aria-label="Winelingo in one minute: learn wine in short lessons, scan any label, order from a wine list, remember every glass, taste with friends and win the weekly league.">
+          <source src="/assets/video/winelingo-in-a-minute.mp4" type="video/mp4">
+        </video>
+        <button class="film-play" type="button" aria-label="Play the one-minute film about Winelingo, with sound">
+          <span class="fp-pill" aria-hidden="true">
+            <span class="fp-btn"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.6v12.8c0 .8.9 1.3 1.6.9l10-6.4c.6-.4.6-1.4 0-1.8l-10-6.4C8.9 4.3 8 4.8 8 5.6Z"/></svg></span>
+            <span class="fp-lbl">Watch the film<small>1 minute · sound on</small></span>
+          </span>
+        </button>
+        <div class="film-end" hidden>
+          <p class="fe-t">Your next bottle is your first lesson.</p>
+          <a class="badge-link" href="https://apps.apple.com/app/id6785896824" data-cta="video-end"><img src="/assets/appstore-badge-white.svg" alt="Download Winelingo on the App Store" width="156" height="52"></a>
+          <button class="fe-replay" type="button">Watch again</button>
+        </div>
+      </figure>
     </div>
   </div>
 
@@ -896,6 +909,30 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
     }, {threshold:.12, rootMargin:'0px 0px -8% 0px'});
     reveals.forEach(function(el){ io.observe(el); });
   }
+
+  // The one-minute film: it never autoplays. A tap plays it with sound, it pauses
+  // when scrolled out of view, and it ends on a real App Store button.
+  (function(){
+    var fig = document.getElementById('film'); if (!fig) return;
+    var v = fig.querySelector('video'), play = fig.querySelector('.film-play'), end = fig.querySelector('.film-end');
+    var started = false;
+    function track(name){ try { if (window.umami) umami.track(name); } catch (e) {} }
+    function start(){
+      play.hidden = true; end.hidden = true; v.controls = true; v.muted = false;
+      var p = v.play();
+      if (p && p.catch) p.catch(function(){ play.hidden = false; v.controls = false; });
+      if (!started){ started = true; track('video-play'); }
+    }
+    play.addEventListener('click', start);
+    fig.querySelector('.fe-replay').addEventListener('click', function(){ v.currentTime = 0; start(); });
+    v.addEventListener('ended', function(){ v.controls = false; end.hidden = false; track('video-complete'); });
+    document.querySelectorAll('a[href="#film"]').forEach(function(a){
+      a.addEventListener('click', function(e){ e.preventDefault(); fig.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block: 'center'}); start(); });
+    });
+    if ('IntersectionObserver' in window){
+      new IntersectionObserver(function(es){ es.forEach(function(e){ if (!e.isIntersecting && !v.paused) v.pause(); }); }).observe(fig);
+    }
+  })();
 
 </script>
 <script defer src="/assets/visitor-globe.js?v=3"></script>
