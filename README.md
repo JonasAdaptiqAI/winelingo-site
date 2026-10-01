@@ -10,6 +10,7 @@ index.html                                  Landing page (hero, features, review
 assets/
   site.css                                  Shared design system (tokens, header/footer, components)
   get-app.js · qr-get.svg                   Sitewide App Store kit: sticky bar on phones, QR on desktop
+  video/winelingo-in-a-minute.mp4 (+poster) The homepage film: 720×1280 H.264, fast-start, plays on tap only
   logo.png                                  Small nav/footer logo (real app icon, 128px)
   icon.png / icon-512 / icon-192            App icon at various sizes
   favicon-32 / favicon-16 / apple-touch-icon
