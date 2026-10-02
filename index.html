@@ -75,7 +75,7 @@
       "operatingSystem": "iOS",
       "applicationCategory": "EducationApplication",
       "applicationSubCategory": "Wine Education",
-      "description": "Scan a wine label to identify it, get a plain-language taste profile and the story behind it, read a 'story for serving', scan a restaurant wine list for the bottle to order, and build a personal palate profile. Free to download on the App Store.",
+      "description": "Scan a wine label to identify it, get a plain-language taste profile and the story behind it, read a 'story for serving', scan a restaurant wine list for the bottle to order, learn wine through a course of short interactive lessons and practice games, and build a personal palate profile. Free to download on the App Store.",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -98,7 +98,6 @@
       },
       "screenshot": [
         "https://winelingo.app/assets/shots/result.jpg",
-        "https://winelingo.app/assets/shots/explore.jpg",
         "https://winelingo.app/assets/shots/passport.jpg",
         "https://winelingo.app/assets/shots/journal.jpg"
       ]
@@ -147,7 +146,7 @@
           "name": "Is Winelingo free?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Winelingo is free to download, with Premium for unlimited scans. The daily lesson, the wine word of the day and the whole Explore library are free to learn with. Premium is for people who scan a lot, restaurant wine lists included."
+            "text": "Winelingo is free to download, with Premium for unlimited scans. The daily lesson, the wine word of the day and the whole library of grapes, regions and styles are free to learn with. Premium is for people who scan a lot, restaurant wine lists included."
           }
         },
         {
@@ -306,12 +305,6 @@
   .order-tag{margin-left:auto; background:var(--wine); color:#fff; font-size:10.5px; font-weight:600; letter-spacing:.03em; padding:5px 10px; border-radius:var(--r-pill)}
   .row-best{background:linear-gradient(90deg, rgba(201,162,74,.10), transparent); border-radius:12px; padding-left:10px; padding-right:10px; margin:2px -10px}
 
-  .word-card{position:absolute; z-index:3; left:2%; bottom:44px; width:230px; background:var(--paper-raised); border:1px solid var(--line); border-radius:16px; box-shadow:var(--shadow-md); padding:15px 16px}
-  .word-card .k{font-size:10px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; color:var(--wine); margin-bottom:4px}
-  .word-card .w{font-family:var(--font-display); font-size:21px; color:var(--wine-deep); font-weight:600}
-  .word-card .d{font-size:12.5px; color:var(--sec); margin-top:3px; line-height:1.45}
-  .streak-card{position:absolute; z-index:3; right:4%; top:40px; display:flex; align-items:center; gap:9px; background:var(--paper-raised); border:1px solid var(--line); border-radius:13px; box-shadow:var(--shadow-md); padding:10px 14px 10px 10px; font-weight:600; font-size:13.5px; color:var(--wine-deep)}
-  .streak-card .flame{width:28px; height:28px; border-radius:8px; background:rgba(201,162,74,.18); display:grid; place-items:center; color:var(--gold)}
   .show-media .phone{width:262px}
 
   .duo{position:relative; width:100%; max-width:480px; height:560px}
@@ -374,6 +367,68 @@
   .popular .plabel{font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin:18px 0 10px}
   .popular .pairpill{font-weight:500}
 
+  /* ---------- The course + practice (Learn tab, app 1.3.0) ---------- */
+  .units{list-style:none; margin:22px 0 0; padding:0; display:flex; flex-wrap:wrap; gap:7px}
+  .units li{font-size:12.5px; font-weight:500; color:var(--sec); background:var(--paper-raised); border:1px solid var(--line); border-radius:var(--r-pill); padding:5px 11px}
+  .course{max-width:370px; padding:18px 18px 24px}
+  .c-top{display:flex; align-items:center; justify-content:space-between; margin-bottom:12px}
+  .c-title{font-family:var(--font-display); font-weight:600; font-size:23px; color:var(--wine-deep)}
+  .c-goal{display:inline-flex; align-items:center; gap:7px; font-size:12px; font-weight:600; color:var(--sec)}
+  .c-seg{display:grid; grid-template-columns:repeat(3,1fr); background:rgba(118,118,128,.1); border-radius:10px; padding:2px; margin-bottom:14px}
+  .c-seg span{text-align:center; font-size:12.5px; font-weight:600; color:var(--sec); padding:6px 0; border-radius:8px}
+  .c-seg .on{background:var(--paper-raised); color:var(--ink); box-shadow:0 1px 3px rgba(0,0,0,.12)}
+  .c-meta{display:flex; align-items:center; justify-content:space-between; margin:0 2px 10px; font-size:11.5px; font-weight:600; color:var(--muted)}
+  .c-all{display:inline-flex; align-items:center; gap:5px; color:var(--wine)}
+  .c-unit{position:relative; height:108px; border-radius:16px; overflow:hidden; color:#fff; background:var(--wine-deep)}
+  .c-unit img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover}
+  .c-unit::after{content:""; position:absolute; inset:0; background:linear-gradient(90deg, rgba(30,8,16,.82), rgba(30,8,16,.3))}
+  .c-unit-body{position:absolute; left:16px; right:16px; bottom:14px; z-index:1}
+  .c-unit .k{display:block; font-size:10.5px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; opacity:.85}
+  .c-unit .t{display:block; font-family:var(--font-display); font-weight:600; font-size:21px; line-height:1.15; margin:2px 0 9px}
+  .c-bar{display:flex; align-items:center; gap:9px; font-size:11.5px; font-weight:600}
+  .c-bar i{position:relative; flex:1; max-width:150px; height:5px; border-radius:5px; background:rgba(255,255,255,.3); overflow:hidden}
+  .c-bar i::after{content:""; position:absolute; left:0; top:0; bottom:0; width:var(--p); background:#fff; border-radius:5px}
+  .c-path{list-style:none; margin:20px 0 0; padding:0; display:grid; gap:16px; justify-items:center}
+  .c-node{display:flex; flex-direction:column; align-items:center; gap:7px; max-width:180px; text-align:center; transform:translateX(calc(var(--x, 0) * 58px))}
+  .c-dot{position:relative; width:56px; height:56px; border-radius:50%; display:grid; place-items:center; background:var(--wine); color:#fff;
+    box-shadow:inset 0 -4px 0 rgba(0,0,0,.18), 0 8px 16px -10px rgba(123,30,59,.8)}
+  .c-node.current .c-dot{width:66px; height:66px}
+  .c-node.current .c-dot::before{content:""; position:absolute; inset:-9px; z-index:-1; border-radius:50%; background:rgba(123,30,59,.2); animation:c-halo 2.2s cubic-bezier(.22,.61,.36,1) infinite}
+  @keyframes c-halo{from{transform:scale(.9); opacity:1} to{transform:scale(1.3); opacity:0}}
+  .c-node.locked .c-dot{background:#ebe5e8; color:#a99ea5; box-shadow:inset 0 -4px 0 rgba(0,0,0,.07)}
+  .c-lbl{font-size:12px; line-height:1.3; font-weight:500; color:var(--sec)}
+  .c-node.locked .c-lbl{color:var(--muted)}
+  .c-pop{position:relative; display:block; margin-top:6px; width:224px; text-align:left; background:var(--paper-raised); border:1px solid var(--line); border-radius:14px; box-shadow:var(--shadow-md); padding:12px 14px 13px}
+  .c-pop::before{content:""; position:absolute; top:-7px; left:50%; margin-left:-6px; width:12px; height:12px; background:var(--paper-raised); border-left:1px solid var(--line); border-top:1px solid var(--line); transform:rotate(45deg)}
+  .c-pop b{display:block; font-family:var(--font-display); font-weight:600; font-size:15.5px; line-height:1.25; color:var(--wine-deep)}
+  .c-pop small{display:block; font-size:11.5px; color:var(--muted); margin:3px 0 10px}
+  .c-start{display:block; text-align:center; background:var(--wine); color:#fff; font-weight:700; font-size:13px; padding:8px; border-radius:10px}
+
+  .practice{margin-top:104px}
+  .practice-head{max-width:580px; margin:0 auto 36px; text-align:center}
+  .practice-head h3{font-size:clamp(28px,3.2vw,38px); color:var(--wine-deep); letter-spacing:-.015em}
+  .practice-head p{color:var(--sec); font-size:17px; margin-top:12px}
+  .games{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; align-items:stretch}
+  .game{display:flex; flex-direction:column; background:var(--paper-raised); border:1px solid var(--line); border-radius:var(--r-card); box-shadow:var(--shadow-sm); padding:22px 22px 24px}
+  .game h4{font-family:var(--font-display); font-weight:600; font-size:19px; color:var(--wine-deep)}
+  .game .sub{display:block; font-size:13px; color:var(--muted); margin-top:2px}
+  .q{flex:1; margin-top:16px; background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:15px}
+  .q-k{display:block; font-size:10.5px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; color:var(--wine)}
+  .q-t{display:block; font-family:var(--font-display); font-weight:600; font-size:19px; line-height:1.25; color:var(--ink); margin:4px 0 12px}
+  .q-q{display:block; font-size:13px; font-weight:500; color:var(--sec); margin:-6px 0 12px}
+  .opts{display:grid; gap:8px}
+  .opt{display:flex; align-items:center; justify-content:space-between; gap:10px; padding:9px 12px; border:1px solid var(--line); border-radius:10px; background:var(--paper-raised); font-size:14px; font-weight:500; color:var(--ink)}
+  .opt.right{border-color:rgba(110,123,84,.6); background:rgba(110,123,84,.12); color:var(--vine-text); font-weight:600}
+  .opt.wrong{border-color:rgba(166,42,36,.35); background:rgba(166,42,36,.06); color:#962a24; text-decoration:line-through; text-decoration-color:rgba(150,42,36,.5)}
+  .q-note{margin-top:11px; font-size:12.5px; line-height:1.5; color:var(--sec)}
+  .q-note b{color:var(--wine)}
+  .streak-row{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:14px; font-size:12px; font-weight:600; color:var(--vine-text)}
+  .pips{display:flex; gap:4px}
+  .pips i{width:14px; height:5px; border-radius:3px; background:var(--line)}
+  .pips i.r{background:var(--vine)}
+  .practice-more{text-align:center; margin-top:26px; font-size:15.5px; color:var(--sec)}
+  .practice-more a{font-weight:600}
+
   /* The hero's "See how it works" link gives way to the QR on computers */
   @media (hover:hover) and (pointer:fine) and (min-width:901px){ .hero-how{display:none} }
 
@@ -401,6 +456,12 @@
     .mc-copy{flex-direction:column; gap:16px}
     .mc-get{justify-content:center}
     .rev-grid{grid-template-columns:1fr; max-width:520px; margin:0 auto}
+    /* Games become a swipeable row, one card and a peek of the next */
+    .games{display:flex; gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; margin:0 -24px; padding:4px 24px 14px; scrollbar-width:none}
+    .games::-webkit-scrollbar{display:none}
+    .game{flex:0 0 min(82%, 360px); scroll-snap-align:center}
+    .units{justify-content:center; max-width:480px; margin-left:auto; margin-right:auto}
+    .practice{margin-top:84px}
     .langs .wrap{flex-direction:column; text-align:center}
     .lang-toasts{justify-content:center}
   }
@@ -411,9 +472,8 @@
     .duo .phone{width:180px; border-radius:36px; padding:7px}
     .duo .phone img{border-radius:30px}
     .show-media .phone{width:230px}
-    .word-card{width:200px; left:0; bottom:24px}
-    .streak-card{right:0}
     .popular{margin:26px 0 0; padding:22px 20px 20px}
+    .games{margin:0 -20px; padding-left:20px; padding-right:20px}
     .cta-get{flex-direction:column; gap:18px}
   }
 </style>
@@ -612,24 +672,96 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
     <div class="showcase">
       <div class="show-copy">
         <p class="eyebrow reveal">Learn wine like a language</p>
-        <h3 class="reveal">A daily habit, not a homework assignment</h3>
-        <p class="reveal d1">Wine is a language, and Winelingo teaches it the way the best language apps do: a little every day, building on what you tried last night. Small, warm and genuinely fun to keep up.</p>
+        <h3 class="reveal">A path, one short lesson at a time</h3>
+        <p class="reveal d1">Winelingo’s course is more than a hundred short, interactive lessons, from tasting and grapes to France, Italy, Spain and the New World, food, ageing and wine at the table. A few minutes a day, and there’s always a lesson waiting for tonight.</p>
         <ul class="show-list reveal d1">
-          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>A short daily lesson and a wine word of the day</span></li>
-          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Keep your streak alive with a lesson <em>or</em> a tasting</span></li>
-          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Explore grapes, regions, styles and food pairing in real depth</span></li>
+          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Start any unit you like; inside it, each lesson opens the next</span></li>
+          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Questions, not homework: pick one, true or false, match the pairs, and see why straight away</span></li>
+          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Miss one and it comes back at the end, until it sticks</span></li>
+          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>A daily goal, and a streak you keep alive with a lesson <em>or</em> a tasting</span></li>
+        </ul>
+        <ul class="units reveal d2" aria-label="The units of the course">
+          <li>Tasting &amp; senses</li><li>Red grapes</li><li>White grapes</li><li>Serving &amp; glassware</li><li>Food &amp; wine</li><li>Reading the label</li><li>France</li><li>Italy, Spain &amp; more</li><li>The New World</li><li>In the vineyard</li><li>How wine is made</li><li>Terroir &amp; vintages</li><li>Quality, ageing &amp; collecting</li><li>Buying &amp; value</li><li>Wine at the table</li><li>Wine, health &amp; moderation</li><li>A short history of wine</li>
         </ul>
       </div>
-      <div class="show-media reveal d1" role="img" aria-label="The Winelingo Explore screen, with a wine word of the day and a 12-day streak.">
+      <div class="show-media reveal d1">
         <div class="panel-glow" aria-hidden="true"></div>
-        <div class="phone"><img src="/assets/shots/explore.jpg" alt="" width="640" height="1391" loading="lazy" decoding="async"></div>
-        <div class="streak-card"><span class="flame"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2s5 4 5 9a5 5 0 0 1-10 0c0-1 .3-1.8.3-1.8S8 11 9 12c0-2 1-4 3-5-.3 2 1 3 1.8 3.8C14.6 8 14 5 12 2Z"/></svg></span> 12-day streak</div>
-        <div class="word-card">
-          <div class="k">Word of the day</div>
-          <div class="w">Tannin</div>
-          <div class="d">The drying, grippy feeling in a red — from grape skins and oak. It’s texture, not taste.</div>
+        <div class="panel course" role="img" aria-label="Illustration of the Winelingo course. Unit 1, Tasting and senses: Wine 101 and How to taste wine done, the Body lesson up next, and Tannin opening after it.">
+          <div class="c-top">
+            <span class="c-title">Learn</span>
+            <span class="c-goal"><svg width="22" height="22" viewBox="0 0 36 36"><circle cx="18" cy="18" r="15" fill="none" stroke="#EFE5EA" stroke-width="5"/><circle cx="18" cy="18" r="15" fill="none" stroke="#7B1E3B" stroke-width="5" stroke-linecap="round" stroke-dasharray="94.2" stroke-dashoffset="56.5" transform="rotate(-90 18 18)"/></svg>12/30 XP</span>
+          </div>
+          <div class="c-seg"><span class="on">Course</span><span>Practice</span><span>Library</span></div>
+          <div class="c-meta"><span>2 of 101 lessons</span><span class="c-all"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg>All units</span></div>
+          <div class="c-unit">
+            <img src="/assets/photos/red-swirl-800.webp" alt="" width="800" height="533" loading="lazy" decoding="async">
+            <div class="c-unit-body">
+              <span class="k">Unit 1</span>
+              <span class="t">Tasting &amp; senses</span>
+              <span class="c-bar"><i style="--p:20%"></i><span>2 of 10</span></span>
+            </div>
+          </div>
+          <ol class="c-path">
+            <li class="c-node done"><span class="c-dot"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="c-lbl">Wine 101: the main styles of wine</span></li>
+            <li class="c-node done" style="--x:-1"><span class="c-dot"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="c-lbl">How to taste wine in 5 steps</span></li>
+            <li class="c-node current">
+              <span class="c-dot"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.6 7.1.7-5.4 4.8 1.6 7L12 17.4 5.8 21.1l1.6-7L2 9.3l7.1-.7L12 2Z"/></svg></span>
+              <span class="c-pop"><b>Body: what light vs full means</b><small>Lesson 3 of 10</small><span class="c-start">Start</span></span>
+            </li>
+            <li class="c-node locked" style="--x:1"><span class="c-dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="5" y="10.5" width="14" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" stroke="currentColor" stroke-width="2"/></svg></span><span class="c-lbl">Tannin: the grippy, drying feel</span></li>
+          </ol>
         </div>
       </div>
+    </div>
+
+    <!-- Practice games (Learn tab, app 1.3.0) -->
+    <div class="practice">
+      <div class="practice-head">
+        <p class="eyebrow center reveal">Practice</p>
+        <h3 class="reveal">Then play with what you’ve learned</h3>
+        <p class="reveal d1">Quick rounds that make it stick: a daily mix of questions on grapes, regions and wine words, or one game at a time, from where a grape comes from to guessing it from three clues.</p>
+      </div>
+      <div class="games">
+        <div class="game reveal" role="img" aria-label="Example question from the game Where does the grape come from: Malbec. Argentina is wrong, France is right.">
+          <h4>Where does the grape come from?</h4><span class="sub">The famous traps included</span>
+          <div class="q">
+            <span class="q-k">Red grape</span>
+            <span class="q-t">Malbec</span>
+            <span class="q-q">Where does the grape originally come from?</span>
+            <div class="opts">
+              <span class="opt wrong">Argentina <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+              <span class="opt right">France <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </div>
+            <p class="q-note"><b>The trap!</b> Malbec comes from Cahors in south-west France. Argentina is where it became world-famous.</p>
+          </div>
+        </div>
+        <div class="game reveal d1" role="img" aria-label="Example question from the game Guess the grape: three clues, blackcurrant, cedar and graphite. Cabernet Sauvignon is right.">
+          <h4>Guess the grape</h4><span class="sub">Three clues, one grape</span>
+          <div class="q">
+            <span class="q-k">Red grape</span>
+            <span class="q-t">Blackcurrant, Cedar, Graphite</span>
+            <span class="q-q">Which grape is it?</span>
+            <div class="opts">
+              <span class="opt right">Cabernet Sauvignon <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="opt">Pinot Noir</span>
+            </div>
+          </div>
+        </div>
+        <div class="game reveal d2" role="img" aria-label="Example question from the game Which is higher: which has more tannin, Nebbiolo or Pinot Noir? Nebbiolo is right.">
+          <h4>Which is higher?</h4><span class="sub">Tannin, acidity and body</span>
+          <div class="q">
+            <span class="q-k">Tannin</span>
+            <span class="q-t">Nebbiolo or Pinot Noir?</span>
+            <span class="q-q">Which one has more tannin?</span>
+            <div class="opts">
+              <span class="opt right">Nebbiolo <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="opt">Pinot Noir</span>
+            </div>
+            <div class="streak-row"><span class="pips" aria-hidden="true"><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span>4 in a row</span></div>
+          </div>
+        </div>
+      </div>
+      <p class="practice-more reveal">The wine tests live in there too. <a href="/tests/">Try one free on the web →</a></p>
     </div>
 
     <div class="showcase flip">
@@ -748,7 +880,7 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
     <div class="faq reveal d1">
       <details open>
         <summary>Is Winelingo free?<span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary>
-        <div class="a"><p>Winelingo is free to download, with Premium for unlimited scans. The daily lesson, the wine word of the day and the whole Explore library are free to learn with. Premium is for people who scan a lot, restaurant wine lists included.</p></div>
+        <div class="a"><p>Winelingo is free to download, with Premium for unlimited scans. The daily lesson, the wine word of the day and the whole library of grapes, regions and styles are free to learn with. Premium is for people who scan a lot, restaurant wine lists included.</p></div>
       </details>
       <details><summary>What is Winelingo?<span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary><div class="a"><p>Winelingo is a free app to learn about wine on your iPhone. Scan any wine label and it explains the bottle in plain English — body, tannin, acidity and sweetness — and builds your palate profile as you go. It speaks English, Danish, Spanish and German.</p></div></details>
       <details>
