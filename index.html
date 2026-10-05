@@ -305,9 +305,13 @@
   .order-tag{margin-left:auto; background:var(--wine); color:#fff; font-size:10.5px; font-weight:600; letter-spacing:.03em; padding:5px 10px; border-radius:var(--r-pill)}
   .row-best{background:linear-gradient(90deg, rgba(201,162,74,.10), transparent); border-radius:12px; padding-left:10px; padding-right:10px; margin:2px -10px}
 
-  .show-media .phone{width:262px}
+  /* Phone frame around a real app screenshot (the palate duo, and any future one) */
+  .phone{position:relative; border-radius:46px; padding:9px;
+    background:linear-gradient(160deg,#2a1320,#3b0a1e 55%,#1c0712);
+    box-shadow:var(--shadow-lg), inset 0 0 0 1.5px rgba(255,255,255,.07)}
+  .phone img{display:block; width:100%; height:auto; border-radius:37px; background:var(--paper)}
 
-  .duo{position:relative; width:100%; max-width:480px; height:560px}
+  .duo{position:relative; width:100%; max-width:480px; height:570px}
   .duo .phone{position:absolute; width:238px}
   .duo .phone:first-child{left:0; top:0; z-index:2}
   .duo .phone:last-child{right:0; top:70px; z-index:1}
@@ -468,10 +472,9 @@
   @media (max-width:560px){
     .strip-inner{flex-direction:column; gap:10px}
     .strip-sep{display:none}
-    .duo{height:440px; max-width:340px}
+    .duo{height:450px; max-width:340px}
     .duo .phone{width:180px; border-radius:36px; padding:7px}
     .duo .phone img{border-radius:30px}
-    .show-media .phone{width:230px}
     .popular{margin:26px 0 0; padding:22px 20px 20px}
     .games{margin:0 -20px; padding-left:20px; padding-right:20px}
     .cta-get{flex-direction:column; gap:18px}
