@@ -19,6 +19,10 @@
 // Visits are filled glowing dots; App Store downloads are rings (drawn around the
 // dot when a country has both). Extra fields: data-vg="downloads" / "download-countries",
 // data-vg-unit="downloads", and data-vg-when-downloads (hidden until there is one).
+//
+// Legend buttons: <button data-vg-focus="visits"> / <button data-vg-focus="downloads"> in the
+// same scope highlight that layer (the other fades back) and turn the globe toward the country
+// with the most of it. A second press shows both again; aria-pressed follows the state.
 
 import { geoOrthographic, geoPath, geoGraticule10, geoDistance } from "d3-geo";
 import { feature } from "topojson-client";
@@ -92,6 +96,7 @@ function mount(root) {
   let rot = [-10, -22, 0]; // start over the Atlantic, tilted to show the north
   let points = [], rings = [];
   let size = 0, dpr = 1, visible = false, raf = 0, last = 0, dragging = null;
+  let focus = null, spin = null; // focus: null | "visits" | "downloads"; spin: a short turn toward a country
 
   function resize() {
     const r = root.getBoundingClientRect();
@@ -121,6 +126,7 @@ function mount(root) {
 
     // Dots: area ∝ visitors, a slow breathing glow, faded out toward the limb.
     const centre = [-rot[0], -rot[1]];
+    const dotA = focus === "downloads" ? 0.14 : 1, ringA = focus === "visits" ? 0.14 : 1;
     const max = points.reduce((m, p) => Math.max(m, p.v), 1);
     ctx.save(); ctx.beginPath(); path(sphere); ctx.clip(); // glows near the limb stay on the globe
     for (const p of points) {
@@ -131,9 +137,9 @@ function mount(root) {
       const base = Math.max(2.2, Math.sqrt(p.v / max) * size * 0.022);
       const breathe = reduced ? 1 : 1 + 0.18 * Math.sin(now / 900 + p.phase);
       const glow = ctx.createRadialGradient(x, y, 0, x, y, base * 3.2 * breathe);
-      glow.addColorStop(0, rgba(t.dot, 0.55 * edge)); glow.addColorStop(1, rgba(t.dot, 0));
+      glow.addColorStop(0, rgba(t.dot, 0.55 * edge * dotA)); glow.addColorStop(1, rgba(t.dot, 0));
       ctx.fillStyle = glow; ctx.beginPath(); ctx.arc(x, y, base * 3.2 * breathe, 0, 2 * Math.PI); ctx.fill();
-      ctx.fillStyle = rgba(t.dot, 0.95 * edge); ctx.beginPath(); ctx.arc(x, y, base, 0, 2 * Math.PI); ctx.fill();
+      ctx.fillStyle = rgba(t.dot, 0.95 * edge * dotA); ctx.beginPath(); ctx.arc(x, y, base, 0, 2 * Math.PI); ctx.fill();
     }
 
     // Download rings: a thin circle, sized by downloads, around any visit dot there.
@@ -146,7 +152,8 @@ function mount(root) {
       const dot = points.find((q) => q.ll[0] === p.ll[0] && q.ll[1] === p.ll[1]);
       const inner = dot ? Math.max(2.2, Math.sqrt(dot.v / max) * size * 0.022) + 3 : 0;
       const rad = Math.max(inner, 3.5 + Math.sqrt(p.v / maxD) * size * 0.018);
-      ctx.strokeStyle = rgba(t.ring, 0.9 * edge); ctx.lineWidth = Math.max(1.2, size * 0.004);
+      ctx.strokeStyle = rgba(t.ring, 0.9 * edge * ringA);
+      ctx.lineWidth = Math.max(1.2, size * (focus === "downloads" ? 0.006 : 0.004));
       ctx.beginPath(); ctx.arc(x, y, rad, 0, 2 * Math.PI); ctx.stroke();
     }
     ctx.restore();
@@ -157,14 +164,18 @@ function mount(root) {
 
   function frame(now) {
     const dt = Math.min(64, now - (last || now)); last = now;
-    if (!dragging && !reduced) rot = [rot[0] + dt * 0.006, rot[1], 0]; // ~1 turn a minute
+    if (spin && !dragging) {
+      const k = Math.min(1, (now - spin.t0) / 1000), e = 1 - Math.pow(1 - k, 3);
+      rot = [spin.from[0] + spin.d[0] * e, spin.from[1] + spin.d[1] * e, 0];
+      if (k >= 1) spin = null;
+    } else if (!dragging && !reduced) rot = [rot[0] + dt * 0.006, rot[1], 0]; // ~1 turn a minute
     draw(now);
     raf = visible && !document.hidden ? requestAnimationFrame(frame) : 0;
   }
   const start = () => { if (!raf && visible && !document.hidden) { last = 0; raf = requestAnimationFrame(frame); } };
 
   // Drag to spin (mouse and touch); vertical page scroll still works on phones.
-  canvas.addEventListener("pointerdown", (e) => { dragging = { x: e.clientX, y: e.clientY, rot: rot.slice() }; canvas.setPointerCapture(e.pointerId); canvas.style.cursor = "grabbing"; });
+  canvas.addEventListener("pointerdown", (e) => { spin = null; dragging = { x: e.clientX, y: e.clientY, rot: rot.slice() }; canvas.setPointerCapture(e.pointerId); canvas.style.cursor = "grabbing"; });
   canvas.addEventListener("pointermove", (e) => {
     if (!dragging) return;
     const k = 180 / Math.max(1, projection.scale() * Math.PI);
@@ -177,6 +188,28 @@ function mount(root) {
   new ResizeObserver(resize).observe(root);
   new IntersectionObserver(([e]) => { visible = e.isIntersecting; start(); }, { rootMargin: "100px" }).observe(root);
   document.addEventListener("visibilitychange", start);
+
+  // Face a point: the shortest way round, tilted no further than the drag allows.
+  function turnTo(ll) {
+    const target = [-ll[0], -Math.max(-40, Math.min(40, ll[1])), 0];
+    const d0 = ((target[0] - rot[0]) % 360 + 540) % 360 - 180;
+    if (reduced) { rot = target; draw(performance.now()); return; }
+    spin = { t0: performance.now(), from: rot.slice(), d: [d0, target[1] - rot[1]] };
+    start();
+  }
+  const scope = root.closest("[data-visitor-globe-scope]") || document;
+  const buttons = [...scope.querySelectorAll("[data-vg-focus]")];
+  function setFocus(kind) {
+    focus = focus === kind ? null : kind;
+    for (const b of buttons) b.setAttribute("aria-pressed", String(b.getAttribute("data-vg-focus") === focus));
+    const layer = focus === "downloads" ? rings : focus === "visits" ? points : [];
+    if (layer.length) turnTo(layer.reduce((a, b) => (b.v > a.v ? b : a)).ll);
+    // On a phone the globe sits under the buttons: bring it into view so the change is seen.
+    const box = root.getBoundingClientRect();
+    if (focus && (box.top > innerHeight - box.height * 0.5 || box.bottom < box.height * 0.5)) root.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "center" });
+    draw(performance.now());
+  }
+  for (const b of buttons) { b.setAttribute("aria-pressed", "false"); b.addEventListener("click", () => setFocus(b.getAttribute("data-vg-focus"))); }
 
   function setData(data) {
     points = (data.countries || [])

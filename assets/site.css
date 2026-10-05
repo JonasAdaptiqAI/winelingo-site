@@ -422,10 +422,16 @@ a.pairpill:hover{border-color:rgba(123,30,59,.35); color:var(--wine); text-decor
 }
 @media (prefers-reduced-motion:reduce){.globe-stats{transition:none}}
 .globe-dl{color:var(--wine-deep); font-size:16px; font-weight:600; margin:10px 0 0}
-.globe-legend{display:flex; align-items:center; gap:8px; color:var(--sec); font-size:13px; margin:12px 0 0}
-.globe-legend .lg{display:inline-block; width:10px; height:10px; border-radius:50%}
+.globe-legend{display:flex; align-items:center; flex-wrap:wrap; gap:8px; margin:14px 0 0}
+.globe-legend .lg{display:inline-block; width:10px; height:10px; border-radius:50%; flex:0 0 auto}
 .globe-legend .lg-dot{background:var(--wine)}
-.globe-legend .lg-ring{border:1.6px solid var(--wine); margin-left:10px}
+.globe-legend .lg-ring{border:1.6px solid var(--wine)}
+/* Legend items are buttons: each highlights its layer on the globe (assets/visitor-globe.js) */
+.lg-btn{display:inline-flex; align-items:center; gap:8px; padding:7px 14px 7px 11px; border:1px solid var(--line); border-radius:var(--r-pill);
+  background:var(--paper-raised); color:var(--sec); font:500 13px/1.2 var(--font-body); cursor:pointer;
+  box-shadow:var(--shadow-sm); transition:border-color .2s, color .2s, background .2s}
+.lg-btn:hover{border-color:rgba(123,30,59,.35); color:var(--wine)}
+.lg-btn[aria-pressed="true"]{background:rgba(123,30,59,.08); border-color:var(--wine); color:var(--wine-deep); font-weight:600}
 @media (max-width:820px){.globe-legend{justify-content:center}}
 
 /* ============ Get the app: QR cards + sticky bar (assets/get-app.js) ============ */

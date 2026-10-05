@@ -864,7 +864,7 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
         <p class="globe-big"><span data-vg="visitors"></span> <span data-vg-unit="visitors" data-one="visit" data-many="visits">visits</span></p>
         <p class="globe-sub">from <span data-vg="countries"></span> <span data-vg-unit="countries" data-one="country" data-many="countries">countries</span><span data-vg-when-active hidden> · <span data-vg="active"></span> here right now</span></p>
         <p class="globe-dl" data-vg-when-downloads hidden><span data-vg="downloads"></span> app <span data-vg-unit="downloads" data-one="download" data-many="downloads">downloads</span> from <span data-vg="download-countries"></span> <span data-vg-unit="download-countries" data-one="country" data-many="countries">countries</span></p>
-        <p class="globe-legend" data-vg-when-downloads hidden><span class="lg lg-dot" aria-hidden="true"></span>Site visits <span class="lg lg-ring" aria-hidden="true"></span>App downloads</p>
+        <p class="globe-legend" data-vg-when-downloads hidden role="group" aria-label="Highlight on the globe"><button type="button" class="lg-btn" data-vg-focus="visits"><span class="lg lg-dot" aria-hidden="true"></span>Site visits</button><button type="button" class="lg-btn" data-vg-focus="downloads"><span class="lg lg-ring" aria-hidden="true"></span>App downloads</button></p>
         <p class="globe-note">Visits are counted anonymously, one per browser session: we keep the country and the count, nothing else. No cookies, no IP addresses. Downloads are first-time App Store downloads of Winelingo, from Apple’s daily report.</p>
       </div>
     </div>
@@ -1070,7 +1070,7 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
   })();
 
 </script>
-<script defer src="/assets/visitor-globe.js?v=3"></script>
+<script defer src="/assets/visitor-globe.js?v=4"></script>
 <script defer src="/assets/get-app.js?v=1"></script>
 </body>
 </html>
