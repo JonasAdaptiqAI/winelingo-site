@@ -20,8 +20,17 @@
   // Paying on the web: RevenueCat Web Billing with Paddle. Each is a Web Purchase Link (RevenueCat →
   // Web → Create web purchase link) ending in "/"; the account id is appended, so the purchase lands
   // on this account. Empty = not set up yet: the plans show, with a note instead of a buy button.
-  // RevenueCat's success URL should be https://winelingo.app/course/?purchase=done
-  var PURCHASE = { monthly: "", lifetime: "" };
+  // RevenueCat's success URL is https://winelingo.app/course/?purchase=done
+  // live: the real checkout (empty until the live Paddle account is connected).
+  // sandbox: Paddle test mode, only with ?sandbox=1. rc-webhook ignores sandbox purchases except for
+  // the test accounts in RC_SANDBOX_USERS, so these links unlock nothing for anyone else.
+  var LINKS = {
+    live: { monthly: "", lifetime: "" },
+    sandbox: { monthly: "https://pay.rev.cat/zyfjogqowdnqnapw/", lifetime: "https://pay.rev.cat/zgrofjmxwefvfjqk/" }
+  };
+  var SANDBOX = /[?&]sandbox=1\b/.test(location.search);
+  try { if (SANDBOX) sessionStorage.setItem("wl-sandbox", "1"); else if (sessionStorage.getItem("wl-sandbox")) SANDBOX = true; } catch (e) {}
+  var PURCHASE = SANDBOX ? LINKS.sandbox : LINKS.live;
   // Free on the web: the first unit. The rest needs Premium or the course purchase (0131).
   var FREE_TOPIC = "Tasting & senses";
 
@@ -563,6 +572,7 @@
     var ready = !!(PURCHASE.monthly || PURCHASE.lifetime);
     var refresh = h("button", { class: "linkbtn", type: "button", onclick: function () { close(); awaitPurchase(); } }, t("web.pwRefresh"));
     var close = dialog(t("web.pwTitle"), h("div", { class: "pw" },
+      SANDBOX ? h("p", { class: "pw-soon", text: "TEST MODE · Paddle sandbox. Use a Paddle test card; only test accounts are unlocked." }) : null,
       h("p", { class: "muted", text: t("web.pwSub") }),
       h("div", { class: "plans" },
         plan("monthly", t("web.pwMonthlyName"), t("web.pwMonthlyPrice"), t("web.pwMonthlyNote"),
