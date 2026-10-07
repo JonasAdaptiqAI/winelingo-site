@@ -17,6 +17,22 @@
   var LESSON_IMG = SB_URL + "/storage/v1/object/public/lesson-images/";
   var LANGS = [["en", "English"], ["da", "Dansk"], ["es", "Español"], ["de", "Deutsch"]];
   var HERE = location.origin + "/course/";
+  // Paying on the web: RevenueCat Web Billing with Paddle. Each is a Web Purchase Link (RevenueCat →
+  // Web → Create web purchase link) ending in "/"; the account id is appended, so the purchase lands
+  // on this account. Empty = not set up yet: the plans show, with a note instead of a buy button.
+  // RevenueCat's success URL is https://winelingo.app/course/?purchase=done
+  // live: the real checkout (empty until the live Paddle account is connected).
+  // sandbox: Paddle test mode, only with ?sandbox=1. rc-webhook ignores sandbox purchases except for
+  // the test accounts in RC_SANDBOX_USERS, so these links unlock nothing for anyone else.
+  var LINKS = {
+    live: { monthly: "", lifetime: "" },
+    sandbox: { monthly: "https://pay.rev.cat/zyfjogqowdnqnapw/", lifetime: "https://pay.rev.cat/zgrofjmxwefvfjqk/" }
+  };
+  var SANDBOX = /[?&]sandbox=1\b/.test(location.search);
+  try { if (SANDBOX) sessionStorage.setItem("wl-sandbox", "1"); else if (sessionStorage.getItem("wl-sandbox")) SANDBOX = true; } catch (e) {}
+  var PURCHASE = SANDBOX ? LINKS.sandbox : LINKS.live;
+  // Free on the web: the first unit. The rest needs Premium or the course purchase (0131).
+  var FREE_TOPIC = "Tasting & senses";
 
   // The course: one unit per lesson topic, in curriculum order (learn.tsx UNITS).
   var UNITS = [
@@ -224,6 +240,12 @@
     var c = S.profile && S.profile.wine_countries;
     return Array.isArray(c) && c.length ? c : null;
   }
+  function hasAccess() {
+    var p = S.profile || {};
+    var premium = p.is_premium && (!p.premium_until || Date.parse(p.premium_until) > Date.now());
+    return !!(premium || p.course_access);
+  }
+  function unitOpen(topic) { return topic === FREE_TOPIC || hasAccess(); }
   function inPath(topic) {
     var covers = UNIT_COUNTRIES[topic], c = countriesOf();
     if (!covers || !c) return true;
@@ -265,6 +287,7 @@
         st ? h("span", { class: "chip chip-flame" + (st.activeToday ? " on" : ""), title: st.current ? t("web.streak", { count: st.current }) : t("web.noStreak") },
           icon("flame", 17), String(st.current)) : null,
         heartsChip(),
+        hasAccess() ? h("span", { class: "chip chip-pro", text: S.profile.course_access && !S.profile.is_premium ? t("web.pwLifeName") : "Premium" }) : null,
         langSelect(setLang),
         h("button", { class: "linkbtn", type: "button", onclick: function () { sb.auth.signOut(); } }, t("web.signOut"))
       ));
@@ -352,6 +375,7 @@
         h("h1", { text: t("auth.subtitle") }),
         h("p", { class: "lede", text: t("web.tagline") }),
         form,
+        h("p", { class: "fine", text: t("web.authFree") }),
         h("p", { class: "fine", text: t("web.noAccount") }),
         APPLE_WEB ? null : h("p", { class: "fine", text: t("web.appleSoon") }),
         h("div", { class: "auth-foot" }, langSelect(setLang),
@@ -435,7 +459,7 @@
       var firstOpen = -1;
       for (var i = 0; i < ls.length; i++) if (!S.done.has(ls[i].id)) { firstOpen = i; break; }
       var nodes = ls.map(function (l, i) { return { lesson: l, index: i, state: S.done.has(l.id) ? "done" : i === firstOpen ? "current" : "locked" }; });
-      return { u: u, lessons: ls, nodes: nodes, doneCount: doneCount, later: !inPath(u.topic), here: false };
+      return { u: u, lessons: ls, nodes: nodes, doneCount: doneCount, later: !inPath(u.topic), here: false, paid: !unitOpen(u.topic) };
     }).filter(function (x) { return x.lessons.length > 0; });
     var ordered = list.filter(function (x) { return !x.later; }).concat(list.filter(function (x) { return x.later; }));
     var here = ordered.find(function (x) { return x.doneCount > 0 && x.doneCount < x.lessons.length; })
@@ -473,7 +497,12 @@
           h("i", { style: "width:" + Math.min(100, Math.round(100 * xp / goal)) + "%" })),
         h("p", { class: "muted", text: t("web.xpToday", { xp: xp, goal: goal }) + " · " +
           (S.streak && S.streak.current ? t("web.streak", { count: S.streak.current }) : t("web.noStreak")) })),
-      next ? h("div", { class: "next" },
+      next && hereU.paid ? h("div", { class: "next" },
+        h("p", { class: "next-k", text: t("web.paidTag") }),
+        h("p", { class: "next-t", text: units[0] && units[0].u.topic === FREE_TOPIC && units[0].doneCount === units[0].lessons.length ? t("web.freeDoneTitle") : t("web.pwTitle") }),
+        h("p", { class: "muted", text: t("web.freeDoneBody") }),
+        h("button", { class: "btn btn-primary", type: "button", onclick: showPaywall }, icon("lock", 16), t("web.unlock")))
+      : next ? h("div", { class: "next" },
         h("p", { class: "next-k", text: t("web.continueTitle") }),
         h("p", { class: "next-t", text: next.lesson.title }),
         h("p", { class: "muted", text: t("lessonTopics." + hereU.u.key) + " · " + t("learn.lessonOf", { n: next.index + 1, total: hereU.lessons.length }) }),
@@ -491,7 +520,8 @@
           onclick: function () { if (open) S.open.delete(x.u.topic); else S.open.add(x.u.topic); render(); } },
           h("span", { class: "unit-img", style: "background-image:url(" + imgUrl(x.u.img) + ")" }),
           h("span", { class: "unit-body" },
-            h("span", { class: "unit-k", text: t("learn.unit", { n: ui + 1 }) + (x.here ? " · " + t("learn.youAreHere") : "") }),
+            h("span", { class: "unit-k" }, t("learn.unit", { n: ui + 1 }) + (x.here ? " · " + t("learn.youAreHere") : ""),
+              !hasAccess() ? h("span", { class: "tag " + (x.paid ? "paid" : "free") }, x.paid ? icon("lock", 11) : null, x.paid ? t("web.paidTag") : t("web.freeTag")) : null),
             h("span", { class: "unit-t", text: t("lessonTopics." + x.u.key) }),
             h("span", { class: "unit-prog" }, h("i", null, h("b", { style: "width:" + Math.round(100 * x.doneCount / x.lessons.length) + "%" })),
               complete ? h("span", { class: "unit-done" }, icon("check", 14)) : null,
@@ -500,6 +530,10 @@
       if (open) {
         card.appendChild(h("ol", { class: "lessons" }, x.nodes.map(function (n) {
           var l = n.lesson;
+          if (x.paid && n.state !== "done") return h("li", { class: "lrow locked" },
+            h("span", { class: "lnode" }, icon("lock", 14)),
+            h("span", { class: "lmeta" }, h("span", { class: "lt", text: l.title }), h("span", { class: "ls", text: t("web.lockedHint") })),
+            n.state === "current" ? h("button", { class: "btn btn-ghost btn-sm", type: "button", onclick: showPaywall }, t("web.unlock")) : null);
           return h("li", { class: "lrow " + n.state },
             h("span", { class: "lnode" }, n.state === "done" ? icon("check", 16) : n.state === "current" ? icon("play", 14) : icon("lock", 14)),
             h("span", { class: "lmeta" }, h("span", { class: "lt", text: l.title }),
@@ -520,6 +554,35 @@
         list,
         h("p", { class: "fine center", text: t("web.footer") }))));
     S.notice = null;
+  }
+  // The two ways to unlock the course. A plan opens RevenueCat's hosted checkout (Paddle) for this
+  // account; RevenueCat sends the purchase to rc-webhook, which unlocks the account (profiles), and
+  // the checkout brings the buyer back to ?purchase=done.
+  function showPaywall() {
+    var uid = S.session && S.session.user.id;
+    function plan(cls, name, price, note, bullets, cta, base) {
+      return h("div", { class: "plan " + cls },
+        h("p", { class: "plan-n", text: name }), h("p", { class: "plan-p", text: price }), h("p", { class: "plan-note", text: note }),
+        h("ul", null, bullets.map(function (b) {
+          return h("li", { class: b[1] ? "" : "no" }, icon(b[1] ? "check" : "x", 15), h("span", { text: b[0] }));
+        })),
+        base ? h("a", { class: "btn btn-primary btn-block", href: base + encodeURIComponent(uid),
+          onclick: function () { try { if (window.umami) umami.track("course-checkout", { plan: cls }); } catch (e) {} } }, cta) : null);
+    }
+    var ready = !!(PURCHASE.monthly || PURCHASE.lifetime);
+    var refresh = h("button", { class: "linkbtn", type: "button", onclick: function () { close(); awaitPurchase(); } }, t("web.pwRefresh"));
+    var close = dialog(t("web.pwTitle"), h("div", { class: "pw" },
+      SANDBOX ? h("p", { class: "pw-soon", text: "TEST MODE · Paddle sandbox. Use a Paddle test card; only test accounts are unlocked." }) : null,
+      h("p", { class: "muted", text: t("web.pwSub") }),
+      h("div", { class: "plans" },
+        plan("monthly", t("web.pwMonthlyName"), t("web.pwMonthlyPrice"), t("web.pwMonthlyNote"),
+          [[t("web.pwMonthlyB1"), 1], [t("web.pwMonthlyB2"), 1], [t("web.pwMonthlyB3"), 1]], t("web.pwMonthlyCta"), PURCHASE.monthly),
+        plan("lifetime", t("web.pwLifeName"), t("web.pwLifePrice"), t("web.pwLifeNote"),
+          [[t("web.pwLifeB1"), 1], [t("web.pwLifeB2"), 1], [t("web.pwLifeB3"), 0]], t("web.pwLifeCta"), PURCHASE.lifetime)),
+      ready ? null : h("p", { class: "pw-soon" }, t("web.pwSoon"), " ", h("a", { href: APP_STORE, target: "_blank", rel: "noopener" }, t("web.openAppStore"))),
+      h("p", { class: "fine", text: t("web.pwFine") }),
+      ready ? refresh : null), [{ label: t("common.close") }]);
+    try { if (window.umami) umami.track("course-paywall"); } catch (e) {}
   }
   function groupHead(title, sub) {
     return h("div", { class: "ghead" }, h("h3", { text: title }), h("p", { class: "muted", text: sub }));
@@ -629,6 +692,7 @@
 
   var P = null;   // the open player
   function openPlayer(lesson) {
+    if (!unitOpen(lesson.topic)) { showPaywall(); return; }
     var topicLabel = (function () { var u = UNITS.find(function (x) { return x.topic === lesson.topic; }); return u ? t("lessonTopics." + u.key) : t("learn.title"); })();
     P = { lesson: lesson, topicLabel: topicLabel, extras: null, mode: "core", el: h("div", { class: "player", role: "dialog", "aria-modal": "true", "aria-label": lesson.title }) };
     document.body.appendChild(P.el);
@@ -936,15 +1000,37 @@
     if (S.view === "onboarding") return renderOnboarding();
     return renderCourse();
   }
+  function loadProfile(uid) {
+    return sb.from("profiles").select("id, display_name, experience_level, language, wine_countries, daily_goal_min, is_premium, premium_until, subscription_tier, course_access")
+      .eq("id", uid).maybeSingle();
+  }
+  // Back from the checkout (?purchase=done): the webhook may take a few seconds, so look again a few
+  // times before saying it hasn't arrived.
+  function awaitPurchase() {
+    var tries = 0;
+    S.notice = t("web.checking"); render();
+    (function poll() {
+      loadProfile(S.session.user.id).then(function (res) {
+        if (res.data) Object.assign(S.profile, res.data);
+        if (hasAccess()) { S.notice = t("web.unlocked"); refreshHearts().then(render); return; }
+        if (++tries < 20) { setTimeout(poll, 3000); return; }
+        S.notice = t("web.notYet"); render();
+      });
+    })();
+  }
   function afterSignIn() {
     var uid = S.session.user.id;
-    sb.from("profiles").select("id, display_name, experience_level, language, wine_countries, daily_goal_min").eq("id", uid).maybeSingle()
+    loadProfile(uid)
       .then(function (res) {
         S.profile = res.data || { id: uid };
         var saved = null; try { saved = localStorage.getItem("wl-course-lang"); } catch (e) {}
         if (!saved && S.profile.language && STR[S.profile.language]) S.lang = S.profile.language;
         if (!S.profile.experience_level) { S.view = "onboarding"; render(); return; }
         S.view = "course"; render(); loadCourse();
+        if (/[?&]purchase=done/.test(location.search)) {
+          history.replaceState(null, "", location.pathname);
+          awaitPurchase();
+        }
       }).catch(function () { S.profile = { id: uid }; S.view = "course"; render(); loadCourse(); });
   }
   S.lang = startLang();
