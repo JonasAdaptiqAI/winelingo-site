@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6785896824">
+<title>Wine Training for Restaurant Staff | Winelingo for Business</title>
+<meta name="description" content="Wine training for restaurant staff, on their own phones: short lessons, free staff tests, a test built on your own wine list and a weekly team league.">
+<link rel="canonical" href="https://winelingo.app/business/">
+<meta name="theme-color" content="#7b1e3b">
+<meta name="color-scheme" content="light">
+<meta name="author" content="Jonas Egeskov">
+<link rel="alternate" hreflang="en" href="https://winelingo.app/business/">
+<link rel="alternate" hreflang="x-default" href="https://winelingo.app/business/">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Winelingo">
+<meta property="og:title" content="Winelingo for Business — wine training for the whole team">
+<meta property="og:description" content="Short lessons, staff tests, a test built on your own wine list and a weekly team league, on every waiter's own phone.">
+<meta property="og:url" content="https://winelingo.app/business/">
+<meta property="og:image" content="https://winelingo.app/assets/business/film-poster-en.jpg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="720">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Winelingo for Business — wine training for the whole team">
+<meta name="twitter:description" content="Short lessons, staff tests, a test built on your own wine list and a weekly team league, on every waiter's own phone.">
+<meta name="twitter:image" content="https://winelingo.app/assets/business/film-poster-en.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://winelingo.app/"},
+        {"@type": "ListItem", "position": 2, "name": "For business"}
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Winelingo for restaurants: wine training for the whole team",
+      "description": "A guest asks what goes with the lamb and the new waiter freezes. Sixty-eight seconds on how a restaurant team learns wine with Winelingo: short lessons, staff tests, a test built on the house wine list, label scanning, blind tastings and a weekly league.",
+      "thumbnailUrl": "https://winelingo.app/assets/business/film-poster-en.jpg",
+      "contentUrl": "https://winelingo.app/assets/video/for-restaurants-en.mp4",
+      "uploadDate": "2026-10-07",
+      "duration": "PT1M8S",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "What does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the size of your team. New partners start with a free trial period, so the team can try Winelingo before you decide anything. Write to us and we will make you an offer."}},
+        {"@type": "Question", "name": "Which phones does it work on?", "acceptedAnswer": {"@type": "Answer", "text": "Winelingo is an iPhone app. The staff tests and your own house test are web pages, so they open on any phone."}},
+        {"@type": "Question", "name": "Can you tailor it to our wine list?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We build a staff test from your list: ten questions the way guests ask them, each pointing to a bottle you actually pour. It lives on its own web page, which is not listed on Google."}},
+        {"@type": "Question", "name": "Is staff data private?", "acceptedAnswer": {"@type": "Answer", "text": "Each person has their own account, and their tasting journal is theirs. As the employer you do not get access to anyone's account."}}
+      ]
+    }
+  ]
+}
+</script>
+<style>
+  [hidden]{display:none !important}
+  .nav-links a[aria-current="page"]{color:var(--wine); font-weight:600}
+
+  /* ---------- Hero ---------- */
+  .bz-hero{position:relative; padding:52px 0 0; overflow:hidden}
+  .bz-hero .hero-bg{position:absolute; inset:0; z-index:0; pointer-events:none;
+    background:
+      radial-gradient(1000px 560px at 86% -8%, rgba(232,160,176,.22), transparent 60%),
+      radial-gradient(900px 600px at 6% 4%, rgba(201,162,74,.14), transparent 58%);
+    -webkit-mask-image:linear-gradient(180deg,#000 55%,transparent); mask-image:linear-gradient(180deg,#000 55%,transparent)}
+  .bz-top{display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:34px}
+  .bz-top .breadcrumb{margin:0}
+  .lang-seg{display:inline-flex; padding:3px; border-radius:var(--r-pill); background:rgba(59,10,30,.06); border:1px solid var(--line)}
+  .lang-seg button{border:0; background:transparent; font:600 13px var(--font-body); color:var(--sec); padding:7px 14px; border-radius:var(--r-pill); cursor:pointer}
+  .lang-seg button[aria-pressed="true"]{background:var(--paper-raised); color:var(--wine-deep); box-shadow:0 1px 3px rgba(59,10,30,.14)}
+  .bz-head{max-width:820px; margin:0 auto; text-align:center}
+  .bz-head h1{font-size:clamp(40px,6.4vw,76px); color:var(--wine-deep); letter-spacing:-.028em; line-height:1.02; text-wrap:balance}
+  .bz-head h1 em{font-style:italic; color:var(--wine); font-weight:500}
+  .bz-sub{font-size:clamp(17px,1.9vw,20px); color:var(--sec); margin:22px auto 30px; max-width:46ch; line-height:1.55}
+  .bz-actions{display:flex; flex-wrap:wrap; gap:14px 22px; align-items:center; justify-content:center}
+  .bz-watch{display:inline-flex; align-items:center; gap:8px; font-weight:600; font-size:15.5px; color:var(--wine)}
+  .bz-watch:hover{text-decoration:none} .bz-watch:hover svg{transform:scale(1.15)}
+  .bz-watch svg{transition:transform .25s var(--ease)}
+  .bz-fine{margin-top:18px; font-size:14px; color:var(--muted)}
+
+  /* ---------- The film (16:9) ---------- */
+  .bz-stage{position:relative; max-width:1040px; margin:52px auto 0}
+  .bz-stage .glow{position:absolute; left:6%; right:6%; top:12%; bottom:-4%; z-index:0;
+    background:radial-gradient(closest-side, rgba(123,30,59,.26), transparent 74%); filter:blur(38px)}
+  .film{position:relative; z-index:2; margin:0; aspect-ratio:16/9; border-radius:22px; overflow:hidden;
+    background:#2a0b18; box-shadow:var(--shadow-lg), 0 0 0 1px rgba(59,10,30,.1)}
+  .film video{display:block; width:100%; height:100%; object-fit:cover}
+  .film-play{position:absolute; inset:0; display:flex; align-items:flex-end; justify-content:center; padding:0 0 26px;
+    border:0; background:linear-gradient(180deg, rgba(30,8,16,0) 55%, rgba(30,8,16,.5)); font:inherit; cursor:pointer}
+  .fp-pill{display:flex; align-items:center; gap:12px; padding:7px 22px 7px 7px; border-radius:var(--r-pill);
+    background:rgba(255,253,251,.96); box-shadow:0 16px 36px -14px rgba(0,0,0,.65); transition:transform .3s var(--ease)}
+  .fp-btn{width:48px; height:48px; border-radius:50%; display:grid; place-items:center; padding-left:3px; background:var(--wine); color:#fff;
+    animation:fp-pulse 2.6s var(--ease) infinite}
+  @keyframes fp-pulse{0%{box-shadow:0 0 0 0 rgba(123,30,59,.45)} 70%,100%{box-shadow:0 0 0 14px rgba(123,30,59,0)}}
+  .fp-lbl{display:flex; flex-direction:column; align-items:flex-start; font-weight:600; font-size:15px; line-height:1.3; color:var(--wine-deep)}
+  .fp-lbl small{font-weight:500; font-size:12px; color:var(--muted)}
+  .film-play:hover .fp-pill{transform:translateY(-2px)}
+  .film-play:focus-visible{outline:none} .film-play:focus-visible .fp-pill{outline:3px solid var(--gold); outline-offset:3px}
+  .film-end{position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px;
+    padding:28px; text-align:center; background:rgba(30,8,16,.76); -webkit-backdrop-filter:blur(4px); backdrop-filter:blur(4px)}
+  .fe-t{font-family:var(--font-display); font-weight:600; font-size:clamp(22px,3vw,32px); line-height:1.2; color:#fff; max-width:20ch}
+  .fe-row{display:flex; gap:12px; flex-wrap:wrap; justify-content:center}
+  .fe-replay{padding:12px 20px; border:1px solid rgba(255,255,255,.4); border-radius:var(--r-ctrl); background:transparent; color:#fff; font:600 15px var(--font-body); cursor:pointer}
+  .fe-replay:hover{background:rgba(255,255,255,.1)}
+
+  .bz-proof{display:flex; align-items:center; justify-content:center; gap:10px 16px; flex-wrap:wrap; margin:30px auto 0; font-size:14.5px; color:var(--sec)}
+  .bz-proof .k{font-size:11.5px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--muted)}
+  .bz-proof a{display:inline-flex; align-items:baseline; gap:8px; color:var(--wine-deep)}
+  .bz-proof b{font-family:var(--font-display); font-weight:600; font-size:21px; letter-spacing:-.01em}
+  .bz-proof .dot{width:5px; height:5px; border-radius:50%; background:var(--gold); opacity:.7}
+
+  /* ---------- Why ---------- */
+  .why{display:grid; grid-template-columns:repeat(3,1fr); gap:24px}
+  .why-item{background:var(--paper-raised); border:1px solid var(--line); border-radius:var(--r-card); box-shadow:var(--shadow-sm); padding:28px 26px 30px}
+  .why-ic{width:46px; height:46px; border-radius:14px; display:grid; place-items:center; background:rgba(123,30,59,.07); color:var(--wine); margin-bottom:18px}
+  .why-item h3{font-size:21px; color:var(--wine-deep); margin-bottom:8px}
+  .why-item p{color:var(--sec); font-size:16px}
+
+  /* ---------- What the team gets ---------- */
+  .chapters{display:grid; grid-template-columns:repeat(3,1fr); gap:24px}
+  .ch{display:flex; flex-direction:column; background:var(--paper-raised); border:1px solid var(--line); border-radius:var(--r-card); box-shadow:var(--shadow-sm); overflow:hidden}
+  .ch-img{position:relative; aspect-ratio:1/1; background:#2a0b18; overflow:hidden}
+  .ch-img img{width:100%; height:100%; object-fit:cover; transition:transform .6s var(--ease)}
+  .ch:hover .ch-img img{transform:scale(1.03)}
+  .ch-tag{position:absolute; left:14px; top:14px; display:inline-flex; align-items:center; gap:6px; padding:6px 11px; border-radius:var(--r-pill);
+    background:rgba(255,253,251,.95); color:var(--wine); font-size:12px; font-weight:700; box-shadow:0 6px 16px -8px rgba(0,0,0,.5)}
+  .ch-body{padding:22px 24px 26px; display:flex; flex-direction:column; flex:1}
+  .ch-k{font-size:11.5px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--wine)}
+  .ch h3{font-size:23px; color:var(--wine-deep); margin:8px 0 10px; line-height:1.15}
+  .ch p{color:var(--sec); font-size:15.5px}
+  .ch .more{margin-top:14px; font-weight:600; font-size:15px}
+
+  /* ---------- Partners ---------- */
+  .partners{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; align-items:stretch}
+  .pcard{position:relative; border-radius:20px; padding:36px 34px 34px; overflow:hidden}
+  .pcard.main{background:linear-gradient(155deg,#4a1024,#3b0a1e 60%,#26060f); color:var(--paper); box-shadow:var(--shadow-md)}
+  .pcard.main::after{content:""; position:absolute; right:-80px; top:-80px; width:260px; height:260px; border-radius:50%;
+    background:radial-gradient(closest-side, rgba(201,162,74,.22), transparent 70%)}
+  .p-tag{display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--gold)}
+  .p-name{font-family:var(--font-display); font-weight:600; font-size:clamp(36px,3.8vw,46px); line-height:1; letter-spacing:-.02em; color:#fff; margin:18px 0 8px}
+  .p-meta{font-size:14.5px; color:rgba(251,247,244,.7)}
+  .p-rule{width:54px; height:2px; background:linear-gradient(90deg,var(--gold),rgba(201,162,74,.2)); border-radius:2px; margin:24px 0 20px}
+  .pcard.main p.p-body{font-family:var(--font-display); font-size:19px; line-height:1.4; color:rgba(251,247,244,.92); max-width:30ch}
+  .pcard.open{background:var(--paper-raised); border:1.5px dashed rgba(123,30,59,.3); display:flex; flex-direction:column; justify-content:center}
+  .pcard.open h3{font-size:28px; color:var(--wine-deep); margin-bottom:10px}
+  .pcard.open p{color:var(--sec); font-size:16px; margin-bottom:24px}
+  .pcard.open .btn{align-self:flex-start}
+
+  /* ---------- Steps ---------- */
+  .steps{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(3,1fr); gap:40px; position:relative}
+  .steps::before{content:""; position:absolute; top:28px; left:16.66%; right:16.66%; height:1px;
+    background:linear-gradient(90deg, rgba(201,162,74,.15), rgba(201,162,74,.6) 50%, rgba(201,162,74,.15))}
+  .step{text-align:center; position:relative}
+  .step-num{position:relative; z-index:1; width:56px; height:56px; margin:0 auto 22px; border-radius:50%; display:grid; place-items:center;
+    background:var(--paper-raised); border:1px solid rgba(201,162,74,.6); box-shadow:var(--shadow-sm);
+    font-family:var(--font-display); font-weight:600; font-size:22px; color:var(--wine)}
+  .step h3{font-size:23px; color:var(--wine-deep); margin-bottom:10px}
+  .step p{color:var(--sec); font-size:16px; max-width:30ch; margin:0 auto}
+
+  /* ---------- Languages ---------- */
+  .langband{border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--paper-raised); padding:40px 0}
+  .langband .wrap{display:flex; align-items:center; justify-content:space-between; gap:24px 40px; flex-wrap:wrap}
+  .langband h2{font-size:clamp(26px,3vw,34px); color:var(--wine-deep)}
+  .langband p{color:var(--sec); font-size:16.5px; margin-top:8px; max-width:52ch}
+  .chips{display:flex; gap:10px; flex-wrap:wrap}
+  .chips span{padding:9px 16px; border-radius:var(--r-pill); border:1px solid var(--line); background:var(--paper); font-weight:600; font-size:14.5px; color:var(--wine-deep)}
+
+  /* ---------- Closing call to action ---------- */
+  .cta{background:linear-gradient(155deg,#4a1024,#3b0a1e 55%,#26060f); color:var(--paper); position:relative; overflow:hidden}
+  .cta-bg{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0; opacity:.24}
+  .cta .wrap{position:relative; z-index:2; text-align:center; padding-top:96px; padding-bottom:96px}
+  .cta .eyebrow{color:var(--gold)}
+  .cta h2{font-size:clamp(34px,4.8vw,54px); color:#fff; max-width:18ch; margin:0 auto 16px; letter-spacing:-.02em}
+  .cta .lead{color:rgba(251,247,244,.84); font-size:18.5px; max-width:44ch; margin:0 auto 34px}
+  .cta-row{display:flex; align-items:center; justify-content:center; gap:14px 18px; flex-wrap:wrap}
+  .btn-light{background:#fff; color:var(--wine-deep)}
+  .btn-light:hover{text-decoration:none; transform:translateY(-1px)}
+  .btn-outline{border-color:rgba(255,255,255,.4); color:#fff}
+  .btn-outline:hover{text-decoration:none; background:rgba(255,255,255,.08)}
+  .cta-mail{margin-top:22px; font-size:14.5px; color:rgba(251,247,244,.7)}
+  .cta-mail a{color:var(--gold)}
+  .cta-meta{margin-top:30px; font-size:13.5px; color:rgba(251,247,244,.6)}
+
+  @media (max-width:980px){
+    .chapters{grid-template-columns:repeat(2,1fr)}
+    .partners{grid-template-columns:1fr 1fr}
+    .pcard.open{grid-column:1 / -1}
+  }
+  @media (max-width:900px){
+    .why{grid-template-columns:1fr; max-width:560px; margin:0 auto}
+    .partners{grid-template-columns:1fr}
+    .pcard.open{grid-column:auto}
+    .steps{grid-template-columns:1fr; gap:34px}
+    .steps::before{display:none}
+    .langband .wrap{flex-direction:column; text-align:center}
+    .chips{justify-content:center}
+  }
+  @media (max-width:600px){
+    .bz-hero{padding-top:32px}
+    .bz-top{justify-content:center}
+    .bz-top .breadcrumb{display:none}
+    .bz-stage{margin-top:38px}
+    .film{border-radius:14px}
+    .film-play{padding-bottom:14px}
+    .fp-pill{padding:5px 16px 5px 5px; gap:10px}
+    .fp-btn{width:40px; height:40px}
+    .fp-lbl{font-size:14px}
+    .chapters{grid-template-columns:1fr; max-width:440px; margin:0 auto}
+    .pcard{padding:28px 24px}
+    .bz-actions .btn{width:100%}
+  }
+</style>
+<!-- growth:analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531" data-domains="winelingo.app"></script>
+<script>
+/* Named event on App Store link clicks. Delegated on document so it is safe in <head>,
+   and capture-phase so it still fires if something else stops propagation. */
+document.addEventListener('click',function(e){
+  var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('a[href*="apps.apple.com"]');
+  if(a&&window.umami)umami.track('appstore-click',{path:location.pathname,cta:a.getAttribute('data-cta')||a.className||'link'});
+},true);
+</script>
+<!-- /growth:analytics -->
+<!-- visit-counter -->
+<script>
+/* Anonymous visit counter for the homepage visitor globe: the site name only, no cookies, no ids. */
+(function(){var u='https://egeskovengineering.com/api/visit',s='winelingo',k='vg-last';
+function send(kind){try{navigator.sendBeacon(u,JSON.stringify({site:s,kind:kind}));sessionStorage.setItem(k,String(Date.now()))}catch(e){}}
+function tick(){try{if(Date.now()-Number(sessionStorage.getItem(k)||0)>55000)send('tick')}catch(e){}}
+try{sessionStorage.getItem(k)?tick():send('visit')}catch(e){}
+setInterval(function(){if(!document.hidden)tick()},60000);})();
+</script>
+<!-- /visit-counter -->
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="/" aria-label="Winelingo home"><img src="/assets/logo.png" alt="" width="34" height="34"> Winelingo</a>
+    <nav class="nav-links" id="navmenu" aria-label="Primary">
+      <a href="/#features">Features</a>
+      <a href="/learn/">Learn</a>
+      <a href="/grape-varieties/">Grapes</a>
+      <a href="/wine-regions/">Regions</a>
+      <a href="/wine-styles/">Styles</a><a href="/food-and-wine-pairing/">Pairing</a>
+      <a href="/wine-glossary/">Glossary</a>
+      <a href="/tools/">Tools</a>
+      <a href="/about/">About</a>
+      <a href="/business/" aria-current="page">For business</a>
+    </nav>
+    <div class="nav-cta"><a class="badge-link nav-badge" href="https://apps.apple.com/app/id6785896824"><img src="/assets/appstore-badge.svg" alt="Download Winelingo on the App Store" width="120" height="40"></a><button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navmenu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button></div>
+  </div>
+</header>
+<main id="main">
+
+<!-- ============ HERO + FILM ============ -->
+<section class="bz-hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="bz-top">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">For business</span></nav>
+      <div class="lang-seg" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">English</button>
+        <button type="button" data-lang="da" aria-pressed="false">Dansk</button>
+      </div>
+    </div>
+    <div class="bz-head">
+      <p class="eyebrow center" data-t="eyebrow">Winelingo for business</p>
+      <h1><span data-t="h1a">Wine training for the </span><em data-t="h1b">whole team</em>.</h1>
+      <p class="bz-sub" data-t="sub">Five minutes a day on their own phones: short lessons, staff tests and a weekly league. So when a guest asks “what goes with the lamb?”, your team has the answer.</p>
+      <div class="bz-actions">
+        <a class="btn btn-primary btn-lg" data-mail data-cta="hero-demo" href="mailto:jonsegeskov29@gmail.com?subject=Winelingo%20for%20our%20team"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2.5" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span data-t="ctaDemo">Book a 15-minute demo</span></a>
+        <a class="bz-watch" href="#film"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.6v12.8c0 .8.9 1.3 1.6.9l10-6.4c.6-.4.6-1.4 0-1.8l-10-6.4C8.9 4.3 8 4.8 8 5.6Z"/></svg> <span data-t="ctaWatch">Watch the film · 68 seconds</span></a>
+      </div>
+      <p class="bz-fine" data-t="fine">For restaurants, wine bars, hotels and hospitality schools</p>
+    </div>
+
+    <div class="bz-stage">
+      <div class="glow" aria-hidden="true"></div>
+      <figure class="film" id="film">
+        <video playsinline preload="none" poster="/assets/business/film-poster-en.webp" width="1280" height="720"
+          aria-label="Winelingo for restaurants: a guest asks what goes with the lamb, and the team learns to answer with lessons, staff tests, a test from the house wine list, label scanning, blind tastings and a weekly league.">
+          <source src="/assets/video/for-restaurants-en.mp4" type="video/mp4">
+        </video>
+        <button class="film-play" type="button" aria-label="Play the film about Winelingo for restaurants, with sound">
+          <span class="fp-pill" aria-hidden="true">
+            <span class="fp-btn"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.6v12.8c0 .8.9 1.3 1.6.9l10-6.4c.6-.4.6-1.4 0-1.8l-10-6.4C8.9 4.3 8 4.8 8 5.6Z"/></svg></span>
+            <span class="fp-lbl"><span data-t="fpT">Watch the film</span><small data-t="fpS">68 seconds · sound on</small></span>
+          </span>
+        </button>
+        <div class="film-end" hidden>
+          <p class="fe-t" data-t="feT">Shall we build a test from your wine list?</p>
+          <div class="fe-row">
+            <a class="btn btn-light" data-mail data-cta="video-end" href="mailto:jonsegeskov29@gmail.com?subject=Winelingo%20for%20our%20team" data-t="feMail">Write to us</a>
+            <button class="fe-replay" type="button" data-t="feAgain">Watch again</button>
+          </div>
+        </div>
+      </figure>
+    </div>
+
+    <p class="bz-proof"><span class="k" data-t="proofK">Our partners</span><span class="dot" aria-hidden="true"></span><a href="#partners"><b>Vincaféen</b></a><span class="dot" aria-hidden="true"></span><a href="#partners"><b>Pinds Café</b></a></p>
+  </div>
+</section>
+
+<!-- ============ WHY ============ -->
+<section class="section" id="why">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow center reveal" data-t="whyK">Why it matters</p>
+      <h2 class="reveal" data-t="whyH">The guest asks. Can your team answer?</h2>
+      <p class="reveal d1" data-t="whyP">Wine sells best when the person at the table can talk about it. But teams change every season, there is no sommelier on every shift, and training has to fit between services.</p>
+    </div>
+    <div class="why">
+      <div class="why-item reveal">
+        <span class="why-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3.4" stroke="currentColor" stroke-width="1.7"/><path d="M3 19c.6-3.2 3-5 6-5s5.4 1.8 6 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M18 8v6M15 11h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+        <h3 data-t="w1h">New faces every season</h3>
+        <p data-t="w1p">Seasonal and part-time staff start on a Friday. With Winelingo they can begin on the basics from day one, on their own phone.</p>
+      </div>
+      <div class="why-item reveal d1">
+        <span class="why-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M8 3h8l-.5 4.4A4 4 0 0 1 12 11a4 4 0 0 1-3.5-3.6L8 3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 11v6m-3 3h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+        <h3 data-t="w2h">No sommelier on every shift</h3>
+        <p data-t="w2p">The app explains any bottle on your shelf in plain words: how it tastes, its story, what to eat with it and how to serve it.</p>
+      </div>
+      <div class="why-item reveal d2">
+        <span class="why-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="13" r="8" stroke="currentColor" stroke-width="1.7"/><path d="M12 9v4l2.5 2M9.5 2.5h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+        <h3 data-t="w3h">Training between services</h3>
+        <p data-t="w3p">A lesson takes about five minutes. No classroom, no binder, no course day to book.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT THE TEAM GETS ============ -->
+<section class="section" id="what" style="padding-top:24px">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow center reveal" data-t="getK">What your team gets</p>
+      <h2 class="reveal" data-t="getH">Six ways to learn, one app</h2>
+      <p class="reveal d1" data-t="getP">All of it is in the app or on winelingo.app today, except your house test, which we build for you.</p>
+    </div>
+    <div class="chapters">
+      <article class="ch reveal">
+        <div class="ch-img"><img data-img="learn" src="/assets/business/learn-en.webp" alt="" width="640" height="751" loading="lazy"></div>
+        <div class="ch-body">
+          <span class="ch-k" data-t="c1k">01 · Learn</span>
+          <h3 data-t="c1h">Five minutes before service</h3>
+          <p data-t="c1p">101 short, interactive lessons in 17 units, from glasses and temperature to grapes, regions and wine at the table.</p>
+        </div>
+      </article>
+      <article class="ch reveal d1">
+        <div class="ch-img"><img data-img="tests" src="/assets/business/tests-en.webp" alt="" width="640" height="751" loading="lazy"></div>
+        <div class="ch-body">
+          <span class="ch-k" data-t="c2k">02 · Staff tests</span>
+          <h3 data-t="c2h">Test the team before the guests do</h3>
+          <p data-t="c2p">8 free tests of 10 questions: serving, guest questions, white and red grapes, food and wine, labels, sparkling wine and wine faults.</p>
+          <a class="more" href="/tests/" data-t="c2a">Try the tests now →</a>
+        </div>
+      </article>
+      <article class="ch reveal d2">
+        <div class="ch-img"><img data-img="house" src="/assets/business/house-en.webp" alt="" width="640" height="720" loading="lazy"><span class="ch-tag"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.4 7.6H22l-6.2 4.6 2.4 7.6L12 17.2l-6.2 4.6 2.4-7.6L2 9.6h7.6L12 2Z"/></svg><span data-t="c3tag">Made for you</span></span></div>
+        <div class="ch-body">
+          <span class="ch-k" data-t="c3k">03 · Your own list</span>
+          <h3 data-t="c3h">Built on your bottles</h3>
+          <p data-t="c3p">We build a staff test from your wine list, with your wines and your prices. Staff open it on their phone, with no login.</p>
+        </div>
+      </article>
+      <article class="ch reveal">
+        <div class="ch-img"><img data-img="scan" src="/assets/business/scan-en.webp" alt="" width="640" height="751" loading="lazy"></div>
+        <div class="ch-body">
+          <span class="ch-k" data-t="c4k">04 · Know the bottle</span>
+          <h3 data-t="c4h">Know every bottle on the shelf</h3>
+          <p data-t="c4p">Scan a label to get the story, how it tastes, what to eat with it and how to serve it.</p>
+        </div>
+      </article>
+      <article class="ch reveal d1">
+        <div class="ch-img"><img data-img="taste" src="/assets/business/taste-en.webp" alt="" width="800" height="477" loading="lazy"></div>
+        <div class="ch-body">
+          <span class="ch-k" data-t="c5k">05 · Taste together</span>
+          <h3 data-t="c5h">A blind tasting for the briefing</h3>
+          <p data-t="c5p">Everyone writes notes on their own phone. Then you reveal the wine and see who had the sharpest palate.</p>
+        </div>
+      </article>
+      <article class="ch reveal d2">
+        <div class="ch-img"><img data-img="league" src="/assets/business/league-en.webp" alt="" width="640" height="751" loading="lazy"></div>
+        <div class="ch-body">
+          <span class="ch-k" data-t="c6k">06 · Weekly league</span>
+          <h3 data-t="c6h">The team competes</h3>
+          <p data-t="c6p">XP for lessons and tastings, and a new winner every week. Colleagues add each other as friends and race for the top.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARTNERS ============ -->
+<section class="section" id="partners" style="padding-top:24px">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow center reveal" data-t="pK">Partners</p>
+      <h2 class="reveal" data-t="pH">Built with the people on the floor</h2>
+      <p class="reveal d1" data-t="pP">Our partners use Winelingo with their whole team and tell us what works during service. That feedback decides what we build next.</p>
+    </div>
+    <div class="partners">
+      <div class="pcard main reveal">
+        <span class="p-tag" data-t="p1tag">Partner</span>
+        <p class="p-name">Vincaféen</p>
+        <p class="p-meta" data-t="p1meta">Aarhus, Denmark</p>
+        <div class="p-rule" aria-hidden="true"></div>
+        <p class="p-body" data-t="p1body">The whole team at Vincaféen learns wine with Winelingo, and helps us shape what comes next.</p>
+      </div>
+      <div class="pcard main reveal d1">
+        <span class="p-tag" data-t="p3tag">Partner</span>
+        <p class="p-name">Pinds Café</p>
+        <p class="p-meta" data-t="p3meta">Skolegade, Aarhus · Since 1936</p>
+        <div class="p-rule" aria-hidden="true"></div>
+        <p class="p-body" data-t="p3body">One of Aarhus’ oldest cafés, where the team learns wine with Winelingo.</p>
+      </div>
+      <div class="pcard open reveal d2">
+        <h3 data-t="p2h">Your team next?</h3>
+        <p data-t="p2p">Partners get Premium for the whole team through one partner code, and a staff test built on their own wine list.</p>
+        <a class="btn btn-primary" data-mail data-cta="partner" href="mailto:jonsegeskov29@gmail.com?subject=Winelingo%20for%20our%20team" data-t="p2a">Become a partner</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GETTING STARTED ============ -->
+<section class="section" id="start" style="padding-top:24px">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow center reveal" data-t="sK">Getting started</p>
+      <h2 class="reveal" data-t="sH">Three steps, no IT department</h2>
+    </div>
+    <ol class="steps">
+      <li class="step reveal"><span class="step-num">1</span><h3 data-t="s1h">A short call</h3><p data-t="s1p">Tell us about your team and your wine list. Fifteen minutes is enough.</p></li>
+      <li class="step reveal d1"><span class="step-num">2</span><h3 data-t="s2h">One code for the team</h3><p data-t="s2p">Staff download Winelingo and redeem your partner code at winelingo.app/partner. Premium unlocks on their account.</p></li>
+      <li class="step reveal d2"><span class="step-num">3</span><h3 data-t="s3h">Your house test</h3><p data-t="s3p">We send you a staff test built on your wine list. Share the link in the team chat.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ LANGUAGES ============ -->
+<section class="langband">
+  <div class="wrap">
+    <div>
+      <h2 data-t="lH">One team, four languages</h2>
+      <p data-t="lP">The app, its lessons and the staff tests work in English, Danish, German and Spanish. Each person picks their own.</p>
+    </div>
+    <div class="chips" aria-hidden="true"><span>English</span><span>Dansk</span><span>Deutsch</span><span>Español</span></div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow center reveal" data-t="fK">Questions</p>
+      <h2 class="reveal" data-t="fH">Good to know</h2>
+    </div>
+    <div class="faq reveal d1">
+      <details open>
+        <summary><span data-t="q1">What does it cost?</span><span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary>
+        <div class="a"><p data-t="a1">It depends on the size of your team. New partners start with a free trial period, so the team can try Winelingo before you decide anything. Write to us and we’ll make you an offer.</p></div>
+      </details>
+      <details>
+        <summary><span data-t="q2">Which phones does it work on?</span><span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary>
+        <div class="a"><p data-t="a2">Winelingo is an iPhone app. The staff tests and your own house test are web pages, so they open on any phone.</p></div>
+      </details>
+      <details>
+        <summary><span data-t="q3">Can you tailor it to our wine list?</span><span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary>
+        <div class="a"><p data-t="a3">Yes. We build a staff test from your list: ten questions the way guests ask them, each pointing to a bottle you actually pour. It lives on its own web page, which is not listed on Google.</p></div>
+      </details>
+      <details>
+        <summary><span data-t="q5">Is staff data private?</span><span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary>
+        <div class="a"><p><span data-t="a5">Each person has their own account, and their tasting journal is theirs. As the employer you don’t get access to anyone’s account. Read more in our</span> <a href="/privacy" data-t="a5l">Privacy Policy</a>.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSING CALL TO ACTION ============ -->
+<section class="cta" id="contact">
+  <img class="cta-bg" src="/assets/photos/cta-cellar.jpg" alt="" loading="lazy">
+  <div class="wrap">
+    <p class="eyebrow center reveal" data-t="ctaK">Let’s talk</p>
+    <h2 class="reveal" data-t="ctaH">Shall we build a test from your wine list?</h2>
+    <p class="lead reveal d1" data-t="ctaP">Write to Jonas Egeskov, who built Winelingo. He answers every mail himself.</p>
+    <div class="cta-row reveal d1">
+      <a class="btn btn-light btn-lg" data-mail data-cta="closing" href="mailto:jonsegeskov29@gmail.com?subject=Winelingo%20for%20our%20team" data-t="ctaMail">Write to us</a>
+      <a class="btn btn-outline btn-lg" href="/tests/" data-t="ctaTests">Try the staff tests</a>
+    </div>
+    <p class="cta-mail reveal d2"><a href="mailto:jonsegeskov29@gmail.com">jonsegeskov29@gmail.com</a></p>
+    <p class="cta-meta reveal d2" data-t="ctaMeta">For adults of legal drinking age (18+) · Enjoy wine responsibly</p>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="brand" href="/" aria-label="Winelingo home"><img src="/assets/logo.png" alt="" width="34" height="34"> Winelingo</a>
+        <p>Learn the wine in your glass. Scan a label, understand what you’re drinking, and build your own palate — one scan at a time.</p>
+        <a class="foot-badge" href="https://apps.apple.com/app/id6785896824"><img src="/assets/appstore-badge-white.svg" alt="Download Winelingo on the App Store" width="120" height="40" loading="lazy"></a>
+      </div>
+      <div class="foot-col"><h3>Explore</h3>
+        <a href="/grape-varieties/">Grape varieties</a><a href="/wine-regions/">Wine regions</a><a href="/countries/">Wine countries</a><a href="/wine-styles/">Wine styles</a><a href="/food-and-wine-pairing/">Food &amp; wine pairing</a>
+      </div>
+      <div class="foot-col"><h3>Learn</h3>
+        <a href="/learn/">Learn wine</a><a href="/wine-glossary/">Wine glossary</a><a href="/wine-classifications/">Classifications</a><a href="/tools/wine-serving-temperature/">Serving temperature</a><a href="/tools/wine-calories/">Wine calories</a>
+      </div>
+      <div class="foot-col"><h3>Company</h3>
+        <a href="/about/">About</a><a href="/business/">For business</a><a href="/support/">Support</a><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Use</a><a href="mailto:jonsegeskov29@gmail.com">Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Jonas Egeskov · <a href="https://egeskovengineering.com">Egeskov Engineering</a>, Denmark</span>
+      <span>For adults of legal drinking age (18+). Please enjoy wine responsibly.</span>
+    </div>
+  </div>
+</footer>
+<script>
+  document.querySelectorAll('svg').forEach(function(s){ if(!s.hasAttribute('aria-label')&&!s.hasAttribute('role')) s.setAttribute('aria-hidden','true'); });
+  var h=document.getElementById('site-header'); var os=function(){h.classList.toggle('scrolled',window.scrollY>8);}; os(); window.addEventListener('scroll',os,{passive:true});
+  var tg=document.querySelector('.nav-toggle'), nm=document.getElementById('navmenu');
+  if(tg&&nm){tg.addEventListener('click',function(){var o=nm.classList.toggle('open');tg.setAttribute('aria-expanded',o?'true':'false');});
+    nm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nm.classList.remove('open');tg.setAttribute('aria-expanded','false');});});}
+  var rd=window.matchMedia('(prefers-reduced-motion: reduce)').matches; var rv=document.querySelectorAll('.reveal');
+  if(rd||!('IntersectionObserver' in window)){rv.forEach(function(e){e.classList.add('in');});}
+  else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});rv.forEach(function(e){io.observe(e);});}
+
+  // The film: it never autoplays. A tap plays it with sound, it pauses when
+  // scrolled out of view, and it ends on a "write to us" button.
+  var film = (function(){
+    var fig = document.getElementById('film'); if (!fig) return null;
+    var v = fig.querySelector('video'), play = fig.querySelector('.film-play'), end = fig.querySelector('.film-end');
+    var started = false;
+    function track(name){ try { if (window.umami) umami.track(name, {path: location.pathname}); } catch (e) {} }
+    function start(){
+      play.hidden = true; end.hidden = true; v.controls = true; v.muted = false;
+      var p = v.play();
+      if (p && p.catch) p.catch(function(){ play.hidden = false; v.controls = false; });
+      if (!started){ started = true; track('video-play'); }
+    }
+    play.addEventListener('click', start);
+    fig.querySelector('.fe-replay').addEventListener('click', function(){ v.currentTime = 0; start(); });
+    v.addEventListener('ended', function(){ v.controls = false; end.hidden = false; track('video-complete'); });
+    document.querySelectorAll('a[href="#film"]').forEach(function(a){
+      a.addEventListener('click', function(e){ e.preventDefault(); fig.scrollIntoView({behavior: rd ? 'auto' : 'smooth', block: 'center'}); start(); });
+    });
+    if ('IntersectionObserver' in window){
+      new IntersectionObserver(function(es){ es.forEach(function(e){ if (!e.isIntersecting && !v.paused) v.pause(); }); }).observe(fig);
+    }
+    // Swap the film to another language: back to the poster, ready to play again.
+    return function(lang){
+      var src = '/assets/video/for-restaurants-' + lang + '.mp4', s = v.querySelector('source');
+      if (s.getAttribute('src') === src) return;
+      v.pause(); v.controls = false;
+      s.setAttribute('src', src);
+      v.setAttribute('poster', '/assets/business/film-poster-' + lang + '.webp');
+      v.load(); play.hidden = false; end.hidden = true;
+    };
+  })();
+
+  // English is in the HTML; Danish swaps in for Danish visitors (or by the toggle).
+  // Every string is plain text, set with textContent.
+  (function(){
+    var DA = {
+      eyebrow: 'Winelingo til virksomheder',
+      h1a: 'Vinoplæring til ', h1b: 'hele holdet',
+      sub: 'Fem minutter om dagen på deres egen telefon: korte lektioner, personaletests og en ugentlig liga. Så når gæsten spørger „hvad passer til lammet?“, har holdet svaret.',
+      ctaDemo: 'Book en demo på 15 minutter',
+      ctaWatch: 'Se filmen · 68 sekunder',
+      fine: 'Til restauranter, vinbarer, hoteller og tjenerskoler',
+      fpT: 'Se filmen', fpS: '68 sekunder · med lyd',
+      feT: 'Skal vi bygge en test til jeres vinkort?', feMail: 'Skriv til os', feAgain: 'Se igen',
+      proofK: 'Vores partnere',
+      whyK: 'Hvorfor', whyH: 'Gæsten spørger. Kan holdet svare?',
+      whyP: 'Vin sælger bedst, når den, der står ved bordet, kan fortælle om den. Men holdet skifter hver sæson, der er ikke en sommelier på hver vagt, og oplæringen skal passe ind mellem servicerne.',
+      w1h: 'Nye ansigter hver sæson', w1p: 'Sæson- og deltidsansatte starter en fredag. Med Winelingo kan de gå i gang med det grundlæggende fra første dag, på deres egen telefon.',
+      w2h: 'Ingen sommelier på hver vagt', w2p: 'Appen forklarer enhver flaske på hylden med enkle ord: hvordan den smager, dens historie, hvad man spiser til, og hvordan den serveres.',
+      w3h: 'Oplæring mellem servicerne', w3p: 'En lektion tager omkring fem minutter. Intet klasselokale, ingen mappe, ingen kursusdag at booke.',
+      getK: 'Det får holdet', getH: 'Seks måder at lære på, én app',
+      getP: 'Det hele findes i appen eller på winelingo.app i dag, bortset fra jeres egen test, som vi bygger til jer.',
+      c1k: '01 · Lær', c1h: 'Fem minutter før servicen', c1p: '101 korte, interaktive lektioner i 17 enheder, fra glas og temperatur til druer, regioner og vin ved bordet.',
+      c2k: '02 · Personaletest', c2h: 'Test holdet, før gæsterne gør', c2p: '8 gratis tests med 10 spørgsmål: servering, gæsternes spørgsmål, hvide og røde druer, mad og vin, etiketter, mousserende vin og vinfejl.', c2a: 'Prøv testene nu →',
+      c3tag: 'Skræddersyet til jer', c3k: '03 · Jeres eget vinkort', c3h: 'Bygget på jeres flasker', c3p: 'Vi laver en personaletest ud fra jeres vinkort, med jeres vine og jeres priser. Personalet åbner den på telefonen, uden login.',
+      c4k: '04 · Kend flasken', c4h: 'Kend hver flaske på hylden', c4p: 'Scan etiketten, og få historien, smagen, maden og serveringen.',
+      c5k: '05 · Smag sammen', c5h: 'Blindsmagning til briefingen', c5p: 'Alle skriver noter på deres egen telefon. Så afslører I vinen og ser, hvem der havde den skarpeste gane.',
+      c6k: '06 · Ugens liga', c6h: 'Holdet konkurrerer', c6p: 'XP for lektioner og smagninger og en ny vinder hver uge. Kolleger tilføjer hinanden som venner og dyster om førstepladsen.',
+      pK: 'Partnere', pH: 'Bygget sammen med dem på gulvet',
+      pP: 'Vores partnere bruger Winelingo med hele holdet og fortæller os, hvad der virker under servicen. Den feedback bestemmer, hvad vi bygger næste gang.',
+      p1tag: 'Partner', p1meta: 'Aarhus',
+      p3tag: 'Partner', p3meta: 'Skolegade, Aarhus · Siden 1936',
+      p3body: 'En af Aarhus’ ældste caféer, hvor holdet lærer vin med Winelingo.',
+      p1body: 'Hele holdet på Vincaféen lærer vin med Winelingo og er med til at forme det, der kommer næste gang.',
+      p2h: 'Jeres hold som det næste?', p2p: 'Partnere får Premium til hele holdet gennem én partnerkode og en personaletest bygget på deres eget vinkort.', p2a: 'Bliv partner',
+      sK: 'Sådan kommer I i gang', sH: 'Tre trin, ingen IT-afdeling',
+      s1h: 'En kort snak', s1p: 'Fortæl os om jeres hold og jeres vinkort. Et kvarter er nok.',
+      s2h: 'Én kode til holdet', s2p: 'Personalet henter Winelingo og indløser jeres partnerkode på winelingo.app/partner. Så er Premium låst op på deres konto.',
+      s3h: 'Jeres egen test', s3p: 'Vi sender jer en personaletest bygget på jeres vinkort. Del linket i holdets chat.',
+      lH: 'Ét hold, fire sprog', lP: 'Appen, lektionerne og personaletestene findes på dansk, engelsk, tysk og spansk. Hver medarbejder vælger sit eget sprog.',
+      fK: 'Spørgsmål', fH: 'Godt at vide',
+      q1: 'Hvad koster det?', a1: 'Det afhænger af, hvor stort holdet er. Nye partnere starter med en gratis prøveperiode, så holdet kan prøve Winelingo, før I beslutter noget. Skriv til os, så giver vi et tilbud.',
+      q2: 'Hvilke telefoner virker det på?', a2: 'Winelingo er en iPhone-app. Personaletestene og jeres egen test er websider, så de virker på alle telefoner.',
+      q3: 'Kan I tilpasse det til vores vinkort?', a3: 'Ja. Vi bygger en personaletest ud fra jeres kort: ti spørgsmål, som gæsterne stiller dem, og hvert svar peger på en flaske, I faktisk skænker. Den ligger på sin egen webside, som ikke kan findes på Google.',
+      q5: 'Er personalets data private?', a5: 'Hver medarbejder har sin egen konto, og deres smagsdagbog er deres egen. Som arbejdsgiver får I ikke adgang til nogens konto. Læs mere i vores', a5l: 'privatlivspolitik',
+      ctaK: 'Lad os tage en snak', ctaH: 'Skal vi bygge en test til jeres vinkort?',
+      ctaP: 'Skriv til Jonas Egeskov, der har bygget Winelingo. Han svarer selv på alle mails.',
+      ctaMail: 'Skriv til os', ctaTests: 'Prøv personaletestene', ctaMeta: 'For voksne over 18 år · Nyd vin med omtanke'
+    };
+    var TITLE = {en: document.title, da: 'Vinoplæring til personalet | Winelingo til virksomheder'};
+    var SUBJ = {en: 'Winelingo for our team', da: 'Winelingo til vores hold'};
+    var nodes = document.querySelectorAll('[data-t]'), EN = {};
+    nodes.forEach(function(n){ EN[n.getAttribute('data-t')] = n.textContent; });
+    var btns = document.querySelectorAll('.lang-seg button');
+
+    function setLang(lang, save){
+      var d = lang === 'da' ? DA : EN;
+      nodes.forEach(function(n){ var k = n.getAttribute('data-t'); if (d[k] != null) n.textContent = d[k]; });
+      document.querySelectorAll('img[data-img]').forEach(function(i){ i.src = '/assets/business/' + i.getAttribute('data-img') + '-' + lang + '.webp'; });
+      document.querySelectorAll('a[data-mail]').forEach(function(a){ a.href = 'mailto:jonsegeskov29@gmail.com?subject=' + encodeURIComponent(SUBJ[lang]); });
+      document.documentElement.lang = lang;
+      document.title = TITLE[lang];
+      btns.forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-lang') === lang ? 'true' : 'false'); });
+      if (film) film(lang);
+      if (save){ try { localStorage.setItem('wl-business-lang', lang); } catch (e) {} }
+    }
+    btns.forEach(function(b){ b.addEventListener('click', function(){ setLang(b.getAttribute('data-lang'), true); }); });
+
+    var lang = null, q = location.search.match(/[?&]lang=(da|en)\b/);
+    if (q) lang = q[1];
+    if (!lang){ try { lang = localStorage.getItem('wl-business-lang'); } catch (e) {} }
+    if (!lang){ lang = (navigator.languages || [navigator.language || '']).some(function(l){ return /^da\b/i.test(l); }) ? 'da' : 'en'; }
+    if (lang === 'da') setLang('da', false);
+  })();
+</script>
+<script defer src="/assets/get-app.js?v=1"></script>
+</body>
+</html>

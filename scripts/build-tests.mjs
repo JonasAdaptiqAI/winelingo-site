@@ -146,7 +146,8 @@ writeFileSync(join(ROOT, "tests/index.html"), page({
   crumbs: hubCrumbs,
   body: hero(hubCrumbs, "Free wine tests", "Test what you know about wine",
     "Ten questions each, with a short explanation after every answer. Made for restaurant staff and anyone who wants to learn wine.", true) +
-    `\n<div class="qz-hubwrap" id="quiz"><noscript>Turn on JavaScript to take the tests.</noscript></div>`,
+    `\n<div class="qz-hubwrap" id="quiz"><noscript>Turn on JavaScript to take the tests.</noscript></div>` +
+    `\n<p class="qz-biz" style="max-width:var(--maxw-prose);margin:8px auto 64px;padding:0 24px;text-align:center;color:var(--sec);font-size:16px">Training a restaurant team? <a href="/business/" style="font-weight:600">See how Winelingo works for staff</a>, including a test built on your own wine list.</p>`,
   data: { tests: tests.map((t) => ({ slug: t.slug, level: t.level, ...Object.fromEntries(LANGS.filter((l) => t[l]).map((l) => [l, { title: t[l].title, summary: t[l].summary }])) })) },
 }));
 

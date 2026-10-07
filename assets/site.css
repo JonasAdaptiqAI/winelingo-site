@@ -78,6 +78,11 @@ header.site-header.scrolled{border-bottom-color:var(--line); box-shadow:0 6px 24
 .nav-links a{color:var(--ink); font-size:14.5px; font-weight:500}
 .nav-links a:hover{color:var(--wine); text-decoration:none}
 .nav-cta{display:flex; align-items:center; gap:12px}
+.nav-links a{white-space:nowrap}
+.nav .brand,.nav-cta{flex-shrink:0}
+/* Ten top-bar links: tighten them between the phone menu (≤900px) and full desktop */
+@media (min-width:901px) and (max-width:1099px){ .nav-links{gap:14px} .nav-links a{font-size:13.5px} }
+@media (min-width:901px) and (max-width:999px){ .nav-cta .nav-badge{display:none} }
 .nav-toggle{display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; flex:0 0 auto;
   background:transparent; border:1px solid var(--line); border-radius:11px; color:var(--wine-deep); cursor:pointer;
   transition:background .2s, border-color .2s}
