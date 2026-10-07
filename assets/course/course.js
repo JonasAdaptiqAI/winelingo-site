@@ -375,7 +375,7 @@
         h("h1", { text: t("auth.subtitle") }),
         h("p", { class: "lede", text: t("web.tagline") }),
         form,
-        h("p", { class: "fine", text: t("web.authFree") }),
+        h("p", { class: "fine" }, t("web.authFree"), " ", h("a", { href: "/pricing/" }, t("web.seePrices"))),
         h("p", { class: "fine", text: t("web.noAccount") }),
         APPLE_WEB ? null : h("p", { class: "fine", text: t("web.appleSoon") }),
         h("div", { class: "auth-foot" }, langSelect(setLang),
