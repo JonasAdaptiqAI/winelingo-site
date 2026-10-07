@@ -250,3 +250,24 @@ body.noscroll{overflow:hidden}
   .match{gap:8px}
 }
 @media (prefers-reduced-motion:reduce){ .rv{animation:none; opacity:1; transform:none} .sheet{animation:none} }
+
+/* ---------- paying on the web ---------- */
+.chip-pro{background:linear-gradient(135deg,#7b1e3b,#a3304f); color:#fff; font-size:12.5px; letter-spacing:.02em}
+.unit-k{display:inline-flex; align-items:center; gap:8px; flex-wrap:wrap}
+.tag{display:inline-flex; align-items:center; gap:4px; padding:2px 8px; border-radius:999px; font-size:10.5px; letter-spacing:.08em}
+.tag.free{background:var(--ok-bg); color:#1d5e2e}
+.tag.paid{background:rgba(201,162,74,.18); color:#7a5a12}
+.dlg:has(.pw){max-width:740px}
+.plans{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:14px 0 10px}
+.plan{display:flex; flex-direction:column; gap:4px; border:1.5px solid var(--line); border-radius:16px; padding:18px 18px 16px; background:#fff}
+.plan.monthly{border-color:rgba(123,30,59,.45); box-shadow:0 0 0 4px rgba(123,30,59,.06)}
+.dlg .plan-n{font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--wine); margin:0 !important}
+.dlg .plan-p{font-family:var(--font-display); font-weight:600; font-size:26px; color:var(--wine-deep); margin:0 !important}
+.dlg .plan-note{font-size:14px !important; color:var(--sec) !important}
+.plan ul{list-style:none; margin:6px 0 14px; padding:0; display:grid; gap:7px; flex:1}
+.plan li{display:flex; gap:8px; align-items:flex-start; font-size:14.5px}
+.plan li svg{flex:0 0 auto; margin-top:3px; color:var(--ok)}
+.plan li.no{color:var(--muted)} .plan li.no svg{color:var(--muted)}
+.pw-soon{background:rgba(201,162,74,.14); border-radius:12px; padding:12px 14px; font-size:14.5px !important}
+.pw .fine{margin-top:4px}
+@media (max-width:620px){ .plans{grid-template-columns:1fr} }
