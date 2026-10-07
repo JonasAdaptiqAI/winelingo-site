@@ -41,6 +41,10 @@
 - [Wine serving temperature chart](https://winelingo.app/tools/wine-serving-temperature/)
 - [Wine calories calculator](https://winelingo.app/tools/wine-calories/)
 
+## For business
+- [Winelingo for business: wine training for restaurant staff](https://winelingo.app/business/): short lessons, 8 free staff tests, a staff test built on the venue's own wine list, and a weekly team league. English and Danish.
+- [Free wine tests for staff](https://winelingo.app/tests/)
+
 ## About
 - [About Winelingo and Jonas Egeskov](https://winelingo.app/about/)
 - [Support](https://winelingo.app/support/)
