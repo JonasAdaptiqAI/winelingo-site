@@ -59,7 +59,6 @@
         {"@type": "Question", "name": "What does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the size of your team. New partners start with a free trial period, so the team can try Winelingo before you decide anything. Write to us and we will make you an offer."}},
         {"@type": "Question", "name": "Which phones does it work on?", "acceptedAnswer": {"@type": "Answer", "text": "Winelingo is an iPhone app. The staff tests and your own house test are web pages, so they open on any phone."}},
         {"@type": "Question", "name": "Can you tailor it to our wine list?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We build a staff test from your list: ten questions the way guests ask them, each pointing to a bottle you actually pour. It lives on its own web page, which is not listed on Google."}},
-        {"@type": "Question", "name": "Can we see how the team is doing?", "acceptedAnswer": {"@type": "Answer", "text": "The weekly league shows who has been practising, once colleagues add each other as friends. A separate overview for managers is not in the app yet. Tell us what you would want to see in it."}},
         {"@type": "Question", "name": "Is staff data private?", "acceptedAnswer": {"@type": "Answer", "text": "Each person has their own account, and their tasting journal is theirs. As the employer you do not get access to anyone's account."}}
       ]
     }
@@ -144,16 +143,16 @@
   .ch .more{margin-top:14px; font-weight:600; font-size:15px}
 
   /* ---------- Partners ---------- */
-  .partners{display:grid; grid-template-columns:1.25fr 1fr; gap:24px; align-items:stretch}
+  .partners{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; align-items:stretch}
   .pcard{position:relative; border-radius:20px; padding:36px 34px 34px; overflow:hidden}
   .pcard.main{background:linear-gradient(155deg,#4a1024,#3b0a1e 60%,#26060f); color:var(--paper); box-shadow:var(--shadow-md)}
   .pcard.main::after{content:""; position:absolute; right:-80px; top:-80px; width:260px; height:260px; border-radius:50%;
     background:radial-gradient(closest-side, rgba(201,162,74,.22), transparent 70%)}
   .p-tag{display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--gold)}
-  .p-name{font-family:var(--font-display); font-weight:600; font-size:clamp(40px,5vw,56px); line-height:1; letter-spacing:-.02em; color:#fff; margin:18px 0 8px}
+  .p-name{font-family:var(--font-display); font-weight:600; font-size:clamp(36px,3.8vw,46px); line-height:1; letter-spacing:-.02em; color:#fff; margin:18px 0 8px}
   .p-meta{font-size:14.5px; color:rgba(251,247,244,.7)}
   .p-rule{width:54px; height:2px; background:linear-gradient(90deg,var(--gold),rgba(201,162,74,.2)); border-radius:2px; margin:24px 0 20px}
-  .pcard.main p.p-body{font-family:var(--font-display); font-size:21px; line-height:1.4; color:rgba(251,247,244,.92); max-width:30ch}
+  .pcard.main p.p-body{font-family:var(--font-display); font-size:19px; line-height:1.4; color:rgba(251,247,244,.92); max-width:30ch}
   .pcard.open{background:var(--paper-raised); border:1.5px dashed rgba(123,30,59,.3); display:flex; flex-direction:column; justify-content:center}
   .pcard.open h3{font-size:28px; color:var(--wine-deep); margin-bottom:10px}
   .pcard.open p{color:var(--sec); font-size:16px; margin-bottom:24px}
@@ -196,10 +195,13 @@
 
   @media (max-width:980px){
     .chapters{grid-template-columns:repeat(2,1fr)}
+    .partners{grid-template-columns:1fr 1fr}
+    .pcard.open{grid-column:1 / -1}
   }
   @media (max-width:900px){
     .why{grid-template-columns:1fr; max-width:560px; margin:0 auto}
     .partners{grid-template-columns:1fr}
+    .pcard.open{grid-column:auto}
     .steps{grid-template-columns:1fr; gap:34px}
     .steps::before{display:none}
     .langband .wrap{flex-direction:column; text-align:center}
@@ -307,7 +309,7 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
       </figure>
     </div>
 
-    <p class="bz-proof"><span class="k" data-t="proofK">First partner</span><span class="dot" aria-hidden="true"></span><a href="#partners"><b>Vincaféen</b> <span>Aarhus</span></a></p>
+    <p class="bz-proof"><span class="k" data-t="proofK">Our partners</span><span class="dot" aria-hidden="true"></span><a href="#partners"><b>Vincaféen</b></a><span class="dot" aria-hidden="true"></span><a href="#partners"><b>Pinds Café</b></a></p>
   </div>
 </section>
 
@@ -411,13 +413,20 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
     </div>
     <div class="partners">
       <div class="pcard main reveal">
-        <span class="p-tag" data-t="p1tag">First partner</span>
+        <span class="p-tag" data-t="p1tag">Partner</span>
         <p class="p-name">Vincaféen</p>
-        <p class="p-meta" data-t="p1meta">Aarhus, Denmark · Partner since October 2026</p>
+        <p class="p-meta" data-t="p1meta">Aarhus, Denmark</p>
         <div class="p-rule" aria-hidden="true"></div>
         <p class="p-body" data-t="p1body">The whole team at Vincaféen learns wine with Winelingo, and helps us shape what comes next.</p>
       </div>
-      <div class="pcard open reveal d1">
+      <div class="pcard main reveal d1">
+        <span class="p-tag" data-t="p3tag">Partner</span>
+        <p class="p-name">Pinds Café</p>
+        <p class="p-meta" data-t="p3meta">Skolegade, Aarhus · Since 1936</p>
+        <div class="p-rule" aria-hidden="true"></div>
+        <p class="p-body" data-t="p3body">One of Aarhus’ oldest cafés, where the team learns wine with Winelingo.</p>
+      </div>
+      <div class="pcard open reveal d2">
         <h3 data-t="p2h">Your team next?</h3>
         <p data-t="p2p">Partners get Premium for the whole team through one partner code, and a staff test built on their own wine list.</p>
         <a class="btn btn-primary" data-mail data-cta="partner" href="mailto:jonsegeskov29@gmail.com?subject=Winelingo%20for%20our%20team" data-t="p2a">Become a partner</a>
@@ -471,10 +480,6 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
       <details>
         <summary><span data-t="q3">Can you tailor it to our wine list?</span><span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary>
         <div class="a"><p data-t="a3">Yes. We build a staff test from your list: ten questions the way guests ask them, each pointing to a bottle you actually pour. It lives on its own web page, which is not listed on Google.</p></div>
-      </details>
-      <details>
-        <summary><span data-t="q4">Can we see how the team is doing?</span><span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary>
-        <div class="a"><p data-t="a4">The weekly league shows who has been practising, once colleagues add each other as friends. A separate overview for managers is not in the app yet. Tell us what you would want to see in it.</p></div>
       </details>
       <details>
         <summary><span data-t="q5">Is staff data private?</span><span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary>
@@ -580,7 +585,7 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
       fine: 'Til restauranter, vinbarer, hoteller og tjenerskoler',
       fpT: 'Se filmen', fpS: '68 sekunder · med lyd',
       feT: 'Skal vi bygge en test til jeres vinkort?', feMail: 'Skriv til os', feAgain: 'Se igen',
-      proofK: 'Første partner',
+      proofK: 'Vores partnere',
       whyK: 'Hvorfor', whyH: 'Gæsten spørger. Kan holdet svare?',
       whyP: 'Vin sælger bedst, når den, der står ved bordet, kan fortælle om den. Men holdet skifter hver sæson, der er ikke en sommelier på hver vagt, og oplæringen skal passe ind mellem servicerne.',
       w1h: 'Nye ansigter hver sæson', w1p: 'Sæson- og deltidsansatte starter en fredag. Med Winelingo kan de gå i gang med det grundlæggende fra første dag, på deres egen telefon.',
@@ -596,7 +601,9 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
       c6k: '06 · Ugens liga', c6h: 'Holdet konkurrerer', c6p: 'XP for lektioner og smagninger og en ny vinder hver uge. Kolleger tilføjer hinanden som venner og dyster om førstepladsen.',
       pK: 'Partnere', pH: 'Bygget sammen med dem på gulvet',
       pP: 'Vores partnere bruger Winelingo med hele holdet og fortæller os, hvad der virker under servicen. Den feedback bestemmer, hvad vi bygger næste gang.',
-      p1tag: 'Første partner', p1meta: 'Aarhus · Partner siden oktober 2026',
+      p1tag: 'Partner', p1meta: 'Aarhus',
+      p3tag: 'Partner', p3meta: 'Skolegade, Aarhus · Siden 1936',
+      p3body: 'En af Aarhus’ ældste caféer, hvor holdet lærer vin med Winelingo.',
       p1body: 'Hele holdet på Vincaféen lærer vin med Winelingo og er med til at forme det, der kommer næste gang.',
       p2h: 'Jeres hold som det næste?', p2p: 'Partnere får Premium til hele holdet gennem én partnerkode og en personaletest bygget på deres eget vinkort.', p2a: 'Bliv partner',
       sK: 'Sådan kommer I i gang', sH: 'Tre trin, ingen IT-afdeling',
@@ -608,7 +615,6 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
       q1: 'Hvad koster det?', a1: 'Det afhænger af, hvor stort holdet er. Nye partnere starter med en gratis prøveperiode, så holdet kan prøve Winelingo, før I beslutter noget. Skriv til os, så giver vi et tilbud.',
       q2: 'Hvilke telefoner virker det på?', a2: 'Winelingo er en iPhone-app. Personaletestene og jeres egen test er websider, så de virker på alle telefoner.',
       q3: 'Kan I tilpasse det til vores vinkort?', a3: 'Ja. Vi bygger en personaletest ud fra jeres kort: ti spørgsmål, som gæsterne stiller dem, og hvert svar peger på en flaske, I faktisk skænker. Den ligger på sin egen webside, som ikke kan findes på Google.',
-      q4: 'Kan vi se, hvordan holdet klarer sig?', a4: 'Ugens liga viser, hvem der har øvet sig, når kollegerne har tilføjet hinanden som venner. Et særskilt overblik til ledere findes ikke i appen endnu. Fortæl os, hvad I gerne vil kunne se i det.',
       q5: 'Er personalets data private?', a5: 'Hver medarbejder har sin egen konto, og deres smagsdagbog er deres egen. Som arbejdsgiver får I ikke adgang til nogens konto. Læs mere i vores', a5l: 'privatlivspolitik',
       ctaK: 'Lad os tage en snak', ctaH: 'Skal vi bygge en test til jeres vinkort?',
       ctaP: 'Skriv til Jonas Egeskov, der har bygget Winelingo. Han svarer selv på alle mails.',
