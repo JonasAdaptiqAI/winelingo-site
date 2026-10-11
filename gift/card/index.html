@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Winelingo Gift Card</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/gift-card.css?v=1">
+</head>
+<body>
+<main class="gc-page">
+  <div class="gc-tools">
+    <label><span data-t="to">To</span><input id="to" maxlength="40" autocomplete="off"></label>
+    <label><span data-t="from">From</span><input id="from" maxlength="40" autocomplete="off"></label>
+    <label class="wide"><span data-t="msg">A few words (optional)</span><input id="msg" maxlength="120" autocomplete="off"></label>
+    <button id="print" class="btn btn-primary" type="button" data-t="print">Print the card</button>
+  </div>
+  <article class="gc" aria-label="Gift card">
+    <div class="gc-top"><img src="/assets/logo.png" alt="" width="44" height="44"><span>Winelingo</span></div>
+    <p class="gc-to" id="toOut"></p>
+    <p class="gc-for" data-t="for">A gift for you</p>
+    <h1 class="gc-what" data-t="what">The Winelingo wine course, for life</h1>
+    <p class="gc-sub" data-t="sub">166 interactive lessons: tasting, grapes and twelve wine countries.</p>
+    <p class="gc-msg" id="msgOut"></p>
+    <p class="gc-from" id="fromOut"></p>
+    <div class="gc-code"><span data-t="code">Your code</span><b id="code">WL-····-····</b></div>
+    <p class="gc-where" data-t="where">Redeem at winelingo.app/redeem</p>
+  </article>
+  <p class="gc-redeem"><a id="redeem" class="btn btn-ghost" href="/redeem/" data-t="redeem">Redeem this code now</a></p>
+</main>
+<script src="/assets/gift-card.js?v=1"></script>
+</body>
+</html>

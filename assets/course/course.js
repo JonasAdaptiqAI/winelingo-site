@@ -17,7 +17,7 @@
   // a "Start" link (?app=1); everyone else, Google included, reads the landing page.
   var landing = document.getElementById("landing");
   if (landing) {
-    var wants = /[?&](app|purchase|sandbox|lang)=/.test(location.search) ||
+    var wants = /[?&](app|purchase|sandbox|lang|gift|redeem)=/.test(location.search) ||
       /access_token|type=recovery|type=signup|error_description/.test(location.hash);
     try { for (var si = 0; !wants && si < localStorage.length; si++) if (/^sb-.*-auth-token$/.test(localStorage.key(si) || "")) wants = true; } catch (e) {}
     try { if (!wants && sessionStorage.getItem("wl-course-app")) wants = true; } catch (e) {}
@@ -43,13 +43,25 @@
   // live: the real checkout (empty until the live Paddle account is connected).
   // sandbox: Paddle test mode, only with ?sandbox=1. rc-webhook ignores sandbox purchases except for
   // the test accounts in RC_SANDBOX_USERS, so these links unlock nothing for anyone else.
+  // gift: the course for life, bought for someone else (0137). A consumable product with its own
+  // success URL https://winelingo.app/course/?purchase=gift; empty = the gift shows as coming soon.
   var LINKS = {
-    live: { monthly: "", lifetime: "" },
-    sandbox: { monthly: "https://pay.rev.cat/zyfjogqowdnqnapw/", lifetime: "https://pay.rev.cat/zgrofjmxwefvfjqk/" }
+    live: { monthly: "", lifetime: "", gift: "" },
+    sandbox: { monthly: "https://pay.rev.cat/zyfjogqowdnqnapw/", lifetime: "https://pay.rev.cat/zgrofjmxwefvfjqk/", gift: "" }
   };
   var SANDBOX = /[?&]sandbox=1\b/.test(location.search);
   try { if (SANDBOX) sessionStorage.setItem("wl-sandbox", "1"); else if (sessionStorage.getItem("wl-sandbox")) SANDBOX = true; } catch (e) {}
   var PURCHASE = SANDBOX ? LINKS.sandbox : LINKS.live;
+  // A gift code from a link (?redeem=WL-XXXX-XXXX) waits here until the person is signed in, also
+  // across an email confirmation; ?gift=1 opens the gift dialog once the course is up.
+  var GIFT_KEY = "wl-gift-redeem";
+  (function () {
+    var m = location.search.match(/[?&]redeem=([A-Za-z0-9 -]{8,20})/);
+    try { if (m) localStorage.setItem(GIFT_KEY, decodeURIComponent(m[1])); } catch (e) {}
+    try { if (/[?&]gift=1\b/.test(location.search)) sessionStorage.setItem("wl-gift-open", "1"); } catch (e) {}
+    try { if (/[?&]redeem=open\b/.test(location.search)) sessionStorage.setItem("wl-gift-open", "redeem"); } catch (e) {}
+  })();
+  function pendingGift() { try { return localStorage.getItem(GIFT_KEY); } catch (e) { return null; } }
   // Free on the web: the first unit. The rest needs Premium or the course purchase (0131).
   var FREE_TOPIC = "Tasting & senses";
 
@@ -141,7 +153,9 @@
     play: "M8 5.6v12.8c0 .8.9 1.3 1.6.9l10-6.4c.6-.4.6-1.4 0-1.8l-10-6.4C8.9 4.3 8 4.8 8 5.6Z",
     bulb: "M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.6.5 1 1.2 1.1 2h5c.1-.8.5-1.5 1.1-2A6 6 0 0 0 12 3Z",
     cap: "M2 9l10-5 10 5-10 5L2 9Zm4 2.2V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.8M22 9v6",
-    redo: "M4 12a8 8 0 1 0 2.3-5.7M4 4v4.5h4.5", caret: "m9 6 6 6-6 6", down: "m6 9 6 6 6-6", back: "m15 6-6 6 6 6"
+    redo: "M4 12a8 8 0 1 0 2.3-5.7M4 4v4.5h4.5",
+    gift: "M4 11h16v10H4zM3 7h18v4H3zM12 7v14M12 7S10.5 3 8 3.5 6.5 7 12 7Zm0 0s1.5-4 4-3.5S17.5 7 12 7Z",
+    copy: "M9 9h11v11H9zM5 15V4h11", caret: "m9 6 6 6-6 6", down: "m6 9 6 6 6-6", back: "m15 6-6 6 6 6"
   };
   var FILLED = { flame: 1, heart: 1, play: 1 };
   function icon(name, size, cls) {
@@ -398,6 +412,7 @@
         h("a", { class: "cbrand big", href: "/" }, h("img", { src: "/assets/logo.png", alt: "", width: 44, height: 44 }), "Winelingo"),
         h("h1", { text: t("auth.subtitle") }),
         h("p", { class: "lede", text: t("web.tagline") }),
+        pendingGift() ? h("p", { class: "notice gift-note", role: "status" }, icon("gift", 16), t("web.giftAuthNote")) : null,
         form,
         h("p", { class: "fine" }, t("web.authFree"), " ", h("a", { href: "/pricing/" }, t("web.seePrices"))),
         h("p", { class: "fine", text: t("web.noAccount") }),
@@ -460,7 +475,7 @@
         if (step < 2) { step++; draw(); return; }
         next.disabled = true; next.textContent = t("onboarding.saving");
         saveProfile({ experience_level: level, wine_countries: picked.length ? picked : null, daily_goal_min: goal, language: S.lang })
-          .then(function () { S.view = "course"; render(); loadCourse(); })
+          .then(function () { S.view = "course"; render(); loadCourse(); if (pendingGift()) showRedeem(pendingGift()); })
           .catch(function () { next.disabled = false; next.textContent = t("onboarding.goalCommit"); msg.textContent = t("onboarding.saveError"); });
       } }, step < 2 ? t("onboarding.continue") : t("onboarding.goalCommit"));
       mount(h("main", { class: "onb" },
@@ -576,6 +591,9 @@
         h("div", { class: "units-head" }, h("h2", { text: t("learn.allUnits") }),
           h("button", { class: "btn btn-ghost btn-sm", type: "button", onclick: pickCountries }, t("web.changeCountries"))),
         list,
+        h("div", { class: "gift-row" },
+          h("button", { class: "btn btn-ghost btn-sm", type: "button", onclick: function () { showGift(); } }, icon("gift", 16), t("web.giftGive")),
+          h("button", { class: "linkbtn", type: "button", onclick: function () { showRedeem(); } }, t("web.giftHaveCode"))),
         h("p", { class: "fine center", text: t("web.footer") }))));
     S.notice = null;
   }
@@ -607,6 +625,92 @@
       h("p", { class: "fine", text: t("web.pwFine") }),
       ready ? refresh : null), [{ label: t("common.close") }]);
     try { if (window.umami) umami.track("course-paywall"); } catch (e) {}
+  }
+  // ---------------------------------------------------------------- gifts (0137)
+  // Buy the course for someone else: RevenueCat's checkout for this account, then rc-webhook makes a
+  // single-use code that only the buyer can see (my_gift_codes). The recipient redeems it here.
+  function giftCodes() {
+    return sb.rpc("my_gift_codes").then(function (res) { return res.error ? [] : res.data || []; }).catch(function () { return []; });
+  }
+  function cardUrl(code) { return "/gift/card/#c=" + encodeURIComponent(code) + "&l=" + S.lang; }
+  function codeRow(g, fresh) {
+    var state = g.revoked ? t("web.giftRevoked") : g.redeemed ? t("web.giftRedeemed") : t("web.giftUnused");
+    var copy = h("button", { class: "linkbtn", type: "button", onclick: function () {
+      try { navigator.clipboard.writeText(g.code); copy.lastChild.textContent = t("web.giftCopied"); } catch (e) {}
+    } }, icon("copy", 15), h("span", { text: t("web.giftCopy") }));
+    return h("li", { class: "gcode" + (fresh ? " fresh" : "") },
+      h("div", null, h("b", { text: g.code }), h("span", { text: state })),
+      g.redeemed || g.revoked ? null : h("div", { class: "gcode-a" }, copy,
+        h("a", { class: "linkbtn strong", href: cardUrl(g.code), target: "_blank", rel: "noopener" }, t("web.giftPrint"))));
+  }
+  function showGift(fresh) {
+    var uid = S.session && S.session.user.id;
+    var list = h("ul", { class: "gcodes" });
+    var mine = h("div", { class: "gmine", hidden: true }, h("h3", { text: t("web.giftYours") }), list);
+    var buy = PURCHASE.gift
+      ? h("a", { class: "btn btn-primary btn-block", href: PURCHASE.gift + encodeURIComponent(uid),
+          onclick: function () { try { if (window.umami) umami.track("course-checkout", { plan: "gift" }); } catch (e) {} } }, icon("gift", 16), t("web.giftBuy"))
+      : h("p", { class: "pw-soon", text: t("web.giftSoon") });
+    dialog(t("web.giftTitle"), h("div", { class: "pw gift" },
+      SANDBOX ? h("p", { class: "pw-soon", text: "TEST MODE · Paddle sandbox." }) : null,
+      h("p", { class: "muted", text: t("web.giftSub") }),
+      h("ul", { class: "gpoints" }, [t("web.giftB1"), t("web.giftB2"), t("web.giftB3")].map(function (b) {
+        return h("li", null, icon("check", 15), h("span", { text: b }));
+      })),
+      h("p", { class: "plan-p", text: t("web.giftPrice") }),
+      buy,
+      h("p", { class: "fine", text: t("web.pwFine") }),
+      mine), [{ label: t("common.close") }]);
+    giftCodes().then(function (codes) {
+      if (!codes.length) return;
+      codes.forEach(function (g) { list.appendChild(codeRow(g, g.code === fresh)); });
+      mine.hidden = false;
+    });
+    try { if (window.umami) umami.track("course-gift-open"); } catch (e) {}
+  }
+  function giftError(code) {
+    return t({ invalid_code: "web.giftErrInvalid", used: "web.giftErrUsed", rate_limited: "web.giftErrWait" }[code] || "auth.errGeneric");
+  }
+  function redeemGift(code, done) {
+    return sb.rpc("redeem_gift_code", { p_code: code }).then(function (res) {
+      var r = res.data || {};
+      if (res.error || !r.ok) { done(false, giftError(r.error)); return; }
+      try { localStorage.removeItem(GIFT_KEY); } catch (e) {}
+      return loadProfile(S.session.user.id).then(function (p) {
+        if (p.data) Object.assign(S.profile, p.data);
+        return refreshHearts();
+      }).then(function () { done(true); });
+    }).catch(function () { done(false, t("auth.errGeneric")); });
+  }
+  function showRedeem(prefill) {
+    var input = h("input", { type: "text", class: "ginput", autocomplete: "off", spellcheck: "false", placeholder: "WL-XXXX-XXXX",
+      "aria-label": t("web.giftCodeLabel"), value: prefill || "" });
+    var msg = h("p", { class: "amsg", role: "status", "aria-live": "polite" });
+    var go = h("button", { class: "btn btn-primary btn-block", type: "submit" }, t("web.giftRedeem"));
+    var close = dialog(t("web.giftRedeemTitle"), h("form", { class: "aform", onsubmit: function (ev) {
+      ev.preventDefault();
+      if (!input.value.trim()) return;
+      go.disabled = true; msg.className = "amsg ok"; msg.textContent = t("web.loading");
+      redeemGift(input.value, function (ok, err) {
+        go.disabled = false;
+        if (!ok) { msg.className = "amsg err"; msg.textContent = err; return; }
+        close(); S.notice = t("web.giftRedeemed2"); render();
+      });
+    } }, h("p", { class: "muted", text: t("web.giftRedeemSub") }), input, go, msg), [{ label: t("common.close") }]);
+    input.focus();
+  }
+  // Back from the gift checkout (?purchase=gift): the code appears once rc-webhook has it.
+  function awaitGift() {
+    var tries = 0, since = Date.now() - 30 * 60000;
+    S.notice = t("web.checking"); render();
+    (function poll() {
+      giftCodes().then(function (codes) {
+        var g = codes.find(function (c) { return Date.parse(c.created_at) > since && !c.redeemed; });
+        if (g) { S.notice = t("web.giftReady"); render(); showGift(g.code); return; }
+        if (++tries < 20) { setTimeout(poll, 3000); return; }
+        S.notice = t("web.giftNotYet"); render();
+      });
+    })();
   }
   function groupHead(title, sub) {
     return h("div", { class: "ghead" }, h("h3", { text: title }), h("p", { class: "muted", text: sub }));
@@ -1278,9 +1382,14 @@
         if (!saved && S.profile.language && STR[S.profile.language]) S.lang = S.profile.language;
         if (!S.profile.experience_level) { S.view = "onboarding"; render(); return; }
         S.view = "course"; render(); loadCourse();
-        if (/[?&]purchase=done/.test(location.search)) {
-          history.replaceState(null, "", location.pathname);
-          awaitPurchase();
+        var qs = location.search;
+        if (/[?&](purchase|gift|redeem)=/.test(qs)) history.replaceState(null, "", location.pathname);
+        if (/[?&]purchase=done/.test(qs)) awaitPurchase();
+        else if (/[?&]purchase=gift/.test(qs)) awaitGift();
+        else if (pendingGift()) showRedeem(pendingGift());
+        else {
+          var openGift = null; try { openGift = sessionStorage.getItem("wl-gift-open"); sessionStorage.removeItem("wl-gift-open"); } catch (e) {}
+          if (openGift === "redeem") showRedeem(); else if (openGift) showGift();
         }
       }).catch(function () { S.profile = { id: uid }; S.view = "course"; render(); loadCourse(); });
   }

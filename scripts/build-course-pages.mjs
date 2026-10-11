@@ -149,7 +149,7 @@ ${altLinks}<meta property="og:type" content="website">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="author" content="Jonas Egeskov">
 ${FONTS}
-<link rel="stylesheet" href="/assets/course/landing.css?v=1">
+<link rel="stylesheet" href="/assets/course/landing.css?v=2">
 ${extraHead}<script type="application/ld+json">${JSON.stringify(ld)}</script>
 ${ANALYTICS}
 </head>
@@ -348,6 +348,7 @@ function landing(lang, { withApp }) {
 <section class="section cl-sec"><div class="wrap cl-narrow">
   <div class="section-head"><h2>${h.priceH}</h2><p>${h.priceDeck}</p></div>
   <p class="center"><a class="btn btn-ghost" href="/pricing/">${h.priceCta}</a></p>
+  <p class="center cl-rel">${lang === "en" ? `Buying for someone else? <a href="/gift/">Give the course as a gift</a>.` : `Skal det være en gave? <a href="/da/gave/">Giv kurset i gave</a>.`}</p>
 </div></section>
 
 <section class="section cl-sec" id="faq"><div class="wrap">
@@ -363,12 +364,12 @@ function landing(lang, { withApp }) {
   <p class="cl-fine">${lang === "en" ? "For adults of legal drinking age (18+). Please enjoy wine responsibly." : "For voksne over 18 år. Nyd vin med omtanke."}</p>
 </div></section>
 </main>`;
-  const appHead = withApp ? `<link rel="stylesheet" href="/assets/course/course.css?v=5">\n` : "";
+  const appHead = withApp ? `<link rel="stylesheet" href="/assets/course/course.css?v=6">\n` : "";
   const app = withApp ? `
 <div id="app" aria-live="polite" hidden></div>
 <script src="/assets/course/vendor/supabase-2.117.3.js"></script>
-<script src="/assets/course/strings.js?v=6"></script>
-<script src="/assets/course/course.js?v=7"></script>` : "";
+<script src="/assets/course/strings.js?v=7"></script>
+<script src="/assets/course/course.js?v=8"></script>` : "";
   let foot = FOOTER;
   if (withApp) foot = foot.replace("</body>", `${app}\n</body>`);
   return head({ lang, title: h.title, desc: h.desc, path, alt: { en: "/course/", da: "/da/vinkursus/" }, ld, extraHead: appHead }) + HEADER + body + foot;
@@ -403,10 +404,213 @@ for (const [p, units] of targets) {
   write(file, html); banded++;
 }
 
+// ---- the gift (0137) ----------------------------------------------------------------------------
+// /gift/ and /da/gave/ sell the course for life as a present; /gift/card/ is the printable card the
+// buyer gets with each code (noindex); /redeem/ is the short address printed on the card.
+// Keywords (Google autocomplete, 2026-10-11): "gifts for wine lovers (who have everything)",
+// "gift for wine lover", "wine course gift"; DA "gave til vinelsker", "julegave til vinelsker".
+const G = {
+  en: {
+    path: "/gift/", title: "A Gift for Wine Lovers: an Online Wine Course | Winelingo",
+    desc: "A gift for the wine lover who has everything: Winelingo's online wine course, 166 interactive lessons, for life. $39.99 once, with a card to print or send.",
+    eyebrow: "The gift", h1: "A gift for the wine lover who has everything",
+    lede: `Give them the whole Winelingo course: ${TOTAL_LESSONS} short, interactive lessons, from tasting and grapes to twelve wine countries. For life, in four languages. You get a code right away, with a card to print or send.`,
+    buy: "Buy the gift · $39.99", redeem: "Have a code? Redeem it",
+    note: "One payment, no subscription. The code never expires.",
+    cardFor: "A gift for you", cardWhat: "The Winelingo wine course, for life", cardWhere: "Redeem at winelingo.app/redeem",
+    howH: "How it works",
+    how: [["Buy it", "Sign in or create a free account, then pay once. Paddle, our online reseller, handles the payment and VAT."],
+      ["Get the code", "Your gift code appears right after the payment, with a card to print or send. It is also kept in your account."],
+      ["They redeem it", "They type the code at winelingo.app/redeem and the whole course opens on their own account, on the web and in the iPhone app."]],
+    insideH: "What's inside", insideDeck: `${TOTAL_LESSONS} lessons in 26 units, about ${HOURS} hours in all. Each lesson takes five to ten minutes.`,
+    inside: [["Foundations", "How to taste, the red and white grapes that matter, serving, food pairing and reading a label."],
+      ["Twelve wine countries", "France, Italy, Spain, Portugal, Germany, Austria, the USA, Argentina, Chile, Australia, New Zealand and South Africa, region by region."],
+      ["Going deeper", "The vineyard, how wine is made, terroir and vintages, ageing and collecting, buying well, wine at the table, health and history."]],
+    syllabus: "See the full syllabus",
+    forH: "Who it's for",
+    for: [["The curious beginner", "Someone who enjoys wine and wants to know what they are drinking, without a classroom."],
+      ["The wine lover who has everything", "Another bottle is gone in an evening. Knowing why they love it lasts."],
+      ["Before a trip", "Heading to Bordeaux, Tuscany or Rioja? The country units cover the regions, grapes and labels."],
+      ["Before WSET", "A friendly first step for anyone thinking about a wine qualification."]],
+    faqH: "Questions",
+    faq: [["Does the gift code expire?", "No. It works until it is redeemed, so it can wait for the birthday or Christmas."],
+      ["How do they redeem it?", "At winelingo.app/redeem: they sign in or create a free account and type the code. The whole course opens on that account."],
+      ["Does it work in the iPhone app?", "Yes. It is the same account: every lesson with unlimited hearts, on the web and in the app. Label scanning in the app is not included."],
+      ["Is it a subscription?", "No. It is one payment of $39.99, shown in your currency with VAT included. Nothing renews."],
+      ["Which languages?", "English, Danish, Spanish and German. They can switch at any time."],
+      ["Can I get a refund?", "Yes, within 14 days of buying, as long as the code has not been redeemed. A refunded code stops working."],
+      ["Is it too late for Christmas?", "Never. The code arrives the moment you pay, so it works as a last-minute gift too."]],
+    endH: "Give something they will keep", endCta: "Buy the gift · $39.99",
+    fine: "For adults of legal drinking age (18+). Please enjoy wine responsibly.",
+  },
+  da: {
+    path: "/da/gave/", title: "Gave til vinelskeren: et vinkursus online | Winelingo",
+    desc: "Gaven til vinelskeren, der har alt: Winelingos vinkursus online, 166 interaktive lektioner, for altid. $39.99 én gang, med et kort du kan printe eller sende.",
+    eyebrow: "Gaven", h1: "Gaven til vinelskeren, der har alt",
+    lede: `Giv hele Winelingo-kurset: ${TOTAL_LESSONS} korte, interaktive lektioner, fra smagning og druer til tolv vinlande. For altid, på fire sprog. Du får en kode med det samme og et kort, du kan printe eller sende.`,
+    buy: "Køb gaven · $39.99", redeem: "Har du en kode? Indløs den",
+    note: "Én betaling, intet abonnement. Koden udløber aldrig.",
+    cardFor: "En gave til dig", cardWhat: "Winelingos vinkursus, for altid", cardWhere: "Indløs på winelingo.app/redeem",
+    howH: "Sådan virker det",
+    how: [["Køb den", "Log ind eller opret en gratis konto, og betal én gang. Paddle, vores online forhandler, står for betaling og moms."],
+      ["Få koden", "Gavekoden vises lige efter betalingen, med et kort du kan printe eller sende. Den gemmes også på din konto."],
+      ["De indløser den", "De skriver koden på winelingo.app/redeem, og hele kurset åbner på deres egen konto, på nettet og i iPhone-appen."]],
+    insideH: "Det får de", insideDeck: `${TOTAL_LESSONS} lektioner i 26 enheder, cirka ${HOURS} timer i alt. Hver lektion tager fem til ti minutter.`,
+    inside: [["Grundlaget", "Sådan smager man, de røde og hvide druer der betyder noget, servering, mad og vin og at læse en etiket."],
+      ["Tolv vinlande", "Frankrig, Italien, Spanien, Portugal, Tyskland, Østrig, USA, Argentina, Chile, Australien, New Zealand og Sydafrika, region for region."],
+      ["Et spadestik dybere", "Vinmarken, vinfremstilling, terroir og årgange, lagring og vinsamling, gode indkøb, vin ved bordet, sundhed og historie."]],
+    syllabus: "Se hele pensum",
+    forH: "Hvem er den til?",
+    for: [["Den nysgerrige begynder", "En der nyder vin og gerne vil vide, hvad der er i glasset, uden et klasselokale."],
+      ["Vinelskeren, der har alt", "En flaske mere er drukket på en aften. At vide hvorfor man elsker den, holder."],
+      ["Før rejsen", "Skal de til Bordeaux, Toscana eller Rioja? Landeenhederne gennemgår regioner, druer og etiketter."],
+      ["Før WSET", "Et venligt første skridt for den, der overvejer en vinuddannelse."]],
+    faqH: "Spørgsmål",
+    faq: [["Udløber gavekoden?", "Nej. Den virker, indtil den bliver indløst, så den kan godt vente til fødselsdagen eller julen."],
+      ["Hvordan indløser de den?", "På winelingo.app/redeem: de logger ind eller opretter en gratis konto og skriver koden. Hele kurset åbner på den konto."],
+      ["Virker den i iPhone-appen?", "Ja. Det er den samme konto: alle lektioner med ubegrænsede liv, på nettet og i appen. Scanning af etiketter i appen er ikke med."],
+      ["Er det et abonnement?", "Nej. Det er én betaling på $39.99, vist i din valuta inklusive moms. Intet fornyes."],
+      ["Hvilke sprog?", "Dansk, engelsk, spansk og tysk. De kan skifte når som helst."],
+      ["Kan jeg få pengene tilbage?", "Ja, inden for 14 dage efter købet, så længe koden ikke er indløst. En refunderet kode holder op med at virke."],
+      ["Er det for sent til jul?", "Aldrig. Koden kommer, i det øjeblik du betaler, så den virker også som en gave i sidste øjeblik."]],
+    endH: "Giv noget, de beholder", endCta: "Køb gaven · $39.99",
+    fine: "For voksne over 18 år. Nyd vin med omtanke.",
+  },
+};
+const giftBuy = (lang) => (lang === "en" ? "/course/?gift=1" : "/course/?gift=1&lang=da");
+const giftRedeem = (lang) => (lang === "en" ? "/redeem/" : "/redeem/?lang=da");
+function giftPage(lang) {
+  const g = G[lang];
+  const ld = { "@context": "https://schema.org", "@graph": [
+    { "@type": "BreadcrumbList", itemListElement: [
+      { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Forside", item: `${SITE}/` },
+      { "@type": "ListItem", position: 2, name: g.eyebrow, item: `${SITE}${g.path}` }] },
+    { "@type": "Product", name: lang === "en" ? "Winelingo online wine course, as a gift" : "Winelingos vinkursus online, som gave",
+      description: g.desc, brand: { "@type": "Brand", name: "Winelingo" }, image: `${SITE}/assets/social-card.png`, url: `${SITE}${g.path}`,
+      offers: { "@type": "Offer", price: "39.99", priceCurrency: "USD", availability: "https://schema.org/InStock", url: `${SITE}${g.path}` } },
+    { "@type": "FAQPage", mainEntity: g.faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },
+  ] };
+  const body = `<main id="main" class="cl">
+<section class="hero cl-hero gift-hero"><div class="wrap gift-grid">
+  <div>
+    <p class="eyebrow">${g.eyebrow}</p>
+    <h1>${esc(g.h1)}</h1>
+    <p class="lede">${esc(g.lede)}</p>
+    <div class="cl-cta"><a class="btn btn-primary btn-lg" href="${giftBuy(lang)}" data-umami-event="gift-buy">${g.buy}</a>
+      <a class="btn btn-ghost btn-lg" href="${giftRedeem(lang)}">${g.redeem}</a></div>
+    <p class="cl-unlock">${g.note}</p>
+  </div>
+  <div class="gift-card-mock" aria-hidden="true">
+    <img src="/assets/logo.png" alt="" width="40" height="40">
+    <p class="gcm-for">${g.cardFor}</p>
+    <p class="gcm-what">${g.cardWhat}</p>
+    <p class="gcm-code">WL-····-····</p>
+    <p class="gcm-where">${g.cardWhere}</p>
+  </div>
+</div></section>
+
+<section class="section cl-sec"><div class="wrap">
+  <div class="section-head"><h2>${g.howH}</h2></div>
+  <ol class="gift-steps">${g.how.map(([a, b], i) => `<li><span>${i + 1}</span><h3>${a}</h3><p>${b}</p></li>`).join("")}</ol>
+</div></section>
+
+<section class="section cl-sec"><div class="wrap">
+  <div class="section-head"><h2>${g.insideH}</h2><p>${g.insideDeck}</p></div>
+  <div class="cl-grid gift-inside">${g.inside.map(([a, b]) => `<div class="cl-card"><h3>${a}</h3><p>${b}</p></div>`).join("")}</div>
+  <p class="center cl-rel"><a href="${hubUrl(lang)}">${g.syllabus}</a></p>
+</div></section>
+
+<section class="section cl-sec"><div class="wrap">
+  <div class="section-head"><h2>${g.forH}</h2></div>
+  <div class="cl-grid">${g.for.map(([a, b]) => `<div class="cl-card"><h3>${a}</h3><p>${b}</p></div>`).join("")}</div>
+</div></section>
+
+<section class="section cl-sec" id="faq"><div class="wrap">
+  <div class="section-head"><h2>${g.faqH}</h2></div>
+  <div class="faq">${g.faq.map(([q, a], i) => `
+    <details${i === 0 ? " open" : ""}><summary>${q}<span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary><div class="a"><p>${a}</p></div></details>`).join("")}
+  </div>
+</div></section>
+
+<section class="cta cl-end"><div class="wrap">
+  <h2>${g.endH}</h2>
+  <p class="cl-cta center"><a class="btn btn-light btn-lg" href="${giftBuy(lang)}" data-umami-event="gift-buy">${g.endCta}</a></p>
+  <p class="cl-fine">${g.fine}</p>
+</div></section>
+</main>`;
+  return head({ lang, title: g.title, desc: g.desc, path: g.path, alt: { en: G.en.path, da: G.da.path }, ld }) + HEADER + body + FOOTER;
+}
+// The card: printed or sent by the buyer. The code arrives in the address's #fragment, which never
+// leaves the browser; names and a message are typed on the page and printed with it.
+function cardPage() {
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Winelingo Gift Card</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+${FONTS}
+<link rel="stylesheet" href="/assets/gift-card.css?v=1">
+</head>
+<body>
+<main class="gc-page">
+  <div class="gc-tools">
+    <label><span data-t="to">To</span><input id="to" maxlength="40" autocomplete="off"></label>
+    <label><span data-t="from">From</span><input id="from" maxlength="40" autocomplete="off"></label>
+    <label class="wide"><span data-t="msg">A few words (optional)</span><input id="msg" maxlength="120" autocomplete="off"></label>
+    <button id="print" class="btn btn-primary" type="button" data-t="print">Print the card</button>
+  </div>
+  <article class="gc" aria-label="Gift card">
+    <div class="gc-top"><img src="/assets/logo.png" alt="" width="44" height="44"><span>Winelingo</span></div>
+    <p class="gc-to" id="toOut"></p>
+    <p class="gc-for" data-t="for">A gift for you</p>
+    <h1 class="gc-what" data-t="what">The Winelingo wine course, for life</h1>
+    <p class="gc-sub" data-t="sub">${TOTAL_LESSONS} interactive lessons: tasting, grapes and twelve wine countries.</p>
+    <p class="gc-msg" id="msgOut"></p>
+    <p class="gc-from" id="fromOut"></p>
+    <div class="gc-code"><span data-t="code">Your code</span><b id="code">WL-····-····</b></div>
+    <p class="gc-where" data-t="where">Redeem at winelingo.app/redeem</p>
+  </article>
+  <p class="gc-redeem"><a id="redeem" class="btn btn-ghost" href="/redeem/" data-t="redeem">Redeem this code now</a></p>
+</main>
+<script src="/assets/gift-card.js?v=1"></script>
+</body>
+</html>
+`;
+}
+function redeemPage() {
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Redeem a Gift Code | Winelingo</title>
+<link rel="canonical" href="${SITE}/gift/">
+<script>
+  // Short address printed on the gift card: on to the course, which asks for the code.
+  (function () {
+    var q = location.search, c = (location.hash.match(/c=([A-Za-z0-9-]+)/) || q.match(/[?&]c=([A-Za-z0-9-]+)/) || [])[1];
+    var lang = (q.match(/[?&]lang=(en|da|es|de)\\b/) || [])[1];
+    location.replace("/course/?" + (c ? "redeem=" + encodeURIComponent(c) : "redeem=open") + (lang ? "&lang=" + lang : ""));
+  })();
+</script>
+</head>
+<body><p><a href="/course/?redeem=open">Redeem your Winelingo gift code</a></p></body>
+</html>
+`;
+}
+
 // ---- write --------------------------------------------------------------------------------------
 write("course/index.html", landing("en", { withApp: true }));
 write("da/vinkursus/index.html", landing("da", { withApp: false }));
+write("gift/index.html", giftPage("en"));
+write("da/gave/index.html", giftPage("da"));
+write("gift/card/index.html", cardPage());
+write("redeem/index.html", redeemPage());
 for (const u of U) { write(`course/${u.en}/index.html`, unitPage(u, "en")); write(`da/vinkursus/${u.da}/index.html`, unitPage(u, "da")); }
-export const COURSE_URLS = [hubUrl("en"), hubUrl("da"), ...U.flatMap((u) => [unitUrl(u, "en"), unitUrl(u, "da")])];
+export const COURSE_URLS = [hubUrl("en"), hubUrl("da"), G.en.path, G.da.path, ...U.flatMap((u) => [unitUrl(u, "en"), unitUrl(u, "da")])];
 writeFileSync(join(ROOT, "data/course/urls.json"), JSON.stringify(COURSE_URLS, null, 1));
 console.log(`course pages: 2 landings + ${U.length * 2} unit pages · ${TOTAL_LESSONS} lessons · ~${HOURS} h · course box on ${banded} pages`);
