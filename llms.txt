@@ -41,6 +41,11 @@
 - [Wine serving temperature chart](https://winelingo.app/tools/wine-serving-temperature/)
 - [Wine calories calculator](https://winelingo.app/tools/wine-calories/)
 
+## Online wine course
+- [Winelingo online wine course](https://winelingo.app/course/): 166 short, interactive lessons in 26 units (tasting, grapes, serving, food and wine, labels, 12 wine countries, vineyard, winemaking, buying, history). First unit free; Premium $3.99/month or the course for life $39.99. English, Danish, Spanish, German. Same account on the web and in the iPhone app.
+- [Vinkursus online (dansk)](https://winelingo.app/da/vinkursus/)
+- [Pricing](https://winelingo.app/pricing/)
+
 ## For business
 - [Winelingo for business: wine training for restaurant staff](https://winelingo.app/business/): short lessons, 8 free staff tests, a staff test built on the venue's own wine list, and a weekly team league. English and Danish.
 - [Free wine tests for staff](https://winelingo.app/tests/)

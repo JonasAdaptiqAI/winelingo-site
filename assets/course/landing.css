@@ -1,0 +1,70 @@
+/* The public course pages (/course/, /course/<unit>/, /da/vinkursus/...). Built by
+   scripts/build-course-pages.mjs. Site tokens from site.css. */
+.cl .center{text-align:center}
+.cl .muted{color:var(--sec)}
+.btn-light{background:#fff; color:var(--wine-deep)}
+.btn-light:hover{text-decoration:none; transform:translateY(-1px)}
+.btn-ghost{background:var(--paper-raised); border:1px solid var(--line); color:var(--wine-deep)}
+.btn-ghost:hover{text-decoration:none; border-color:rgba(123,30,59,.35)}
+
+.cl-hero .wrap{max-width:var(--maxw-prose)}
+.cl-hub .wrap{max-width:860px}
+.cl-hero h1{font-size:clamp(34px,5.4vw,58px); color:var(--wine-deep); letter-spacing:-.025em; line-height:1.05; text-wrap:balance}
+.cl-cta{display:flex; flex-wrap:wrap; gap:12px; margin-top:26px}
+.cl-cta.center{justify-content:center}
+.cl-signin{margin-top:12px; font-size:14.5px}
+.cl-unlock{margin-top:14px; font-size:14.5px; color:var(--sec); max-width:56ch}
+.cl-cover{display:block; width:min(var(--maxw-prose), calc(100% - 48px)); margin:28px auto 0; aspect-ratio:16/9; object-fit:cover; border-radius:18px; box-shadow:var(--shadow-md); position:relative; z-index:2}
+.cl-facts{list-style:none; margin:30px 0 0; padding:0; display:flex; flex-wrap:wrap; gap:10px}
+.cl-facts li{display:flex; flex-direction:column; padding:10px 16px; border-radius:14px; background:var(--paper-raised); border:1px solid var(--line); box-shadow:var(--shadow-sm)}
+.cl-facts b{font-family:var(--font-display); font-size:22px; color:var(--wine-deep); line-height:1.1}
+.cl-facts span{font-size:13px; color:var(--sec)}
+
+.cl-sec{padding-top:56px; padding-bottom:56px}
+.cl-narrow{max-width:var(--maxw-prose)}
+.cl-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:18px}
+.cl-card{background:var(--paper-raised); border:1px solid var(--line); border-radius:var(--r-card); box-shadow:var(--shadow-sm); padding:22px 20px}
+.cl-card h3{font-size:19px; color:var(--wine-deep); margin-bottom:8px}
+.cl-card p{font-size:15px; color:var(--sec)}
+
+.cl-group{margin-top:34px}
+.cl-group > h3{font-size:24px; color:var(--wine-deep)}
+.cl-group > p{margin:4px 0 14px}
+.cl-units{display:grid; grid-template-columns:repeat(2,1fr); gap:12px}
+.cl-unit{display:flex; gap:14px; align-items:center; padding:10px; background:var(--paper-raised); border:1px solid var(--line); border-radius:16px; box-shadow:var(--shadow-sm); color:inherit; transition:border-color .15s, transform .15s}
+.cl-unit:hover{text-decoration:none; border-color:rgba(123,30,59,.35); transform:translateY(-1px)}
+.cl-unit img{flex:0 0 auto; width:96px; height:64px; object-fit:cover; border-radius:10px; background:#2a0b18}
+.cl-ubody{display:flex; flex-direction:column; min-width:0}
+.cl-uk{font-size:11.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--wine)}
+.cl-uk b{color:var(--vine-text)}
+.cl-ut{font-family:var(--font-display); font-weight:600; font-size:18px; color:var(--wine-deep); line-height:1.2}
+.cl-us{font-size:13.5px; color:var(--sec)}
+
+.cl-lessons{list-style:none; margin:0; padding:0; display:grid; gap:16px}
+.cl-lesson{display:flex; gap:16px; background:var(--paper-raised); border:1px solid var(--line); border-radius:var(--r-card); box-shadow:var(--shadow-sm); padding:20px 20px 18px}
+.cl-num{flex:0 0 auto; width:36px; height:36px; border-radius:50%; display:grid; place-items:center; background:var(--wine); color:#fff; font-weight:700}
+.cl-lbody{min-width:0}
+.cl-lbody h3{font-size:21px; color:var(--wine-deep); line-height:1.2}
+.cl-sum{color:var(--ink); font-size:16px; margin-top:6px}
+.cl-learn{margin-top:10px; font-size:13px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--wine)}
+.cl-lbody ul{margin:6px 0 0; padding-left:20px; color:var(--sec); font-size:15px}
+.cl-lbody li{margin:3px 0}
+.cl-min{display:inline-block; margin-top:8px; font-size:13px; color:var(--muted)}
+.cl-rel{margin-top:28px; font-size:15px; color:var(--sec)}
+.cl-pager{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-top:22px; padding-top:18px; border-top:1px solid var(--line); font-size:15px; font-weight:600}
+.cl-end .wrap{text-align:center; padding-top:72px; padding-bottom:72px}
+.cl-end h2{font-size:clamp(30px,4.4vw,46px); color:#fff; margin-bottom:8px}
+.cl-fine{margin-top:18px; font-size:13.5px; color:rgba(251,247,244,.65)}
+.cta.cl-end{background:linear-gradient(155deg,#4a1024,#3b0a1e 55%,#26060f); color:var(--paper)}
+
+@media (max-width:980px){ .cl-grid{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:700px){
+  .cl-grid,.cl-units{grid-template-columns:1fr}
+  .cl-cta .btn{width:100%}
+  .cl-lesson{padding:16px 14px; gap:12px}
+  .cl-num{width:30px; height:30px; font-size:14px}
+}
+
+/* /course/ is the landing page AND the app: signed-in visitors and "Start" clicks get the app. */
+body.app-mode #landing, body.app-mode .site-header, body.app-mode .site-footer, body.app-mode .getbar, body.app-mode .skip{display:none !important}
+.cl-h2{font-size:26px; color:var(--wine-deep); margin-bottom:16px}
