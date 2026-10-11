@@ -68,3 +68,21 @@
 /* /course/ is the landing page AND the app: signed-in visitors and "Start" clicks get the app. */
 body.app-mode #landing, body.app-mode .site-header, body.app-mode .site-footer, body.app-mode .getbar, body.app-mode .skip{display:none !important}
 .cl-h2{font-size:26px; color:var(--wine-deep); margin-bottom:16px}
+
+/* /gift/ and /da/gave/ */
+.gift-hero .wrap.gift-grid{max-width:1080px; display:grid; grid-template-columns:1.25fr 1fr; gap:40px; align-items:center}
+.gift-card-mock{border-radius:22px; padding:26px 26px 22px; color:#fbf7f4; display:grid; gap:6px; transform:rotate(-2.5deg);
+  background:radial-gradient(120% 90% at 100% 0%, rgba(201,162,74,.28), transparent 55%), linear-gradient(155deg,#5a1730,#3b0a1e 60%,#26060f);
+  box-shadow:0 22px 60px rgba(59,10,30,.28)}
+.gift-card-mock img{border-radius:10px; margin-bottom:8px}
+.gcm-for{font-size:11.5px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--gold)}
+.gcm-what{font-family:var(--font-display); font-size:26px; line-height:1.1; color:#fff}
+.gcm-code{margin-top:12px; justify-self:start; padding:8px 14px; border-radius:12px; border:1px dashed rgba(201,162,74,.7); font:700 20px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing:.08em}
+.gcm-where{font-size:13px; color:rgba(251,247,244,.75)}
+.gift-steps{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+.gift-steps li{background:var(--paper-raised); border:1px solid var(--line); border-radius:var(--r-card); box-shadow:var(--shadow-sm); padding:22px 20px}
+.gift-steps span{display:grid; place-items:center; width:34px; height:34px; border-radius:50%; background:var(--wine); color:#fff; font-weight:700; margin-bottom:10px}
+.gift-steps h3{font-size:19px; color:var(--wine-deep); margin-bottom:6px}
+.gift-steps p{font-size:15px; color:var(--sec)}
+.cl-grid.gift-inside{grid-template-columns:repeat(3,1fr)}
+@media (max-width:860px){ .gift-hero .wrap.gift-grid{grid-template-columns:1fr} .gift-card-mock{max-width:420px; transform:none} .gift-steps,.cl-grid.gift-inside{grid-template-columns:1fr} }

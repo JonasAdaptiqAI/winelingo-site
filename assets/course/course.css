@@ -311,6 +311,23 @@ body.noscroll{overflow:hidden}
 .next-up b{color:var(--ink)}
 @media (max-width:420px){ .lv-cmp{grid-template-columns:1fr} }
 @media (prefers-reduced-motion:reduce){ .flip-f,.flip-b{transition:none} }
+/* ---------- gifts (0137) ---------- */
+.gift-row{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:10px 18px; margin:28px 0 6px}
+.gift-note{display:flex; align-items:center; gap:8px}
+.gift .gpoints{list-style:none; margin:4px 0; padding:0; display:grid; gap:8px}
+.gift .gpoints li{display:flex; gap:10px; align-items:flex-start; font-size:15px}
+.gift .gpoints svg{color:var(--ok); flex:0 0 auto; margin-top:3px}
+.gift .plan-p{margin:6px 0 2px}
+.gmine{margin-top:8px; border-top:1px solid var(--line); padding-top:14px}
+.gmine h3{font-size:17px; color:var(--wine-deep); margin-bottom:8px}
+.gcodes{list-style:none; margin:0; padding:0; display:grid; gap:8px}
+.gcode{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:6px 12px; padding:10px 12px; border:1px solid var(--line); border-radius:12px; background:#fff}
+.gcode.fresh{border-color:var(--wine); box-shadow:0 0 0 3px rgba(123,30,59,.12)}
+.gcode div:first-child{display:grid}
+.gcode b{font:700 17px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing:.06em; color:var(--ink)}
+.gcode span{font-size:13px; color:var(--sec)}
+.gcode-a{display:flex; gap:12px}
+.ginput{text-transform:uppercase; letter-spacing:.08em; font-family:ui-monospace, SFMono-Regular, Menlo, monospace}
 @media (prefers-reduced-motion:reduce){ .rv{animation:none; opacity:1; transform:none} .sheet{animation:none} }
 
 /* ---------- paying on the web ---------- */

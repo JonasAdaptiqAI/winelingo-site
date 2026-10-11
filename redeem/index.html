@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Redeem a Gift Code | Winelingo</title>
+<link rel="canonical" href="https://winelingo.app/gift/">
+<script>
+  // Short address printed on the gift card: on to the course, which asks for the code.
+  (function () {
+    var q = location.search, c = (location.hash.match(/c=([A-Za-z0-9-]+)/) || q.match(/[?&]c=([A-Za-z0-9-]+)/) || [])[1];
+    var lang = (q.match(/[?&]lang=(en|da|es|de)\b/) || [])[1];
+    location.replace("/course/?" + (c ? "redeem=" + encodeURIComponent(c) : "redeem=open") + (lang ? "&lang=" + lang : ""));
+  })();
+</script>
+</head>
+<body><p><a href="/course/?redeem=open">Redeem your Winelingo gift code</a></p></body>
+</html>
