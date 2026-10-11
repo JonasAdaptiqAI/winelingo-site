@@ -345,6 +345,10 @@ function landing(lang, { withApp }) {
   <div class="cl-grid">${h.for.map(([a, b]) => `<div class="cl-card"><h3>${a}</h3><p>${b}</p></div>`).join("")}</div>
 </div></section>
 
+<section class="section cl-sec"><div class="wrap">
+  ${ecForm(lang, lang === "en" ? "course-landing" : "course-landing-da")}
+</div></section>
+
 <section class="section cl-sec"><div class="wrap cl-narrow">
   <div class="section-head"><h2>${h.priceH}</h2><p>${h.priceDeck}</p></div>
   <p class="center"><a class="btn btn-ghost" href="/pricing/">${h.priceCta}</a></p>
@@ -372,7 +376,7 @@ function landing(lang, { withApp }) {
 <script src="/assets/course/course.js?v=8"></script>` : "";
   let foot = FOOTER;
   if (withApp) foot = foot.replace("</body>", `${app}\n</body>`);
-  return head({ lang, title: h.title, desc: h.desc, path, alt: { en: "/course/", da: "/da/vinkursus/" }, ld, extraHead: appHead }) + HEADER + body + foot;
+  return head({ lang, title: h.title, desc: h.desc, path, alt: { en: "/course/", da: "/da/vinkursus/" }, ld, extraHead: appHead + EC_SCRIPT }) + HEADER + body + foot;
 }
 
 // ---- links in from the rest of the site --------------------------------------------------------
@@ -402,6 +406,105 @@ for (const [p, units] of targets) {
   if (!html.includes("</main>")) throw new Error(`no </main> in ${file}`);
   html = html.replace("</main>", band(units === "hub" ? [] : units, units === "hub") + "\n</main>");
   write(file, html); banded++;
+}
+
+// ---- the free 5-day course by email (0138, email-course function) ---------------------------------
+// A sign-up form (assets/email-course.js) on the course landings, the how-to-learn guide and its own
+// page. Keywords (autocomplete 2026-10-11): "wine courses online free", "learn about wine free",
+// "free online wine course" (EN); no Danish free-course demand showed, so /da/gratis-vinkursus/ is
+// mainly the confirmation landing for Danish sign-ups.
+const EC = {
+  en: { h: "Free 5-day wine course by email", sub: "One short lesson a day for five days: the styles of wine, how to taste, body, tannin and acidity, aromas and serving. Free, from the first unit of the course.",
+    ph: "Your email", btn: "Send me day 1", fine: "Five emails, then we stop. Unsubscribe with one click. See our privacy policy." },
+  da: { h: "Gratis vinkursus på mail i 5 dage", sub: "Én kort lektion om dagen i fem dage: vinens stilarter, sådan smager du, fylde, tannin og syre, dufte og servering. Gratis, fra kursets første enhed.",
+    ph: "Din e-mail", btn: "Send mig dag 1", fine: "Fem mails, så stopper vi. Afmeld med ét klik. Se vores privatlivspolitik." },
+};
+const EC_SCRIPT = `<script src="/assets/email-course.js?v=1" defer></script>\n`;
+function ecForm(lang, source, tag = "h2") {
+  const e = EC[lang];
+  return `<form class="ec" data-email-course="${source}" novalidate>
+    <${tag}>${e.h}</${tag}>
+    <p class="sub">${e.sub}</p>
+    <div class="ec-row"><input type="email" name="email" autocomplete="email" required placeholder="${e.ph}" aria-label="${e.ph}">
+      <button class="btn btn-primary" type="submit">${e.btn}</button></div>
+    <label class="hp" aria-hidden="true">Website <input name="website" tabindex="-1" autocomplete="off"></label>
+    <p class="ec-msg" role="status" aria-live="polite"></p>
+    <p class="fine">${e.fine.replace(/(privacy policy|privatlivspolitik)/, '<a href="/privacy/">$1</a>')}</p>
+  </form>`;
+}
+const FREE_PAGE = {
+  en: { path: "/free-wine-course/", title: "Free Online Wine Course: 5 Days by Email | Winelingo",
+    desc: "A free online wine course for beginners: five short lessons by email, one a day, on wine styles, tasting, body, tannin, acidity and aromas. From Winelingo.",
+    eyebrow: "Free wine course", h1: "A free online wine course, five days by email",
+    lede: "Learn about wine for free, one short lesson a day. Each email takes a few minutes to read and ends with something to try with your next glass.",
+    daysH: "What you'll learn",
+    days: [["Day 1", "The four questions that read any wine", "Colour, sweetness, bubbles and strength, and where each one comes from."],
+      ["Day 2", "How to taste wine in 5 steps", "See, swirl, smell, sip, savour, and why most flavour is really smell."],
+      ["Day 3", "Body, tannin and acidity", "The three words for how a wine feels, in plain language."],
+      ["Day 4", "Sweet or fruity? Naming a smell", "Why a fruity wine can be bone dry, and the five aroma families."],
+      ["Day 5", "Temperature and your palate", "The right serving temperature, and how anyone builds a palate."]],
+    moreH: "Want more than five days?", more: `The emails come from the first unit of Winelingo's online wine course: ${TOTAL_LESSONS} interactive lessons in 26 units, from grapes to twelve wine countries. The first unit is free in your browser.`,
+    moreCta: "See the full course", faqH: "Questions",
+    faq: [["Is it really free?", "Yes. Five emails, no payment details, no account needed. At the end we tell you about the full course, and that's it."],
+      ["Do I get a certificate?", "No. It is a friendly introduction, not an accredited qualification. It is a good first step before a course like WSET Level 1."],
+      ["How do I unsubscribe?", "Every email has an unsubscribe link at the bottom. One click and you're off the list."],
+      ["Is there a Danish version?", "Yes: Danish sign-ups get the Danish emails. See the Danish page."]] },
+  da: { path: "/da/gratis-vinkursus/", title: "Gratis vinkursus online: 5 dage på mail | Winelingo",
+    desc: "Et gratis vinkursus for begyndere: fem korte lektioner på mail, én om dagen, om vinens stilarter, smagning, fylde, tannin, syre og dufte. Fra Winelingo.",
+    eyebrow: "Gratis vinkursus", h1: "Et gratis vinkursus online, fem dage på mail",
+    lede: "Lær om vin gratis, én kort lektion om dagen. Hver mail tager et par minutter at læse og slutter med noget, du kan prøve med dit næste glas.",
+    daysH: "Det lærer du",
+    days: [["Dag 1", "De fire spørgsmål, der afkoder enhver vin", "Farve, sødme, bobler og styrke, og hvor hver af dem kommer fra."],
+      ["Dag 2", "Sådan smager du vin i 5 trin", "Se, sving, dufte, smag, nyd, og hvorfor det meste af smagen i virkeligheden er duft."],
+      ["Dag 3", "Fylde, tannin og syre", "De tre ord for, hvordan en vin føles, med almindelige ord."],
+      ["Dag 4", "Sød eller frugtig? Ord på duftene", "Hvorfor en frugtig vin kan være knastør, og de fem duftfamilier."],
+      ["Dag 5", "Temperatur og din gane", "Den rigtige serveringstemperatur, og hvordan alle kan bygge en gane."]],
+    moreH: "Vil du have mere end fem dage?", more: `Mailene kommer fra første enhed af Winelingos vinkursus online: ${TOTAL_LESSONS} interaktive lektioner i 26 enheder, fra druer til tolv vinlande. Den første enhed er gratis i din browser.`,
+    moreCta: "Se hele kurset", faqH: "Spørgsmål",
+    faq: [["Er det virkelig gratis?", "Ja. Fem mails, ingen betalingsoplysninger, ingen konto. Til sidst fortæller vi om hele kurset, og så er det det."],
+      ["Får jeg et bevis?", "Nej. Det er en venlig introduktion, ikke en godkendt uddannelse. Det er et godt første skridt før et kursus som WSET Level 1."],
+      ["Hvordan afmelder jeg mig?", "Alle mails har et afmeldingslink nederst. Ét klik, så er du af listen."],
+      ["Findes der en engelsk udgave?", "Ja: tilmelder du dig på den engelske side, får du mailene på engelsk."]] },
+};
+function freePage(lang) {
+  const f = FREE_PAGE[lang];
+  const ld = { "@context": "https://schema.org", "@graph": [
+    { "@type": "BreadcrumbList", itemListElement: [
+      { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Forside", item: `${SITE}/` },
+      { "@type": "ListItem", position: 2, name: f.eyebrow, item: `${SITE}${f.path}` }] },
+    { "@type": "Course", name: f.h1, description: f.desc, url: `${SITE}${f.path}`, provider: PROVIDER, inLanguage: lang,
+      educationalLevel: "Beginner", isAccessibleForFree: true,
+      offers: { "@type": "Offer", price: "0", priceCurrency: "USD", category: "Free" },
+      hasCourseInstance: { "@type": "CourseInstance", courseMode: "Online", courseWorkload: "PT25M" } },
+    { "@type": "FAQPage", mainEntity: f.faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },
+  ] };
+  const other = lang === "en" ? FREE_PAGE.da.path : FREE_PAGE.en.path;
+  const body = `<main id="main" class="cl">
+<section class="hero cl-hero"><div class="wrap">
+  <p class="eyebrow">${f.eyebrow}</p>
+  <h1>${esc(f.h1)}</h1>
+  <p class="lede">${esc(f.lede)}</p>
+</div></section>
+<section class="section cl-sec" style="padding-top:8px"><div class="wrap">
+  <p class="ec-status" data-ec-status hidden></p>
+  ${ecForm(lang, lang === "en" ? "free-page" : "free-page-da")}
+</div></section>
+<section class="section cl-sec"><div class="wrap">
+  <div class="section-head"><h2>${f.daysH}</h2></div>
+  <ol class="ec-days">${f.days.map(([d, t, x]) => `<li><b>${d}</b><div><h3>${t}</h3><p>${x}</p></div></li>`).join("")}</ol>
+</div></section>
+<section class="section cl-sec"><div class="wrap cl-narrow">
+  <div class="section-head"><h2>${f.moreH}</h2><p>${f.more}</p></div>
+  <p class="center"><a class="btn btn-ghost" href="${hubUrl(lang)}">${f.moreCta}</a></p>
+</div></section>
+<section class="section cl-sec" id="faq"><div class="wrap">
+  <div class="section-head"><h2>${f.faqH}</h2></div>
+  <div class="faq">${f.faq.map(([q, a], i) => `
+    <details${i === 0 ? " open" : ""}><summary>${q}<span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary><div class="a"><p>${a.replace(/(the Danish page|den engelske side)/, `<a href="${other}">$1</a>`)}</p></div></details>`).join("")}
+  </div>
+</div></section>
+</main>`;
+  return head({ lang, title: f.title, desc: f.desc, path: f.path, alt: { en: FREE_PAGE.en.path, da: FREE_PAGE.da.path }, ld, extraHead: EC_SCRIPT }) + HEADER + body + FOOTER;
 }
 
 // ---- the gift (0137) ----------------------------------------------------------------------------
@@ -606,11 +709,13 @@ function redeemPage() {
 // ---- write --------------------------------------------------------------------------------------
 write("course/index.html", landing("en", { withApp: true }));
 write("da/vinkursus/index.html", landing("da", { withApp: false }));
+write("free-wine-course/index.html", freePage("en"));
+write("da/gratis-vinkursus/index.html", freePage("da"));
 write("gift/index.html", giftPage("en"));
 write("da/gave/index.html", giftPage("da"));
 write("gift/card/index.html", cardPage());
 write("redeem/index.html", redeemPage());
 for (const u of U) { write(`course/${u.en}/index.html`, unitPage(u, "en")); write(`da/vinkursus/${u.da}/index.html`, unitPage(u, "da")); }
-export const COURSE_URLS = [hubUrl("en"), hubUrl("da"), G.en.path, G.da.path, ...U.flatMap((u) => [unitUrl(u, "en"), unitUrl(u, "da")])];
+export const COURSE_URLS = [hubUrl("en"), hubUrl("da"), G.en.path, G.da.path, FREE_PAGE.en.path, FREE_PAGE.da.path, ...U.flatMap((u) => [unitUrl(u, "en"), unitUrl(u, "da")])];
 writeFileSync(join(ROOT, "data/course/urls.json"), JSON.stringify(COURSE_URLS, null, 1));
 console.log(`course pages: 2 landings + ${U.length * 2} unit pages · ${TOTAL_LESSONS} lessons · ~${HOURS} h · course box on ${banded} pages`);
