@@ -25,7 +25,7 @@
   // sandbox: Paddle test mode, only with ?sandbox=1. rc-webhook ignores sandbox purchases except for
   // the test accounts in RC_SANDBOX_USERS, so these links unlock nothing for anyone else.
   var LINKS = {
-    live: { monthly: "", lifetime: "" },
+    live: { monthly: "https://pay.rev.cat/fuoqsixiddijnlwy/", lifetime: "https://pay.rev.cat/ojsmjmbnvwzlyeoi/" },
     sandbox: { monthly: "https://pay.rev.cat/zyfjogqowdnqnapw/", lifetime: "https://pay.rev.cat/zgrofjmxwefvfjqk/" }
   };
   var SANDBOX = /[?&]sandbox=1\b/.test(location.search);
