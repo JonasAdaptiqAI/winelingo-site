@@ -5,6 +5,9 @@
    The lesson player follows the app's (prototype/learn.tsx, LessonPlayer): teach cards in order,
    each question slot filled from the lesson's own question or a bank question about the same card,
    options shuffled, a wrong answer comes back at the end and costs a heart for free accounts.
+   Course 2.0 (app docs/COURSE-V2.md): a lesson with `v2` plays that instead: teach cards with a
+   visual layout (term, stat, timeline, list, ladder, compare, scale, map), quick-check blocks,
+   three-part answers, flip cards, and a recap with a teaser for the next lesson.
    Plain DOM, no framework; every text goes in with textContent. */
 (function () {
   "use strict";
@@ -192,12 +195,17 @@
         });
       }).catch(function () { return rows; });
   }
+  // Course 2.0 titles (lib/api.ts withV2Title): a lesson with v2 is listed under its new title.
+  function withV2Title(r) { return r && r.v2_title ? Object.assign({}, r, { title: r.v2_title, summary: r.v2_summary || r.summary }) : r; }
   function loadLessons() {
-    return sb.from("lessons").select("id, topic, title, summary, body, sort_order, steps, outcomes, chapter, chapter_sort")
-      .order("sort_order").then(function (res) {
-        if (res.error) throw res.error;
-        return localize("lesson", res.data || []);
-      }).then(function (rows) { return rows.map(inChapter); });
+    var base = "id, topic, title, summary, body, sort_order, steps, outcomes, chapter, chapter_sort";
+    function q(cols) { return sb.from("lessons").select(cols).order("sort_order"); }
+    return q(base + ", v2_title, v2_summary, v2_len").then(function (res) {
+      return res.error && /v2/i.test(res.error.message || "") ? q(base) : res;
+    }).then(function (res) {
+      if (res.error) throw res.error;
+      return localize("lesson", res.data || []);
+    }).then(function (rows) { return rows.map(inChapter).map(withV2Title); });
   }
   function loadDone() {
     return sb.from("lesson_completions").select("lesson_id").eq("user_id", S.session.user.id).then(function (res) {
@@ -484,7 +492,7 @@
     return ordered;
   }
   function minutes(l) {
-    var n = Array.isArray(l.steps) ? l.steps.length : 0;
+    var n = Number.isInteger(l.v2_len) ? l.v2_len : Array.isArray(l.steps) ? l.steps.length : 0;
     var m = n > 0 ? Math.max(2, Math.round(n * 0.45)) : Math.max(1, Math.round(String(l.body || "").split(/\s+/).length / 180));
     return t("learn.minutes", { count: m });
   }
@@ -632,6 +640,37 @@
   }
 
   // ---------------------------------------------------------------- lesson player
+  // A Course 2.0 teach card's layout (lesson-visuals.tsx parseLayout); anything malformed is dropped
+  // and the card shows its text only.
+  function parseLayout(x) {
+    var str = function (y) { return typeof y === "string" && y.trim().length > 0; };
+    var arr = function (y, min, max) { return Array.isArray(y) && y.length >= min && y.length <= max; };
+    if (!x || typeof x !== "object" || !str(x.layout)) return null;
+    switch (x.layout) {
+      case "term": return str(x.term) ? { layout: "term", term: x.term, say: str(x.say) ? x.say : null } : null;
+      case "stat": return str(x.stat) ? { layout: "stat", stat: x.stat } : null;
+      case "timeline": return arr(x.items, 2, 6) && x.items.every(function (i) { return i && str(i.when) && str(i.text); })
+        ? { layout: "timeline", items: x.items.map(function (i) { return { when: String(i.when), text: String(i.text) }; }) } : null;
+      case "list": return arr(x.items, 2, 5) && x.items.every(function (i) { return i && str(i.text); })
+        ? { layout: "list", items: x.items.map(function (i) { return { label: str(i.label) ? String(i.label) : null, text: String(i.text) }; }) } : null;
+      case "ladder": return arr(x.items, 2, 6) && x.items.every(function (i) { return i && str(i.label) && str(i.text); })
+        ? { layout: "ladder", items: x.items.map(function (i) { return { label: String(i.label), text: String(i.text) }; }) } : null;
+      case "compare": return arr(x.cols, 2, 2) && x.cols.every(function (c) { return c && str(c.title) && arr(c.items, 1, 5) && c.items.every(str); })
+        ? { layout: "compare", cols: x.cols.map(function (c) { return { title: String(c.title), items: c.items.map(String) }; }) } : null;
+      case "scale": return str(x.from) && str(x.to) && arr(x.items, 2, 5)
+        && x.items.every(function (i) { return i && str(i.label) && typeof i.at === "number" && i.at >= 0 && i.at <= 100; })
+        ? { layout: "scale", from: x.from, to: x.to, items: x.items.map(function (i) { return { label: String(i.label), at: i.at }; }) } : null;
+      case "map":
+        // The outlines arrive with maps.js when a lesson opens; pins are checked when the card is drawn.
+        if (!str(x.map) || !Array.isArray(x.pins)) return null;
+        var pins = x.pins.filter(str);
+        if (!pins.length) return null;
+        var groups = Array.isArray(x.groups) ? x.groups.filter(function (g) { return g && str(g.label) && Array.isArray(g.pins); }).slice(0, 3)
+          .map(function (g) { return { label: String(g.label), pins: g.pins.filter(function (q) { return pins.indexOf(q) >= 0; }) }; }) : null;
+        return { layout: "map", map: x.map, pins: pins, groups: groups && groups.length ? groups : null };
+    }
+    return null;
+  }
   function parseStep(s) {
     if (!s || typeof s !== "object") return null;
     var str = function (x) { return typeof x === "string" && x.trim().length > 0; };
@@ -639,18 +678,24 @@
     var img = photo || (IMG_KEYS.indexOf(s.img) >= 0 ? imgUrl(s.img) : typeof s.img === "string" && s.img.indexOf(LESSON_IMG) === 0 ? s.img : null);
     var c = s.credit;
     var credit = c && str(c.by) && str(c.license) && typeof c.src === "string" && c.src.indexOf("https://commons.wikimedia.org/") === 0 ? c : null;
-    if (s.kind === "teach" && str(s.body)) return { kind: "teach", kicker: s.kicker, title: s.title, body: s.body, tip: s.tip, img: img, credit: credit };
+    if (s.kind === "teach" && str(s.body)) return { kind: "teach", kicker: s.kicker, title: s.title, body: s.body, tip: s.tip, img: img, credit: credit, v: parseLayout(s) };
+    // A question may explain itself in three parts: key fact, why it matters (`why`), remember.
+    var ex = function (o) { o.key = str(s.key) ? String(s.key) : null; o.remember = str(s.remember) ? String(s.remember) : null; return o; };
     if (s.kind === "mcq" && str(s.q) && Array.isArray(s.opts) && s.opts.length >= 2 && Number.isInteger(s.a) && s.a >= 0 && s.a < s.opts.length)
-      return { kind: "mcq", q: s.q, opts: s.opts.map(String), a: s.a, why: String(s.why || "") };
+      return ex({ kind: "mcq", q: s.q, opts: s.opts.map(String), a: s.a, why: String(s.why || "") });
     if (s.kind === "multi" && str(s.q) && Array.isArray(s.opts) && Array.isArray(s.a) && s.a.length > 0 && s.a.every(function (i) { return Number.isInteger(i) && i >= 0 && i < s.opts.length; }))
-      return { kind: "multi", q: s.q, opts: s.opts.map(String), a: s.a, why: String(s.why || "") };
-    if (s.kind === "tf" && str(s.q) && typeof s.a === "boolean") return { kind: "tf", q: s.q, a: s.a, why: String(s.why || "") };
+      return ex({ kind: "multi", q: s.q, opts: s.opts.map(String), a: s.a, why: String(s.why || "") });
+    if (s.kind === "tf" && str(s.q) && typeof s.a === "boolean") return ex({ kind: "tf", q: s.q, a: s.a, why: String(s.why || "") });
     if (s.kind === "match" && str(s.q) && Array.isArray(s.pairs) && s.pairs.length >= 2 && s.pairs.every(function (p) { return Array.isArray(p) && p.length === 2; }))
-      return { kind: "match", q: s.q, pairs: s.pairs.map(function (p) { return [String(p[0]), String(p[1])]; }), why: String(s.why || "") };
+      return ex({ kind: "match", q: s.q, pairs: s.pairs.map(function (p) { return [String(p[0]), String(p[1])]; }), why: String(s.why || "") });
+    if (s.kind === "flip" && str(s.q) && Array.isArray(s.cards) && s.cards.length >= 2 && s.cards.length <= 6
+      && s.cards.every(function (c) { return c && str(c.front) && str(c.back); }))
+      return { kind: "flip", q: s.q, cards: s.cards.map(function (c) { return { front: String(c.front), back: String(c.back) }; }) };
     return null;
   }
-  function normalizeSteps(lesson, topicLabel) {
-    var out = (Array.isArray(lesson.steps) ? lesson.steps : []).map(parseStep).filter(Boolean);
+  function isQuestion(s) { return !!s && s.kind !== "teach" && s.kind !== "flip"; }
+  function normalizeSteps(lesson, topicLabel, v2) {
+    var out = (v2 ? v2.steps : Array.isArray(lesson.steps) ? lesson.steps : []).map(parseStep).filter(Boolean);
     if (out.length) return out;
     return String(lesson.body || "").split(/\n\n+/).map(function (p) { return p.trim(); }).filter(Boolean)
       .map(function (p, i) { return { kind: "teach", kicker: i === 0 ? topicLabel : undefined, title: i === 0 ? lesson.title : undefined, body: p }; });
@@ -668,14 +713,24 @@
     return step.kind === "mcq" ? Object.assign({}, step, { opts: opts, a: to(step.a) })
       : Object.assign({}, step, { opts: opts, a: step.a.map(to).sort(function (x, y) { return x - y; }) });
   }
-  function buildPlay(core, bankRaw, seen, seed) {
+  // A question slot draws from the lesson's own question or a bank question about any card taught
+  // since the last questions (learn.tsx buildPlay); flip cards pass through as they are.
+  function buildPlay(core, bankRaw, seen, seed, prefix) {
+    prefix = prefix || "";
     var r = rng(seed);
-    var bank = (bankRaw || []).map(function (b, i) { return { key: "b" + i, card: Number.isInteger(b && b.t) ? b.t : -1, step: parseStep(b) }; })
-      .filter(function (b) { return b.step && b.step.kind !== "teach"; });
-    var used = new Set(), out = { steps: [], keys: [], card: [] }, teachIdx = -1;
+    var bank = (bankRaw || []).map(function (b, i) { return { key: prefix + "b" + i, card: Number.isInteger(b && b.t) ? b.t : -1, step: parseStep(b) }; })
+      .filter(function (b) { return isQuestion(b.step); });
+    var used = new Set(), out = { steps: [], keys: [], card: [] }, teachIdx = -1, recent = [], asked = false;
     core.forEach(function (step, i) {
-      if (step.kind === "teach") { teachIdx++; out.steps.push(step); out.keys.push("t" + teachIdx); out.card.push(teachIdx); return; }
-      var pool = [{ key: "c" + i, step: step }].concat(bank.filter(function (b) { return b.card === teachIdx && !used.has(b.key); }));
+      if (step.kind === "teach") {
+        teachIdx++;
+        if (asked) { recent = []; asked = false; }
+        recent.push(teachIdx);
+        out.steps.push(step); out.keys.push("t" + teachIdx); out.card.push(teachIdx); return;
+      }
+      if (step.kind === "flip") { out.steps.push(step); out.keys.push("f" + i); out.card.push(null); return; }
+      asked = true;
+      var pool = [{ key: prefix + "c" + i, step: step }].concat(bank.filter(function (b) { return recent.indexOf(b.card) >= 0 && !used.has(b.key); }));
       var fresh = pool.filter(function (c) { return !seen.has(c.key); });
       var from = fresh.length ? fresh : pool;
       var pk = from[Math.floor(r() * from.length)];
@@ -695,15 +750,36 @@
   function seenSet(id) { try { return new Set(JSON.parse(localStorage.getItem("lesson.seen.v1." + id) || "[]")); } catch (e) { return new Set(); } }
   function rememberSeen(id, keys) {
     var s = seenSet(id);
-    keys.filter(function (k) { return k[0] !== "t"; }).forEach(function (k) { s.add(k); });
+    keys.filter(function (k) { return /^(v2:)?[cb]\d/.test(k); }).forEach(function (k) { s.add(k); });
     try { localStorage.setItem("lesson.seen.v1." + id, JSON.stringify(Array.from(s).slice(-200))); } catch (e) {}
   }
+  // The lesson's extras and its Course 2.0 version; the translation of both rides in 'lesson_extra'.
   function loadExtras(id) {
-    return sb.from("lessons").select("id, bank, deep_notes, deeper").eq("id", id).limit(1).then(function (res) {
+    function q(cols) { return sb.from("lessons").select(cols).eq("id", id).limit(1); }
+    return q("id, bank, deep_notes, deeper, v2").then(function (res) {
+      return res.error && /v2/i.test(res.error.message || "") ? q("id, bank, deep_notes, deeper") : res;
+    }).then(function (res) {
       var row = res.data && res.data[0];
       if (!row) return null;
-      return localize("lesson_extra", [row]).then(function (r) { return r[0]; });
+      return localize("lesson_extra", [row]).then(function (r) {
+        var x = r[0];
+        x.v2 = x.v2 && Array.isArray(x.v2.steps) && x.v2.steps.length ? x.v2 : null;
+        return x;
+      });
     }).catch(function () { return null; });
+  }
+  // The map outlines (assets/course/maps.js, ~110 KB) load with the first lesson, not with the page.
+  var mapsReady = null;
+  function loadMaps() {
+    if (window.WL_MAPS) return Promise.resolve(true);
+    if (!mapsReady) mapsReady = new Promise(function (res) {
+      var sc = document.createElement("script");
+      sc.src = "/assets/course/maps.js?v=1"; sc.async = true;
+      sc.onload = function () { res(true); };
+      sc.onerror = function () { mapsReady = null; res(false); };
+      document.head.appendChild(sc);
+    });
+    return mapsReady;
   }
 
   var P = null;   // the open player
@@ -715,10 +791,11 @@
     document.body.classList.add("noscroll");
     P.el.appendChild(h("div", { class: "pl-load" }, h("div", { class: "spin" })));
     refreshHearts();
-    var timeout = new Promise(function (res) { setTimeout(function () { res(null); }, 2500); });
-    Promise.race([loadExtras(lesson.id), timeout]).then(function (x) {
+    // Course 2.0 lessons are bigger: wait longer for them than for the old extras.
+    var timeout2 = new Promise(function (res) { setTimeout(function () { res(null); }, 8000); });
+    Promise.race([Promise.all([loadExtras(lesson.id), loadMaps()]).then(function (r) { return r[0]; }), timeout2]).then(function (x) {
       if (!P || P.lesson !== lesson) return;
-      P.extras = x || { bank: [], deep_notes: [], deeper: [] };
+      P.extras = x || { bank: [], deep_notes: [], deeper: [], v2: null };
       startPlay("core");
     });
     document.addEventListener("keydown", onKey);
@@ -734,11 +811,17 @@
     var x = P.extras;
     P.mode = mode;
     var seed = Date.now();
-    var deeper = (x.deeper || []).map(parseStep).filter(Boolean);
+    // A lesson with `v2` plays everything from it (steps, bank, notes, bonus round, article, recap).
+    var v2 = x.v2 || null;
+    P.v2 = v2;
+    P.pack = v2 ? { bank: v2.bank || [], deep_notes: v2.deep_notes || [], deeper: v2.deeper || [] }
+      : { bank: x.bank || [], deep_notes: x.deep_notes || [], deeper: x.deeper || [] };
+    var deeper = P.pack.deeper.map(parseStep).filter(Boolean);
     P.deeperSteps = deeper;
-    P.play = mode === "deeper" ? buildPlay(deeper, [], new Set(), seed) : buildPlay(normalizeSteps(P.lesson, P.topicLabel), x.bank || [], seenSet(P.lesson.id), seed);
+    P.play = mode === "deeper" ? buildPlay(deeper, [], new Set(), seed)
+      : buildPlay(normalizeSteps(P.lesson, P.topicLabel, v2), P.pack.bank, seenSet(P.lesson.id), seed, v2 ? "v2:" : "");
     P.steps = P.play.steps;
-    P.qCount = P.steps.filter(function (s) { return s.kind !== "teach"; }).length;
+    P.qCount = P.steps.filter(isQuestion).length;
     P.queue = P.steps.map(function (_, i) { return i; });
     P.pos = 0; P.completed = 0; P.firstRight = 0; P.missed = []; P.combo = 0;
     P.phase = "play"; P.recorded = false; P.startedAt = Date.now(); P.secs = null;
@@ -747,7 +830,7 @@
     resetStep();
     drawPlayer();
   }
-  function resetStep() { P.sel = null; P.multi = []; P.checked = null; P.matchL = null; P.matched = []; P.bad = null; P.matchMiss = false; P.openNote = false; P.animate = true; }
+  function resetStep() { P.sel = null; P.multi = []; P.checked = null; P.matchL = null; P.matched = []; P.bad = null; P.matchMiss = false; P.openNote = false; P.animate = true; P.flipI = 0; P.flipUp = false; P.flipSeen = false; }
   function curIdx() { return P.queue[P.pos]; }
   function advance(requeue) {
     if (requeue != null) P.queue.push(requeue);
@@ -775,7 +858,7 @@
   }
   function check() {
     var step = P.steps[curIdx()];
-    if (step.kind === "teach" || step.kind === "match" || P.checked !== null) return;
+    if (!isQuestion(step) || step.kind === "match" || P.checked !== null) return;
     var ok = false;
     if (step.kind === "mcq") ok = P.sel === step.a;
     if (step.kind === "tf") ok = (P.sel === 0) === step.a;
@@ -809,11 +892,17 @@
     if (e.key === "Escape") { closePlayer(); return; }
     if (P.phase !== "play") return;
     var step = P.steps[curIdx()];
+    if (step.kind === "flip") {
+      if (tag === "BUTTON" || tag === "A") return;
+      if (e.key === " " || (e.key === "Enter" && !P.flipSeen)) { e.preventDefault(); flipTurn(); }
+      else if (e.key === "Enter") { e.preventDefault(); flipNext(); }
+      return;
+    }
     if (e.key === "Enter") {
       // A focused button already answers Enter itself.
       if (tag === "BUTTON" || tag === "A") return;
       e.preventDefault();
-      if (P.checked !== null && step.kind !== "teach") { var ok = P.checked; advance(ok ? null : curIdx()); }
+      if (P.checked !== null && isQuestion(step)) { var ok = P.checked; advance(ok ? null : curIdx()); }
       else if (step.kind === "teach") { P.completed++; advance(); }
       else if (P.sel !== null || P.multi.length) check();
       return;
@@ -838,7 +927,7 @@
     var idx = curIdx(), step = P.steps[idx];
     var H = heartsInfo();
     var card = P.play.card[idx];
-    var note = P.mode === "core" && card !== null && P.extras.deep_notes && typeof P.extras.deep_notes[card] === "string" ? P.extras.deep_notes[card] : null;
+    var note = P.mode === "core" && card !== null && typeof P.pack.deep_notes[card] === "string" ? P.pack.deep_notes[card] : null;
     var anim = P.animate ? " rv" : "";
     var d = 0; function dl() { d += 1; return "--d:" + d; }
 
@@ -857,7 +946,13 @@
           t("learn.photoCredit", { by: step.credit.by, license: step.credit.license }))) : null));
       if (step.kicker) body.appendChild(h("p", { class: "kicker" + anim, style: dl(), text: step.kicker }));
       if (step.title) body.appendChild(h("h2", { class: "teach-t" + anim, style: dl(), text: step.title }));
-      var b = rich(step.body, "teach-b" + anim); b.style.cssText = dl(); body.appendChild(b);
+      if (step.v && step.v.layout === "term") {
+        // A term card holds the card's own text, like a dictionary entry.
+        var tv = visual(step.v, rich(step.body, "teach-b")); if (anim) tv.classList.add("rv"); tv.style.cssText = dl(); body.appendChild(tv);
+      } else {
+        var b = rich(step.body, "teach-b" + anim); b.style.cssText = dl(); body.appendChild(b);
+        if (step.v) { var vv = visual(step.v); if (vv) { if (anim) vv.classList.add("rv"); vv.style.cssText = dl(); body.appendChild(vv); } }
+      }
       if (step.tip) body.appendChild(h("div", { class: "tip" + anim, style: dl() }, icon("bulb", 20), h("p", null, inline(step.tip))));
       if (note) {
         body.appendChild(P.openNote
@@ -865,9 +960,22 @@
           : h("button", { class: "nerd-pill" + anim, style: dl(), type: "button", onclick: function () { P.openNote = true; P.animate = false; drawPlayer(); } },
             icon("cap", 17), t("learn.nerdDeeper")));
       }
+    } else if (step.kind === "flip") {
+      body.appendChild(h("p", { class: "kicker" + anim, style: dl(), text: t("learn.flipKicker") }));
+      body.appendChild(h("h2", { class: "q" + anim, style: dl(), text: step.q }));
+      var fc = flipCards(step); if (anim) fc.classList.add("rv"); fc.style.cssText = dl(); body.appendChild(fc);
     } else {
       var kind = step.kind === "mcq" ? t("learn.pickOne") : step.kind === "multi" ? t("learn.pickAll") : step.kind === "tf" ? t("learn.trueOrFalse") : t("learn.findPairs");
-      body.appendChild(h("p", { class: "kicker" + anim, style: dl(), text: kind }));
+      // Questions that follow each other are one quick check: "2 of 3" (not on the retries at the end).
+      var block = null;
+      if (P.pos < P.steps.length) {
+        var ba = idx, bz = idx;
+        while (ba > 0 && isQuestion(P.steps[ba - 1])) ba--;
+        while (bz < P.steps.length - 1 && isQuestion(P.steps[bz + 1])) bz++;
+        if (bz > ba) block = [idx - ba + 1, bz - ba + 1];
+      }
+      body.appendChild(h("div", { class: "q-head" + anim, style: dl() }, h("p", { class: "kicker", text: kind }),
+        block ? h("span", { class: "blk", text: t("learn.blockCount", { n: block[0], of: block[1] }) }) : null));
       body.appendChild(h("h2", { class: "q" + anim, style: dl(), text: step.q }));
     }
 
@@ -914,13 +1022,14 @@
     var hasPick = step.kind === "multi" ? P.multi.length > 0 : P.sel !== null;
     var foot = h("div", { class: "pl-foot" },
       step.kind === "teach" ? h("button", { class: "btn btn-primary btn-block", type: "button", onclick: function () { P.completed++; advance(); } }, t("learn.continue"))
+        : step.kind === "flip" ? null
         : step.kind === "match" ? h("p", { class: "muted center", text: t("learn.matchHint") })
         : h("button", { class: "btn btn-primary btn-block", type: "button", disabled: !hasPick || P.checked !== null, onclick: check }, t("learn.check")),
       P.pos === 0 && P.mode === "core" ? h("p", { class: "keyhint", text: t("web.keyHint") }) : null);
 
     el.appendChild(h("div", { class: "pl-wrap" }, top, body, foot));
 
-    if (P.checked !== null && step.kind !== "teach") {
+    if (P.checked !== null && isQuestion(step)) {
       var ok = P.checked;
       var title = ok ? (P.combo >= 3 ? t("learn.inARow", { count: P.combo }) : step.kind === "match" && P.matchMiss ? t("learn.foundAll") : t("learn.nice")) : t("learn.notQuite");
       var answer = step.kind === "mcq" ? step.opts[step.a] : step.kind === "tf" ? t(step.a ? "learn.true" : "learn.false")
@@ -930,13 +1039,132 @@
         h("div", { class: "sheet-in" },
           h("p", { class: "sheet-t" }, icon(ok ? "check" : "x", 20), title),
           !ok && answer ? h("p", { class: "sheet-a", text: t("learn.rightAnswer", { answer: answer }) }) : null,
-          step.why ? h("p", { class: "sheet-w", text: step.why }) : null,
+          step.key || step.remember ? h("div", { class: "sheet-x" },
+            step.key ? h("p", { class: "sheet-w" }, h("b", { text: t("learn.keyFact") + " " }), step.key) : null,
+            step.why ? h("p", { class: "sheet-w" }, h("b", { text: t("learn.whyMatters") + " " }), step.why) : null,
+            step.remember ? h("p", { class: "sheet-w" }, h("b", { text: t("learn.remember") + " " }), step.remember) : null)
+            : step.why ? h("p", { class: "sheet-w", text: step.why }) : null,
           !ok ? h("p", { class: "sheet-l" }, icon("redo", 14), t("learn.againLater")) : null,
           go)));
       setTimeout(function () { go.focus(); }, 30);
     }
     if (H.out && P.checked !== false) el.appendChild(outOfHearts(H));
     P.animate = false;
+  }
+  // ---------------------------------------------------------------- Course 2.0 visuals
+  // The web twins of lesson-visuals.tsx: same layouts, same palette, plain DOM and SVG.
+  var GROUP = ["#7b1e3b", "#3f6f8f", "#a8741f"];
+  function svg(tag, attrs) {
+    var el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    for (var k in attrs) if (attrs[k] != null) el.setAttribute(k, attrs[k]);
+    return el;
+  }
+  function visual(v, definition) {
+    switch (v.layout) {
+      case "term":
+        return h("div", { class: "lv lv-term" }, h("p", { class: "lv-word", role: "heading", "aria-level": "3", text: v.term }),
+          v.say ? h("p", { class: "lv-say", text: v.say }) : null, definition || null);
+      case "stat":
+        return h("div", { class: "lv lv-stat" }, h("p", { text: v.stat }));
+      case "timeline":
+        return h("ol", { class: "lv-tl" }, v.items.map(function (it) {
+          return h("li", null, h("span", { class: "lv-when", text: it.when }), h("p", { text: it.text }));
+        }));
+      case "list":
+        return h("ol", { class: "lv-list" }, v.items.map(function (it, i) {
+          return h("li", null, h("i", { text: String(i + 1) }), h("p", null, it.label ? h("b", { text: it.label + ": " }) : null, it.text));
+        }));
+      case "ladder":
+        var n = v.items.length;
+        return h("div", { class: "lv-ladder" }, v.items.map(function (it, i) {
+          return h("div", { class: "lv-rung", style: "width:" + Math.round(56 + 44 * i / Math.max(1, n - 1)) + "%;opacity:" + (1 - 0.5 * i / Math.max(1, n - 1)).toFixed(2) },
+            h("b", { text: it.label }), h("span", { text: it.text }));
+        }));
+      case "compare":
+        return h("div", { class: "lv-cmp" }, v.cols.map(function (c, i) {
+          return h("div", { class: "lv-col", style: "--c:" + GROUP[i] }, h("b", { text: c.title }),
+            h("ul", null, c.items.map(function (x) { return h("li", { text: x }); })));
+        }));
+      case "scale":
+        var items = v.items.slice().sort(function (a, b) { return a.at - b.at; });
+        var lab = function (it) {
+          var cls = it.at < 15 ? " l" : it.at > 85 ? " r" : "";
+          return h("span", { class: "lv-sl" + cls, style: "left:" + it.at + "%", text: it.label });
+        };
+        return h("div", { class: "lv lv-scale" },
+          h("div", { class: "lv-sr" }, items.filter(function (_, i) { return i % 2 === 0; }).map(lab)),
+          h("div", { class: "lv-track" }, items.map(function (it) { return h("i", { style: "left:" + it.at + "%" }); })),
+          h("div", { class: "lv-sr" }, items.filter(function (_, i) { return i % 2 === 1; }).map(lab)),
+          h("div", { class: "lv-ends" }, h("span", { text: v.from }), h("span", { text: v.to })));
+      case "map":
+        return mapCard(v);
+    }
+    return null;
+  }
+  function mapCard(v) {
+    var M = window.WL_MAPS, PL = window.WL_PLACES, m = M && M[v.map];
+    if (!m) return null;
+    var pins = v.pins.filter(function (p) { return PL[p]; });
+    if (!pins.length) return null;
+    var name = function (id) { return PL[id].name[S.lang] || PL[id].name.en; };
+    // Sized like the app: as wide as the card allows, never taller than 300 px; labels 12.5 px on screen.
+    var avail = Math.min(680, window.innerWidth) - 40 - 32 - 24;
+    var scale = Math.min(avail / m.w, 300 / m.h);
+    var font = 12.5 / scale, r = 4.5 / scale;
+    var colorOf = function (id) {
+      var g = v.groups ? v.groups.findIndex(function (x) { return x.pins.indexOf(id) >= 0; }) : -1;
+      return g >= 0 ? GROUP[g] : GROUP[0];
+    };
+    var s = svg("svg", { viewBox: "0 0 " + m.w + " " + m.h, width: Math.round(m.w * scale), height: Math.round(m.h * scale), role: "img",
+      "aria-label": pins.map(name).join(", ") });
+    s.appendChild(svg("path", { d: m.d, fill: "#e3dadd", stroke: "#b9aab1", "stroke-width": 1 / scale, "stroke-linejoin": "round" }));
+    pins.forEach(function (id) {
+      var x = (PL[id].lon - m.west) * m.kx * m.scale, y = (m.north - PL[id].lat) * m.scale;
+      var label = name(id), tw = label.length * font * 0.56;
+      var left = x + r + 3 + tw > m.w;           // no room on the right: write it on the left
+      var tx = left ? x - r - 3 / scale : x + r + 3 / scale, ty = y + font * 0.35, anchor = left ? "end" : "start";
+      s.appendChild(svg("circle", { cx: x, cy: y, r: r, fill: colorOf(id), stroke: "#fdfdfe", "stroke-width": 1.5 / scale }));
+      // A halo under the name keeps it readable across the coastline.
+      var halo = svg("text", { x: tx, y: ty, "font-size": font, "font-weight": 600, fill: "#f5f5f7", stroke: "#f5f5f7",
+        "stroke-width": 3.5 / scale, "stroke-linejoin": "round", "text-anchor": anchor, "aria-hidden": "true" });
+      halo.textContent = label; s.appendChild(halo);
+      var tt = svg("text", { x: tx, y: ty, "font-size": font, "font-weight": 600, fill: "#1d1d1f", "text-anchor": anchor });
+      tt.textContent = label; s.appendChild(tt);
+    });
+    return h("div", { class: "lv lv-map" }, s,
+      v.groups ? h("div", { class: "lv-legend" }, v.groups.map(function (g, i) {
+        return h("span", null, h("i", { style: "background:" + GROUP[i] }), g.label);
+      })) : null);
+  }
+  // Flip cards: say the answer to yourself, then turn the card. The lesson moves on after the last.
+  function flipCards(step) {
+    var c = step.cards[P.flipI], last = P.flipI === step.cards.length - 1;
+    var card = h("button", { class: "flip" + (P.flipUp ? " up" : ""), type: "button", onclick: flipTurn,
+      "aria-label": P.flipUp ? c.back : c.front + ". " + t("web.flipClick") },
+      h("span", { class: "flip-f" }, h("b", { text: c.front }), h("em", { text: t("web.flipClick") })),
+      h("span", { class: "flip-b" }, h("b", { text: c.back })));
+    var again = h("button", { class: "linkbtn strong flip-again", type: "button", onclick: flipTurn, hidden: !P.flipUp }, t("learn.flipBack"));
+    var next = h("button", { class: "btn btn-primary btn-block flip-next", type: "button", disabled: !P.flipSeen, onclick: flipNext },
+      last ? t("learn.continue") : t("learn.flipNext"));
+    return h("div", { class: "flipper" }, h("p", { class: "flip-n", text: t("learn.flipCounter", { n: P.flipI + 1, of: step.cards.length }) }),
+      card, again, next);
+  }
+  // Turning a card only touches its own classes, so the turn animates instead of redrawing.
+  function flipTurn() {
+    P.flipUp = !P.flipUp; P.flipSeen = true;
+    var el = P.el.querySelector(".flip");
+    if (!el) return;
+    var step = P.steps[curIdx()], c = step.cards[P.flipI];
+    el.classList.toggle("up", P.flipUp);
+    el.setAttribute("aria-label", P.flipUp ? c.back : c.front + ". " + t("web.flipClick"));
+    P.el.querySelector(".flip-again").hidden = !P.flipUp;
+    P.el.querySelector(".flip-next").disabled = false;
+  }
+  function flipNext() {
+    if (!P.flipSeen) return;
+    var step = P.steps[curIdx()];
+    if (P.flipI < step.cards.length - 1) { P.flipI++; P.flipUp = false; P.flipSeen = false; P.animate = false; drawPlayer(); return; }
+    P.completed++; advance();
   }
   function optState(step, i) {
     var on = step.kind === "multi" ? P.multi.indexOf(i) >= 0 : P.sel === i;
@@ -960,7 +1188,10 @@
     var goal = goalXp();
     var gained = P.xpAfter != null && P.xpBefore != null ? Math.max(0, P.xpAfter - P.xpBefore) : null;
     var acc = P.qCount > 0 ? Math.round(100 * P.firstRight / P.qCount) : null;
-    var outcomes = Array.isArray(P.lesson.outcomes) ? P.lesson.outcomes.filter(function (o) { return typeof o === "string"; }) : [];
+    var outcomeSrc = P.v2 && P.v2.outcomes ? P.v2.outcomes : P.lesson.outcomes;
+    var outcomes = Array.isArray(outcomeSrc) ? outcomeSrc.filter(function (o) { return typeof o === "string"; }) : [];
+    var recap = P.v2 && Array.isArray(P.v2.recap) ? P.v2.recap.filter(function (o) { return typeof o === "string" && o.trim(); }) : [];
+    var nextUp = P.v2 && typeof P.v2.next === "string" && P.v2.next.trim() ? P.v2.next : null;
     var xpNow = P.xpAfter != null ? P.xpAfter : P.xpBefore;
     var frac = xpNow != null ? Math.min(1, xpNow / goal) : 1;
     return h("div", { class: "pl-wrap done" },
@@ -973,7 +1204,11 @@
           gained != null ? stat(t("learn.xpEarned"), "+" + gained, "wine") : null,
           acc != null ? stat(acc === 100 ? t("learn.accPerfect") : acc >= 80 ? t("learn.accGreat") : t("learn.accuracy"), acc + " %", "green") : null,
           P.secs != null ? stat(t("learn.time"), Math.floor(P.secs / 60) + ":" + String(P.secs % 60).padStart(2, "0"), "orange") : null),
-        P.mode === "core" && outcomes.length ? h("div", { class: "outcomes" }, h("h3", { text: t("learn.nowYouCan") }),
+        P.mode === "core" && recap.length ? h("div", { class: "outcomes recap" }, h("h3", { text: t("learn.recapTitle") }),
+          h("ol", null, recap.map(function (o, i) { return h("li", null, h("i", { text: String(i + 1) }), h("span", { text: o })); })),
+          // Every teaser already opens with "Next, …" in its own language, so it needs no "Next up:" label.
+          nextUp ? h("p", { class: "next-up", text: nextUp }) : null) : null,
+        P.mode === "core" && !recap.length && outcomes.length ? h("div", { class: "outcomes" }, h("h3", { text: t("learn.nowYouCan") }),
           h("ul", null, outcomes.map(function (o) { return h("li", null, icon("check", 16), h("span", { text: o })); }))) : null),
       h("div", { class: "pl-foot" },
         P.mode === "core" && P.deeperSteps.length ? h("div", { class: "nerd-offer" },
@@ -990,7 +1225,7 @@
     return h("div", { class: "pl-wrap" },
       h("div", { class: "pl-top" }, h("button", { class: "linkbtn", type: "button", onclick: function () { P.phase = "done"; drawPlayer(); } }, icon("back", 16), t("learn.result"))),
       h("div", { class: "pl-body article" }, h("h2", { text: P.lesson.title }),
-        P.lesson.summary ? h("p", { class: "lede", text: P.lesson.summary }) : null, rich(P.lesson.body)));
+        P.lesson.summary ? h("p", { class: "lede", text: P.lesson.summary }) : null, rich(P.v2 && P.v2.body ? P.v2.body : P.lesson.body)));
   }
   function streakScreen() {
     var n = P.streak.current, days = t("learn.weekdays").split(","), today = (new Date().getDay() + 6) % 7;
