@@ -9,6 +9,22 @@
 (function () {
   "use strict";
 
+  // /course/ is also the public landing page (built by scripts/build-course-pages.mjs). The app
+  // only takes over for someone signed in, back from a checkout or an email link, or who clicked
+  // a "Start" link (?app=1); everyone else, Google included, reads the landing page.
+  var landing = document.getElementById("landing");
+  if (landing) {
+    var wants = /[?&](app|purchase|sandbox|lang)=/.test(location.search) ||
+      /access_token|type=recovery|type=signup|error_description/.test(location.hash);
+    try { for (var si = 0; !wants && si < localStorage.length; si++) if (/^sb-.*-auth-token$/.test(localStorage.key(si) || "")) wants = true; } catch (e) {}
+    try { if (!wants && sessionStorage.getItem("wl-course-app")) wants = true; } catch (e) {}
+    if (!wants) return;
+    try { sessionStorage.setItem("wl-course-app", "1"); } catch (e) {}
+    document.body.classList.add("app-mode");
+    document.getElementById("app").hidden = false;
+    window.scrollTo(0, 0);
+  }
+
   var SB_URL = "https://pzrqsjcpflvbgptppcep.supabase.co";
   var SB_KEY = "sb_publishable_r3cWiruTBNV8YUuAv5sj3Q_bseo7A8B";   // public by design
   // Sign in with Apple on the web needs an Apple Services ID set up in Supabase first.

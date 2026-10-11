@@ -1,0 +1,3654 @@
+[
+{
+"id": "2444d76c-0129-4fde-a7e7-9f3a5838d6e4",
+"unit": "A short history of wine",
+"s": 1,
+"t": "Wine's ancient origins: from wild vine to Rome",
+"sum": "How a wild forest vine became a crop, and how Egypt, Greece, Phoenician and Greek sailors and finally Rome carried wine across the ancient world.",
+"out": [
+"Explain how a wild vine became a farmed crop",
+"Describe wine's place in Egypt, Greece and Rome",
+"Trace wine's journey west from the Caucasus to Gaul"
+],
+"n": 18,
+"da": {
+"t": "Vinens ældgamle oprindelse: fra vild vinstok til Rom",
+"sum": "Hvordan en vild vinstok fra skoven blev en afgrøde, og hvordan Egypten, Grækenland, fønikiske og græske sømænd og til sidst Rom bragte vinen ud i hele oldtidens verden.",
+"out": [
+"Forklare, hvordan en vild vinstok blev en dyrket afgrøde",
+"Beskrive vinens plads i Egypten, Grækenland og Rom",
+"Følge vinens rejse vestpå fra Kaukasus til Gallien"
+]
+}
+},
+{
+"id": "8bfba448-1996-4ffe-8a28-050874202b45",
+"unit": "A short history of wine",
+"s": 2,
+"t": "Old roots: Georgia, Greece and Hungary today",
+"sum": "Three ancient wine cultures still alive in the glass: Georgia's amber wines, Greece's place-named grapes and Tokaj's wines, from syrupy sweet to dry.",
+"out": [
+"Explain how Rkatsiteli in qvevri becomes amber wine",
+"Match four Greek place names to their grapes",
+"Rank Tokaj's wines from Eszencia to dry Furmint"
+],
+"n": 17,
+"da": {
+"t": "Gamle rødder: Georgien, Grækenland og Ungarn i dag",
+"sum": "Tre ældgamle vinkulturer, der stadig lever i glasset: Georgiens ravfarvede vine, Grækenlands druer, der hører til hvert sit sted og Tokajs vine, fra sirupssøde til tørre.",
+"out": [
+"Forklare, hvordan Rkatsiteli i qvevri bliver til ravfarvet vin",
+"Forbinde fire græske stednavne med deres druer",
+"Rangordne Tokajs vine fra Eszencia til tør Furmint"
+]
+}
+},
+{
+"id": "c91ed25b-5aee-4219-b8e2-473a6558130b",
+"unit": "A short history of wine",
+"s": 3,
+"t": "How Europe's classic regions formed",
+"sum": "Why European wines carry place names: how Rome, monks and merchants made regions famous, and how laws, from Chianti in 1716 to the EU, protected the names.",
+"out": [
+"Explain the three forces behind Europe's wine place names",
+"Describe how fraud turned famous names into wine laws",
+"Tell a PDO wine from a PGI wine"
+],
+"n": 17,
+"da": {
+"t": "Sådan opstod Europas klassiske vinområder",
+"sum": "Hvorfor europæiske vine bærer stednavne: hvordan Rom, munke og købmænd gjorde områder berømte, og hvordan love, fra Chianti i 1716 til EU, beskyttede navnene.",
+"out": [
+"Forklare de tre kræfter bag Europas stednavne for vin",
+"Beskrive, hvordan svindel gjorde berømte navne til vinlove",
+"Kende forskel på en BOB-vin og en BGB-vin"
+]
+}
+},
+{
+"id": "51591e6d-13be-4448-949b-9bf9e880052f",
+"unit": "A short history of wine",
+"s": 4,
+"t": "The New World rises: how vines crossed the oceans",
+"sum": "How European vines reached the Americas, South Africa, Australia and New Zealand from the 1500s, and how these lands built a riper, grape-named style.",
+"out": [
+"Explain what makes a wine country New World",
+"Trace how vines spread from Mexico to New Zealand",
+"Describe what shaped the riper, grape-named New World style"
+],
+"n": 17,
+"da": {
+"t": "Den Nye Verden rejser sig: sådan krydsede vinstokkene havene",
+"sum": "Sådan nåede europæiske vinstokke Amerika, Sydafrika, Australien og New Zealand fra 1500-tallet, og sådan skabte landene en modnere stil med druen på etiketten.",
+"out": [
+"Forklare, hvad der gør et vinland til et land i Den Nye Verden",
+"Følge vinstokkenes vej fra Mexico til New Zealand",
+"Beskrive, hvad der skabte Den Nye Verdens modnere stil med druen på etiketten"
+]
+}
+},
+{
+"id": "a146032a-a50f-41aa-a4c3-4539e18ee860",
+"unit": "A short history of wine",
+"s": 5,
+"t": "Phylloxera and the modern era: crisis, cure, science",
+"sum": "How a tiny American insect was found, fought and beaten, what the crisis did to wine and growers, and how science made good wine the norm.",
+"out": [
+"Tell how phylloxera was found and traced to America",
+"Explain the cures tried and what the crisis caused",
+"Name three modern changes that made wine better"
+],
+"n": 18,
+"da": {
+"t": "Phylloxera og den moderne æra: krise, kur og videnskab",
+"sum": "Hvordan et lille amerikansk insekt blev fundet, bekæmpet og besejret, hvad krisen gjorde ved vinen og vindyrkerne, og hvordan videnskaben gjorde god vin til normen.",
+"out": [
+"Fortælle, hvordan phylloxera blev fundet og sporet til Amerika",
+"Forklare de kure, man prøvede, og hvad krisen førte til",
+"Nævne tre moderne forandringer, der gjorde vinen bedre"
+]
+}
+},
+{
+"id": "d713e146-80f5-549d-5c7a-a2cbf581d21f",
+"unit": "Argentina",
+"s": 1,
+"t": "Argentina at a glance: Malbec, mountains and desert sun",
+"sum": "Argentina is the land of plush Malbec, grown in near-desert vineyards high in the Andes foothills, where melted snow waters the vines and cool nights keep the wine fresh.",
+"out": [
+"Describe the plush style of Argentine Malbec",
+"Explain how snowmelt and altitude make a desert work",
+"Place Mendoza, San Juan, Salta and Patagonia on the map"
+],
+"n": 16,
+"da": {
+"t": "Argentina i overblik: Malbec, bjerge og ørkensol",
+"sum": "Argentina er landet med den fløjlsbløde Malbec, dyrket i næsten ørkenagtige vinmarker højt oppe i Andesbjergenes forbjerge, hvor smeltet sne vander vinstokkene, og kølige nætter holder vinen frisk.",
+"out": [
+"Beskrive den fløjlsbløde stil i argentinsk Malbec",
+"Forklare, hvordan smeltevand og højde får en ørken til at fungere",
+"Placere Mendoza, San Juan, Salta og Patagonien på kortet"
+]
+}
+},
+{
+"id": "78c54481-e00a-d0db-c0d1-41ec22311ace",
+"unit": "Argentina",
+"s": 2,
+"t": "The grapes of Argentina: Malbec and more",
+"sum": "Malbec leads Argentina's grapes, with Bonarda and the Cabernets behind it, aromatic Torrontés as the signature white and old Criolla grapes for everyday wine.",
+"out": [
+"Describe how Argentine Malbec tastes and why it nearly vanished",
+"Name Argentina's supporting reds and what each one brings",
+"Tell perfumed Torrontés apart from the everyday Criolla grapes"
+],
+"n": 17,
+"da": {
+"t": "Argentinas druer: Malbec og meget mere",
+"sum": "Malbec fører an blandt Argentinas druer, med Bonarda og Cabernet-druerne bagved, aromatisk Torrontés som karakteristisk hvid drue og gamle Criolla-druer til hverdagsvin.",
+"out": [
+"Beskrive, hvordan argentinsk Malbec smager, og hvorfor den næsten forsvandt",
+"Nævne Argentinas andre røde druer, og hvad hver især bidrager med",
+"Skelne duftende Torrontés fra Criolla-druerne til hverdagsvin"
+]
+}
+},
+{
+"id": "6094ce17-75cd-6b1a-2514-1f19049598b7",
+"unit": "Argentina",
+"s": 3,
+"t": "Mendoza: desert, snowmelt and Malbec at altitude",
+"sum": "Mendoza is a high desert watered by Andes snowmelt: sunny days and cool nights give plush Malbec near the city and fresher, more floral Malbec up in the Uco Valley.",
+"out": [
+"Explain how snowmelt and acequias water a desert",
+"Explain why altitude makes Malbec fresher and deeper",
+"Tell plush Luján de Cuyo from fresh Uco Valley"
+],
+"n": 17,
+"da": {
+"t": "Mendoza: ørken, smeltevand og Malbec i højden",
+"sum": "Mendoza er en højtliggende ørken, der vandes af smeltevand fra Andesbjergene: solrige dage og kølige nætter giver fløjlsblød Malbec nær byen og friskere, mere blomsteragtig Malbec oppe i Valle de Uco.",
+"out": [
+"Forklare, hvordan smeltevand og acequias vander en ørken",
+"Forklare, hvorfor højden gør Malbec friskere og dybere",
+"Kende forskel på fløjlsblød Luján de Cuyo og frisk Valle de Uco"
+]
+}
+},
+{
+"id": "30fd4d9b-5922-b42e-9ae8-a159a9f06c4e",
+"unit": "Argentina",
+"s": 4,
+"t": "Salta and Patagonia: high north, cool south",
+"sum": "Argentina's two wine extremes: Salta's sky-high, sunny valleys make perfumed Torrontés and deep reds, while Patagonia's cool, windy river valleys make fresh Pinot Noir.",
+"out": [
+"Explain why Salta and Patagonia both make fresh wines",
+"Describe Salta's Torrontés, Malbec and Tannat",
+"Name Patagonia's wine provinces, rivers and grapes"
+],
+"n": 18,
+"da": {
+"t": "Salta og Patagonien: højt mod nord, køligt mod syd",
+"sum": "Argentinas to vinyderpunkter: Saltas skyhøje, solrige dale giver duftende Torrontés og dybe rødvine, mens Patagoniens kølige, blæsende floddale giver frisk Pinot Noir.",
+"out": [
+"Forklare, hvorfor både Salta og Patagonien laver friske vine",
+"Beskrive Saltas Torrontés, Malbec og Tannat",
+"Nævne Patagoniens vinprovinser, floder og druer"
+]
+}
+},
+{
+"id": "a00cb055-5d3e-5dd4-ea81-76579d44ae2f",
+"unit": "Argentina",
+"s": 5,
+"t": "Reading an Argentine label: place, grape, ageing",
+"sum": "Read an Argentine bottle like a local: the IP, IG and DOC place levels, small districts like Paraje Altamira, the 85 per cent rule, Reserva and altitude.",
+"out": [
+"Tell Argentina's IP, IG and DOC place levels apart",
+"Apply the 85 per cent rule and Reserva minimums",
+"Read an Argentine label from front to back"
+],
+"n": 18,
+"da": {
+"t": "At læse en argentinsk etiket: sted, drue, lagring",
+"sum": "Læs en argentinsk flaske som en lokal: stedniveauerne IP, IG og DOC, små distrikter som Paraje Altamira, 85-procentreglen, Reserva og højden.",
+"out": [
+"Skelne mellem Argentinas stedniveauer IP, IG og DOC",
+"Anvende 85-procentreglen og minimumskravene til Reserva",
+"Læse en argentinsk etiket fra forside til bagside"
+]
+}
+},
+{
+"id": "d6b0b33c-db01-c18c-ae1f-86dbd304c057",
+"unit": "Australia",
+"s": 1,
+"t": "Australia at a glance: sunshine, Shiraz and the south",
+"sum": "Why Australia is famous for bold, ripe Shiraz, why its vines hug the southern edges, away from the outback, and how a quarantine saved some of the world's oldest vines.",
+"out": [
+"Describe Australia's bold, ripe style and its signature grape",
+"Explain where Australia's vineyards are and what cools them",
+"Explain why some of the world's oldest vines grow here"
+],
+"n": 15,
+"da": {
+"t": "Australien i overblik: solskin, Shiraz og de sydlige egne",
+"sum": "Hvorfor Australien er kendt for markant, moden Shiraz, hvorfor vinstokkene holder sig til sydkanten langt fra outbacken, og hvordan en karantæne reddede nogle af verdens ældste vinstokke.",
+"out": [
+"Beskrive Australiens markante, modne stil og landets karakteristiske drue",
+"Forklare, hvor Australiens vinmarker ligger, og hvad der køler dem",
+"Forklare, hvorfor nogle af verdens ældste vinstokke vokser her"
+]
+}
+},
+{
+"id": "9789b4f6-e28b-7761-abc8-99319a240809",
+"unit": "Australia",
+"s": 2,
+"t": "The grapes of Australia: Shiraz and beyond",
+"sum": "Shiraz is Australia's signature grape, rich in warm places and peppery in cool ones, and each other grape has a home, from Coonawarra Cabernet to Hunter Valley Sémillon.",
+"out": [
+"Describe how warm and cool Shiraz taste",
+"Match Australia's key red grapes to their homes",
+"Explain why Hunter Valley Sémillon changes so much with age"
+],
+"n": 18,
+"da": {
+"t": "Australiens druer: Shiraz og meget mere",
+"sum": "Shiraz er Australiens karakteristiske drue, fyldig på varme steder og pebret på kølige, og hver af de andre druer har sit hjemsted, fra Cabernet i Coonawarra til Sémillon i Hunter Valley.",
+"out": [
+"Beskrive, hvordan Shiraz fra varme og kølige steder smager",
+"Forbinde Australiens vigtigste røde druer med deres hjemsted",
+"Forklare, hvorfor Sémillon fra Hunter Valley ændrer sig så meget med alderen"
+]
+}
+},
+{
+"id": "f72cfbb2-abe6-735c-5e2f-831b8d9572a1",
+"unit": "Australia",
+"s": 3,
+"t": "Warm South Australia: Barossa and McLaren Vale",
+"sum": "South Australia makes about half of Australia's wine, and its warm Barossa and McLaren Vale regions are famous for ripe, full-bodied Shiraz and Grenache.",
+"out": [
+"Explain why the Barossa ripens rich Shiraz and Grenache",
+"Explain what Old Vine means on a Barossa label",
+"Tell Barossa, Eden Valley and McLaren Vale apart"
+],
+"n": 17,
+"da": {
+"t": "Det varme South Australia: Barossa og McLaren Vale",
+"sum": "Delstaten South Australia laver omkring halvdelen af Australiens vin, og de varme områder Barossa og McLaren Vale er berømte for moden, fyldig Shiraz og Grenache.",
+"out": [
+"Forklare, hvorfor Barossa giver fyldig Shiraz og Grenache",
+"Forklare, hvad Old Vine betyder på en etiket fra Barossa",
+"Kende forskel på Barossa, Eden Valley og McLaren Vale"
+]
+}
+},
+{
+"id": "4a03ce65-2745-1bcf-6751-ba084262cefa",
+"unit": "Australia",
+"s": 4,
+"t": "Cool Australia: Yarra Valley, Tasmania and Margaret River",
+"sum": "Cooler, milder regions ripen grapes slowly, so Yarra Valley, Tasmania and Margaret River make fresher, finer wines, from Pinot Noir and sparkling wine to Cabernet.",
+"out": [
+"Explain why cool regions make fresher, finer wine",
+"Place Yarra Valley, Tasmania and Margaret River on a map",
+"Match each cool region to its star wines"
+],
+"n": 18,
+"da": {
+"t": "Det kølige Australien: Yarra Valley, Tasmanien og Margaret River",
+"sum": "I køligere, mildere områder modnes druerne langsomt, så Yarra Valley, Tasmanien og Margaret River laver friskere og finere vine, fra Pinot Noir og mousserende vin til Cabernet.",
+"out": [
+"Forklare, hvorfor kølige områder laver friskere og finere vin",
+"Placere Yarra Valley, Tasmanien og Margaret River på et kort",
+"Forbinde hvert køligt område med dets stjernevine"
+]
+}
+},
+{
+"id": "5413f6b6-2aed-d860-76c7-a6cd35ed3d27",
+"unit": "Australia",
+"s": 5,
+"t": "Reading an Australian label: the 85 per cent rule",
+"sum": "How to read an Australian label: the 85 per cent rule for grape, year and place, GIs from zone to subregion, grape order, bin numbers and the back label.",
+"out": [
+"Explain what the 85 per cent rule covers",
+"Place a GI on the zone and region ladder",
+"Read an Australian front and back label"
+],
+"n": 17,
+"da": {
+"t": "At læse en australsk etiket: 85 %-reglen",
+"sum": "Sådan læser du en australsk etiket: 85 %-reglen for drue, årgang og sted, GI'er fra zone til subregion, druernes rækkefølge, bin-numre og bagetiketten.",
+"out": [
+"Forklare, hvad 85 %-reglen dækker",
+"Placere en GI på stigen med zone og region",
+"Læse en australsk for- og bagetiket"
+]
+}
+},
+{
+"id": "8c00b562-c63a-4076-8ece-61ad65e3afcc",
+"unit": "Australia",
+"s": 6,
+"t": "Choosing Australian wine: sunshine, Shiraz and more",
+"sum": "A practical guide to Australian wine: which region for which style, how the place on a label guides price, French classics' Australian cousins and easy food matches.",
+"out": [
+"Choose an Australian wine to suit the taste you want",
+"Match Australian regions to their speciality wines",
+"Use the price ladder and food matches when buying"
+],
+"n": 16,
+"da": {
+"t": "Vælg australsk vin: sol, Shiraz og meget mere",
+"sum": "En praktisk guide til australsk vin: hvilket område til hvilken stil, hvordan stedet på etiketten hænger sammen med prisen, de franske klassikeres australske fætre og nemme makkerpar til maden.",
+"out": [
+"Vælge en australsk vin, der passer til den smag, du vil have",
+"Forbinde australske vinområder med deres specialiteter",
+"Bruge prisstigen og makkerparrene til maden, når du køber vin"
+]
+}
+},
+{
+"id": "43dc1739-620e-0f5e-aaec-d184d21790bc",
+"unit": "Austria",
+"s": 1,
+"t": "Austria at a glance: Grüner Veltliner and dry wines",
+"sum": "How a 1985 scandal turned Austria into a land of dry, fresh, precise whites led by Grüner Veltliner, shaped by warm days and cool nights.",
+"out": [
+"Describe Austria's signature: fresh, dry, precise whites",
+"Explain how warm days and cool nights shape the wines",
+"Tell why the 1985 scandal made Austria raise its standards"
+],
+"n": 18,
+"da": {
+"t": "Østrig i overblik: Grüner Veltliner og tørre vine",
+"sum": "Sådan gjorde en skandale i 1985 Østrig til et land med tørre, friske og præcise hvidvine, anført af Grüner Veltliner og formet af varme dage og kølige nætter.",
+"out": [
+"Beskrive Østrigs kendetegn: friske, tørre, præcise hvidvine",
+"Forklare, hvordan varme dage og kølige nætter former vinene",
+"Fortælle, hvorfor skandalen i 1985 fik Østrig til at hæve standarden"
+]
+}
+},
+{
+"id": "cb2dd934-c048-8c6e-dcf6-3601eefafe54",
+"unit": "Austria",
+"s": 2,
+"t": "The grapes of Austria: Grüner Veltliner and more",
+"sum": "Grüner Veltliner leads Austria's whites, Riesling and Sauvignon Blanc each have a home, and Zweigelt and Blaufränkisch are the key reds.",
+"out": [
+"Spot Grüner Veltliner by its apple, citrus and pepper",
+"Tell Zweigelt from Blaufränkisch and match grapes to regions",
+"Explain what a field blend like Gemischter Satz is"
+],
+"n": 18,
+"da": {
+"t": "Østrigs druer: Grüner Veltliner og meget mere",
+"sum": "Grüner Veltliner fører Østrigs hvidvine an, Riesling og Sauvignon Blanc har hver deres hjemsted, og Zweigelt og Blaufränkisch er de vigtigste røde druer.",
+"out": [
+"Genkende Grüner Veltliner på æble, citrus og peber",
+"Skelne Zweigelt fra Blaufränkisch og koble druer til områder",
+"Forklare, hvad en blandet plantning som Gemischter Satz er"
+]
+}
+},
+{
+"id": "0ecae5db-0eba-fc49-7a7a-be6eca70982d",
+"unit": "Austria",
+"s": 3,
+"t": "The Wachau and the Danube: Austria's white heartland",
+"sum": "Why river warmth, forest-cooled nights, old rock and windblown soil make Lower Austria's crisp dry whites, and how to read the Wachau's style words and a Ried.",
+"out": [
+"Explain how warm days and cool nights shape Wachau wine",
+"Read Steinfeder, Federspiel and Smaragd on a Wachau label",
+"Name the signature of each Danube region and Vienna"
+],
+"n": 16,
+"da": {
+"t": "Wachau og Donau: hvidvinens hjerteland i Østrig",
+"sum": "Hvorfor varm flodluft, skovkølige nætter, gammel bjergart og vindblæst jord giver Niederösterreichs sprøde, tørre hvidvine, og hvordan du læser Wachaus stilbetegnelser og en Ried.",
+"out": [
+"Forklare, hvordan varme dage og kølige nætter former Wachau-vin",
+"Læse Steinfeder, Federspiel og Smaragd på en etiket fra Wachau",
+"Nævne kendetegnet for hvert område ved Donau og for Wien"
+]
+}
+},
+{
+"id": "1826021a-2c50-e79d-f867-ad8f90cdc097",
+"unit": "Austria",
+"s": 4,
+"t": "Burgenland and Styria: reds, sweet wines and Sauvignon",
+"sum": "Warm Burgenland makes many of Austria's best reds and lake-misted sweet wines, while greener, wetter Styria is home to crisp, aromatic Sauvignon Blanc.",
+"out": [
+"Explain how lake mist makes Burgenland's sweet wines",
+"Tell everyday Zweigelt from age-worthy Blaufränkisch",
+"Name Styria's main whites and its local rosé"
+],
+"n": 17,
+"da": {
+"t": "Burgenland og Steiermark: rødvine, søde vine og Sauvignon",
+"sum": "Det varme Burgenland laver mange af Østrigs bedste rødvine og søde vine fra søens tåger, mens det grønnere, vådere Steiermark er hjemsted for sprød, aromatisk Sauvignon Blanc.",
+"out": [
+"Forklare, hvordan tåge fra søen giver Burgenlands søde vine",
+"Skelne hverdags-Zweigelt fra lagringsdygtig Blaufränkisch",
+"Nævne Steiermarks vigtigste hvidvine og dets lokale rosévin"
+]
+}
+},
+{
+"id": "46b4b514-85c2-9218-a245-b05f8f100aa7",
+"unit": "Austria",
+"s": 5,
+"t": "Reading an Austrian label: tiers, DAC and key words",
+"sum": "An Austrian label names the tier, the place (down to one vineyard) and the style: learn the Banderole, the DAC pyramid and a few key words.",
+"out": [
+"Climb Austria's quality ladder from Wein to Prädikat",
+"Read the DAC pyramid from Gebietswein to Riedenwein",
+"Decode an Austrian label line by line"
+],
+"n": 18,
+"da": {
+"t": "At læse en østrigsk etiket: niveauer, DAC og nøgleord",
+"sum": "En østrigsk etiket angiver niveauet, stedet (helt ned til én vinmark) og stilen: Lær Banderolen, DAC-pyramiden og nogle få nøgleord at kende.",
+"out": [
+"Klatre op ad Østrigs kvalitetsstige fra Wein til Prädikat",
+"Aflæse DAC-pyramiden fra Gebietswein til Riedenwein",
+"Tyde en østrigsk etiket linje for linje"
+]
+}
+},
+{
+"id": "0cd6b829-c471-4fa2-889c-79e8140368db",
+"unit": "Austria",
+"s": 6,
+"t": "Germany and Austria side by side: a buyer's guide",
+"sum": "A side-by-side guide to German and Austrian bottles: what is in the glass, how to tell dry from sweet, what to eat with them and what to buy.",
+"out": [
+"Spot a dry bottle on German and Austrian labels",
+"Compare Riesling and Grüner Veltliner in the glass",
+"Choose a German or Austrian wine for a dish"
+],
+"n": 16,
+"da": {
+"t": "Tyskland og Østrig side om side: en købeguide",
+"sum": "En guide til tyske og østrigske flasker side om side: hvad der er i glasset, hvordan du skelner tør fra sød, hvad du skal spise til, og hvad du skal købe.",
+"out": [
+"Finde en tør flaske på tyske og østrigske etiketter",
+"Sammenligne Riesling og Grüner Veltliner i glasset",
+"Vælge en tysk eller østrigsk vin til en ret"
+]
+}
+},
+{
+"id": "340c0ac2-e69e-40f9-9c7e-d351ab7d3c45",
+"unit": "Buying & value",
+"s": 1,
+"t": "Does a higher price mean better wine?",
+"sum": "What a wine's price really pays for, where the sweet spot lies, why the very top is set by demand, and why your own palate is the final judge.",
+"out": [
+"Explain what a wine's price tag really pays for",
+"Find the sweet spot where money buys most",
+"Judge when paying more is worth it to you"
+],
+"n": 18,
+"da": {
+"t": "Betyder en højere pris bedre vin?",
+"sum": "Hvad en vins pris egentlig betaler for, hvor sweet spottet ligger, hvorfor efterspørgslen sætter prisen i toppen, og hvorfor din egen gane er den endelige dommer.",
+"out": [
+"Forklare, hvad en vins prismærke egentlig betaler for",
+"Finde det sweet spot, hvor pengene køber mest",
+"Vurdere, hvornår det for dig er værd at betale mere"
+]
+}
+},
+{
+"id": "70383a6a-fd76-4714-9e43-4fdd4b40a344",
+"unit": "Buying & value",
+"s": 2,
+"t": "How to choose a bottle you will like",
+"sum": "Start from one wine you loved, name why you liked it, then step out one move at a time, with label clues, good questions and your notes to guide you.",
+"out": [
+"Describe a wine you liked by grape, place and style",
+"Ask shop staff for a bottle with useful clues",
+"Plan a safe experiment with a new wine"
+],
+"n": 18,
+"da": {
+"t": "Sådan vælger du en flaske, du vil kunne lide",
+"sum": "Start med én vin, du elskede, sæt ord på, hvorfor du kunne lide den, og gå så frem ét trin ad gangen, hjulpet af spor på etiketten, gode spørgsmål og dine egne noter.",
+"out": [
+"Beskrive en vin, du kunne lide, ud fra drue, sted og stil",
+"Bede personalet om en flaske med nyttige spor",
+"Planlægge et sikkert eksperiment med en ny vin"
+]
+}
+},
+{
+"id": "c9831d72-4621-40b7-9a0d-3b69a3400b64",
+"unit": "Buying & value",
+"s": 3,
+"t": "Reading a wine list or a shop shelf",
+"sum": "How wine lists and shop shelves are organised, the landmarks to find first, the truth about markups and the second-cheapest bottle, and what to trust.",
+"out": [
+"Skim any wine list to find its logic",
+"Spot the house wine, glasses, half bottles and bins",
+"Judge a bottle by producer and region, not price"
+],
+"n": 18,
+"da": {
+"t": "Sådan læser du et vinkort eller en butikshylde",
+"sum": "Sådan er vinkort og vinhandlens hylder bygget op, pejlemærkerne, du skal finde først, sandheden om avancer og den næstbilligste flaske, og hvad du kan stole på.",
+"out": [
+"Skimme et vinkort og finde dets logik",
+"Finde husets vin, glas, halve flasker og bin-numre",
+"Bedømme en flaske ud fra producent og region, ikke pris"
+]
+}
+},
+{
+"id": "9a4eaef1-465e-48ef-94d4-b1a11155b8ce",
+"unit": "Buying & value",
+"s": 4,
+"t": "What you are really paying for in a bottle",
+"sum": "Tax, glass, transport and everyone's cut come first. Why the wine is a tiny slice of a cheap bottle, and how a small step up multiplies it.",
+"out": [
+"Name the costs stacked into every bottle's price",
+"Explain how duty and tax shape a bottle's price",
+"Choose a bottle where more money goes into wine"
+],
+"n": 18,
+"da": {
+"t": "Det betaler du i virkeligheden for i en flaske",
+"sum": "Skat, glas, transport og alles bid kommer først. Hvorfor vinen kun er en lille del af en billig flaske, og hvordan et lille trin op mangedobler den.",
+"out": [
+"Nævne de omkostninger, der ligger i hver flaskes pris",
+"Forklare, hvordan afgift og skat former en flaskes pris",
+"Vælge en flaske, hvor flere penge går til vinen"
+]
+}
+},
+{
+"id": "8fedca47-77c9-5097-a252-af439786b471",
+"unit": "Chile",
+"s": 1,
+"t": "Chile at a glance: Carménère, the Andes and the sea",
+"sum": "A thin country between the Andes and the Pacific, where cool sea air and cold mountain nights make clean, fruity wines, and Carménère is the signature red.",
+"out": [
+"Explain how the Andes and the Pacific cool Chile's vineyards",
+"Describe how Chile's natural walls kept out phylloxera",
+"Tell how Carménère survived in Chile but not France"
+],
+"n": 18,
+"da": {
+"t": "Chile i overblik: Carménère, Andesbjergene og havet",
+"sum": "Et smalt land mellem Andesbjergene og Stillehavet, hvor kølig havluft og kolde bjergnætter giver rene, frugtige vine, og hvor Carménère er den karakteristiske røde drue.",
+"out": [
+"Forklare, hvordan Andesbjergene og Stillehavet køler Chiles vinmarker",
+"Beskrive, hvordan Chiles naturlige mure holdt phylloxera ude",
+"Fortælle, hvordan Carménère overlevede i Chile, men ikke i Frankrig"
+]
+}
+},
+{
+"id": "b6d8f504-ec45-ebae-30bf-36e7256128ee",
+"unit": "Chile",
+"s": 2,
+"t": "The grapes of Chile: Carménère and more",
+"sum": "Chile's grapes came in two waves: Spain's País first, then Bordeaux's Cabernet and Carménère, with crisp coastal whites, fresh Pinot Noir and old vines reborn.",
+"out": [
+"Explain how Chile's grapes arrived in two waves",
+"Name Chile's key red and white grapes",
+"Match each Chilean grape to its typical style"
+],
+"n": 17,
+"da": {
+"t": "Chiles druer: Carménère og meget mere",
+"sum": "Chiles druer kom i to bølger, først Spaniens País og siden Cabernet og Carménère fra Bordeaux, med sprøde hvidvine fra kysten, frisk Pinot Noir og gamle vinstokke i nyt liv.",
+"out": [
+"Forklare, hvordan Chiles druer kom i to bølger",
+"Nævne Chiles vigtigste røde og hvide druer",
+"Koble hver chilensk drue til dens typiske stil"
+]
+}
+},
+{
+"id": "cb1798d1-5cad-211b-1d4b-84ff4cbec274",
+"unit": "Chile",
+"s": 3,
+"t": "The Central Valley: Maipo, Colchagua and Maule",
+"sum": "Chile's warm Central Valley makes ripe, generous reds: Cabernet in Maipo, Carménère and Syrah in Colchagua, and old-vine Carignan in Maule.",
+"out": [
+"Explain why the Central Valley makes ripe, generous reds",
+"Match Maipo, Colchagua and Maule to their signature wines",
+"Place Central Valley wines on a price ladder"
+],
+"n": 16,
+"da": {
+"t": "Centraldalen: Maipo, Colchagua og Maule",
+"sum": "Centraldalen i Chile er varm og giver modne, generøse rødvine: Cabernet i Maipo, Carménère og Syrah i Colchagua og Carignan fra gamle vinstokke i Maule.",
+"out": [
+"Forklare, hvorfor Centraldalen giver modne, generøse rødvine",
+"Koble Maipo, Colchagua og Maule til deres karakteristiske vine",
+"Placere vine fra Centraldalen på en prisstige"
+]
+}
+},
+{
+"id": "11069a64-df63-abc3-2fd5-ee87960529e6",
+"unit": "Chile",
+"s": 4,
+"t": "Cool Chile: the coast and the south",
+"sum": "The cold Pacific keeps Chile's coast cool for crisp whites and Pinot Noir, while the wetter south holds very old vines that small producers are now reviving.",
+"out": [
+"Explain how the Pacific cools Chile's coastal vineyards",
+"Match Casablanca, Leyda and Limarí to their clues",
+"Recognise the south's old vines and pick a cool-coast bottle"
+],
+"n": 15,
+"da": {
+"t": "Det kølige Chile: kysten og Sydchile",
+"sum": "Det kolde Stillehav holder Chiles kyst kølig til sprøde hvidvine og Pinot Noir, mens det vådere Sydchile gemmer meget gamle vinstokke, som små producenter nu genopliver.",
+"out": [
+"Forklare, hvordan Stillehavet køler Chiles vinmarker ved kysten",
+"Koble Casablanca, Leyda og Limarí til deres kendetegn",
+"Genkende Sydchiles gamle vinstokke og vælge en flaske fra den kølige kyst"
+]
+}
+},
+{
+"id": "c31d7ed1-c1d5-6c40-19e0-fc04f00fc30b",
+"unit": "Chile",
+"s": 5,
+"t": "Reading a Chilean label: place, grape and Reserva",
+"sum": "A Chilean label shows place, grape and year, and its Reserva words mark extra alcohol, and sometimes wood, not years of ageing.",
+"out": [
+"Explain what Reserva and Gran Reserva really promise",
+"Follow Chile's D.O. boxes from region down to area",
+"Read a Chilean front label line by line"
+],
+"n": 18,
+"da": {
+"t": "At læse en chilensk etiket: sted, drue og Reserva",
+"sum": "En chilensk etiket viser sted, drue og årgang, og Reserva-betegnelserne markerer ekstra alkohol og nogle gange træ, ikke års lagring.",
+"out": [
+"Forklare, hvad Reserva og Gran Reserva i virkeligheden lover",
+"Følge Chiles D.O.-æsker fra region ned til område",
+"Læse etiketten på en chilensk flaske linje for linje"
+]
+}
+},
+{
+"id": "99b39ce2-f9b7-49f3-8c3d-070d9463f4e8",
+"unit": "Chile",
+"s": 6,
+"t": "Argentina and Chile: wine on both sides of the Andes",
+"sum": "Height shapes Argentina's wine and the cold Pacific much of Chile's: how to choose, read and pair bottles from both sides of the Andes.",
+"out": [
+"Explain why height and sea shape these two styles",
+"Choose an Argentine or Chilean bottle for your taste",
+"Read Reserva correctly on both countries' labels"
+],
+"n": 18,
+"da": {
+"t": "Argentina og Chile: vin på begge sider af Andesbjergene",
+"sum": "Højden præger Argentinas vin, og det kolde Stillehav præger meget af Chiles: sådan vælger og læser du flasker fra begge sider af Andesbjergene, og sådan finder du mad til dem.",
+"out": [
+"Forklare, hvorfor højde og hav former de to stilarter",
+"Vælge en argentinsk eller chilensk flaske efter din smag",
+"Læse Reserva rigtigt på begge landes etiketter"
+]
+}
+},
+{
+"id": "b3f3bfef-41a0-4c59-a53c-95c597f1dfd2",
+"unit": "Food & wine",
+"s": 1,
+"t": "The one rule: match the weight",
+"sum": "If you remember nothing else about pairing, match the weight of the wine to the weight of the food, so that neither one flattens the other.",
+"out": [
+"Explain the one rule behind most wine pairings",
+"Match light dishes to light wines, rich to fuller",
+"Judge a wine's weight without naming its flavours"
+],
+"n": 16,
+"da": {
+"t": "Den ene regel: afstem vægten",
+"sum": "Husk denne ene ting om vin og mad: afstem vinens vægt efter madens, så ingen af dem overdøver den anden.",
+"out": [
+"Forklare den ene regel bag de fleste makkerpar af vin og mad",
+"Sætte lette retter sammen med lette vine og kraftige med fyldigere",
+"Bedømme en vins vægt uden at sætte navn på smagene"
+]
+}
+},
+{
+"id": "897dfe40-6a5b-4a6f-862b-58feb8cc7d7c",
+"unit": "Food & wine",
+"s": 2,
+"t": "How food changes the wine in your glass",
+"sum": "Salt, fat, acid, sweetness and chilli each shift how a wine tastes, and knowing which does what turns pairing into something predictable.",
+"out": [
+"Name the five things in food that change wine",
+"Explain how salt, fat and acid shift a wine's taste",
+"Match wine to sharp, sweet or spicy dishes"
+],
+"n": 18,
+"da": {
+"t": "Sådan ændrer maden vinen i dit glas",
+"sum": "Salt, fedt, syre, sødme og chili ændrer hver især, hvordan en vin smager, og når du ved, hvad der gør hvad, kan du forudsige, hvordan mad og vin spiller sammen.",
+"out": [
+"Nævne de fem ting i maden, der ændrer vinen",
+"Forklare, hvordan salt, fedt og syre ændrer vinens smag",
+"Vælge vin til syrlige, søde eller stærke retter"
+]
+}
+},
+{
+"id": "8bf116c7-e072-4b0e-91d1-588d765c144a",
+"unit": "Food & wine",
+"s": 3,
+"t": "The pairings that genuinely fight: four clashes to avoid",
+"sum": "Most food and wine get along, but four combinations fight almost every time. Learn why they clash and which wines dodge them.",
+"out": [
+"Name the four food and wine clashes worth avoiding",
+"Explain why sweet food makes dry wine taste sour",
+"Choose safer wines for fish, chilli and asparagus"
+],
+"n": 17,
+"da": {
+"t": "Når mad og vin slås: fire sammenstød, du bør undgå",
+"sum": "De fleste retter og vine går fint sammen, men fire kombinationer slås næsten hver gang. Lær, hvorfor de støder sammen, og hvilke vine der går fri.",
+"out": [
+"Nævne de fire sammenstød mellem mad og vin, der er værd at undgå",
+"Forklare, hvorfor sød mad får tør vin til at smage surt",
+"Vælge sikrere vine til fisk, chili og asparges"
+]
+}
+},
+{
+"id": "140279e4-381b-4d04-8f43-f4aacca6fa9f",
+"unit": "Food & wine",
+"s": 4,
+"t": "Cheese and wine: what really works",
+"sum": "Why tannic reds often struggle with cheese, and how crisp whites, bubbles and sweet wines win by balancing salt and fat.",
+"out": [
+"Explain why tannic reds can clash with cheese",
+"Match fresh, bloomy, hard and blue cheeses to wines",
+"Build a cheese board around two wines"
+],
+"n": 17,
+"da": {
+"t": "Ost og vin: det, der virkelig virker",
+"sum": "Hvorfor tanninrige rødvine tit har det svært med ost, og hvordan sprøde hvidvine, bobler og søde vine vinder ved at balancere salt og fedt.",
+"out": [
+"Forklare, hvorfor tanninrige rødvine kan støde sammen med ost",
+"Finde vine til friske oste, hvidskimmeloste, hårde oste og blåskimmeloste",
+"Sætte et ostebord sammen omkring to vine"
+]
+}
+},
+{
+"id": "685b7c3a-4b47-4eac-8d1a-66c06551108c",
+"unit": "Food & wine",
+"s": 5,
+"t": "Dessert and sweet wines: how to pair them",
+"sum": "Pick a wine at least as sweet as your dessert, match light with light and rich with rich, and let fresh acidity keep it lively.",
+"out": [
+"Choose a wine at least as sweet as dessert",
+"Match classic desserts with the right sweet wine",
+"Explain why acidity keeps sweet wines fresh"
+],
+"n": 17,
+"da": {
+"t": "Dessert og søde vine: sådan sætter du dem sammen",
+"sum": "Vælg en vin, der er mindst lige så sød som desserten, sæt let sammen med let og kraftigt med kraftigt, og lad frisk syre holde vinen levende.",
+"out": [
+"Vælge en vin, der er mindst lige så sød som desserten",
+"Sætte klassiske desserter sammen med den rette søde vin",
+"Forklare, hvorfor syre holder søde vine friske"
+]
+}
+},
+{
+"id": "63f9b44e-68de-48a5-82ad-964fb6512a57",
+"unit": "Food & wine",
+"s": 6,
+"t": "Spicy food and wine: how to tame the heat",
+"sum": "Why chilli burns, why alcohol and tannin make it worse, and how off-dry, aromatic, lower-alcohol wines calm the heat and echo the spices.",
+"out": [
+"Explain why alcohol and tannin make chilli burn hotter",
+"Choose an off-dry or aromatic wine for spicy food",
+"Match classic spicy dishes to a suitable wine"
+],
+"n": 18,
+"da": {
+"t": "Stærk mad og vin: sådan tæmmer du chilien",
+"sum": "Hvorfor chili brænder, hvorfor alkohol og tannin gør det værre, og hvordan halvtørre, aromatiske vine med lavere alkohol dæmper brænden og spejler krydderierne.",
+"out": [
+"Forklare, hvorfor alkohol og tannin får chili til at brænde mere",
+"Vælge en halvtør eller aromatisk vin til stærk mad",
+"Finde den rette vin til klassiske stærke retter"
+]
+}
+},
+{
+"id": "ca55704f-87c8-408f-8fa6-11c6335e1c1a",
+"unit": "Food & wine",
+"s": 7,
+"t": "Choose the right wine for the moment",
+"sum": "Match the wine to the moment, not just the food: light before a meal, juicy at a barbecue, easy-going at a party, with water and alcohol-free options too.",
+"out": [
+"Choose a light aperitif to start a meal",
+"Pick wines for a barbecue, picnic or party",
+"Order a dinner's wines from light to full"
+],
+"n": 16,
+"da": {
+"t": "Vælg den rigtige vin til anledningen",
+"sum": "Afstem vinen efter anledningen, ikke kun efter maden: noget let før maden, saftigt til grillen, nemt til festen og altid vand og alkoholfrie alternativer ved siden af.",
+"out": [
+"Vælge en let aperitif til at åbne måltidet",
+"Finde vine til grill, picnic eller fest",
+"Sætte en middags vine i rækkefølge fra let til fyldig"
+]
+}
+},
+{
+"id": "11f8b8be-ba35-6f0c-67fa-bfeb5765ac73",
+"unit": "France",
+"s": 0,
+"t": "France at a glance: terroir, climate and grapes",
+"sum": "Why France names its wines after places: terroir, three climates from cool north to warm south, the soils, the signature grapes and the history behind them.",
+"out": [
+"Explain terroir and its four parts to a friend",
+"Match France's classic grapes to their home regions",
+"Describe France's three climates and what they do"
+],
+"n": 18,
+"da": {
+"t": "Frankrig i overblik: terroir, klima og druer",
+"sum": "Hvorfor Frankrig opkalder sine vine efter steder: terroir, tre klimaer fra et køligt nord til et varmt syd, jordbunden, de karakteristiske druer og historien bag.",
+"out": [
+"Forklare terroir og dets fire dele for en ven",
+"Koble Frankrigs klassiske druer til deres hjemområder",
+"Beskrive Frankrigs tre klimaer, og hvad de betyder for vinen"
+]
+}
+},
+{
+"id": "70fc4862-9e50-4745-820e-89342c403ad6",
+"unit": "France",
+"s": 1,
+"t": "Bordeaux: rivers, banks and the famous châteaux",
+"sum": "How two rivers split Bordeaux into gravel and clay, Cabernet and Merlot; what châteaux, the 1855 ranking and en primeur mean; and the dry and sweet whites.",
+"out": [
+"Explain how Bordeaux's rivers and soils shape its reds",
+"Describe the 1855 Classification and Bordeaux's other rankings",
+"Name Bordeaux's white styles and explain en primeur"
+],
+"n": 18,
+"da": {
+"t": "Bordeaux: floder, bredder og de berømte châteaux",
+"sum": "Hvordan to floder deler Bordeaux i grus og ler, Cabernet og Merlot; hvad châteaux, rangordningen fra 1855 og en primeur betyder; og de tørre og søde hvidvine.",
+"out": [
+"Forklare, hvordan Bordeaux' floder og jord former rødvinene",
+"Beskrive rangordningen fra 1855 og Bordeaux' andre rangordninger",
+"Nævne Bordeaux' hvide stilarter og forklare en primeur"
+]
+}
+},
+{
+"id": "63de07f2-e8cb-43b9-86c1-f73366376dfc",
+"unit": "France",
+"s": 2,
+"t": "Burgundy: two grapes and a map of villages",
+"sum": "Burgundy makes reds from Pinot Noir and whites from Chardonnay, so the map does the talking: slopes, villages and named plots, where the narrower the place, the higher the rank.",
+"out": [
+"Place Burgundy's areas in order from north to south",
+"Zoom from Bourgogne to Grand Cru on the map",
+"Explain why Burgundy's vineyards are split into tiny plots"
+],
+"n": 18,
+"da": {
+"t": "Bourgogne: to druer og et kort over landsbyer",
+"sum": "I Bourgogne laves rødvin af Pinot Noir og hvidvin af Chardonnay, så kortet taler: skråninger, landsbyer og navngivne parceller, hvor jo snævrere stedet er, jo højere er rangen.",
+"out": [
+"Placere Bourgognes områder i rækkefølge fra nord mod syd",
+"Zoome fra Bourgogne til Grand Cru på kortet",
+"Forklare, hvorfor Bourgognes vinmarker er delt i små parceller"
+]
+}
+},
+{
+"id": "895e4883-be40-4f28-88a8-9a90a11b1861",
+"unit": "France",
+"s": 3,
+"t": "The Rhône: Syrah in the north, blends in the south",
+"sum": "The Rhône has two halves: steep northern slopes make peppery Syrah, while the hot, windswept south makes Grenache-led blends. Learn the names that tell them apart.",
+"out": [
+"Tell northern Syrah reds from southern Grenache blends",
+"Name the Rhône's key crus and what they make",
+"Climb the Côtes du Rhône ladder from base to cru"
+],
+"n": 18,
+"da": {
+"t": "Rhône: Syrah i nord, blandinger i syd",
+"sum": "Rhône har to halvdele: Stejle skråninger i nord giver pebret Syrah, mens den varme, blæsende sydlige del laver blandinger anført af Grenache. Lær navnene, der skiller dem ad.",
+"out": [
+"Kende forskel på røde Syrah-vine fra nord og Grenache-blandinger fra syd",
+"Nævne Rhônes vigtigste crus, og hvad de laver",
+"Gå op ad Côtes du Rhône-stigen fra bund til cru"
+]
+}
+},
+{
+"id": "3b907071-2ad4-4807-8c81-56336c360d2c",
+"unit": "France",
+"s": 4,
+"t": "The Loire and Alsace: France's white heartlands",
+"sum": "Two cool corners of France for crisp whites: in the Loire, the place points to the grape; in Alsace, the label names it.",
+"out": [
+"Place the Loire's four zones and their main grapes",
+"Explain how the Vosges rain shadow helps Alsace",
+"Recognise an Alsace wine by its label and bottle"
+],
+"n": 18,
+"da": {
+"t": "Loire og Alsace: Frankrigs hvidvinshjerteland",
+"sum": "To kølige hjørner af Frankrig med sprøde hvidvine: I Loire peger stedet på druen, i Alsace står druen på etiketten.",
+"out": [
+"Placere Loires fire zoner og deres vigtigste druer",
+"Forklare, hvordan Vogesernes regnskygge hjælper Alsace",
+"Genkende en vin fra Alsace på etiketten og flasken"
+]
+}
+},
+{
+"id": "16cda884-01ee-4b57-83c8-bbc520f8a437",
+"unit": "France",
+"s": 5,
+"t": "Champagne and its cousins: how the bubbles are made",
+"sum": "Champagne is sparkling wine from one cool, chalky French region, where a second fermentation in the bottle makes the bubbles and long ageing adds toast and brioche.",
+"out": [
+"Explain how the traditional method puts bubbles in a bottle",
+"Read vintage and sweetness words on a Champagne label",
+"Tell Champagne, Crémant, Cava and Prosecco apart"
+],
+"n": 18,
+"da": {
+"t": "Champagne og dens fætre: Sådan bliver boblerne til",
+"sum": "Champagne er mousserende vin fra ét køligt fransk vinområde med kridt i jorden, hvor en anden gæring i flasken skaber boblerne, og lang lagring giver noter af ristet brød og brioche.",
+"out": [
+"Forklare, hvordan den traditionelle metode giver bobler i flasken",
+"Læse ord for årgang og sødme på en champagneetiket",
+"Kende forskel på champagne, crémant, cava og prosecco"
+]
+}
+},
+{
+"id": "123c220f-124a-e7f0-28e6-6c367fc0ce7c",
+"unit": "France",
+"s": 6,
+"t": "Read a French label: the place comes first",
+"sum": "Put the whole France unit to work on a real bottle: turn the place into a region and a grape, then read the tier, the maker and the sweetness.",
+"out": [
+"Turn a French place name into a region and grape",
+"Tell estate words from free words on a bottle",
+"Decode a French label, line by line"
+],
+"n": 17,
+"da": {
+"t": "Læs en fransk etiket: Stedet kommer først",
+"sum": "Sæt hele Frankrig-forløbet i spil på en rigtig flaske: Gør stedet til et område og en drue, og læs så niveauet, producenten og sødmen.",
+"out": [
+"Gøre et fransk stednavn til et område og en drue",
+"Skelne vingodsord fra frie ord på en flaske",
+"Tyde en fransk etiket linje for linje"
+]
+}
+},
+{
+"id": "05572f05-23e4-b351-246a-1f97191ba38d",
+"unit": "Germany",
+"s": 1,
+"t": "Germany at a glance: Riesling, rivers and a cool climate",
+"sum": "Why Germany's cool climate makes fresh, racy wines, how steep river slopes help grapes ripen, its 13 regions, and Riesling, the star.",
+"out": [
+"Explain why Germany's cool climate makes fresh wines",
+"Describe how steep river slopes help grapes ripen",
+"Recognise trocken, Riesling and Spätburgunder on a wine list"
+],
+"n": 17,
+"da": {
+"t": "Tyskland i overblik: Riesling, floder og køligt klima",
+"sum": "Hvorfor Tysklands kølige klima giver friske, spændstige vine, hvordan stejle flodskråninger hjælper druerne med at modnes, de 13 vinområder og stjernen Riesling.",
+"out": [
+"Forklare, hvorfor Tysklands kølige klima giver friske vine",
+"Beskrive, hvordan stejle flodskråninger hjælper druerne med at modnes",
+"Genkende trocken, Riesling og Spätburgunder på et vinkort"
+]
+}
+},
+{
+"id": "00f1f458-ec86-793e-b7ed-79aa05719409",
+"unit": "Germany",
+"s": 2,
+"t": "The grapes of Germany: Riesling and beyond",
+"sum": "Riesling is Germany's star and Spätburgunder its leading red. Most German labels name the single grape inside, so a handful of names unlocks the list.",
+"out": [
+"Explain why German labels usually name one grape",
+"Describe Riesling and how Germany's top grape changed",
+"Decode Burgunder names and match grapes to styles"
+],
+"n": 18,
+"da": {
+"t": "Tysklands druer: Riesling og meget mere",
+"sum": "Riesling er Tysklands stjerne og Spätburgunder den vigtigste røde drue. De fleste tyske etiketter nævner den ene drue i flasken, så en håndfuld navne åbner vinkortet.",
+"out": [
+"Forklare, hvorfor tyske etiketter som regel nævner én drue",
+"Beskrive Riesling, og hvordan Tysklands topdrue har skiftet",
+"Afkode Burgunder-navne og forbinde druer med stilarter"
+]
+}
+},
+{
+"id": "7aa5a569-7be9-fb0f-a43f-39044375ac0d",
+"unit": "Germany",
+"s": 3,
+"t": "The Mosel: Riesling on steep slate",
+"sum": "Why the Mosel's steep slate slopes ripen Riesling in a cool valley, how its light, zesty, low-alcohol wines taste, and which slopes and bottles to look for.",
+"out": [
+"Explain why Mosel vines grow on steep slate slopes",
+"Describe the light, high-acid style of Mosel Riesling",
+"Name famous Mosel slopes and pick a first bottle"
+],
+"n": 18,
+"da": {
+"t": "Mosel: Riesling på stejl skifer",
+"sum": "Hvorfor Mosels stejle skiferskråninger får Riesling til at modnes i en kølig dal, hvordan de lette, livlige vine med lav alkohol smager, og hvilke skråninger og flasker du skal kigge efter.",
+"out": [
+"Forklare, hvorfor Mosels vinstokke gror på stejle skiferskråninger",
+"Beskrive den lette stil med høj syre hos Riesling fra Mosel",
+"Nævne berømte skråninger i Mosel og vælge en første flaske"
+]
+}
+},
+{
+"id": "31d9fabc-e302-5e3c-575f-5cc0dd3051ae",
+"unit": "Germany",
+"s": 4,
+"t": "The Rhine heartland: Rheingau, Rheinhessen and Nahe",
+"sum": "Why a bend in the Rhine makes Rheingau Riesling fuller, how huge Rheinhessen grew up, and why the small Nahe is a patchwork of rocks.",
+"out": [
+"Explain why the Rheingau's vineyards are sunny and sheltered",
+"Describe Rheinhessen's rise and its red-slope Riesling",
+"Rank Rhine heartland wines from everyday to famous"
+],
+"n": 17,
+"da": {
+"t": "Rhinens hjerteland: Rheingau, Rheinhessen og Nahe",
+"sum": "Hvorfor et knæk på Rhinen gør Riesling fra Rheingau fyldigere, hvordan det kæmpestore Rheinhessen blev seriøst, og hvorfor lille Nahe er et kludetæppe af bjergarter.",
+"out": [
+"Forklare, hvorfor Rheingaus vinmarker er solrige og i læ",
+"Beskrive Rheinhessens opsving og Rieslingen fra den røde skråning",
+"Rangere vine fra Rhinens hjerteland fra hverdag til de berømte"
+]
+}
+},
+{
+"id": "3d5c919c-9898-a627-c727-47b18d388374",
+"unit": "Germany",
+"s": 5,
+"t": "Pfalz, Baden and Franken: Germany's warmer south",
+"sum": "Germany's sunnier south makes riper, fuller wines: dry Riesling in the Pfalz, Pinot grapes in Baden and earthy Silvaner in Franken.",
+"out": [
+"Explain why Germany's south makes riper, fuller wines",
+"Match Pfalz, Baden and Franken to their signature grapes",
+"Read the south's price ladder from everyday to GG"
+],
+"n": 18,
+"da": {
+"t": "Pfalz, Baden og Franken: det varmere Sydtyskland",
+"sum": "Det solrigere Sydtyskland giver modnere, fyldigere vine: tør Riesling i Pfalz, Pinot-druer i Baden og jordnær Silvaner i Franken.",
+"out": [
+"Forklare, hvorfor Sydtyskland giver modnere, fyldigere vine",
+"Forbinde Pfalz, Baden og Franken med deres stjernedruer",
+"Aflæse Sydtysklands prisstige fra hverdag til GG"
+]
+}
+},
+{
+"id": "a644b93d-1d25-25f6-5a3a-71168c563e74",
+"unit": "Germany",
+"s": 6,
+"t": "Reading a German label: from village to small print",
+"sum": "Read a real German bottle: village and vineyard names, the 2021 law's ladder, the VDP eagle, the small print on the back and Sekt.",
+"out": [
+"Read a German village and vineyard name",
+"Place a wine on the law's and the VDP's ladders",
+"Decode a German front label, back label and Sekt"
+],
+"n": 17,
+"da": {
+"t": "At læse en tysk etiket: fra landsby til det med småt",
+"sum": "Læs en rigtig tysk flaske: landsby- og vinmarksnavne, stigen i loven fra 2021, VDP-ørnen, det med småt på bagsiden og Sekt.",
+"out": [
+"Læse et tysk landsby- og vinmarksnavn",
+"Placere en vin på lovens og VDP's stiger",
+"Aflæse en tysk for- og bagetiket og en Sekt-etiket"
+]
+}
+},
+{
+"id": "a27a9d77-d41f-4407-aacb-93e44e436c9a",
+"unit": "How wine is made",
+"s": 1,
+"t": "From grape to glass: the winery's year, step by step",
+"sum": "Follow grapes through the winery, from crushing and fermenting to the quiet finishing steps that make wine clear, stable and ready to bottle.",
+"out": [
+"Describe the winery's stages from harvest to bottle",
+"Explain what yeast and its enzymes do to sugar",
+"Explain racking, fining, filtering and cold stabilisation"
+],
+"n": 18,
+"da": {
+"t": "Fra drue til glas: et år i vinkælderen, trin for trin",
+"sum": "Følg druerne gennem vinhuset, fra knusning og gæring til de stille sidste trin, der gør vinen klar, stabil og parat til at komme på flaske.",
+"out": [
+"Beskrive vinhusets trin fra høst til flaske",
+"Forklare, hvad gær og dens enzymer gør ved sukker",
+"Forklare omstikning, klaring, filtrering og koldstabilisering"
+]
+}
+},
+{
+"id": "e750ea47-e866-4a6d-9a09-835a6191997f",
+"unit": "How wine is made",
+"s": 2,
+"t": "How red, white and rosé differ",
+"sum": "Colour and grip come from time on the skins: a dial from blanc de noirs and vin gris through rosé and clairet to red, and orange wine beside it.",
+"out": [
+"Explain why skin time sets colour and grip",
+"Place vin gris, rosé and clairet on the colour dial",
+"Describe the three ways winemakers make rosé"
+],
+"n": 16,
+"da": {
+"t": "Sådan adskiller rød, hvid og rosé sig",
+"sum": "Farve og greb kommer fra tiden på skindene: en skala fra blanc de noirs og vin gris over rosé og clairet til rød, med orangevin ved siden af.",
+"out": [
+"Forklare, hvorfor tiden på skindene bestemmer farve og greb",
+"Placere vin gris, rosé og clairet på farveskalaen",
+"Beskrive de tre måder, vinmagere laver rosé på"
+]
+}
+},
+{
+"id": "00384ab0-f305-47fe-acc2-628f7541e998",
+"unit": "How wine is made",
+"s": 3,
+"t": "How sparkling wine gets its bubbles",
+"sum": "Bubbles are carbon dioxide trapped under pressure. Six methods trap it, from the bottle you buy to a tank or a gas cylinder, and each leaves its mark in the glass.",
+"out": [
+"Explain where the bubbles in sparkling wine come from",
+"Compare the six ways to make a wine sparkle",
+"Read the bubble-making method on a wine label"
+],
+"n": 17,
+"da": {
+"t": "Sådan får mousserende vin sine bobler",
+"sum": "Bobler er kuldioxid, der holdes fanget under tryk. Seks metoder fanger den, fra flasken du køber til en tank eller en gasflaske, og hver sætter sit præg i glasset.",
+"out": [
+"Forklare, hvor boblerne i mousserende vin kommer fra",
+"Sammenligne de seks måder at lave bobler i vin på",
+"Aflæse boblemetoden på en vinetiket"
+]
+}
+},
+{
+"id": "853d402e-029f-4042-b3c6-28da7d6bca62",
+"unit": "How wine is made",
+"s": 4,
+"t": "How sweet wines are made: three moments to keep sugar",
+"sum": "Sweet wine keeps some of the grape's sugar: concentrated in the berry before fermentation, saved by stopping the yeast, or added back at the end.",
+"out": [
+"Sort any sweet wine by when its sugar was kept",
+"Explain why fortified wines are both strong and sweet",
+"Compare icewine with cryoextraction, and vine-dried with mat-dried"
+],
+"n": 18,
+"da": {
+"t": "Sådan laves søde vine: tre tidspunkter, hvor sukkeret gemmes",
+"sum": "Sød vin beholder noget af druens sukker: koncentreret i bærret før gæringen, reddet ved at stoppe gæren eller tilsat igen til sidst.",
+"out": [
+"Sortere enhver sød vin efter, hvornår sukkeret blev gemt",
+"Forklare, hvorfor hedvine er både stærke og søde",
+"Sammenligne isvin med kryoekstraktion og tørring på vinstok og måtter"
+]
+}
+},
+{
+"id": "75dffa2e-e0f5-4988-8d09-f1ab38c72376",
+"unit": "How wine is made",
+"s": 5,
+"t": "What oak barrels do: wood, air and time",
+"sum": "Why a barrel adds flavour, softens a wine and lets some of it escape, how size, age and forest change the effect, and why many fresh wines skip oak.",
+"out": [
+"Explain the three things an oak barrel does",
+"Tell how barrel size, age and grain change oak",
+"Spot when oak suits a wine and when it overwhelms"
+],
+"n": 17,
+"da": {
+"t": "Hvad egetræsfade gør: træ, luft og tid",
+"sum": "Hvorfor et fad giver smag, gør vinen blødere og lader lidt af den slippe ud, hvordan størrelse, alder og skov ændrer effekten, og hvorfor mange friske vine springer egen over.",
+"out": [
+"Forklare de tre ting, et egetræsfad gør",
+"Fortælle, hvordan fadets størrelse, alder og årer ændrer egen",
+"Genkende, hvornår eg klæder en vin, og hvornår den tager over"
+]
+}
+},
+{
+"id": "65546f24-b6f0-4a14-889b-fdbedc379377",
+"unit": "How wine is made",
+"s": 6,
+"t": "How white wine is made, step by step",
+"sum": "From a gentle press to a cool, slow fermentation: the steps that keep a white wine pale, fresh and fragrant, from the grape to the bottle.",
+"out": [
+"Explain why white grapes are pressed before fermenting",
+"Describe the steps of white winemaking, press to bottle",
+"Explain why whites ferment cool and away from air"
+],
+"n": 18,
+"da": {
+"t": "Sådan laves hvidvin, trin for trin",
+"sum": "Fra en nænsom presning til en kølig, langsom gæring: de trin, der holder en hvidvin lys, frisk og duftende, fra drue til flaske.",
+"out": [
+"Forklare, hvorfor hvide druer presses før gæringen",
+"Beskrive hvidvinens trin fra presse til flaske",
+"Forklare, hvorfor hvidvin gærer køligt og uden luft"
+]
+}
+},
+{
+"id": "c622869d-bfb9-4681-84a5-f99770e96a71",
+"unit": "How wine is made",
+"s": 7,
+"t": "How red wine is made, step by step",
+"sum": "Red wine ferments warm with its skins, is worked, pressed and blended: follow every cellar choice from stems to the final blend.",
+"out": [
+"Walk a friend through red winemaking, stems to blend",
+"Name three ways to work the cap",
+"Explain free-run wine, press wine and the assemblage"
+],
+"n": 17,
+"da": {
+"t": "Sådan bliver rødvin lavet, trin for trin",
+"sum": "Rødvin gærer varmt med skindet og bliver bearbejdet, presset og blandet: følg hvert valg i kælderen, fra stilkene til den endelige blanding.",
+"out": [
+"Føre en ven gennem rødvinens vej, fra stilke til blanding",
+"Nævne tre måder at bearbejde hatten på",
+"Forklare selvløbsvin, pressevin og assemblage"
+]
+}
+},
+{
+"id": "3ff032f2-9d5a-4e86-a22f-555d1dfe9346",
+"unit": "In the vineyard",
+"s": 1,
+"t": "The vine's year, from bud to harvest",
+"sum": "A grapevine repeats the same six stages every year, from budburst to winter sleep, and where it is in that cycle decides what the grower is doing.",
+"out": [
+"Name the six stages of a vine's year in order",
+"Explain why flowering decides the size of the crop",
+"Read the season in a vineyard, north or south"
+],
+"n": 18,
+"da": {
+"t": "Vinstokkens år, fra knop til høst",
+"sum": "En vinstok gennemgår de samme seks stadier hvert år, fra knopskydning til vinterhvile, og hvor den er i cyklussen, afgør, hvad vindyrkeren har travlt med.",
+"out": [
+"Nævne vinstokkens seks stadier i rækkefølge",
+"Forklare, hvorfor blomstringen afgør høstens størrelse",
+"Aflæse årstiden i en vinmark, nord eller syd"
+]
+}
+},
+{
+"id": "629dcd55-7bca-490f-907c-8b294ec973ab",
+"unit": "In the vineyard",
+"s": 2,
+"t": "Why most vines are two plants",
+"sum": "Most vines are a European variety grafted onto American roots: why those roots survive a root-eating insect, how grafting works and how growers pick one.",
+"out": [
+"Explain why most vines are two grafted plants",
+"Describe how American roots survive phylloxera",
+"Name what growers weigh when choosing a rootstock"
+],
+"n": 18,
+"da": {
+"t": "Hvorfor de fleste vinstokke er to planter",
+"sum": "De fleste vinstokke er en europæisk druesort podet på amerikanske rødder: hvorfor de rødder overlever et insekt, der æder rødder, hvordan podning foregår, og hvordan vindyrkerne vælger en grundstamme.",
+"out": [
+"Forklare, hvorfor de fleste vinstokke er to podede planter",
+"Beskrive, hvordan amerikanske rødder overlever phylloxera",
+"Nævne, hvad vindyrkere vejer, når de vælger grundstamme"
+]
+}
+},
+{
+"id": "320f43bb-a2be-4b9c-8729-f0d7e571974a",
+"unit": "In the vineyard",
+"s": 3,
+"t": "Winter pruning: the most important cut",
+"sum": "Pruning in the dormant season sets how much fruit the vine will carry, and it is the single biggest yield decision a grower makes.",
+"out": [
+"Explain why growers cut away most of last year's growth",
+"Describe how counting buds roughly sets next year's crop",
+"Tell spur pruning from cane pruning, including Guyot"
+],
+"n": 17,
+"da": {
+"t": "Vinterbeskæring: årets vigtigste klip",
+"sum": "Beskæringen i hvilesæsonen afgør, hvor meget frugt vinstokken skal bære, og det er den største enkeltbeslutning om udbyttet, en vindyrker træffer.",
+"out": [
+"Forklare, hvorfor vindyrkere klipper det meste af sidste års vækst væk",
+"Beskrive, hvordan antallet af knopper nogenlunde sætter næste års udbytte",
+"Kende forskel på tapbeskæring og stavbeskæring, også Guyot"
+]
+}
+},
+{
+"id": "25abe01d-b4ce-45c1-9cfd-94a57feafd3e",
+"unit": "In the vineyard",
+"s": 4,
+"t": "Canopy management: the grower's summer job",
+"sum": "How growers thin, tuck, pluck and trim a vine's leaves in summer to control the sun and air its grapes get, shaping both ripeness and disease risk.",
+"out": [
+"Explain how leaves and sunlight make the sugar in grapes",
+"Describe the four summer jobs that shape a canopy",
+"Compare canopy choices in cool and hot regions"
+],
+"n": 17,
+"da": {
+"t": "Løvvægspleje: vindyrkerens sommerjob",
+"sum": "Sådan tynder, binder, afblader og topper vindyrkerne vinstokkens løvvæg om sommeren for at styre sol og luft til druerne, og dermed både modenhed og sygdomsrisiko.",
+"out": [
+"Forklare, hvordan blade og sollys laver druernes sukker",
+"Beskrive de fire sommeropgaver, der former en løvvæg",
+"Sammenligne valgene med løvvæggen i kølige og varme regioner"
+]
+}
+},
+{
+"id": "58981942-302a-4c66-b94d-3bee67ce83d4",
+"unit": "In the vineyard",
+"s": 5,
+"t": "How vines are trained and spaced",
+"sum": "The frame a vine grows on and the gap between vines are chosen at planting and kept for decades. They shape ripening, competition and how the vineyard is worked.",
+"out": [
+"Explain what a vine's training system is and does",
+"Match vine shapes to the climates that suit them",
+"Compare close and wide spacing using vines per hectare"
+],
+"n": 17,
+"da": {
+"t": "Opbinding og planteafstand: sådan formes en vinmark",
+"sum": "Den ramme, en vinstok vokser på, og afstanden mellem vinstokkene vælges ved plantningen og holder i årtier. De former modningen, konkurrencen og arbejdet i vinmarken.",
+"out": [
+"Forklare, hvad en vinstoks opbindingssystem er og gør",
+"Forbinde vinstokkenes former med det klima, der passer til dem",
+"Sammenligne tæt og bred planteafstand ud fra vinstokke pr. hektar"
+]
+}
+},
+{
+"id": "e71797e9-63dc-461b-ad0e-a308f07cc90b",
+"unit": "In the vineyard",
+"s": 6,
+"t": "Mildew, rot and the vineyard's real enemies",
+"sum": "Two mildews from America are the grower's yearly fight, and one mould can ruin or make a wine. Meet the diseases, the old cures and the new grapes.",
+"out": [
+"Tell powdery mildew and downy mildew apart",
+"Explain when botrytis becomes grey rot or noble rot",
+"Explain why wet climates need the most spraying"
+],
+"n": 18,
+"da": {
+"t": "Meldug, råd og vinmarkens virkelige fjender",
+"sum": "To slags meldug fra Amerika er vindyrkerens årlige kamp, og én skimmelsvamp kan både ødelægge og skabe en vin. Mød sygdommene, de gamle kure og de nye druer.",
+"out": [
+"Kende forskel på ægte meldug og falsk meldug",
+"Forklare, hvornår botrytis bliver til gråskimmel eller ædelråd",
+"Forklare, hvorfor vådt klima kræver mest sprøjtning"
+]
+}
+},
+{
+"id": "cb32ddc3-3865-44b7-bf64-c7351652ee16",
+"unit": "In the vineyard",
+"s": 7,
+"t": "Frost, hail and heat: one bad night can take a harvest",
+"sum": "Why a single frosty night, hailstorm or heatwave can wipe out a year's crop, and the surprising ways growers fight back: fans, fires, ice and nets.",
+"out": [
+"Explain why frost is most dangerous after budburst",
+"Describe how growers fight and dodge spring frost",
+"Recognise what hail and extreme heat do to grapes"
+],
+"n": 18,
+"da": {
+"t": "Frost, hagl og hede: Én slem nat kan tage en høst",
+"sum": "Hvorfor en enkelt frostnat, en haglbyge eller en hedebølge kan udslette et års høst, og de overraskende måder, vindyrkerne slår igen på: vifter, ild, is og net.",
+"out": [
+"Forklare, hvorfor frost er farligst efter knopskydningen",
+"Beskrive, hvordan vindyrkere bekæmper og undgår forårsfrost",
+"Genkende, hvad hagl og ekstrem varme gør ved druerne"
+]
+}
+},
+{
+"id": "28754dfc-e2e4-4597-8d07-91a14fe725ed",
+"unit": "In the vineyard",
+"s": 8,
+"t": "Choosing the day to pick",
+"sum": "Why harvest day is the grower's hardest call: sugar, acidity and flavour ripen on different clocks, and the weather never waits.",
+"out": [
+"Explain why sugar, acidity and flavour rarely peak together",
+"Describe how growers measure and taste ripeness",
+"Predict how picking early or late shapes a wine"
+],
+"n": 18,
+"da": {
+"t": "Valget af plukkedagen",
+"sum": "Hvorfor plukkedagen er vindyrkerens sværeste valg: sukker, syre og smag modnes hver i sit tempo, og vejret venter ikke.",
+"out": [
+"Forklare, hvorfor sukker, syre og smag sjældent topper samtidig",
+"Beskrive, hvordan vindyrkere måler og smager modenhed",
+"Forudsige, hvordan tidlig eller sen plukning former en vin"
+]
+}
+},
+{
+"id": "bfd33a35-7fb4-4e9c-8628-e6099004deb5",
+"unit": "In the vineyard",
+"s": 9,
+"t": "Hand-picking or machine harvesting",
+"sum": "How grapes come off the vine: machines are fast and cheap, hands are gentle and choosy, and some wines, slopes and rules leave no choice.",
+"out": [
+"Explain how a harvesting machine picks grapes",
+"Compare hand-picking and machine harvesting for quality and cost",
+"Recognise when rules or slopes demand picking by hand"
+],
+"n": 17,
+"da": {
+"t": "Håndplukning eller maskinhøst",
+"sum": "Sådan kommer druerne af vinstokken: Maskiner er hurtige og billige, hænder er skånsomme og kræsne, og nogle vine, skråninger og regler giver intet valg.",
+"out": [
+"Forklare, hvordan en høstmaskine plukker druer",
+"Sammenligne håndplukning og maskinhøst på kvalitet og pris",
+"Genkende, hvornår regler eller skråninger kræver håndplukning"
+]
+}
+},
+{
+"id": "22b5e243-cb3f-a85c-e563-530350b40141",
+"unit": "Italy",
+"s": 1,
+"t": "Italy at a glance: native grapes and wine for the table",
+"sum": "Why Italian wine tastes the way it does: hundreds of native grapes, fresh acidity made for food, and a long, hilly land from the cool Alps to the hot south.",
+"out": [
+"Name the three traits that make Italian wine recognisable",
+"Explain how hills, height and sea keep Italian grapes fresh",
+"Outline Italian wine history from the Greeks to DOC"
+],
+"n": 16,
+"da": {
+"t": "Italien i overblik: lokale druer og vin til maden",
+"sum": "Derfor smager italiensk vin, som den gør: hundredvis af lokale druer, frisk syre skabt til mad og et langt, bakket land fra de kølige Alper til det varme Syditalien.",
+"out": [
+"Nævne de tre træk, der gør italiensk vin let at genkende",
+"Forklare, hvordan bakker, højde og hav holder italienske druer friske",
+"Ridse italiensk vinhistorie op fra grækerne til DOC"
+]
+}
+},
+{
+"id": "ecac62a7-0c05-b0aa-1cdf-07335d6334ab",
+"unit": "Italy",
+"s": 2,
+"t": "The grapes of Italy: the few behind the famous names",
+"sum": "Most famous Italian wines name a place, not a grape. Learn the handful behind them: Sangiovese, Nebbiolo, Barbera, the southern reds and four key whites.",
+"out": [
+"Name the grapes behind Chianti, Barolo, Prosecco and Soave",
+"Tell Sangiovese, Nebbiolo and Barbera apart by their grip",
+"Explain why Vino Nobile is not Montepulciano grape wine"
+],
+"n": 17,
+"da": {
+"t": "Italiens druer: de få bag de berømte navne",
+"sum": "De fleste berømte italienske vine bærer et stednavn, ikke en drue. Lær den håndfuld druer bag dem: Sangiovese, Nebbiolo, Barbera, de sydlige røde og fire vigtige hvide.",
+"out": [
+"Nævne druerne bag Chianti, Barolo, Prosecco og Soave",
+"Skelne Sangiovese, Nebbiolo og Barbera på deres greb",
+"Forklare, hvorfor Vino Nobile ikke er lavet af druen Montepulciano"
+]
+}
+},
+{
+"id": "bfe7fe61-68c9-3864-28e7-dfb6d9ff7e25",
+"unit": "Italy",
+"s": 3,
+"t": "Piedmont: Barolo, Barbaresco and Barbera",
+"sum": "Piedmont's great reds, Barolo and Barbaresco, are pure Nebbiolo: pale, grippy and built to age, while Dolcetto and Barbera cover everyday drinking.",
+"out": [
+"Locate Piedmont's best vineyards in the Langhe hills",
+"Describe Barolo and Barbaresco and their minimum ageing",
+"Rank Piedmont's reds from everyday Dolcetto to Barolo"
+],
+"n": 17,
+"da": {
+"t": "Piemonte: Barolo, Barbaresco og Barbera",
+"sum": "Piemontes store rødvine, Barolo og Barbaresco, er ren Nebbiolo: lyse, stramme og lavet til lagring, mens Dolcetto og Barbera klarer hverdagen.",
+"out": [
+"Finde Piemontes bedste vinmarker i Langhe-bakkerne",
+"Beskrive Barolo og Barbaresco og deres mindste lagringstid",
+"Rangere Piemontes rødvine fra hverdags-Dolcetto til Barolo"
+]
+}
+},
+{
+"id": "87d25580-15df-c74f-6af0-a6cab8d883e1",
+"unit": "Italy",
+"s": 4,
+"t": "Tuscany: Chianti, Brunello and the Super Tuscans",
+"sum": "Tuscany's famous reds are built on one grape, Sangiovese, and the label tells you which hills it grew on, how long it aged and whether the maker broke the rules.",
+"out": [
+"Read a Tuscan label for place, ageing and rules",
+"Tell Chianti Classico, Brunello and Vino Nobile apart",
+"Explain what Super Tuscans are and why they matter"
+],
+"n": 17,
+"da": {
+"t": "Toscana: Chianti, Brunello og Super Tuscans",
+"sum": "Toscanas berømte rødvine bygger på én drue, Sangiovese, og etiketten fortæller, hvilke bakker den voksede på, hvor længe den lagrede, og om producenten brød reglerne.",
+"out": [
+"Læse en toscansk etiket for sted, lagring og regler",
+"Kende forskel på Chianti Classico, Brunello og Vino Nobile",
+"Forklare, hvad Super Tuscans er, og hvorfor de betyder noget"
+]
+}
+},
+{
+"id": "32675abe-6861-a75f-53c2-4f2dc5e6bb7b",
+"unit": "Italy",
+"s": 5,
+"t": "Veneto and the north-east: Prosecco, Amarone and Soave",
+"sum": "How Italy's cool north-east turns a few grapes into very different wines: tank-made Prosecco, dried-grape Amarone and crisp Soave.",
+"out": [
+"Explain how Prosecco gets its bubbles",
+"Read Prosecco's quality steps and sweetness words",
+"Describe Valpolicella, Ripasso, Amarone and Soave in a line each"
+],
+"n": 17,
+"da": {
+"t": "Veneto og Nordøstitalien: Prosecco, Amarone og Soave",
+"sum": "Sådan forvandler det kølige Nordøstitalien få druer til vidt forskellige vine: prosecco lavet i tank, Amarone af tørrede druer og sprød Soave.",
+"out": [
+"Forklare, hvordan prosecco får sine bobler",
+"Læse Proseccos kvalitetstrin og sødmeord",
+"Beskrive Valpolicella, Ripasso, Amarone og Soave med én linje hver"
+]
+}
+},
+{
+"id": "754eb992-a813-9adb-0800-788e868f0ad4",
+"unit": "Italy",
+"s": 6,
+"t": "The south and the islands: sun, volcanoes and value",
+"sum": "Italy's hot south and islands make ripe, soft reds at great value, while altitude, sea breezes and volcanic soil keep the best wines, such as Etna's, fresh.",
+"out": [
+"Explain how the hot south still makes fresh wines",
+"Name the key grapes of Puglia, Campania and the islands",
+"Pick southern wines from everyday to famous"
+],
+"n": 18,
+"da": {
+"t": "Syditalien og øerne: sol, vulkaner og gode køb",
+"sum": "Det varme Syditalien og øerne laver modne, bløde rødvine, der er gode køb, mens højde, havbriser og vulkansk jord holder de bedste vine, som Etnas, friske.",
+"out": [
+"Forklare, hvordan det varme Syditalien stadig laver friske vine",
+"Nævne de vigtigste druer i Puglia, Campania og på øerne",
+"Vælge sydlige vine, fra hverdag til de berømte"
+]
+}
+},
+{
+"id": "69859e47-d315-000e-59f8-498682f11365",
+"unit": "Italy",
+"s": 7,
+"t": "Read an Italian label: tiers and key words",
+"sum": "How to read a real Italian bottle: the four facts on the front, the tier in small print, invented names, and the words for place, time and style.",
+"out": [
+"Find the four key facts on an Italian front label",
+"Decode a tier line written out in Italian",
+"Read place, ageing and style words on a real bottle"
+],
+"n": 17,
+"da": {
+"t": "Læs en italiensk etiket: niveauer og nøgleord",
+"sum": "Sådan læser du en rigtig italiensk flaske: de fire oplysninger på forsiden, niveauet med småt, fantasinavne og ordene for sted, tid og stil.",
+"out": [
+"Finde de fire nøgleoplysninger på en italiensk forsideetiket",
+"Tyde en niveaulinje skrevet ud på italiensk",
+"Læse ord for sted, lagring og stil på en rigtig flaske"
+]
+}
+},
+{
+"id": "9b911424-abe7-443b-8d3f-629e4ba556f7",
+"unit": "Italy",
+"s": 8,
+"t": "Northern Italy: Piedmont and the Veneto side by side",
+"sum": "Piedmont's grippy Nebbiolo next to the Veneto's cherry reds and dried-grape Amarone: how they taste, what to eat with them and the smart-value bottles.",
+"out": [
+"Compare northern Italy's reds from light to powerful",
+"Choose value swaps for Barolo and Amarone",
+"Match northern Italian wines to the right food"
+],
+"n": 14,
+"da": {
+"t": "Norditalien: Piemonte og Veneto side om side",
+"sum": "Piemontes stramme Nebbiolo over for Venetos kirsebærfriske rødvine og Amarone af tørrede druer: hvordan de smager, hvad du skal spise til, og de gode køb.",
+"out": [
+"Sammenligne Norditaliens rødvine fra let til kraftfuld",
+"Vælge gode køb i stedet for Barolo og Amarone",
+"Finde den rette mad til norditalienske vine"
+]
+}
+},
+{
+"id": "8528c2e3-8574-44c6-8708-daf48109c8ed",
+"unit": "Italy",
+"s": 9,
+"t": "Tuscany and the south of Italy: what to choose and why",
+"sum": "Tuscan Sangiovese and the south's riper reds side by side: how they taste, which dishes they suit, and the good-value bottles to buy.",
+"out": [
+"Compare Tuscan Sangiovese with the south's riper reds",
+"Match Tuscan and southern wines to everyday dishes",
+"Pick good-value swaps for Brunello and other famous names"
+],
+"n": 17,
+"da": {
+"t": "Toscana og Syditalien: hvad du skal vælge, og hvorfor",
+"sum": "Toscansk Sangiovese og Syditaliens modnere rødvine side om side: hvordan de smager, hvilke retter de passer til, og hvilke gode køb du skal gå efter.",
+"out": [
+"Sammenligne toscansk Sangiovese med Syditaliens modnere rødvine",
+"Vælge toscanske og sydlige vine til hverdagsretter",
+"Finde gode køb i stedet for Brunello og andre berømte navne"
+]
+}
+},
+{
+"id": "d8ae29d5-1d20-c061-bfde-6b3f1bb10938",
+"unit": "New Zealand",
+"s": 1,
+"t": "New Zealand at a glance: pure, cool and bright",
+"sum": "Why New Zealand's wines taste bright and fresh: a cool, sea-shaped climate, two long islands, a young industry, and a small country that exports almost everything.",
+"out": [
+"Explain why New Zealand wines taste bright and fresh",
+"Describe how the sea shapes New Zealand's climate",
+"Recall key dates and the scale of New Zealand wine"
+],
+"n": 16,
+"da": {
+"t": "New Zealand i overblik: rent, køligt og klart",
+"sum": "Derfor smager vinene fra New Zealand klart og friskt: et køligt klima formet af havet, to lange øer, en ung industri og et lille land, der eksporterer næsten alt.",
+"out": [
+"Forklare, hvorfor vinene fra New Zealand smager klart og friskt",
+"Beskrive, hvordan havet former New Zealands klima",
+"Huske vigtige årstal og størrelsen af New Zealands vinindustri"
+]
+}
+},
+{
+"id": "2e911e43-6dd4-066e-d111-124145cedd13",
+"unit": "New Zealand",
+"s": 2,
+"t": "The grapes of New Zealand: Sauvignon Blanc and more",
+"sum": "Sauvignon Blanc fills about two thirds of New Zealand's vineyards, Pinot Noir is the main red, and warm Hawke's Bay is home to Syrah and Bordeaux-style blends.",
+"out": [
+"Rank New Zealand's top grapes by vineyard area",
+"Describe how Sauvignon Blanc and Pinot Noir taste here",
+"Match each key grape to its home region"
+],
+"n": 18,
+"da": {
+"t": "New Zealands druer: Sauvignon Blanc og mere til",
+"sum": "Sauvignon Blanc fylder omkring to tredjedele af New Zealands vinmarker, Pinot Noir er den vigtigste røde drue, og det varme Hawke's Bay er hjemsted for Syrah og blandinger i Bordeaux-stil.",
+"out": [
+"Rangordne New Zealands vigtigste druer efter vinmarksareal",
+"Beskrive, hvordan Sauvignon Blanc og Pinot Noir smager her",
+"Forbinde hver vigtig drue med dens hjemsted"
+]
+}
+},
+{
+"id": "b5cda485-aa8e-66b9-6a3f-751d4c8cb8f6",
+"unit": "New Zealand",
+"s": 3,
+"t": "Marlborough: New Zealand's Sauvignon Blanc heartland",
+"sum": "Why Marlborough's sunny days and cool nights make such vivid Sauvignon Blanc, how its three valleys differ, how the wine is made, and how subregion names step up the price ladder.",
+"out": [
+"Explain how sun, cool nights and winemaking shape the style",
+"Tell the Wairau, Southern Valleys and Awatere apart",
+"Place Marlborough bottles on the price ladder"
+],
+"n": 18,
+"da": {
+"t": "Marlborough: New Zealands hjerteland for Sauvignon Blanc",
+"sum": "Hvorfor Marlboroughs solrige dage og kølige nætter giver så levende Sauvignon Blanc, hvordan de tre dale adskiller sig, hvordan vinen laves, og hvordan navne på delområder fører op ad prisstigen.",
+"out": [
+"Forklare, hvordan sol, kølige nætter og vinfremstilling former stilen",
+"Kende forskel på Wairau, Southern Valleys og Awatere",
+"Placere Marlborough-flasker på prisstigen"
+]
+}
+},
+{
+"id": "958b43eb-d12e-1a0b-aead-d2ae1fc88cd1",
+"unit": "New Zealand",
+"s": 4,
+"t": "Central Otago and Hawke's Bay: Pinot, blends and Syrah",
+"sum": "Dry, inland Central Otago makes ripe Pinot Noir, while warm, sunny Hawke's Bay makes Bordeaux-style red blends and Syrah, especially on the stony Gimblett Gravels.",
+"out": [
+"Describe Central Otago's continental climate and its Pinot Noir",
+"Contrast Gibbston and Bannockburn Pinot Noir styles",
+"Explain Hawke's Bay blends, Syrah and the Gimblett Gravels"
+],
+"n": 17,
+"da": {
+"t": "Central Otago og Hawke's Bay: Pinot, blandinger og Syrah",
+"sum": "Det tørre Central Otago inde i landet laver moden Pinot Noir, mens det varme, solrige Hawke's Bay laver blandinger i Bordeaux-stil og Syrah, især på det stenede Gimblett Gravels.",
+"out": [
+"Beskrive Central Otagos kontinentale klima og dets Pinot Noir",
+"Sammenligne stilen i Pinot Noir fra Gibbston og Bannockburn",
+"Forklare Hawke's Bays blandinger, Syrah og Gimblett Gravels"
+]
+}
+},
+{
+"id": "e3be2d79-0c66-b792-ad6e-b4dafa96c9dc",
+"unit": "New Zealand",
+"s": 5,
+"t": "Reading a New Zealand label: what the law promises",
+"sum": "How to read a New Zealand label: the 85 per cent rule, the records behind it, protected place names (GIs), a growers' Marlborough mark and the clues on the bottle.",
+"out": [
+"Explain what the 85 per cent rule covers",
+"Describe what a GI promises and what it does not",
+"Read a New Zealand label line by line"
+],
+"n": 18,
+"da": {
+"t": "At læse en newzealandsk etiket: hvad loven lover",
+"sum": "Sådan læser du en newzealandsk etiket: 85-procentreglen, optegnelserne bag den, beskyttede stednavne (GI'er), vindyrkernes Marlborough-mærke og fingerpegene på flasken.",
+"out": [
+"Forklare, hvad 85-procentreglen dækker",
+"Beskrive, hvad en GI lover, og hvad den ikke lover",
+"Læse en newzealandsk etiket linje for linje"
+]
+}
+},
+{
+"id": "fed10c70-f959-4edd-86f6-0b67a49b8e4c",
+"unit": "New Zealand",
+"s": 6,
+"t": "Choosing New Zealand wine: Sauvignon Blanc and beyond",
+"sum": "A practical guide to New Zealand wine: which Sauvignon to pick, the whites and reds beyond it, what to order with which dish, and how to buy well.",
+"out": [
+"Choose a New Zealand Sauvignon Blanc by style",
+"Tell fruity Central Otago Pinot from savoury Martinborough Pinot",
+"Match New Zealand bottles to dishes and buy well"
+],
+"n": 16,
+"da": {
+"t": "Vælg vin fra New Zealand: Sauvignon Blanc og meget mere",
+"sum": "En praktisk guide til vin fra New Zealand: hvilken Sauvignon du skal vælge, de hvide og røde vine ud over den, hvad du skal bestille til hvilken ret, og hvordan du køber godt.",
+"out": [
+"Vælge en newzealandsk Sauvignon Blanc efter stil",
+"Kende forskel på frugtig Pinot fra Central Otago og krydret Pinot fra Martinborough",
+"Vælge newzealandske flasker til maden og købe godt"
+]
+}
+},
+{
+"id": "5287d60a-f175-7e94-91e3-b5fc715d30f3",
+"unit": "Portugal",
+"s": 1,
+"t": "Portugal at a glance: native grapes and fortified wine",
+"sum": "Why Portugal is a treasure chest of native grapes and blends, how the Atlantic and mountains shape it, and where Port and Madeira come from.",
+"out": [
+"Explain why Portugal's native grapes and field blends stand out",
+"Describe how the Atlantic and mountains shape Portugal's climate",
+"Name Portugal's two famous fortified wines and their homes"
+],
+"n": 16,
+"da": {
+"t": "Portugal i overblik: lokale druer og hedvin",
+"sum": "Hvorfor Portugal er en skattekiste af hjemmehørende druer og blandinger, hvordan Atlanterhavet og bjergene former landet, og hvor portvin og Madeira kommer fra.",
+"out": [
+"Forklare, hvorfor Portugals lokale druer og blandede plantninger skiller sig ud",
+"Beskrive, hvordan Atlanterhavet og bjergene former Portugals klima",
+"Nævne Portugals to berømte hedvine og hvor de kommer fra"
+]
+}
+},
+{
+"id": "b6c89aed-b3b2-22f8-c648-b8919ff85846",
+"unit": "Portugal",
+"s": 2,
+"t": "The grapes of Portugal: native stars and blends",
+"sum": "Portugal's native grapes are often blended, but a few stars lead: Touriga Nacional, Touriga Franca, Tinta Roriz, Baga and four key whites.",
+"out": [
+"Name Portugal's key red and white grapes",
+"Explain field blends versus block planting",
+"Match Portuguese grapes to the regions they define"
+],
+"n": 17,
+"da": {
+"t": "Portugals druer: lokale stjerner og blandinger",
+"sum": "Portugals hjemmehørende druer blandes ofte, men nogle få stjerner fører an: Touriga Nacional, Touriga Franca, Tinta Roriz, Baga og fire vigtige hvide.",
+"out": [
+"Nævne Portugals vigtigste røde og hvide druer",
+"Forklare forskellen på blandet plantning og blokplantning",
+"Koble portugisiske druer til de områder, de præger"
+]
+}
+},
+{
+"id": "751b4c22-746c-7ea8-3aa4-9828f4c5f6e5",
+"unit": "Portugal",
+"s": 3,
+"t": "The Douro: Port and its table wines",
+"sum": "How a steep, hot valley of schist terraces became one of wine's first protected regions, and how its grapes make both sweet Port and powerful dry reds.",
+"out": [
+"Explain why the Douro was mapped and protected in 1756",
+"Describe when Port's spirit goes in and why",
+"Tell Port's four styles and Douro reds apart"
+],
+"n": 18,
+"da": {
+"t": "Douro: portvin og tørre rødvine",
+"sum": "Sådan blev en stejl, varm dal med skiferterrasser et af vinverdenens første beskyttede områder, og sådan giver dens druer både sød portvin og kraftfulde tørre rødvine.",
+"out": [
+"Forklare, hvorfor Douro blev kortlagt og beskyttet i 1756",
+"Beskrive, hvornår portvinens sprit tilsættes, og hvorfor",
+"Kende forskel på portvinens fire stilarter og Douro-rødvine"
+]
+}
+},
+{
+"id": "f0b04502-e874-f00b-cfd9-22a4c5bc86e2",
+"unit": "Portugal",
+"s": 4,
+"t": "Vinho Verde: fresh wines from the green north",
+"sum": "Vinho Verde means green wine, usually read as young and fresh: a light, crisp white from Portugal's rainy north, with Alvarinho from Monção e Melgaço at the top.",
+"out": [
+"Explain what \"green\" means in Vinho Verde",
+"Tell Alvarinho and Loureiro apart by their clues",
+"Place top Alvarinho and climb the price ladder"
+],
+"n": 17,
+"da": {
+"t": "Vinho Verde: friske vine fra det grønne Nordportugal",
+"sum": "Vinho Verde betyder »grøn vin«, som regel forstået som ung og frisk: en let, sprød hvidvin fra det regnfulde Nordportugal, med Alvarinho fra Monção e Melgaço i toppen.",
+"out": [
+"Forklare, hvad »grøn« betyder i Vinho Verde",
+"Skelne Alvarinho fra Loureiro ud fra deres kendetegn",
+"Placere top-Alvarinho og gå op ad prisstigen"
+]
+}
+},
+{
+"id": "f1b07e51-d389-38b6-8cbd-d4d2e2712542",
+"unit": "Portugal",
+"s": 5,
+"t": "Dão and Bairrada: Portugal's elegant centre",
+"sum": "Two neighbours in central Portugal: Dão's mountain-sheltered Touriga Nacional and Encruzado, and Bairrada's age-worthy Baga and traditional-method sparkling wine.",
+"out": [
+"Explain why Dão's reds taste fresh and elegant",
+"Describe Baga and why Bairrada's reds can age",
+"Name the key grapes and bubbles of both regions"
+],
+"n": 17,
+"da": {
+"t": "Dão og Bairrada: Portugals elegante hjerte",
+"sum": "To naboer i det centrale Portugal: Dãos bjergbeskyttede Touriga Nacional og Encruzado og Bairradas lagringsdygtige Baga og mousserende vin efter den traditionelle metode.",
+"out": [
+"Forklare, hvorfor Dãos rødvine smager friske og elegante",
+"Beskrive Baga og hvorfor Bairradas rødvine kan lagres",
+"Nævne begge områders vigtigste druer og bobler"
+]
+}
+},
+{
+"id": "12e47684-b819-12a7-7572-7e9414c94cec",
+"unit": "Portugal",
+"s": 6,
+"t": "The Alentejo, the south and Madeira",
+"sum": "Southern Portugal gives you sun-ripened, easy Alentejo reds, a sweet Muscat from Setúbal, and Madeira, a fortified wine that is heated on purpose.",
+"out": [
+"Describe the ripe, soft style of Alentejo reds",
+"Explain how Setúbal's Muscat and Madeira are made",
+"Name Madeira's classic styles from driest to sweetest"
+],
+"n": 18,
+"da": {
+"t": "Alentejo, det sydlige Portugal og Madeira",
+"sum": "Det sydlige Portugal giver dig solmodne, letdrikkelige rødvine fra Alentejo, en sød Muscat fra Setúbal og Madeira, en hedvin, der opvarmes med vilje.",
+"out": [
+"Beskrive den modne, bløde stil i Alentejos rødvine",
+"Forklare, hvordan Setúbals Muscat og Madeira laves",
+"Nævne Madeiras klassiske stilarter fra tørrest til sødest"
+]
+}
+},
+{
+"id": "836aa918-463e-d9f0-be4b-42aed8796156",
+"unit": "Portugal",
+"s": 7,
+"t": "Reading a Portuguese label: tiers and key words",
+"sum": "A Portuguese label shows how protected the place is, and words like Reserva and Garrafeira promise minimums: learn the three tiers and the key words, Port included.",
+"out": [
+"Name Portugal's three tiers, from DOC to plain Vinho",
+"Read Reserva, Grande Reserva and Garrafeira as minimums",
+"Decode a Portuguese label, Port included, line by line"
+],
+"n": 18,
+"da": {
+"t": "Sådan læser du en portugisisk etiket: niveauer og nøgleord",
+"sum": "En portugisisk etiket viser, hvor beskyttet stedet er, og ord som Reserva og Garrafeira lover minimumskrav: lær de tre niveauer og nøgleordene, portvin med.",
+"out": [
+"Nævne Portugals tre niveauer, fra DOC til almindelig Vinho",
+"Aflæse Reserva, Grande Reserva og Garrafeira som minimumskrav",
+"Tyde en portugisisk etiket linje for linje, portvin med"
+]
+}
+},
+{
+"id": "f5199e83-5e10-4d25-8b9b-453a8c3b50a7",
+"unit": "Portugal",
+"s": 8,
+"t": "Portugal: Port, the Douro and Vinho Verde",
+"sum": "A buyer's and diner's tour of Portugal: white Port before dinner, Vinho Verde with fish, good-value reds, the right Port for dessert, and how long it keeps.",
+"out": [
+"Choose a Portuguese wine for each moment of a meal",
+"Pick a Port style to suit the occasion",
+"Explain how long each opened Port keeps"
+],
+"n": 15,
+"da": {
+"t": "Portugal: portvin, Douro og Vinho Verde",
+"sum": "En rundtur i Portugal for dig, der køber og spiser: hvid portvin før maden, Vinho Verde til fisk, røde gode køb, den rette portvin til desserten, og hvor længe den holder.",
+"out": [
+"Vælge en portugisisk vin til hvert øjeblik i et måltid",
+"Vælge en portvinsstil, der passer til anledningen",
+"Forklare, hvor længe hver åbnet portvin holder"
+]
+}
+},
+{
+"id": "58e3c56a-1758-4b3b-8d24-213c99191ed3",
+"unit": "Quality, ageing & collecting",
+"s": 1,
+"t": "Is this wine faulty? A step-by-step check at home",
+"sum": "A simple routine for a suspect bottle: look, sniff, taste and give it air, plus the faults air fixes, two faults you have not met yet and how to return a bad bottle.",
+"out": [
+"Run a four-step check on a suspect bottle",
+"Sort faults into those air fixes and those it cannot",
+"Recognise smoke taint and mousiness on the finish"
+],
+"n": 17,
+"da": {
+"t": "Er vinen defekt? Et tjek trin for trin derhjemme",
+"sum": "En enkel rutine til en mistænkelig flaske: se, snus, smag og giv den luft, plus de fejl, luft fjerner, to nye fejl og hvordan du returnerer en dårlig flaske.",
+"out": [
+"Tjekke en mistænkelig flaske i fire trin",
+"Skelne fejl, luft kan fjerne, fra fejl, den ikke kan",
+"Genkende røgskade og musesmag i eftersmagen"
+]
+}
+},
+{
+"id": "1977010d-61a7-4a14-861d-ed706fd2908c",
+"unit": "Quality, ageing & collecting",
+"s": 2,
+"t": "How to judge quality in a glass",
+"sum": "Quality is not the same as liking: judge a wine by its balance, length, intensity and complexity, by whether it tastes of its grape and place, and read scores with care.",
+"out": [
+"Separate a wine's quality from your personal taste",
+"Judge a wine with the four BLIC checks",
+"Use scores, medals and critics with care"
+],
+"n": 18,
+"da": {
+"t": "Sådan bedømmer du kvaliteten i glasset",
+"sum": "Kvalitet er ikke det samme som at kunne lide en vin: bedøm den på balance, længde, intensitet og kompleksitet, på om den smager af sin drue og sit sted, og læs point med omtanke.",
+"out": [
+"Skelne mellem en vins kvalitet og din personlige smag",
+"Bedømme en vin med de fire BLIK-tjek",
+"Bruge point, medaljer og kritikere med omtanke"
+]
+}
+},
+{
+"id": "e89ad93c-4315-4dbc-8767-ff9853b79f06",
+"unit": "Quality, ageing & collecting",
+"s": 3,
+"t": "Which wines get better with age, and why",
+"sum": "Most wine is made to drink young. Learn the four backbones that let a few wines improve, why low pH protects, and the curve a great wine follows.",
+"out": [
+"Explain why most wine does not improve with age",
+"Name the four backbones that help a wine age",
+"Describe the ageing curve from youth to decline"
+],
+"n": 16,
+"da": {
+"t": "Hvilke vine bliver bedre med alderen, og hvorfor",
+"sum": "Det meste vin skal drikkes ungt. Lær de fire rygrade, der lader nogle få vine blive bedre, hvorfor en lav pH beskytter, og den kurve, en stor vin følger.",
+"out": [
+"Forklare, hvorfor det meste vin ikke bliver bedre med alderen",
+"Nævne de fire rygrade, der hjælper en vin med at lagre",
+"Beskrive lagringskurven fra ungdom til forfald"
+]
+}
+},
+{
+"id": "e183f879-71f8-4417-89ee-f1141561ce06",
+"unit": "Quality, ageing & collecting",
+"s": 4,
+"t": "When to open a bottle: finding its drink window",
+"sum": "Most wine tastes best within a few years: learn to read a bottle's drink window from a few clues, and when unsure, open it a little early rather than too late.",
+"out": [
+"Explain what a drink window and its plateau are",
+"Estimate a window from style, critics and the vintage",
+"Spot the signs a stored bottle may be tired"
+],
+"n": 18,
+"da": {
+"t": "Hvornår skal flasken åbnes: find dens drikkevindue",
+"sum": "De fleste vine smager bedst inden for få år: lær at aflæse en flaskes drikkevindue ud fra nogle få spor, og åbn den hellere lidt for tidligt end for sent, når du er i tvivl.",
+"out": [
+"Forklare, hvad et drikkevindue og dets plateau er",
+"Vurdere et vindue ud fra stil, kritikere og årgangen",
+"Genkende tegnene på, at en gemt flaske kan være træt"
+]
+}
+},
+{
+"id": "4fdbffd4-580e-4d8a-8996-1fcea8c35bb3",
+"unit": "Quality, ageing & collecting",
+"s": 5,
+"t": "Start a small wine collection, no cellar needed",
+"sum": "Start a small collection with wines you like and a few keepers, track it with a cellar list, and learn to judge old bottles by fill level and provenance.",
+"out": [
+"Plan a first small collection around wines you like",
+"Keep a cellar list that tells you what to open",
+"Judge an old bottle by fill level and provenance"
+],
+"n": 18,
+"da": {
+"t": "Start en lille vinsamling, helt uden vinkælder",
+"sum": "Start en lille samling med vine, du kan lide, og et par gemmeflasker, hold styr på den med en kælderliste, og lær at bedømme gamle flasker ud fra fyldningshøjde og proveniens.",
+"out": [
+"Planlægge en lille første samling ud fra vine, du kan lide",
+"Føre en kælderliste, der fortæller dig, hvad du skal åbne",
+"Bedømme en gammel flaske ud fra fyldningshøjde og proveniens"
+]
+}
+},
+{
+"id": "374684d1-e0aa-4524-a76d-720efb03392d",
+"unit": "Reading the label",
+"s": 1,
+"t": "How to read a wine label: the wine's ID card",
+"sum": "A label is the wine's ID card: who made it, where it is from, the harvest year and its strength tell you enough to make a smart guess.",
+"out": [
+"Find the producer, place and vintage on any label",
+"Explain what an appellation and a vintage are",
+"Make a smart guess from place and year"
+],
+"n": 18,
+"da": {
+"t": "Sådan læser du en vinetiket: vinens ID-kort",
+"sum": "En etiket er vinens ID-kort: hvem der har lavet den, hvor den kommer fra, høståret og styrken er nok til et klogt gæt.",
+"out": [
+"Finde producent, sted og årgang på enhver etiket",
+"Forklare, hvad en appellation og en årgang er",
+"Lave et klogt gæt ud fra sted og år"
+]
+}
+},
+{
+"id": "cf431368-0281-4728-ad36-7b635a55f24b",
+"unit": "Reading the label",
+"s": 2,
+"t": "Old World vs New World labels: place or grape?",
+"sum": "Why European labels name the place and New World labels name the grape, what each name promises, and how to find the grape a place name hides.",
+"out": [
+"Tell an Old World label from a New World one",
+"Explain why European labels name the place, not the grape",
+"Decode Chablis, Rioja, Chianti and Sancerre into their grapes"
+],
+"n": 18,
+"da": {
+"t": "Den Gamle og Den Nye Verden på etiketten: sted eller drue?",
+"sum": "Hvorfor europæiske etiketter angiver stedet og etiketter fra Den Nye Verden druen, hvad hvert navn lover, og hvordan du finder druen bag et stednavn.",
+"out": [
+"Skelne en etiket fra Den Gamle Verden fra en fra Den Nye",
+"Forklare, hvorfor europæiske etiketter angiver stedet, ikke druen",
+"Afkode Chablis, Rioja, Chianti og Sancerre til deres druer"
+]
+}
+},
+{
+"id": "ab2c7975-43ee-4b18-a60f-eda4364ad629",
+"unit": "Reading the label",
+"s": 3,
+"t": "French wine classifications: the smaller the place",
+"sum": "How a French label ranks wine by its tie to a place: AOC, IGP and Vin de France, the rings inside an appellation, and what each Cru word really ranks.",
+"out": [
+"Explain why a smaller place means stricter rules",
+"Rank AOC, IGP and Vin de France correctly",
+"Decode Cru words by region on a label"
+],
+"n": 18,
+"da": {
+"t": "Franske vinklassifikationer: jo mindre sted, jo strengere regler",
+"sum": "Sådan rangerer en fransk etiket vin efter dens bånd til et sted: AOC, IGP og Vin de France, ringene inden for en appellation, og hvad hvert Cru-ord egentlig rangerer.",
+"out": [
+"Forklare, hvorfor et mindre sted giver strengere regler",
+"Rangere AOC, IGP og Vin de France korrekt",
+"Afkode Cru-ord efter region på en etiket"
+]
+}
+},
+{
+"id": "8f707a29-8e22-438a-9b7f-798caa75349c",
+"unit": "Reading the label",
+"s": 4,
+"t": "Italian wine classifications: DOCG, DOC, IGT and Vino",
+"sum": "What Italy's four label tiers promise, what DOCG adds on top of DOC, why great wines can be humble IGT, and three label words: Classico, Riserva, Superiore.",
+"out": [
+"Order Italy's four label tiers from strictest to loosest",
+"Explain what DOCG adds and what it cannot promise",
+"Decode Classico, Riserva and Superiore on an Italian label"
+],
+"n": 16,
+"da": {
+"t": "Italienske vinklassifikationer: DOCG, DOC, IGT og Vino",
+"sum": "Hvad Italiens fire niveauer på etiketten lover, hvad DOCG lægger oven i DOC, hvorfor store vine kan være beskedne IGT-vine, og tre etiketord: Classico, Riserva og Superiore.",
+"out": [
+"Sætte Italiens fire niveauer i rækkefølge fra strengest til løsest",
+"Forklare, hvad DOCG tilføjer, og hvad det ikke kan love",
+"Afkode Classico, Riserva og Superiore på en italiensk etiket"
+]
+}
+},
+{
+"id": "53604d24-ae36-4e80-8a85-a3cb1cd2b53c",
+"unit": "Reading the label",
+"s": 5,
+"t": "Spanish and German labels: time versus ripeness",
+"sum": "Spanish words like Crianza and Reserva tell you how long a wine aged; German words like Kabinett and Spätlese tell you how ripe the grapes were.",
+"out": [
+"Read Spain's quality stamps and Rioja's coloured back-label seals",
+"Order Spanish ageing words and German ripeness levels",
+"Explain why a German ripeness level is not sweetness"
+],
+"n": 17,
+"da": {
+"t": "Spanske og tyske etiketter: tid mod modenhed",
+"sum": "Spanske ord som Crianza og Reserva fortæller, hvor længe vinen er lagret; tyske ord som Kabinett og Spätlese fortæller, hvor modne druerne var.",
+"out": [
+"Læse Spaniens kvalitetsstempler og Riojas farvede segl på bagetiketten",
+"Sætte spanske lagringsord og tyske modenhedsniveauer i rækkefølge",
+"Forklare, hvorfor et tysk modenhedsniveau ikke siger noget om sødme"
+]
+}
+},
+{
+"id": "2ffb7fbb-70b5-4a9d-849d-bc964d8bbacb",
+"unit": "Reading the label",
+"s": 6,
+"t": "Label words: which ones are real promises?",
+"sum": "Some label words are set by law, like Estate Bottled, Spain's Reserva and Champagne's Brut. Others, like Old Vine, mean what the winery says. Learn to tell them apart.",
+"out": [
+"Tell rule words from marketing words on a label",
+"Explain what Estate Bottled and Reserve really promise",
+"Pick the driest sparkling wine from its sweetness word"
+],
+"n": 17,
+"da": {
+"t": "Etiketord: hvilke er rigtige løfter?",
+"sum": "Nogle etiketord er fastsat ved lov, som Estate Bottled, Spaniens Reserva og champagnens Brut. Andre, som Old Vine, betyder, hvad vinhuset siger. Lær at skelne dem.",
+"out": [
+"Skelne regelord fra reklameord på en etiket",
+"Forklare, hvad Estate Bottled og Reserve virkelig lover",
+"Vælge de tørreste bobler ud fra sødmeordet"
+]
+}
+},
+{
+"id": "b89d4dd7-a20f-40d0-8eb7-56f274c95c3d",
+"unit": "Red grapes to know",
+"s": 1,
+"t": "Cabernet Sauvignon and Merlot: the Bordeaux pair",
+"sum": "Cabernet Sauvignon brings firm tannin and blackcurrant, Merlot brings soft plum fruit, and together they are the heart of Bordeaux's classic red blend.",
+"out": [
+"Tell Cabernet Sauvignon and Merlot apart in the glass",
+"Explain why Bordeaux blends the two grapes",
+"Name regions and dishes that suit each grape"
+],
+"n": 16,
+"da": {
+"t": "Cabernet Sauvignon og Merlot: Bordeaux' store makkerpar",
+"sum": "Cabernet Sauvignon giver markant tannin og solbær, Merlot giver blød blommefrugt, og sammen udgør de hjertet i Bordeaux' klassiske røde blanding.",
+"out": [
+"Kende forskel på Cabernet Sauvignon og Merlot i glasset",
+"Forklare, hvorfor Bordeaux blander de to druer",
+"Nævne vinområder og retter, der passer til hver drue"
+]
+}
+},
+{
+"id": "0586b8dd-a9e2-4db5-897c-45a26d2abcdf",
+"unit": "Red grapes to know",
+"s": 2,
+"t": "Pinot Noir: light, silky and demanding",
+"sum": "Why thin skins make Pinot Noir pale, silky and fresh, why it is so hard to grow, the cool places it loves, and the food it suits.",
+"out": [
+"Explain why Pinot Noir is pale and silky",
+"Name the cool places where Pinot Noir grows best",
+"Pair Pinot Noir with food and serve it cool"
+],
+"n": 18,
+"da": {
+"t": "Pinot Noir: let, silkeblød og krævende",
+"sum": "Hvorfor tyndt skind gør Pinot Noir lys, silkeblød og frisk, hvorfor den er så svær at dyrke, de kølige steder, den elsker, og den mad, den passer til.",
+"out": [
+"Forklare, hvorfor Pinot Noir er lys og silkeblød",
+"Nævne de kølige steder, hvor Pinot Noir trives bedst",
+"Vælge mad til Pinot Noir og servere den let afkølet"
+]
+}
+},
+{
+"id": "57936eda-184a-4cee-8c56-4dee7e2e6bb6",
+"unit": "Red grapes to know",
+"s": 3,
+"t": "Syrah and Grenache: spice and warmth",
+"sum": "Syrah (also called Shiraz) brings dark fruit and pepper, Grenache brings soft red fruit and warmth, and together they star in the GSM blend.",
+"out": [
+"Explain why Syrah and Shiraz are one grape, two styles",
+"Describe Grenache's soft feel and why it runs warm",
+"Name the GSM grapes and what each one brings"
+],
+"n": 16,
+"da": {
+"t": "Syrah og Grenache: krydderi og varme",
+"sum": "Syrah (også kaldet Shiraz) giver mørk frugt og peber, Grenache giver blød rød frugt og varme, og sammen er de stjernerne i GSM-blandingen.",
+"out": [
+"Forklare, hvorfor Syrah og Shiraz er én drue med to stilarter",
+"Beskrive Grenaches bløde mundfølelse, og hvorfor den føles varm",
+"Nævne GSM-druerne, og hvad hver af dem bidrager med"
+]
+}
+},
+{
+"id": "baec22df-9a23-4113-8e91-116de9d4596d",
+"unit": "Red grapes to know",
+"s": 4,
+"t": "Tempranillo and Sangiovese: star reds of Spain and Italy",
+"sum": "Tempranillo, Spain's signature red, gives red fruit plus vanilla and leather from oak and age; Italy's Sangiovese gives sour cherry, herbs and a tang made for tomato.",
+"out": [
+"Tell Tempranillo and Sangiovese apart by taste",
+"Read Rioja's ageing words and Tuscany's classic wine names",
+"Explain why Sangiovese works so well with tomato"
+],
+"n": 17,
+"da": {
+"t": "Tempranillo og Sangiovese: Spaniens og Italiens røde stjerner",
+"sum": "Tempranillo, Spaniens karakteristiske røde drue, giver rød frugt plus vanilje og læder fra eg og lagring; Italiens Sangiovese giver surkirsebær, krydderurter og en syrlighed skabt til tomat.",
+"out": [
+"Kende forskel på Tempranillo og Sangiovese på smagen",
+"Læse Riojas lagringsord og Toscanas klassiske vinnavne",
+"Forklare, hvorfor Sangiovese passer så godt til tomat"
+]
+}
+},
+{
+"id": "16485dcd-4379-4803-8a4b-2d7c5c454f03",
+"unit": "Red grapes to know",
+"s": 5,
+"t": "Malbec, Zinfandel, Carménère: ripe reds for the grill",
+"sum": "Malbec, Zinfandel and Carménère are ripe, dark-fruited, full-bodied reds that taste juicy yet dry, and they are natural partners for barbecue and burgers.",
+"out": [
+"Describe what ripe and full-bodied mean in a red",
+"Link Malbec, Zinfandel and Carménère to their homes",
+"Explain why these reds suit barbecue and burgers"
+],
+"n": 18,
+"da": {
+"t": "Malbec, Zinfandel, Carménère: modne rødvine til grillen",
+"sum": "Malbec, Zinfandel og Carménère er modne, fyldige rødvine med mørk frugt, der smager saftigt, men er tørre, og de er oplagte makkere til grillmad og burgere.",
+"out": [
+"Beskrive, hvad moden og fyldig betyder i en rødvin",
+"Koble Malbec, Zinfandel og Carménère til deres hjemsteder",
+"Forklare, hvorfor disse rødvine passer til grillmad og burgere"
+]
+}
+},
+{
+"id": "94b965fe-024c-4910-8bb1-c025ac8a1e8b",
+"unit": "Red grapes to know",
+"s": 6,
+"t": "Light and juicy reds: Gamay and friends",
+"sum": "Gamay, Loire Cabernet Franc, Barbera, Zweigelt and Dolcetto: fresh, lower-tannin reds that love a light chill and suit picnics, charcuterie and fish.",
+"out": [
+"Explain what makes a red light and juicy",
+"Read a Beaujolais label from everyday to cru",
+"Pick and chill a light red for picnics or fish"
+],
+"n": 17,
+"da": {
+"t": "Lette og saftige rødvine: Gamay og venner",
+"sum": "Gamay, Cabernet Franc fra Loire, Barbera, Zweigelt og Dolcetto: friske rødvine med lidt tannin, som er skønne let afkølede og passer til picnic, charcuteri og fisk.",
+"out": [
+"Forklare, hvad der gør en rødvin let og saftig",
+"Læse en Beaujolais-etiket fra hverdagsvin til cru",
+"Vælge og køle en let rødvin til picnic eller fisk"
+]
+}
+},
+{
+"id": "94c8a4c7-e73d-4ab8-8361-ec68f84beb63",
+"unit": "Red grapes to know",
+"s": 7,
+"t": "Red grapes worth discovering: six reds with a home",
+"sum": "Six less famous reds, from pale but grippy Nebbiolo to red-fleshed Saperavi, each with a clear home and a style you can learn to spot.",
+"out": [
+"Name six characterful red grapes and their homes",
+"Tell firm, grippy reds apart from gentler Mencía",
+"Explain what red-fleshed and crossing mean"
+],
+"n": 16,
+"da": {
+"t": "Røde druer, der er værd at opdage: seks med et hjemsted",
+"sum": "Seks mindre kendte røde druer, fra lys, men stram Nebbiolo til rødkødet Saperavi, hver med et klart hjemsted og en stil, du kan lære at genkende.",
+"out": [
+"Nævne seks røde druer med karakter og deres hjemsteder",
+"Skelne de faste, stramme røde fra den blidere Mencía",
+"Forklare, hvad rødkødet og krydsning betyder"
+]
+}
+},
+{
+"id": "49e3eacd-4d51-4e5f-8d2a-27de5b68d7e9",
+"unit": "Serving & glassware",
+"s": 1,
+"t": "Why glass shape matters: bowl, rim and your nose",
+"sum": "A glass's bowl and rim steer how a wine's aromas gather and reach your nose, so the same wine can smell and taste different from one glass to another.",
+"out": [
+"Explain how a glass's shape changes what you taste",
+"Name a glass's bowl, headspace and rim and their jobs",
+"Match reds, whites and sparkling wine to the right glass"
+],
+"n": 18,
+"da": {
+"t": "Derfor betyder glassets form noget: kumme, kant og din næse",
+"sum": "Glassets kumme og kant styrer, hvordan vinens aromaer samler sig og når din næse, så den samme vin kan dufte og smage forskelligt fra glas til glas.",
+"out": [
+"Forklare, hvordan glassets form ændrer det, du smager",
+"Kende glassets kumme, luftrum og kant og deres opgaver",
+"Finde det rette glas til rødvin, hvidvin og mousserende vin"
+]
+}
+},
+{
+"id": "b1fe0452-a188-4763-99ab-bcc5482a048f",
+"unit": "Serving & glassware",
+"s": 2,
+"t": "The glasses you actually need",
+"sum": "Two glasses cover almost every wine: one good all-purpose glass and one for bubbles. Here is what makes a glass good, and why you hold the stem and swirl.",
+"out": [
+"Choose the two glasses that cover almost every wine",
+"Spot the four signs of a good glass",
+"Explain why you hold the stem and swirl"
+],
+"n": 17,
+"da": {
+"t": "De glas, du faktisk har brug for",
+"sum": "To glas dækker næsten al vin: ét godt allroundglas og ét til bobler. Her er, hvad der gør et glas godt, og hvorfor du holder i stilken og svinger vinen.",
+"out": [
+"Vælge de to glas, der dækker næsten al vin",
+"Genkende de fire kendetegn ved et godt glas",
+"Forklare, hvorfor du holder i stilken og svinger vinen"
+]
+}
+},
+{
+"id": "b86e0e1c-8c1f-4170-a666-78b3dde2c2ab",
+"unit": "Serving & glassware",
+"s": 3,
+"t": "Decanting: why, when and how to do it",
+"sum": "Decanting means pouring wine into another container for one of two reasons: to give a young, tannic red some air so it softens, or to leave an old red's gritty sediment behind.",
+"out": [
+"Soften a harsh young red by splashing it",
+"Pour an old red gently off its sediment",
+"Spot the wines that need no decanting"
+],
+"n": 17,
+"da": {
+"t": "Dekantering: hvorfor, hvornår og hvordan",
+"sum": "At dekantere betyder at hælde vin over i en anden beholder af en af to grunde: for at give en ung, tanninrig rødvin luft, så den bliver blødere, eller for at lade en gammel rødvins grumsede bundfald blive tilbage.",
+"out": [
+"Gøre en hård, ung rødvin blødere ved at lade den plaske",
+"Hælde en gammel rødvin blidt fra bundfaldet",
+"Genkende de vine, der slet ikke skal dekanteres"
+]
+}
+},
+{
+"id": "5452c7cf-335a-410f-b953-5c4a7cf720e0",
+"unit": "Serving & glassware",
+"s": 4,
+"t": "How much to pour, and in what order",
+"sum": "Pour about a third of a glass (roughly 150 ml) so the wine has room to swirl, and when tasting several, go from lighter to bolder so nothing gets overpowered.",
+"out": [
+"Pour about 150 ml, roughly a third of a glass",
+"Explain why empty space in the glass helps",
+"Order several wines from gentle to bold"
+],
+"n": 16,
+"da": {
+"t": "Hvor meget du skal skænke, og i hvilken rækkefølge",
+"sum": "Skænk cirka en tredjedel af glasset (omkring 150 ml), så vinen har plads til at blive svinget, og gå fra lette til kraftige vine, når du smager flere, så intet bliver overdøvet.",
+"out": [
+"Skænke omkring 150 ml, cirka en tredjedel af et glas",
+"Forklare, hvorfor tom plads i glasset hjælper",
+"Sætte flere vine i rækkefølge fra mild til kraftig"
+]
+}
+},
+{
+"id": "9e982407-23e3-4d01-9dbf-f30f723a53fb",
+"unit": "Serving & glassware",
+"s": 5,
+"t": "Keeping an open bottle fresh for days",
+"sum": "Why air slowly tires an open wine, how a cork and the fridge buy you 3 to 5 days, which wines fade fastest, and how to keep bubbles fizzy.",
+"out": [
+"Keep an open still wine good for days",
+"Explain why air wears an open wine down",
+"Spot fragile wines and keep sparkling wine fizzy"
+],
+"n": 17,
+"da": {
+"t": "Sådan holder en åbnet flaske sig frisk i flere dage",
+"sum": "Hvorfor luft langsomt slider en åbnet vin ned, hvordan prop og køleskab giver dig 3 til 5 dage, hvilke vine der falmer hurtigst, og hvordan du holder boblerne i live.",
+"out": [
+"Holde en åbnet stille vin god i flere dage",
+"Forklare, hvorfor luft slider en åbnet vin ned",
+"Genkende skrøbelige vine og holde mousserende vin boblende"
+]
+}
+},
+{
+"id": "49d33ad3-b506-494e-a5e2-3e95796d14cc",
+"unit": "Serving & glassware",
+"s": 6,
+"t": "Storing wine at home: cool, dark, still and soon",
+"sum": "Why wine fears heat, swings, light and shaking, where to keep bottles at home, why corks lie down, and why most wine is best opened soon.",
+"out": [
+"Name the four enemies of wine at home",
+"Choose a good spot and position for bottles",
+"Tell an everyday bottle from one worth keeping"
+],
+"n": 18,
+"da": {
+"t": "Opbevaring af vin derhjemme: køligt, mørkt, roligt og snart",
+"sum": "Hvorfor vin frygter varme, udsving, lys og rysten, hvor du skal gemme flaskerne derhjemme, hvorfor propper skal ligge ned, og hvorfor det meste vin skal åbnes snart.",
+"out": [
+"Nævne vinens fire fjender derhjemme",
+"Vælge et godt sted og den rigtige stilling til flaskerne",
+"Kende forskel på en hverdagsflaske og en, der er værd at gemme"
+]
+}
+},
+{
+"id": "6257f136-80ae-0bb4-0b57-3ea4570634d6",
+"unit": "South Africa",
+"s": 1,
+"t": "South Africa at a glance: Old World meets New",
+"sum": "Cape wine since 1659: two oceans and a wind called the Cape Doctor, Chenin Blanc and Pinotage, Constantia's fame, the KWV years and the boom after 1994.",
+"out": [
+"Explain how South Africa blends Old World and New World",
+"Describe how two oceans and a wind shape the Cape",
+"Explain how Constantia, the KWV and 1994 shaped Cape wine"
+],
+"n": 18,
+"da": {
+"t": "Sydafrika i overblik: Den Gamle Verden møder Den Nye",
+"sum": "Vin fra Kapområdet siden 1659: to have og en vind kaldet Cape Doctor, Chenin Blanc og Pinotage, Constantias berømmelse, KWV-årene og opsvinget efter 1994.",
+"out": [
+"Forklare, hvordan Sydafrika forener Den Gamle og Den Nye Verden",
+"Beskrive, hvordan to have og en vind former Kapområdet",
+"Forklare, hvordan Constantia, KWV og 1994 formede Kapområdets vin"
+]
+}
+},
+{
+"id": "66bef7ae-f9ce-f52e-4a22-d8ddb82327bf",
+"unit": "South Africa",
+"s": 2,
+"t": "The grapes of South Africa: Chenin, Pinotage and more",
+"sum": "Chenin Blanc, once called Steen, is South Africa's most planted grape and Pinotage its own red, backed by Cabernet, Shiraz, Sauvignon Blanc, Chardonnay and Cinsault.",
+"out": [
+"Explain why Steen and Chenin Blanc are one grape",
+"Describe Chenin's four styles and why old vines matter",
+"Match South Africa's key reds and whites to their styles"
+],
+"n": 18,
+"da": {
+"t": "Sydafrikas druer: Chenin, Pinotage og mere",
+"sum": "Chenin Blanc, engang kaldt Steen, er Sydafrikas mest plantede drue og Pinotage landets egen røde, bakket op af Cabernet, Shiraz, Sauvignon Blanc, Chardonnay og Cinsault.",
+"out": [
+"Forklare, hvorfor Steen og Chenin Blanc er én drue",
+"Beskrive Chenins fire stilarter, og hvorfor gamle vinstokke betyder noget",
+"Forbinde Sydafrikas vigtigste røde og hvide druer med deres stilarter"
+]
+}
+},
+{
+"id": "ba2ee51e-8992-5e1c-41ec-71d749e4eb27",
+"unit": "South Africa",
+"s": 3,
+"t": "Stellenbosch and Paarl: the Cape's classic heart",
+"sum": "Mountains, varied soils and False Bay breezes make Stellenbosch Cabernet country, while warmer Paarl, Huguenot Franschhoek and cool Constantia complete the picture.",
+"out": [
+"Explain how mountains, soils and False Bay shape Stellenbosch",
+"Describe Stellenbosch Cabernet and a Bordeaux-style blend",
+"Tell Paarl, Franschhoek and Constantia apart"
+],
+"n": 18,
+"da": {
+"t": "Stellenbosch og Paarl: Kapområdets klassiske hjerte",
+"sum": "Bjerge, varieret jordbund og briser fra False Bay gør Stellenbosch til Cabernet-land, mens det varmere Paarl, huguenotternes Franschhoek og det kølige Constantia fuldender billedet.",
+"out": [
+"Forklare, hvordan bjerge, jordbund og False Bay former Stellenbosch",
+"Beskrive Cabernet fra Stellenbosch og en blanding i Bordeaux-stil",
+"Kende forskel på Paarl, Franschhoek og Constantia"
+]
+}
+},
+{
+"id": "32305798-44e9-c62a-748f-08975692c5c4",
+"unit": "South Africa",
+"s": 4,
+"t": "Swartland and the new wave: old vines, cool coasts",
+"sum": "How Swartland's old, dry-farmed vines sparked a new wave of fresher wines, the seal that certifies old vineyards, and the cool coasts of Elgin and Hemel-en-Aarde.",
+"out": [
+"Explain why Swartland's old, dry-farmed vines matter",
+"Describe the new wave and the heritage vineyard seal",
+"Name the cool coastal areas and their grapes"
+],
+"n": 17,
+"da": {
+"t": "Swartland og den nye bølge: gamle vinstokke, kølige kyster",
+"sum": "Hvordan Swartlands gamle, tørdyrkede vinstokke satte gang i en ny bølge af friskere vine, seglet for gamle vinmarker, og de kølige kyster i Elgin og Hemel-en-Aarde.",
+"out": [
+"Forklare, hvorfor Swartlands gamle, tørdyrkede vinstokke betyder noget",
+"Beskrive den nye bølge og seglet for gamle vinmarker",
+"Nævne de kølige kystområder og deres druer"
+]
+}
+},
+{
+"id": "361688a8-d34d-9f77-1779-3274f1821c9b",
+"unit": "South Africa",
+"s": 5,
+"t": "Reading a South African label: the numbered seal",
+"sum": "A numbered seal backs the place, grape and year on a South African label. A named place means 100 per cent of the grapes; grape and year need 85 per cent.",
+"out": [
+"Explain what the Wine of Origin seal checks",
+"Order South African places from geographical unit to ward",
+"Use the 100 and 85 per cent rules on labels"
+],
+"n": 18,
+"da": {
+"t": "At læse en sydafrikansk etiket: det nummererede segl",
+"sum": "Et nummereret segl står inde for sted, drue og årgang på en sydafrikansk etiket. Et angivet sted kræver 100 % af druerne, drue og årgang 85 %.",
+"out": [
+"Forklare, hvad Wine of Origin-seglet kontrollerer",
+"Ordne sydafrikanske steder fra geographical unit til ward",
+"Bruge reglerne om 100 og 85 % på etiketter"
+]
+}
+},
+{
+"id": "3f10c879-2d0f-4167-895f-1e2d065d93f5",
+"unit": "South Africa",
+"s": 6,
+"t": "Choosing South African wine: Chenin, Pinotage and the Cape",
+"sum": "A shopper's and diner's guide to the Cape: which Chenin and Pinotage to pick, which place for which taste, a first tasting flight and what to pour at a braai.",
+"out": [
+"Choose a Chenin Blanc style from its label words",
+"Tell coffee-style Pinotage from fruit-first Pinotage",
+"Plan a Cape tasting and a braai bottle"
+],
+"n": 17,
+"da": {
+"t": "Vælg sydafrikansk vin: Chenin, Pinotage og Kapområdet",
+"sum": "En guide til butikken og restauranten i Kapområdet: hvilken Chenin og Pinotage du skal vælge, hvilket sted giver hvilken smag, en første smagning og vinen til en braai.",
+"out": [
+"Vælge en Chenin Blanc-stil ud fra ordene på etiketten",
+"Kende forskel på kaffe-Pinotage og frugtdreven Pinotage",
+"Planlægge en smagning fra Kapområdet og en flaske til en braai"
+]
+}
+},
+{
+"id": "e882e4fc-8f19-5110-a675-2449ef1616c8",
+"unit": "Spain",
+"s": 1,
+"t": "Spain at a glance: sun, old vines and patience",
+"sum": "Why Spain has the most vineyard land yet not the most wine: strong sun, old bush vines, a high plateau with cool nights, and reds aged before release.",
+"out": [
+"Name the three signatures of Spanish wine",
+"Describe Spain's climates, from green north-west to high plateau",
+"Explain how phylloxera's late arrival helped Rioja"
+],
+"n": 18,
+"da": {
+"t": "Spanien i overblik: sol, gamle vinstokke og tålmodighed",
+"sum": "Hvorfor Spanien har mest vinmark, men ikke laver mest vin: stærk sol, gamle buskvinstokke, en højslette med kølige nætter og rødvine, der lagres før salg.",
+"out": [
+"Nævne spansk vins tre kendetegn",
+"Beskrive Spaniens klima, fra det grønne Nordvestspanien til højsletten",
+"Forklare, hvordan phylloxeras sene ankomst hjalp Rioja"
+]
+}
+},
+{
+"id": "9bfd3ea5-0fa6-03ee-0f45-309f2531e2fc",
+"unit": "Spain",
+"s": 2,
+"t": "The grapes of Spain: five local stars and their homes",
+"sum": "Tempranillo leads Spain's reds, and Garnacha, Monastrell, Albariño and Verdejo each have a home region and a clear taste that the place helps explain.",
+"out": [
+"Name Spain's five star grapes and how each tastes",
+"Match each grape to the region it calls home",
+"Explain how thin or thick skins change a red"
+],
+"n": 18,
+"da": {
+"t": "Spaniens druer: fem lokale stjerner og deres hjemsteder",
+"sum": "Tempranillo fører an blandt Spaniens røde druer, og Garnacha, Monastrell, Albariño og Verdejo har hver et hjemsted og en tydelig smag, som stedet er med til at forklare.",
+"out": [
+"Nævne Spaniens fem stjernedruer, og hvordan hver af dem smager",
+"Koble hver drue til det område, der er dens hjemsted",
+"Forklare, hvordan tyndt eller tykt skind ændrer en rødvin"
+]
+}
+},
+{
+"id": "409a21f6-7da4-bdf9-8565-0b8f6d7f05dd",
+"unit": "Spain",
+"s": 3,
+"t": "Rioja: Spain's classic red",
+"sum": "Rioja is Spain's classic red: Tempranillo-led blends from three subzones, aged in oak the old way or the new, with labels that tell you how long.",
+"out": [
+"Place Rioja's three subzones by climate and style",
+"Name the grapes in a Rioja blend and their jobs",
+"Tell traditional from modern Rioja and pick a bottle"
+],
+"n": 17,
+"da": {
+"t": "Rioja: Spaniens klassiske rødvin",
+"sum": "Rioja er Spaniens klassiske rødvin: blandinger anført af Tempranillo fra tre delområder, lagret på eg på den gamle eller den nye måde, og etiketten fortæller, hvor længe.",
+"out": [
+"Placere Riojas tre delområder efter klima og stil",
+"Nævne druerne i en Rioja-blanding og deres roller",
+"Skelne traditionel fra moderne Rioja og vælge en flaske"
+]
+}
+},
+{
+"id": "cb7fca3d-4b7e-005d-bf24-0c706b6df977",
+"unit": "Spain",
+"s": 4,
+"t": "The Duero valley: Ribera, Toro and Rueda",
+"sum": "One river, three regions: high, bold Tempranillo reds in Ribera del Duero and Toro, and fresh, crisp Verdejo whites in Rueda, plus where to start.",
+"out": [
+"Explain how altitude shapes Ribera del Duero's reds",
+"Match Tinto Fino, Tinta de Toro and Verdejo to regions",
+"Choose a Duero wine from everyday to famous"
+],
+"n": 17,
+"da": {
+"t": "Duero-dalen: Ribera, Toro og Rueda",
+"sum": "Én flod, tre områder: kraftfulde Tempranillo-rødvine fra højt oppe i Ribera del Duero og fra Toro, friske, sprøde Verdejo-hvidvine fra Rueda, og hvor du skal begynde.",
+"out": [
+"Forklare, hvordan højden former Ribera del Dueros rødvine",
+"Koble Tinto Fino, Tinta de Toro og Verdejo til deres områder",
+"Vælge en vin fra Duero, fra hverdag til berømt"
+]
+}
+},
+{
+"id": "5e26cef5-71ef-1ab7-13e3-20d3cc070ac4",
+"unit": "Spain",
+"s": 5,
+"t": "Catalonia: Cava bubbles and Priorat power",
+"sum": "How Catalonia makes Cava, Spain's best-known traditional-method sparkling wine, how lees time ranks it, and why Priorat's old vines on black slate give such dense reds.",
+"out": [
+"Explain Cava's method and why its grapes are white",
+"Rank Cava's ageing levels and read its cork",
+"Describe Priorat's slate soil, its revival and its rank"
+],
+"n": 18,
+"da": {
+"t": "Catalonien: Cava-bobler og Priorat-kraft",
+"sum": "Hvordan Catalonien laver Cava, Spaniens bedst kendte mousserende vin efter den traditionelle metode, hvordan tiden på bærmen rangerer den, og hvorfor Priorats gamle vinstokke på sort skifer giver så tætte rødvine.",
+"out": [
+"Forklare Cavas metode, og hvorfor druerne er hvide",
+"Rangere Cavas lagringsniveauer og læse proppen",
+"Beskrive Priorats skiferjord, genoplivning og rang"
+]
+}
+},
+{
+"id": "0fc40746-181d-6637-b4cf-d0eab180fbbd",
+"unit": "Spain",
+"s": 6,
+"t": "Sherry and the south: flor, air and the solera",
+"sum": "Sherry comes from Spain's hot south and is mostly fortified: its classic styles are dry, and a yeast layer called flor decides between pale Fino and dark Oloroso.",
+"out": [
+"Explain fortified wine and why most sherry has no vintage",
+"Place the sherry triangle and its chalky albariza soil",
+"Tell Fino, Manzanilla, Amontillado and Oloroso apart by flor"
+],
+"n": 18,
+"da": {
+"t": "Sherry og Sydspanien: flor, luft og solera",
+"sum": "Sherry kommer fra det varme Sydspanien og er for det meste hedvin: De klassiske typer er tørre, og et lag gær kaldet flor afgør, om det bliver lys Fino eller mørk Oloroso.",
+"out": [
+"Forklare hedvin og hvorfor det meste sherry mangler årgang",
+"Placere sherrytrekanten og dens kridtholdige albariza-jord",
+"Skelne Fino, Manzanilla, Amontillado og Oloroso på flor"
+]
+}
+},
+{
+"id": "2c13a042-84aa-6acd-e159-b16224900877",
+"unit": "Spain",
+"s": 7,
+"t": "Read a Spanish label: tiers, ageing and key words",
+"sum": "Read a real Spanish bottle: the tier, from single estate to Vino de España, the ageing words and Roble, key words, Catalan terms and the numbered back label.",
+"out": [
+"Place Vino de Pago and Viñedo Singular on Spain's ladder",
+"Read Crianza, Reserva, Gran Reserva and Roble as ageing clues",
+"Decode a Spanish front and back label line by line"
+],
+"n": 18,
+"da": {
+"t": "Læs en spansk etiket: niveauer, lagring og nøgleord",
+"sum": "Læs en rigtig spansk flaske: niveauet, fra ét vingods til Vino de España, lagringsordene og Roble, nøgleord, catalanske ord og den nummererede bagetiket.",
+"out": [
+"Placere Vino de Pago og Viñedo Singular på Spaniens stige",
+"Aflæse Crianza, Reserva, Gran Reserva og Roble som lagringsfingerpeg",
+"Afkode en spansk for- og bagetiket linje for linje"
+]
+}
+},
+{
+"id": "8f0cb21c-ed90-4032-894d-4f6a0319672e",
+"unit": "Spain",
+"s": 8,
+"t": "Spain: Rioja, Ribera and beyond",
+"sum": "A buyer's and diner's tour of Spain: what each ageing word tastes like, Rioja and Ribera side by side, value picks, whites, bubbles, sherry and food.",
+"out": [
+"Choose a Spanish red by its ageing word and mood",
+"Compare Rioja, Ribera and Priorat side by side",
+"Pick value bottles and match Spanish wines to food"
+],
+"n": 18,
+"da": {
+"t": "Spanien: Rioja, Ribera og meget mere",
+"sum": "En rundtur i Spanien for dig, der køber og spiser: hvordan hvert lagringsord smager, Rioja og Ribera side om side, gode køb, hvidvine, bobler, sherry og mad.",
+"out": [
+"Vælge en spansk rødvin efter lagringsord og stemning",
+"Sammenligne Rioja, Ribera og Priorat side om side",
+"Finde gode køb og vælge spansk vin til maden"
+]
+}
+},
+{
+"id": "d7170656-caab-47b9-85c2-d15fbf5fc6b1",
+"unit": "Tasting & senses",
+"s": 0,
+"t": "Wine 101: the main styles of wine and how to read them",
+"sum": "Wine is grape juice fermented by yeast, and almost every bottle belongs to a few families you can read by colour, sweetness, bubbles and strength.",
+"out": [
+"Explain how yeast turns grape juice into wine",
+"Tell still, sparkling, sweet and fortified wines apart",
+"Read any wine by colour, sweetness, bubbles and strength"
+],
+"n": 18,
+"da": {
+"t": "Vin 101: de vigtigste vintyper og sådan aflæser du dem",
+"sum": "Vin er druesaft, som gær har forvandlet til alkohol, og næsten hver flaske hører til en af nogle få familier, som du kan kende på farve, sødme, bobler og styrke.",
+"out": [
+"Forklare, hvordan gær forvandler druesaft til vin",
+"Skelne mellem stille, mousserende og søde vine samt hedvine",
+"Aflæse enhver vin ud fra farve, sødme, bobler og styrke"
+]
+}
+},
+{
+"id": "b6aec9b7-bc1e-4671-8f10-0fe32ae219fe",
+"unit": "Tasting & senses",
+"s": 1,
+"t": "How to taste wine in 5 steps",
+"sum": "Tasting is just drinking, slowed down: See, Swirl, Smell, Sip and Savour, five steps that give each sense its turn and help you notice what you like.",
+"out": [
+"Name the five steps of tasting wine in order",
+"Explain why smell matters more than your tongue",
+"Notice and describe a wine's finish after swallowing"
+],
+"n": 18,
+"da": {
+"t": "Sådan smager du vin i 5 trin",
+"sum": "At smage er bare at drikke langsomt: Se, Sving, Duft, Slurk og Nyd, fem trin, der giver hver sans sin tur og hjælper dig med at lægge mærke til, hvad du kan lide.",
+"out": [
+"Nævne de fem trin i en vinsmagning i rækkefølge",
+"Forklare, hvorfor duften betyder mere end tungen",
+"Lægge mærke til og beskrive en vins eftersmag, efter du har sunket"
+]
+}
+},
+{
+"id": "15ebad76-d973-45e1-b752-9a8290bdcc36",
+"unit": "Tasting & senses",
+"s": 2,
+"t": "Body: what light and full really mean",
+"sum": "Body is the weight and texture of a wine in your mouth, from light to full, driven mainly by alcohol and extract and easily pictured as skim milk to cream.",
+"out": [
+"Explain what body means using the milk picture",
+"Name the two main things that add body",
+"Tell light-bodied from full-bodied wines by feel"
+],
+"n": 17,
+"da": {
+"t": "Fylde: hvad let og fyldig egentlig betyder",
+"sum": "Fylde er vinens vægt og tekstur i munden, fra let til fyldig. Den kommer især fra alkohol og ekstrakt og er nem at forestille sig som skummetmælk over for fløde.",
+"out": [
+"Forklare, hvad fylde betyder, med mælkebilledet",
+"Nævne de to vigtigste ting, der giver fylde",
+"Kende forskel på lette og fyldige vine ud fra fornemmelsen i munden"
+]
+}
+},
+{
+"id": "72ce4ce0-c890-42cc-a011-c8c0373c3a68",
+"unit": "Tasting & senses",
+"s": 3,
+"t": "Tannin: the grippy, drying feel in red wine",
+"sum": "Tannin is a feeling, not a flavour: where the drying grip comes from, why some grapes have more, how to judge it, and how time and food soften it.",
+"out": [
+"Recognise tannin as a drying, grippy feeling",
+"Explain where tannin comes from and why reds have more",
+"Choose food that softens a tannic red"
+],
+"n": 18,
+"da": {
+"t": "Tannin: den stramme, udtørrende fornemmelse i rødvin",
+"sum": "Tannin er en fornemmelse, ikke en smag: hvor det tørre greb kommer fra, hvorfor nogle druer har mere, hvordan du bedømmer det, og hvordan tid og mad gør det blødere.",
+"out": [
+"Genkende tannin som en stram, udtørrende fornemmelse",
+"Forklare, hvor tannin kommer fra, og hvorfor rødvin har mere",
+"Vælge mad, der gør en tanninrig rødvin blødere"
+]
+}
+},
+{
+"id": "7d1c7aaf-0c3d-4879-acc9-27cddbc77a75",
+"unit": "Tasting & senses",
+"s": 4,
+"t": "Acidity: why your mouth waters",
+"sum": "How to recognise acidity, the tart, mouth-watering freshness that keeps wine lively and food-friendly, and how to sense it without trusting any single clue.",
+"out": [
+"Recognise acidity as wine's tart, mouth-watering freshness",
+"Spot acidity using several clues, not just one",
+"Explain why acidity makes wine good with food"
+],
+"n": 18,
+"da": {
+"t": "Syre: derfor løber munden i vand",
+"sum": "Sådan genkender du syre, den syrlige, mundvandsdrivende friskhed, der holder vinen levende og madvenlig, og sådan fornemmer du den uden at stole blindt på et enkelt tegn.",
+"out": [
+"Genkende syre som vinens friske, mundvandsdrivende syrlighed",
+"Finde syren ved hjælp af flere tegn, ikke kun ét",
+"Forklare, hvorfor syre gør vin god til mad"
+]
+}
+},
+{
+"id": "8a8a87bb-5b7b-43ef-8d3c-6f14fe6a4316",
+"unit": "Tasting & senses",
+"s": 5,
+"t": "Sweet or dry? How to taste the difference",
+"sum": "Sweetness is sugar the yeast left behind. Learn the dry to sweet scale, the label words, and why a fruity smell can fool your nose.",
+"out": [
+"Explain how leftover sugar makes a wine sweet",
+"Place a wine on the dry to sweet scale",
+"Judge sweetness by taste, not by fruity smell"
+],
+"n": 18,
+"da": {
+"t": "Sød eller tør? Sådan smager du forskellen",
+"sum": "Sødme er sukker, som gæren har efterladt. Lær skalaen fra tør til sød, ordene på etiketten, og hvorfor en frugtig duft kan snyde din næse.",
+"out": [
+"Forklare, hvordan sukker, der er tilbage, gør en vin sød",
+"Placere en vin på skalaen fra tør til sød",
+"Bedømme sødme på smagen, ikke på en frugtig duft"
+]
+}
+},
+{
+"id": "ea252ea9-0358-481f-90b8-c7776070f576",
+"unit": "Tasting & senses",
+"s": 6,
+"t": "The aroma wheel: naming what you smell",
+"sum": "Name a wine's smell the easy way: pick a broad family first, then step out to the exact note, and learn the few smells that mean a wine is faulty.",
+"out": [
+"Sort a wine's smell into a broad family",
+"Spot the notes that point to oak",
+"Tell a personal impression from a wine fault"
+],
+"n": 17,
+"da": {
+"t": "Aromahjulet: sæt ord på duften",
+"sum": "Sæt ord på en vins duft på den nemme måde: vælg først en bred familie, gå så ud til den præcise note, og lær de få dufte, der betyder, at vinen har en fejl.",
+"out": [
+"Sortere en vins duft i en bred familie",
+"Genkende de noter, der peger på eg",
+"Skelne mellem et personligt indtryk og en vinfejl"
+]
+}
+},
+{
+"id": "7712f493-3882-43ba-a86f-2323fe37720d",
+"unit": "Tasting & senses",
+"s": 7,
+"t": "Primary, secondary, tertiary: where wine smells come from",
+"sum": "A wine's smells come in three layers: from the grape, from winemaking and from age. Sort them and you can read a wine's style, and guess its age.",
+"out": [
+"Sort wine smells into primary, secondary and tertiary",
+"Explain where each group of aromas comes from",
+"Use aromas as careful clues to a wine's age"
+],
+"n": 17,
+"da": {
+"t": "Primær, sekundær, tertiær: hvor vinens dufte kommer fra",
+"sum": "En vins dufte kommer i tre lag: fra druen, fra vinfremstillingen og fra alderen. Sortér dem, og du kan aflæse vinens stil og gætte dens alder.",
+"out": [
+"Sortere vindufte i primære, sekundære og tertiære",
+"Forklare, hvor hver gruppe af aromaer kommer fra",
+"Bruge aromaer som forsigtige spor til en vins alder"
+]
+}
+},
+{
+"id": "c9c5c95a-d265-41aa-966b-10fb72498243",
+"unit": "Tasting & senses",
+"s": 8,
+"t": "How temperature changes a wine",
+"sum": "Serving temperature turns a wine's smells and taste up or down, so chilling whites well and cooling reds slightly helps each one show its best.",
+"out": [
+"Explain how cold and warmth change a wine's taste",
+"Order wine styles from coldest to warmest serving",
+"Use a fridge and bucket to serve wine better"
+],
+"n": 16,
+"da": {
+"t": "Sådan ændrer temperatur en vin",
+"sum": "Serveringstemperaturen skruer op eller ned for en vins dufte og smag, så en god afkøling af hvidvin og en let nedkøling af rødvin hjælper hver af dem med at vise sig fra sin bedste side.",
+"out": [
+"Forklare, hvordan kulde og varme ændrer en vins smag",
+"Ordne vinens stilarter fra koldeste til varmeste servering",
+"Bruge køleskab og spand til at servere vin bedre"
+]
+}
+},
+{
+"id": "90c04205-6472-4ae2-acc3-8353d4d61ae8",
+"unit": "Tasting & senses",
+"s": 9,
+"t": "Building your palate: how anyone learns to taste",
+"sum": "Tasting is a skill anyone can build: attentive side-by-side practice, a memory bank of everyday smells and honest notes that map your taste.",
+"out": [
+"Explain why a great palate is built, not born",
+"Set up a side-by-side flight and a smell bank",
+"Keep honest notes that reveal what you enjoy"
+],
+"n": 18,
+"da": {
+"t": "Opbyg din gane: sådan lærer alle at smage",
+"sum": "Smagning er en færdighed, alle kan opbygge: opmærksom træning side om side, en bank af hverdagsdufte og ærlige noter, der tegner et kort over din smag.",
+"out": [
+"Forklare, hvorfor en god gane bygges op og ikke er medfødt",
+"Stille en flight op side om side og bygge en duftbank",
+"Skrive ærlige noter, der viser, hvad du nyder"
+]
+}
+},
+{
+"id": "8fd0c519-6836-42a1-b46d-07aa374ef141",
+"unit": "Terroir & vintages",
+"s": 1,
+"t": "What terroir really means, and how to taste it",
+"sum": "Terroir put to the test: how soil really works through water, why 'mineral' is not the taste of rock, and how to taste a place side by side.",
+"out": [
+"Explain how soil shapes wine through water",
+"Explain why minerality is not the taste of rock",
+"Set up a side-by-side tasting that shows terroir"
+],
+"n": 18,
+"da": {
+"t": "Hvad terroir egentlig betyder, og hvordan du smager det",
+"sum": "Terroir sat på prøve: hvordan jordbunden virker gennem vandet, hvorfor »mineralsk« ikke er smagen af sten, og hvordan du smager et sted side om side.",
+"out": [
+"Forklare, hvordan jordbunden præger vinen gennem vandet",
+"Forklare, hvorfor mineralitet ikke er smagen af sten",
+"Arrangere en smagning side om side, der viser terroir"
+]
+}
+},
+{
+"id": "6f15b4dc-40ba-4442-8708-39ef56e61bf9",
+"unit": "Terroir & vintages",
+"s": 2,
+"t": "Cool climate vs warm climate: how warmth shapes wine",
+"sum": "Why the warmth of a region sets its wine's style: the vine belt, life at the cool edge, the fixes growers and winemakers use, and a wine map on the move.",
+"out": [
+"Explain how a region's climate shapes its wine",
+"Place cool-edge and hot regions on a climate scale",
+"Read a label's alcohol figure as a climate clue"
+],
+"n": 17,
+"da": {
+"t": "Køligt eller varmt klima: Sådan former varmen vinen",
+"sum": "Hvorfor et områdes varme bestemmer vinens stil: vinbæltet, livet ved den kølige kant, vindyrkernes og vinmagernes greb og et vinatlas i bevægelse.",
+"out": [
+"Forklare, hvordan et områdes klima former dets vin",
+"Placere kølige og varme områder på en klimaskala",
+"Læse etikettens alkoholprocent som et fingerpeg om klimaet"
+]
+}
+},
+{
+"id": "6a1cd121-ded5-4826-aadf-448fd5e610e4",
+"unit": "Terroir & vintages",
+"s": 3,
+"t": "Why the vintage year matters, and when it doesn't",
+"sum": "Each year's weather is written into the wine. Learn where the year matters most, how to read a vintage chart and how to buy in a weak year.",
+"out": [
+"Explain how one year's weather changes a wine",
+"Read a vintage chart and use it wisely",
+"Spot where the vintage matters most, and least"
+],
+"n": 18,
+"da": {
+"t": "Hvorfor årgangen betyder noget, og hvornår den ikke gør",
+"sum": "Hvert års vejr bliver skrevet ind i vinen. Lær, hvor året betyder mest, hvordan du læser en årgangstabel, og hvad du skal købe i et svagt år.",
+"out": [
+"Forklare, hvordan ét års vejr ændrer en vin",
+"Læse en årgangstabel og bruge den klogt",
+"Genkende, hvor årgangen betyder mest, og hvor mindst"
+]
+}
+},
+{
+"id": "6a787f1d-620b-43a3-88c4-3f499d7922bc",
+"unit": "Terroir & vintages",
+"s": 4,
+"t": "Organic, biodynamic, natural, sustainable: what they promise",
+"sum": "Four label words describe how a wine is grown or made, not how good it tastes: what organic, biodynamic, natural and sustainable really promise.",
+"out": [
+"Explain what organic, biodynamic, natural and sustainable promise",
+"Read organic wine labels from the EU and US",
+"Tell a farming word from a cellar word"
+],
+"n": 18,
+"da": {
+"t": "Økologisk, biodynamisk, naturvin og bæredygtig: hvad ordene lover",
+"sum": "Fire ord på etiketten beskriver, hvordan en vin er dyrket eller lavet, ikke hvor god den smager: hvad økologisk, biodynamisk, naturvin og bæredygtig egentlig lover.",
+"out": [
+"Forklare, hvad økologisk, biodynamisk, naturvin og bæredygtig lover",
+"Læse økologiske vinetiketter fra EU og USA",
+"Kende forskel på et dyrkningsord og et kælderord"
+]
+}
+},
+{
+"id": "7ba975af-d57f-ac80-ba5a-68eb320aa820",
+"unit": "USA",
+"s": 1,
+"t": "The USA at a glance: sunshine, grape names and big flavour",
+"sum": "Why European grapes failed in the humid East but thrived in sunny California, how Pacific fog cools the coast, and why American labels name the grape.",
+"out": [
+"Explain why European vines thrived in California, not the East",
+"Describe how the Pacific and the Cascades shape vineyards",
+"Read a grape-named label and expect a ripe style"
+],
+"n": 18,
+"da": {
+"t": "USA i overblik: solskin, druenavne og masser af smag",
+"sum": "Hvorfor europæiske druer gik til i det fugtige østlige USA, men trivedes i det solrige Californien, hvordan tåge fra Stillehavet køler kysten, og hvorfor amerikanske etiketter angiver druen.",
+"out": [
+"Forklare, hvorfor europæiske vinstokke trivedes i Californien og ikke i øst",
+"Beskrive, hvordan Stillehavet og Cascade-bjergene former vinmarkerne",
+"Læse en etiket med et druenavn og forvente en moden stil"
+]
+}
+},
+{
+"id": "565e59f7-45af-c6a1-e448-1d5029db60ad",
+"unit": "USA",
+"s": 2,
+"t": "The grapes of the USA: the names to know",
+"sum": "American wine is usually labelled by grape, so learn Cabernet, Chardonnay, Pinot Noir and Zinfandel, and the story of White Zinfandel, and you can read much of the shelf.",
+"out": [
+"Describe how America's four key grapes taste",
+"Explain what makes a Chardonnay buttery or crisp",
+"Tell the story of White Zinfandel and two-name grapes"
+],
+"n": 18,
+"da": {
+"t": "USA's druer: navnene, du skal kende",
+"sum": "Amerikansk vin er som regel opkaldt efter druen, så lær Cabernet, Chardonnay, Pinot Noir og Zinfandel og historien om White Zinfandel, og du kan læse en stor del af hylden.",
+"out": [
+"Beskrive, hvordan Amerikas fire vigtigste druer smager",
+"Forklare, hvad der gør en Chardonnay smøragtig eller sprød",
+"Fortælle historien om White Zinfandel og druer med to navne"
+]
+}
+},
+{
+"id": "f22ee80c-8d2a-b1e7-6c45-0c0055fa0231",
+"unit": "USA",
+"s": 3,
+"t": "Napa Valley: Cabernet country",
+"sum": "Napa is a small, warm valley that makes ripe, full-bodied Cabernet Sauvignon, and its labels show a price ladder from everyday bottles to rare cult wines.",
+"out": [
+"Explain why Napa's south is cooler than its north",
+"Describe a typical Napa Cabernet and its flavours",
+"Place a Napa Cabernet on the price ladder"
+],
+"n": 17,
+"da": {
+"t": "Napa Valley: Cabernet-land",
+"sum": "Napa er en lille, varm dal, der laver moden, fyldig Cabernet Sauvignon, og dens etiketter viser en prisstige fra hverdagsflasker til sjældne kultvine.",
+"out": [
+"Forklare, hvorfor Napas sydlige del er køligere end den nordlige",
+"Beskrive en typisk Cabernet fra Napa og dens smage",
+"Placere en Cabernet fra Napa på prisstigen"
+]
+}
+},
+{
+"id": "0853ad50-cc55-be4b-ac15-584a227f342b",
+"unit": "USA",
+"s": 4,
+"t": "Sonoma and the cool California coast",
+"sum": "On California's coast the cold Pacific sets the style: vines nearer the sea are usually cooler, which gives fresher Pinot Noir and Chardonnay.",
+"out": [
+"Explain how the cold Pacific cools California's coast",
+"Match Sonoma and Central Coast areas to their wines",
+"Describe the price steps from everyday to famous"
+],
+"n": 18,
+"da": {
+"t": "Sonoma og Californiens kølige kyst",
+"sum": "På Californiens kyst er det det kolde Stillehav, der sætter stilen: Vinstokke tæt på havet er som regel køligere, og det giver friskere Pinot Noir og Chardonnay.",
+"out": [
+"Forklare, hvordan det kolde Stillehav køler Californiens kyst",
+"Forbinde områder i Sonoma og Central Coast med deres vine",
+"Beskrive pristrinnene fra hverdag til berømt"
+]
+}
+},
+{
+"id": "f46434fa-79d1-ce02-99a0-b8d61727c9b1",
+"unit": "USA",
+"s": 5,
+"t": "Oregon and Washington: one mountain range, two climates",
+"sum": "How the Cascade Mountains split the north-west: cool, wet Oregon makes Pinot Noir, while sunny, dry Washington grows ripe but fresh Cabernet, Merlot and Syrah.",
+"out": [
+"Explain how the Cascades give two states different climates",
+"Explain why Oregon's cool valley suits Pinot Noir",
+"Match the north-west's key grapes to their places"
+],
+"n": 17,
+"da": {
+"t": "Oregon og Washington: én bjergkæde, to klimaer",
+"sum": "Sådan deler Cascade-bjergene det nordvestlige USA: Køligt, vådt Oregon laver Pinot Noir, mens solrigt, tørt Washington dyrker moden, men frisk Cabernet, Merlot og Syrah.",
+"out": [
+"Forklare, hvordan Cascade-bjergene giver to delstater forskelligt klima",
+"Forklare, hvorfor Oregons kølige dal passer til Pinot Noir",
+"Koble de vigtigste druer i det nordvestlige USA til deres områder"
+]
+}
+},
+{
+"id": "2f409a5b-8b35-182e-bdf7-f009d1a00522",
+"unit": "USA",
+"s": 6,
+"t": "Reading an American label: place, grape, year",
+"sum": "How to read a real American bottle: why the place line beats the brand name, what each name promises, Oregon's stricter rules and the back-label clues.",
+"out": [
+"Tell a brand name from an appellation line",
+"Recall the minimum shares for place, grape and year",
+"Read an American front and back label"
+],
+"n": 18,
+"da": {
+"t": "Læs en amerikansk etiket: sted, drue, årgang",
+"sum": "Sådan læser du en rigtig amerikansk flaske: hvorfor stedlinjen slår mærkenavnet, hvad hvert navn lover, Oregons strengere regler og ledetrådene på bagetiketten.",
+"out": [
+"Skelne et mærkenavn fra en appellationslinje",
+"Huske minimumsandelene for sted, drue og årgang",
+"Læse en amerikansk for- og bagetiket"
+]
+}
+},
+{
+"id": "64c7a85e-2c11-4924-81af-4b00e5d21a00",
+"unit": "USA",
+"s": 7,
+"t": "California and beyond: what to buy and why",
+"sum": "A buyer's tour of American wine: choose by grape and place, the best picks from California, Oregon and Washington, food matches and a shopping list.",
+"out": [
+"Choose an American wine by its grape and place",
+"Match west-coast wines to steak, salmon, curry and barbecue",
+"Plan an American shopping list from treat to everyday"
+],
+"n": 18,
+"da": {
+"t": "Californien og meget mere: hvad du skal købe og hvorfor",
+"sum": "En indkøbsguide til amerikansk vin: vælg efter drue og sted, de bedste valg fra Californien, Oregon og Washington, mad til vinene og en indkøbsliste.",
+"out": [
+"Vælge en amerikansk vin ud fra drue og sted",
+"Sætte vine fra vestkysten sammen med bøf, laks, karry og barbecue",
+"Lægge en amerikansk indkøbsliste fra forkælelse til hverdag"
+]
+}
+},
+{
+"id": "bafe1e03-aeb2-4300-8d2b-3970985c63fc",
+"unit": "White grapes to know",
+"s": 1,
+"t": "Chardonnay: one grape, many styles",
+"sum": "Why one neutral grape gives crisp Chablis, rich oaked Meursault, buttery California and Champagne: how climate and winemaking shape Chardonnay.",
+"out": [
+"Explain why one neutral grape makes many styles",
+"Tell crisp Chablis from rich, buttery oaked Chardonnay",
+"Explain where butter, vanilla and toast come from"
+],
+"n": 17,
+"da": {
+"t": "Chardonnay: én drue, mange stilarter",
+"sum": "Hvorfor én neutral drue giver sprød Chablis, fyldig, fadlagret Meursault, smøragtig Chardonnay fra Californien og champagne: sådan former klima og vinfremstilling druen.",
+"out": [
+"Forklare, hvorfor én neutral drue giver mange stilarter",
+"Kende forskel på sprød Chablis og fyldig, smøragtig, fadlagret Chardonnay",
+"Forklare, hvor smør, vanilje og ristede noter kommer fra"
+]
+}
+},
+{
+"id": "43464be8-c744-4389-8e51-c4a647107f39",
+"unit": "White grapes to know",
+"s": 2,
+"t": "Sauvignon Blanc: crisp, green and zesty",
+"sum": "Sauvignon Blanc is a crisp white with high acidity and strong smells of gooseberry, grapefruit and cut grass, and it loves goat cheese, salads and seafood.",
+"out": [
+"Describe Sauvignon Blanc's acidity and classic aromas",
+"Tell Loire, Marlborough and Bordeaux styles apart",
+"Pick food that suits a crisp Sauvignon Blanc"
+],
+"n": 18,
+"da": {
+"t": "Sauvignon Blanc: sprød, grøn og livlig",
+"sum": "Sauvignon Blanc er en sprød hvidvin med høj syre og kraftige dufte af stikkelsbær, grapefrugt og nyslået græs, og den elsker gedeost, salater, fisk og skaldyr.",
+"out": [
+"Beskrive syren og de klassiske dufte i Sauvignon Blanc",
+"Kende forskel på stilene fra Loire, Marlborough og Bordeaux",
+"Vælge mad, der passer til en sprød Sauvignon Blanc"
+]
+}
+},
+{
+"id": "6936d1fa-5d0a-42f0-89c1-338c58215624",
+"unit": "White grapes to know",
+"s": 3,
+"t": "Riesling: from bone dry to sweet, and how to tell",
+"sum": "Riesling is a high-acid white made at every sweetness level, so read the label: trocken means dry, while Kabinett and similar words describe ripeness.",
+"out": [
+"Describe how Riesling tastes young and with age",
+"Spot a dry Riesling on a German label",
+"Choose an off-dry Riesling for spicy food"
+],
+"n": 17,
+"da": {
+"t": "Riesling: fra knastør til sød, og sådan kender du forskel",
+"sum": "Riesling er en hvidvin med høj syre, der laves i alle sødmegrader, så læs etiketten: trocken betyder tør, mens Kabinett og lignende ord beskriver modenhed.",
+"out": [
+"Beskrive, hvordan Riesling smager som ung og med alderen",
+"Finde en tør Riesling på en tysk etiket",
+"Vælge en halvtør Riesling til stærk mad"
+]
+}
+},
+{
+"id": "63ef91c2-9e77-4a35-807d-0c39f797b055",
+"unit": "White grapes to know",
+"s": 4,
+"t": "Crisp white grapes to know and how to pick one",
+"sum": "What makes a white wine crisp, six crisp whites from Italy, France, Spain and Austria, and how to let the food choose the bottle.",
+"out": [
+"Explain what makes a white wine crisp and fresh",
+"Recognise six crisp whites and where they come from",
+"Pick a crisp white to match your food"
+],
+"n": 17,
+"da": {
+"t": "Sprøde hvidvine: druerne, du skal kende, og sådan vælger du",
+"sum": "Hvad der gør en hvidvin sprød, seks sprøde hvidvine fra Italien, Frankrig, Spanien og Østrig, og hvordan du lader maden vælge flasken.",
+"out": [
+"Forklare, hvad der gør en hvidvin sprød og frisk",
+"Genkende seks sprøde hvidvine og vide, hvor de kommer fra",
+"Vælge en sprød hvidvin, der passer til maden"
+]
+}
+},
+{
+"id": "f558a6e6-ae46-4f74-833f-cb70afd50d30",
+"unit": "White grapes to know",
+"s": 5,
+"t": "Aromatic whites: perfume in a glass",
+"sum": "Gewürztraminer, Viognier, Muscat and Torrontés smell of flowers and fruit, but a sweet smell does not always mean a sweet wine.",
+"out": [
+"Recognise four aromatic white grapes by their scent",
+"Explain why a sweet smell does not mean sweetness",
+"Choose an aromatic white for spicy Asian dishes"
+],
+"n": 18,
+"da": {
+"t": "Aromatiske hvidvine: parfume i glasset",
+"sum": "Gewürztraminer, Viognier, Muscat og Torrontés dufter af blomster og frugt, men en sød duft betyder ikke altid en sød vin.",
+"out": [
+"Genkende fire aromatiske hvide druer på duften",
+"Forklare, hvorfor en sød duft ikke betyder sødme",
+"Vælge en aromatisk hvidvin til stærk asiatisk mad"
+]
+}
+},
+{
+"id": "07361d5c-25f9-4c5b-8ffc-641a19081969",
+"unit": "White grapes to know",
+"s": 6,
+"t": "The grapes behind rosé and bubbles",
+"sum": "How rosé gets its pink from red grape skins, why rosé Champagne breaks the rule, and the grapes behind Champagne, Prosecco and Cava.",
+"out": [
+"Explain how rosé gets its pink colour",
+"Name the main grapes behind rosé and Champagne",
+"Tell Prosecco and Cava apart by their grapes"
+],
+"n": 18,
+"da": {
+"t": "Druerne bag rosé og bobler",
+"sum": "Sådan får rosé sin lyserøde farve fra skindet på røde druer, derfor bryder rosé-champagne reglen, og disse druer står bag champagne, prosecco og cava.",
+"out": [
+"Forklare, hvordan rosé får sin lyserøde farve",
+"Nævne de vigtigste druer bag rosé og champagne",
+"Skelne mellem prosecco og cava ud fra druerne"
+]
+}
+},
+{
+"id": "d3c48cb7-66e5-4d36-824d-cdcb4efe07ce",
+"unit": "White grapes to know",
+"s": 7,
+"t": "Eight white grapes worth discovering, and their homes",
+"sum": "Link each white grape to its home: Chenin Blanc, Assyrtiko and Furmint are sharp and fresh, while Marsanne and Roussanne are rich and rounded.",
+"out": [
+"Link eight white grapes to their home regions",
+"Explain what acidity and full-bodied mean",
+"Tell sharp, fresh whites from rich, rounded ones"
+],
+"n": 18,
+"da": {
+"t": "Otte hvide druer værd at opdage, og deres hjemsteder",
+"sum": "Kobl hver hvid drue sammen med dens hjemsted: Chenin Blanc, Assyrtiko og Furmint er stramme og friske, mens Marsanne og Roussanne er fyldige og runde.",
+"out": [
+"Koble otte hvide druer til deres hjemsteder",
+"Forklare, hvad syre og fyldig betyder",
+"Skelne stramme, friske hvidvine fra fyldige, runde hvidvine"
+]
+}
+},
+{
+"id": "68566988-6695-4af3-83c0-b398d69c28d0",
+"unit": "Wine at the table",
+"s": 1,
+"t": "Ordering wine in a restaurant with confidence",
+"sum": "What to tell the sommelier, what the bottle ritual is for, and when sending a wine back is fair: faulty or wrong, not just unfamiliar.",
+"out": [
+"Ask for help and name your budget with confidence",
+"Check the bottle and the first taste for soundness",
+"Send back a faulty or wrong bottle politely"
+],
+"n": 17,
+"da": {
+"t": "Bestil vin på restaurant med ro i maven",
+"sum": "Hvad du skal sige til sommelieren, hvad ritualet med flasken er til for, og hvornår det er rimeligt at sende en vin tilbage: når den har en fejl eller er forkert, ikke bare ukendt.",
+"out": [
+"Bede om hjælp og nævne dit budget uden at tøve",
+"Tjekke flasken og den første smagsprøve for fejl",
+"Sende en flaske med fejl eller den forkerte flaske høfligt tilbage"
+]
+}
+},
+{
+"id": "af40e2e4-5762-43f0-8586-cc88ba3a8c40",
+"unit": "Wine at the table",
+"s": 2,
+"t": "Wine etiquette without the snobbery",
+"sum": "Why we toast, who is poured first, how to say no thanks and what to do with a wine you dislike: wine manners are care for people, not clever words.",
+"out": [
+"Show good wine manners without any fancy words",
+"Serve, toast and decline a top-up with confidence",
+"Handle a wine you dislike kindly at a friend's"
+],
+"n": 18,
+"da": {
+"t": "Vinetikette uden snobberi",
+"sum": "Hvorfor vi skåler, hvem der får skænket først, hvordan du siger nej tak, og hvad du gør med en vin, du ikke kan lide: vinmanerer er omtanke for mennesker, ikke kloge ord.",
+"out": [
+"Vise gode vinmanerer uden fine ord",
+"Skænke, skåle og sige nej tak til påfyldning med ro",
+"Håndtere en vin, du ikke kan lide, venligt hos en ven"
+]
+}
+},
+{
+"id": "bafe1dc9-5359-47e0-8495-d29e6ed893f6",
+"unit": "Wine at the table",
+"s": 3,
+"t": "Opening bottles: corks, screwcaps and bubbles",
+"sum": "Steady hands beat strength: twist the bottle for a screwcap, pull a cork in two calm steps, rescue a crumbling one, and ease bubbles out with a sigh.",
+"out": [
+"Open a screwcap and a cork calmly and cleanly",
+"Rescue a crumbling or broken cork with the right tool",
+"Open sparkling wine safely, with a sigh not a pop"
+],
+"n": 18,
+"da": {
+"t": "Åbn flasken: propper, skruelåg og bobler",
+"sum": "Rolige hænder slår rå kræfter: drej flasken ved et skruelåg, træk en prop op i to rolige trin, red en smuldrende prop, og lad boblerne slippe ud med et suk.",
+"out": [
+"Åbne et skruelåg og en prop roligt og rent",
+"Redde en smuldrende eller knækket prop med det rigtige redskab",
+"Åbne mousserende vin sikkert, med et suk og ikke et knald"
+]
+}
+},
+{
+"id": "42d0ce77-19b3-410c-829a-eadd5c978c68",
+"unit": "Wine at the table",
+"s": 4,
+"t": "Hosting a wine tasting at home",
+"sum": "Pick a theme, pour four to six wines from light to full, and make the evening about talking, not about being right.",
+"out": [
+"Choose a theme and four to six wines",
+"Plan tasting pours and set a simple table",
+"Run a single or double blind tasting with a reveal"
+],
+"n": 18,
+"da": {
+"t": "Hold en vinsmagning derhjemme",
+"sum": "Vælg et tema, skænk fire til seks vine fra let til fyldig, og lad aftenen handle om at snakke, ikke om at have ret.",
+"out": [
+"Vælge et tema og fire til seks vine",
+"Planlægge smagsprøver og dække et enkelt bord",
+"Holde en enkelt- eller dobbeltblind smagning med afsløring"
+]
+}
+},
+{
+"id": "adde5f2d-079e-4ecb-8294-77d91b90c5ff",
+"unit": "Wine at the table",
+"s": 5,
+"t": "How much wine for a party: the sums and the logistics",
+"sum": "Count wine for a dinner or a drinks party, stretch sparkling for a toast, buy on sale or return, chill a crowd's worth and get everyone home safely.",
+"out": [
+"Work out bottles for a dinner or a drinks party",
+"Plan the mix, the chilling and sale or return",
+"Plan water, food and a safe way home for guests"
+],
+"n": 18,
+"da": {
+"t": "Hvor meget vin til en fest: regnestykket og logistikken",
+"sum": "Regn vinen ud til en middag eller en stående fest, få boblerne til at række til en skål, køb med returret, køl til mange og få alle sikkert hjem.",
+"out": [
+"Regne flasker ud til en middag eller en stående fest",
+"Planlægge udvalget, nedkølingen og returretten",
+"Planlægge vand, mad og en tryg vej hjem for gæsterne"
+]
+}
+},
+{
+"id": "2a71c7d4-c333-4ff9-85b0-789980297ae0",
+"unit": "Wine at the table",
+"s": 6,
+"t": "Choosing wine as a gift: start with the person",
+"sum": "The best wine gift starts with what the person already enjoys, not the price tag: safe bets, story bottles, gifts for non-drinkers and a good note.",
+"out": [
+"Choose a wine gift around what the person enjoys",
+"Name safe bets and wines to skip as gifts",
+"Give a bottle with a note and no pressure"
+],
+"n": 18,
+"da": {
+"t": "Vin som gave: start med personen",
+"sum": "Den bedste vingave tager udgangspunkt i det, personen allerede kan lide, ikke i prisskiltet: sikre valg, flasker med en historie, gaver til dem, der ikke drikker, og en god hilsen.",
+"out": [
+"Vælge en vingave ud fra det, personen kan lide",
+"Nævne sikre valg og vine, du bør springe over som gave",
+"Overrække en flaske med en hilsen og uden pres"
+]
+}
+},
+{
+"id": "4ff91ff7-459c-4af4-b9e7-5d1bed2739f9",
+"unit": "Wine, health & moderation",
+"s": 1,
+"t": "Wine and health: a balanced view",
+"sum": "Why the 'red wine is good for your heart' story faded, what health bodies say today, how to count the alcohol in a glass, and how to keep amounts modest.",
+"out": [
+"Explain why the 'red wine for your heart' story faded",
+"Work out how much alcohol is in a glass",
+"Read drinking guidelines as low-risk ceilings, not safe levels"
+],
+"n": 18,
+"da": {
+"t": "Vin og sundhed: et afbalanceret syn",
+"sum": "Hvorfor historien om, at rødvin er godt for hjertet, falmede, hvad sundhedsmyndighederne siger i dag, hvordan du regner alkoholen i et glas ud, og hvordan du holder mængderne beskedne.",
+"out": [
+"Forklare, hvorfor historien om rødvin for hjertet falmede",
+"Regne ud, hvor meget alkohol der er i et glas",
+"Læse retningslinjer som lofter for lav risiko, ikke sikre niveauer"
+]
+}
+},
+{
+"id": "fd525fbf-ad16-49f2-a071-fece45577476",
+"unit": "Wine, health & moderation",
+"s": 2,
+"t": "Sulphites, histamines and wine headaches",
+"sum": "What “Contains sulphites” really means, who sulphites bother, and why the red-wine headache more likely comes from other compounds and the alcohol itself.",
+"out": [
+"Explain what “Contains sulphites” on a label means",
+"Describe who sulphites bother, and how",
+"Name the likelier causes of red-wine headaches"
+],
+"n": 18,
+"da": {
+"t": "Sulfitter, histamin og hovedpine af vin",
+"sum": "Hvad »Indeholder sulfitter« egentlig betyder, hvem sulfitter generer, og hvorfor hovedpine af rødvin snarere skyldes andre stoffer og selve alkoholen.",
+"out": [
+"Forklare, hvad »Indeholder sulfitter« på en etiket betyder",
+"Beskrive, hvem sulfitter generer, og hvordan",
+"Nævne de mere sandsynlige årsager til hovedpine af rødvin"
+]
+}
+},
+{
+"id": "ed622765-3d6c-4f8e-8f53-6561d29d1ee8",
+"unit": "Wine, health & moderation",
+"s": 3,
+"t": "Calories, sugar and \"skinny\" wine claims",
+"sum": "Where a glass of wine's calories really come from: mostly the alcohol, not the sugar. So stronger wines hold more, and \"skinny\" wines are usually just weaker.",
+"out": [
+"Explain why alcohol, not sugar, drives a wine's calories",
+"Estimate a glass's calories from its ABV and size",
+"Decode \"skinny\" and \"light\" claims on a wine label"
+],
+"n": 17,
+"da": {
+"t": "Kalorier, sukker og »skinny«-vin",
+"sum": "Hvor kalorierne i et glas vin egentlig kommer fra: mest fra alkoholen, ikke sukkeret. Stærkere vine har derfor flere, og »skinny«-vine er som regel bare svagere.",
+"out": [
+"Forklare, hvorfor alkoholen og ikke sukkeret styrer vinens kalorier",
+"Anslå et glas' kalorier ud fra alkoholprocent og størrelse",
+"Afkode »skinny« og »light« på en vinetiket"
+]
+}
+}
+]
