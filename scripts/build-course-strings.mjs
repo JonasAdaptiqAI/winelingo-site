@@ -15,7 +15,9 @@ const SRC = process.argv[2] ?? join(homedir(), "dev/winelingo-app/prototype/loca
 const LANGS = ["en", "da", "es", "de"];
 
 // What the course uses from the app. Whole namespaces, except onboarding (a handful of keys).
-const NAMESPACES = ["common", "auth", "learn", "hearts", "lessonTopics", "experience", "goal", "countries"];
+const NAMESPACES = ["common", "auth", "learn", "hearts", "lessonTopics", "experience", "goal", "countries", "review"];
+// The unit review's result screen reuses the practice games' lines (learn.tsx, phase "done" with a review).
+const GAMES = ["best", "correct", "rankTop", "rankGood", "rankPractice", "practiseThese", "perfect"];
 const ONBOARDING = ["levelQ", "levelSub", "countriesQ", "countriesAll", "countriesNone", "countriesChangeLater",
   "goalQ", "goalCommit", "continue", "back", "signOut", "saving", "saveError"];
 
@@ -53,9 +55,9 @@ const WEB = {
     paidTag: "Premium",
     unlock: "Unlock",
     lockedHint: "Included with Premium or the full course.",
-    authFree: "The first unit is free. Unlock the rest with a subscription or a one-time payment.",
+    authFree: "The first two units are free. Unlock the rest with a subscription or a one-time payment.",
     pwTitle: "Unlock the whole course",
-    pwSub: "The first unit is free. Get every unit and every country chapter with one of these.",
+    pwSub: "The first two units are free. Get every unit and every country chapter with one of these.",
     pwMonthlyName: "Premium, monthly",
     pwMonthlyPrice: "$3.99 a month",
     pwMonthlyNote: "3 days free, then $3.99 a month. Cancel any time.",
@@ -73,10 +75,10 @@ const WEB = {
     pwSoon: "Online payment opens very soon. Until then, Premium is available in the iPhone app.",
     pwFine: "Payments are handled by Paddle, our online reseller. The price is shown in your currency, including VAT.",
     pwRefresh: "Already paid? Refresh",
-    freeDoneTitle: "You've finished the free unit",
+    freeDoneTitle: "You've finished the free units",
     freeDoneBody: "Unlock the whole course to keep going.",
     checking: "Confirming your payment…",
-    trySave: "Create a free account to keep going. The whole first unit is free.", tryDoneTitle: "Nice work. Want to keep going?", tryDoneBody: "Create a free account to take the rest of the first unit, free. Or carry on in the iPhone app.", tryDoneCta: "Create a free account", tryDoneApp: "Get the iPhone app",
+    trySave: "Create a free account to keep going. The first two units are free.", tryDoneTitle: "Nice work. Want to keep going?", tryDoneBody: "Create a free account to take the rest of the first two units, free. Or carry on in the iPhone app.", tryDoneCta: "Create a free account", tryDoneApp: "Get the iPhone app",
     unlocked: "Thank you! The whole course is unlocked.",
     notYet: "We haven't received the payment yet. It can take a minute, then press Refresh.",
     footer: "For adults of legal drinking age (18+). Please enjoy wine responsibly.",
@@ -141,9 +143,9 @@ const WEB = {
     paidTag: "Premium",
     unlock: "Lås op",
     lockedHint: "Indgår i Premium eller hele kurset.",
-    authFree: "Den første enhed er gratis. Lås resten op med et abonnement eller en engangsbetaling.",
+    authFree: "De to første enheder er gratis. Lås resten op med et abonnement eller en engangsbetaling.",
     pwTitle: "Lås hele kurset op",
-    pwSub: "Den første enhed er gratis. Få alle enheder og alle landekapitler med en af disse.",
+    pwSub: "De to første enheder er gratis. Få alle enheder og alle landekapitler med en af disse.",
     pwMonthlyName: "Premium, månedligt",
     pwMonthlyPrice: "$3.99 om måneden",
     pwMonthlyNote: "3 dage gratis, derefter $3.99 om måneden. Opsig når som helst.",
@@ -161,10 +163,10 @@ const WEB = {
     pwSoon: "Betaling på nettet åbner meget snart. Indtil da kan du få Premium i iPhone-appen.",
     pwFine: "Betalingen håndteres af Paddle, vores forhandler på nettet. Prisen vises i din valuta, inklusive moms.",
     pwRefresh: "Har du betalt? Opdatér",
-    freeDoneTitle: "Du har taget den gratis enhed",
+    freeDoneTitle: "Du har taget de gratis enheder",
     freeDoneBody: "Lås hele kurset op for at fortsætte.",
     checking: "Bekræfter din betaling…",
-    trySave: "Opret en gratis konto for at fortsætte. Hele første enhed er gratis.", tryDoneTitle: "Godt gået. Vil du fortsætte?", tryDoneBody: "Opret en gratis konto og tag resten af første enhed gratis. Eller fortsæt i iPhone-appen.", tryDoneCta: "Opret en gratis konto", tryDoneApp: "Hent iPhone-appen",
+    trySave: "Opret en gratis konto for at fortsætte. De to første enheder er gratis.", tryDoneTitle: "Godt gået. Vil du fortsætte?", tryDoneBody: "Opret en gratis konto og tag resten af de to første enheder gratis. Eller fortsæt i iPhone-appen.", tryDoneCta: "Opret en gratis konto", tryDoneApp: "Hent iPhone-appen",
     unlocked: "Tak! Hele kurset er låst op.",
     notYet: "Vi har ikke modtaget betalingen endnu. Det kan tage et minut. Tryk derefter på Opdatér.",
     footer: "For voksne over 18 år. Nyd vin med omtanke.",
@@ -229,9 +231,9 @@ const WEB = {
     paidTag: "Premium",
     unlock: "Desbloquear",
     lockedHint: "Incluido en Premium o en el curso completo.",
-    authFree: "La primera unidad es gratis. Desbloquea el resto con una suscripción o un pago único.",
+    authFree: "Las dos primeras unidades son gratis. Desbloquea el resto con una suscripción o un pago único.",
     pwTitle: "Desbloquea todo el curso",
-    pwSub: "La primera unidad es gratis. Consigue todas las unidades y todos los capítulos de países con una de estas opciones.",
+    pwSub: "Las dos primeras unidades son gratis. Consigue todas las unidades y todos los capítulos de países con una de estas opciones.",
     pwMonthlyName: "Premium, mensual",
     pwMonthlyPrice: "3,99 $ al mes",
     pwMonthlyNote: "3 días gratis y después 3,99 $ al mes. Cancela cuando quieras.",
@@ -249,10 +251,10 @@ const WEB = {
     pwSoon: "El pago en línea abrirá muy pronto. Mientras tanto, Premium está disponible en la app de iPhone.",
     pwFine: "Los pagos los gestiona Paddle, nuestro revendedor en línea. El precio se muestra en tu moneda, con IVA incluido.",
     pwRefresh: "¿Ya has pagado? Actualizar",
-    freeDoneTitle: "Has terminado la unidad gratuita",
+    freeDoneTitle: "Has terminado las unidades gratuitas",
     freeDoneBody: "Desbloquea todo el curso para seguir.",
     checking: "Confirmando tu pago…",
-    trySave: "Crea una cuenta gratis para seguir. Toda la primera unidad es gratis.", tryDoneTitle: "Buen trabajo. ¿Quieres seguir?", tryDoneBody: "Crea una cuenta gratis y haz el resto de la primera unidad gratis. O sigue en la app para iPhone.", tryDoneCta: "Crear una cuenta gratis", tryDoneApp: "Descargar la app para iPhone",
+    trySave: "Crea una cuenta gratis para seguir. Las dos primeras unidades son gratis.", tryDoneTitle: "Buen trabajo. ¿Quieres seguir?", tryDoneBody: "Crea una cuenta gratis y haz el resto de las dos primeras unidades gratis. O sigue en la app para iPhone.", tryDoneCta: "Crear una cuenta gratis", tryDoneApp: "Descargar la app para iPhone",
     unlocked: "¡Gracias! Todo el curso está desbloqueado.",
     notYet: "Aún no hemos recibido el pago. Puede tardar un minuto; después pulsa Actualizar.",
     footer: "Para mayores de edad (18+). Disfruta del vino con responsabilidad.",
@@ -317,9 +319,9 @@ const WEB = {
     paidTag: "Premium",
     unlock: "Freischalten",
     lockedHint: "In Premium oder im ganzen Kurs enthalten.",
-    authFree: "Die erste Einheit ist gratis. Schalte den Rest mit einem Abo oder einer Einmalzahlung frei.",
+    authFree: "Die ersten beiden Einheiten sind gratis. Schalte den Rest mit einem Abo oder einer Einmalzahlung frei.",
     pwTitle: "Den ganzen Kurs freischalten",
-    pwSub: "Die erste Einheit ist gratis. Mit einer dieser Optionen bekommst du alle Einheiten und alle Länderkapitel.",
+    pwSub: "Die ersten beiden Einheiten sind gratis. Mit einer dieser Optionen bekommst du alle Einheiten und alle Länderkapitel.",
     pwMonthlyName: "Premium, monatlich",
     pwMonthlyPrice: "3,99 $ pro Monat",
     pwMonthlyNote: "3 Tage gratis, danach 3,99 $ pro Monat. Jederzeit kündbar.",
@@ -337,10 +339,10 @@ const WEB = {
     pwSoon: "Die Online-Zahlung startet sehr bald. Bis dahin gibt es Premium in der iPhone-App.",
     pwFine: "Die Zahlung wickelt Paddle ab, unser Online-Wiederverkäufer. Der Preis wird in deiner Währung inklusive MwSt. angezeigt.",
     pwRefresh: "Schon bezahlt? Aktualisieren",
-    freeDoneTitle: "Du hast die Gratis-Einheit geschafft",
+    freeDoneTitle: "Du hast die Gratis-Einheiten geschafft",
     freeDoneBody: "Schalte den ganzen Kurs frei, um weiterzumachen.",
     checking: "Deine Zahlung wird bestätigt…",
-    trySave: "Erstelle ein kostenloses Konto, um weiterzumachen. Die ganze erste Einheit ist kostenlos.", tryDoneTitle: "Gut gemacht. Möchtest du weitermachen?", tryDoneBody: "Erstelle ein kostenloses Konto und mach den Rest der ersten Einheit kostenlos. Oder mach in der iPhone-App weiter.", tryDoneCta: "Kostenloses Konto erstellen", tryDoneApp: "iPhone-App laden",
+    trySave: "Erstelle ein kostenloses Konto, um weiterzumachen. Die ersten beiden Einheiten sind kostenlos.", tryDoneTitle: "Gut gemacht. Möchtest du weitermachen?", tryDoneBody: "Erstelle ein kostenloses Konto und mach den Rest der ersten beiden Einheiten kostenlos. Oder mach in der iPhone-App weiter.", tryDoneCta: "Kostenloses Konto erstellen", tryDoneApp: "iPhone-App laden",
     unlocked: "Danke! Der ganze Kurs ist freigeschaltet.",
     notYet: "Wir haben die Zahlung noch nicht erhalten. Das kann eine Minute dauern, dann tippe auf Aktualisieren.",
     footer: "Für Erwachsene ab 18 Jahren. Bitte genieße Wein verantwortungsvoll.",
@@ -384,6 +386,10 @@ for (const l of LANGS) {
     o[ns] = src[ns];
   }
   o.onboarding = Object.fromEntries(ONBOARDING.filter((k) => src.onboarding?.[k] != null).map((k) => [k, src.onboarding[k]]));
+  o.games = Object.fromEntries(GAMES.map((k) => {
+    if (src.games?.[k] == null) throw new Error(`${l}.json has no "games.${k}"`);
+    return [k, src.games[k]];
+  }));
   o.web = WEB[l];
   out[l] = o;
 }

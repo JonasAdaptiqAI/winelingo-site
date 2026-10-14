@@ -62,24 +62,28 @@
     try { if (/[?&]redeem=open\b/.test(location.search)) sessionStorage.setItem("wl-gift-open", "redeem"); } catch (e) {}
   })();
   function pendingGift() { try { return localStorage.getItem(GIFT_KEY); } catch (e) { return null; } }
-  // Free on the web: the first unit. The rest needs Premium or the course purchase (0131).
-  var FREE_TOPIC = "Tasting & senses";
+  // Free on the web: the first two units. Foundations opens the course since 1.4.0 and holds two
+  // lessons that used to be in Tasting & senses (the old free unit, which guide cards still link
+  // to); the rest needs Premium or the course purchase (0131).
+  var FREE_TOPICS = ["Foundations", "Tasting & senses"];
 
-  // The course: one unit per lesson topic, in curriculum order (learn.tsx UNITS).
+  // The course: one unit per lesson topic, in curriculum order (learn.tsx UNITS, app 1.4.1).
   var UNITS = [
-    ["Tasting & senses", "tastingSenses", "uTasting"], ["Red grapes to know", "redGrapes", "uRedGrapes"],
-    ["White grapes to know", "whiteGrapes", "uWhiteGrapes"], ["Serving & glassware", "servingGlassware", "uServing"],
-    ["Food & wine", "foodWine", "pairing"], ["Reading the label", "readingLabel", "uLabel"],
+    ["Foundations", "foundations", "uTerroir"], ["Tasting & senses", "tastingSenses", "uTasting"],
+    ["Red grapes to know", "redGrapes", "uRedGrapes"], ["White grapes to know", "whiteGrapes", "uWhiteGrapes"],
+    ["Reading the label", "readingLabel", "uLabel"], ["Food & wine", "foodWine", "pairing"],
+    ["Serving & glassware", "servingGlassware", "uServing"], ["Wine at the table", "atTable", "uToast"],
+    ["Wine, health & moderation", "healthModeration", "uModeration"],
     ["France", "france", "uFrance"], ["Italy", "italy", "uItaly"], ["Spain", "spain", "uSpain"],
     ["Portugal", "portugal", "uPortugal"], ["Germany", "germany", "uGermany"], ["Austria", "austria", "uAustria"],
     ["USA", "usa", "uUSA"], ["Argentina", "argentina", "uArgentina"], ["Chile", "chile", "uChile"],
     ["Australia", "australia", "uAustralia"], ["New Zealand", "newzealand", "uNewZealand"],
-    ["South Africa", "southafrica", "uSouthAfrica"], ["In the vineyard", "inVineyard", "uVineyard"],
-    ["How wine is made", "howMade", "uWinemaking"], ["Terroir & vintages", "terroirVintages", "uTerroir"],
-    ["Quality, ageing & collecting", "qualityAgeing", "uCellar"], ["Buying & value", "buyingValue", "uShop"],
-    ["Wine at the table", "atTable", "uToast"], ["Wine, health & moderation", "healthModeration", "uModeration"],
-    ["A short history of wine", "history", "uHistory"]
+    ["South Africa", "southafrica", "uSouthAfrica"], ["How wine is made", "howMade", "uWinemaking"],
+    ["In the vineyard", "inVineyard", "uVineyard"], ["Quality, ageing & collecting", "qualityAgeing", "uCellar"],
+    ["Buying & value", "buyingValue", "uShop"], ["A short history of wine", "history", "uHistory"]
   ].map(function (u) { return { topic: u[0], key: u[1], img: u[2] }; });
+  // Every unit ends in a review (learn.tsx buildReview): about ten questions from its lessons.
+  var REVIEW_SIZE = 10;
   var IMG_KEYS = ["grapes", "regions", "countries", "pour", "cellar", "corks", "learn", "pairing", "autumn", "bottles",
     "types", "dusk"].concat(UNITS.map(function (u) { return u.img; }));
   var COUNTRIES = ["france", "italy", "spain", "portugal", "germany", "austria", "usa", "argentina", "chile",
@@ -99,7 +103,7 @@
   // ---------------------------------------------------------------- state
   var S = {
     session: null, profile: null, lang: "en", view: "loading",
-    lessons: null, done: new Set(), xp: null, streak: null, hearts: null,
+    lessons: null, done: new Set(), xp: null, streak: null, hearts: null, merged: {}, best: {},
     open: new Set(), openLater: new Set(), loadErr: false, notice: null
   };
   var hashAtLoad = location.hash;
@@ -143,6 +147,7 @@
     var id = null; try { id = localStorage.getItem(OPEN_KEY); } catch (e) {}
     if (!id || P || !S.lessons) return;
     try { localStorage.removeItem(OPEN_KEY); } catch (e) {}
+    if (S.merged[id]) id = S.merged[id];
     var l = S.lessons.find(function (x) { return x.id === id; });
     if (l) openPlayer(l);
   }
@@ -198,7 +203,7 @@
     cap: "M2 9l10-5 10 5-10 5L2 9Zm4 2.2V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.8M22 9v6",
     redo: "M4 12a8 8 0 1 0 2.3-5.7M4 4v4.5h4.5",
     gift: "M4 11h16v10H4zM3 7h18v4H3zM12 7v14M12 7S10.5 3 8 3.5 6.5 7 12 7Zm0 0s1.5-4 4-3.5S17.5 7 12 7Z",
-    copy: "M9 9h11v11H9zM5 15V4h11", caret: "m9 6 6 6-6 6", down: "m6 9 6 6 6-6", back: "m15 6-6 6 6 6"
+    copy: "M9 9h11v11H9zM5 15V4h11", cards: "M8 4h11a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1ZM4 7v12a1 1 0 0 0 1 1h11", caret: "m9 6 6 6-6 6", down: "m6 9 6 6 6-6", back: "m15 6-6 6 6 6"
   };
   var FILLED = { flame: 1, heart: 1, play: 1 };
   function icon(name, size, cls) {
@@ -233,7 +238,19 @@
   // ---------------------------------------------------------------- data
   function inChapter(l) {
     if (l && l.chapter) { l.topic = l.chapter; if (l.chapter_sort != null) l.sort_order = l.chapter_sort; }
+    return inUnit(l);
+  }
+  // The course path from 1.4.0 (lib/api.ts inUnit): `v2_unit` / `v2_sort` win over chapter and topic.
+  // A lesson merged into another (`v2_merged_into`) is left out of the path, and finishing it counts
+  // for the lesson it now lives in (withMergedDone).
+  function inUnit(l) {
+    if (l && l.v2_unit) { l.topic = l.v2_unit; if (l.v2_sort != null) l.sort_order = l.v2_sort; }
     return l;
+  }
+  function withMergedDone(done) {
+    var out = new Set(done);
+    for (var id in S.merged) if (done.has(id)) out.add(S.merged[id]);
+    return out;
   }
   // The translations overlay (lib/api.ts localize): each non-empty field replaces the English one.
   function localize(type, rows) {
@@ -257,17 +274,31 @@
   function loadLessons() {
     var base = "id, topic, title, summary, body, sort_order, steps, outcomes, chapter, chapter_sort";
     function q(cols) { return sb.from("lessons").select(cols).order("sort_order"); }
-    return q(base + ", v2_title, v2_summary, v2_len").then(function (res) {
+    return q(base + ", v2_title, v2_summary, v2_len, v2_unit, v2_sort, v2_merged_into").then(function (res) {
       return res.error && /v2/i.test(res.error.message || "") ? q(base) : res;
     }).then(function (res) {
       if (res.error) throw res.error;
-      return localize("lesson", res.data || []);
+      var merged = {}, rows = (res.data || []).filter(function (r) {
+        if (r.v2_merged_into) { merged[r.id] = r.v2_merged_into; return false; }
+        return true;
+      });
+      S.merged = merged;
+      return localize("lesson", rows);
     }).then(function (rows) { return rows.map(inChapter).map(withV2Title); });
   }
   function loadDone() {
     return sb.from("lesson_completions").select("lesson_id").eq("user_id", S.session.user.id).then(function (res) {
       return new Set((res.data || []).map(function (r) { return r.lesson_id; }));
     });
+  }
+  // Best score per practice game (lib/api.ts getPracticeBest); a unit review is "review:<topic>".
+  function loadBest() {
+    return sb.from("practice_results").select("game, score, total").eq("user_id", S.session.user.id)
+      .order("score", { ascending: false }).limit(500).then(function (res) {
+        var best = {};
+        (res.data || []).forEach(function (r) { if (!best[r.game]) best[r.game] = { score: r.score, total: r.total }; });
+        return best;
+      }).catch(function () { return {}; });
   }
   function loadStreak() {
     return sb.from("user_streaks").select("current_streak, longest_streak, last_active_date").eq("user_id", S.session.user.id)
@@ -328,7 +359,7 @@
     var premium = p.is_premium && (!p.premium_until || Date.parse(p.premium_until) > Date.now());
     return !!(premium || p.course_access);
   }
-  function unitOpen(topic) { return topic === FREE_TOPIC || hasAccess(); }
+  function unitOpen(topic) { return FREE_TOPICS.indexOf(topic) >= 0 || hasAccess(); }
   function inPath(topic) {
     var covers = UNIT_COUNTRIES[topic], c = countriesOf();
     if (!covers || !c) return true;
@@ -544,7 +575,11 @@
       var firstOpen = -1;
       for (var i = 0; i < ls.length; i++) if (!S.done.has(ls[i].id)) { firstOpen = i; break; }
       var nodes = ls.map(function (l, i) { return { lesson: l, index: i, state: S.done.has(l.id) ? "done" : i === firstOpen ? "current" : "locked" }; });
-      return { u: u, lessons: ls, nodes: nodes, doneCount: doneCount, later: !inPath(u.topic), here: false, paid: !unitOpen(u.topic) };
+      // The review opens once every lesson in the unit is done (a lesson added later locks it again).
+      var best = S.best["review:" + u.topic] || null;
+      var review = { best: best, lessonIds: ls.map(function (l) { return l.id; }),
+        state: firstOpen >= 0 ? "locked" : best ? "done" : "current" };
+      return { u: u, lessons: ls, nodes: nodes, review: review, doneCount: doneCount, later: !inPath(u.topic), here: false, paid: !unitOpen(u.topic) };
     }).filter(function (x) { return x.lessons.length > 0; });
     var ordered = list.filter(function (x) { return !x.later; }).concat(list.filter(function (x) { return x.later; }));
     var here = ordered.find(function (x) { return x.doneCount > 0 && x.doneCount < x.lessons.length; })
@@ -573,6 +608,8 @@
     var goal = goalXp(), xp = S.xp || 0;
     var firstLater = units.findIndex(function (x) { return x.later; });
     var firstCountry = firstLater < 0 ? units.findIndex(function (x) { return !!UNIT_COUNTRIES[x.u.topic]; }) : -1;
+    var free = units.filter(function (x) { return !x.paid; });
+    var freeDone = free.length > 0 && free.every(function (x) { return x.doneCount === x.lessons.length; });
 
     var summary = h("section", { class: "csum" },
       h("div", { class: "csum-l" },
@@ -584,7 +621,7 @@
           (S.streak && S.streak.current ? t("web.streak", { count: S.streak.current }) : t("web.noStreak")) })),
       next && hereU.paid ? h("div", { class: "next" },
         h("p", { class: "next-k", text: t("web.paidTag") }),
-        h("p", { class: "next-t", text: units[0] && units[0].u.topic === FREE_TOPIC && units[0].doneCount === units[0].lessons.length ? t("web.freeDoneTitle") : t("web.pwTitle") }),
+        h("p", { class: "next-t", text: freeDone ? t("web.freeDoneTitle") : t("web.pwTitle") }),
         h("p", { class: "muted", text: t("web.freeDoneBody") }),
         h("button", { class: "btn btn-primary", type: "button", onclick: showPaywall }, icon("lock", 16), t("web.unlock")))
       : next ? h("div", { class: "next" },
@@ -625,7 +662,7 @@
               h("span", { class: "ls", text: n.state === "locked" ? t("learn.lockedHint") : minutes(l) })),
             n.state === "locked" ? null : h("button", { class: "btn " + (n.state === "current" ? "btn-primary" : "btn-ghost") + " btn-sm", type: "button",
               onclick: function () { openPlayer(l); } }, n.state === "done" ? t("learn.replay") : t("learn.start")));
-        })));
+        }).concat(reviewRow(x))));
       }
       list.appendChild(card);
     });
@@ -642,6 +679,21 @@
           h("button", { class: "linkbtn", type: "button", onclick: function () { showRedeem(); } }, t("web.giftHaveCode"))),
         h("p", { class: "fine center", text: t("web.footer") }))));
     S.notice = null;
+  }
+  // The last node of a unit: its review. Locked until every lesson is done; the best score shows once taken.
+  function reviewRow(x) {
+    var r = x.review, best = r.best;
+    if (x.paid) return h("li", { class: "lrow review locked" },
+      h("span", { class: "lnode" }, icon("lock", 14)),
+      h("span", { class: "lmeta" }, h("span", { class: "lt", text: t("review.title") }), h("span", { class: "ls", text: t("web.lockedHint") })));
+    return h("li", { class: "lrow review " + r.state },
+      h("span", { class: "lnode" }, r.state === "locked" ? icon("lock", 14) : icon("cards", 16)),
+      h("span", { class: "lmeta" },
+        h("span", { class: "lt", text: r.state === "done" && best ? t("review.nodeBest", { score: best.score, total: best.total }) : t("review.title") }),
+        h("span", { class: "ls", text: r.state === "locked" ? t("review.lockedHint")
+          : r.state === "done" && best ? t("games.best", { score: best.score, total: best.total }) : t("review.sub", { count: REVIEW_SIZE }) })),
+      r.state === "locked" ? null : h("button", { class: "btn " + (r.state === "current" ? "btn-primary" : "btn-ghost") + " btn-sm", type: "button",
+        onclick: function () { openReview(x); } }, t("review.start")));
   }
   // The two ways to unlock the course. A plan opens RevenueCat's hosted checkout (Paddle) for this
   // account; RevenueCat sends the purchase to rc-webhook, which unlocks the account (profiles), and
@@ -780,13 +832,13 @@
     ]);
   }
   function loadCourse() {
-    return Promise.all([loadLessons(), loadDone(), loadXp(), loadStreak(), refreshHearts()])
-      .then(function (r) { S.lessons = r[0]; S.done = r[1]; S.xp = r[2]; S.streak = r[3]; S.loadErr = false; if (S.view === "course") { render(); openPending(); } })
+    return Promise.all([loadLessons(), loadDone(), loadXp(), loadStreak(), refreshHearts(), loadBest()])
+      .then(function (r) { S.lessons = r[0]; S.done = withMergedDone(r[1]); S.xp = r[2]; S.streak = r[3]; S.best = r[5]; S.loadErr = false; if (S.view === "course") { render(); openPending(); } })
       .catch(function () { S.loadErr = true; if (S.view === "course") render(); });
   }
   function refreshProgress() {
-    return Promise.all([loadDone(), loadXp(), loadStreak(), refreshHearts()]).then(function (r) {
-      S.done = r[0]; S.xp = r[1]; S.streak = r[2]; if (!P) render();
+    return Promise.all([loadDone(), loadXp(), loadStreak(), refreshHearts(), loadBest()]).then(function (r) {
+      S.done = withMergedDone(r[0]); S.xp = r[1]; S.streak = r[2]; S.best = r[4]; if (!P) render();
     }).catch(function () {});
   }
 
@@ -924,6 +976,51 @@
       });
     }).catch(function () { return null; });
   }
+  // ---- a unit review (learn.tsx loadReviewPool / buildReview)
+  // About ten questions from the unit's lessons, nothing new to read. Each lesson brings its bank
+  // questions first, then its own core questions; the review takes one question from each lesson in
+  // turn (in a random order), then mixes them. Only Course 2.0 lessons take part: an older lesson's
+  // bank was written for a text the course no longer shows. One request for every lesson's extras,
+  // with the same 'lesson_extra' translation overlay as a single lesson.
+  function loadReviewPool(ids) {
+    if (!ids.length) return Promise.resolve([]);
+    function q(cols) { return sb.from("lessons").select(cols).in("id", ids); }
+    return q("id, bank, deep_notes, deeper, v2").then(function (res) {
+      return res.error && /v2/i.test(res.error.message || "") ? q("id, bank, deep_notes, deeper") : res;
+    }).then(function (res) {
+      if (res.error) throw res.error;
+      return localize("lesson_extra", res.data || []);
+    }).then(function (rows) {
+      var by = {}; rows.forEach(function (r) { by[r.id] = r; });
+      var qs = function (raw) { return (Array.isArray(raw) ? raw : []).map(parseStep).filter(isQuestion); };
+      return ids.map(function (id) { var v2 = by[id] && by[id].v2; return v2 && Array.isArray(v2.steps) && v2.steps.length ? v2 : null; })
+        .filter(Boolean).map(function (v2) { return { bank: qs(v2.bank), core: qs(v2.steps) }; })
+        .filter(function (l) { return l.bank.length + l.core.length > 0; });
+    });
+  }
+  function buildReview(pool, seed) {
+    var r = rng(seed);
+    function shuffled(xs) {
+      var a = xs.slice();
+      for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(r() * (i + 1)); var tmp = a[i]; a[i] = a[j]; a[j] = tmp; }
+      return a;
+    }
+    // Bank first, each part in a random order; a core question the bank repeats is asked once.
+    var lists = shuffled(pool.map(function (l) {
+      var asked = new Set();
+      return shuffled(l.bank).concat(shuffled(l.core)).filter(function (s) {
+        var k = (s.q ? s.q.trim().toLowerCase() : "") + (s.kind === "match" ? "|" + s.pairs[0][0] : "");
+        if (asked.has(k)) return false;
+        asked.add(k); return true;
+      });
+    }));
+    var picked = [];
+    for (var round = 0; picked.length < REVIEW_SIZE && lists.some(function (l) { return l.length > round; }); round++)
+      lists.forEach(function (l) { if (l[round] && picked.length < REVIEW_SIZE) picked.push(l[round]); });
+    var steps = shuffled(picked).map(function (s) { return shuffleOpts(s, r); });
+    return { steps: steps, keys: steps.map(function (_, i) { return "r" + i; }), card: steps.map(function () { return null; }) };
+  }
+
   // The map outlines (assets/course/maps.js, ~110 KB) load with the first lesson, not with the page.
   var mapsReady = null;
   function loadMaps() {
@@ -957,6 +1054,29 @@
     });
     document.addEventListener("keydown", onKey);
   }
+  // A unit review plays in the same player: questions only, no hearts, scored like practice.
+  function openReview(x) {
+    if (P) return;
+    if (!unitOpen(x.u.topic)) { showPaywall(); return; }
+    var review = { topic: x.u.topic, title: t("lessonTopics." + x.u.key), lessonIds: x.review.lessonIds };
+    track("review-start", { unit: review.topic, lessons: review.lessonIds.length });
+    var lesson = { id: "review:" + review.topic, topic: review.topic, title: t("review.title"), steps: [] };
+    P = { lesson: lesson, topicLabel: review.title, review: review, extras: null, mode: "review",
+      el: h("div", { class: "player", role: "dialog", "aria-modal": "true", "aria-label": t("review.title") + ": " + review.title }) };
+    document.body.appendChild(P.el);
+    document.body.classList.add("noscroll");
+    P.el.appendChild(h("div", { class: "pl-load" }, h("div", { class: "spin" })));
+    document.addEventListener("keydown", onKey);
+    // Offline, or after 10 s, the pool is empty and the player says so.
+    var timeout = new Promise(function (res) { setTimeout(function () { res([]); }, 10000); });
+    var me = P;
+    Promise.race([Promise.all([loadReviewPool(review.lessonIds), loadMaps()]).then(function (r) { return r[0]; }), timeout])
+      .catch(function () { return []; }).then(function (pool) {
+        if (P !== me) return;
+        P.pool = pool;
+        startPlay("review");
+      });
+  }
   function closePlayer() {
     if (!P) return;
     var tried = S.trying ? P.lesson : null;
@@ -967,7 +1087,7 @@
     refreshProgress().then(render);
   }
   function startPlay(mode) {
-    var x = P.extras;
+    var x = P.extras || {};
     P.mode = mode;
     var seed = Date.now();
     // A lesson with `v2` plays everything from it (steps, bank, notes, bonus round, article, recap).
@@ -977,7 +1097,8 @@
       : { bank: x.bank || [], deep_notes: x.deep_notes || [], deeper: x.deeper || [] };
     var deeper = P.pack.deeper.map(parseStep).filter(Boolean);
     P.deeperSteps = deeper;
-    P.play = mode === "deeper" ? buildPlay(deeper, [], new Set(), seed)
+    P.play = mode === "review" ? buildReview(P.pool || [], seed)
+      : mode === "deeper" ? buildPlay(deeper, [], new Set(), seed)
       : buildPlay(normalizeSteps(P.lesson, P.topicLabel, v2), P.pack.bank, seenSet(P.lesson.id), seed, v2 ? "v2:" : "");
     P.steps = P.play.steps;
     P.qCount = P.steps.filter(isQuestion).length;
@@ -997,6 +1118,21 @@
     if (P.pos + 1 >= P.queue.length) finish(); else { P.pos++; drawPlayer(); }
   }
   function finish() {
+    if (P.review) {
+      P.phase = "done";
+      P.secs = Math.max(1, Math.round((Date.now() - P.startedAt) / 1000));
+      if (!P.recorded) {
+        // Scored like a practice game: XP per right answer, the streak, and the best score on the node.
+        P.recorded = true;
+        var rv = P, game = "review:" + P.review.topic, total = Math.max(1, P.qCount), prev = S.best[game];
+        track("review-complete", { unit: P.review.topic, score: P.firstRight, total: P.qCount });
+        if (!prev || P.firstRight > prev.score) S.best[game] = { score: P.firstRight, total: total };
+        sb.rpc("complete_practice", { p_game: game, p_score: P.firstRight, p_total: total })
+          .then(function (res) { if (typeof res.data === "number") rv.xpAfter = res.data; if (P === rv) drawPlayer(); }).catch(function () {});
+      }
+      drawPlayer();
+      return;
+    }
     if (P.phase !== "done") track("lesson-complete", { lesson: P.lesson.id });
     P.phase = "done";
     P.secs = Math.max(1, Math.round((Date.now() - P.startedAt) / 1000));
@@ -1026,7 +1162,8 @@
     if (step.kind === "multi") ok = P.multi.length === step.a.length && step.a.every(function (i) { return P.multi.indexOf(i) >= 0; });
     var first = P.missed.indexOf(curIdx()) < 0;
     if (ok) { P.completed++; P.combo++; if (first) P.firstRight++; }
-    else { P.combo = 0; if (first) P.missed.push(curIdx()); if (heartsInfo().limited) loseHeart().then(function () { if (P) drawPlayer(); }); }
+    // A review is practice: like the games in the app, it never costs a heart.
+    else { P.combo = 0; if (first) P.missed.push(curIdx()); if (heartsInfo().limited && !P.review) loseHeart().then(function () { if (P) drawPlayer(); }); }
     P.checked = ok; P.animate = false;
     drawPlayer();
   }
@@ -1041,7 +1178,7 @@
         P.checked = true;
       }
     } else {
-      if (!P.matchMiss && heartsInfo().limited) loseHeart().then(function () { if (P) drawPlayer(); });
+      if (!P.matchMiss && heartsInfo().limited && !P.review) loseHeart().then(function () { if (P) drawPlayer(); });
       P.bad = [P.matchL, j]; P.matchL = null; P.matchMiss = true; P.combo = 0;
     }
     P.animate = false; drawPlayer();
@@ -1082,7 +1219,14 @@
   function drawPlayer() {
     if (!P) return;
     var el = P.el; el.textContent = "";
-    if (P.phase === "done") { el.appendChild(doneScreen()); return; }
+    // A review with nothing to ask: offline, or the unit's lessons have no questions in this version.
+    if (P.review && !P.steps.length) {
+      el.appendChild(h("div", { class: "pl-wrap done" }, h("div", { class: "pl-body center" },
+        h("p", { class: "muted", text: t("review.loadError") }),
+        h("button", { class: "btn btn-ghost", type: "button", onclick: closePlayer }, t("learn.close")))));
+      return;
+    }
+    if (P.phase === "done") { el.appendChild(P.review ? reviewDoneScreen() : doneScreen()); return; }
     if (P.phase === "article") { el.appendChild(articleScreen()); return; }
     if (P.phase === "streak") { el.appendChild(streakScreen()); return; }
     var idx = curIdx(), step = P.steps[idx];
@@ -1097,7 +1241,7 @@
       h("div", { class: "pl-prog", role: "progressbar", "aria-valuemin": 0, "aria-valuemax": P.steps.length, "aria-valuenow": P.completed },
         h("i", { style: "width:" + (P.steps.length ? Math.round(100 * P.completed / P.steps.length) : 0) + "%" })),
       P.combo >= 2 ? h("span", { class: "chip chip-flame on", "aria-label": t("learn.inARow", { count: P.combo }) }, icon("flame", 16), String(P.combo)) : null,
-      heartsChip());
+      P.review ? null : heartsChip());
 
     var body = h("div", { class: "pl-body" });
     if (step.kind === "teach") {
@@ -1186,7 +1330,7 @@
         : step.kind === "flip" ? null
         : step.kind === "match" ? h("p", { class: "muted center", text: t("learn.matchHint") })
         : h("button", { class: "btn btn-primary btn-block", type: "button", disabled: !hasPick || P.checked !== null, onclick: check }, t("learn.check")),
-      P.pos === 0 && P.mode === "core" ? h("p", { class: "keyhint", text: t("web.keyHint") }) : null);
+      P.pos === 0 && P.mode !== "deeper" ? h("p", { class: "keyhint", text: t("web.keyHint") }) : null);
 
     el.appendChild(h("div", { class: "pl-wrap" }, top, body, foot));
 
@@ -1209,7 +1353,7 @@
           go)));
       setTimeout(function () { go.focus(); }, 30);
     }
-    if (H.out && P.checked !== false) el.appendChild(outOfHearts(H));
+    if (H.out && !P.review && P.checked !== false) el.appendChild(outOfHearts(H));
     P.animate = false;
   }
   // ---------------------------------------------------------------- Course 2.0 visuals
@@ -1384,6 +1528,37 @@
         S.trying ? null : h("div", { class: "row2" },
           P.mode === "core" && P.qCount > 0 ? h("button", { class: "btn btn-ghost", type: "button", onclick: function () { P.phase = "article"; drawPlayer(); } }, t("learn.readArticle")) : null,
           h("button", { class: "btn btn-ghost", type: "button", onclick: function () { startPlay(P.mode); } }, P.mode === "core" ? t("learn.againNew") : t("learn.again")))));
+  }
+  // The right answer in words, for a review's "practise these" list (learn.tsx answerOf).
+  function answerOf(step) {
+    return step.kind === "mcq" ? step.opts[step.a] : step.kind === "tf" ? t(step.a ? "learn.true" : "learn.false")
+      : step.kind === "multi" ? step.a.map(function (i) { return step.opts[i]; }).join(", ") : "";
+  }
+  // The practice-game result: right first time out of all, the ones to look at again, play again.
+  function reviewDoneScreen() {
+    var total = Math.max(1, P.qCount), score = P.firstRight;
+    var gained = P.xpAfter != null && P.xpBefore != null ? Math.max(0, P.xpAfter - P.xpBefore) : null;
+    var rank = score / total >= 0.85 ? t("games.rankTop") : score / total >= 0.6 ? t("games.rankGood") : t("games.rankPractice");
+    return h("div", { class: "pl-wrap done" },
+      h("div", { class: "pl-body center" },
+        h("div", { class: "ring", style: "--p:" + Math.round(100 * score / total), role: "img", "aria-label": score + "/" + total + " " + t("games.correct") },
+          h("b", null, String(score), h("small", { text: "/" + total })), h("span", { text: t("games.correct") })),
+        h("h2", { text: rank }),
+        h("p", { class: "muted", text: t("review.doneSub", { unit: P.review.title }) }),
+        h("div", { class: "stats" },
+          gained != null ? stat(t("learn.xpEarned"), "+" + gained, "wine") : null,
+          P.secs != null ? stat(t("learn.time"), Math.floor(P.secs / 60) + ":" + String(P.secs % 60).padStart(2, "0"), "orange") : null),
+        P.missed.length ? h("div", { class: "outcomes review-miss" }, h("h3", { text: t("games.practiseThese") }),
+          h("ul", null, P.missed.map(function (i) {
+            var q = P.steps[i], a = q ? answerOf(q) || q.key || "" : "";
+            return h("li", null, h("span", null, h("b", { text: q && q.q ? q.q : "" }), a ? h("small", { text: a }) : null));
+          })))
+          : h("div", { class: "tip ok" }, icon("check", 20), h("p", { text: t("games.perfect") }))),
+      h("div", { class: "pl-foot" },
+        h("button", { class: "btn btn-primary btn-block", type: "button", onclick: closePlayer }, t("learn.continue")),
+        h("button", { class: "btn btn-ghost btn-block", type: "button", onclick: function () {
+          track("review-start", { unit: P.review.topic, lessons: P.review.lessonIds.length, again: true }); startPlay("review");
+        } }, t("learn.againNew"))));
   }
   function articleScreen() {
     return h("div", { class: "pl-wrap" },
