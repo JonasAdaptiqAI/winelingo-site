@@ -17,7 +17,7 @@
   // a "Start" link (?app=1); everyone else, Google included, reads the landing page.
   var landing = document.getElementById("landing");
   if (landing) {
-    var wants = /[?&](app|purchase|sandbox|lang|gift|redeem)=/.test(location.search) ||
+    var wants = /[?&](app|purchase|sandbox|lang|gift|redeem|lesson)=/.test(location.search) ||
       /access_token|type=recovery|type=signup|error_description/.test(location.hash);
     try { for (var si = 0; !wants && si < localStorage.length; si++) if (/^sb-.*-auth-token$/.test(localStorage.key(si) || "")) wants = true; } catch (e) {}
     try { if (!wants && sessionStorage.getItem("wl-course-app")) wants = true; } catch (e) {}
@@ -103,6 +103,31 @@
     open: new Set(), openLater: new Set(), loadErr: false, notice: null
   };
   var hashAtLoad = location.hash;
+  // A free-lesson card on a guide links here with ?lesson=<id>&src=<page> (scripts/build-lesson-cta.mjs).
+  // Both wait in localStorage (so an email confirmation that opens a new tab still finds them) until
+  // the person is signed in and the lessons are loaded; then the lesson opens by itself and its key is
+  // cleared. src is kept: it is first-touch attribution for later events. src travels with the Umami events so a sign-up or a purchase can be
+  // traced back to the guide that sent it.
+  var OPEN_KEY = "wl-open-lesson", SRC_KEY = "wl-src";
+  (function () {
+    var q = location.search, m = q.match(/[?&]lesson=([0-9a-f-]{36})/), sm = q.match(/[?&]src=([a-z0-9-]{1,80})/);
+    try { if (m) localStorage.setItem(OPEN_KEY, m[1]); if (sm) localStorage.setItem(SRC_KEY, sm[1]); } catch (e) {}
+    if (m || sm) history.replaceState(null, "", location.pathname + q.replace(/[?&](lesson|src)=[^&]*/g, "").replace(/^&/, "?") + location.hash);
+  })();
+  function track(name, data) {
+    try {
+      if (!window.umami) return;
+      var d = data || {}; var src = localStorage.getItem(SRC_KEY); if (src) d.src = src;
+      window.umami.track(name, d);
+    } catch (e) {}
+  }
+  function openPending() {
+    var id = null; try { id = localStorage.getItem(OPEN_KEY); } catch (e) {}
+    if (!id || P || !S.lessons) return;
+    try { localStorage.removeItem(OPEN_KEY); } catch (e) {}
+    var l = S.lessons.find(function (x) { return x.id === id; });
+    if (l) openPlayer(l);
+  }
   var recovering = /type=recovery/.test(hashAtLoad);
 
   // ---------------------------------------------------------------- strings
@@ -385,6 +410,7 @@
       call.then(function (res) {
         busy = false;
         if (res.error) { say(t(authErrKey(res.error.message))); return; }
+        if (kind === "up") track("course-signup");
         if (kind === "up" && !res.data.session) say(t("auth.checkInbox"), true);
         else msg.textContent = "";
       }).catch(function () { busy = false; say(t("auth.errGeneric")); });
@@ -601,6 +627,7 @@
   // account; RevenueCat sends the purchase to rc-webhook, which unlocks the account (profiles), and
   // the checkout brings the buyer back to ?purchase=done.
   function showPaywall() {
+    track("paywall-view");
     var uid = S.session && S.session.user.id;
     function plan(cls, name, price, note, bullets, cta, base) {
       return h("div", { class: "plan " + cls },
@@ -734,7 +761,7 @@
   }
   function loadCourse() {
     return Promise.all([loadLessons(), loadDone(), loadXp(), loadStreak(), refreshHearts()])
-      .then(function (r) { S.lessons = r[0]; S.done = r[1]; S.xp = r[2]; S.streak = r[3]; S.loadErr = false; if (S.view === "course") render(); })
+      .then(function (r) { S.lessons = r[0]; S.done = r[1]; S.xp = r[2]; S.streak = r[3]; S.loadErr = false; if (S.view === "course") { render(); openPending(); } })
       .catch(function () { S.loadErr = true; if (S.view === "course") render(); });
   }
   function refreshProgress() {
@@ -889,6 +916,7 @@
   var P = null;   // the open player
   function openPlayer(lesson) {
     if (!unitOpen(lesson.topic)) { showPaywall(); return; }
+    track("lesson-start", { lesson: lesson.id });
     var topicLabel = (function () { var u = UNITS.find(function (x) { return x.topic === lesson.topic; }); return u ? t("lessonTopics." + u.key) : t("learn.title"); })();
     P = { lesson: lesson, topicLabel: topicLabel, extras: null, mode: "core", el: h("div", { class: "player", role: "dialog", "aria-modal": "true", "aria-label": lesson.title }) };
     document.body.appendChild(P.el);
@@ -942,6 +970,7 @@
     if (P.pos + 1 >= P.queue.length) finish(); else { P.pos++; drawPlayer(); }
   }
   function finish() {
+    if (P.phase !== "done") track("lesson-complete", { lesson: P.lesson.id });
     P.phase = "done";
     P.secs = Math.max(1, Math.round((Date.now() - P.startedAt) / 1000));
     if (!P.recorded) {
@@ -1367,7 +1396,7 @@
     (function poll() {
       loadProfile(S.session.user.id).then(function (res) {
         if (res.data) Object.assign(S.profile, res.data);
-        if (hasAccess()) { S.notice = t("web.unlocked"); refreshHearts().then(render); return; }
+        if (hasAccess()) { track("course-purchase"); S.notice = t("web.unlocked"); refreshHearts().then(render); return; }
         if (++tries < 20) { setTimeout(poll, 3000); return; }
         S.notice = t("web.notYet"); render();
       });

@@ -15,7 +15,7 @@
   <url><loc>https://winelingo.app/learn/sancerre-vs-pouilly-fume/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://winelingo.app/learn/french-vs-american-oak/</loc><lastmod>2026-08-20</lastmod></url>
   <url><loc>https://winelingo.app/learn/alternatives-to-red-burgundy/</loc><lastmod>2026-09-23</lastmod></url>
-  <url><loc>https://winelingo.app/tests/</loc><lastmod>2026-09-27</lastmod></url>
+  <url><loc>https://winelingo.app/tests/</loc><lastmod>2026-10-14</lastmod></url>
   <url><loc>https://winelingo.app/tests/serving-wine/</loc><lastmod>2026-09-27</lastmod></url>
   <url><loc>https://winelingo.app/tests/guest-questions/</loc><lastmod>2026-09-27</lastmod></url>
   <url><loc>https://winelingo.app/tests/white-grapes/</loc><lastmod>2026-09-27</lastmod></url>
@@ -30,7 +30,7 @@
   <url><loc>https://winelingo.app/countries/</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://winelingo.app/wine-styles/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://winelingo.app/wine-regions/</loc><lastmod>2026-09-23</lastmod></url>
-  <url><loc>https://winelingo.app/wine-glossary/</loc><lastmod>2026-08-02</lastmod></url>
+  <url><loc>https://winelingo.app/wine-glossary/</loc><lastmod>2026-10-14</lastmod></url>
   <url><loc>https://winelingo.app/countries/chile/</loc><lastmod>2026-08-02</lastmod></url>
   <url><loc>https://winelingo.app/countries/italy/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://winelingo.app/countries/spain/</loc><lastmod>2026-09-23</lastmod></url>
@@ -61,7 +61,7 @@
   <url><loc>https://winelingo.app/countries/argentina/</loc><lastmod>2026-08-02</lastmod></url>
   <url><loc>https://winelingo.app/countries/australia/</loc><lastmod>2026-08-02</lastmod></url>
   <url><loc>https://winelingo.app/tools/wine-calories/</loc><lastmod>2026-08-19</lastmod></url>
-  <url><loc>https://winelingo.app/wine-glossary/label/</loc><lastmod>2026-08-02</lastmod></url>
+  <url><loc>https://winelingo.app/wine-glossary/label/</loc><lastmod>2026-10-14</lastmod></url>
   <url><loc>https://winelingo.app/wine-regions/alsace/</loc><lastmod>2026-08-20</lastmod></url>
   <url><loc>https://winelingo.app/wine-regions/bierzo/</loc><lastmod>2026-08-20</lastmod></url>
   <url><loc>https://winelingo.app/wine-regions/puglia/</loc><lastmod>2026-08-20</lastmod></url>
@@ -87,8 +87,8 @@
   <url><loc>https://winelingo.app/wine-classifications/bordeaux-1855-classification/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://winelingo.app/wine-classifications/beaujolais-crus-explained/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://winelingo.app/wine-classifications/barolo-vs-barbaresco/</loc><lastmod>2026-08-20</lastmod></url>
-  <url><loc>https://winelingo.app/wine-glossary/grapes/</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://winelingo.app/wine-glossary/styles/</loc><lastmod>2026-08-02</lastmod></url>
+  <url><loc>https://winelingo.app/wine-glossary/grapes/</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://winelingo.app/wine-glossary/styles/</loc><lastmod>2026-10-14</lastmod></url>
   <url><loc>https://winelingo.app/wine-regions/abruzzo/</loc><lastmod>2026-08-20</lastmod></url>
   <url><loc>https://winelingo.app/wine-regions/kakheti/</loc><lastmod>2026-08-20</lastmod></url>
   <url><loc>https://winelingo.app/wine-regions/kamptal/</loc><lastmod>2026-08-20</lastmod></url>
@@ -240,9 +240,9 @@
   <url><loc>https://winelingo.app/grape-varieties/gamay/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://winelingo.app/grape-varieties/glera/</loc><lastmod>2026-08-02</lastmod></url>
   <url><loc>https://winelingo.app/grape-varieties/greco/</loc><lastmod>2026-08-20</lastmod></url>
-  <url><loc>https://winelingo.app/wine-glossary/regions/</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://winelingo.app/wine-glossary/serving/</loc><lastmod>2026-08-02</lastmod></url>
-  <url><loc>https://winelingo.app/wine-glossary/tasting/</loc><lastmod>2026-08-02</lastmod></url>
+  <url><loc>https://winelingo.app/wine-glossary/regions/</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://winelingo.app/wine-glossary/serving/</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://winelingo.app/wine-glossary/tasting/</loc><lastmod>2026-10-14</lastmod></url>
   <url><loc>https://winelingo.app/wine-regions/alentejo/</loc><lastmod>2026-08-20</lastmod></url>
   <url><loc>https://winelingo.app/wine-regions/bordeaux/</loc><lastmod>2026-08-20</lastmod></url>
   <url><loc>https://winelingo.app/wine-regions/burgundy/</loc><lastmod>2026-08-20</lastmod></url>
@@ -299,8 +299,8 @@
   <url><loc>https://winelingo.app/grape-varieties/viognier/</loc><lastmod>2026-09-07</lastmod></url>
   <url><loc>https://winelingo.app/grape-varieties/xarel-lo/</loc><lastmod>2026-08-02</lastmod></url>
   <url><loc>https://winelingo.app/grape-varieties/zweigelt/</loc><lastmod>2026-08-02</lastmod></url>
-  <url><loc>https://winelingo.app/learn/wine-for-beginners/</loc><lastmod>2026-07-27</lastmod></url>
-  <url><loc>https://winelingo.app/wine-glossary/winemaking/</loc><lastmod>2026-08-02</lastmod></url>
+  <url><loc>https://winelingo.app/learn/wine-for-beginners/</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://winelingo.app/wine-glossary/winemaking/</loc><lastmod>2026-10-14</lastmod></url>
   <url><loc>https://winelingo.app/wine-regions/hawke-s-bay/</loc><lastmod>2026-08-20</lastmod></url>
   <url><loc>https://winelingo.app/wine-regions/marlborough/</loc><lastmod>2026-08-20</lastmod></url>
   <url><loc>https://winelingo.app/wine-regions/napa-valley/</loc><lastmod>2026-08-20</lastmod></url>
@@ -402,7 +402,7 @@
   <url><loc>https://winelingo.app/wine-styles/marlborough-sauvignon-blanc/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://winelingo.app/learn/understanding-your-wine-taste-profile/</loc><lastmod>2026-08-19</lastmod></url>
   <url><loc>https://winelingo.app/learn/how-to-order-wine-at-a-restaurant/</loc><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://winelingo.app/learn/wine-sweetness-chart/</loc><lastmod>2026-09-24</lastmod></url>
+  <url><loc>https://winelingo.app/learn/wine-sweetness-chart/</loc><lastmod>2026-10-14</lastmod></url>
   <url><loc>https://winelingo.app/learn/how-long-does-open-wine-last/</loc><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://winelingo.app/learn/how-to-practise-wine-tasting-at-home/</loc><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://winelingo.app/learn/types-of-wine/</loc><lastmod>2026-08-19</lastmod></url>

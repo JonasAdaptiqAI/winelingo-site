@@ -1,0 +1,29 @@
+{
+  "_about": "Topic-matched lesson cards (scripts/build-lesson-cta.mjs). Each page points at one lesson from the free 'Tasting & senses' unit, so the browser link never hits the paywall. 'before' is a literal string in the page; the card is inserted just before it. 'band' rewrites the heading and text of the page's dark App Store band.",
+  "appStorePt": "",
+  "pages": {
+    "learn/wine-for-beginners/index.html": {
+      "lesson": "d7170656-caab-47b9-85c2-d15fbf5fc6b1",
+      "hook": "Prefer to learn by doing? Our first lesson walks you through the main styles of wine, with a few quick questions along the way.",
+      "before": "<h2>Start with what you already like</h2>",
+      "band": ["Start with the wine in your hand", "Scan any label and Winelingo tells you what the wine is, how it should taste and why, in plain words. Free to download on the App Store."]
+    },
+    "learn/wine-sweetness-chart/index.html": {
+      "lesson": "8a8a87bb-5b7b-43ef-8d3c-6f14fe6a4316",
+      "hook": "Reading a chart is one thing; tasting it is another. This lesson teaches you to taste where a wine sits on the dry-to-sweet scale.",
+      "before": "<h2>What “dry” actually means</h2>",
+      "band": ["Is this bottle sweet or dry?", "Scan the label and Winelingo shows the wine’s sweetness, body, tannin and acidity, then explains what you are tasting. Free to download on the App Store."]
+    },
+    "wine-glossary/index.html": {
+      "lesson": "ea252ea9-0358-481f-90b8-c7776070f576",
+      "hook": "Words like “bouquet” and “herbaceous” stick faster once you have put them to a real smell. This lesson shows you how.",
+      "before": "<!-- glossary-az",
+      "band": ["Put the words to a real glass", "Scan any label and Winelingo explains the wine in plain words, with a short lesson to go with it. Free to download on the App Store."]
+    },
+    "tests/index.html": {
+      "lesson": "d7170656-caab-47b9-85c2-d15fbf5fc6b1",
+      "hook": "Got a few wrong? Start the course where everyone starts: a short lesson on the main styles of wine.",
+      "before": "<p class=\"qz-biz\""
+    }
+  }
+}

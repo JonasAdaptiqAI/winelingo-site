@@ -3,7 +3,7 @@
    Language: ?lang=xx, else the visitor's saved choice, else the browser language. */
 (function () {
   var UI = {
-    en: { hubH: "Test what you know about wine", hubP: "Ten questions each, with a short explanation after every answer. Made for restaurant staff and anyone who wants to learn wine.", q: "Question", next: "Next question", result: "See result", right: "Correct", wrong: "Not quite. The answer is ",
+    en: { hubH: "Wine Quiz: Test What You Know About Wine", hubP: "Eight free wine quizzes of ten questions each, with a short explanation after every answer. Good wine trivia for beginners, and real training for restaurant staff.", q: "Question", next: "Next question", result: "See result", right: "Correct", wrong: "Not quite. The answer is ",
       deeper: "Go deeper", again: "Take the test again", all: "All tests", score: "Your score",
       m3: "Excellent. You could run the floor tonight.", m2: "Solid. One more round and it sticks.", m1: "Good start. Read the explanations and try again.",
       appT: "Keep learning in the app", appP: "Scan any label, take short lessons and build your palate. Free to download on the App Store.", appB: "Download Winelingo",
