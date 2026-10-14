@@ -158,3 +158,38 @@ Exported as `beginner-<wine>.jpg` / `.webp` (1200x675) and `-800.webp`.
 | beginner-pinot-noir.jpg | A glass of pale ruby Pinot Noir with cherries and wild mushrooms in a stone cellar | /learn/wine-for-beginners/#pinot-noir |
 | beginner-merlot.jpg | A glass of deep ruby Merlot with plums, cherries and chocolate in a candlelit room | /learn/wine-for-beginners/#merlot |
 | beginner-malbec.jpg | A glass of inky Malbec with blackberries and violets, a grill and the Andes at sunset behind | /learn/wine-for-beginners/#malbec |
+
+
+## Learn-guide photos (October 2026)
+
+Each hand-written `/learn/` guide got its own hero photo (and a learn-hub thumbnail and a 1200x630
+share image), replacing generic photos that were shared by up to 23 pages. Where a Winelingo course
+cover already showed the guide's subject it is reused (the course covers come from
+`winelingo-app/prototype/assets/img/SOURCES.md`) and upscaled with Higgsfield's ByteDance
+upscaler from 1080 px; four course covers that did not meet the bar were replaced with new images.
+Every image was reviewed at full size and as a 1500x560 crop. Files: `learn-<slug>.jpg`, `.webp`,
+`-800.webp`, `-1200.webp`, `-og.jpg`.
+
+| File | Subject | Source |
+|---|---|---|
+| learn-alternatives-to-red-burgundy.jpg | Burgundy vineyard rows on the Côte de Beaune | Real photo from the Winelingo course covers: Beaune (Côte d'Or) vineyards, Havang(nl), CC0, https://commons.wikimedia.org/wiki/File:Beaune_(C%C3%B4te_d%27Or,_Fr)_Vignobles.JPG. AI-upscaled (Higgsfield, ByteDance upscaler). |
+| learn-french-vs-american-oak.jpg | Two oak barrels with different grain and toast in a barrel cellar, a glass of red on top | AI-generated, Higgsfield GPT Image 2.5, high, 2K, 21:9 (October 2026). |
+| learn-how-long-does-open-wine-last.jpg | An opened red wine bottle sealed with a steel stopper beside a glass, the fridge glowing behind | AI-generated, Higgsfield GPT Image 2.5, high, 2K, 21:9 (October 2026). |
+| learn-how-many-units-in-a-bottle-of-wine.jpg | A glass of red wine beside a glass of water on a table by a window | Winelingo course cover (AI-generated, Higgsfield GPT Image 2.5, 2026-10-05), AI-upscaled (Higgsfield, ByteDance upscaler). |
+| learn-how-to-learn-about-wine.jpg | A wine atlas open on a sunny table with a glass of white and a glass of red for comparison | AI-generated, Higgsfield GPT Image 2.5, high, 2K, 21:9 (October 2026). |
+| learn-how-to-order-wine-at-a-restaurant.jpg | A candlelit restaurant table with an open wine list while a taste of red is poured | AI-generated, Higgsfield GPT Image 2.5, high, 2K, 21:9 (October 2026). |
+| learn-how-to-practise-wine-tasting-at-home.jpg | Two glasses of red side by side on a kitchen table, the bottles hidden in tea towels for a blind tasting | AI-generated, Higgsfield GPT Image 2.5, high, 2K, 21:9 (October 2026). |
+| learn-how-to-read-a-wine-label.jpg | Close-up of two Bordeaux wine labels showing the château, appellation and vintage | Real photo from the Winelingo course covers: Two bottles of Château Léoville-Poyferré, public domain, https://commons.wikimedia.org/wiki/File:Two_bottles_of_Ch%C3%A2teau_L%C3%A9oville-Poyferr%C3%A9.jpg. AI-upscaled (Higgsfield, ByteDance upscaler). |
+| learn-how-to-taste-wine.jpg | A woman with her eyes closed smelling a glass of red wine | Winelingo course cover (AI-generated, Higgsfield GPT Image 2.5, 2026-10-05), AI-upscaled (Higgsfield, ByteDance upscaler). |
+| learn-how-wine-is-made.jpg | A winemaker punching down the grape skins in an open fermenting vat | Winelingo course cover (AI-generated, Higgsfield GPT Image 2.5, 2026-10-05), AI-upscaled (Higgsfield, ByteDance upscaler). |
+| learn-low-sugar-wine.jpg | A glass of dry white wine and a flute of dry sparkling wine with lemons and olives in a bright kitchen | AI-generated, Higgsfield GPT Image 2.5, high, 2K, 21:9 (October 2026). |
+| learn-sancerre-vs-pouilly-fume.jpg | Ripe white grape bunches hanging on the vine | Real photo from the Winelingo course covers: Chardonnay grapes, August 2024, Sarah Stierch, CC0, https://commons.wikimedia.org/wiki/File:Chradonnay_grapes_-_August_2024_-_Sarah_Stierch.jpg. AI-upscaled (Higgsfield, ByteDance upscaler). |
+| learn-types-of-wine.jpg | Six types of wine from sparkling to fortified on a round oak board, seen from above | AI-generated, Higgsfield GPT Image 2.5, high, 2K, 21:9 (October 2026). |
+| learn-understanding-your-wine-taste-profile.jpg | Four glasses of wine with a lemon, tea leaves, honey and an oak stave standing for acidity, tannin, sweetness and oak | AI-generated, Higgsfield GPT Image 2.5, high, 2K, 21:9 (October 2026). |
+| learn-what-are-tannins-in-wine.jpg | Dark red wine grapes ripening on the vine | Real photo from the Winelingo course covers: CABERNETS.wiki2, Dario Rettore, public domain, https://commons.wikimedia.org/wiki/File:CABERNETS.wiki2.JPG. AI-upscaled (Higgsfield, ByteDance upscaler). |
+| learn-wine-alcohol-content.jpg | A light Moscato, a red wine and a small glass of Port lined up from low to high alcohol | AI-generated, Higgsfield GPT Image 2.5, high, 2K, 21:9 (October 2026). |
+| learn-wine-faults.jpg | A bright ruby wine beside a dull brownish one, with a stained cork in front | AI-generated, Higgsfield GPT Image 2.5, high, 2K, 21:9 (October 2026). |
+| learn-wine-for-beginners.jpg | Friends raising glasses of red and white wine at a candlelit dinner | Winelingo course cover (AI-generated, Higgsfield GPT Image 2.5, 2026-10-05), AI-upscaled (Higgsfield, ByteDance upscaler). |
+| learn-wine-myths.jpg | Tears running down the inside of a glass of red wine beside a screw-cap bottle and a cork | AI-generated, Higgsfield GPT Image 2.5, high, 2K, 21:9 (October 2026). |
+| learn-wine-storage-temperature.jpg | Dusty bottles resting on their sides in a vaulted cellar | Winelingo course cover (AI-generated, Higgsfield GPT Image 2.5, 2026-10-05), AI-upscaled (Higgsfield, ByteDance upscaler). |
+| learn-wine-sweetness-chart.jpg | Six wines from dry sparkling to sweet Port lined up on a marble counter, grapes at one end and honey at the other | AI-generated, Higgsfield GPT Image 2.5, high, 2K, 21:9 (October 2026). |
