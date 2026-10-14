@@ -116,6 +116,7 @@ builds a private taste profile from the wines you rate. The data controller is
   <tr><td>Basic product-analytics events, keyed to your account identifier</td><td>To understand usage and improve the app.</td></tr>
   <tr><td>A device notification token, only if you allow notifications</td><td>To send the reminders you opted into (for example, that your learning streak is about to end). You can switch each kind of notification off, or choose your own reminder time, in the app (Profile → Notifications). Turning notifications off in iOS Settings stops them all.</td></tr>
   <tr><td>When you use the app: the times you complete lessons, practice, tests and tastings, and whether you were active on a given day</td><td>To send your reminder around the time you usually learn rather than at a fixed hour, and to estimate each day how likely you are to come back, so that people who will probably return anyway get their reminder later. This estimate is calculated from your own activity only. It decides when we send you a reminder and nothing else: it is not used for advertising, not shared with anyone, and has no other effect on your account. If you choose your own reminder time, we use that time instead.</td></tr>
+  <tr><td>Your email address and language, if you sign up for the free 5-day wine course by email</td><td>To send the five lessons you asked for, after you confirm your address. We stop after day 5, and you can unsubscribe at any time with the link in every email; we keep a record that you unsubscribed so we don't email you again.</td></tr>
   <tr><td>Gift codes, if you buy the course as a gift or redeem one</td><td>To show the buyer their codes and unlock the course for whoever redeems one. We keep which account bought each code and which account redeemed it.</td></tr>
   <tr><td>Subscription status and purchase history, if you buy Premium</td><td>To unlock the features you've paid for on all your devices and support restores and refunds. Payment itself is handled entirely by Apple, or by Paddle when you buy on our website — we never see your payment details.</td></tr>
 </table></div>
@@ -130,6 +131,7 @@ builds a private taste profile from the wines you rate. The data controller is
   <tr><td>PostHog</td><td>Privacy-focused product analytics.</td></tr>
   <tr><td>Expo</td><td>Delivers push notifications to your device, if you allow them.</td></tr>
   <tr><td>RevenueCat</td><td>Manages subscription status and receipts for purchases (Apple, or Paddle on our website, processes the payment).</td></tr>
+  <tr><td>Resend</td><td>Sends the emails of the free 5-day wine course, if you sign up for it.</td></tr>
   <tr><td>Paddle</td><td>Our online reseller (Merchant of Record) for purchases on winelingo.app: takes the payment, handles VAT and sends receipts. Paddle collects your payment details and email directly; we only receive the purchase status.</td></tr>
 </table></div>
 <p>Some processors operate outside the EEA; where they do, transfers are covered by appropriate safeguards
