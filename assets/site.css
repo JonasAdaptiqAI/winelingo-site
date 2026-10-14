@@ -542,3 +542,7 @@ p.qz-biz{display:block}
   .reveal{opacity:1 !important; transform:none !important}
   table{page-break-inside:avoid}
 }
+
+/* Photos on the "10 easy wines" picks (learn/wine-for-beginners) */
+.wp-photo{margin:4px 0 14px; border-radius:16px; overflow:hidden; aspect-ratio:16/9; background:var(--parchment); box-shadow:var(--shadow-sm)}
+.wp-photo img{display:block; width:100%; height:100%; object-fit:cover}
