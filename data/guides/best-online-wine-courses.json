@@ -98,5 +98,9 @@
   "href": "/course/",
   "label": "Winelingo's online wine course",
   "count": "166 interactive lessons in 26 units, first unit free"
+ },
+ "hero": {
+  "img": "guide-best-online-wine-courses",
+  "alt": "A laptop showing an online wine lesson beside a glass of red wine and a notebook"
  }
 }

@@ -106,5 +106,9 @@
   "href": "/course/wine-tasting/",
   "label": "Wine tasting, the free first course unit",
   "count": "10 short interactive lessons"
+ },
+ "hero": {
+  "img": "guide-words-to-describe-wine",
+  "alt": "An open notebook of tasting notes between a glass of white and a glass of red wine"
  }
 }

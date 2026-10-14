@@ -108,5 +108,9 @@
   "href": "/course/serving-wine/",
   "label": "Serving wine, the course unit",
   "count": "6 short interactive lessons"
+ },
+ "hero": {
+  "img": "guide-how-many-glasses-of-wine-in-a-bottle",
+  "alt": "Red wine being poured into the last of five filled glasses on a long table"
  }
 }

@@ -102,5 +102,9 @@
   "href": "/course/wine-tasting/",
   "label": "Wine tasting, the free first course unit",
   "count": "10 short interactive lessons"
+ },
+ "hero": {
+  "img": "guide-dry-red-wine",
+  "alt": "A glass of dry red wine on an oak table in a candlelit cellar with barrels"
  }
 }

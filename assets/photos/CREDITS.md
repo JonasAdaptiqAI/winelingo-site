@@ -104,3 +104,35 @@ replacement from Unsplash/Pexels (both commercial-safe) and keep the same filena
 | food-grilled-veg.jpg | Sliced grilled vegetables on a green ceramic plate | images.unsplash.com/photo-1625944227313-4f7f68e6b3fa |
 | food-lentil-stew.jpg | Two bowls of lentil stew on a table | images.unsplash.com/photo-1648455320791-a667c8aab7e4 |
 | food-bruschetta.jpg | Bruschetta with tomato and herbs on a wooden table | images.unsplash.com/photo-1594978583693-8dfdfc93f052 |
+
+
+## AI-generated guide photos (October 2026)
+
+The hero photos of the eighteen `/learn/` guides added in October 2026 are **AI-generated**.
+They were made with Higgsfield (model: GPT Image 2.5, quality "high", 2K, 21:9) in the same
+editorial style as Winelingo's carousel covers. None shows a real person's face, a real label
+or a brand. Every image was reviewed at full resolution (hands, glasses, labels, logic) before
+use, and one was regenerated (a cellar scene had a pulled cork next to a still-sealed bottle).
+Each comes as `guide-<slug>.jpg` (1500x560 hero), `.webp` / `-800.webp` / `-1200.webp`, and
+`-og.jpg` (1200x630 share image).
+
+| File | Subject | Used on |
+|---|---|---|
+| guide-sweet-wines-for-beginners.jpg | Two glasses of golden sweet wine beside a halved peach, honeycomb and green grapes | /learn/sweet-wines-for-beginners/ |
+| guide-dry-red-wine.jpg | A glass of dry red wine on an oak table in a candlelit cellar with barrels | /learn/dry-red-wine/ |
+| guide-dry-white-wine.jpg | A glass of crisp dry white wine on a sunny terrace above the sea, with lemon and herbs | /learn/dry-white-wine/ |
+| guide-types-of-red-wine.jpg | Five glasses of red wine in a row, from pale ruby to deep purple | /learn/types-of-red-wine/ |
+| guide-types-of-white-wine.jpg | Five glasses of white wine in a row, from water-pale to deep gold | /learn/types-of-white-wine/ |
+| guide-how-many-glasses-of-wine-in-a-bottle.jpg | Red wine being poured into the last of five filled glasses on a long table | /learn/how-many-glasses-of-wine-in-a-bottle/ |
+| guide-does-wine-go-bad.jpg | An opened old bottle with its pulled cork and corkscrew in a stone cellar of dusty bottles | /learn/does-wine-go-bad/ |
+| guide-should-red-wine-be-chilled.jpg | A bottle of red wine in an ice bucket beside a glass of red at sunset over vineyards | /learn/should-red-wine-be-chilled/ |
+| guide-prosecco-vs-champagne.jpg | Two flutes of sparkling wine between two sparkling wine bottles on a marble bar | /learn/prosecco-vs-champagne/ |
+| guide-how-to-serve-champagne.jpg | Hands easing the cork out of a sparkling wine bottle under a white napkin, flutes waiting | /learn/how-to-serve-champagne/ |
+| guide-is-wine-vegan-gluten-free.jpg | A crate of freshly picked dark grapes and a glass of red wine in a winery | /learn/is-wine-vegan-gluten-free/ |
+| guide-what-does-wine-taste-like.jpg | A glass of red wine with cherries, blackberries, thyme, vanilla and dark chocolate | /learn/what-does-wine-taste-like/ |
+| guide-words-to-describe-wine.jpg | An open notebook of tasting notes between a glass of white and a glass of red wine | /learn/words-to-describe-wine/ |
+| guide-wine-101.jpg | Four glasses of wine, sparkling, white, rosé and red, in a tasting room overlooking vineyards | /learn/wine-101/ |
+| guide-how-to-host-a-wine-tasting.jpg | A candlelit table set for a blind tasting, with bottles in paper bags and a cheese board | /learn/how-to-host-a-wine-tasting/ |
+| guide-wset-levels-explained.jpg | Three glasses of wine on a tasting mat beside a study book, a pencil and a spittoon | /learn/wset-levels-explained/ |
+| guide-how-to-become-a-sommelier.jpg | A sommelier in an apron presenting a bottle of red wine at a candlelit restaurant table | /learn/how-to-become-a-sommelier/ |
+| guide-best-online-wine-courses.jpg | A laptop showing an online wine lesson beside a glass of red wine and a notebook | /learn/best-online-wine-courses/ |

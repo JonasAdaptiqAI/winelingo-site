@@ -110,5 +110,9 @@
   "href": "/course/wine-tasting/",
   "label": "Wine tasting, the free first course unit",
   "count": "10 short interactive lessons"
+ },
+ "hero": {
+  "img": "guide-sweet-wines-for-beginners",
+  "alt": "Two glasses of golden sweet wine beside a halved peach, honeycomb and green grapes"
  }
 }

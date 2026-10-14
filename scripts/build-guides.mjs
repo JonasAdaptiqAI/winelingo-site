@@ -66,6 +66,7 @@ for (const f of files) {
   if (only && g.slug !== only) continue;
   if (`${g.slug}.json` !== f) throw new Error(`${f}: slug ${g.slug} does not match the file name`);
   check(g, f);
+  if (g.hero) for (const v of [".jpg", ".webp", "-800.webp", "-1200.webp", "-og.jpg"]) if (!existsSync(join(ROOT, "assets/photos", g.hero.img + v))) throw new Error(`${f}: missing photo ${g.hero.img}${v}`);
   const url = `https://winelingo.app/learn/${g.slug}/`;
   const published = g.published || TODAY;
   const title = `${g.title.replace(/\s*\|\s*Winelingo$/, "")} | Winelingo`;
@@ -77,6 +78,11 @@ for (const f of files) {
   for (const [re, v] of [[/(<meta name="description" content=")[^"]*/, g.metaDescription], [/(<meta property="og:description" content=")[^"]*/, g.metaDescription], [/(<meta name="twitter:description" content=")[^"]*/, g.metaDescription],
     [/(<meta property="og:title" content=")[^"]*/, title], [/(<meta name="twitter:title" content=")[^"]*/, title]]) p = p.replace(re, (_, a) => a + esc(v));
   p = p.split(donorUrl).join(url);
+  if (g.hero) {
+    // Share image: the guide's own photo, cut to 1200x630 (assets/photos/<img>-og.jpg).
+    const og = `https://winelingo.app/assets/photos/${g.hero.img}-og.jpg`;
+    p = p.replace(/(<meta property="og:image" content=")[^"]*/, (_, a) => a + og).replace(/(<meta name="twitter:image" content=")[^"]*/, (_, a) => a + og);
+  }
   const blocks = [
     { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: "https://winelingo.app/" },
@@ -100,7 +106,7 @@ for (const f of files) {
     <h1 class="reveal d1">${escT(g.h1)}</h1>
     <p class="deck reveal d2">${escT(g.deck)}</p>
     <p class="byline">By <a href="/about/">Jonas Egeskov</a> · Updated <time datetime="${TODAY}">${longDate(TODAY)}</time></p>
-  </div></section><article class="prose">${g.intro.replace("<p>", '<p class="lead">')}</article><article class="prose">${sections}</article><section class="wrap" style="max-width:var(--maxw-prose);padding-bottom:10px"><div class="callout"><strong>Keep learning</strong><div style="margin-top:10px;display:grid;gap:8px">${g.keepLearning.map((l) => `<a href="${l.href}">${escT(l.anchor)}</a>`).join("")}</div><p style="margin:12px 0 0;font-size:13px;color:var(--muted)">More from Winelingo: <a href="/learn/">the full learn hub</a>.</p></div></section><section class="section" style="padding-top:20px"><div class="wrap"><div class="section-head"><p class="eyebrow center reveal">FAQ</p><h2 class="reveal">Questions &amp; answers</h2></div><div class="faq reveal d1">
+  </div></section>${g.hero ? `<div class="hero-photo"><picture><source type="image/webp" srcset="/assets/photos/${g.hero.img}-800.webp 800w, /assets/photos/${g.hero.img}-1200.webp 1200w, /assets/photos/${g.hero.img}.webp 1500w" sizes="100vw"><img src="/assets/photos/${g.hero.img}.jpg" alt="${esc(g.hero.alt)}" width="1500" height="560" fetchpriority="high" decoding="async"></picture></div>` : ""}<article class="prose">${g.intro.replace("<p>", '<p class="lead">')}</article><article class="prose">${sections}</article><section class="wrap" style="max-width:var(--maxw-prose);padding-bottom:10px"><div class="callout"><strong>Keep learning</strong><div style="margin-top:10px;display:grid;gap:8px">${g.keepLearning.map((l) => `<a href="${l.href}">${escT(l.anchor)}</a>`).join("")}</div><p style="margin:12px 0 0;font-size:13px;color:var(--muted)">More from Winelingo: <a href="/learn/">the full learn hub</a>.</p></div></section><section class="section" style="padding-top:20px"><div class="wrap"><div class="section-head"><p class="eyebrow center reveal">FAQ</p><h2 class="reveal">Questions &amp; answers</h2></div><div class="faq reveal d1">
 ${g.faq.map((x, i) => `<details${i === 0 ? " open" : ""}><summary>${escT(x.q)}${pm}</summary><div class="a"><p>${escT(x.a)}</p></div></details>`).join("\n")}
 </div></div></section>${appband}<!-- course-band (scripts/build-guides.mjs) -->
 <aside class="course-band"><div class="wrap"><div class="cb-in">
@@ -112,7 +118,7 @@ ${g.faq.map((x, i) => `<details${i === 0 ? " open" : ""}><summary>${escT(x.q)}${
 <!-- /course-band -->
 </main>`;
   p = p.replace(/<main id="main">[\s\S]*?<\/main>/, main);
-  for (const leak of ["How to Taste Wine", "red-swirl", "Ã", "â€"]) if (p.includes(leak)) throw new Error(`${f}: donor leak "${leak}"`);
+  for (const leak of ["How to Taste Wine", "red-swirl.", "Ã", "â€"]) if (p.includes(leak)) throw new Error(`${f}: donor leak "${leak}"`);
   mkdirSync(join(ROOT, "learn", g.slug), { recursive: true });
   writeFileSync(join(ROOT, "learn", g.slug, "index.html"), p);
   n++;

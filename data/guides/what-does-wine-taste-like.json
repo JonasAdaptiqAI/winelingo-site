@@ -101,5 +101,9 @@
   "href": "/course/wine-tasting/",
   "label": "Wine tasting, the free first course unit",
   "count": "10 short interactive lessons"
+ },
+ "hero": {
+  "img": "guide-what-does-wine-taste-like",
+  "alt": "A glass of red wine with cherries, blackberries, thyme, vanilla and dark chocolate"
  }
 }
