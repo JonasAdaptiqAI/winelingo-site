@@ -1,5 +1,5 @@
 {
-  "_about": "Topic-matched lesson cards (scripts/build-lesson-cta.mjs). Each page points at one lesson from the free 'Tasting & senses' unit, so the browser link never hits the paywall. 'before' is a literal string in the page; the card is inserted just before it. 'band' rewrites the heading and text of the page's dark App Store band.",
+  "_about": "Topic-matched lesson cards (scripts/build-lesson-cta.mjs). Each page points at one lesson from a free unit ('Foundations' or 'Tasting & senses', the first two units of the course), so the browser link never hits the paywall. 'before' is a literal string in the page; the card is inserted just before it. 'band' rewrites the heading and text of the page's dark App Store band.",
   "appStorePt": "",
   "pages": {
     "learn/wine-for-beginners/index.html": {
@@ -98,8 +98,8 @@
       ]
     },
     "learn/should-red-wine-be-chilled/index.html": {
-      "lesson": "c9c5c95a-d265-41aa-966b-10fb72498243",
-      "hook": "A few degrees change how a wine smells and tastes. This lesson shows you what happens, glass in hand.",
+      "lesson": "15ebad76-d973-45e1-b752-9a8290bdcc36",
+      "hook": "The reds that take a chill best are the light-bodied ones. This lesson teaches you to feel a wine’s body, glass in hand.",
       "before": "<h2>Which red wines should not be served cold?</h2>",
       "band": [
         "Serve it at its best",
@@ -116,8 +116,8 @@
       ]
     },
     "learn/how-to-serve-champagne/index.html": {
-      "lesson": "c9c5c95a-d265-41aa-966b-10fb72498243",
-      "hook": "Why is sparkling wine served so cold? This lesson shows how temperature changes what you taste.",
+      "lesson": "d7170656-caab-47b9-85c2-d15fbf5fc6b1",
+      "hook": "Sparkling is one of the main styles of wine. This first lesson walks you through all of them and how to tell them apart.",
       "before": "<h2>How to open a bottle of Champagne safely</h2>",
       "band": [
         "Champagne, Prosecco or Cava?",

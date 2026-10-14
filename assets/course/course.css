@@ -356,3 +356,18 @@ body.noscroll{overflow:hidden}
 .try-save b{color:var(--wine-deep, #3b0a1e)}
 .try-save span{font-size:14.5px; color:var(--muted, #8a7f86)}
 .pl-foot a.btn{text-decoration:none; margin-top:8px}
+
+/* ---------- unit review (the last node of every unit) ---------- */
+.lrow.review{border-top-style:dashed}
+.lrow.review.current .lnode{background:var(--wine)}
+.ring b small{font-size:22px; color:var(--sec); font-family:var(--font-body, inherit)}
+.review-miss ul{gap:12px}
+.review-miss li span{display:grid; gap:2px}
+.review-miss li b{font-weight:600; font-size:15px; color:var(--ink)}
+.review-miss li small{font-size:14px; color:var(--ok)}
+.tip.ok{background:var(--ok-bg); color:var(--ok); width:100%; text-align:left}
+.tip.ok p{font-weight:600}
+
+/* Photo credit under a unit card whose cover is CC BY-SA (author, licence, source) */
+.unit-credit{margin:0; padding:0 14px 8px; text-align:right; font-size:11.5px; line-height:1.4; color:var(--muted)}
+.unit-credit a{color:inherit; text-decoration:underline; text-decoration-color:rgba(138,127,134,.4)}

@@ -3,7 +3,7 @@
 //
 //   node scripts/build-lesson-cta.mjs
 //
-// The card offers one lesson from the free first unit two ways: in the iPhone app (App Store)
+// The card offers one lesson from a free unit (the first two of the course) two ways: in the iPhone app (App Store)
 // and in the browser (/course/?app=1&lesson=<id>, which opens that lesson after sign-in).
 // assets/lesson-cta.js puts the right one first for the device and records the clicks in Umami.
 // Lesson titles and summaries come from data/course/syllabus.json, so a course re-export keeps
@@ -16,7 +16,8 @@ import { join } from "node:path";
 const ROOT = new URL("..", import.meta.url).pathname;
 const cfg = JSON.parse(readFileSync(join(ROOT, "data/lesson-cta.json"), "utf8"));
 const lessons = JSON.parse(readFileSync(join(ROOT, "data/course/syllabus.json"), "utf8"));
-const FREE_UNIT = "Tasting & senses";
+// The units that are free on the web (FREE_TOPICS in assets/course/course.js).
+const FREE_UNITS = ["Foundations", "Tasting & senses"];
 const APP_ID = "6785896824";
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -36,7 +37,7 @@ let n = 0;
 for (const [file, c] of Object.entries(cfg.pages)) {
   const l = lessons.find((x) => x.id === c.lesson);
   if (!l) throw new Error(`${file}: lesson ${c.lesson} not in syllabus.json`);
-  if (l.unit !== FREE_UNIT) throw new Error(`${file}: lesson "${l.t}" is not in the free unit, so the browser link would hit the paywall`);
+  if (!FREE_UNITS.includes(l.unit)) throw new Error(`${file}: lesson "${l.t}" is not in a free unit, so the browser link would hit the paywall`);
   const slug = pageSlug(file);
   // ?try= plays the lesson at once with no account (course.js try mode); a signed-in visitor gets it the normal way.
   const web = `/course/?try=${l.id}&amp;src=${slug}`;

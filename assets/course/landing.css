@@ -86,3 +86,8 @@ body.app-mode #landing, body.app-mode .site-header, body.app-mode .site-footer, 
 .gift-steps p{font-size:15px; color:var(--sec)}
 .cl-grid.gift-inside{grid-template-columns:repeat(3,1fr)}
 @media (max-width:860px){ .gift-hero .wrap.gift-grid{grid-template-columns:1fr} .gift-card-mock{max-width:420px; transform:none} .gift-steps,.cl-grid.gift-inside{grid-template-columns:1fr} }
+
+/* Credit for a cover photo that needs attribution (CC BY-SA): author, licence, source */
+.cl-credit{width:min(var(--maxw-prose), calc(100% - 48px)); margin:8px auto 0; text-align:right; font-size:12px; line-height:1.4; color:var(--muted); position:relative; z-index:2}
+.cl-credit a{color:inherit; text-decoration:underline; text-decoration-color:rgba(138,127,134,.4)}
+.cl-credits{width:auto; margin:22px 0 0; text-align:left}

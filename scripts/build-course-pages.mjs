@@ -39,13 +39,18 @@ const FONTS = cut('<link rel="preconnect" href="https://fonts.googleapis.com">',
 
 // ---- the units, in course order -----------------------------------------------------------------
 // [topic in the DB, strings key, EN slug, DA slug, cover image, group, EN heading, DA heading, related EN pages]
+// In the app's order (learn.tsx UNITS, app 1.4.1). The old "Terroir & vintages" unit was folded into
+// Foundations and the other units; its pages redirect to Foundations (REDIRECTS below).
 const U = [
+  ["Foundations", "foundations", "wine-basics", "grundlaget", "uTerroir", 0, "Wine Basics Course: The Foundations of Wine", "Grundlaget: det vigtigste om vin", ["/learn/wine-for-beginners/", "/wine-regions/"]],
   ["Tasting & senses", "tastingSenses", "wine-tasting", "smag-og-sanser", "uTasting", 0, "Wine Tasting Course: How to Taste Wine", "Lær at smage vin", ["/learn/how-to-taste-wine/", "/learn/how-to-practise-wine-tasting-at-home/"]],
   ["Red grapes to know", "redGrapes", "red-wine-grapes", "roede-druer", "uRedGrapes", 0, "Red Wine Grapes Course", "Kursus i røde druer", ["/grape-varieties/"]],
   ["White grapes to know", "whiteGrapes", "white-wine-grapes", "hvide-druer", "uWhiteGrapes", 0, "White Wine Grapes Course", "Kursus i hvide druer", ["/grape-varieties/"]],
-  ["Serving & glassware", "servingGlassware", "serving-wine", "servering-af-vin", "uServing", 0, "Serving Wine: Glasses, Decanting and Storing", "Servering af vin: glas, karaffel og opbevaring", ["/tools/wine-serving-temperature/", "/learn/how-long-does-open-wine-last/"]],
-  ["Food & wine", "foodWine", "food-and-wine-pairing", "mad-og-vin", "pairing", 0, "Food and Wine Pairing Course", "Kursus i mad og vin", ["/food-and-wine-pairing/"]],
   ["Reading the label", "readingLabel", "reading-wine-labels", "vinetiketter", "uLabel", 0, "How to Read a Wine Label: Course", "Lær at læse en vinetiket", ["/learn/how-to-read-a-wine-label/"]],
+  ["Food & wine", "foodWine", "food-and-wine-pairing", "mad-og-vin", "pairing", 0, "Food and Wine Pairing Course", "Kursus i mad og vin", ["/food-and-wine-pairing/"]],
+  ["Serving & glassware", "servingGlassware", "serving-wine", "servering-af-vin", "uServing", 0, "Serving Wine: Glasses, Decanting and Storing", "Servering af vin: glas, karaffel og opbevaring", ["/tools/wine-serving-temperature/", "/learn/how-long-does-open-wine-last/"]],
+  ["Wine at the table", "atTable", "wine-etiquette", "vin-ved-bordet", "uToast", 0, "Wine at the Table: Restaurants and Etiquette", "Vin ved bordet: restaurant, etikette og gaver", ["/learn/how-to-order-wine-at-a-restaurant/"]],
+  ["Wine, health & moderation", "healthModeration", "wine-and-health", "vin-og-sundhed", "uModeration", 0, "Wine, Health and Moderation", "Vin, sundhed og måde", ["/learn/how-many-units-in-a-bottle-of-wine/", "/tools/wine-calories/"]],
   ["France", "france", "french-wine", "fransk-vin", "uFrance", 1, "French Wine Course", "Kursus i fransk vin", ["/countries/france/"]],
   ["Italy", "italy", "italian-wine", "italiensk-vin", "uItaly", 1, "Italian Wine Course", "Kursus i italiensk vin", ["/countries/italy/"]],
   ["Spain", "spain", "spanish-wine", "spansk-vin", "uSpain", 1, "Spanish Wine Course", "Kursus i spansk vin", ["/countries/spain/"]],
@@ -58,22 +63,28 @@ const U = [
   ["Australia", "australia", "australian-wine", "australsk-vin", "uAustralia", 1, "Australian Wine Course", "Kursus i australsk vin", ["/countries/australia/"]],
   ["New Zealand", "newzealand", "new-zealand-wine", "newzealandsk-vin", "uNewZealand", 1, "New Zealand Wine Course", "Kursus i newzealandsk vin", ["/countries/new-zealand/"]],
   ["South Africa", "southafrica", "south-african-wine", "sydafrikansk-vin", "uSouthAfrica", 1, "South African Wine Course", "Kursus i sydafrikansk vin", ["/countries/south-africa/"]],
-  ["In the vineyard", "inVineyard", "in-the-vineyard", "i-vinmarken", "uVineyard", 2, "In the Vineyard: How Wine Grapes Are Grown", "I vinmarken: sådan dyrkes druerne", ["/learn/how-wine-is-made/"]],
   ["How wine is made", "howMade", "how-wine-is-made", "saadan-laves-vin", "uWinemaking", 2, "How Wine Is Made: Winemaking Course", "Sådan laves vin", ["/learn/how-wine-is-made/"]],
-  ["Terroir & vintages", "terroirVintages", "terroir-and-vintages", "terroir-og-aargange", "uTerroir", 2, "Terroir and Vintages Course", "Terroir og årgange", ["/wine-regions/"]],
+  ["In the vineyard", "inVineyard", "in-the-vineyard", "i-vinmarken", "uVineyard", 2, "In the Vineyard: How Wine Grapes Are Grown", "I vinmarken: sådan dyrkes druerne", ["/learn/how-wine-is-made/"]],
   ["Quality, ageing & collecting", "qualityAgeing", "wine-ageing-and-collecting", "kvalitet-og-lagring", "uCellar", 2, "Wine Quality, Ageing and Collecting", "Kvalitet, lagring og vinsamling", ["/learn/wine-faults/"]],
   ["Buying & value", "buyingValue", "buying-wine", "koeb-af-vin", "uShop", 2, "How to Buy Wine: Choosing Bottles and Value", "Køb af vin: find god værdi", ["/learn/types-of-wine/"]],
-  ["Wine at the table", "atTable", "wine-etiquette", "vin-ved-bordet", "uToast", 2, "Wine at the Table: Restaurants and Etiquette", "Vin ved bordet: restaurant, etikette og gaver", ["/learn/how-to-order-wine-at-a-restaurant/"]],
-  ["Wine, health & moderation", "healthModeration", "wine-and-health", "vin-og-sundhed", "uModeration", 2, "Wine, Health and Moderation", "Vin, sundhed og måde", ["/learn/how-many-units-in-a-bottle-of-wine/", "/tools/wine-calories/"]],
   ["A short history of wine", "history", "history-of-wine", "vinens-historie", "uHistory", 2, "A Short History of Wine", "Vinens historie", ["/wine-classifications/"]],
 ].map((r, i) => ({ topic: r[0], key: r[1], en: r[2], da: r[3], img: r[4], group: r[5], h1: { en: r[6], da: r[7] }, related: r[8], n: i + 1 }));
-const FREE = "Tasting & senses";
+// Free on the web: the first two units (FREE_TOPICS in assets/course/course.js).
+const FREE = ["Foundations", "Tasting & senses"];
+const isFree = (u) => FREE.includes(u.topic);
 const SHORT = { "serving-wine": ["Serving Wine Course", "Kursus i servering af vin"], "reading-wine-labels": ["Wine Label Course", "Kursus i vinetiketter"],
   "in-the-vineyard": ["Vineyard Course", "Kursus i vinmarken"], "how-wine-is-made": ["Winemaking Course", "Kursus i vinfremstilling"],
   "wine-ageing-and-collecting": ["Wine Ageing & Collecting Course", "Kursus i lagring af vin"], "buying-wine": ["How to Buy Wine Course", "Kursus i køb af vin"],
   "wine-etiquette": ["Wine Etiquette Course", "Kursus i vin ved bordet"], "wine-and-health": ["Wine & Health Course", "Kursus i vin og sundhed"],
-  "history-of-wine": ["History of Wine Course", "Kursus i vinens historie"], "terroir-and-vintages": ["Terroir & Vintages Course", "Kursus i terroir og årgange"],
+  "history-of-wine": ["History of Wine Course", "Kursus i vinens historie"], "wine-basics": ["Wine Basics Course", "Kursus i vinens grundlag"],
   "wine-tasting": ["Wine Tasting Course", "Vinsmagningskursus"], "food-and-wine-pairing": ["Food & Wine Pairing Course", "Kursus i mad og vin"] };
+// Covers that are not public domain (CC BY-SA), credited like the app does (learn.tsx UNITS credit):
+// author linked to the Commons file page, licence linked to its deed, and the source.
+const CREDITS = {
+  uChile: { by: "FRPGCHILE", license: "CC BY-SA 4.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/", src: "https://commons.wikimedia.org/wiki/File:Carmenere_Vineyards_at_Vi%C3%B1a_Tipaume.jpg" },
+  uSouthAfrica: { by: "Michael Fu", license: "CC BY-SA 3.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/", src: "https://commons.wikimedia.org/wiki/File:Groot_Constantia_Estate.jpg" },
+};
+const creditHtml = (c, lang) => `${lang === "en" ? "Photo" : "Foto"}: <a href="${c.src}" rel="noopener">${esc(c.by)}</a> · <a href="${c.licenseUrl}" rel="noopener license">${esc(c.license)}</a>, ${lang === "en" ? "via" : "fra"} Wikimedia Commons`;
 const shortT = (u, lang) => (SHORT[u.en] ? SHORT[u.en][lang === "en" ? 0 : 1] : u.h1[lang]);
 
 const minutes = (l) => Math.max(2, Math.round(l.n * 0.45));
@@ -83,6 +94,7 @@ for (const u of U) {
   u.min = u.lessons.reduce((a, l) => a + minutes(l), 0);
   for (const p of u.related) if (!existsSync(join(ROOT, p, "index.html"))) throw new Error(`related page missing: ${p}`);
 }
+const FREE_UNITS = U.filter(isFree), FREE_LESSONS = FREE_UNITS.reduce((a, u) => a + u.lessons.length, 0);
 const TOTAL_LESSONS = SYL.length, TOTAL_MIN = U.reduce((a, u) => a + u.min, 0), HOURS = Math.round(TOTAL_MIN / 60);
 if (TOTAL_LESSONS !== U.reduce((a, u) => a + u.lessons.length, 0)) throw new Error("lessons outside the 26 units");
 
@@ -98,10 +110,10 @@ const PROVIDER = { "@type": "Organization", name: "Winelingo", url: `${SITE}/`, 
 // ---- copy -------------------------------------------------------------------------------------
 const T = {
   en: {
-    groups: ["Foundations", "The wine countries", "Going deeper"],
-    groupSub: ["How to taste, the grapes that matter, serving, food and labels.", "Twelve countries, region by region, with the grapes and the words on the label.", "Vineyard, winemaking, terroir, quality, buying, the table, health and history."],
+    groups: ["The essentials", "The wine countries", "Going deeper"],
+    groupSub: ["The ideas everything builds on, then how to taste, the grapes that matter, labels, food, serving, the table and health.", "Twelve countries, region by region, with the grapes and the words on the label.", "How wine is made, the vineyard, quality and ageing, buying well and history."],
     lessons: (n) => `${n} lessons`, about: (m) => `about ${m} min`, free: "Free", unit: (n) => `Unit ${n} of 26`,
-    learn: "You will be able to", start: "Start this unit free", startFree: "Start with the free unit",
+    learn: "You will be able to", start: "Start this unit free", startFree: "Start with the free units",
     unlockLine: "This unit is included with Premium ($3.99 a month, 3 days free) or the course for life ($39.99 once).",
     seePrices: "See prices", related: "Related reading on Winelingo", prev: "Previous unit", next: "Next unit",
     crumbHome: "Home", crumbCourse: "Online wine course", partOf: "Part of Winelingo's online wine course",
@@ -109,10 +121,10 @@ const T = {
     allUnits: "See all 26 units",
   },
   da: {
-    groups: ["Grundlaget", "Vinlandene", "Et spadestik dybere"],
-    groupSub: ["Sådan smager du, de druer der betyder noget, servering, mad og etiketter.", "Tolv lande, region for region, med druerne og ordene på etiketten.", "Vinmarken, vinfremstilling, terroir, kvalitet, indkøb, bordet, sundhed og historie."],
+    groups: ["Det grundlæggende", "Vinlandene", "Et spadestik dybere"],
+    groupSub: ["Det, som alt andet bygger på, og så smagning, de druer der betyder noget, etiketter, mad, servering, bordet og sundhed.", "Tolv lande, region for region, med druerne og ordene på etiketten.", "Vinfremstilling, vinmarken, kvalitet og lagring, gode indkøb og historie."],
     lessons: (n) => `${n} lektioner`, about: (m) => `cirka ${m} min.`, free: "Gratis", unit: (n) => `Enhed ${n} af 26`,
-    learn: "Du lærer at", start: "Start enheden gratis", startFree: "Start med den gratis enhed",
+    learn: "Du lærer at", start: "Start enheden gratis", startFree: "Start med de gratis enheder",
     unlockLine: "Enheden er inkluderet i Premium ($3.99 om måneden, 3 dage gratis) eller kurset for altid ($39.99 én gang).",
     seePrices: "Se priser", related: "Læs mere på Winelingo (engelsk)", prev: "Forrige enhed", next: "Næste enhed",
     crumbHome: "Forside", crumbCourse: "Vinkursus online", partOf: "En del af Winelingos vinkursus online",
@@ -149,7 +161,7 @@ ${altLinks}<meta property="og:type" content="website">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="author" content="Jonas Egeskov">
 ${FONTS}
-<link rel="stylesheet" href="/assets/course/landing.css?v=2">
+<link rel="stylesheet" href="/assets/course/landing.css?v=3">
 ${extraHead}<script type="application/ld+json">${JSON.stringify(ld)}</script>
 ${ANALYTICS}
 </head>
@@ -160,7 +172,7 @@ const crumbsHtml = (items) => `<nav class="breadcrumb" aria-label="Breadcrumb">$
 
 // ---- unit page --------------------------------------------------------------------------------
 function unitPage(u, lang) {
-  const t = T[lang], h1 = u.h1[lang], free = u.topic === FREE;
+  const t = T[lang], h1 = u.h1[lang], free = isFree(u);
   const path = unitUrl(u, lang);
   const title = `${shortT(u, lang)} ${lang === "en" ? "Online" : "online"} | Winelingo`;
   const desc = t.unitDesc(u, shortT(u, lang), sub(u, lang) + ".");
@@ -203,7 +215,8 @@ function unitPage(u, lang) {
   ${free ? "" : `<p class="cl-unlock">${t.unlockLine}</p>`}
 </div>
 <img class="cl-cover" src="/assets/course/img/${u.img}.webp" alt="" width="1000" height="563" loading="eager">
-</section>
+${CREDITS[u.img] ? `<p class="cl-credit">${creditHtml(CREDITS[u.img], lang)}</p>
+` : ""}</section>
 
 <section class="section cl-sec"><div class="wrap cl-narrow">
   <h2 class="cl-h2">${lang === "en" ? `The ${u.lessons.length} lessons` : `De ${u.lessons.length} lektioner`}</h2>
@@ -229,11 +242,11 @@ function relName(p) {
 const H = {
   en: {
     title: `Online Wine Course for Beginners: ${TOTAL_LESSONS} Lessons | Winelingo`,
-    desc: `Learn about wine online: ${TOTAL_LESSONS} short, interactive lessons in 26 units, from tasting and grapes to twelve wine countries. First unit free.`,
+    desc: `Learn about wine online: ${TOTAL_LESSONS} short, interactive lessons in 26 units, from the basics and tasting to twelve wine countries. First two units free.`,
     eyebrow: "Online wine course", h1: "Learn about wine online, five minutes at a time",
-    deck: `${TOTAL_LESSONS} short, interactive lessons in 26 units: how to taste, the grapes that matter, food and wine, labels, and twelve wine countries region by region. Start free in your browser or on iPhone.`,
-    ctaStart: "Start the free unit", ctaSyl: "See the syllabus", signIn: "Already have an account? Sign in",
-    facts: [[String(TOTAL_LESSONS), "interactive lessons"], ["26", "units"], [`~${HOURS} h`, "at your own pace"], ["4", "languages"], ["1st unit", "free"]],
+    deck: `${TOTAL_LESSONS} short, interactive lessons in 26 units: the basics, how to taste, the grapes that matter, food and wine, labels, and twelve wine countries region by region. Start free in your browser or on iPhone.`,
+    ctaStart: "Start the free units", ctaSyl: "See the syllabus", signIn: "Already have an account? Sign in",
+    facts: [[String(TOTAL_LESSONS), "interactive lessons"], ["26", "units"], [`~${HOURS} h`, "at your own pace"], ["4", "languages"], ["2 units", "free"]],
     howH: "How the course works", how: [
       ["Short, interactive lessons", "Each lesson is a handful of illustrated cards and quick questions. A wrong answer comes back at the end, so it sticks."],
       ["Five minutes a day", "Set a daily goal, keep a streak, and pick up where you left off on any device."],
@@ -245,24 +258,24 @@ const H = {
       ["Restaurant and bar staff", `Train the whole team, with staff tests and a test built on your own wine list. <a href="/business/">Winelingo for business</a>.`],
       ["Before a wine certificate", "A friendly way to learn the ground a WSET Level 1 or 2 course covers. Winelingo itself is not an accredited qualification."]],
     sylH: "The syllabus", sylDeck: "Every unit, every lesson. Open a unit to see what each lesson teaches.",
-    priceH: "Price", priceDeck: `The first unit is free. Unlock all ${TOTAL_LESSONS} lessons with Premium at $3.99 a month (3 days free) or buy the course for life for $39.99 once. Refunds within 14 days.`,
+    priceH: "Price", priceDeck: `The first two units are free. Unlock all ${TOTAL_LESSONS} lessons with Premium at $3.99 a month (3 days free) or buy the course for life for $39.99 once. Refunds within 14 days.`,
     priceCta: "See all prices",
     faqH: "Questions about the course", faq: [
-      ["Is the wine course free?", `The first unit, Tasting & senses (10 lessons), is free on the web. The other 25 units are included with Premium ($3.99 a month, 3 days free) or the course for life ($39.99 once). In the iPhone app every lesson is open, with five hearts that refill over time.`],
+      ["Is the wine course free?", `The first two units, ${FREE_UNITS.map((u) => name(u, "en")).join(" and ")} (${FREE_LESSONS} lessons), are free on the web. The other ${U.length - FREE_UNITS.length} units are included with Premium ($3.99 a month, 3 days free) or the course for life ($39.99 once). In the iPhone app every lesson is open, with five hearts that refill over time.`],
       ["How long does the course take?", `About ${HOURS} hours in total. Lessons take five to ten minutes each, so most people do one or two a day.`],
       ["Do I get a certificate?", "No. Winelingo tracks your progress, streaks and test scores, but it is not an accredited qualification. It is a friendly way to learn the basics before a WSET course."],
       ["Do I need an iPhone?", "No. The whole course runs in your browser on any computer, tablet or Android phone. The iPhone app uses the same account."],
       ["Which languages?", "English, Danish, Spanish and German. You can switch at any time."],
       ["Can I use it to train staff?", `Yes. Restaurants and wine bars already use it for their teams. See <a href="/business/">Winelingo for business</a>.`]],
-    endH: "Your first lesson takes five minutes", endCta: "Start the free unit",
+    endH: "Your first lesson takes five minutes", endCta: "Start the free units",
   },
   da: {
     title: `Vinkursus online for begyndere: ${TOTAL_LESSONS} lektioner | Winelingo`,
-    desc: `Lær om vin online: ${TOTAL_LESSONS} korte, interaktive lektioner i 26 enheder, fra smagning og druer til tolv vinlande. Første enhed er gratis.`,
+    desc: `Lær om vin online: ${TOTAL_LESSONS} korte, interaktive lektioner i 26 enheder, fra grundlaget og smagning til tolv vinlande. De to første enheder er gratis.`,
     eyebrow: "Vinkursus online", h1: "Lær om vin online, fem minutter ad gangen",
-    deck: `${TOTAL_LESSONS} korte, interaktive lektioner i 26 enheder: sådan smager du, de druer der betyder noget, mad og vin, etiketter og tolv vinlande region for region. Start gratis i din browser eller på iPhone.`,
-    ctaStart: "Start den gratis enhed", ctaSyl: "Se hele pensum", signIn: "Har du allerede en konto? Log ind",
-    facts: [[String(TOTAL_LESSONS), "interaktive lektioner"], ["26", "enheder"], [`~${HOURS} t`, "i dit eget tempo"], ["4", "sprog"], ["1. enhed", "gratis"]],
+    deck: `${TOTAL_LESSONS} korte, interaktive lektioner i 26 enheder: grundlaget, sådan smager du, de druer der betyder noget, mad og vin, etiketter og tolv vinlande region for region. Start gratis i din browser eller på iPhone.`,
+    ctaStart: "Start de gratis enheder", ctaSyl: "Se hele pensum", signIn: "Har du allerede en konto? Log ind",
+    facts: [[String(TOTAL_LESSONS), "interaktive lektioner"], ["26", "enheder"], [`~${HOURS} t`, "i dit eget tempo"], ["4", "sprog"], ["2 enheder", "gratis"]],
     howH: "Sådan fungerer kurset", how: [
       ["Korte, interaktive lektioner", "Hver lektion er en håndfuld illustrerede kort og hurtige spørgsmål. Et forkert svar kommer igen til sidst, så det sidder fast."],
       ["Fem minutter om dagen", "Sæt et dagligt mål, hold din stime i gang, og fortsæt hvor du slap, på alle dine enheder."],
@@ -274,16 +287,16 @@ const H = {
       ["Tjenere og bartendere", `Oplær hele holdet med personaletests og en test bygget på jeres eget vinkort. <a href="/business/">Winelingo til virksomheder</a>.`],
       ["Før et vinbevis", "En venlig måde at lære det stof, et WSET Level 1- eller 2-kursus dækker. Winelingo er ikke selv en godkendt uddannelse."]],
     sylH: "Pensum", sylDeck: "Alle enheder og alle lektioner. Åbn en enhed for at se, hvad hver lektion lærer dig.",
-    priceH: "Pris", priceDeck: `Den første enhed er gratis. Lås alle ${TOTAL_LESSONS} lektioner op med Premium til $3.99 om måneden (3 dage gratis), eller køb kurset for altid for $39.99 én gang. Pengene tilbage inden for 14 dage.`,
+    priceH: "Pris", priceDeck: `De to første enheder er gratis. Lås alle ${TOTAL_LESSONS} lektioner op med Premium til $3.99 om måneden (3 dage gratis), eller køb kurset for altid for $39.99 én gang. Pengene tilbage inden for 14 dage.`,
     priceCta: "Se alle priser",
     faqH: "Spørgsmål om kurset", faq: [
-      ["Er vinkurset gratis?", `Den første enhed, Smag & sanser (10 lektioner), er gratis på nettet. De øvrige 25 enheder er inkluderet i Premium ($3.99 om måneden, 3 dage gratis) eller kurset for altid ($39.99 én gang). I iPhone-appen er alle lektioner åbne, med fem hjerter der fyldes op igen med tiden.`],
+      ["Er vinkurset gratis?", `De to første enheder, ${FREE_UNITS.map((u) => name(u, "da")).join(" og ")} (${FREE_LESSONS} lektioner), er gratis på nettet. De øvrige ${U.length - FREE_UNITS.length} enheder er inkluderet i Premium ($3.99 om måneden, 3 dage gratis) eller kurset for altid ($39.99 én gang). I iPhone-appen er alle lektioner åbne, med fem hjerter der fyldes op igen med tiden.`],
       ["Hvor lang tid tager kurset?", `Cirka ${HOURS} timer i alt. En lektion tager fem til ti minutter, så de fleste tager en eller to om dagen.`],
       ["Får jeg et bevis?", "Nej. Winelingo holder styr på dine fremskridt, stimer og testresultater, men det er ikke en godkendt uddannelse. Det er en venlig måde at lære det grundlæggende på før et WSET-kursus."],
       ["Skal jeg have en iPhone?", "Nej. Hele kurset kører i browseren på computer, tablet og Android-telefon. iPhone-appen bruger den samme konto."],
       ["Hvilke sprog?", "Dansk, engelsk, spansk og tysk. Du kan skifte når som helst."],
       ["Kan vi bruge det til at oplære personale?", `Ja. Restauranter og vinbarer bruger det allerede til deres hold. Se <a href="/business/">Winelingo til virksomheder</a>.`]],
-    endH: "Din første lektion tager fem minutter", endCta: "Start den gratis enhed",
+    endH: "Din første lektion tager fem minutter", endCta: "Start de gratis enheder",
   },
 };
 
@@ -297,7 +310,7 @@ function landing(lang, { withApp }) {
       educationalLevel: "Beginner", isAccessibleForFree: false,
       hasCourseInstance: { "@type": "CourseInstance", courseMode: "Online", courseWorkload: `PT${HOURS}H` },
       syllabusSections: U.map((u) => ({ "@type": "Syllabus", name: name(u, lang), description: sub(u, lang) })),
-      offers: [{ "@type": "Offer", price: "0", priceCurrency: "USD", category: "Free", description: lang === "en" ? "First unit" : "Første enhed" },
+      offers: [{ "@type": "Offer", price: "0", priceCurrency: "USD", category: "Free", description: lang === "en" ? "First two units" : "De to første enheder" },
         { "@type": "Offer", price: "3.99", priceCurrency: "USD", category: "Subscription", url: `${SITE}/pricing/` },
         { "@type": "Offer", price: "39.99", priceCurrency: "USD", category: "Paid", url: `${SITE}/pricing/` }] },
     { "@type": "ItemList", itemListElement: U.map((u, i) => ({ "@type": "ListItem", position: i + 1, url: SITE + unitUrl(u, lang) })) },
@@ -309,7 +322,7 @@ function landing(lang, { withApp }) {
       <div class="cl-units">${U.filter((u) => u.group === g).map((u) => `
         <a class="cl-unit" href="${unitUrl(u, lang)}">
           <img src="/assets/course/img/${u.img}.webp" alt="" width="160" height="90" loading="lazy">
-          <span class="cl-ubody"><span class="cl-uk">${t.unit(u.n).replace(/ af 26| of 26/, "")}${u.topic === FREE ? ` · <b>${t.free}</b>` : ""}</span>
+          <span class="cl-ubody"><span class="cl-uk">${t.unit(u.n).replace(/ af 26| of 26/, "")}${isFree(u) ? ` · <b>${t.free}</b>` : ""}</span>
             <span class="cl-ut">${esc(name(u, lang))}</span>
             <span class="cl-us">${esc(sub(u, lang))} · ${t.lessons(u.lessons.length)}</span></span>
         </a>`).join("")}
@@ -338,6 +351,7 @@ function landing(lang, { withApp }) {
 <section class="section cl-sec" id="syllabus"><div class="wrap">
   <div class="section-head"><h2>${h.sylH}</h2><p>${h.sylDeck}</p></div>
   ${groups}
+  <p class="cl-credit cl-credits">${lang === "en" ? "Unit photos" : "Enhedsfotos"}: ${U.filter((u) => CREDITS[u.img]).map((u) => { const c = CREDITS[u.img]; return `${esc(name(u, lang))}, <a href="${c.src}" rel="noopener">${esc(c.by)}</a> (<a href="${c.licenseUrl}" rel="noopener license">${esc(c.license)}</a>)`; }).join("; ")}; ${lang === "en" ? "via" : "fra"} Wikimedia Commons.</p>
 </div></section>
 
 <section class="section cl-sec"><div class="wrap">
@@ -364,12 +378,12 @@ function landing(lang, { withApp }) {
   <p class="cl-fine">${lang === "en" ? "For adults of legal drinking age (18+). Please enjoy wine responsibly." : "For voksne over 18 år. Nyd vin med omtanke."}</p>
 </div></section>
 </main>`;
-  const appHead = withApp ? `<link rel="stylesheet" href="/assets/course/course.css?v=7">\n` : "";
+  const appHead = withApp ? `<link rel="stylesheet" href="/assets/course/course.css?v=9">\n` : "";
   const app = withApp ? `
 <div id="app" aria-live="polite" hidden></div>
 <script src="/assets/course/vendor/supabase-2.117.3.js"></script>
-<script src="/assets/course/strings.js?v=8"></script>
-<script src="/assets/course/course.js?v=10"></script>` : "";
+<script src="/assets/course/strings.js?v=9"></script>
+<script src="/assets/course/course.js?v=12"></script>` : "";
   let foot = FOOTER;
   if (withApp) foot = foot.replace("</body>", `${app}\n</body>`);
   return head({ lang, title: h.title, desc: h.desc, path, alt: { en: "/course/", da: "/da/vinkursus/" }, ld, extraHead: appHead }) + HEADER + body + foot;
@@ -380,7 +394,7 @@ function landing(lang, { withApp }) {
 // its course unit(s), between markers so a rebuild replaces it. Plus the hub-level pages below.
 function band(units, hubOnly) {
   const items = hubOnly
-    ? `<a href="/course/">Winelingo's online wine course</a> · ${TOTAL_LESSONS} interactive lessons in 26 units, first unit free`
+    ? `<a href="/course/">Winelingo's online wine course</a> · ${TOTAL_LESSONS} interactive lessons in 26 units, first two units free`
     : units.map((u) => `<a href="${unitUrl(u, "en")}">${esc(u.h1.en)}</a> · ${u.lessons.length} interactive lessons`).join("<br>");
   return `<!-- course-band (scripts/build-course-pages.mjs) -->
 <aside class="course-band"><div class="wrap"><div class="cb-in">
@@ -412,7 +426,7 @@ for (const [p, units] of targets) {
 const G = {
   en: {
     path: "/gift/", title: "A Gift for Wine Lovers: an Online Wine Course | Winelingo",
-    desc: "A gift for the wine lover who has everything: Winelingo's online wine course, 166 interactive lessons, for life. $39.99 once, with a card to print or send.",
+    desc: `A gift for the wine lover who has everything: Winelingo's online wine course, ${TOTAL_LESSONS} interactive lessons, for life. $39.99 once, with a card to print or send.`,
     eyebrow: "The gift", h1: "A gift for the wine lover who has everything",
     lede: `Give them the whole Winelingo course: ${TOTAL_LESSONS} short, interactive lessons, from tasting and grapes to twelve wine countries. For life, in four languages. You get a code right away, with a card to print or send.`,
     buy: "Buy the gift · $39.99", redeem: "Have a code? Redeem it",
@@ -423,9 +437,9 @@ const G = {
       ["Get the code", "Your gift code appears right after the payment, with a card to print or send. It is also kept in your account."],
       ["They redeem it", "They type the code at winelingo.app/redeem and the whole course opens on their own account, on the web and in the iPhone app."]],
     insideH: "What's inside", insideDeck: `${TOTAL_LESSONS} lessons in 26 units, about ${HOURS} hours in all. Each lesson takes five to ten minutes.`,
-    inside: [["Foundations", "How to taste, the red and white grapes that matter, serving, food pairing and reading a label."],
+    inside: [["The essentials", "The ideas everything builds on, how to taste, the red and white grapes that matter, labels, food pairing, serving and wine at the table."],
       ["Twelve wine countries", "France, Italy, Spain, Portugal, Germany, Austria, the USA, Argentina, Chile, Australia, New Zealand and South Africa, region by region."],
-      ["Going deeper", "The vineyard, how wine is made, terroir and vintages, ageing and collecting, buying well, wine at the table, health and history."]],
+      ["Going deeper", "How wine is made, the vineyard, quality, ageing and collecting, buying well and the history of wine."]],
     syllabus: "See the full syllabus",
     forH: "Who it's for",
     for: [["The curious beginner", "Someone who enjoys wine and wants to know what they are drinking, without a classroom."],
@@ -445,7 +459,7 @@ const G = {
   },
   da: {
     path: "/da/gave/", title: "Gave til vinelskeren: et vinkursus online | Winelingo",
-    desc: "Gaven til vinelskeren, der har alt: Winelingos vinkursus online, 166 interaktive lektioner, for altid. $39.99 én gang, med et kort du kan printe eller sende.",
+    desc: `Gaven til vinelskeren, der har alt: Winelingos vinkursus online, ${TOTAL_LESSONS} interaktive lektioner, for altid. $39.99 én gang, med et kort du kan printe eller sende.`,
     eyebrow: "Gaven", h1: "Gaven til vinelskeren, der har alt",
     lede: `Giv hele Winelingo-kurset: ${TOTAL_LESSONS} korte, interaktive lektioner, fra smagning og druer til tolv vinlande. For altid, på fire sprog. Du får en kode med det samme og et kort, du kan printe eller sende.`,
     buy: "Køb gaven · $39.99", redeem: "Har du en kode? Indløs den",
@@ -456,9 +470,9 @@ const G = {
       ["Få koden", "Gavekoden vises lige efter betalingen, med et kort du kan printe eller sende. Den gemmes også på din konto."],
       ["De indløser den", "De skriver koden på winelingo.app/redeem, og hele kurset åbner på deres egen konto, på nettet og i iPhone-appen."]],
     insideH: "Det får de", insideDeck: `${TOTAL_LESSONS} lektioner i 26 enheder, cirka ${HOURS} timer i alt. Hver lektion tager fem til ti minutter.`,
-    inside: [["Grundlaget", "Sådan smager man, de røde og hvide druer der betyder noget, servering, mad og vin og at læse en etiket."],
+    inside: [["Det grundlæggende", "Det, som alt andet bygger på, sådan smager man, de røde og hvide druer der betyder noget, etiketter, mad og vin, servering og vin ved bordet."],
       ["Tolv vinlande", "Frankrig, Italien, Spanien, Portugal, Tyskland, Østrig, USA, Argentina, Chile, Australien, New Zealand og Sydafrika, region for region."],
-      ["Et spadestik dybere", "Vinmarken, vinfremstilling, terroir og årgange, lagring og vinsamling, gode indkøb, vin ved bordet, sundhed og historie."]],
+      ["Et spadestik dybere", "Vinfremstilling, vinmarken, kvalitet, lagring og vinsamling, gode indkøb og vinens historie."]],
     syllabus: "Se hele pensum",
     forH: "Hvem er den til?",
     for: [["Den nysgerrige begynder", "En der nyder vin og gerne vil vide, hvad der er i glasset, uden et klasselokale."],
@@ -575,7 +589,7 @@ ${FONTS}
   </article>
   <p class="gc-redeem"><a id="redeem" class="btn btn-ghost" href="/redeem/" data-t="redeem">Redeem this code now</a></p>
 </main>
-<script src="/assets/gift-card.js?v=1"></script>
+<script src="/assets/gift-card.js?v=2"></script>
 </body>
 </html>
 `;
@@ -603,6 +617,34 @@ function redeemPage() {
 `;
 }
 
+// ---- moved unit pages ---------------------------------------------------------------------------
+// GitHub Pages has no server redirects: a moved address keeps a page that sends the reader on at
+// once (meta refresh), points search engines at the new page (canonical) and is not indexed.
+// "Terroir & vintages" was folded into Foundations (and Quality, In the vineyard) in app 1.4.0.
+const REDIRECTS = [
+  ["/course/terroir-and-vintages/", "foundations", "en", "Terroir and Vintages Course (Moved)", "The terroir lessons are now part of Foundations, the free first unit of Winelingo's online wine course."],
+  ["/da/vinkursus/terroir-og-aargange/", "foundations", "da", "Terroir og årgange (flyttet)", "Lektionerne om terroir er nu en del af Grundlaget, den gratis første enhed i Winelingos vinkursus online."],
+];
+function redirectPage(to, lang, title, desc) {
+  return `<!doctype html>
+<html lang="${lang}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="0; url=${to}">
+<link rel="canonical" href="${SITE}${to}">
+<meta name="robots" content="noindex, follow">
+<title>${esc(title)} | Winelingo</title>
+<meta name="description" content="${esc(desc)}">
+</head>
+<body>
+<h1>${lang === "en" ? "This page has moved" : "Siden er flyttet"}</h1>
+<p><a href="${to}">${esc(desc)}</a></p>
+</body>
+</html>
+`;
+}
+
 // ---- write --------------------------------------------------------------------------------------
 write("course/index.html", landing("en", { withApp: true }));
 write("da/vinkursus/index.html", landing("da", { withApp: false }));
@@ -611,6 +653,10 @@ write("da/gave/index.html", giftPage("da"));
 write("gift/card/index.html", cardPage());
 write("redeem/index.html", redeemPage());
 for (const u of U) { write(`course/${u.en}/index.html`, unitPage(u, "en")); write(`da/vinkursus/${u.da}/index.html`, unitPage(u, "da")); }
+for (const [from, key, lang, title, desc] of REDIRECTS) {
+  const u = U.find((x) => x.key === key);
+  write(from.replace(/^\//, "") + "index.html", redirectPage(unitUrl(u, lang), lang, title, desc));
+}
 export const COURSE_URLS = [hubUrl("en"), hubUrl("da"), G.en.path, G.da.path, ...U.flatMap((u) => [unitUrl(u, "en"), unitUrl(u, "da")])];
 writeFileSync(join(ROOT, "data/course/urls.json"), JSON.stringify(COURSE_URLS, null, 1));
 console.log(`course pages: 2 landings + ${U.length * 2} unit pages · ${TOTAL_LESSONS} lessons · ~${HOURS} h · course box on ${banded} pages`);
