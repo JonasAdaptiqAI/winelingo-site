@@ -87,6 +87,69 @@
         "Is this white dry?",
         "Scan the label and Winelingo shows the wine’s sweetness, body, tannin and acidity, then explains what you are tasting. Free to download on the App Store."
       ]
+    },
+    "learn/does-wine-go-bad/index.html": {
+      "lesson": "b6aec9b7-bc1e-4671-8f10-0fe32ae219fe",
+      "hook": "Your nose is the best test of a tired bottle. This five-minute lesson shows you how to taste like you mean it.",
+      "before": "<h2>Does wine go bad after opening?</h2>",
+      "band": [
+        "Know what is in the bottle",
+        "Scan any label and Winelingo explains the wine in plain words: grape, style, how it should taste. Free to download on the App Store."
+      ]
+    },
+    "learn/should-red-wine-be-chilled/index.html": {
+      "lesson": "c9c5c95a-d265-41aa-966b-10fb72498243",
+      "hook": "A few degrees change how a wine smells and tastes. This lesson shows you what happens, glass in hand.",
+      "before": "<h2>Which red wines should not be served cold?</h2>",
+      "band": [
+        "Serve it at its best",
+        "Scan the label and Winelingo tells you the style and the right serving temperature, then explains what you are tasting. Free to download on the App Store."
+      ]
+    },
+    "learn/prosecco-vs-champagne/index.html": {
+      "lesson": "7712f493-3882-43ba-a86f-2323fe37720d",
+      "hook": "Where does Champagne’s toasty, bready smell come from? This lesson sorts a wine’s smells into grape, winemaking and age.",
+      "before": "<h2>How they are made: bubbles in the bottle or in the tank</h2>",
+      "band": [
+        "Champagne, Prosecco or Cava?",
+        "Scan the label and Winelingo tells you exactly what is in the bottle and how it was made, in plain words. Free to download on the App Store."
+      ]
+    },
+    "learn/how-to-serve-champagne/index.html": {
+      "lesson": "c9c5c95a-d265-41aa-966b-10fb72498243",
+      "hook": "Why is sparkling wine served so cold? This lesson shows how temperature changes what you taste.",
+      "before": "<h2>How to open a bottle of Champagne safely</h2>",
+      "band": [
+        "Champagne, Prosecco or Cava?",
+        "Scan the label and Winelingo tells you exactly what is in the bottle and how it was made, in plain words. Free to download on the App Store."
+      ]
+    },
+    "learn/is-wine-vegan-gluten-free/index.html": {
+      "lesson": "d7170656-caab-47b9-85c2-d15fbf5fc6b1",
+      "hook": "New to wine? Our first lesson walks you through the main styles of wine in about five minutes.",
+      "before": "<h2>Fining agents used in wine: which are vegan?</h2>",
+      "band": [
+        "Know what is in the bottle",
+        "Scan any label and Winelingo explains the wine in plain words: grape, style, how it should taste. Free to download on the App Store."
+      ]
+    },
+    "learn/what-does-wine-taste-like/index.html": {
+      "lesson": "90c04205-6472-4ae2-acc3-8353d4d61ae8",
+      "hook": "Everyone can learn to taste. This lesson shows you how your palate builds, one glass at a time.",
+      "before": "<h2>What do different wines taste like? A quick chart</h2>",
+      "band": [
+        "Find out what is in your glass",
+        "Scan any label and Winelingo shows the wine’s sweetness, body, tannin and acidity, then explains what you are tasting. Free to download on the App Store."
+      ]
+    },
+    "learn/words-to-describe-wine/index.html": {
+      "lesson": "ea252ea9-0358-481f-90b8-c7776070f576",
+      "hook": "Put the words on this page to a real smell. This lesson shows you how to name what is in your glass.",
+      "before": "<h2>Wine tasting terms for oak and age</h2>",
+      "band": [
+        "Put the words to a real glass",
+        "Scan any label and Winelingo explains the wine in plain words, with a short lesson to go with it. Free to download on the App Store."
+      ]
     }
   }
 }
