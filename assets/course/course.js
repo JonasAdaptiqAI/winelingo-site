@@ -76,12 +76,17 @@
     ["Wine, health & moderation", "healthModeration", "uModeration"],
     ["France", "france", "uFrance"], ["Italy", "italy", "uItaly"], ["Spain", "spain", "uSpain"],
     ["Portugal", "portugal", "uPortugal"], ["Germany", "germany", "uGermany"], ["Austria", "austria", "uAustria"],
-    ["USA", "usa", "uUSA"], ["Argentina", "argentina", "uArgentina"], ["Chile", "chile", "uChile"],
+    ["USA", "usa", "uUSA"], ["Argentina", "argentina", "uArgentina"], ["Chile", "chile", "uChile", { by: "FRPGCHILE", license: "CC BY-SA 4.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
+      src: "https://commons.wikimedia.org/wiki/File:Carmenere_Vineyards_at_Vi%C3%B1a_Tipaume.jpg" }],
     ["Australia", "australia", "uAustralia"], ["New Zealand", "newzealand", "uNewZealand"],
-    ["South Africa", "southafrica", "uSouthAfrica"], ["How wine is made", "howMade", "uWinemaking"],
+    ["South Africa", "southafrica", "uSouthAfrica", { by: "Michael Fu", license: "CC BY-SA 3.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/",
+      src: "https://commons.wikimedia.org/wiki/File:Groot_Constantia_Estate.jpg" }],
+    ["How wine is made", "howMade", "uWinemaking"],
     ["In the vineyard", "inVineyard", "uVineyard"], ["Quality, ageing & collecting", "qualityAgeing", "uCellar"],
     ["Buying & value", "buyingValue", "uShop"], ["A short history of wine", "history", "uHistory"]
-  ].map(function (u) { return { topic: u[0], key: u[1], img: u[2] }; });
+  ].map(function (u) { return { topic: u[0], key: u[1], img: u[2], credit: u[3] || null }; });
+  // credit: a cover that is not public domain (CC BY-SA) is credited under the unit card, as in the
+  // app (learn.tsx UNITS credit): author linked to the Commons file page, licence linked to its deed.
   // Every unit ends in a review (learn.tsx buildReview): about ten questions from its lessons.
   var REVIEW_SIZE = 10;
   var IMG_KEYS = ["grapes", "regions", "countries", "pour", "cellar", "corks", "learn", "pairing", "autumn", "bottles",
@@ -214,6 +219,14 @@
     if (FILLED[name]) p.setAttribute("fill", "currentColor");
     else { p.setAttribute("fill", "none"); p.setAttribute("stroke", "currentColor"); p.setAttribute("stroke-width", "2"); p.setAttribute("stroke-linecap", "round"); p.setAttribute("stroke-linejoin", "round"); }
     s.appendChild(p); return s;
+  }
+  // "Photo: <author> · <licence>, Wikimedia Commons" with the author and licence as links.
+  function photoCredit(c, cls) {
+    var parts = t("learn.photoCredit", { by: "\u0001", license: "\u0002" }).split(/(\u0001|\u0002)/);
+    return h("p", { class: cls }, parts.map(function (p) {
+      return p === "\u0001" ? h("a", { href: c.src, target: "_blank", rel: "noopener" }, c.by)
+        : p === "\u0002" ? h("a", { href: c.licenseUrl, target: "_blank", rel: "noopener license" }, c.license) : p;
+    }), ", Wikimedia Commons");
   }
   // Lesson markup: blank-line paragraphs, "• " bullet blocks, **bold** spans (learn.tsx Rich).
   function inline(s) {
@@ -649,6 +662,7 @@
               complete ? h("span", { class: "unit-done" }, icon("check", 14)) : null,
               h("span", { text: x.doneCount + "/" + x.lessons.length }))),
           h("span", { class: "unit-tog" }, icon("down", 18))));
+      if (x.u.credit) card.appendChild(photoCredit(x.u.credit, "unit-credit"));
       if (open) {
         card.appendChild(h("ol", { class: "lessons" }, x.nodes.map(function (n) {
           var l = n.lesson;

@@ -78,6 +78,13 @@ const SHORT = { "serving-wine": ["Serving Wine Course", "Kursus i servering af v
   "wine-etiquette": ["Wine Etiquette Course", "Kursus i vin ved bordet"], "wine-and-health": ["Wine & Health Course", "Kursus i vin og sundhed"],
   "history-of-wine": ["History of Wine Course", "Kursus i vinens historie"], "wine-basics": ["Wine Basics Course", "Kursus i vinens grundlag"],
   "wine-tasting": ["Wine Tasting Course", "Vinsmagningskursus"], "food-and-wine-pairing": ["Food & Wine Pairing Course", "Kursus i mad og vin"] };
+// Covers that are not public domain (CC BY-SA), credited like the app does (learn.tsx UNITS credit):
+// author linked to the Commons file page, licence linked to its deed, and the source.
+const CREDITS = {
+  uChile: { by: "FRPGCHILE", license: "CC BY-SA 4.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/", src: "https://commons.wikimedia.org/wiki/File:Carmenere_Vineyards_at_Vi%C3%B1a_Tipaume.jpg" },
+  uSouthAfrica: { by: "Michael Fu", license: "CC BY-SA 3.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/", src: "https://commons.wikimedia.org/wiki/File:Groot_Constantia_Estate.jpg" },
+};
+const creditHtml = (c, lang) => `${lang === "en" ? "Photo" : "Foto"}: <a href="${c.src}" rel="noopener">${esc(c.by)}</a> · <a href="${c.licenseUrl}" rel="noopener license">${esc(c.license)}</a>, ${lang === "en" ? "via" : "fra"} Wikimedia Commons`;
 const shortT = (u, lang) => (SHORT[u.en] ? SHORT[u.en][lang === "en" ? 0 : 1] : u.h1[lang]);
 
 const minutes = (l) => Math.max(2, Math.round(l.n * 0.45));
@@ -154,7 +161,7 @@ ${altLinks}<meta property="og:type" content="website">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="author" content="Jonas Egeskov">
 ${FONTS}
-<link rel="stylesheet" href="/assets/course/landing.css?v=2">
+<link rel="stylesheet" href="/assets/course/landing.css?v=3">
 ${extraHead}<script type="application/ld+json">${JSON.stringify(ld)}</script>
 ${ANALYTICS}
 </head>
@@ -208,7 +215,8 @@ function unitPage(u, lang) {
   ${free ? "" : `<p class="cl-unlock">${t.unlockLine}</p>`}
 </div>
 <img class="cl-cover" src="/assets/course/img/${u.img}.webp" alt="" width="1000" height="563" loading="eager">
-</section>
+${CREDITS[u.img] ? `<p class="cl-credit">${creditHtml(CREDITS[u.img], lang)}</p>
+` : ""}</section>
 
 <section class="section cl-sec"><div class="wrap cl-narrow">
   <h2 class="cl-h2">${lang === "en" ? `The ${u.lessons.length} lessons` : `De ${u.lessons.length} lektioner`}</h2>
@@ -343,6 +351,7 @@ function landing(lang, { withApp }) {
 <section class="section cl-sec" id="syllabus"><div class="wrap">
   <div class="section-head"><h2>${h.sylH}</h2><p>${h.sylDeck}</p></div>
   ${groups}
+  <p class="cl-credit cl-credits">${lang === "en" ? "Unit photos" : "Enhedsfotos"}: ${U.filter((u) => CREDITS[u.img]).map((u) => { const c = CREDITS[u.img]; return `${esc(name(u, lang))}, <a href="${c.src}" rel="noopener">${esc(c.by)}</a> (<a href="${c.licenseUrl}" rel="noopener license">${esc(c.license)}</a>)`; }).join("; ")}; ${lang === "en" ? "via" : "fra"} Wikimedia Commons.</p>
 </div></section>
 
 <section class="section cl-sec"><div class="wrap">
@@ -369,12 +378,12 @@ function landing(lang, { withApp }) {
   <p class="cl-fine">${lang === "en" ? "For adults of legal drinking age (18+). Please enjoy wine responsibly." : "For voksne over 18 år. Nyd vin med omtanke."}</p>
 </div></section>
 </main>`;
-  const appHead = withApp ? `<link rel="stylesheet" href="/assets/course/course.css?v=8">\n` : "";
+  const appHead = withApp ? `<link rel="stylesheet" href="/assets/course/course.css?v=9">\n` : "";
   const app = withApp ? `
 <div id="app" aria-live="polite" hidden></div>
 <script src="/assets/course/vendor/supabase-2.117.3.js"></script>
 <script src="/assets/course/strings.js?v=9"></script>
-<script src="/assets/course/course.js?v=11"></script>` : "";
+<script src="/assets/course/course.js?v=12"></script>` : "";
   let foot = FOOTER;
   if (withApp) foot = foot.replace("</body>", `${app}\n</body>`);
   return head({ lang, title: h.title, desc: h.desc, path, alt: { en: "/course/", da: "/da/vinkursus/" }, ld, extraHead: appHead }) + HEADER + body + foot;
