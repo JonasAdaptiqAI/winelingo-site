@@ -38,7 +38,8 @@ for (const [file, c] of Object.entries(cfg.pages)) {
   if (!l) throw new Error(`${file}: lesson ${c.lesson} not in syllabus.json`);
   if (l.unit !== FREE_UNIT) throw new Error(`${file}: lesson "${l.t}" is not in the free unit, so the browser link would hit the paywall`);
   const slug = pageSlug(file);
-  const web = `/course/?app=1&amp;lesson=${l.id}&amp;src=${slug}`;
+  // ?try= plays the lesson at once with no account (course.js try mode); a signed-in visitor gets it the normal way.
+  const web = `/course/?try=${l.id}&amp;src=${slug}`;
   const card = `${START}
 <aside class="lesson-cta" data-lesson="${l.id}" aria-label="Free lesson">
   <p class="eyebrow">Free lesson · about 5 minutes</p>
@@ -48,7 +49,7 @@ for (const [file, c] of Object.entries(cfg.pages)) {
     <a class="btn btn-primary lc-app" data-cta="lesson-app" href="${appLink(slug)}">Take it in the iPhone app</a>
     <a class="btn btn-ghost lc-web" data-cta="lesson-web" href="${web}">Take it in your browser</a>
   </div>
-  <p class="lc-fine">The app is free to download, with Premium for unlimited scans. In the browser, the first course unit is free with an account.</p>
+  <p class="lc-fine">No account needed to try it in your browser. The app is free to download, with Premium for unlimited scans.</p>
 </aside>
 ${END}
 `;

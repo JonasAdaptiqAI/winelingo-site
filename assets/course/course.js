@@ -17,7 +17,7 @@
   // a "Start" link (?app=1); everyone else, Google included, reads the landing page.
   var landing = document.getElementById("landing");
   if (landing) {
-    var wants = /[?&](app|purchase|sandbox|lang|gift|redeem|lesson)=/.test(location.search) ||
+    var wants = /[?&](app|purchase|sandbox|lang|gift|redeem|lesson|try)=/.test(location.search) ||
       /access_token|type=recovery|type=signup|error_description/.test(location.hash);
     try { for (var si = 0; !wants && si < localStorage.length; si++) if (/^sb-.*-auth-token$/.test(localStorage.key(si) || "")) wants = true; } catch (e) {}
     try { if (!wants && sessionStorage.getItem("wl-course-app")) wants = true; } catch (e) {}
@@ -109,10 +109,28 @@
   // cleared. src is kept: it is first-touch attribution for later events. src travels with the Umami events so a sign-up or a purchase can be
   // traced back to the guide that sent it.
   var OPEN_KEY = "wl-open-lesson", SRC_KEY = "wl-src";
+  // ?try=<id>: someone with no account plays one lesson from the free unit straight away. The
+  // lesson comes from a static copy (assets/course/try/<id>.json, exported from the lessons table),
+  // nothing is written to the database, there are no hearts, and closing the player leads to
+  // sign-up. A signed-in visitor gets the same lesson the normal way (it is also the pending lesson).
+  var TRY = null, TRY_EXTRAS = null;
+  function startTry() {
+    var id = TRY; TRY = null;
+    S.view = "auth"; S.notice = t("web.trySave"); render();
+    fetch("/assets/course/try/" + id + ".json").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) {
+      if (S.session) return;
+      try { localStorage.removeItem(OPEN_KEY); } catch (e) {}
+      S.trying = true;
+      TRY_EXTRAS = d.extras;
+      track("try-start", { lesson: id });
+      openPlayer(withV2Title(inChapter(d.lesson)));
+    }).catch(function () { S.trying = false; });
+  }
   (function () {
-    var q = location.search, m = q.match(/[?&]lesson=([0-9a-f-]{36})/), sm = q.match(/[?&]src=([a-z0-9-]{1,80})/);
+    var q = location.search, m = q.match(/[?&](?:lesson|try)=([0-9a-f-]{36})/), sm = q.match(/[?&]src=([a-z0-9-]{1,80})/);
+    TRY = (q.match(/[?&]try=([0-9a-f-]{36})/) || [])[1] || null;
     try { if (m) localStorage.setItem(OPEN_KEY, m[1]); if (sm) localStorage.setItem(SRC_KEY, sm[1]); } catch (e) {}
-    if (m || sm) history.replaceState(null, "", location.pathname + q.replace(/[?&](lesson|src)=[^&]*/g, "").replace(/^&/, "?") + location.hash);
+    if (m || sm) history.replaceState(null, "", location.pathname + q.replace(/[?&](lesson|try|src)=[^&]*/g, "").replace(/^&/, "?") + location.hash);
   })();
   function track(name, data) {
     try {
@@ -260,9 +278,11 @@
       }).catch(function () { return null; });
   }
   function loadXp() {
+    if (S.trying) return Promise.resolve(null);
     return sb.rpc("my_xp_today").then(function (res) { return typeof res.data === "number" ? res.data : null; }).catch(function () { return null; });
   }
   function refreshHearts() {
+    if (S.trying) return Promise.resolve(S.hearts);
     return sb.rpc("hearts_state").then(function (res) { if (!res.error && res.data) S.hearts = res.data; return S.hearts; })
       .catch(function () { return S.hearts; });
   }
@@ -886,6 +906,11 @@
   }
   // The lesson's extras and its Course 2.0 version; the translation of both rides in 'lesson_extra'.
   function loadExtras(id) {
+    if (S.trying && TRY_EXTRAS && TRY_EXTRAS.id === id) {
+      var x = Object.assign({}, TRY_EXTRAS);
+      x.v2 = x.v2 && Array.isArray(x.v2.steps) && x.v2.steps.length ? x.v2 : null;
+      return Promise.resolve(x);
+    }
     function q(cols) { return sb.from("lessons").select(cols).eq("id", id).limit(1); }
     return q("id, bank, deep_notes, deeper, v2").then(function (res) {
       return res.error && /v2/i.test(res.error.message || "") ? q("id, bank, deep_notes, deeper") : res;
@@ -934,9 +959,11 @@
   }
   function closePlayer() {
     if (!P) return;
+    var tried = S.trying ? P.lesson : null;
     P.el.remove(); P = null;
     document.body.classList.remove("noscroll");
     document.removeEventListener("keydown", onKey);
+    if (tried) { S.trying = false; TRY_EXTRAS = null; track("try-close", { lesson: tried.id }); S.view = "auth"; S.notice = t("web.trySave"); render(); return; }
     refreshProgress().then(render);
   }
   function startPlay(mode) {
@@ -973,6 +1000,7 @@
     if (P.phase !== "done") track("lesson-complete", { lesson: P.lesson.id });
     P.phase = "done";
     P.secs = Math.max(1, Math.round((Date.now() - P.startedAt) / 1000));
+    if (!P.recorded && S.trying) { P.recorded = true; rememberSeen(P.lesson.id, P.play.keys); }
     if (!P.recorded) {
       P.recorded = true;
       rememberSeen(P.lesson.id, P.play.keys);
@@ -1344,13 +1372,16 @@
         P.mode === "core" && !recap.length && outcomes.length ? h("div", { class: "outcomes" }, h("h3", { text: t("learn.nowYouCan") }),
           h("ul", null, outcomes.map(function (o) { return h("li", null, icon("check", 16), h("span", { text: o })); }))) : null),
       h("div", { class: "pl-foot" },
-        P.mode === "core" && P.deeperSteps.length ? h("div", { class: "nerd-offer" },
+        P.mode === "core" && P.deeperSteps.length && !S.trying ? h("div", { class: "nerd-offer" },
           h("div", null, h("b", { text: t("learn.nerdOfferTitle") }), h("span", { text: t("learn.nerdOfferBody") })),
           h("button", { class: "btn btn-ghost btn-sm", type: "button", onclick: function () { startPlay("deeper"); } }, icon("cap", 16), t("learn.nerdDeeper"))) : null,
+        S.trying ? h("div", { class: "try-save" }, h("b", { text: t("web.tryDoneTitle") }), h("span", { text: t("web.tryDoneBody") })) : null,
         h("button", { class: "btn btn-primary btn-block", type: "button", onclick: function () {
+          if (S.trying) { track("try-signup-click", { lesson: P.lesson.id }); closePlayer(); return; }
           if (P.mode === "core" && P.streak && P.streak.current > 0 && P.xpBefore === 0) { P.phase = "streak"; drawPlayer(); } else closePlayer();
-        } }, t("learn.continue")),
-        h("div", { class: "row2" },
+        } }, S.trying ? t("web.tryDoneCta") : t("learn.continue")),
+        S.trying ? h("a", { class: "btn btn-ghost btn-block", href: APP_STORE, onclick: function () { track("try-app-click", { lesson: P.lesson.id }); } }, t("web.tryDoneApp")) : null,
+        S.trying ? null : h("div", { class: "row2" },
           P.mode === "core" && P.qCount > 0 ? h("button", { class: "btn btn-ghost", type: "button", onclick: function () { P.phase = "article"; drawPlayer(); } }, t("learn.readArticle")) : null,
           h("button", { class: "btn btn-ghost", type: "button", onclick: function () { startPlay(P.mode); } }, P.mode === "core" ? t("learn.againNew") : t("learn.again")))));
   }
@@ -1431,13 +1462,20 @@
       if (ev === "PASSWORD_RECOVERY") { recovering = true; S.session = session; S.view = "recovery"; render(); return; }
       var had = S.session && S.session.user.id;
       S.session = session;
-      if (!session) { if (P) closePlayer(); S.profile = null; S.lessons = null; S.view = "auth"; render(); return; }
+      if (!session) {
+        if (TRY) { startTry(); return; }
+        if (S.trying) return;
+        if (P) closePlayer(); S.profile = null; S.lessons = null; S.view = "auth"; render(); return;
+      }
+      if (S.trying && P) { S.trying = false; TRY_EXTRAS = null; P.el.remove(); P = null; document.body.classList.remove("noscroll"); document.removeEventListener("keydown", onKey); }
+      TRY = null;
       if (recovering) { S.view = "recovery"; render(); return; }
       if (had !== session.user.id) afterSignIn();
     }, 0);
   });
   sb.auth.getSession().then(function (res) {
     var session = res.data && res.data.session;
+    if (!session && TRY) { startTry(); return; }
     if (!session && S.view === "loading") { S.view = "auth"; render(); }
   });
   if (location.hash && /access_token|error_description/.test(location.hash)) {
