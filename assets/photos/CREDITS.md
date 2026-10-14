@@ -193,3 +193,59 @@ Every image was reviewed at full size and as a 1500x560 crop. Files: `learn-<slu
 | learn-wine-myths.jpg | Tears running down the inside of a glass of red wine beside a screw-cap bottle and a cork | AI-generated, Higgsfield GPT Image 2.5, high, 2K, 21:9 (October 2026). |
 | learn-wine-storage-temperature.jpg | Dusty bottles resting on their sides in a vaulted cellar | Winelingo course cover (AI-generated, Higgsfield GPT Image 2.5, 2026-10-05), AI-upscaled (Higgsfield, ByteDance upscaler). |
 | learn-wine-sweetness-chart.jpg | Six wines from dry sparkling to sweet Port lined up on a marble counter, grapes at one end and honey at the other | AI-generated, Higgsfield GPT Image 2.5, high, 2K, 21:9 (October 2026). |
+
+
+## Wine-style photos (October 2026)
+
+Each of the 43 `/wine-styles/` pages has its own hero photo, hub thumbnail and 1200x630 share
+image. They are **AI-generated** with Higgsfield (GPT Image 2.5, quality "high", 2K, 21:9), in the
+carousel style. Each shows the wine's real colour in a fitting glass, food that suits it, and a
+recognisable setting from its home region. There are no faces, labels or brands. Every image was
+reviewed as a hero crop. Two were regenerated because the wine's colour was wrong: Oloroso had
+looked pink, and Valpolicella had looked like rosé.
+
+| File | Subject | Used on |
+|---|---|---|
+| style-alsace-riesling.jpg | A tall Alsace-style wine glass of pale gold dry Riesling on the windowsill of a half-timbered village house in Alsace | /wine-styles/alsace-riesling/ |
+| style-amarone-della-valpolicella.jpg | A large glass of deep garnet Amarone on a rustic table in a drying loft where bunches of red grapes rest on bamboo racks to dry | /wine-styles/amarone-della-valpolicella/ |
+| style-asti-moscato-d-asti.jpg | Two tulip glasses of pale, lightly sparkling Moscato d'Asti with fine bubbles on a festive aperitivo table at dusk with amaretti biscuits | /wine-styles/asti-moscato-d-asti/ |
+| style-barbaresco.jpg | A glass of translucent garnet Barbaresco on a stone balcony overlooking the medieval tower of Barbaresco village and Nebbiolo vineyards in autumn | /wine-styles/barbaresco/ |
+| style-barolo.jpg | A large Burgundy-shaped glass of pale garnet Barolo with an orange tint, dried roses and a small truffle beside it | /wine-styles/barolo/ |
+| style-barossa-shiraz.jpg | A glass of inky, deep purple Shiraz resting on an old wooden post among gnarled old bush vines in the warm Barossa Valley | /wine-styles/barossa-shiraz/ |
+| style-beaujolais.jpg | A glass of bright purple-ruby Beaujolais with fine condensation from a slight chill on a picnic blanket in the granite hills of Beaujolais | /wine-styles/beaujolais/ |
+| style-bordeaux-left-bank.jpg | A glass of deep ruby Cabernet-based red wine on the stone balustrade of a grand Médoc château, gravelly vineyard rows leading to the château | /wine-styles/bordeaux-left-bank/ |
+| style-bordeaux-right-bank.jpg | A glass of plush ruby Merlot-based red wine on an old limestone wall in Saint-Émilion | /wine-styles/bordeaux-right-bank/ |
+| style-brunello-di-montalcino.jpg | A glass of garnet Brunello on a rustic stone farmhouse table in Tuscany, the hilltop town of Montalcino with olive groves and cypress trees behind | /wine-styles/brunello-di-montalcino/ |
+| style-cava.jpg | A flute of pale sparkling Cava on a terrace in Penedès, Catalonia, the jagged peaks of Montserrat on the horizon | /wine-styles/cava/ |
+| style-chablis.jpg | A glass of very pale green-gold Chablis beside a plate of fresh oysters on ice and a piece of fossil-rich white limestone, cool daylight | /wine-styles/chablis/ |
+| style-champagne.jpg | A flute of golden Champagne with fine bubbles on a chalk ledge deep in an ancient chalk cellar under Reims | /wine-styles/champagne/ |
+| style-chateauneuf-du-pape.jpg | A glass of deep ruby Châteauneuf-du-Pape standing on a vineyard floor covered with large round pebbles, the ruined papal castle on the hill behind | /wine-styles/chateauneuf-du-pape/ |
+| style-chianti-classico.jpg | A glass of bright ruby Chianti Classico on a Tuscan farmhouse table with tomatoes, basil and rustic bread | /wine-styles/chianti-classico/ |
+| style-cremant.jpg | A flute of pale sparkling Crémant in a cool cellar carved into soft white tufa stone in the Loire Valley, candlelight | /wine-styles/cremant/ |
+| style-franciacorta.jpg | A flute of fine sparkling Franciacorta on an elegant terrace above Lake Iseo in Lombardy, mountains reflected in the calm lake | /wine-styles/franciacorta/ |
+| style-friulian-orange.jpg | A glass of hazy amber-orange skin-contact white wine on a rustic stone table in the Collio hills of Friuli, a terracotta amphora behind | /wine-styles/friulian-orange/ |
+| style-georgian-amber-qvevri.jpg | A glass of deep amber qvevri wine beside a large egg-shaped clay qvevri set into the earthen floor of a traditional Georgian wine cellar | /wine-styles/georgian-amber-qvevri/ |
+| style-ice-wine-eiswein.jpg | A small glass of golden ice wine beside frozen grape bunches still hanging on the vine, covered in frost and fresh snow | /wine-styles/ice-wine-eiswein/ |
+| style-madeira.jpg | A small glass of amber-brown Madeira on a terrace above Funchal harbour and the Atlantic, small terraced vineyards on steep green cliffs | /wine-styles/madeira/ |
+| style-marlborough-sauvignon-blanc.jpg | A glass of pale green Sauvignon Blanc on a stone wall at the edge of a Marlborough vineyard in the early morning | /wine-styles/marlborough-sauvignon-blanc/ |
+| style-mendoza-malbec.jpg | A glass of deep violet Malbec on a barrel head in a modern winery cellar in Mendoza | /wine-styles/mendoza-malbec/ |
+| style-mosel-riesling.jpg | A glass of pale lemon Riesling resting among pieces of blue-grey slate on a very steep vineyard slope | /wine-styles/mosel-riesling/ |
+| style-napa-cabernet.jpg | A glass of deep ruby Cabernet Sauvignon on the terrace of a modern Napa Valley winery, neat vineyard rows and golden hills dotted with oak trees | /wine-styles/napa-cabernet/ |
+| style-port.jpg | A small glass of deep ruby Port beside a wedge of blue cheese and walnuts in a dark port lodge with huge old casks | /wine-styles/port/ |
+| style-prosecco.jpg | A flute of Prosecco on a vineyard terrace among the steep, rounded hills of Conegliano-Valdobbiadene, a small church on a hilltop, soft morning light | /wine-styles/prosecco/ |
+| style-provence-rose.jpg | A glass of pale salmon-pink rosé beside a bowl of olives and a plate of grilled fish on a seaside terrace on the Provençal coast | /wine-styles/provence-rose/ |
+| style-red-burgundy.jpg | A wide Burgundy glass of pale ruby Pinot Noir on the old stone wall of a walled vineyard in the Côte de Nuits | /wine-styles/red-burgundy/ |
+| style-rias-baixas-albarino.jpg | A glass of pale lemon Albariño beside a plate of octopus with paprika and a bowl of mussels on a granite table by an Atlantic estuary in Galicia | /wine-styles/rias-baixas-albarino/ |
+| style-ribera-del-duero.jpg | A glass of deep purple-red wine on a barrel in a stone cellar | /wine-styles/ribera-del-duero/ |
+| style-rioja.jpg | A glass of ruby Rioja with a brick-coloured rim beside an old oak barrel and a plate of thinly sliced cured ham | /wine-styles/rioja/ |
+| style-sancerre.jpg | A glass of crisp pale Sancerre beside a small round goat's cheese and a few walnuts on a stone wall | /wine-styles/sancerre/ |
+| style-sauternes.jpg | A small glass of deep gold Sauternes beside a slice of toasted brioche with foie gras and a bunch of shrivelled, noble-rot grapes | /wine-styles/sauternes/ |
+| style-sherry-fino.jpg | A small copita glass of pale straw Fino sherry with green olives, almonds and cured ham on a tiled counter in an Andalusian bodega in Jerez | /wine-styles/sherry-fino/ |
+| style-sherry-oloroso.jpg | A copita glass of deep amber-brown Oloroso sherry with roasted almonds | /wine-styles/sherry-oloroso/ |
+| style-spanish-rosado.jpg | A glass of vivid cherry-pink Spanish rosado on a sunny tapas table with grilled prawns, green peppers and bread, the hills of Navarra behind | /wine-styles/spanish-rosado/ |
+| style-tavel.jpg | A glass of deep pink-coral Tavel rosé beside a bowl of Provençal fish stew and garlic bread on a village terrace with old stone walls and sandy | /wine-styles/tavel/ |
+| style-tokaji-aszu.jpg | A small glass of golden amber Tokaji Aszú beside a few shrivelled aszú grapes in an old Tokaj cellar whose walls are covered in dark cellar mould | /wine-styles/tokaji-aszu/ |
+| style-valpolicella.jpg | A glass of light ruby Valpolicella with risotto and fresh cherries on a table near Lake Garda, pergola-trained vines behind | /wine-styles/valpolicella/ |
+| style-vin-santo.jpg | A small glass of amber Vin Santo with a plate of almond cantucci biscuits on a rustic Tuscan table | /wine-styles/vin-santo/ |
+| style-vouvray.jpg | A glass of pale gold Chenin Blanc in a cave carved into soft white tufa stone, the Loire river and vineyards visible through the opening | /wine-styles/vouvray/ |
+| style-white-burgundy.jpg | A glass of golden Chardonnay beside a lobster tail with lemon on a terrace in Meursault | /wine-styles/white-burgundy/ |

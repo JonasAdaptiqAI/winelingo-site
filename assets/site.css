@@ -546,3 +546,7 @@ p.qz-biz{display:block}
 /* Photos on the "10 easy wines" picks (learn/wine-for-beginners) */
 .wp-photo{margin:4px 0 14px; border-radius:16px; overflow:hidden; aspect-ratio:16/9; background:var(--parchment); box-shadow:var(--shadow-sm)}
 .wp-photo img{display:block; width:100%; height:100%; object-fit:cover}
+
+/* Credit line under a hero photo that needs attribution (CC BY / CC BY-SA) */
+.photo-credit{max-width:var(--maxw); margin:6px auto 0; padding:0 24px; text-align:right; font-size:12px; line-height:1.4; color:var(--muted)}
+.photo-credit a{color:inherit; text-decoration:underline; text-decoration-color:rgba(138,127,134,.4)}
