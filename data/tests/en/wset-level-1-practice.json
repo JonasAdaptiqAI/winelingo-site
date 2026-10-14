@@ -1,0 +1,138 @@
+{
+  "slug": "wset-level-1-practice",
+  "title": "WSET Level 1 practice questions",
+  "summary": "Unofficial practice questions in the style of the WSET Level 1 Award in Wines: styles, grapes, food pairing and serving.",
+  "level": 1,
+  "questions": [
+    {
+      "q": "Port is a well-known example of which type of wine?",
+      "opts": [
+        "A sparkling wine",
+        "A fortified wine",
+        "A rosé wine",
+        "A light, unoaked white"
+      ],
+      "a": 1,
+      "why": "Port is a fortified wine: grape spirit is added while the wine is still fermenting. The spirit stops the fermentation, so Port is both sweet and strong, usually around 19–22% alcohol.",
+      "deeper": "Sherry is the other classic fortified wine, but its spirit is usually added after fermentation has finished, which is why many Sherries are dry. Prosecco and Cava are sparkling wines, not fortified ones.",
+      "source": "https://en.wikipedia.org/wiki/Fortified_wine"
+    },
+    {
+      "q": "During fermentation, what does yeast turn the sugar in grape juice into?",
+      "opts": [
+        "Alcohol and carbon dioxide",
+        "Acid and water",
+        "Tannin and colour from the grape skins",
+        "Vinegar and oxygen"
+      ],
+      "a": 0,
+      "why": "Yeast eats the sugar in the juice and turns it into alcohol and carbon dioxide gas. In still wine the gas simply escapes; the alcohol stays in the wine.",
+      "deeper": "If fermentation is stopped before all the sugar is used up, some sweetness remains, which is one way sweet wines are made. Sparkling wines trap the carbon dioxide, and that is where the bubbles come from.",
+      "source": "https://en.wikipedia.org/wiki/Fermentation_in_winemaking"
+    },
+    {
+      "q": "A white wine has high acidity and green aromas of cut grass, green pepper and gooseberry, with no oak. Which grape is it most likely to be?",
+      "opts": [
+        "Chardonnay",
+        "Riesling",
+        "Pinot Grigio",
+        "Sauvignon Blanc"
+      ],
+      "a": 3,
+      "why": "Grassy, green pepper and gooseberry aromas with crisp, high acidity are the signature of Sauvignon Blanc. It is usually made without oak to keep that fresh, aromatic character.",
+      "deeper": "Classic examples come from Sancerre in France's Loire Valley and from Marlborough in New Zealand, where the wines often add passion fruit notes. Riesling is also high in acidity, but it smells more of citrus, flowers and stone fruit than of grass.",
+      "source": "https://winefolly.com/grapes/sauvignon-blanc/"
+    },
+    {
+      "q": "A guest wants a light-bodied red with low tannin and red-fruit flavours such as strawberry and cherry. Which grape fits best?",
+      "opts": [
+        "Cabernet Sauvignon",
+        "Syrah",
+        "Pinot Noir",
+        "Malbec"
+      ],
+      "a": 2,
+      "why": "Pinot Noir has thin skins, so its wines are usually pale, light-bodied and low in tannin, with red-fruit flavours and fresh acidity. Cabernet Sauvignon, Syrah and Malbec are generally deeper in colour and fuller, with more tannin.",
+      "deeper": "Burgundy in France is Pinot Noir's classic home; New Zealand, Oregon and Germany (where it is called Spätburgunder) also make well-known examples. With age it can develop earthy, mushroom-like notes.",
+      "source": "https://winefolly.com/grapes/pinot-noir/"
+    },
+    {
+      "q": "A guest asks how Australian Shiraz and Syrah from France's Rhône Valley are related. What is the answer?",
+      "opts": [
+        "Shiraz is a blend of Syrah and Merlot",
+        "Shiraz is a white grape; Syrah is a black one",
+        "They are unrelated grapes that taste alike",
+        "They are the same grape under two names"
+      ],
+      "a": 3,
+      "why": "Shiraz and Syrah are the same black grape. Australia, and some other New World countries, call it Shiraz; France and many other places call it Syrah.",
+      "deeper": "Typical flavours are blackberry, plum and black pepper. Australian Shiraz from warm areas such as the Barossa Valley is often full-bodied and ripe, while Northern Rhône Syrah tends to be more peppery and savoury.",
+      "source": "https://winefolly.com/grapes/syrah/"
+    },
+    {
+      "q": "A guest drinks a dry Sauvignon Blanc with a sweet dessert. What usually happens to the taste of the wine?",
+      "opts": [
+        "It tastes sweeter and fruitier",
+        "Nothing changes; sweetness has no effect",
+        "It tastes sharper and less fruity",
+        "It tastes noticeably richer and smoother"
+      ],
+      "a": 2,
+      "why": "Sweetness in food makes a wine taste drier, more acidic and less fruity. That is why a dessert needs a wine that is at least as sweet as the dish itself.",
+      "deeper": "Umami, found in foods such as mushrooms and ripe cheese, has a similar effect and can make a wine taste more bitter and acidic. Salt works the other way: it makes a wine taste softer and fuller, so salty food is easy to match.",
+      "source": "https://www.decanter.com/learn/wset/chinese-food-and-wine-matching-wset-level-2-296275/"
+    },
+    {
+      "q": "A guest orders a fiery Thai green curry. Which wine style copes best with chilli heat?",
+      "opts": [
+        "A fruity, off-dry white with moderate alcohol",
+        "A high-alcohol, heavily oaked red with firm tannins",
+        "A very tannic young Cabernet Sauvignon",
+        "A bone-dry, high-alcohol fortified wine"
+      ],
+      "a": 0,
+      "why": "Chilli heat makes alcohol feel hotter and tannin taste more bitter. A fruity white with a touch of sweetness and moderate alcohol, such as an off-dry Riesling, calms the heat instead of adding to it.",
+      "deeper": "Acidity in food has a separate effect: a squeeze of lime or a tangy sauce makes a wine taste less acidic, which suits crisp, high-acid wines. If a guest wants red with spicy food, a light, fruity, low-tannin red is the safer choice.",
+      "source": "https://www.decanter.com/learn/wset/chinese-food-and-wine-matching-wset-level-2-296275/"
+    },
+    {
+      "q": "At what temperature should you serve a light, crisp white such as Pinot Grigio?",
+      "opts": [
+        "Lightly chilled, 12–14 °C",
+        "Slightly cool, 15–18 °C",
+        "Chilled, 7–10 °C",
+        "Ice cold, 0–2 °C"
+      ],
+      "a": 2,
+      "why": "Light, crisp whites are served chilled, around 7–10 °C, which keeps them fresh and refreshing. Fuller whites such as oaked Chardonnay are served a little warmer, around 10–13 °C.",
+      "deeper": "12–14 °C suits light reds such as Pinot Noir, and 15–18 °C suits medium and full-bodied reds. Serving any wine too cold mutes its aromas and flavours, so ice cold is never the goal.",
+      "source": "https://www.wsetglobal.com/knowledge-centre/blog/2022/april/26/ideal-serving-temperatures-and-top-tips-for-wine-storage"
+    },
+    {
+      "q": "You want to keep a few cork-sealed bottles at home for a year. What is the best way to store them?",
+      "opts": [
+        "Standing upright on a bright, sunny kitchen shelf",
+        "Next to the oven, so they stay warm",
+        "Upright in a loft that gets hot in summer",
+        "Lying on their side, somewhere cool and dark"
+      ],
+      "a": 3,
+      "why": "Lying a bottle on its side keeps the cork moist, so it does not dry out and let air in. A cool, dark place with a steady temperature protects the wine from heat and light, which both spoil it.",
+      "deeper": "Big swings in temperature and strong vibration are also bad for wine. Bottles with screw caps can be stored upright, because there is no cork to dry out.",
+      "source": "https://www.wsetglobal.com/knowledge-centre/blog/2022/april/26/ideal-serving-temperatures-and-top-tips-for-wine-storage"
+    },
+    {
+      "q": "Half a bottle of still red is left over after dinner. Which method helps keep it fresh for another day or two?",
+      "opts": [
+        "Leaving it uncorked so the wine can breathe",
+        "Using a vacuum pump and stopper",
+        "Standing it upright next to a warm oven",
+        "Pouring it into a wide, open jug"
+      ],
+      "a": 1,
+      "why": "Once a bottle is open, oxygen slowly makes the wine taste flat and stale. A vacuum pump draws some of the air out of the bottle and the stopper seals it, which slows this down. Keeping the sealed bottle in the fridge helps too, even for reds.",
+      "deeper": "Another option is a blanket system, which covers the surface of the wine with a layer of inert gas such as argon, so less oxygen reaches it. Even with these tools, most opened still wines are best finished within two to three days.",
+      "source": "https://www.winespectator.com/articles/do-vacuum-pump-seals-preserve-wine-54662"
+    }
+  ]
+}

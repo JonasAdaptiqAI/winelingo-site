@@ -23,6 +23,7 @@ const DESC = {
   "tests/serving-wine/index.html": "Serve any bottle with confidence: the right glass, temperature, opening and order at the table." + TAIL,
   "tests/sparkling-wine/index.html": "How Champagne, Prosecco, Cava and Crémant differ, how to read a sparkling label, and how to open and pour." + TAIL,
   "tests/white-grapes/index.html": "The nine white grapes you meet everywhere, what they taste like, and which grape hides behind a famous place." + TAIL,
+  "tests/wset-level-1-practice/index.html": "Unofficial practice questions in the style of WSET Level 1: wine styles, grapes, food pairing and serving, each explained. Free, no sign-up.",
   "tests/wine-faults/index.html": "Recognise the common wine faults, tell them from harmless quirks, and handle a complaint calmly and fairly." + TAIL,
 };
 for (const [p, d] of Object.entries(DESC)) {

@@ -16,7 +16,7 @@ const ROOT = new URL("..", import.meta.url).pathname;
 const DATA = join(ROOT, "data/tests");
 const LANGS = ["en", "da", "de", "es"];
 const ORDER = ["serving-wine", "guest-questions", "white-grapes", "red-grapes",
-  "food-and-wine", "labels-and-lists", "sparkling-wine", "wine-faults"];
+  "food-and-wine", "labels-and-lists", "sparkling-wine", "wine-faults", "wset-level-1-practice"];
 
 const tpl = readFileSync(join(ROOT, "tools/index.html"), "utf8");
 const cut = (s, a, b) => s.slice(s.indexOf(a), s.indexOf(b) + b.length);

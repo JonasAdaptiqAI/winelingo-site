@@ -150,6 +150,51 @@
         "Put the words to a real glass",
         "Scan any label and Winelingo explains the wine in plain words, with a short lesson to go with it. Free to download on the App Store."
       ]
+    },
+    "learn/wine-101/index.html": {
+      "lesson": "d7170656-caab-47b9-85c2-d15fbf5fc6b1",
+      "hook": "Want the interactive version? This lesson covers the main styles of wine in about five minutes, with a few quick questions.",
+      "before": "<h2>Wine grapes and why they matter</h2>",
+      "band": [
+        "Learn the wine in your glass",
+        "Scan any label and Winelingo explains the wine in plain words, with a short lesson to go with it. Free to download on the App Store."
+      ]
+    },
+    "learn/how-to-host-a-wine-tasting/index.html": {
+      "lesson": "b6aec9b7-bc1e-4671-8f10-0fe32ae219fe",
+      "hook": "Before the guests arrive, take five minutes to learn the tasting steps you will be leading.",
+      "before": "<h2>Wine tasting order: what to pour first</h2>",
+      "band": [
+        "Taste together, blind",
+        "Start a tasting in Winelingo and everyone at the table writes their notes without peeking. Then the reveal: the wine, where you agreed, and who has the sharpest palate. Free to download on the App Store."
+      ]
+    },
+    "learn/wset-levels-explained/index.html": {
+      "lesson": "90c04205-6472-4ae2-acc3-8353d4d61ae8",
+      "hook": "Every course starts with your palate. This lesson shows how anyone builds one, one glass at a time.",
+      "before": "<h2>WSET Level 2 Award in Wines</h2>",
+      "band": [
+        "Learn the wine in your glass",
+        "Scan any label and Winelingo explains the wine in plain words, with a short lesson to go with it. Free to download on the App Store."
+      ]
+    },
+    "learn/how-to-become-a-sommelier/index.html": {
+      "lesson": "b6aec9b7-bc1e-4671-8f10-0fe32ae219fe",
+      "hook": "Every sommelier started with the same five tasting steps. This lesson walks you through them.",
+      "before": "<h2>Sommelier levels and certifications compared</h2>",
+      "band": [
+        "Learn the wine in your glass",
+        "Scan any label and Winelingo explains the wine in plain words, with a short lesson to go with it. Free to download on the App Store."
+      ]
+    },
+    "learn/best-online-wine-courses/index.html": {
+      "lesson": "d7170656-caab-47b9-85c2-d15fbf5fc6b1",
+      "hook": "Try ours before you choose: the first lesson plays right here in your browser, no account needed.",
+      "before": "<h2>Free online wine courses</h2>",
+      "band": [
+        "Learn the wine in your glass",
+        "Scan any label and Winelingo explains the wine in plain words, with a short lesson to go with it. Free to download on the App Store."
+      ]
     }
   }
 }
