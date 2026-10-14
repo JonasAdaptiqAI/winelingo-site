@@ -369,7 +369,7 @@ function landing(lang, { withApp }) {
 <div id="app" aria-live="polite" hidden></div>
 <script src="/assets/course/vendor/supabase-2.117.3.js"></script>
 <script src="/assets/course/strings.js?v=7"></script>
-<script src="/assets/course/course.js?v=8"></script>` : "";
+<script src="/assets/course/course.js?v=9"></script>` : "";
   let foot = FOOTER;
   if (withApp) foot = foot.replace("</body>", `${app}\n</body>`);
   return head({ lang, title: h.title, desc: h.desc, path, alt: { en: "/course/", da: "/da/vinkursus/" }, ld, extraHead: appHead }) + HEADER + body + foot;

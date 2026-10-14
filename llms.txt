@@ -35,7 +35,7 @@
 - [45 wine style guides](https://winelingo.app/wine-styles/)
 - [Food and wine pairing (131 pairings)](https://winelingo.app/food-and-wine-pairing/)
 - [Wine classifications explained (13 systems)](https://winelingo.app/wine-classifications/)
-- [Wine glossary (66 terms)](https://winelingo.app/wine-glossary/)
+- [Wine glossary (199 terms)](https://winelingo.app/wine-glossary/)
 
 ## Tools
 - [Wine serving temperature chart](https://winelingo.app/tools/wine-serving-temperature/)

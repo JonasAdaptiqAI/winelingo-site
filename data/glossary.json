@@ -1,0 +1,1398 @@
+{
+ "updated": "2026-10-14",
+ "terms": [
+  {
+   "term": "ABV",
+   "cat": "label",
+   "def": "Alcohol by volume, the percentage of alcohol in the wine shown on every label. Most table wines sit around 11–15%, so it’s a quick guide to how strong a wine is.",
+   "link": "/learn/wine-alcohol-content/",
+   "added": null
+  },
+  {
+   "term": "Acidity",
+   "cat": "tasting",
+   "def": "The fresh, mouth-watering, zingy quality in wine — the same tartness you get from a squeeze of lemon. Good acidity makes a wine feel lively and pairs well with food.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Aerate",
+   "cat": "serving",
+   "def": "Exposing wine to air to soften it and lift its aromas, by swirling, decanting or using an aerator.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Albariño",
+   "cat": "grapes",
+   "def": "A crisp, aromatic white grape from Rías Baixas in north-west Spain, with lemon, peach and a salty freshness.",
+   "link": "/grape-varieties/albarino/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Amber wine",
+   "cat": "styles",
+   "def": "Another name for orange wine, used especially in Georgia, where white grapes are fermented on their skins in clay qvevri.",
+   "link": "/wine-styles/georgian-amber-qvevri/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "AOC / AOP",
+   "cat": "label",
+   "def": "France’s protected place-of-origin system (Appellation d’Origine Contrôlée, now also Protégée). It fixes where the grapes are grown and often which grapes and methods are allowed.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Appassimento",
+   "cat": "winemaking",
+   "def": "Drying grapes after harvest so they lose water and concentrate their sugar and flavour. It is how Amarone is made.",
+   "link": "/wine-styles/amarone-della-valpolicella/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Appellation",
+   "cat": "regions",
+   "def": "An officially defined wine region with rules about what can be grown and how, such as Chablis or Rioja. The name on the label tells you where the wine comes from and often the style to expect.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Aroma",
+   "cat": "tasting",
+   "def": "What a wine smells of, such as cherry, lemon or black pepper. Strictly, aromas come from the grape and from fermentation; the smells a wine picks up with age are its bouquet.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Astringent",
+   "cat": "tasting",
+   "def": "A drying, puckering feel in the mouth, mostly caused by tannin. A little gives a red wine structure; too much feels harsh.",
+   "link": "/learn/what-are-tannins-in-wine/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "AVA",
+   "cat": "label",
+   "def": "American Viticultural Area: a US wine region defined by its geography, such as Napa Valley. It says where the grapes were grown, not how the wine was made.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Balance",
+   "cat": "tasting",
+   "def": "When no single element — fruit, acidity, tannin, alcohol, sweetness — sticks out awkwardly. A balanced wine feels harmonious and complete.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Barrique",
+   "cat": "winemaking",
+   "def": "A 225-litre oak barrel, the standard size in Bordeaux. Small, new barrels give more oak flavour than large or old ones.",
+   "link": "/learn/french-vs-american-oak/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Bâtonnage",
+   "cat": "winemaking",
+   "def": "Stirring the lees (spent yeast) back into the wine to add creaminess and body. Often used for white Burgundy.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Biodynamic",
+   "cat": "styles",
+   "def": "Organic farming plus ideas from Rudolf Steiner: the vineyard as one living system, work timed by a lunar calendar, herbal preparations. Certification is stricter than organic, though the mystical side is debated.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Blanc de Blancs",
+   "cat": "styles",
+   "def": "“White from whites”: white wine, usually sparkling, made only from white grapes. In Champagne that usually means Chardonnay.",
+   "link": "/wine-styles/champagne/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Blanc de Noirs",
+   "cat": "styles",
+   "def": "“White from blacks”: white wine, usually sparkling, made from black grapes such as Pinot Noir and Meunier, pressed gently so the juice stays pale.",
+   "link": "/wine-styles/champagne/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Blend",
+   "cat": "label",
+   "def": "A wine made from more than one grape variety combined, so their qualities complement each other. Many famous wines, including most Bordeaux, are blends.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Blind tasting",
+   "cat": "serving",
+   "def": "Tasting without knowing which wine is in the glass, so the label cannot sway you. A favourite training method for sommeliers.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Body",
+   "cat": "tasting",
+   "def": "How heavy or light a wine feels in your mouth, from the watery feel of skimmed milk (light) to whole milk or cream (full). It’s about weight and texture, not flavour.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Bordeaux blend",
+   "cat": "grapes",
+   "def": "A wine made from Bordeaux’s grapes, mainly Cabernet Sauvignon, Merlot and Cabernet Franc, sometimes with Petit Verdot and Malbec. American versions may be labelled Meritage.",
+   "link": "/wine-styles/bordeaux-left-bank/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Bouquet",
+   "cat": "tasting",
+   "def": "The deeper smells a wine develops as it ages in barrel and bottle, such as leather, mushroom, dried fruit or toast. Young wines have aroma; older wines add bouquet.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Breathe",
+   "cat": "serving",
+   "def": "To let a wine sit in contact with air after opening so its aromas open up and any harsh edges soften. Bold young reds benefit most.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Brettanomyces",
+   "cat": "serving",
+   "def": "A type of yeast that can grow in wine and give it barnyard, sweaty, or sticking-plaster smells. A little can add character, but a lot is usually considered a fault.",
+   "link": "/learn/wine-faults/",
+   "added": null
+  },
+  {
+   "term": "Brut",
+   "cat": "styles",
+   "def": "The most common sweetness level for sparkling wine: dry, with less than 12 grams of sugar per litre.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Brut Nature",
+   "cat": "styles",
+   "def": "Sparkling wine with no sugar added at dosage and less than 3 grams per litre in total. The driest style there is.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Buttery",
+   "cat": "tasting",
+   "def": "A rich smell of butter, most often found in Chardonnay. It comes mainly from diacetyl, a compound made during malolactic conversion, which often also gives the wine a softer, creamier feel.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Cabernet Franc",
+   "cat": "grapes",
+   "def": "A parent of Cabernet Sauvignon, lighter and more fragrant, with red fruit, pencil shavings and green pepper. The star of Chinon in the Loire Valley.",
+   "link": "/grape-varieties/cabernet-franc/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Cabernet Sauvignon",
+   "cat": "grapes",
+   "def": "A widely planted red grape making bold, structured wines with firm tannin and blackcurrant flavours. A cornerstone of Bordeaux and popular worldwide.",
+   "link": "/grape-varieties/cabernet-sauvignon/",
+   "added": null
+  },
+  {
+   "term": "Carbonic maceration",
+   "cat": "winemaking",
+   "def": "A method where whole, uncrushed grapes ferment from the inside out in a sealed, oxygen-free tank. It makes light, fruity, low-tannin red wines, like classic Beaujolais.",
+   "link": "/wine-styles/beaujolais/",
+   "added": null
+  },
+  {
+   "term": "Cava",
+   "cat": "styles",
+   "def": "Spain’s traditional-method sparkling wine, made mostly in Catalonia.",
+   "link": "/wine-styles/cava/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Cellaring",
+   "cat": "serving",
+   "def": "Storing wine to age it, ideally somewhere dark, still and at a steady 12–13°C.",
+   "link": "/learn/wine-storage-temperature/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Champagne",
+   "cat": "styles",
+   "def": "Sparkling wine from the Champagne region of France, where the bubbles come from a second fermentation inside the bottle. In the EU, the UK and most of the world the name is legally protected for that region alone.",
+   "link": "/wine-styles/champagne/",
+   "added": null
+  },
+  {
+   "term": "Chaptalisation",
+   "cat": "winemaking",
+   "def": "Adding sugar to the grape juice before fermentation, usually where grapes struggle to ripen fully. The yeast turns that extra sugar into alcohol, so the wine ends up stronger but no sweeter.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Chardonnay",
+   "cat": "grapes",
+   "def": "A versatile white grape that can be crisp and unoaked or rich and buttery depending on how it’s made. Grown almost everywhere wine is made.",
+   "link": "/grape-varieties/chardonnay/",
+   "added": null
+  },
+  {
+   "term": "Château / Domaine",
+   "cat": "label",
+   "def": "French terms for a wine estate. ‘Château’ is common in Bordeaux and ‘Domaine’ in Burgundy; both simply mean the property where the wine is made.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Chenin Blanc",
+   "cat": "grapes",
+   "def": "A versatile white grape from the Loire Valley and South Africa, made bone dry, sweet or sparkling: apple, quince, honey and high acidity.",
+   "link": "/grape-varieties/chenin-blanc/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Claret",
+   "cat": "styles",
+   "def": "The traditional British name for red Bordeaux.",
+   "link": "/wine-styles/bordeaux-left-bank/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Classico",
+   "cat": "label",
+   "def": "The historic heart of an Italian wine area, as in Chianti Classico or Soave Classico.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Closed",
+   "cat": "tasting",
+   "def": "A wine that shows little smell or flavour, often because it is young or served too cold. Air, a little warmth or a few more years in bottle can open it up.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Complexity",
+   "cat": "tasting",
+   "def": "When a wine offers many different aromas and flavours that change and unfold as you sip. A complex wine keeps revealing something new, rather than tasting one-note.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Cool climate",
+   "cat": "regions",
+   "def": "Regions where grapes ripen slowly, such as Champagne, the Mosel or Marlborough. Expect lighter wines with higher acidity and fresher fruit.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Cork",
+   "cat": "winemaking",
+   "def": "Stoppers made from the bark of the cork oak. A small share of natural corks carry TCA, the taint that makes a wine smell corked.",
+   "link": "/learn/wine-faults/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Corkage",
+   "cat": "serving",
+   "def": "A fee some restaurants charge to open and serve a bottle you brought yourself. Worth asking about if you’d like to bring a special bottle.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Corked",
+   "cat": "tasting",
+   "def": "A faulty wine spoiled by a tainted cork, smelling musty like damp cardboard or a wet dog. Harmless but unpleasant, and a genuine reason to return a bottle.",
+   "link": "/learn/wine-faults/",
+   "added": null
+  },
+  {
+   "term": "Crémant",
+   "cat": "styles",
+   "def": "French sparkling wine made by the traditional (Champagne) method outside Champagne, such as Crémant de Loire or Crémant d’Alsace.",
+   "link": "/wine-styles/cremant/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Crianza",
+   "cat": "label",
+   "def": "A Spanish red aged for at least two years before release, with at least six months in oak (a full year in Rioja).",
+   "link": "/wine-classifications/crianza-reserva-gran-reserva/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Crisp",
+   "cat": "tasting",
+   "def": "Fresh and refreshing, with lively acidity and no heaviness. Used most for whites like Sauvignon Blanc, Albariño or Pinot Grigio.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Cru",
+   "cat": "regions",
+   "def": "French for “growth”: a named vineyard or village recognised for its quality. The exact meaning changes by region, as in a Grand Cru in Burgundy or one of the ten Beaujolais crus.",
+   "link": "/wine-classifications/beaujolais-crus-explained/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Cuvée",
+   "cat": "label",
+   "def": "A French word (roughly ‘koo-VAY’) for a specific batch or blend of wine. On a label it often points to a particular selection the producer is proud of.",
+   "link": "/wine-classifications/what-does-cuvee-mean/",
+   "added": null
+  },
+  {
+   "term": "Decant",
+   "cat": "serving",
+   "def": "To pour wine from its bottle into another container, giving it air and separating it from any harmless sediment. Helps bold young reds open up and older reds pour cleanly.",
+   "link": "/course/serving-wine/",
+   "added": null
+  },
+  {
+   "term": "Demi-sec",
+   "cat": "styles",
+   "def": "On sparkling wine, a medium-sweet style with 32–50 grams of sugar per litre, good with desserts.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Dessert wine",
+   "cat": "styles",
+   "def": "A sweet wine, usually served in small glasses with or as pudding. The sweetness comes from grapes with concentrated sugar, through drying, late-picking or noble rot.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Disgorgement",
+   "cat": "winemaking",
+   "def": "Removing the plug of yeast sediment from the neck of a traditional-method sparkling wine, usually after freezing it, before the final cork goes in.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Diurnal range",
+   "cat": "regions",
+   "def": "The difference between day and night temperatures. Warm days ripen the grapes and cool nights help them keep their acidity.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "DO and DOCa",
+   "cat": "label",
+   "def": "Spain’s protected origins. DOCa is the highest regional tier, held only by Rioja and Priorat (written DOQ in Catalan).",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "DOC and DOCG",
+   "cat": "label",
+   "def": "Italy’s quality categories. DOCG, with the extra G for “Garantita”, is the top tier with stricter rules, as for Barolo or Chianti Classico.",
+   "link": "/wine-classifications/chianti-classico-riserva-vs-gran-selezione/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Dosage",
+   "cat": "winemaking",
+   "def": "A little sweetened wine added to sparkling wine after disgorgement. How much is added decides the style, from Brut Nature to Doux.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Drinking window",
+   "cat": "serving",
+   "def": "The span of years in which a wine is expected to taste its best: after it has softened, before it starts to fade.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Dry",
+   "cat": "tasting",
+   "def": "Not sweet. A dry wine is one where almost all the grape sugar has fermented into alcohol, leaving little or no sweetness.",
+   "link": "/learn/wine-sweetness-chart/",
+   "added": null
+  },
+  {
+   "term": "Earthy",
+   "cat": "tasting",
+   "def": "Smells and flavours that recall soil, forest floor, mushrooms or wet leaves. Common in Pinot Noir, Nebbiolo and many older reds.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "En primeur",
+   "cat": "label",
+   "def": "Buying wine while it is still in barrel, before it is bottled, most often Bordeaux: you pay now and receive the bottles later.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Estate",
+   "cat": "label",
+   "def": "Means the wine was grown and made by the same producer on their own vineyards, rather than from bought-in grapes. Often seen as ‘estate bottled’.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Extra Dry",
+   "cat": "styles",
+   "def": "A confusing label term: sparkling wine marked Extra Dry is slightly sweeter than Brut, with 12–17 grams of sugar per litre. Common on Prosecco.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Fermentation",
+   "cat": "winemaking",
+   "def": "The process where yeast converts grape sugar into alcohol, turning juice into wine. It’s the heart of how every wine is made.",
+   "link": "/learn/how-wine-is-made/",
+   "added": null
+  },
+  {
+   "term": "Field blend",
+   "cat": "grapes",
+   "def": "Several grape varieties planted together in one vineyard and picked and fermented together, instead of being blended after.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Filtration",
+   "cat": "winemaking",
+   "def": "Passing wine through a filter to remove yeast and particles before bottling. Unfiltered wines skip this step and can look slightly hazy.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Fining",
+   "cat": "winemaking",
+   "def": "A gentle clarifying step where a substance is added to draw out tiny particles so the wine looks clear and bright. Some wines are ‘unfined’ and left more natural.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Finish",
+   "cat": "tasting",
+   "def": "The flavour and sensation that linger after you swallow. A long finish that stays pleasantly with you is usually a sign of a well-made wine.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Flabby",
+   "cat": "tasting",
+   "def": "A wine that lacks acidity, so it feels soft, heavy and dull instead of fresh.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Flight",
+   "cat": "serving",
+   "def": "A set of small pours of several wines, tasted side by side, often on a theme.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Fortified",
+   "cat": "styles",
+   "def": "Wine with a spirit added to raise its strength, such as Port, Sherry or Madeira. It can be dry or sweet and is often sipped in smaller measures.",
+   "link": "/wine-styles/port/",
+   "added": null
+  },
+  {
+   "term": "Frizzante",
+   "cat": "styles",
+   "def": "Italian for lightly sparkling, with softer bubbles than a fully sparkling spumante.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Fruit-forward",
+   "cat": "tasting",
+   "def": "A wine where ripe fruit is the first and loudest thing you notice. Typical of wines from sunny, warm regions.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Gamay",
+   "cat": "grapes",
+   "def": "The grape of Beaujolais: light, juicy reds with red berries and low tannin, lovely with a slight chill.",
+   "link": "/grape-varieties/gamay/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Gewürztraminer",
+   "cat": "grapes",
+   "def": "A very aromatic white grape that smells of lychee, rose and ginger. Full-bodied and often slightly off-dry; famous in Alsace.",
+   "link": "/grape-varieties/gewurztraminer/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Grand Cru",
+   "cat": "regions",
+   "def": "The top classification in some French regions. In Burgundy it marks the best single vineyards; in Champagne it applies to whole villages. Beware Saint-Émilion, where “Grand Cru” is a fairly basic level.",
+   "link": "/wine-classifications/burgundy-wine-classification/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Grape variety",
+   "cat": "grapes",
+   "def": "The specific type of grape a wine is made from, such as Merlot or Chardonnay. Sometimes called the ‘varietal’. It’s the single biggest clue to how a wine will taste.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Grenache / Garnacha",
+   "cat": "grapes",
+   "def": "A sun-loving red grape that gives soft, juicy wines with strawberry, raspberry and spice, often with high alcohol. A key grape of Châteauneuf-du-Pape and Spain.",
+   "link": "/grape-varieties/grenache/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Grower Champagne",
+   "cat": "label",
+   "def": "Champagne made by the family that grows the grapes, rather than by a large house that buys them in. Look for the letters RM (récoltant-manipulant) on the label.",
+   "link": "/wine-styles/champagne/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Grüner Veltliner",
+   "cat": "grapes",
+   "def": "Austria’s signature white grape: fresh, with citrus, green apple and a twist of white pepper.",
+   "link": "/grape-varieties/gruner-veltliner/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "GSM",
+   "cat": "grapes",
+   "def": "Short for Grenache, Syrah and Mourvèdre, the classic blend of the southern Rhône, also popular in Australia.",
+   "link": "/grape-varieties/grenache/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Halbtrocken / Feinherb",
+   "cat": "label",
+   "def": "German terms for off-dry: a little sweetness, but not a sweet wine. Halbtrocken has a legal definition; Feinherb does not, and is often a touch sweeter.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Herbaceous",
+   "cat": "tasting",
+   "def": "Green, leafy or grassy smells, such as cut grass, green pepper or tomato leaf. Typical of Sauvignon Blanc and Cabernet Franc.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Hot",
+   "cat": "tasting",
+   "def": "When the alcohol stands out as a warm, burning feeling in the throat or nose. It means the alcohol is out of balance with the rest of the wine.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Ice wine",
+   "cat": "styles",
+   "def": "A sweet wine made from grapes left to freeze on the vine, then pressed while frozen. The ice stays behind, leaving very concentrated, sugary juice.",
+   "link": "/wine-styles/ice-wine-eiswein/",
+   "added": null
+  },
+  {
+   "term": "IGP / IGT",
+   "cat": "label",
+   "def": "A level below AOC or DOC, with looser rules on grapes and methods. Some excellent wines use it on purpose, such as the “Super Tuscans” labelled IGT Toscana.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Jammy",
+   "cat": "tasting",
+   "def": "Tasting of cooked or very ripe fruit, like jam. Usually a sign of very ripe grapes from a hot climate; it can be meant as praise or as criticism.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Juicy",
+   "cat": "tasting",
+   "def": "Mouth-watering and full of fresh fruit, usually from ripe fruit combined with good acidity.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Kabinett, Spätlese, Auslese",
+   "cat": "label",
+   "def": "German quality levels based on how ripe the grapes were at harvest, from Kabinett (lightest) through Spätlese (late harvest) to Auslese (selected bunches). Riper levels follow (Beerenauslese, Trockenbeerenauslese, Eiswein). They describe ripeness, not guaranteed sweetness.",
+   "link": "/wine-classifications/kabinett-spatlese-auslese/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Late harvest",
+   "cat": "winemaking",
+   "def": "Grapes picked later than usual, so they ripen longer and build up extra sugar. That usually makes sweeter, richer wines, though some are fermented all the way dry.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Lees",
+   "cat": "winemaking",
+   "def": "The spent yeast and fine particles left after fermentation. Leaving wine to rest on its lees adds richness, texture and savoury, bread-like notes.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Left Bank and Right Bank",
+   "cat": "regions",
+   "def": "Bordeaux’s two sides. Left Bank wines (Médoc, Graves) lean on Cabernet Sauvignon; Right Bank wines (Saint-Émilion, Pomerol) lean on Merlot.",
+   "link": "/wine-styles/bordeaux-right-bank/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Legs",
+   "cat": "tasting",
+   "def": "The streaks or ‘tears’ that run down the inside of the glass after you swirl. They mainly reflect alcohol and sugar levels — fun to notice, but not a reliable sign of quality.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Length",
+   "cat": "tasting",
+   "def": "How long the flavour stays after you swallow. The same idea as finish; a long one is usually a sign of quality.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Maceration",
+   "cat": "winemaking",
+   "def": "The general term for soaking grape juice with the skins, seeds, and sometimes stems to draw out colour, tannin, and flavour, especially in reds. Skin contact is another word for it.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Madeira",
+   "cat": "styles",
+   "def": "Fortified wine from the Portuguese island of Madeira, deliberately heated as it ages, which makes it remarkably long-lived even after opening.",
+   "link": "/wine-styles/madeira/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Magnum",
+   "cat": "serving",
+   "def": "A 1.5-litre bottle, twice the standard 750 ml. Wine tends to age more slowly and gracefully in a magnum.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Malbec",
+   "cat": "grapes",
+   "def": "A dark, plush red grape from south-west France that found fame in Mendoza, Argentina: plum, blackberry and violet with soft tannins.",
+   "link": "/grape-varieties/malbec/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Malolactic conversion",
+   "cat": "winemaking",
+   "def": "A natural process (often called malolactic fermentation) that turns sharp malic acid into softer lactic acid, giving a rounder, creamier feel. It’s part of what makes some Chardonnays taste buttery.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Medium-sweet",
+   "cat": "tasting",
+   "def": "Clearly sweet but not syrupy, sitting between off-dry and dessert wine. Also called semi-sweet. Many German Kabinett Rieslings and demi-sec Vouvray sit around here.",
+   "link": "/learn/wine-sweetness-chart/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Merlot",
+   "cat": "grapes",
+   "def": "A red grape making softer, rounder, plummy wines with gentler tannin. Approachable on its own and a common blending partner for Cabernet Sauvignon.",
+   "link": "/grape-varieties/merlot/",
+   "added": null
+  },
+  {
+   "term": "Minerality",
+   "cat": "tasting",
+   "def": "A debated, hard-to-pin-down descriptor for aromas some wines suggest, like stony, chalky, or wet rocks. It is an impression, not a literal taste from minerals in the soil.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Mis en bouteille au château",
+   "cat": "label",
+   "def": "“Bottled at the château”: the wine was bottled at the estate where it was made. “Mis en bouteille au domaine” means the same; “à la propriété” can also appear on wines bottled by a growers’ co-operative.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Moscato / Muscat",
+   "cat": "grapes",
+   "def": "A family of grapes whose wines actually taste of fresh grapes, with orange blossom and peach. Made light, sweet and gently fizzy as Moscato d’Asti, and in many dessert styles.",
+   "link": "/grape-varieties/moscato/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Mouthfeel",
+   "cat": "tasting",
+   "def": "The overall physical sensation of wine in your mouth, like how smooth, silky, rough, or fizzy it feels, separate from its actual flavours.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Must",
+   "cat": "winemaking",
+   "def": "Freshly crushed grape juice, with its skins, seeds and pulp, before or during fermentation.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Native grape",
+   "cat": "grapes",
+   "def": "A grape that originated in, and is traditionally grown in, one place, such as Assyrtiko in Greece or Saperavi in Georgia. Also called an indigenous grape.",
+   "link": "/grape-varieties/saperavi/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Natural wine",
+   "cat": "styles",
+   "def": "Wine made with minimal intervention: organic grapes, wild yeast, and few or no additives or chemicals. There is no strict legal definition, so styles vary widely.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Nebbiolo",
+   "cat": "grapes",
+   "def": "The grape of Barolo and Barbaresco in Piedmont. Pale in colour but high in tannin and acidity, with rose, tar and cherry.",
+   "link": "/grape-varieties/nebbiolo/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Négociant",
+   "cat": "label",
+   "def": "A merchant who buys grapes, juice or wine from growers and bottles it under their own name. Common in Burgundy and Champagne.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "New World",
+   "cat": "regions",
+   "def": "Wine from newer wine-producing countries like the USA, Australia, Chile, Argentina, South Africa and New Zealand. Often a shorthand for riper, more fruit-forward styles.",
+   "link": "/countries/",
+   "added": null
+  },
+  {
+   "term": "Noble grapes",
+   "cat": "grapes",
+   "def": "An informal name for the famous international grapes grown all over the world, such as Cabernet Sauvignon, Merlot, Pinot Noir, Chardonnay, Sauvignon Blanc and Riesling. It is a tradition, not an official list.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Noble rot",
+   "cat": "winemaking",
+   "def": "A helpful mould (Botrytis cinerea) that shrivels ripe grapes, concentrating their sugar and flavour. It is used to make rich, sweet dessert wines like Sauternes.",
+   "link": "/wine-styles/sauternes/",
+   "added": null
+  },
+  {
+   "term": "Non-vintage",
+   "cat": "winemaking",
+   "def": "A wine, often Champagne, blended from more than one year’s harvest to keep a consistent house style. Usually shown as ‘NV’ on the label.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Nose",
+   "cat": "tasting",
+   "def": "Wine-speak for the smell of a wine, as in “a nose of strawberries”. Nosing a wine simply means smelling it.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Oak",
+   "cat": "winemaking",
+   "def": "Barrels or staves used during winemaking that add flavours like vanilla, spice, toast or coconut, plus texture and gentle tannin. ‘Unoaked’ means none was used.",
+   "link": "/learn/french-vs-american-oak/",
+   "added": null
+  },
+  {
+   "term": "Oaky",
+   "cat": "tasting",
+   "def": "Smells and flavours from oak barrels, such as vanilla, toast, coconut, smoke or sweet spice. “Oaky” usually means a lot of them.",
+   "link": "/learn/french-vs-american-oak/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Off-dry",
+   "cat": "tasting",
+   "def": "Just a touch sweet — noticeably softer than fully dry, but not a dessert wine. Many aromatic whites like Riesling are made in an off-dry style.",
+   "link": "/learn/wine-sweetness-chart/",
+   "added": null
+  },
+  {
+   "term": "Old vine",
+   "cat": "label",
+   "def": "Wine made from older grapevines, which tend to give smaller crops with more concentrated flavour. There’s no legal age limit, so the term is used loosely.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Old World",
+   "cat": "regions",
+   "def": "Wine from Europe’s traditional regions — France, Italy, Spain, Germany and their neighbours. Often a shorthand for more restrained, earthy, savoury styles.",
+   "link": "/countries/",
+   "added": null
+  },
+  {
+   "term": "Orange wine",
+   "cat": "styles",
+   "def": "White wine made like a red, with the juice left on the grape skins, giving an amber colour and more grip and texture. Also called skin-contact wine.",
+   "link": "/wine-styles/friulian-orange/",
+   "added": null
+  },
+  {
+   "term": "Organic wine",
+   "cat": "winemaking",
+   "def": "Wine made from grapes grown without synthetic pesticides, herbicides or fertilisers. The rules for what may be added in the cellar, such as sulphites, differ between countries.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Oxidised",
+   "cat": "serving",
+   "def": "A fault where too much air has spoiled the wine, dulling its fresh fruit flavours and turning it flat, with a bruised-apple or sherry-like taste. White wines also go browner in colour.",
+   "link": "/learn/wine-faults/",
+   "added": null
+  },
+  {
+   "term": "Pairing",
+   "cat": "serving",
+   "def": "Matching wine and food so both taste better, mostly by balancing weight, acidity, sweetness and flavour intensity.",
+   "link": "/food-and-wine-pairing/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Palate",
+   "cat": "tasting",
+   "def": "Two meanings: the taste of the wine in your mouth (“a juicy palate”), and your own sense of taste (“a trained palate”). Anyone can build a palate with practice.",
+   "link": "/learn/how-to-practise-wine-tasting-at-home/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Pét-nat",
+   "cat": "winemaking",
+   "def": "Short for pétillant naturel: a lightly sparkling wine bottled before its first fermentation has finished, so that fermentation makes the bubbles. Often a little cloudy.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Petrol",
+   "cat": "tasting",
+   "def": "A smell of kerosene or petrol found in some Rieslings, especially with a few years of age. It comes from a compound called TDN, and many Riesling lovers prize it.",
+   "link": "/grape-varieties/riesling/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Phylloxera",
+   "cat": "winemaking",
+   "def": "A tiny aphid-like insect that feeds on vine roots. It destroyed most of Europe’s vineyards in the late 1800s; most vines today are grafted onto resistant American rootstocks.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Pinot Grigio / Pinot Gris",
+   "cat": "grapes",
+   "def": "One grape, two styles. Italian Pinot Grigio is light and crisp; Pinot Gris from Alsace is richer and sometimes off-dry.",
+   "link": "/grape-varieties/pinot-grigio/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Pinot Noir",
+   "cat": "grapes",
+   "def": "A lighter-bodied red grape known for red-berry fruit, silky texture and delicacy. Famous in Burgundy and prized for its finesse.",
+   "link": "/grape-varieties/pinot-noir/",
+   "added": null
+  },
+  {
+   "term": "Port",
+   "cat": "styles",
+   "def": "A sweet fortified wine from Portugal’s Douro Valley. Grape spirit is added during fermentation, which stops it while plenty of sugar remains.",
+   "link": "/wine-styles/port/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Premier Cru",
+   "cat": "regions",
+   "def": "In Burgundy and Champagne, the level just below Grand Cru. In Bordeaux’s 1855 classification of red wines, Premier Cru (first growth) is the very top tier instead.",
+   "link": "/wine-classifications/burgundy-wine-classification/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Prosecco",
+   "cat": "styles",
+   "def": "Italy’s best-known sparkling wine, made from the Glera grape in north-east Italy, usually by the tank method: light, fruity and fresh.",
+   "link": "/wine-styles/prosecco/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Punt",
+   "cat": "serving",
+   "def": "The dimple in the bottom of many wine bottles. It helps make the glass stronger, which matters most for sparkling wine under pressure.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Qvevri",
+   "cat": "styles",
+   "def": "Large egg-shaped clay vessels buried in the ground, used in Georgia for thousands of years to ferment and age wine.",
+   "link": "/wine-styles/georgian-amber-qvevri/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Racking",
+   "cat": "winemaking",
+   "def": "Moving wine from one container to another to leave the sediment behind.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Reserva and Gran Reserva",
+   "cat": "label",
+   "def": "Spanish terms for longer-aged wines with legal minimums. In Rioja a red Reserva ages for at least three years, one of them in oak, and a Gran Reserva for at least five years, two of them in oak.",
+   "link": "/wine-classifications/crianza-reserva-gran-reserva/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Reserve",
+   "cat": "label",
+   "def": "A label word suggesting a wine of higher quality or longer ageing. In some countries (like Spain’s ‘Reserva’) it’s legally defined; in others it’s just marketing, so treat it as a soft hint.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Residual sugar",
+   "cat": "tasting",
+   "def": "The grape sugar that stays in the wine after fermentation (the process where yeast eats sugar and turns it into alcohol). Yeast didn’t convert this leftover sugar, so more of it means a sweeter wine.",
+   "link": "/learn/low-sugar-wine/",
+   "added": null
+  },
+  {
+   "term": "Riddling",
+   "cat": "winemaking",
+   "def": "Gradually turning and tilting bottles of traditional-method sparkling wine so the yeast sediment slides into the neck, ready to be removed.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Riesling",
+   "cat": "grapes",
+   "def": "An aromatic white grape making wines that range from bone-dry to lusciously sweet, always with vivid acidity and floral, citrus and stone-fruit notes.",
+   "link": "/grape-varieties/riesling/",
+   "added": null
+  },
+  {
+   "term": "Riserva",
+   "cat": "label",
+   "def": "Italian for a wine aged longer than the standard version before release. Each region’s rules set the minimum time.",
+   "link": "/wine-classifications/chianti-classico-riserva-vs-gran-selezione/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Rosé",
+   "cat": "styles",
+   "def": "Pink wine made from red grapes with only brief contact between juice and skins, giving colour without heavy tannin. Usually light, fresh and easy-drinking.",
+   "link": "/wine-styles/provence-rose/",
+   "added": null
+  },
+  {
+   "term": "Round",
+   "cat": "tasting",
+   "def": "Smooth and soft, with no sharp edges of acidity or tannin.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Saignée",
+   "cat": "winemaking",
+   "def": "French for “bleeding”: drawing off some pink juice early from a red-wine tank. The juice becomes rosé, and the red left behind gets more concentrated.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Sangiovese",
+   "cat": "grapes",
+   "def": "Italy’s most planted red grape and the grape of Chianti and Brunello di Montalcino: sour cherry, herbs, high acidity and firm tannin.",
+   "link": "/grape-varieties/sangiovese/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Sauvignon Blanc",
+   "cat": "grapes",
+   "def": "An aromatic white grape making zesty, refreshing wines with grassy, citrus and green notes. Loved for its bright, mouth-watering acidity.",
+   "link": "/grape-varieties/sauvignon-blanc/",
+   "added": null
+  },
+  {
+   "term": "Savoury",
+   "cat": "tasting",
+   "def": "Flavours that are not fruity or sweet, such as herbs, olive, meat, leather or earth.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Screw cap",
+   "cat": "winemaking",
+   "def": "A metal twist-off closure that cannot cause cork taint and keeps wine fresh. Widely used in New Zealand and Australia, on fine wines as well as everyday ones.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Secondary fermentation",
+   "cat": "winemaking",
+   "def": "A second fermentation. In sparkling wine it is the one that makes the bubbles. Confusingly, malolactic conversion is sometimes called this too.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Sediment",
+   "cat": "serving",
+   "def": "Harmless gritty bits that settle at the bottom of a bottle, mostly in older red wines. It is natural, not a fault, but most people prefer to leave it in the bottle rather than the glass.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Serving temperature",
+   "cat": "serving",
+   "def": "How cold or warm you pour a wine. As a guide: sparkling and light whites 6–10°C, fuller whites 10–13°C, light reds 12–14°C and fuller reds 15–18°C.",
+   "link": "/tools/wine-serving-temperature/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Sherry",
+   "cat": "styles",
+   "def": "Fortified wine from around Jerez in southern Spain, ranging from bone-dry Fino to sweet Pedro Ximénez.",
+   "link": "/wine-styles/sherry-fino/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Silky",
+   "cat": "tasting",
+   "def": "Smooth, fine and light in texture, like silk. Often used for good Pinot Noir.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Single vineyard",
+   "cat": "label",
+   "def": "Nearly all the grapes came from one named vineyard rather than being blended from several sites. Rules vary by country, and the name points to a sense of place, not guaranteed quality.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Single-varietal",
+   "cat": "label",
+   "def": "A wine made from just one grape variety, letting that grape’s character shine on its own. The opposite of a blend.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Skin contact",
+   "cat": "winemaking",
+   "def": "Letting the juice sit with the grape skins, the maceration that gives reds their colour and tannin. A short soak adds flavour and grip to whites; a long one turns them amber, making “orange” wine.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Solera",
+   "cat": "winemaking",
+   "def": "The blending system used for sherry, where younger wine tops up older barrels year after year, so each bottle is a mix of many ages.",
+   "link": "/wine-styles/sherry-fino/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Sommelier",
+   "cat": "serving",
+   "def": "A trained wine professional, often in a restaurant, who helps you choose wine and pairs it with food. A good one is a friendly guide, not a gatekeeper.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Sparkling",
+   "cat": "styles",
+   "def": "Wine with bubbles, from lightly fizzy to fully effervescent, created by trapping carbon dioxide from a second fermentation. Champagne, Prosecco and Cava are all sparkling wines.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Spicy",
+   "cat": "tasting",
+   "def": "Smells of black or white pepper, clove, cinnamon or liquorice. Pepper is typical of Syrah and Grüner Veltliner; sweet spice often comes from oak.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Spittoon",
+   "cat": "serving",
+   "def": "The bucket for spitting at tastings, so you can taste many wines without drinking them all. Spitting is normal and polite.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Stainless steel",
+   "cat": "winemaking",
+   "def": "Tanks that add no flavour and keep air out, so the wine stays fresh and fruity. Used for crisp, unoaked whites and rosés.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Standard bottle",
+   "cat": "serving",
+   "def": "750 ml of wine: five 150 ml glasses, or six 125 ml glasses.",
+   "link": "/learn/how-many-units-in-a-bottle-of-wine/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Standard drink",
+   "cat": "serving",
+   "def": "The US measure of 14 grams of pure alcohol, roughly a 5-ounce (150 ml) glass of wine at 12% ABV.",
+   "link": "/learn/wine-alcohol-content/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Still wine",
+   "cat": "styles",
+   "def": "Ordinary, non-sparkling wine — the everyday reds, whites and rosés without bubbles. The term simply distinguishes them from sparkling wine.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Structure",
+   "cat": "tasting",
+   "def": "The frame of a wine: its acidity, tannin and alcohol, as opposed to its fruit. Good structure helps a wine age.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Sulphites",
+   "cat": "winemaking",
+   "def": "Sulphur compounds that protect wine from spoiling. A little forms naturally during fermentation and most winemakers add more. In the EU and the US, labels must say “contains sulphites” above 10 mg per litre.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Sur lie",
+   "cat": "label",
+   "def": "French for “on the lees”: the wine rested on its spent yeast before bottling, which adds texture and freshness. Often seen on Muscadet.",
+   "link": "/grape-varieties/melon-de-bourgogne/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Sweet",
+   "cat": "tasting",
+   "def": "A wine with noticeable sugar left in it. Sweetness ranges from off-dry to lusciously sweet dessert wines.",
+   "link": "/learn/wine-sweetness-chart/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Syrah / Shiraz",
+   "cat": "grapes",
+   "def": "One dark grape with two names: Syrah in France, Shiraz in Australia. Expect black fruit, pepper and smoke; Shiraz is often riper and fuller.",
+   "link": "/grape-varieties/syrah-shiraz/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Table wine",
+   "cat": "styles",
+   "def": "Ordinary still wine, neither sparkling nor fortified. In some countries it is also the most basic quality level on a label.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Tank method",
+   "cat": "winemaking",
+   "def": "Making sparkling wine with the second fermentation in a large pressurised tank instead of in each bottle. Also called the Charmat method; used for Prosecco, it keeps the fruit fresh.",
+   "link": "/wine-styles/prosecco/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Tannin",
+   "cat": "tasting",
+   "def": "Natural compounds from grape skins, seeds, stems and oak that create a drying, grippy feeling on your gums, a bit like strong tea. Found mostly in red wines and key to how they age.",
+   "link": "/learn/what-are-tannins-in-wine/",
+   "added": null
+  },
+  {
+   "term": "Tart",
+   "cat": "tasting",
+   "def": "Sharply sour, like an unripe apple or a cranberry. A little tartness is refreshing; a lot makes a wine feel thin.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Tempranillo",
+   "cat": "grapes",
+   "def": "Spain’s leading red grape and the backbone of Rioja and Ribera del Duero: red cherry, plum and leather, plus vanilla when aged in oak.",
+   "link": "/grape-varieties/tempranillo/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Terroir",
+   "cat": "regions",
+   "def": "A French idea (roughly ‘ter-WAH’) covering everything about a place that shapes a wine — soil, climate, slope and local tradition. It’s why the same grape tastes different depending on where it’s grown.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Toasty",
+   "cat": "tasting",
+   "def": "Smells of toast, brioche or biscuits. They come from toasted oak barrels or, in sparkling wine, from long ageing on the lees.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Traditional method",
+   "cat": "styles",
+   "def": "How Champagne, Cava, Crémant and English sparkling get their fizz: a little yeast and sugar go into the base wine, which ferments a second time inside the sealed bottle, trapping fine, lasting bubbles.",
+   "link": "/wine-styles/champagne/",
+   "added": null
+  },
+  {
+   "term": "Trocken",
+   "cat": "label",
+   "def": "German for dry.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Typicity",
+   "cat": "tasting",
+   "def": "How well a wine shows the character expected of its grape and place. A Sancerre that tastes like Sancerre has typicity.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Ullage",
+   "cat": "serving",
+   "def": "The air gap between the wine and the cork. A large gap in an old bottle can mean evaporation or a leaking cork.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Unit of alcohol",
+   "cat": "serving",
+   "def": "The UK measure of 10 ml of pure alcohol. A 750 ml bottle of wine at 13% ABV holds about 9.75 units.",
+   "link": "/learn/how-many-units-in-a-bottle-of-wine/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Universal glass",
+   "cat": "serving",
+   "def": "One tulip-shaped glass that works well for nearly every wine. A good universal glass is all most people need.",
+   "link": "/course/serving-wine/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Varietal labelling",
+   "cat": "label",
+   "def": "Naming a wine after its main grape (like ‘Pinot Grigio’) rather than its region. Common in the New World and a handy shortcut to the style in the bottle.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Vegan wine",
+   "cat": "winemaking",
+   "def": "Wine made without animal products. Some wines are fined with egg white, gelatine, casein (from milk) or isinglass (from fish); vegan wines use clay or pea protein instead, or skip fining.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Velvety",
+   "cat": "tasting",
+   "def": "Smooth and plush, but richer and thicker than silky. Often used for Merlot.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Véraison",
+   "cat": "winemaking",
+   "def": "The point in summer when grapes soften, change colour from green to red or gold, and start building sugar.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Vermouth",
+   "cat": "styles",
+   "def": "Wine flavoured with herbs and spices, classically wormwood, and fortified. Made sweet or dry, red or white, and much used in cocktails.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Vertical and horizontal tasting",
+   "cat": "serving",
+   "def": "A vertical tasting compares several vintages of the same wine; a horizontal tasting compares different wines from the same vintage.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Vintage",
+   "cat": "winemaking",
+   "def": "The year the grapes were harvested, shown on the label. Because weather changes each year, the vintage can affect a wine’s character.",
+   "link": null,
+   "added": null
+  },
+  {
+   "term": "Volatile acidity",
+   "cat": "serving",
+   "def": "A fault where the wine develops a sharp, vinegary smell, sometimes like nail varnish remover. A tiny amount can add lift, but too much means the wine is spoiling.",
+   "link": "/learn/wine-faults/",
+   "added": null
+  },
+  {
+   "term": "Warm climate",
+   "cat": "regions",
+   "def": "Regions with plenty of sun and heat, such as Barossa, Napa or Mendoza. Expect riper fruit, fuller body and higher alcohol.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Wild ferment",
+   "cat": "winemaking",
+   "def": "A fermentation started by the yeasts naturally present in the vineyard and winery instead of added, cultured yeast. Also called a natural or spontaneous fermentation.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Wine diamonds",
+   "cat": "serving",
+   "def": "Harmless crystals of potassium bitartrate (tartrates), a natural salt of the grape’s tartaric acid. They can form in cold wine, on the cork or at the bottom of the bottle, and they are not glass and not a fault.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Yeast",
+   "cat": "winemaking",
+   "def": "The microscopic fungus that turns grape sugar into alcohol and carbon dioxide. Winemakers either add a cultured yeast or let the wild yeasts already on the grapes and in the cellar do the work.",
+   "link": "/learn/how-wine-is-made/",
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Yield",
+   "cat": "winemaking",
+   "def": "How much fruit a vineyard produces, measured per hectare or per vine. Lower yields usually mean more concentrated grapes.",
+   "link": null,
+   "added": "2026-10-14"
+  },
+  {
+   "term": "Zinfandel / Primitivo",
+   "cat": "grapes",
+   "def": "One grape with two names, Zinfandel in California and Primitivo in southern Italy, which first came from Croatia. Ripe, jammy red fruit and spice, often with high alcohol.",
+   "link": "/grape-varieties/zinfandel/",
+   "added": "2026-10-14"
+  }
+ ]
+}

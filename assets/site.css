@@ -498,3 +498,47 @@ a.pairpill:hover{border-color:rgba(123,30,59,.35); color:var(--wine); text-decor
 .course-band .cb-l a{font-weight:600}
 /* Static heading above the JS-rendered quiz; smaller than the hub heading it borrows from */
 .qz-h2{font-size:clamp(18px,2.2vw,22px); margin-bottom:12px}
+
+/* Glossary A–Z (scripts/build-glossary.mjs) */
+.az-nav{position:sticky; top:80px; z-index:5; display:flex; flex-wrap:wrap; justify-content:center; gap:4px; padding:10px 8px; margin:8px auto 0; max-width:820px; background:rgba(251,247,244,.94); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); border:1px solid var(--line); border-radius:14px}
+.az-nav a,.az-nav span{display:inline-flex; align-items:center; justify-content:center; min-width:30px; height:32px; border-radius:8px; font:600 14px/1 var(--font-body); text-decoration:none}
+.az-nav a{color:var(--wine)}
+.az-nav a:hover,.az-nav a:focus-visible{background:var(--parchment)}
+.az-nav span{color:var(--line)}
+.glossary-az .glossary-cat{scroll-margin-top:130px}
+.glossary-az .term{scroll-margin-top:130px}
+.glossary-az .term:target{border-color:var(--wine); box-shadow:0 0 0 3px rgba(123,30,59,.12)}
+.term dt a{color:inherit; text-decoration:none; border-bottom:1px solid rgba(123,30,59,.25)}
+.term dt a:hover{border-bottom-color:var(--wine)}
+@media (max-width:900px){.az-nav{top:72px; gap:2px; padding:8px 6px}.az-nav a,.az-nav span{min-width:26px; height:30px; font-size:13px}}
+
+/* "10 easy wines" picks (learn/wine-for-beginners) */
+.wine-pick{border-top:1px solid var(--line); padding-top:6px; margin-top:26px}
+.wine-pick h3{font-size:24px; color:var(--wine-deep); margin:14px 0 8px}
+.wp-chips{display:flex; flex-wrap:wrap; gap:6px; margin:0 0 12px}
+.wp-chip{display:inline-block; padding:3px 10px; border-radius:999px; background:var(--parchment); color:var(--wine-deep); font:600 12.5px/1.6 var(--font-body); letter-spacing:.01em}
+.wp-like{font-size:15.5px; color:var(--muted)}
+.wp-like strong{color:var(--ink)}
+
+/* Free-lesson card (scripts/build-lesson-cta.mjs) */
+.lesson-cta{margin:34px 0; padding:26px 26px 22px; border-radius:18px; background:linear-gradient(160deg,#fffdfb,#f6eee6); border:1px solid rgba(201,162,74,.45); box-shadow:var(--shadow-sm); text-align:left}
+.lesson-cta .eyebrow{margin:0 0 6px}
+.lesson-cta .lc-t{font-family:var(--font-display); font-weight:600; font-size:24px; line-height:1.25; color:var(--wine-deep); margin:0 0 8px}
+.lesson-cta .lc-s{margin:0 0 18px; color:var(--ink)}
+.lesson-cta .lc-btns{display:flex; flex-wrap:wrap; gap:10px}
+.lesson-cta .lc-btns .btn{text-decoration:none}
+.lesson-cta .lc-btns .btn[hidden]{display:none}
+.lesson-cta .lc-fine{margin:14px 0 0; font-size:13px; color:var(--muted)}
+main > .lesson-cta{max-width:var(--maxw-prose); width:calc(100% - 32px); margin:36px auto 30px; box-sizing:border-box}
+/* The tests hub's staff line is a plain paragraph; quiz.css's .qz-biz flex column split it into rows. */
+p.qz-biz{display:block}
+@media (max-width:520px){.lesson-cta{padding:22px 18px 18px}.lesson-cta .lc-btns .btn{width:100%; justify-content:center}}
+
+/* Printing a chart page: just the content */
+.print-row{margin:14px 0 0}
+@media print{
+  header.site-header,.site-footer,.appband,.course-band,.lesson-cta,.az-nav,.tabbar,.hero-photo,.print-row,.skip,.faq{display:none !important}
+  body{background:#fff; color:#000}
+  .reveal{opacity:1 !important; transform:none !important}
+  table{page-break-inside:avoid}
+}

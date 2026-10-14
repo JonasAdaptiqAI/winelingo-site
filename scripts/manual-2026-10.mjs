@@ -17,7 +17,7 @@ const log = [];
 const TAIL = " Ten questions, each explained. Free, no sign-up.";
 const DESC = {
   "pricing/index.html": "Winelingo prices: the first course unit is free. Premium is $3.99 a month, 3 days free on the web. The whole course for life is $39.99. Refunds within 14 days.",
-  "tests/index.html": "Free wine quizzes on serving, grapes, pairing, labels, sparkling wine and faults. For restaurant staff and anyone learning wine, in four languages.",
+  "tests/index.html": "Free wine quiz: 8 tests of 10 questions on grapes, serving, food pairing, labels, sparkling wine and faults, each answer explained. Wine trivia for all levels.",
   "tests/food-and-wine/index.html": "Simple pairing principles that suggest a wine making both the dish and the glass taste better." + TAIL,
   "tests/red-grapes/index.html": "The ten red grapes behind wine lists, light to full, and which grape hides behind Barolo, Rioja and Chianti." + TAIL,
   "tests/serving-wine/index.html": "Serve any bottle with confidence: the right glass, temperature, opening and order at the table." + TAIL,
