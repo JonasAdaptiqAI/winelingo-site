@@ -496,3 +496,5 @@ a.pairpill:hover{border-color:rgba(123,30,59,.35); color:var(--wine); text-decor
 .course-band .cb-t{font-family:var(--font-display); font-weight:600; font-size:22px; color:var(--wine-deep)}
 .course-band .cb-l{margin:8px 0 16px; color:var(--sec); font-size:15.5px; line-height:1.6}
 .course-band .cb-l a{font-weight:600}
+/* Static heading above the JS-rendered quiz; smaller than the hub heading it borrows from */
+.qz-h2{font-size:clamp(18px,2.2vw,22px); margin-bottom:12px}
