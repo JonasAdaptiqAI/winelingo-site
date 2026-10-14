@@ -101,5 +101,9 @@
   "href": "/course/white-wine-grapes/",
   "label": "White wine grapes, the course unit",
   "count": "7 short interactive lessons"
+ },
+ "hero": {
+  "img": "guide-types-of-white-wine",
+  "alt": "Five glasses of white wine in a row, from water-pale to deep gold"
  }
 }

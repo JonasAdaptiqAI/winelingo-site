@@ -106,5 +106,9 @@
   "href": "/course/wine-and-health/",
   "label": "Wine and health, the course unit",
   "count": "3 short interactive lessons"
+ },
+ "hero": {
+  "img": "guide-is-wine-vegan-gluten-free",
+  "alt": "A crate of freshly picked dark grapes and a glass of red wine in a winery"
  }
 }

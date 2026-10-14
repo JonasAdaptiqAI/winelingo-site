@@ -113,5 +113,9 @@
   "href": "/course/wine-tasting/",
   "label": "Wine tasting, the free first course unit",
   "count": "10 short interactive lessons"
+ },
+ "hero": {
+  "img": "guide-wset-levels-explained",
+  "alt": "Three glasses of wine on a tasting mat beside a study book, a pencil and a spittoon"
  }
 }

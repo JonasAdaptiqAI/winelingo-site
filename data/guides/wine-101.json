@@ -106,5 +106,9 @@
   "href": "/course/",
   "label": "Winelingo's online wine course",
   "count": "166 interactive lessons in 26 units, first unit free"
+ },
+ "hero": {
+  "img": "guide-wine-101",
+  "alt": "Four glasses of wine, sparkling, white, rosé and red, in a tasting room overlooking vineyards"
  }
 }

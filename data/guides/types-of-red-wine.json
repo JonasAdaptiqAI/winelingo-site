@@ -101,5 +101,9 @@
   "href": "/course/red-wine-grapes/",
   "label": "Red wine grapes, the course unit",
   "count": "7 short interactive lessons"
+ },
+ "hero": {
+  "img": "guide-types-of-red-wine",
+  "alt": "Five glasses of red wine in a row, from pale ruby to deep purple"
  }
 }

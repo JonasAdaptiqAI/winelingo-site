@@ -104,5 +104,9 @@
   "href": "/course/wine-tasting/",
   "label": "Wine tasting, the free first course unit",
   "count": "10 short interactive lessons"
+ },
+ "hero": {
+  "img": "guide-dry-white-wine",
+  "alt": "A glass of crisp dry white wine on a sunny terrace above the sea, with lemon and herbs"
  }
 }
