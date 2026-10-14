@@ -6,24 +6,87 @@
       "lesson": "d7170656-caab-47b9-85c2-d15fbf5fc6b1",
       "hook": "Prefer to learn by doing? Our first lesson walks you through the main styles of wine, with a few quick questions along the way.",
       "before": "<h2>Start with what you already like</h2>",
-      "band": ["Start with the wine in your hand", "Scan any label and Winelingo tells you what the wine is, how it should taste and why, in plain words. Free to download on the App Store."]
+      "band": [
+        "Start with the wine in your hand",
+        "Scan any label and Winelingo tells you what the wine is, how it should taste and why, in plain words. Free to download on the App Store."
+      ]
     },
     "learn/wine-sweetness-chart/index.html": {
       "lesson": "8a8a87bb-5b7b-43ef-8d3c-6f14fe6a4316",
       "hook": "Reading a chart is one thing; tasting it is another. This lesson teaches you to taste where a wine sits on the dry-to-sweet scale.",
       "before": "<h2>What “dry” actually means</h2>",
-      "band": ["Is this bottle sweet or dry?", "Scan the label and Winelingo shows the wine’s sweetness, body, tannin and acidity, then explains what you are tasting. Free to download on the App Store."]
+      "band": [
+        "Is this bottle sweet or dry?",
+        "Scan the label and Winelingo shows the wine’s sweetness, body, tannin and acidity, then explains what you are tasting. Free to download on the App Store."
+      ]
     },
     "wine-glossary/index.html": {
       "lesson": "ea252ea9-0358-481f-90b8-c7776070f576",
       "hook": "Words like “bouquet” and “herbaceous” stick faster once you have put them to a real smell. This lesson shows you how.",
       "before": "<!-- glossary-az",
-      "band": ["Put the words to a real glass", "Scan any label and Winelingo explains the wine in plain words, with a short lesson to go with it. Free to download on the App Store."]
+      "band": [
+        "Put the words to a real glass",
+        "Scan any label and Winelingo explains the wine in plain words, with a short lesson to go with it. Free to download on the App Store."
+      ]
     },
     "tests/index.html": {
       "lesson": "d7170656-caab-47b9-85c2-d15fbf5fc6b1",
       "hook": "Got a few wrong? Start the course where everyone starts: a short lesson on the main styles of wine.",
       "before": "<p class=\"qz-biz\""
+    },
+    "learn/types-of-red-wine/index.html": {
+      "lesson": "15ebad76-d973-45e1-b752-9a8290bdcc36",
+      "hook": "Light, medium or full? This lesson teaches you to feel a red wine’s body, the quickest way to sort the reds above.",
+      "before": "<h2>Light-bodied red wines</h2>",
+      "band": [
+        "Which red is in your glass?",
+        "Scan any label and Winelingo tells you the grape, the style and how it should taste, in plain words. Free to download on the App Store."
+      ]
+    },
+    "learn/types-of-white-wine/index.html": {
+      "lesson": "ea252ea9-0358-481f-90b8-c7776070f576",
+      "hook": "Citrus, stone fruit, flowers or butter? This lesson gives you the words for what a white wine smells of.",
+      "before": "<h2>Aromatic white wines</h2>",
+      "band": [
+        "Which white is in your glass?",
+        "Scan any label and Winelingo tells you the grape, the style and how it should taste, in plain words. Free to download on the App Store."
+      ]
+    },
+    "learn/how-many-glasses-of-wine-in-a-bottle/index.html": {
+      "lesson": "b6aec9b7-bc1e-4671-8f10-0fe32ae219fe",
+      "hook": "Pouring for friends? Five minutes on how to taste turns any bottle into something to talk about.",
+      "before": "<h2>How many standard drinks and units in a bottle of wine?</h2>",
+      "band": [
+        "Know what you are pouring",
+        "Scan any label and Winelingo explains the wine in plain words, so you can tell your guests what they are drinking. Free to download on the App Store."
+      ]
+    },
+    "learn/sweet-wines-for-beginners/index.html": {
+      "lesson": "8a8a87bb-5b7b-43ef-8d3c-6f14fe6a4316",
+      "hook": "Reading about sweetness is one thing; tasting it is another. This lesson teaches you to tell dry from sweet in the glass.",
+      "before": "<h2>Is rosé wine sweet? Sweet pink wines to try</h2>",
+      "band": [
+        "Is this bottle sweet or dry?",
+        "Scan the label and Winelingo shows the wine’s sweetness, body, tannin and acidity, then explains what you are tasting. Free to download on the App Store."
+      ]
+    },
+    "learn/dry-red-wine/index.html": {
+      "lesson": "72ce4ce0-c890-42cc-a011-c8c0373c3a68",
+      "hook": "Most “dry” feelings in red wine are really tannin. This lesson shows you how to tell the two apart.",
+      "before": "<h2>Red wine from dry to sweet</h2>",
+      "band": [
+        "Is this red dry, or just tannic?",
+        "Scan the label and Winelingo shows the wine’s sweetness, body, tannin and acidity, then explains what you are tasting. Free to download on the App Store."
+      ]
+    },
+    "learn/dry-white-wine/index.html": {
+      "lesson": "7d1c7aaf-0c3d-4879-acc9-27cddbc77a75",
+      "hook": "Crisp, dry whites live on acidity. This lesson shows you how to spot it, and why it can hide a little sugar.",
+      "before": "<h2>Dry white wines compared</h2>",
+      "band": [
+        "Is this white dry?",
+        "Scan the label and Winelingo shows the wine’s sweetness, body, tannin and acidity, then explains what you are tasting. Free to download on the App Store."
+      ]
     }
   }
 }

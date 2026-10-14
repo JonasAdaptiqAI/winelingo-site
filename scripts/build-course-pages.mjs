@@ -364,12 +364,12 @@ function landing(lang, { withApp }) {
   <p class="cl-fine">${lang === "en" ? "For adults of legal drinking age (18+). Please enjoy wine responsibly." : "For voksne over 18 år. Nyd vin med omtanke."}</p>
 </div></section>
 </main>`;
-  const appHead = withApp ? `<link rel="stylesheet" href="/assets/course/course.css?v=6">\n` : "";
+  const appHead = withApp ? `<link rel="stylesheet" href="/assets/course/course.css?v=7">\n` : "";
   const app = withApp ? `
 <div id="app" aria-live="polite" hidden></div>
 <script src="/assets/course/vendor/supabase-2.117.3.js"></script>
-<script src="/assets/course/strings.js?v=7"></script>
-<script src="/assets/course/course.js?v=9"></script>` : "";
+<script src="/assets/course/strings.js?v=8"></script>
+<script src="/assets/course/course.js?v=10"></script>` : "";
   let foot = FOOTER;
   if (withApp) foot = foot.replace("</body>", `${app}\n</body>`);
   return head({ lang, title: h.title, desc: h.desc, path, alt: { en: "/course/", da: "/da/vinkursus/" }, ld, extraHead: appHead }) + HEADER + body + foot;
