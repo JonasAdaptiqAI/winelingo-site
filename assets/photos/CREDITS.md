@@ -136,3 +136,25 @@ Each comes as `guide-<slug>.jpg` (1500x560 hero), `.webp` / `-800.webp` / `-1200
 | guide-wset-levels-explained.jpg | Three glasses of wine on a tasting mat beside a study book, a pencil and a spittoon | /learn/wset-levels-explained/ |
 | guide-how-to-become-a-sommelier.jpg | A sommelier in an apron presenting a bottle of red wine at a candlelit restaurant table | /learn/how-to-become-a-sommelier/ |
 | guide-best-online-wine-courses.jpg | A laptop showing an online wine lesson beside a glass of red wine and a notebook | /learn/best-online-wine-courses/ |
+
+
+## AI-generated photos: "10 easy wines" (October 2026)
+
+The ten photos on the "10 easy wines" list of `/learn/wine-for-beginners/` are **AI-generated**
+with Higgsfield (GPT Image 2.5, quality "high", 2K, 16:9), in the same style as the guide photos
+above. Each shows the wine's real colour with fruit that matches its taste, in a setting from its
+home region. No faces, labels or brands. Every image was reviewed at full size before use.
+Exported as `beginner-<wine>.jpg` / `.webp` (1200x675) and `-800.webp`.
+
+| File | Subject | Used on |
+|---|---|---|
+| beginner-moscato-d-asti.jpg | A glass of gently sparkling Moscato d’Asti with peaches, orange blossom and green grapes above Piedmont’s vineyard hills | /learn/wine-for-beginners/#moscato-d-asti |
+| beginner-riesling.jpg | A glass of pale Riesling with green apples and lime above the terraced vineyards of the Mosel | /learn/wine-for-beginners/#riesling |
+| beginner-prosecco.jpg | A flute of Prosecco with sliced pear and white flowers on a café table by the water in the Veneto | /learn/wine-for-beginners/#prosecco |
+| beginner-pinot-grigio.jpg | A glass of pale Pinot Grigio with a pear and lemon under a vine pergola, mountains behind | /learn/wine-for-beginners/#pinot-grigio |
+| beginner-sauvignon-blanc.jpg | A glass of Sauvignon Blanc with passion fruit, lime and fresh herbs above vineyards and mountains | /learn/wine-for-beginners/#sauvignon-blanc |
+| beginner-rose.jpg | A glass of pale Provence rosé with strawberries and a white peach beside a lavender field at sunset | /learn/wine-for-beginners/#rose |
+| beginner-beaujolais.jpg | A glass of bright purple-ruby Beaujolais with raspberries and cherries on a bistro table | /learn/wine-for-beginners/#beaujolais |
+| beginner-pinot-noir.jpg | A glass of pale ruby Pinot Noir with cherries and wild mushrooms in a stone cellar | /learn/wine-for-beginners/#pinot-noir |
+| beginner-merlot.jpg | A glass of deep ruby Merlot with plums, cherries and chocolate in a candlelit room | /learn/wine-for-beginners/#merlot |
+| beginner-malbec.jpg | A glass of inky Malbec with blackberries and violets, a grill and the Andes at sunset behind | /learn/wine-for-beginners/#malbec |
