@@ -19,6 +19,24 @@
 "Beskrive vinens plads i Egypten, Grækenland og Rom",
 "Følge vinens rejse mod vest fra Kaukasus til Gallien"
 ]
+},
+"es": {
+"t": "Los orígenes antiguos del vino: de la vid silvestre a Roma",
+"sum": "Cómo una vid silvestre del bosque se convirtió en cultivo, y cómo Egipto, Grecia, los marineros fenicios y griegos y, por último, Roma llevaron el vino por todo el mundo antiguo.",
+"out": [
+"Explicar cómo una vid silvestre se convirtió en cultivo",
+"Describir el lugar del vino en Egipto, Grecia y Roma",
+"Seguir el viaje del vino hacia el oeste, del Cáucaso a la Galia"
+]
+},
+"de": {
+"t": "Die antiken Ursprünge des Weins: von der Wildrebe bis Rom",
+"sum": "Wie aus einer wilden Rebe des Waldes eine Kulturpflanze wurde und wie Ägypten, Griechenland, phönizische und griechische Seefahrer und schließlich Rom den Wein in die ganze antike Welt trugen.",
+"out": [
+"Erklären, wie aus einer Wildrebe eine Kulturpflanze wurde",
+"Die Rolle des Weins in Ägypten, Griechenland und Rom beschreiben",
+"Den Weg des Weins vom Kaukasus nach Gallien nachzeichnen"
+]
 }
 },
 {
@@ -40,6 +58,24 @@
 "Forklare, hvordan Rkatsiteli i qvevri bliver til ravfarvet vin",
 "Læse en græsk etiket, der nævner et sted",
 "Forklare, hvorfor Tokaji Aszú smager sødt og alligevel livligt"
+]
+},
+"es": {
+"t": "Raíces antiguas: Georgia, Grecia y Hungría hoy",
+"sum": "Tres culturas del vino milenarias que siguen vivas en la copa: los vinos ámbar de Georgia, las uvas griegas ligadas a un lugar y los vinos de Tokaj, de almibarados a secos.",
+"out": [
+"Explicar cómo la Rkatsiteli en qvevri se convierte en vino ámbar",
+"Leer una etiqueta griega que nombra un lugar",
+"Explicar por qué el Tokaji Aszú sabe dulce y a la vez vivo"
+]
+},
+"de": {
+"t": "Alte Wurzeln: Georgien, Griechenland und Ungarn heute",
+"sum": "Drei uralte Weinkulturen, die im Glas weiterleben: Georgiens Bernsteinweine, Griechenlands ortsgebundene Rebsorten und die Weine aus Tokaj, von sirupsüß bis trocken.",
+"out": [
+"Erklären, wie Rkatsiteli im Qvevri zu Bernsteinwein wird",
+"Ein griechisches Etikett lesen, das einen Ort nennt",
+"Erklären, warum Tokaji Aszú süß und doch lebendig schmeckt"
 ]
 }
 },
@@ -63,6 +99,24 @@
 "Beskrive, hvordan svindel gjorde berømte navne til vinlove",
 "Kende forskel på en BOB-vin og en BGB-vin"
 ]
+},
+"es": {
+"t": "Cómo se formaron las regiones clásicas de Europa",
+"sum": "Por qué los vinos europeos llevan nombres de lugar: cómo Roma, los monjes y los comerciantes dieron fama a las regiones, y cómo las leyes llegaron a proteger esos nombres.",
+"out": [
+"Explicar las tres fuerzas detrás de los nombres europeos",
+"Describir cómo las falsificaciones convirtieron nombres famosos en leyes",
+"Distinguir un vino DOP de un vino IGP"
+]
+},
+"de": {
+"t": "Wie Europas klassische Weinregionen entstanden",
+"sum": "Warum europäische Weine Ortsnamen tragen: wie Rom, Mönche und Kaufleute Regionen berühmt machten und wie Gesetze die Namen schließlich schützten.",
+"out": [
+"Die drei Kräfte hinter Europas Weinortsnamen erklären",
+"Beschreiben, wie Fälschungen berühmte Namen zu Weingesetzen machten",
+"Einen g.U.-Wein von einem g.g.A.-Wein unterscheiden"
+]
 }
 },
 {
@@ -84,6 +138,24 @@
 "Forklare, hvad der gør et land til Den Nye Verden",
 "Følge vinstokkenes vej fra Mexico til New Zealand",
 "Beskrive, hvad der skabte Den Nye Verdens modnere stil"
+]
+},
+"es": {
+"t": "El Nuevo Mundo despega: cómo las viñas cruzaron los océanos",
+"sum": "Cómo las viñas europeas llegaron a América, Sudáfrica, Australia y Nueva Zelanda desde el siglo XVI, y cómo esas tierras crearon un estilo más maduro, con el nombre de la uva.",
+"out": [
+"Explicar qué hace que un país vinícola sea del Nuevo Mundo",
+"Seguir el viaje de las viñas de México a Nueva Zelanda",
+"Describir qué formó el estilo maduro del Nuevo Mundo, con nombre de uva"
+]
+},
+"de": {
+"t": "Die Neue Welt kommt: wie die Reben die Ozeane überquerten",
+"sum": "Wie europäische Reben ab dem 16. Jahrhundert Amerika, Südafrika, Australien und Neuseeland erreichten und diese Länder einen reiferen Stil mit Rebsortennamen schufen.",
+"out": [
+"Erklären, was ein Weinland zur Neuen Welt macht",
+"Nachverfolgen, wie die Reben von Mexiko bis Neuseeland kamen",
+"Beschreiben, was den reiferen Stil mit Rebsortennamen prägte"
 ]
 }
 },
@@ -107,6 +179,24 @@
 "Forklare de kure, man prøvede, og hvad krisen førte til",
 "Nævne tre moderne forandringer, der gjorde vinen bedre"
 ]
+},
+"es": {
+"t": "La filoxera y la era moderna: crisis, cura y ciencia",
+"sum": "Cómo se descubrió, se combatió y se venció a un diminuto insecto americano, qué le hizo la crisis al vino y a los viticultores, y cómo la ciencia convirtió el buen vino en la norma.",
+"out": [
+"Explicar por qué la mayoría de las cepas crecen hoy sobre raíces americanas",
+"Explicar los remedios probados y lo que causó la crisis",
+"Nombrar tres cambios modernos que mejoraron el vino"
+]
+},
+"de": {
+"t": "Die Reblaus und die moderne Ära: Krise, Rettung, Wissenschaft",
+"sum": "Wie ein winziges amerikanisches Insekt entdeckt, bekämpft und besiegt wurde, was die Krise mit dem Wein und den Winzern machte und wie die Wissenschaft guten Wein zur Normalität machte.",
+"out": [
+"Erklären, warum die meisten Reben heute auf amerikanischen Wurzeln wachsen",
+"Die versuchten Mittel und die Folgen der Krise erklären",
+"Drei moderne Neuerungen nennen, die den Wein besser machten"
+]
 }
 },
 {
@@ -128,6 +218,24 @@
 "Beskrive den fløjlsbløde stil i argentinsk Malbec",
 "Forklare, hvordan smeltevand og højde får ørkenen til at virke",
 "Placere Mendoza, San Juan, Salta og Patagonien på kortet"
+]
+},
+"es": {
+"t": "Argentina de un vistazo: Malbec, montañas y sol del desierto",
+"sum": "Argentina es la tierra del Malbec suave y aterciopelado, cultivado en viñedos casi desérticos en lo alto de las laderas bajas de los Andes, donde la nieve derretida riega las viñas y las noches frescas dan frescura al vino.",
+"out": [
+"Describir el estilo aterciopelado del Malbec argentino",
+"Explicar cómo el deshielo y la altitud hacen viable un desierto",
+"Situar Mendoza, San Juan, Salta y la Patagonia en el mapa"
+]
+},
+"de": {
+"t": "Argentinien auf einen Blick: Malbec, Berge und Wüstensonne",
+"sum": "Argentinien ist das Land des weichen, samtigen Malbec, gewachsen in fast wüstenhaften Weinbergen hoch an den unteren Hängen der Anden, wo geschmolzener Schnee die Reben tränkt und kühle Nächte den Wein frisch halten.",
+"out": [
+"Den samtigen Stil des argentinischen Malbec beschreiben",
+"Erklären, wie Schmelzwasser und Höhe eine Wüste nutzbar machen",
+"Mendoza, San Juan, Salta und Patagonien auf der Karte verorten"
 ]
 }
 },
@@ -151,6 +259,24 @@
 "Nævne Argentinas andre røde druer, og hvad de giver",
 "Kende duftende Torrontés fra Criolla-druerne til hverdagsvin"
 ]
+},
+"es": {
+"t": "Las uvas de Argentina: la Malbec y más",
+"sum": "La Malbec lidera las uvas de Argentina, con la Bonarda y las Cabernet detrás, la floral Torrontés como blanca estrella y las viejas uvas criollas para el vino barato de diario.",
+"out": [
+"Describir cómo sabe el Malbec argentino y por qué casi desapareció",
+"Nombrar las tintas secundarias de Argentina y qué aporta cada una",
+"Distinguir la perfumada Torrontés de las criollas de diario"
+]
+},
+"de": {
+"t": "Die Rebsorten Argentiniens: Malbec und mehr",
+"sum": "Malbec führt Argentiniens Rebsorten an, dahinter Bonarda und die Cabernets, der blumige Torrontés als weißer Star und alte Criolla-Sorten für billigen Alltagswein.",
+"out": [
+"Beschreiben, wie argentinischer Malbec schmeckt und warum er fast verschwand",
+"Argentiniens rote Nebendarsteller nennen und sagen, was jeder beisteuert",
+"Duftenden Torrontés von den Criolla-Sorten für Alltagswein unterscheiden"
+]
 }
 },
 {
@@ -172,6 +298,24 @@
 "Forklare, hvordan kanaler med smeltevand vander en ørken",
 "Forklare, hvorfor højden gør Malbec friskere og mørkere",
 "Kende fløjlsblød Luján de Cuyo fra frisk Valle de Uco"
+]
+},
+"es": {
+"t": "Mendoza: desierto, deshielo y Malbec en altura",
+"sum": "Mendoza es un desierto de altura regado con la nieve derretida de los Andes: días soleados y noches frescas dan un Malbec suave y aterciopelado cerca de la ciudad y otro más fresco y floral arriba, en el Valle de Uco.",
+"out": [
+"Explicar cómo los canales de deshielo riegan un desierto",
+"Explicar por qué la altura da un Malbec más fresco y profundo",
+"Distinguir el aterciopelado Luján de Cuyo del fresco Valle de Uco"
+]
+},
+"de": {
+"t": "Mendoza: Wüste, Schmelzwasser und Malbec in der Höhe",
+"sum": "Mendoza ist eine Hochwüste, bewässert mit geschmolzenem Schnee der Anden: Sonnige Tage und kühle Nächte bringen weichen, samtigen Malbec nahe der Stadt und frischeren, blumigeren Malbec oben im Valle de Uco.",
+"out": [
+"Erklären, wie Kanäle mit Schmelzwasser eine Wüste bewässern",
+"Erklären, warum die Höhe Malbec frischer und dunkler macht",
+"Samtigen Luján de Cuyo von frischem Valle de Uco unterscheiden"
 ]
 }
 },
@@ -195,6 +339,24 @@
 "Beskrive Saltas Torrontés, Malbec og Tannat",
 "Forklare, hvorfor Patagonien passer til frisk Pinot Noir"
 ]
+},
+"es": {
+"t": "Salta y la Patagonia: norte alto, sur fresco",
+"sum": "Los dos extremos del vino argentino: los valles altísimos y soleados de Salta dan un Torrontés perfumado y tintos profundos, y los valles fluviales frescos y ventosos de la Patagonia, un Pinot Noir fresco.",
+"out": [
+"Explicar por qué Salta y la Patagonia dan vinos frescos",
+"Describir el Torrontés, el Malbec y el Tannat de Salta",
+"Explicar por qué la Patagonia da un Pinot Noir fresco"
+]
+},
+"de": {
+"t": "Salta und Patagonien: hoher Norden, kühler Süden",
+"sum": "Argentiniens zwei Weinextreme: Saltas himmelhohe, sonnige Täler bringen duftenden Torrontés und tiefe Rotweine hervor, Patagoniens kühle, windige Flusstäler frischen Pinot Noir.",
+"out": [
+"Erklären, warum Salta und Patagonien frische Weine liefern",
+"Saltas Torrontés, Malbec und Tannat beschreiben",
+"Erklären, warum Patagonien zu frischem Pinot Noir passt"
+]
 }
 },
 {
@@ -216,6 +378,24 @@
 "Kende forskel på Argentinas stedniveauer IP, IG og DOC",
 "Bruge 85-procentreglen og minimumstiderne for Reserva",
 "Læse en argentinsk etiket fra start til slut"
+]
+},
+"es": {
+"t": "Leer una etiqueta argentina: lugar, uva y crianza",
+"sum": "Lee una botella argentina como un argentino: los niveles de origen IP, IG y DOC, distritos pequeños como Paraje Altamira, la regla del 85 %, Reserva y la altitud.",
+"out": [
+"Distinguir los niveles de origen IP, IG y DOC de Argentina",
+"Aplicar la regla del 85 % y los mínimos de Reserva",
+"Leer una etiqueta argentina de principio a fin"
+]
+},
+"de": {
+"t": "Argentinische Etiketten lesen: Herkunft, Rebsorte, Reifezeit",
+"sum": "Lies eine argentinische Flasche wie ein Einheimischer: die Herkunftsstufen IP, IG und DOC, kleine Bezirke wie Paraje Altamira, die 85-%-Regel, Reserva und die Höhenlage.",
+"out": [
+"Argentiniens Herkunftsstufen IP, IG und DOC unterscheiden",
+"Die 85-%-Regel und die Mindestzeiten für Reserva anwenden",
+"Ein argentinisches Etikett von vorne bis hinten lesen"
 ]
 }
 },
@@ -239,6 +419,24 @@
 "Læse en vinmarks højde på en argentinsk etiket",
 "Finde gode køb og madvine ud over Malbec"
 ]
+},
+"es": {
+"t": "Elegir vino argentino: el Malbec y mucho más",
+"sum": "Guía de compra de Argentina: Malbec de diario o el salto al Valle de Uco, qué indica la altura en la etiqueta, otros tintos, Torrontés, Pinot Noir y buen precio.",
+"out": [
+"Elegir entre Malbec de diario de Mendoza y del Valle de Uco",
+"Leer la altura del viñedo en una etiqueta argentina",
+"Elegir vinos argentinos más allá del Malbec para comer y ahorrar"
+]
+},
+"de": {
+"t": "Argentinischen Wein wählen: Malbec und mehr",
+"sum": "Ein Einkaufsführer für Argentinien: Alltags-Malbec oder der Schritt nach Uco, was eine Höhe auf dem Etikett heißt, andere Rote, Torrontés, Pinot Noir und gute Preise.",
+"out": [
+"Zwischen Alltags-Malbec aus Mendoza und Malbec aus Uco wählen",
+"Eine Weinberghöhe auf einem argentinischen Etikett lesen",
+"Argentinische Weine jenseits von Malbec für Essen und Budget wählen"
+]
 }
 },
 {
@@ -260,6 +458,24 @@
 "Beskrive Australiens kraftige, modne stil og landets vigtigste drue",
 "Forklare, hvor Australiens vinmarker ligger, og hvad der køler dem",
 "Forklare, hvorfor nogle af verdens ældste vinstokke vokser her"
+]
+},
+"es": {
+"t": "Australia de un vistazo: sol, Shiraz y el sur",
+"sum": "Por qué Australia es famosa por tintos intensos y maduros de la uva Shiraz, por qué sus viñas se quedan en el sur, lejos del seco outback, y cómo una cuarentena salvó viñas muy viejas.",
+"out": [
+"Describir el estilo intenso y maduro de Australia y su uva emblemática",
+"Explicar dónde están los viñedos de Australia y qué los refresca",
+"Explicar por qué aquí crecen algunas de las viñas más viejas del mundo"
+]
+},
+"de": {
+"t": "Australien auf einen Blick: Sonne, Shiraz und der Süden",
+"sum": "Warum Australien für kräftige, reife Rotweine aus der Rebsorte Shiraz berühmt ist, warum seine Reben im Süden bleiben, weit weg vom trockenen Outback, und wie eine Quarantäne sehr alte Reben rettete.",
+"out": [
+"Australiens kräftigen, reifen Stil und seine Vorzeigesorte beschreiben",
+"Erklären, wo Australiens Weinberge liegen und was sie kühlt",
+"Erklären, warum hier einige der ältesten Reben der Welt wachsen"
 ]
 }
 },
@@ -283,6 +499,24 @@
 "Forbinde Australiens vigtigste røde druer med deres hjem",
 "Forklare, hvorfor Sémillon fra Hunter ændrer sig så meget"
 ]
+},
+"es": {
+"t": "Las uvas de Australia: la Shiraz y mucho más",
+"sum": "La Shiraz es la uva tinta emblemática de Australia, potente en zonas cálidas y con pimienta en las frescas, y cada una de las demás tiene su casa, del Cabernet de Coonawarra al Sémillon de Hunter Valley.",
+"out": [
+"Describir a qué saben el Shiraz cálido y el fresco",
+"Relacionar las uvas tintas clave de Australia con su casa",
+"Explicar por qué el Sémillon de Hunter Valley cambia tanto con los años"
+]
+},
+"de": {
+"t": "Australiens Rebsorten: Shiraz und mehr",
+"sum": "Shiraz ist Australiens rote Vorzeigesorte, üppig in warmen Gegenden und pfeffrig in kühlen, und jede andere Rebsorte hat ihre Heimat, vom Coonawarra-Cabernet bis zum Hunter-Valley-Sémillon.",
+"out": [
+"Beschreiben, wie warmer und kühler Shiraz schmecken",
+"Australiens wichtigste rote Rebsorten ihrer Heimat zuordnen",
+"Erklären, warum sich Hunter-Valley-Sémillon mit dem Alter so stark verändert"
+]
 }
 },
 {
@@ -304,6 +538,24 @@
 "Forklare, hvorfor Barossa giver fyldig Shiraz og Grenache",
 "Forklare, hvad Old Vine betyder på en etiket fra Barossa",
 "Kende forskel på Barossa, Eden Valley og McLaren Vale"
+]
+},
+"es": {
+"t": "La cálida Australia Meridional: Barossa y McLaren Vale",
+"sum": "Australia Meridional elabora cerca de la mitad del vino australiano. Sus cálidas regiones de Barossa y McLaren Vale son famosas por sus tintos potentes y maduros de Shiraz y Garnacha.",
+"out": [
+"Explicar por qué Barossa da Shiraz y Garnacha tan amplios",
+"Explicar qué significa Old Vine en una etiqueta de Barossa",
+"Distinguir Barossa, Eden Valley y McLaren Vale"
+]
+},
+"de": {
+"t": "Das warme Südaustralien: Barossa und McLaren Vale",
+"sum": "Südaustralien erzeugt etwa die Hälfte des australischen Weins. Seine warmen Regionen Barossa und McLaren Vale sind berühmt für üppige, reife Rotweine aus Shiraz und Grenache.",
+"out": [
+"Erklären, warum das Barossa üppigen Shiraz und Grenache hervorbringt",
+"Erklären, was Old Vine auf einem Etikett aus dem Barossa bedeutet",
+"Barossa, Eden Valley und McLaren Vale unterscheiden"
 ]
 }
 },
@@ -327,6 +579,24 @@
 "Placere Yarra Valley, Tasmanien og Margaret River på et kort",
 "Forbinde Yarra, Tasmanien og Margaret River med deres vine"
 ]
+},
+"es": {
+"t": "La Australia más fresca: Yarra Valley, Tasmania y Margaret River",
+"sum": "Las regiones más frescas y suaves maduran la uva despacio, así que Yarra Valley, Tasmania y Margaret River dan vinos más frescos y delicados, del Pinot Noir y el espumoso al Cabernet.",
+"out": [
+"Explicar por qué las regiones frescas dan vinos más frescos y delicados",
+"Situar Yarra Valley, Tasmania y Margaret River en un mapa",
+"Relacionar Yarra, Tasmania y Margaret River con sus vinos"
+]
+},
+"de": {
+"t": "Das kühlere Australien: Yarra Valley, Tasmanien und Margaret River",
+"sum": "In kühleren, milderen Gebieten reifen die Trauben langsam, darum erzeugen Yarra Valley, Tasmanien und Margaret River frischere, zartere Weine, von Pinot Noir und Schaumwein bis Cabernet.",
+"out": [
+"Erklären, warum kühle Gebiete frischere, zartere Weine erzeugen",
+"Yarra Valley, Tasmanien und Margaret River auf der Karte finden",
+"Yarra, Tasmanien und Margaret River ihre Weine zuordnen"
+]
 }
 },
 {
@@ -348,6 +618,24 @@
 "Forklare, hvad 85 %-reglen dækker",
 "Se, hvor præcist stedet på en etiket er",
 "Læse en australsk for- og bagetiket"
+]
+},
+"es": {
+"t": "Leer una etiqueta australiana: la regla del 85 %",
+"sum": "Cómo leer una etiqueta australiana: la regla del 85 % para uva, añada y lugar, las GI de estado a subregión, el orden de las uvas, los números de bin y la contraetiqueta.",
+"out": [
+"Explicar qué cubre la regla del 85 %",
+"Saber lo preciso que es el lugar de una etiqueta",
+"Leer la etiqueta y la contraetiqueta de un vino australiano"
+]
+},
+"de": {
+"t": "Ein australisches Etikett lesen: die 85-%-Regel",
+"sum": "So liest du ein australisches Etikett: die 85-%-Regel für Rebsorte, Jahrgang und Herkunft, GIs vom Bundesstaat bis zur Unterregion, die Reihenfolge der Rebsorten, Bin-Nummern und das Rückenetikett.",
+"out": [
+"Erklären, was die 85-%-Regel abdeckt",
+"Erkennen, wie genau die Herkunft auf einem Etikett ist",
+"Vorder- und Rückenetikett eines australischen Weins lesen"
 ]
 }
 },
@@ -371,6 +659,24 @@
 "Forbinde australske vinområder med deres specialiteter",
 "Bruge prisstigen og madparrene, når du køber vin"
 ]
+},
+"es": {
+"t": "Elegir vino australiano: sol, Shiraz y mucho más",
+"sum": "Una guía práctica del vino australiano: qué región para cada estilo, cómo el lugar de la etiqueta orienta el precio, los primos australianos de los clásicos franceses y maridajes fáciles.",
+"out": [
+"Elegir un vino australiano según el sabor que buscas",
+"Relacionar las regiones australianas con sus vinos estrella",
+"Usar la escalera de precios y los maridajes al comprar"
+]
+},
+"de": {
+"t": "Australischen Wein wählen: Sonne, Shiraz und mehr",
+"sum": "Ein praktischer Leitfaden für australischen Wein: welche Region für welchen Stil, wie die Herkunft auf dem Etikett den Preis bestimmt, australische Cousins französischer Klassiker und einfache Speisebegleiter.",
+"out": [
+"Einen australischen Wein nach dem gewünschten Geschmack wählen",
+"Australischen Regionen ihre Spezialitäten zuordnen",
+"Preisleiter und Speisebegleiter beim Einkauf nutzen"
+]
 }
 },
 {
@@ -392,6 +698,24 @@
 "Beskrive østrigsk vin: friske, tørre, rene hvidvine",
 "Forklare, hvordan varme dage og kølige nætter præger vinen",
 "Sige, hvor vinen gror, og hvad hvert område laver"
+]
+},
+"es": {
+"t": "Austria de un vistazo: Grüner Veltliner y vinos secos",
+"sum": "Cómo un escándalo de 1985 convirtió a Austria en tierra de blancos secos, frescos y precisos, con la Grüner Veltliner al frente, moldeados por días cálidos y noches frescas.",
+"out": [
+"Describir la seña de Austria: blancos frescos, secos y precisos",
+"Explicar cómo días cálidos y noches frescas moldean los vinos",
+"Contar dónde crecen las cepas de Austria y qué elabora cada zona"
+]
+},
+"de": {
+"t": "Österreich im Überblick: Grüner Veltliner und trockene Weine",
+"sum": "Wie ein Skandal 1985 Österreich zum Land trockener, frischer, präziser Weißweine machte, angeführt vom Grünen Veltliner und geprägt von warmen Tagen und kühlen Nächten.",
+"out": [
+"Österreichs Markenzeichen beschreiben: frische, trockene, präzise Weißweine",
+"Erklären, wie warme Tage und kühle Nächte die Weine prägen",
+"Erklären, wo Österreichs Reben wachsen und was jedes Gebiet erzeugt"
 ]
 }
 },
@@ -415,6 +739,24 @@
 "Kende Zweigelt fra Blaufränkisch og koble druer til områder",
 "Forklare, hvad en blandet mark som Gemischter Satz er"
 ]
+},
+"es": {
+"t": "Las uvas de Austria: Grüner Veltliner y más",
+"sum": "La Grüner Veltliner lidera los blancos de Austria, la Riesling y la Sauvignon Blanc tienen cada una su casa, y la Zweigelt y la Blaufränkisch son las tintas clave.",
+"out": [
+"Reconocer el Grüner Veltliner por su manzana, cítricos y pimienta",
+"Distinguir la Zweigelt de la Blaufränkisch y unir uvas y regiones",
+"Explicar qué es un viñedo mixto como el Gemischter Satz"
+]
+},
+"de": {
+"t": "Österreichs Rebsorten: Grüner Veltliner und mehr",
+"sum": "Grüner Veltliner führt Österreichs Weißweine an, Riesling und Sauvignon Blanc haben je ihre Heimat, und Zweigelt und Blaufränkisch sind die wichtigsten Roten.",
+"out": [
+"Grünen Veltliner an Apfel, Zitrus und Pfeffer erkennen",
+"Zweigelt von Blaufränkisch unterscheiden und Rebsorten Gebieten zuordnen",
+"Erklären, was ein Gemischter Satz ist"
+]
 }
 },
 {
@@ -436,6 +778,24 @@
 "Forklare, hvordan varme dage og kølige nætter præger Wachaus vin",
 "Læse Steinfeder, Federspiel og Smaragd på en etiket fra Wachau",
 "Nævne særpræget for hvert område ved Donau og Wien"
+]
+},
+"es": {
+"t": "La Wachau y el Danubio: el corazón blanco de Austria",
+"sum": "Por qué el calor del río, las noches frescas del bosque, la roca antigua y el suelo traído por el viento dan los blancos frescos y secos de Baja Austria, y cómo leer las palabras de estilo de la Wachau.",
+"out": [
+"Explicar cómo los días cálidos y las noches frescas moldean el vino de la Wachau",
+"Leer Steinfeder, Federspiel y Smaragd en una etiqueta de la Wachau",
+"Nombrar el sello de cada región del Danubio y de Viena"
+]
+},
+"de": {
+"t": "Die Wachau und die Donau: Österreichs weißes Kernland",
+"sum": "Warum Wärme vom Fluss, kühle Waldnächte, altes Gestein und windverwehter Boden Niederösterreichs knackige, trockene Weißweine prägen und wie du die Wachauer Stilbegriffe liest.",
+"out": [
+"Erklären, wie warme Tage und kühle Nächte den Wachauer Wein prägen",
+"Steinfeder, Federspiel und Smaragd auf einem Wachauer Etikett lesen",
+"Die Handschrift jeder Donauregion und Wiens benennen"
 ]
 }
 },
@@ -459,6 +819,24 @@
 "Kende Zweigelt til hverdag fra Blaufränkisch til at gemme",
 "Nævne Steiermarks vigtigste hvidvine og dens lokale rosé"
 ]
+},
+"es": {
+"t": "Burgenland y Estiria: tintos, vinos dulces y Sauvignon",
+"sum": "El cálido Burgenland da muchos de los mejores tintos de Austria y dulces nacidos de la niebla del lago; Estiria, verde y lluviosa, es tierra de Sauvignon Blanc fresco y aromático.",
+"out": [
+"Explicar cómo la niebla del lago da los vinos dulces de Burgenland",
+"Distinguir el Zweigelt de diario del Blaufránkisch que puede envejecer",
+"Nombrar los principales blancos de Estiria y su rosado local"
+]
+},
+"de": {
+"t": "Burgenland und Steiermark: Rotweine, Süßweine und Sauvignon",
+"sum": "Das warme Burgenland liefert viele der besten Rotweine Österreichs und Süßweine aus dem Seenebel, die grünere, regenreichere Steiermark knackigen, aromatischen Sauvignon Blanc.",
+"out": [
+"Erklären, wie Seenebel die Süßweine des Burgenlands möglich macht",
+"Alltags-Zweigelt von Blaufränkisch unterscheiden, der reifen kann",
+"Die wichtigsten steirischen Weißweine und den heimischen Rosé nennen"
+]
 }
 },
 {
@@ -480,6 +858,24 @@
 "Gå op ad Østrigs kvalitetstrin fra Wein til Prädikat",
 "Læse DAC-pyramiden fra Gebietswein til Riedenwein",
 "Læse en østrigsk etiket linje for linje"
+]
+},
+"es": {
+"t": "Leer una etiqueta austriaca: niveles, DAC y palabras clave",
+"sum": "Una etiqueta austriaca indica el nivel, el lugar (hasta un solo viñedo) y el estilo: aprende la Banderole, la pirámide DAC y unas cuantas palabras clave.",
+"out": [
+"Subir la escalera de calidad de Austria, de Wein a Prädikat",
+"Leer la pirámide DAC, de Gebietswein a Riedenwein",
+"Descifrar una etiqueta austriaca línea a línea"
+]
+},
+"de": {
+"t": "Das österreichische Etikett lesen: Stufen, DAC und Schlüsselwörter",
+"sum": "Ein österreichisches Etikett nennt die Stufe, die Herkunft (bis zur einzelnen Lage) und den Stil: Lerne die Banderole, die DAC-Pyramide und ein paar Schlüsselwörter.",
+"out": [
+"Österreichs Qualitätsleiter von Wein bis Prädikat hinaufsteigen",
+"Die DAC-Pyramide vom Gebietswein bis zum Riedenwein lesen",
+"Ein österreichisches Etikett Zeile für Zeile entschlüsseln"
 ]
 }
 },
@@ -503,6 +899,24 @@
 "Gå fra et DAC-område op til én vinmark",
 "Vælge en østrigsk vin til en ret"
 ]
+},
+"es": {
+"t": "Elegir vino austriaco: Grüner, Riesling y los tintos",
+"sum": "Guía de compra de Austria: Grüner Veltliner seguros, cómo te ayudan las etiquetas DAC a subir, Federspiel o Smaragd, Riesling, tintos, dulces y comida.",
+"out": [
+"Elegir por la etiqueta un blanco austriaco seco y seguro",
+"Subir de una región DAC a un solo viñedo",
+"Elegir un vino austriaco para un plato"
+]
+},
+"de": {
+"t": "Österreichischen Wein wählen: Veltliner, Riesling und Rote",
+"sum": "Ein Einkaufsführer für Österreich: sichere Veltliner-Tipps, wie DAC-Etiketten beim Aufsteigen helfen, Federspiel oder Smaragd, Riesling, Rote, Süßweine und Essen.",
+"out": [
+"Einen sicheren, trockenen österreichischen Weißwein am Etikett erkennen",
+"Von einer DAC-Region bis zu einem Weingarten aufsteigen",
+"Einen österreichischen Wein zu einem Gericht wählen"
+]
 }
 },
 {
@@ -524,6 +938,24 @@
 "Kigge et vinkort igennem og finde dets system",
 "Finde husets vin, glasvin, halve flasker og bin-numre",
 "Bedømme en flaske ud fra producent og område, ikke pris"
+]
+},
+"es": {
+"t": "Cómo leer una carta de vinos o el estante de una tienda",
+"sum": "Cómo se organizan las cartas de vinos y los estantes de las tiendas, qué buscar primero, la verdad sobre los márgenes y la segunda botella más barata, y en qué confiar.",
+"out": [
+"Echar un vistazo a cualquier carta y descubrir su lógica",
+"Localizar el vino de la casa, las copas, las medias botellas y los bins",
+"Juzgar una botella por productor y región, no por precio"
+]
+},
+"de": {
+"t": "Weinkarte und Ladenregal richtig lesen",
+"sum": "Wie Weinkarten und Ladenregale aufgebaut sind, welche Orientierungspunkte du zuerst suchst, die Wahrheit über Aufschläge und die zweitgünstigste Flasche und worauf du dich verlassen kannst.",
+"out": [
+"Jede Weinkarte überfliegen und ihre Logik finden",
+"Hauswein, offene Weine, halbe Flaschen und Bin-Nummern finden",
+"Eine Flasche nach Erzeuger und Region beurteilen, nicht nach Preis"
 ]
 }
 },
@@ -547,6 +979,24 @@
 "Bede personalet om en flaske med gode spor",
 "Planlægge et sikkert eksperiment med en ny vin"
 ]
+},
+"es": {
+"t": "Cómo elegir una botella que te vaya a gustar",
+"sum": "Parte de un vino que te encantó, pon nombre a lo que te gustó y luego avanza paso a paso, guiándote por las pistas de la etiqueta, buenas preguntas y tus notas.",
+"out": [
+"Describir un vino que te gustó por uva, lugar y estilo",
+"Pedir una botella en la tienda con pistas útiles",
+"Planificar un experimento seguro con un vino nuevo"
+]
+},
+"de": {
+"t": "So findest du eine Flasche, die dir schmeckt",
+"sum": "Geh von einem Wein aus, den du geliebt hast, benenne, warum er dir gefiel, und wag dich dann Schritt für Schritt vor, mit Hinweisen auf dem Etikett, guten Fragen und deinen Notizen als Wegweiser.",
+"out": [
+"Einen Wein, der dir schmeckte, nach Rebsorte, Ort und Stil beschreiben",
+"Im Laden mit hilfreichen Hinweisen nach einer Flasche fragen",
+"Ein sicheres Experiment mit einem neuen Wein planen"
+]
 }
 },
 {
@@ -568,6 +1018,24 @@
 "Nævne de udgifter, der ligger i hver flaskes pris",
 "Skelne udgifter, der ændrer smagen, fra dem, der ikke gør",
 "Finde det sweet spot, hvor pengene giver mest"
+]
+},
+"es": {
+"t": "¿Un precio más alto significa mejor vino?",
+"sum": "Qué paga el precio de una botella, del impuesto especial y el vidrio al propio vino, si pagar más compra mejor vino y dónde está el punto óptimo.",
+"out": [
+"Nombrar los costes que se acumulan en el precio de cada botella",
+"Distinguir los costes que cambian el sabor de los que no",
+"Encontrar el punto óptimo donde el dinero más rinde"
+]
+},
+"de": {
+"t": "Bedeutet ein höherer Preis besseren Wein?",
+"sum": "Was im Preis einer Flasche steckt, von Alkoholsteuer und Glas bis zum Wein selbst, ob mehr Geld besseren Wein kauft und wo der Sweet Spot liegt.",
+"out": [
+"Die Kosten benennen, die in jedem Flaschenpreis stecken",
+"Kosten, die den Geschmack verändern, von den übrigen unterscheiden",
+"Den Sweet Spot finden, an dem Geld am meisten kauft"
 ]
 }
 },
@@ -591,6 +1059,24 @@
 "Beskrive, hvordan Chiles naturlige mure holdt phylloxera ude",
 "Nævne Chiles egen røde drue og den mest plantede drue"
 ]
+},
+"es": {
+"t": "Chile de un vistazo: Carménère, los Andes y el mar",
+"sum": "Un país estrecho entre los Andes y el Pacífico, donde el aire fresco del mar y las noches frías de montaña dan vinos limpios y afrutados, y la Carménère es la tinta emblemática.",
+"out": [
+"Explicar cómo los Andes y el Pacífico refrescan los viñedos chilenos",
+"Describir cómo las murallas naturales de Chile frenaron la filoxera",
+"Nombrar la uva tinta propia de Chile y su uva más plantada"
+]
+},
+"de": {
+"t": "Chile auf einen Blick: Carménère, die Anden und das Meer",
+"sum": "Ein schmales Land zwischen Anden und Pazifik, wo kühle Meeresluft und kalte Bergnächte saubere, fruchtige Weine ergeben und der Carménère die rote Vorzeigesorte ist.",
+"out": [
+"Erklären, wie Anden und Pazifik Chiles Weinberge kühlen",
+"Beschreiben, wie Chiles natürliche Mauern die Reblaus fernhielten",
+"Chiles eigene rote Rebsorte und seine meistangebaute Rebsorte nennen"
+]
 }
 },
 {
@@ -612,6 +1098,24 @@
 "Forklare, hvordan Chiles druer kom i to bølger",
 "Nævne Chiles vigtigste røde og hvide druer",
 "Koble hver chilensk drue til dens typiske stil"
+]
+},
+"es": {
+"t": "Las uvas de Chile: la Carménère y más",
+"sum": "Las uvas de Chile llegaron en dos oleadas, primero la País española y luego la Cabernet y la Carménère de Burdeos, con blancos frescos de la costa, Pinot Noir y viñas viejas rescatadas.",
+"out": [
+"Explicar cómo llegaron las uvas de Chile en dos oleadas",
+"Nombrar las uvas tintas y blancas clave de Chile",
+"Relacionar cada uva chilena con su estilo típico"
+]
+},
+"de": {
+"t": "Chiles Rebsorten: Carménère und mehr",
+"sum": "Chiles Rebsorten kamen in zwei Wellen, erst País aus Spanien, dann Cabernet und Carménère aus Bordeaux, dazu knackige Weiße von der Küste, frischer Pinot Noir und wiederentdeckte alte Reben.",
+"out": [
+"Erklären, wie Chiles Rebsorten in zwei Wellen kamen",
+"Chiles wichtigste rote und weiße Rebsorten benennen",
+"Jede chilenische Rebsorte ihrem typischen Stil zuordnen"
 ]
 }
 },
@@ -635,6 +1139,24 @@
 "Koble Maipo, Colchagua og Maule til deres mest kendte vine",
 "Beskrive Maules gamle, tørdyrkede buskvinstokke"
 ]
+},
+"es": {
+"t": "El Valle Central: Maipo, Colchagua y Maule",
+"sum": "El cálido Valle Central de Chile da tintos maduros y llenos de sabor: Cabernet en Maipo, Carménère y Syrah en Colchagua, y Carignan de viñas viejas en Maule.",
+"out": [
+"Explicar por qué el Valle Central da tintos maduros y llenos de sabor",
+"Relacionar Maipo, Colchagua y Maule con sus vinos más conocidos",
+"Describir las viejas viñas en vaso y de secano de Maule"
+]
+},
+"de": {
+"t": "Das Längstal: Maipo, Colchagua und Maule",
+"sum": "Chiles warmes Längstal bringt reife, üppige Rotweine hervor: Cabernet in Maipo, Carménère und Syrah in Colchagua, Carignan von alten Reben in Maule.",
+"out": [
+"Erklären, warum das Längstal reife, üppige Rotweine hervorbringt",
+"Maipo, Colchagua und Maule ihren bekanntesten Weinen zuordnen",
+"Maules alte, unbewässerte Buschreben beschreiben"
+]
 }
 },
 {
@@ -656,6 +1178,24 @@
 "Forklare, hvordan Stillehavet køler Chiles vinmarker ved kysten",
 "Koble Casablanca, Leyda og Limarí til deres kendetegn",
 "Beskrive Sydchiles gamle, tørdyrkede buskvinstokke"
+]
+},
+"es": {
+"t": "El Chile fresco: la costa y el sur",
+"sum": "El frío Pacífico refresca la costa chilena, ideal para blancos frescos y Pinot Noir, mientras que el sur, más lluvioso, guarda viñas muy viejas que pequeños productores están recuperando.",
+"out": [
+"Explicar cómo el Pacífico refresca los viñedos costeros de Chile",
+"Relacionar Casablanca, Leyda y Limarí con sus pistas",
+"Describir las viejas viñas en vaso y de secano del sur"
+]
+},
+"de": {
+"t": "Das kühle Chile: Küste und Süden",
+"sum": "Der kalte Pazifik hält Chiles Küste kühl für knackige Weißweine und Pinot Noir, während im feuchteren Süden uralte Reben stehen, die kleine Erzeuger heute wiederbeleben.",
+"out": [
+"Erklären, wie der Pazifik Chiles Küstenweinberge kühlt",
+"Casablanca, Leyda und Limarí ihren Hinweisen zuordnen",
+"Die alten, unbewässerten Buschreben des Südens beschreiben"
 ]
 }
 },
@@ -679,6 +1219,24 @@
 "Følge Chiles D.O.-æsker fra region ned til område",
 "Læse etiketten på en chilensk flaske linje for linje"
 ]
+},
+"es": {
+"t": "Leer una etiqueta chilena: lugar, uva y Reserva",
+"sum": "Una etiqueta chilena indica lugar, uva y añada, y sus términos Reserva marcan alcohol extra, y a veces madera, no años de crianza.",
+"out": [
+"Explicar qué prometen de verdad Reserva y Gran Reserva",
+"Seguir las cajas de la D.O. chilena de la región al área",
+"Leer una etiqueta delantera chilena línea por línea"
+]
+},
+"de": {
+"t": "Chilenische Etiketten lesen: Herkunft, Rebsorte und Reserva",
+"sum": "Ein chilenisches Etikett zeigt Herkunft, Rebsorte und Jahrgang, und seine Reserva-Wörter stehen für mehr Alkohol und manchmal Holz, nicht für Jahre der Reifung.",
+"out": [
+"Erklären, was Reserva und Gran Reserva wirklich versprechen",
+"Chiles D.O.-Schachteln von der Region bis zum Gebiet folgen",
+"Ein chilenisches Vorderetikett Zeile für Zeile lesen"
+]
 }
 },
 {
@@ -700,6 +1258,24 @@
 "Vælge en sikker chilensk hverdagsrødvin",
 "Gå et trin op via Alto Maipo eller Leyda",
 "Læse Costa og Reserva på en chilensk etiket"
+]
+},
+"es": {
+"t": "Elegir vino chileno: Carménère, Cabernet y costa fresca",
+"sum": "Guía de compra de Chile: tintos de diario seguros, cómo subir de nivel por valle, la costa fresca y el sur de viñas viejas, las palabras útiles de la etiqueta y qué comer con cada botella.",
+"out": [
+"Elegir un tinto chileno de diario seguro",
+"Subir de nivel por valle, del Alto Maipo a Leyda",
+"Leer Costa y Reserva en una etiqueta chilena"
+]
+},
+"de": {
+"t": "Chilenischen Wein wählen: Carménère, Cabernet und kühle Küste",
+"sum": "Ein Einkaufsführer für Chile: sichere Alltagsrote, wie du über das Tal aufsteigst, die kühle Küste und der Süden mit alten Reben, hilfreiche Etikettwörter und was zu jeder Flasche passt.",
+"out": [
+"Einen sicheren chilenischen Alltagsroten wählen",
+"Über das Tal aufsteigen, vom Alto Maipo bis Leyda",
+"Costa und Reserva auf einem chilenischen Etikett lesen"
 ]
 }
 },
@@ -723,6 +1299,24 @@
 "Forklare, hvordan salt, fedt og syre ændrer vinens smag",
 "Dele en ret op i blødgørere og ballademagere"
 ]
+},
+"es": {
+"t": "Cómo cambia la comida el vino de tu copa",
+"sum": "La sal, la grasa, la acidez, el dulzor y el picante cambian el sabor de un vino, cada uno a su manera, y saber qué hace cada uno convierte el maridaje en algo predecible.",
+"out": [
+"Nombrar los seis elementos de la comida que cambian el vino",
+"Explicar cómo la sal, la grasa y la acidez cambian el sabor de un vino",
+"Clasificar un plato en aliados y alborotadores"
+]
+},
+"de": {
+"t": "Wie Essen den Wein in deinem Glas verändert",
+"sum": "Salz, Fett, Säure, Süße und Chili verändern jeweils, wie ein Wein schmeckt. Wer weiß, was was bewirkt, kann Kombinationen vorhersagen.",
+"out": [
+"Die sechs Dinge im Essen nennen, die Wein verändern",
+"Erklären, wie Salz, Fett und Säure den Geschmack eines Weins verändern",
+"Ein Gericht in Schmeichler und Störenfriede einordnen"
+]
 }
 },
 {
@@ -744,6 +1338,24 @@
 "Nævne de fire sammenstød mellem mad og vin, du bør undgå",
 "Forklare, hvorfor artiskokker får vin til at smage underligt sød",
 "Vælge sikrere vine til fed fisk og drilske grøntsager"
+]
+},
+"es": {
+"t": "Los maridajes que se pelean de verdad: cuatro choques que evitar",
+"sum": "Casi toda la comida se lleva bien con el vino, pero cuatro combinaciones chocan casi siempre. Aprende por qué y qué vinos las esquivan.",
+"out": [
+"Nombrar los cuatro choques entre comida y vino que conviene evitar",
+"Explicar por qué las alcachofas hacen que el vino sepa extrañamente dulce",
+"Elegir vinos más seguros para el pescado azul y las verduras difíciles"
+]
+},
+"de": {
+"t": "Kombinationen, die sich wirklich beißen: vier Fehlgriffe, die du meiden solltest",
+"sum": "Die meisten Gerichte und Weine vertragen sich, aber vier Kombinationen beißen sich fast jedes Mal. Lerne, warum, und welche Weine dem Ärger aus dem Weg gehen.",
+"out": [
+"Die vier Fehlgriffe bei Essen und Wein benennen, die du meiden solltest",
+"Erklären, warum Artischocken Wein seltsam süß schmecken lassen",
+"Sicherere Weine zu fettem Fisch und kniffligem Gemüse wählen"
 ]
 }
 },
@@ -767,6 +1379,24 @@
 "Finde vin til friske, hvidskimmel-, hårde og blåskimmeloste",
 "Sætte et ostebord sammen omkring to vine"
 ]
+},
+"es": {
+"t": "Queso y vino: lo que funciona de verdad",
+"sum": "Por qué los tintos tánicos suelen sufrir con el queso, y cómo los blancos frescos, las burbujas y los vinos dulces ganan al equilibrar la sal y la grasa.",
+"out": [
+"Explicar por qué los tintos tánicos pueden chocar con el queso",
+"Combinar quesos frescos, de corteza florida, duros y azules con sus vinos",
+"Montar una tabla de quesos en torno a dos vinos"
+]
+},
+"de": {
+"t": "Käse und Wein: Was wirklich passt",
+"sum": "Warum tanninreiche Rotweine sich mit Käse oft schwertun und wie knackige Weißweine, Schaumweine und Süßweine punkten, weil sie Salz und Fett ausgleichen.",
+"out": [
+"Erklären, warum tanninreiche Rotweine sich mit Käse beißen können",
+"Frischen Käse, Weißschimmel-, Hart- und Blauschimmelkäse passenden Weinen zuordnen",
+"Eine Käseplatte rund um zwei Weine zusammenstellen"
+]
 }
 },
 {
@@ -788,6 +1418,24 @@
 "Vælge en vin, der er mindst lige så sød som desserten",
 "Finde den rigtige søde vin til klassiske desserter",
 "Forklare, hvorfor syre holder søde vine friske"
+]
+},
+"es": {
+"t": "Vinos dulces y de postre: cómo maridarlos",
+"sum": "Elige un vino al menos tan dulce como el postre, junta ligero con ligero e intenso con intenso, y deja que una acidez fresca lo mantenga vivo.",
+"out": [
+"Elegir un vino al menos tan dulce como el postre",
+"Combinar postres clásicos con el vino dulce adecuado",
+"Explicar por qué la acidez mantiene frescos los vinos dulces"
+]
+},
+"de": {
+"t": "Desserts und Süßweine: So kombinierst du sie",
+"sum": "Wähl einen Wein, der mindestens so süß ist wie dein Dessert, kombinier leicht mit leicht und reichhaltig mit üppig, und lass frische Säure ihn lebendig halten.",
+"out": [
+"Einen Wein wählen, der mindestens so süß ist wie das Dessert",
+"Klassische Desserts mit dem passenden Süßwein kombinieren",
+"Erklären, warum Säure Süßweine frisch hält"
 ]
 }
 },
@@ -811,6 +1459,24 @@
 "Kende de vigtigste typer portvin og sherry fra hinanden",
 "Servere hver type hedvin, vælge mad til den og gemme den"
 ]
+},
+"es": {
+"t": "Vinos generosos: oporto, jerez y Madeira",
+"sum": "Qué significa generoso, cómo distinguir los estilos de oporto y de jerez, unas palabras sobre el Madeira y cómo servir, maridar y guardar cada uno.",
+"out": [
+"Explicar qué hace que un vino sea generoso",
+"Distinguir los principales estilos de oporto y de jerez",
+"Servir, maridar y guardar cada estilo de generoso"
+]
+},
+"de": {
+"t": "Likörweine: Portwein, Sherry und Madeira",
+"sum": "Was Likörwein bedeutet, wie du die Stile von Portwein und Sherry unterscheidest, ein Wort zu Madeira und wie du jeden serviert, kombiniert und aufbewahrst.",
+"out": [
+"Erklären, was einen Wein zum Likörwein macht",
+"Die wichtigsten Portwein- und Sherry-Stile unterscheiden",
+"Jeden Likörweinstil servieren, kombinieren und aufbewahren"
+]
 }
 },
 {
@@ -832,6 +1498,24 @@
 "Forklare, hvorfor alkohol og tannin får chili til at brænde mere",
 "Vælge en halvtør eller aromatisk vin til stærk mad",
 "Finde den rette vin til klassiske stærke retter"
+]
+},
+"es": {
+"t": "Comida picante y vino: cómo calmar el ardor",
+"sum": "Por qué quema el chile, por qué el alcohol y el tanino lo empeoran, y cómo los vinos semisecos, aromáticos y con menos alcohol calman el ardor y reflejan las especias.",
+"out": [
+"Explicar por qué el alcohol y el tanino hacen que el chile pique más",
+"Elegir un vino semiseco o aromático para la comida picante",
+"Combinar platos picantes clásicos con un vino adecuado"
+]
+},
+"de": {
+"t": "Scharfes Essen und Wein: So zähmst du die Schärfe",
+"sum": "Warum Chili brennt, warum Alkohol und Tannin es schlimmer machen und wie halbtrockene, aromatische, alkoholärmere Weine die Schärfe mildern und die Gewürze widerspiegeln.",
+"out": [
+"Erklären, warum Alkohol und Tannin Chili stärker brennen lassen",
+"Einen halbtrockenen oder aromatischen Wein zu scharfem Essen wählen",
+"Klassischen scharfen Gerichten den passenden Wein zuordnen"
 ]
 }
 },
@@ -855,6 +1539,24 @@
 "Finde vine til grill, picnic eller fest",
 "Sætte en middags vine i rækkefølge fra let til fyldig"
 ]
+},
+"es": {
+"t": "Elige el vino adecuado para cada ocasión",
+"sum": "Elige el vino según el momento, no solo según la comida: algo ligero antes de comer, jugoso en una barbacoa y fácil de beber en una fiesta, sin olvidar el agua y las opciones sin alcohol.",
+"out": [
+"Elegir un aperitivo ligero para empezar la comida",
+"Escoger vinos para una barbacoa, un pícnic o una fiesta",
+"Ordenar los vinos de una cena de menos a más cuerpo"
+]
+},
+"de": {
+"t": "Wähl den passenden Wein für den Moment",
+"sum": "Stimm den Wein auf den Moment ab, nicht nur aufs Essen: etwas Leichtes vor dem Essen, Saftiges beim Grillen, Unkompliziertes auf der Party, dazu Wasser und Alkoholfreies.",
+"out": [
+"Einen leichten Aperitif als Auftakt zum Essen wählen",
+"Weine fürs Grillen, Picknick oder die Party aussuchen",
+"Die Weine eines Abendessens von leicht zu kräftig ordnen"
+]
 }
 },
 {
@@ -876,6 +1578,24 @@
 "Forklare, hvordan gær laver druesaft om til vin",
 "Kende forskel på stille, mousserende og søde vine og hedvin",
 "Placere enhver vin ud fra farve, sødme, bobler og styrke"
+]
+},
+"es": {
+"t": "Vino 101: los grandes estilos de vino y cómo leerlos",
+"sum": "El vino es zumo de uva fermentado por levaduras, y casi todas las botellas pertenecen a unas pocas familias que puedes reconocer por su color, dulzor, burbujas y graduación.",
+"out": [
+"Explicar cómo la levadura convierte el zumo de uva en vino",
+"Distinguir vinos tranquilos, espumosos, dulces y generosos",
+"Leer cualquier vino por su color, dulzor, burbujas y graduación"
+]
+},
+"de": {
+"t": "Wein 101: die wichtigsten Weinstile und wie du sie liest",
+"sum": "Wein ist von Hefen vergorener Traubensaft, und fast jede Flasche gehört zu wenigen Familien, die du an Farbe, Süße, Bläschen und Stärke erkennst.",
+"out": [
+"Erklären, wie Hefe aus Traubensaft Wein macht",
+"Stillwein, Schaumwein, Süßwein und Likörwein unterscheiden",
+"Jeden Wein nach Farbe, Süße, Bläschen und Stärke einordnen"
 ]
 }
 },
@@ -899,6 +1619,24 @@
 "Forklare, hvorfor næsen betyder mere end tungen",
 "Mærke og beskrive en vins eftersmag, når du har slugt den"
 ]
+},
+"es": {
+"t": "Cómo catar vino en 5 pasos",
+"sum": "Catar es simplemente beber, pero más despacio: mirar, girar, oler, probar y saborear, cinco pasos que dan su turno a cada sentido y te ayudan a notar lo que te gusta.",
+"out": [
+"Nombrar en orden los cinco pasos para catar vino",
+"Explicar por qué el olfato importa más que la lengua",
+"Notar y describir el final de un vino después de tragar"
+]
+},
+"de": {
+"t": "Wein verkosten in 5 Schritten",
+"sum": "Verkosten ist einfach Trinken, nur langsamer: Anschauen, Schwenken, Riechen, Probieren und Genießen, fünf Schritte, in denen jeder Sinn an die Reihe kommt und du merkst, was dir gefällt.",
+"out": [
+"Die fünf Schritte der Weinverkostung in der richtigen Reihenfolge nennen",
+"Erklären, warum der Geruch mehr zählt als die Zunge",
+"Den Abgang eines Weins nach dem Schlucken wahrnehmen und beschreiben"
+]
 }
 },
 {
@@ -920,6 +1658,24 @@
 "Beskrive vinens vej gennem vinhuset fra høst til flaske",
 "Forklare, hvad gær og dens enzymer gør ved sukker",
 "Forklare, hvordan en vin bliver gjort klar og holdbar"
+]
+},
+"es": {
+"t": "De la uva a la copa: el año en la bodega, paso a paso",
+"sum": "Sigue a las uvas por la bodega, desde el estrujado y la fermentación hasta los discretos pasos finales que dejan el vino limpio, estable y listo para embotellar.",
+"out": [
+"Describir las etapas en bodega de la vendimia a la botella",
+"Explicar qué hacen la levadura y sus enzimas con el azúcar",
+"Explicar cómo se deja un vino limpio y estable"
+]
+},
+"de": {
+"t": "Von der Traube ins Glas: das Jahr im Keller, Schritt für Schritt",
+"sum": "Begleite die Trauben durch den Keller, vom Quetschen und Gären bis zu den stillen letzten Schritten, die den Wein klar, stabil und bereit für die Flasche machen.",
+"out": [
+"Die Etappen im Keller von der Lese bis zur Flasche beschreiben",
+"Erklären, was Hefe und ihre Enzyme mit Zucker machen",
+"Erklären, wie ein Wein klar und stabil gemacht wird"
 ]
 }
 },
@@ -943,6 +1699,24 @@
 "Placere vin gris, rosé og clairet på farveskalaen",
 "Beskrive de tre måder, man laver rosé på"
 ]
+},
+"es": {
+"t": "En qué se diferencian el tinto, el blanco y el rosado",
+"sum": "El color de un vino y su tanino, que seca la boca, salen del tiempo con los hollejos de la uva: toda la gama del blanco al tinto pasando por el rosa, con el vino naranja al lado.",
+"out": [
+"Explicar por qué el tiempo con los hollejos marca el color y el tanino",
+"Situar el vin gris, el rosado y el clairet en la escala",
+"Describir las tres maneras de hacer rosado"
+]
+},
+"de": {
+"t": "Wie sich Rot-, Weiß- und Roséwein unterscheiden",
+"sum": "Die Farbe eines Weins und sein trocknendes Tannin kommen von der Zeit auf den Traubenschalen: die ganze Spanne von Weiß über Rosa bis Rot, daneben der Orangewein.",
+"out": [
+"Erklären, warum die Zeit auf den Schalen Farbe und Tannin bestimmt",
+"Vin gris, Rosé und Clairet auf der Farbskala einordnen",
+"Die drei Wege beschreiben, auf denen Rosé entsteht"
+]
 }
 },
 {
@@ -964,6 +1738,24 @@
 "Forklare, hvordan klimaet i et område former vinen",
 "Placere kølige og varme områder på en skala",
 "Bruge alkoholprocenten på etiketten som et fingerpeg om klimaet"
+]
+},
+"es": {
+"t": "Clima fresco frente a clima cálido: cómo el calor moldea el vino",
+"sum": "Por qué el calor de una región marca el estilo de su vino: el cinturón vitícola, la vida en el límite fresco, los recursos de viticultores y enólogos y un mapa del vino que se mueve.",
+"out": [
+"Explicar cómo el clima de una región moldea su vino",
+"Situar regiones frescas y calurosas en una escala de clima",
+"Leer la graduación de la etiqueta como pista del clima"
+]
+},
+"de": {
+"t": "Kühles oder warmes Klima: wie Wärme den Wein prägt",
+"sum": "Warum die Wärme einer Region den Stil ihres Weins bestimmt: der Weingürtel, das Leben am kühlen Rand, die Kniffe von Winzern und Kellermeistern und eine Weinlandkarte, die wandert.",
+"out": [
+"Erklären, wie das Klima einer Region ihren Wein prägt",
+"Kühle und heiße Regionen auf einer Klimaskala einordnen",
+"Den Alkoholwert auf dem Etikett als Klimahinweis lesen"
 ]
 }
 },
@@ -987,6 +1779,24 @@
 "Forklare, hvorfor mineralitet ikke er smagen af sten",
 "Sætte en smagning op, der viser terroir"
 ]
+},
+"es": {
+"t": "Qué significa de verdad el terroir y cómo saborearlo",
+"sum": "El terroir, a prueba: cómo actúa de verdad el suelo a través del agua, por qué «mineral» no es el sabor de la roca y cómo catar un lugar en paralelo.",
+"out": [
+"Explicar cómo el suelo influye en el vino a través del agua",
+"Explicar por qué la mineralidad no es el sabor de la roca",
+"Preparar una cata en paralelo que muestre el terroir"
+]
+},
+"de": {
+"t": "Was Terroir wirklich bedeutet und wie du es schmeckst",
+"sum": "Terroir auf dem Prüfstand: wie der Boden über das Wasser wirkt, warum „mineralisch“ nicht nach Gestein schmeckt und wie du einen Ort im direkten Vergleich schmeckst.",
+"out": [
+"Erklären, wie der Boden den Wein über das Wasser prägt",
+"Erklären, warum Mineralität nicht nach Gestein schmeckt",
+"Eine Vergleichsverkostung aufbauen, die Terroir zeigt"
+]
 }
 },
 {
@@ -1008,6 +1818,24 @@
 "Finde producent, sted og årgang på enhver etiket",
 "Forklare, hvad en appellation og en årgang er",
 "Lave et godt gæt ud fra sted og år"
+]
+},
+"es": {
+"t": "Cómo leer una etiqueta de vino: su documento de identidad",
+"sum": "La etiqueta es el documento de identidad del vino: quién lo hizo, de dónde es, la añada y la graduación bastan para hacerte una buena idea.",
+"out": [
+"Encontrar el productor, el lugar y la añada en cualquier etiqueta",
+"Explicar qué son una denominación y una añada",
+"Hacerte una buena idea a partir del lugar y el año"
+]
+},
+"de": {
+"t": "Wie du ein Weinetikett liest: der Ausweis des Weins",
+"sum": "Ein Etikett ist der Ausweis des Weins: Wer ihn gemacht hat, woher er stammt, das Lesejahr und der Alkoholgehalt reichen für eine kluge Einschätzung.",
+"out": [
+"Erzeuger, Herkunft und Jahrgang auf jedem Etikett finden",
+"Erklären, was eine Appellation und ein Jahrgang sind",
+"Aus Ort und Jahr eine kluge Einschätzung ableiten"
 ]
 }
 },
@@ -1031,6 +1859,24 @@
 "Vælge lette vine til lette retter og fyldigere vine til kraftige",
 "Bedømme en vins vægt uden at sætte navn på smagene"
 ]
+},
+"es": {
+"t": "La única regla: iguala el peso",
+"sum": "Si no recuerdas nada más sobre maridaje, quédate con esto: iguala el peso del vino con el peso de la comida, para que ninguno aplaste al otro.",
+"out": [
+"Explicar la regla que hay detrás de casi todos los maridajes",
+"Combinar platos ligeros con vinos ligeros, y contundentes con más cuerpo",
+"Juzgar el peso de un vino sin nombrar sus sabores"
+]
+},
+"de": {
+"t": "Die eine Regel: Gewicht abstimmen",
+"sum": "Wenn du dir sonst nichts über Wein und Essen merkst: Stimm das Gewicht des Weins auf das Gewicht des Essens ab, damit keines das andere erdrückt.",
+"out": [
+"Die eine Regel hinter fast jeder Kombination von Wein und Essen erklären",
+"Leichte Gerichte mit leichten Weinen kombinieren, reichhaltige mit volleren",
+"Das Gewicht eines Weins beurteilen, ohne seine Aromen zu benennen"
+]
 }
 },
 {
@@ -1052,6 +1898,24 @@
 "Forklare terroir og dets fire dele for en ven",
 "Koble Frankrigs klassiske druer til deres hjemområder",
 "Beskrive Frankrigs tre klimaer, og hvad de betyder for vinen"
+]
+},
+"es": {
+"t": "Francia de un vistazo: terroir, clima y uvas",
+"sum": "Por qué Francia da a sus vinos nombres de lugar: el terroir, tres climas del norte fresco al sur cálido, los suelos, las uvas emblemáticas y la historia que hay detrás.",
+"out": [
+"Explica el terroir y sus cuatro partes a un amigo",
+"Relaciona las uvas clásicas de Francia con sus regiones de origen",
+"Describe los tres climas de Francia y su efecto en el vino"
+]
+},
+"de": {
+"t": "Frankreich auf einen Blick: Terroir, Klima und Rebsorten",
+"sum": "Warum Frankreich seine Weine nach Orten benennt: Terroir, drei Klimazonen vom kühlen Norden bis in den warmen Süden, die Böden, die Leitrebsorten und die Geschichte dahinter.",
+"out": [
+"Erkläre einem Freund Terroir und seine vier Teile",
+"Ordne Frankreichs klassische Rebsorten ihren Heimatregionen zu",
+"Beschreibe Frankreichs drei Klimazonen und ihre Wirkung"
 ]
 }
 },
@@ -1075,6 +1939,24 @@
 "Forklare, hvordan en appellation binder et sted til bestemte druer",
 "Finde en fransk vin lavet af en drue, du kan lide"
 ]
+},
+"es": {
+"t": "Las uvas de Francia: este lugar, esta uva",
+"sum": "Las etiquetas francesas nombran lugares, no uvas. Aprende el código: qué uva hay detrás de cada lugar famoso, de Burdeos y Borgoña a Sancerre, Vouvray y Champagne.",
+"out": [
+"Nombrar la uva detrás de los lugares más famosos de Francia",
+"Explicar cómo una denominación une un lugar a unas uvas",
+"Encontrar un vino francés de una uva que te gusta"
+]
+},
+"de": {
+"t": "Frankreichs Rebsorten: dieser Ort, diese Traube",
+"sum": "Französische Etiketten nennen Orte, keine Rebsorten. Lerne den Code: welche Traube hinter jedem berühmten Ort steckt, von Bordeaux und Burgund bis Sancerre, Vouvray und Champagne.",
+"out": [
+"Die Rebsorte hinter Frankreichs berühmtesten Ortsnamen nennen",
+"Erklären, wie eine Appellation einen Ort an Rebsorten bindet",
+"Einen französischen Wein aus einer Rebsorte finden, die du magst"
+]
 }
 },
 {
@@ -1096,6 +1978,24 @@
 "Forklare, hvordan Bordeaux' floder og jord former rødvinene",
 "Læse bred, drue og rang på en etiket fra Bordeaux",
 "Nævne Bordeaux' hvide stilarter og forklare en primeur"
+]
+},
+"es": {
+"t": "Burdeos: ríos, orillas y los famosos châteaux",
+"sum": "Cómo dos ríos dividen Burdeos en grava y arcilla, Cabernet y Merlot; qué significan un château, la clasificación de 1855 y en primeur; y sus blancos secos y dulces.",
+"out": [
+"Explicar cómo los ríos y suelos de Burdeos moldean sus tintos",
+"Leer en una etiqueta de Burdeos la orilla, la uva y el rango",
+"Nombrar los estilos de blanco de Burdeos y explicar en primeur"
+]
+},
+"de": {
+"t": "Bordeaux: Flüsse, Ufer und die berühmten Châteaux",
+"sum": "Wie zwei Flüsse Bordeaux in Kies und Ton, Cabernet und Merlot teilen; was ein Château, die Klassifikation von 1855 und en primeur bedeuten; und die trockenen und süßen Weißen.",
+"out": [
+"Erklären, wie Flüsse und Böden die Roten aus Bordeaux prägen",
+"Auf einem Bordeaux-Etikett Ufer, Rebsorte und Rang erkennen",
+"Weiße Stile aus Bordeaux nennen und en primeur erklären"
 ]
 }
 },
@@ -1119,6 +2019,24 @@
 "Zoome fra Bourgogne til Grand Cru på kortet",
 "Forklare, hvorfor Bourgognes vinmarker er delt i bittesmå stykker"
 ]
+},
+"es": {
+"t": "Borgoña: dos uvas y un mapa de pueblos",
+"sum": "Borgoña elabora tintos de Pinot Noir y blancos de Chardonnay, así que habla el mapa: laderas, pueblos y parcelas con nombre, donde cuanto más pequeño es el lugar, más alto es su rango.",
+"out": [
+"Nombrar las principales zonas de Borgoña y lo que hace cada una",
+"Hacer zoom de Bourgogne a Grand Cru en el mapa",
+"Explicar por qué los viñedos de Borgoña están divididos en parcelas diminutas"
+]
+},
+"de": {
+"t": "Burgund: zwei Rebsorten und eine Karte voller Dörfer",
+"sum": "Burgund macht Rotweine aus Pinot Noir und Weißweine aus Chardonnay, also spricht die Karte: Hänge, Dörfer und benannte Parzellen, und je enger der Ort, desto höher der Rang.",
+"out": [
+"Burgunds Hauptgebiete nennen und sagen, was jedes macht",
+"Auf der Karte von Bourgogne bis Grand Cru zoomen",
+"Erklären, warum Burgunds Weinberge in winzige Parzellen geteilt sind"
+]
 }
 },
 {
@@ -1140,6 +2058,24 @@
 "Kende røde Syrah-vine fra nord fra Grenache-blandinger fra syd",
 "Nævne Rhônes vigtigste crus, og hvad de laver",
 "Gå op ad Côtes du Rhône-stigen fra bund til cru"
+]
+},
+"es": {
+"t": "El Ródano: Syrah en el norte, coupages en el sur",
+"sum": "El Ródano tiene dos mitades: las laderas empinadas del norte dan una Syrah con pimienta, y el sur, cálido y ventoso, hace coupages dominados por la Garnacha. Aprende los nombres que los distinguen.",
+"out": [
+"Distinguir los tintos de Syrah del norte de los coupages de Garnacha del sur",
+"Nombrar los crus clave del Ródano y lo que elaboran",
+"Subir la escalera del Côtes du Rhône, de la base al cru"
+]
+},
+"de": {
+"t": "Die Rhône: Syrah im Norden, Cuvées im Süden",
+"sum": "Die Rhône hat zwei Hälften: Steile Hänge im Norden bringen pfeffrigen Syrah, der heiße, windige Süden macht Cuvées mit Grenache an der Spitze. Lerne die Namen, die sie unterscheiden.",
+"out": [
+"Syrah-Rotweine aus dem Norden von Grenache-Cuvées aus dem Süden unterscheiden",
+"Die wichtigsten Crus der Rhône und ihre Weine nennen",
+"Die Côtes-du-Rhône-Leiter von der Basis bis zum Cru hinaufsteigen"
 ]
 }
 },
@@ -1163,6 +2099,24 @@
 "Forklare, hvordan Vogesernes regnskygge hjælper Alsace",
 "Genkende en vin fra Alsace på etiketten og flasken"
 ]
+},
+"es": {
+"t": "El Loira y Alsacia: la cuna del vino blanco francés",
+"sum": "Dos rincones frescos de Francia con blancos llenos de chispa: en el Loira, el lugar te dice la uva; en Alsacia, la uva va en la etiqueta.",
+"out": [
+"Situar las cuatro zonas del Loira y sus uvas principales",
+"Explicar cómo ayuda a Alsacia la sombra orográfica de los Vosgos",
+"Reconocer un vino de Alsacia por su etiqueta y su botella"
+]
+},
+"de": {
+"t": "Loire und Elsass: das Herz des französischen Weißweins",
+"sum": "Zwei kühle Ecken Frankreichs für knackige Weißweine: An der Loire verrät der Ort die Rebsorte, im Elsass steht sie auf dem Etikett.",
+"out": [
+"Die vier Zonen der Loire und ihre wichtigsten Rebsorten verorten",
+"Erklären, wie der Regenschatten der Vogesen dem Elsass hilft",
+"Einen Elsässer Wein an Etikett und Flasche erkennen"
+]
 }
 },
 {
@@ -1184,6 +2138,24 @@
 "Forklare, hvorfor rosé fra Provence er lys og tør",
 "Nævne de vigtigste røde druer i Languedoc og områdets hvidvin til østers",
 "Vælge en vin fra Sydfrankrig ud fra stil og etiket"
+]
+},
+"es": {
+"t": "El sur: Languedoc, Provenza y rosado",
+"sum": "El rosado pálido y seco de Provenza y el Languedoc, soleado y a buen precio: qué hay en la botella, cómo leer la etiqueta y cómo elegir uno.",
+"out": [
+"Explicar por qué el rosado de Provenza es pálido y seco",
+"Nombrar las uvas tintas del Languedoc y su blanco para ostras",
+"Elegir un vino del sur de Francia por estilo y etiqueta"
+]
+},
+"de": {
+"t": "Der Süden: Languedoc, Provence und Rosé",
+"sum": "Blasser, trockener Rosé aus der Provence und das sonnige, preiswerte Languedoc: was in der Flasche steckt, wie du das Etikett liest und wie du einen auswählst.",
+"out": [
+"Erklären, warum Provence-Rosé blass und trocken ist",
+"Die roten Hauptrebsorten des Languedoc und seinen Austernwein nennen",
+"Einen Wein aus Südfrankreich nach Stil und Etikett wählen"
 ]
 }
 },
@@ -1207,6 +2179,24 @@
 "Kende årgang fra uden årgang, og Brut fra Extra Dry",
 "Kende forskel på champagne, crémant, cava og prosecco"
 ]
+},
+"es": {
+"t": "El Champagne y sus primos: así se hacen las burbujas",
+"sum": "El Champagne es el espumoso de una región francesa fresca y de tiza, donde la levadura, al trabajar por segunda vez dentro de la botella, crea las burbujas y una larga crianza aporta notas tostadas.",
+"out": [
+"Explicar cómo el método tradicional mete burbujas en la botella",
+"Distinguir el de añada del sin añada, y el Brut del Extra Dry",
+"Distinguir Champagne, Crémant, Cava y Prosecco"
+]
+},
+"de": {
+"t": "Champagner und seine Verwandten: So entstehen die Bläschen",
+"sum": "Champagner ist Schaumwein aus einer kühlen französischen Region mit Kreideböden, wo Hefe, die ein zweites Mal in der Flasche arbeitet, die Bläschen erzeugt und lange Reifung Röstnoten bringt.",
+"out": [
+"Erklären, wie die traditionelle Flaschengärung Bläschen erzeugt",
+"Jahrgang von ohne Jahrgang und Brut von Extra Dry unterscheiden",
+"Champagner, Crémant, Cava und Prosecco unterscheiden"
+]
 }
 },
 {
@@ -1228,6 +2218,24 @@
 "Finde område og drue ud fra et fransk stednavn",
 "Kende ord for vingods fra frie ord på en flaske",
 "Læse en fransk etiket linje for linje"
+]
+},
+"es": {
+"t": "Lee una etiqueta francesa: primero el lugar",
+"sum": "Pon a trabajar lo que sabes del vino francés con una botella real: convierte el lugar en una región y una uva, y luego lee el nivel y el productor.",
+"out": [
+"Convertir un lugar francés en región y uva",
+"Distinguir palabras de finca y palabras libres",
+"Descifrar una etiqueta francesa, línea por línea"
+]
+},
+"de": {
+"t": "Ein französisches Etikett lesen: zuerst der Ort",
+"sum": "Wende dein Wissen über französischen Wein auf eine echte Flasche an: Mach aus dem Ort eine Region und eine Rebsorte, dann lies Stufe und Erzeuger.",
+"out": [
+"Einen französischen Ortsnamen in Region und Rebsorte übersetzen",
+"Weingutswörter von freien Wörtern unterscheiden",
+"Ein französisches Etikett Zeile für Zeile entschlüsseln"
 ]
 }
 },
@@ -1251,6 +2259,24 @@
 "Gå et trin op, når du vil have mere",
 "Bytte et berømt navn ud med en nabo, der er et godt køb"
 ]
+},
+"es": {
+"t": "Elegir vino francés: buena relación calidad-precio por región",
+"sum": "Para cada gran región francesa, la botella segura de diario y el paso siguiente, y cómo leer el precio frente a la escalera de nombres de lugar.",
+"out": [
+"Elegir una botella segura de diario en cada región francesa",
+"Subir un peldaño cuando quieras algo más",
+"Cambiar un nombre famoso por un vecino más barato"
+]
+},
+"de": {
+"t": "Französischen Wein wählen: gutes Preis-Leistungs-Verhältnis nach Region",
+"sum": "Für jede große französische Region die sichere Alltagsflasche und die Stufe höher, dazu: wie du den Preis an der Leiter der Ortsnamen misst.",
+"out": [
+"Aus jeder französischen Region eine sichere Alltagsflasche wählen",
+"Eine Stufe höher greifen, wenn du mehr willst",
+"Einen berühmten Namen gegen einen günstigen Nachbarn tauschen"
+]
 }
 },
 {
@@ -1272,6 +2298,24 @@
 "Forklare, hvorfor Tysklands kølige klima giver friske vine",
 "Beskrive, hvordan stejle skråninger ved floderne hjælper druerne",
 "Genkende trocken, Riesling og Spätburgunder på et vinkort"
+]
+},
+"es": {
+"t": "Alemania de un vistazo: Riesling, ríos y clima frío",
+"sum": "Por qué el clima frío de Alemania da vinos frescos y vivos, cómo las laderas empinadas junto a los ríos ayudan a madurar la uva, sus 13 regiones y la Riesling, la uva estrella.",
+"out": [
+"Explicar por qué el clima frío alemán da vinos frescos",
+"Describir cómo las laderas junto a los ríos ayudan a madurar",
+"Reconocer trocken, Riesling y Spätburgunder en una carta de vinos"
+]
+},
+"de": {
+"t": "Deutschland im Überblick: Riesling, Flüsse und ein kühles Klima",
+"sum": "Warum Deutschlands kühles Klima frische, lebendige Weine bringt, wie steile Flusshänge den Trauben beim Reifen helfen, die 13 Anbaugebiete und die Star-Rebsorte Riesling.",
+"out": [
+"Erklären, warum Deutschlands kühles Klima frische Weine bringt",
+"Beschreiben, wie steile Flusshänge beim Reifen helfen",
+"Trocken, Riesling und Spätburgunder auf der Weinkarte erkennen"
 ]
 }
 },
@@ -1295,6 +2339,24 @@
 "Beskrive Riesling, og hvordan Tysklands topdrue har skiftet",
 "Afkode Burgunder-navne og forbinde druer med deres stil"
 ]
+},
+"es": {
+"t": "Las uvas de Alemania: la Riesling y mucho más",
+"sum": "La Riesling es la gran uva blanca de Alemania y la Spätburgunder su tinta principal. Casi todas las etiquetas alemanas nombran la única uva del vino, así que unos pocos nombres te abren la carta.",
+"out": [
+"Explicar por qué las etiquetas alemanas suelen nombrar una sola uva",
+"Describir la Riesling y cómo cambió la uva reina de Alemania",
+"Descifrar los nombres con Burgunder y relacionar uvas y estilos"
+]
+},
+"de": {
+"t": "Deutschlands Rebsorten: Riesling und mehr",
+"sum": "Riesling ist Deutschlands weiße Star-Rebsorte, Spätburgunder die wichtigste rote. Die meisten deutschen Etiketten nennen die eine Rebsorte im Wein, ein paar Namen erschließen dir also die Karte.",
+"out": [
+"Erklären, warum deutsche Etiketten meist eine Rebsorte nennen",
+"Riesling beschreiben und wie Deutschlands Spitzensorte wechselte",
+"Burgunder-Namen entschlüsseln und Rebsorten ihrem Stil zuordnen"
+]
 }
 },
 {
@@ -1316,6 +2378,24 @@
 "Forklare, hvorfor Mosels vinstokke gror på stejle skiferskråninger",
 "Beskrive den lette, friske stil hos Riesling fra Mosel",
 "Nævne berømte skråninger i Mosel og vælge en første flaske"
+]
+},
+"es": {
+"t": "El Mosela: Riesling en pizarra empinada",
+"sum": "Por qué las laderas de pizarra del Mosela maduran la Riesling en un valle frío, cómo saben sus vinos ligeros, con chispa y con poco alcohol, y qué botellas buscar.",
+"out": [
+"Explicar por qué las cepas del Mosela crecen en laderas empinadas de pizarra",
+"Describir el estilo ligero y fresco del Riesling del Mosela",
+"Nombrar laderas famosas del Mosela y elegir una primera botella"
+]
+},
+"de": {
+"t": "Die Mosel: Riesling auf steilem Schiefer",
+"sum": "Warum die steilen Schieferhänge der Mosel den Riesling in einem kühlen Tal reif werden lassen, wie die leichten, frischen Weine mit wenig Alkohol schmecken und welche Flaschen du suchen solltest.",
+"out": [
+"Erklären, warum die Moselreben auf steilen Schieferhängen wachsen",
+"Den leichten, frischen Stil des Mosel-Rieslings beschreiben",
+"Berühmte Mosellagen nennen und eine erste Flasche wählen"
 ]
 }
 },
@@ -1339,6 +2419,24 @@
 "Beskrive Rheinhessens fremgang og Rieslingen fra den røde skråning",
 "Forklare, hvorfor vine fra nabomarker ved Nahe kan smage forskelligt"
 ]
+},
+"es": {
+"t": "El corazón del Rin: Rheingau, Rheinhessen y Nahe",
+"sum": "Por qué un recodo del Rin da más cuerpo al Riesling del Rheingau, cómo maduró la enorme Rheinhessen y por qué el pequeño Nahe es un mosaico de rocas.",
+"out": [
+"Explicar por qué los viñedos del Rheingau son soleados y resguardados",
+"Describir el auge de Rheinhessen y el Riesling de su ladera roja",
+"Explicar por qué vinos vecinos del Nahe pueden saber distinto"
+]
+},
+"de": {
+"t": "Das Herz am Rhein: Rheingau, Rheinhessen und Nahe",
+"sum": "Warum ein Knick im Rhein den Rheingauer Riesling voller macht, wie das riesige Rheinhessen erwachsen wurde und warum die kleine Nahe ein Flickenteppich aus Gestein ist.",
+"out": [
+"Erklären, warum die Weinberge im Rheingau sonnig und geschützt sind",
+"Rheinhessens Aufstieg und den Riesling vom Roten Hang beschreiben",
+"Erklären, warum benachbarte Nahe-Weine verschieden schmecken können"
+]
 }
 },
 {
@@ -1360,6 +2458,24 @@
 "Forklare, hvorfor Sydtyskland giver modnere, fyldigere vine",
 "Forbinde Pfalz, Baden og Franken med deres stjernedruer",
 "Genkende en Franken-vin på druen og flasken"
+]
+},
+"es": {
+"t": "Palatinado, Baden y Franconia: el sur más cálido de Alemania",
+"sum": "El sur más soleado de Alemania da vinos más maduros y con más cuerpo: Riesling seco en el Palatinado, uvas Pinot en Baden y Silvaner terroso en Franconia.",
+"out": [
+"Explicar por qué el sur de Alemania da vinos más maduros",
+"Relacionar el Palatinado, Baden y Franconia con sus uvas estrella",
+"Reconocer un vino de Franconia por su uva y su botella"
+]
+},
+"de": {
+"t": "Pfalz, Baden und Franken: Deutschlands wärmerer Süden",
+"sum": "Im sonnigeren Süden entstehen reifere, vollere Weine: trockener Riesling in der Pfalz, Burgundersorten in Baden und erdiger Silvaner in Franken.",
+"out": [
+"Erklären, warum Deutschlands Süden reifere, vollere Weine bringt",
+"Pfalz, Baden und Franken ihren Starrebsorten zuordnen",
+"Einen Frankenwein an Rebsorte und Flasche erkennen"
 ]
 }
 },
@@ -1383,6 +2499,24 @@
 "Læse et tysk landsby- og vinmarksnavn",
 "Aflæse en tysk for- og bagetiket og en Sekt-etiket"
 ]
+},
+"es": {
+"t": "Leer una etiqueta alemana: del pueblo a la letra pequeña",
+"sum": "Lee una botella alemana de verdad: palabras de madurez frente a dulzor, nombres de pueblo y viñedo, la ley de 2021, el águila de la VDP, la contraetiqueta y el Sekt.",
+"out": [
+"Distinguir la madurez de un vino alemán de su dulzor",
+"Leer un nombre alemán de pueblo y viñedo",
+"Descifrar la etiqueta, la contraetiqueta y el Sekt alemanes"
+]
+},
+"de": {
+"t": "Das deutsche Etikett lesen: vom Ort bis zum Kleingedruckten",
+"sum": "Lies eine echte deutsche Flasche: Reife- und Süßewörter, Orts- und Lagennamen, das Weingesetz 2021, den VDP-Adler, das Rückenetikett und Sekt.",
+"out": [
+"Bei einem deutschen Wein Reife und Süße unterscheiden",
+"Einen deutschen Orts- und Lagennamen lesen",
+"Vorderetikett, Rückenetikett und Sekt entschlüsseln"
+]
 }
 },
 {
@@ -1404,6 +2538,24 @@
 "Se ved hylden, om en tysk flaske er tør eller sød",
 "Vælge et tysk område efter den stil, du vil have",
 "Vælge en flaske et trin op, en Sekt og en vin til maden"
+]
+},
+"es": {
+"t": "Elegir vino alemán: seco o dulce, y de dónde",
+"sum": "Elige una botella alemana con confianza: distingue seco de dulce en la tienda, elige la región según el estilo, sube un peldaño y encuentra un buen Sekt.",
+"out": [
+"Reconocer en la tienda una botella alemana seca o dulce",
+"Elegir una región alemana según el estilo que buscas",
+"Escoger una botella especial, un Sekt y un maridaje"
+]
+},
+"de": {
+"t": "Deutschen Wein wählen: trocken oder süß, und woher",
+"sum": "Wähl eine deutsche Flasche mit Sicherheit: Erkenne am Regal trocken und süß, wähl die Region nach dem Stil, steig eine Stufe höher und finde guten Sekt.",
+"out": [
+"Am Regal eine trockene oder süße deutsche Flasche erkennen",
+"Eine deutsche Region nach dem gewünschten Stil wählen",
+"Eine besondere Flasche, einen Sekt und einen Essenspartner wählen"
 ]
 }
 },
@@ -1427,6 +2579,24 @@
 "Beskrive hvidvinens vej fra presse til flaske",
 "Forklare, hvorfor hvidvin gærer køligt og uden luft"
 ]
+},
+"es": {
+"t": "Cómo se elabora el vino blanco, paso a paso",
+"sum": "De un prensado suave a un cambio lento y en frío del azúcar en alcohol: los pasos que mantienen un blanco pálido, fresco y afrutado, de la uva a la botella.",
+"out": [
+"Explicar por qué las uvas blancas se prensan antes de fermentar",
+"Describir los pasos del blanco, de la prensa a la botella",
+"Explicar por qué los blancos fermentan en frío y sin aire"
+]
+},
+"de": {
+"t": "So entsteht Weißwein, Schritt für Schritt",
+"sum": "Vom sanften Pressen bis zur kühlen, langsamen Verwandlung von Zucker in Alkohol: die Schritte, die einen Weißwein hell, frisch und fruchtig halten, von der Traube bis zur Flasche.",
+"out": [
+"Erklären, warum weiße Trauben vor der Gärung gepresst werden",
+"Die Schritte zum Weißwein beschreiben, von Presse bis Flasche",
+"Erklären, warum Weißweine kühl und ohne Luft gären"
+]
 }
 },
 {
@@ -1448,6 +2618,24 @@
 "Føre en ven gennem rødvinens vej, fra stilke til blanding",
 "Forklare, hvorfor man arbejder med hatten hver dag",
 "Forklare selvløbsvin, pressevin og den endelige blanding"
+]
+},
+"es": {
+"t": "Cómo se elabora el vino tinto, paso a paso",
+"sum": "El tinto fermenta en caliente con sus hollejos, y luego se prensa y se mezcla: sigue cada decisión de bodega, de los raspones a la mezcla final.",
+"out": [
+"Explicar a un amigo cómo se hace un tinto, del raspón al coupage",
+"Explicar por qué el sombrero de hollejos se trabaja a diario",
+"Explicar el vino yema, el vino de prensa y el assemblage"
+]
+},
+"de": {
+"t": "So entsteht Rotwein, Schritt für Schritt",
+"sum": "Rotwein gärt warm mit seinen Schalen, dann wird er gepresst und gemischt: Folge jeder Entscheidung im Keller, von den Stielen bis zur fertigen Mischung.",
+"out": [
+"Einem Freund die Rotweinbereitung von Stielen bis Cuvée erklären",
+"Erklären, warum der Tresterhut täglich bearbeitet wird",
+"Vorlaufwein, Presswein und Assemblage erklären"
 ]
 }
 },
@@ -1471,6 +2659,24 @@
 "Nævne de vigtigste druer bag rosé og champagne",
 "Skelne mellem prosecco og cava ud fra druerne"
 ]
+},
+"es": {
+"t": "Las uvas detrás del rosado y las burbujas",
+"sum": "Cómo saca el rosado su color de los hollejos tintos, por qué el Champagne rosado rompe la regla y qué uvas hay detrás del Champagne, el Prosecco y el Cava.",
+"out": [
+"Explicar cómo consigue el rosado su color rosa",
+"Nombrar las principales uvas del rosado y del Champagne",
+"Distinguir el Prosecco del Cava por sus uvas"
+]
+},
+"de": {
+"t": "Die Rebsorten hinter Rosé und Schaumwein",
+"sum": "Wie Rosé sein Rosa von roten Traubenschalen bekommt, warum Rosé-Champagner die Regel bricht und welche Rebsorten hinter Champagner, Prosecco und Cava stecken.",
+"out": [
+"Erklären, wie Rosé seine rosa Farbe bekommt",
+"Die wichtigsten Rebsorten hinter Rosé und Champagner nennen",
+"Prosecco und Cava an ihren Rebsorten unterscheiden"
+]
 }
 },
 {
@@ -1492,6 +2698,24 @@
 "Forklare de tre ting, et egetræsfad gør",
 "Fortælle, hvordan fadets størrelse, alder og slags eg ændrer smagen",
 "Genkende, hvornår eg klæder vinen, og hvornår den tager over"
+]
+},
+"es": {
+"t": "Qué hacen las barricas de roble: madera, aire y tiempo",
+"sum": "Por qué una barrica aporta sabor, suaviza el vino y deja escapar una parte, cómo cambian el efecto el tamaño, la edad y el bosque, y por qué muchos vinos frescos prescinden del roble.",
+"out": [
+"Explicar las tres cosas que hace una barrica de roble",
+"Contar cómo cambian el sabor el tamaño, la edad y el tipo de roble",
+"Reconocer cuándo el roble le sienta bien a un vino y cuándo lo tapa"
+]
+},
+"de": {
+"t": "Was Eichenfässer bewirken: Holz, Luft und Zeit",
+"sum": "Warum ein Fass Aroma gibt, den Wein weicher macht und etwas davon entweichen lässt, wie Größe, Alter und Wald die Wirkung verändern und warum viele frische Weine auf Eiche verzichten.",
+"out": [
+"Erklären, welche drei Aufgaben ein Eichenfass erfüllt",
+"Beschreiben, wie Fassgröße, Alter und Eichenart das Aroma verändern",
+"Erkennen, wann Eiche zu einem Wein passt und wann sie ihn erdrückt"
 ]
 }
 },
@@ -1515,6 +2739,24 @@
 "Beskrive den traditionelle metode fra flaske til dosage",
 "Læse på etiketten, hvordan boblerne er lavet"
 ]
+},
+"es": {
+"t": "Cómo consigue sus burbujas el vino espumoso",
+"sum": "Las burbujas son dióxido de carbono atrapado a presión. Seis métodos lo atrapan, desde la botella que compras hasta un depósito o una bombona, y cada uno deja su huella en la copa.",
+"out": [
+"Explicar de dónde salen las burbujas del vino espumoso",
+"Describir el método tradicional, de la botella al dosage",
+"Leer en la etiqueta cómo se hicieron las burbujas"
+]
+},
+"de": {
+"t": "Wie Schaumwein zu seinen Bläschen kommt",
+"sum": "Die Bläschen sind Kohlendioxid, das unter Druck eingeschlossen wird. Sechs Methoden schließen es ein, von der Flasche, die du kaufst, bis zu Tank oder Gasflasche, und jede hinterlässt Spuren im Glas.",
+"out": [
+"Erklären, woher die Bläschen im Schaumwein kommen",
+"Die traditionelle Flaschengärung von der Flasche bis zur Dosage beschreiben",
+"Die Herstellungsmethode auf dem Etikett erkennen"
+]
 }
 },
 {
@@ -1536,6 +2778,24 @@
 "Kende champagne, crémant, cava og prosecco fra hinanden på et vinkort",
 "Læse ordene for sødme fra Brut Nature til Demi-Sec",
 "Vælge en vin med bobler efter anledningen og budgettet"
+]
+},
+"es": {
+"t": "Espumosos en la carta: Champagne, Crémant, Cava, Prosecco",
+"sum": "Lee la sección de espumosos de cualquier carta: los cuatro grandes nombres, sin añada o de añada, las palabras de dulzor y cómo elegir según el momento y el presupuesto.",
+"out": [
+"Distinguir Champagne, Crémant, Cava y Prosecco en una carta",
+"Leer las palabras de dulzor, del Brut Nature al Demi-Sec",
+"Elegir un espumoso según el momento y el presupuesto"
+]
+},
+"de": {
+"t": "Schaumwein auf der Karte: Champagner, Crémant, Cava, Prosecco",
+"sum": "Lies den Schaumweinteil jeder Weinkarte: die vier großen Namen, ohne Jahrgang oder Jahrgang, die Süßeangaben und wie du nach Anlass und Budget wählst.",
+"out": [
+"Champagner, Crémant, Cava und Prosecco auf der Karte unterscheiden",
+"Die Süßeangaben von Brut Nature bis Demi-Sec lesen",
+"Einen Schaumwein nach Anlass und Budget wählen"
 ]
 }
 },
@@ -1559,6 +2819,24 @@
 "Forklare, hvorfor hedvine er både stærke og søde",
 "Forklare, hvordan tørring, ædelråd og frost samler sukkeret"
 ]
+},
+"es": {
+"t": "Vinos dulces: tres momentos para guardar el azúcar",
+"sum": "El vino dulce conserva parte del azúcar de la uva: concentrado en la baya antes de fermentar, salvado al detener la levadura o añadido de nuevo al final.",
+"out": [
+"Clasificar cualquier vino dulce según cuándo se guardó su azúcar",
+"Explicar por qué los vinos generosos son fuertes y dulces",
+"Explicar cómo el secado, la podredumbre noble y el frío concentran el azúcar"
+]
+},
+"de": {
+"t": "Wie Süßweine entstehen: drei Momente, den Zucker zu halten",
+"sum": "Süßwein behält einen Teil des Traubenzuckers: vor der Gärung in der Beere konzentriert, durch das Stoppen der Hefe gerettet oder am Ende wieder zugegeben.",
+"out": [
+"Jeden Süßwein danach einordnen, wann sein Zucker erhalten wurde",
+"Erklären, warum Likörweine stark und süß zugleich sind",
+"Erklären, wie Trocknen, Edelfäule und Frost den Zucker konzentrieren"
+]
 }
 },
 {
@@ -1580,6 +2858,24 @@
 "Nævne vinstokkens seks stadier i rækkefølge",
 "Forklare, hvorfor blomstringen afgør høstens størrelse",
 "Se årstiden i en vinmark, nord eller syd for ækvator"
+]
+},
+"es": {
+"t": "El año de la vid, de la yema a la vendimia",
+"sum": "Cada año, la vid repite las mismas seis etapas, de la brotación al reposo invernal, y el punto del ciclo en que está decide en qué anda ocupado el viticultor.",
+"out": [
+"Nombrar en orden las seis etapas del año de la vid",
+"Explicar por qué la floración decide el tamaño de la cosecha",
+"Leer la estación en un viñedo, en el norte o en el sur"
+]
+},
+"de": {
+"t": "Das Jahr der Rebe, von der Knospe bis zur Lese",
+"sum": "Eine Rebe durchläuft jedes Jahr dieselben sechs Stadien, vom Austrieb bis zur Winterruhe, und wo sie in diesem Zyklus steht, bestimmt, was der Winzer gerade tut.",
+"out": [
+"Die sechs Stadien im Jahr einer Rebe der Reihe nach nennen",
+"Erklären, warum die Blüte über die Größe der Ernte entscheidet",
+"Die Jahreszeit in einem Weinberg ablesen, im Norden wie im Süden"
 ]
 }
 },
@@ -1603,6 +2899,24 @@
 "Beskrive, hvordan amerikanske rødder overlever phylloxera",
 "Nævne, hvad vindyrkere tænker over, når de vælger grundstamme"
 ]
+},
+"es": {
+"t": "Por qué la mayoría de las cepas son dos plantas",
+"sum": "La mayoría de las cepas son una variedad europea injertada sobre raíces americanas: por qué esas raíces sobreviven a un insecto que devora raíces, cómo se injerta y cómo se elige un portainjerto.",
+"out": [
+"Explicar por qué casi todas las cepas son dos plantas injertadas",
+"Describir cómo sobreviven las raíces americanas a la filoxera",
+"Nombrar qué sopesa el viticultor al elegir un portainjerto"
+]
+},
+"de": {
+"t": "Warum die meisten Reben aus zwei Pflanzen bestehen",
+"sum": "Die meisten Reben sind eine europäische Sorte auf amerikanischen Wurzeln: warum diese Wurzeln einen Wurzelfresser überleben, wie Pfropfen funktioniert und wie Winzer eine Unterlage wählen.",
+"out": [
+"Erklären, warum die meisten Reben aus zwei gepfropften Pflanzen bestehen",
+"Beschreiben, wie amerikanische Wurzeln die Reblaus überleben",
+"Nennen, was Winzer bei der Wahl einer Unterlage abwägen"
+]
 }
 },
 {
@@ -1624,6 +2938,24 @@
 "Forklare, hvorfor vinstokke klippes så hårdt om vinteren",
 "Beskrive tre måder, vindyrkere begrænser mængden af druer på",
 "Forklare, hvad skygge og mange druer gør ved vinen"
+]
+},
+"es": {
+"t": "Menos uvas, mejores uvas: cómo el viticultor guía la calidad",
+"sum": "Podar las cepas en invierno, cuidar las hojas en verano y elegir la distancia entre cepas al plantar: tres maneras de lograr menos uvas por cepa, más maduras y más sabrosas.",
+"out": [
+"Explicar por qué se corta casi todo lo del año anterior",
+"Describir tres herramientas que usan los viticultores para limitar la cosecha",
+"Explicar qué le hacen al vino la sombra y las cosechas abundantes"
+]
+},
+"de": {
+"t": "Weniger Trauben, bessere Trauben: So steuern Winzer die Qualität",
+"sum": "Rebschnitt im Winter, Laubpflege im Sommer und der Abstand der Reben bei der Pflanzung: drei Wege zu weniger, reiferen und geschmackvolleren Trauben pro Rebe.",
+"out": [
+"Erklären, warum Winzer den Großteil des Vorjahreswuchses wegschneiden",
+"Drei Werkzeuge beschreiben, mit denen Winzer die Ernte begrenzen",
+"Erklären, was Schatten und hohe Erträge mit dem Wein machen"
 ]
 }
 },
@@ -1647,6 +2979,24 @@
 "Beskrive, hvad frost, hagl og hede gør ved druerne",
 "Forklare, hvornår botrytis bliver til gråskimmel eller ædelråd"
 ]
+},
+"es": {
+"t": "Lo que sale mal en el viñedo y por qué cambian las añadas",
+"sum": "Heladas, granizo, calor, moho y podredumbre: cómo el tiempo de un año decide la cosecha y por qué el mismo viñedo da un vino distinto cada año.",
+"out": [
+"Explicar por qué el vino de un mismo viñedo cambia de una añada a otra",
+"Describir qué hacen la helada, el granizo y el calor a las uvas",
+"Explicar cuándo la botrytis es podredumbre gris o noble"
+]
+},
+"de": {
+"t": "Was im Weinberg schiefgeht und warum Jahrgänge sich unterscheiden",
+"sum": "Frost, Hagel, Hitze, Schimmel und Fäule: wie das Wetter eines Jahres über die Ernte entscheidet und warum derselbe Weinberg jedes Jahr einen anderen Wein ergibt.",
+"out": [
+"Erklären, warum der Wein desselben Weinbergs von Jahrgang zu Jahrgang anders ist",
+"Beschreiben, was Frost, Hagel und Hitze den Trauben antun",
+"Erklären, wann Botrytis zu Graufäule oder Edelfäule wird"
+]
 }
 },
 {
@@ -1668,6 +3018,24 @@
 "Forklare, hvorfor sukker, syre og smag sjældent topper samtidig",
 "Forudsige, hvordan tidlig eller sen plukning former en vin",
 "Sammenligne håndplukning og maskinhøst på kvalitet og pris"
+]
+},
+"es": {
+"t": "El día de vendimia: cuándo vendimiar y cómo, a mano o a máquina",
+"sum": "Por qué el día de vendimia es la decisión más difícil del viticultor, con el azúcar, la acidez y el sabor a ritmos distintos, y cómo llega la uva: a mano o a máquina.",
+"out": [
+"Explicar por qué azúcar, acidez y sabor rara vez coinciden",
+"Predecir cómo influye vendimiar pronto o tarde en un vino",
+"Comparar la vendimia a mano y la mecánica en calidad y coste"
+]
+},
+"de": {
+"t": "Der Lesetag: wann lesen und ob von Hand oder maschinell",
+"sum": "Warum der Lesetag die schwierigste Entscheidung des Winzers ist, wenn Zucker, Säure und Geschmack in eigenem Tempo reifen, und wie die Trauben hereinkommen: von Hand oder maschinell.",
+"out": [
+"Erklären, warum Zucker, Säure und Geschmack selten gleichzeitig reif sind",
+"Vorhersagen, wie eine frühe oder späte Lese einen Wein prägt",
+"Handlese und maschinelle Lese nach Qualität und Kosten vergleichen"
 ]
 }
 },
@@ -1691,6 +3059,24 @@
 "Læse økologiske vinetiketter fra EU og USA",
 "Skelne ord om dyrkningen fra ord om kælderen"
 ]
+},
+"es": {
+"t": "Ecológico, biodinámico, natural, sostenible: qué prometen",
+"sum": "Cuatro palabras de la etiqueta describen cómo se cultiva o se elabora un vino, no lo bueno que está: qué prometen de verdad ecológico, biodinámico, natural y sostenible.",
+"out": [
+"Explicar qué prometen ecológico, biodinámico, natural y sostenible",
+"Leer etiquetas de vino ecológico de la UE y de Estados Unidos",
+"Distinguir una palabra del campo de una de la bodega"
+]
+},
+"de": {
+"t": "Bio, biodynamisch, Naturwein, nachhaltig: was sie versprechen",
+"sum": "Vier Begriffe auf dem Etikett beschreiben, wie ein Wein angebaut oder gemacht wird, nicht wie gut er schmeckt: was Bio, biodynamisch, Naturwein und nachhaltig wirklich versprechen.",
+"out": [
+"Erklären, was Bio, biodynamisch, Naturwein und nachhaltig versprechen",
+"Bio-Weinetiketten aus der EU und den USA lesen",
+"Einen Weinbergbegriff von einem Kellerbegriff unterscheiden"
+]
 }
 },
 {
@@ -1712,6 +3098,24 @@
 "Nævne de tre ting, der kendetegner italiensk vin",
 "Forklare, hvordan bakker, højde og hav holder druerne friske",
 "Forklare, hvorfor hver del af Italien har sine egne druer"
+]
+},
+"es": {
+"t": "Italia de un vistazo: uvas autóctonas y vino para la mesa",
+"sum": "Por qué el vino italiano sabe como sabe: cientos de uvas autóctonas, una acidez fresca hecha para la comida y un país largo y montañoso, de los frescos Alpes al cálido sur.",
+"out": [
+"Nombrar los tres rasgos que hacen reconocible el vino italiano",
+"Explicar cómo colinas, altitud y mar mantienen frescas las uvas italianas",
+"Explicar por qué cada parte de Italia tiene sus propias uvas"
+]
+},
+"de": {
+"t": "Italien auf einen Blick: heimische Reben und Wein zum Essen",
+"sum": "Warum italienischer Wein so schmeckt, wie er schmeckt: Hunderte heimischer Rebsorten, frische Säure fürs Essen und ein langes, hügeliges Land von den kühlen Alpen bis in den heißen Süden.",
+"out": [
+"Die drei Merkmale nennen, die italienischen Wein erkennbar machen",
+"Erklären, wie Hügel, Höhe und Meer Italiens Trauben frisch halten",
+"Erklären, warum jeder Teil Italiens eigene Rebsorten hat"
 ]
 }
 },
@@ -1735,6 +3139,24 @@
 "Skelne Sangiovese, Nebbiolo og Barbera på deres tannin",
 "Forklare, hvorfor Vino Nobile ikke er lavet af Montepulciano"
 ]
+},
+"es": {
+"t": "Las uvas de Italia: las pocas tras los nombres famosos",
+"sum": "La mayoría de los grandes vinos italianos llevan el nombre de un lugar, no de una uva. Aprende las pocas que hay detrás: Sangiovese, Nebbiolo, Barbera, los tintos del sur y cuatro blancas clave.",
+"out": [
+"Nombrar las uvas del Chianti, el Barolo, el Prosecco y el Soave",
+"Distinguir Sangiovese, Nebbiolo y Barbera por su tanino",
+"Explicar por qué el Vino Nobile no es de uva Montepulciano"
+]
+},
+"de": {
+"t": "Italiens Rebsorten: die wenigen hinter den großen Namen",
+"sum": "Die meisten berühmten Weine Italiens tragen einen Ortsnamen, keine Rebsorte. Lerne die Handvoll dahinter kennen: Sangiovese, Nebbiolo, Barbera, die Roten des Südens und vier wichtige Weiße.",
+"out": [
+"Die Rebsorten hinter Chianti, Barolo, Prosecco und Soave nennen",
+"Sangiovese, Nebbiolo und Barbera am Tannin unterscheiden",
+"Erklären, warum Vino Nobile kein Wein aus der Rebsorte Montepulciano ist"
+]
 }
 },
 {
@@ -1756,6 +3178,24 @@
 "Finde Piemontes bedste vinmarker på Langhe-bakkerne",
 "Beskrive Barolo og Barbaresco, og hvorfor de skal vente",
 "Kende Piemontes hverdagsvine fra dem, der skal gemmes"
+]
+},
+"es": {
+"t": "Piamonte: Barolo, Barbaresco y Barbera",
+"sum": "Los grandes tintos del Piamonte, el Barolo y el Barbaresco, son 100 % Nebbiolo: pálidos, con un tanino que seca la boca y hechos para guardar, mientras el Dolcetto y el Barbera son para el día a día.",
+"out": [
+"Situar los mejores viñedos del Piamonte en las Langhe",
+"Describir el Barolo y el Barbaresco y por qué necesitan tiempo",
+"Distinguir los tintos de diario del Piamonte de los que aguantan muchos años"
+]
+},
+"de": {
+"t": "Piemont: Barolo, Barbaresco und Barbera",
+"sum": "Die großen Roten des Piemonts, Barolo und Barbaresco, sind reiner Nebbiolo: hell, mit viel trocknendem Tannin und für lange Reife gemacht, während Dolcetto und Barbera für den Alltag da sind.",
+"out": [
+"Die besten Weinberge des Piemonts in den Langhe-Hügeln verorten",
+"Barolo und Barbaresco beschreiben und erklären, warum sie Zeit brauchen",
+"Die Alltagsroten des Piemonts von den langlebigen unterscheiden"
 ]
 }
 },
@@ -1779,6 +3219,24 @@
 "Kende forskel på Chianti Classico, Brunello og Vino Nobile",
 "Forklare, hvad Super Tuscans er, og hvorfor de er vigtige"
 ]
+},
+"es": {
+"t": "Toscana: Chianti, Brunello y los supertoscanos",
+"sum": "Los tintos famosos de la Toscana nacen de una sola uva, la Sangiovese, y la etiqueta te dice en qué colinas creció, cuánto envejeció y si el productor se saltó las normas.",
+"out": [
+"Leer en una etiqueta toscana el lugar, la crianza y las normas",
+"Distinguir el Chianti Classico, el Brunello y el Vino Nobile",
+"Explicar qué son los supertoscanos y por qué importan"
+]
+},
+"de": {
+"t": "Toskana: Chianti, Brunello und die Supertoskaner",
+"sum": "Die berühmten Rotweine der Toskana beruhen auf einer Rebsorte, dem Sangiovese, und das Etikett verrät dir, auf welchen Hügeln er wuchs, wie lange er reifte und ob der Erzeuger die Regeln brach.",
+"out": [
+"Ein toskanisches Etikett nach Ort, Reifung und Regeln lesen",
+"Chianti Classico, Brunello und Vino Nobile unterscheiden",
+"Erklären, was Supertoskaner sind und warum sie wichtig sind"
+]
 }
 },
 {
@@ -1800,6 +3258,24 @@
 "Forklare, hvordan prosecco får sine bobler",
 "Læse proseccos kvalitetstrin og ordene for sødme",
 "Beskrive Valpolicella, Ripasso, Amarone og Soave med én linje hver"
+]
+},
+"es": {
+"t": "El Véneto y el noreste: Prosecco, Amarone y Soave",
+"sum": "Cómo el fresco noreste de Italia convierte unas pocas uvas en vinos muy distintos: prosecco con burbujas hechas en grandes depósitos, Amarone de uvas secadas y Soave, un blanco fresco.",
+"out": [
+"Explicar cómo consigue sus burbujas el prosecco",
+"Leer los niveles de calidad y las palabras de dulzor del Prosecco",
+"Describir Valpolicella, Ripasso, Amarone y Soave en una línea cada uno"
+]
+},
+"de": {
+"t": "Venetien und der Nordosten: Prosecco, Amarone und Soave",
+"sum": "Wie Italiens kühler Nordosten aus wenigen Rebsorten ganz verschiedene Weine macht: Prosecco, in großen Tanks zum Perlen gebracht, Amarone aus getrockneten Trauben und Soave, ein frischer Weißwein.",
+"out": [
+"Erklären, wie Prosecco zu seinen Bläschen kommt",
+"Die Qualitätsstufen und Süßewörter beim Prosecco lesen",
+"Valpolicella, Ripasso, Amarone und Soave in je einer Zeile beschreiben"
 ]
 }
 },
@@ -1823,6 +3299,24 @@
 "Nævne de vigtigste druer i Puglia, Campania og på øerne",
 "Kende Etnas friske rødvine fra Syditaliens mere modne"
 ]
+},
+"es": {
+"t": "El sur y las islas: sol, volcanes y buenos precios",
+"sum": "El cálido sur de Italia y sus islas dan tintos maduros y suaves a muy buen precio, y la altura, la brisa marina y el suelo volcánico mantienen frescos los mejores, como los del Etna.",
+"out": [
+"Explicar cómo el cálido sur sigue dando vinos frescos",
+"Nombrar las uvas clave de Apulia, Campania y las islas",
+"Distinguir los tintos frescos del Etna de los más maduros del sur"
+]
+},
+"de": {
+"t": "Der Süden und die Inseln: Sonne, Vulkane, gute Preise",
+"sum": "Italiens heißer Süden und die Inseln liefern reife, weiche Rotweine zu guten Preisen, und Höhe, Meeresbrisen und Vulkanboden halten die besten, etwa vom Ätna, frisch.",
+"out": [
+"Erklären, wie der heiße Süden trotzdem frische Weine macht",
+"Die wichtigen Rebsorten Apuliens, Kampaniens und der Inseln nennen",
+"Die frischen Roten vom Ätna von den reiferen des Südens unterscheiden"
+]
 }
 },
 {
@@ -1844,6 +3338,24 @@
 "Finde de fire vigtigste ting på en italiensk etiket",
 "Forstå et kvalitetstrin skrevet helt ud på italiensk",
 "Læse ord for sted, tid og stil på en flaske"
+]
+},
+"es": {
+"t": "Lee una etiqueta italiana: niveles de calidad y palabras clave",
+"sum": "Cómo leer una botella italiana de verdad: los cuatro datos de la etiqueta frontal, el nivel de calidad en letra pequeña, los nombres de fantasía y las palabras de lugar, tiempo y estilo.",
+"out": [
+"Encontrar los cuatro datos clave de una etiqueta frontal italiana",
+"Descifrar un nivel de calidad escrito entero en italiano",
+"Leer palabras de lugar, crianza y estilo en una botella real"
+]
+},
+"de": {
+"t": "Italienische Etiketten lesen: Qualitätsstufen und Schlüsselwörter",
+"sum": "So liest du eine echte italienische Flasche: die vier Angaben vorne, die Qualitätsstufe im Kleingedruckten, Fantasienamen und die Wörter für Ort, Zeit und Stil.",
+"out": [
+"Die vier wichtigsten Angaben auf einem italienischen Vorderetikett finden",
+"Eine auf Italienisch ausgeschriebene Qualitätsstufe entschlüsseln",
+"Wörter für Herkunft, Reifung und Stil auf einer echten Flasche lesen"
 ]
 }
 },
@@ -1867,6 +3379,24 @@
 "Finde italiensk vin til tomat, kød, fisk og dessert",
 "Gøre gode køb med lillebrødre og flasker til hverdag"
 ]
+},
+"es": {
+"t": "Elegir vino italiano: la botella adecuada para cada momento",
+"sum": "El norte, la Toscana y el sur, frente a frente: qué botella italiana elegir según el ambiente, el plato y el presupuesto.",
+"out": [
+"Elegir un tinto italiano por estilo: firme, ácido o maduro",
+"Maridar vinos italianos con tomate, carne, pescado y postre",
+"Escoger hermanos menores y botellas de diario a buen precio"
+]
+},
+"de": {
+"t": "Italienischen Wein wählen: die richtige Flasche für den Moment",
+"sum": "Der Norden, die Toskana und der Süden im Vergleich: welche italienische Flasche zur Stimmung, zum Gericht und zum Budget passt.",
+"out": [
+"Einen italienischen Roten nach Stil wählen: fest, säuerlich oder reif",
+"Italienische Weine zu Tomate, Fleisch, Fisch und Dessert kombinieren",
+"Jüngere Brüder und Alltagsflaschen als Preistipps finden"
+]
 }
 },
 {
@@ -1888,6 +3418,24 @@
 "Forklare, hvorfor vinene fra New Zealand smager klart og friskt",
 "Fortælle, hvordan havet former vejret i New Zealand",
 "Fortælle, at New Zealand er lille, men sælger meget til udlandet"
+]
+},
+"es": {
+"t": "Nueva Zelanda de un vistazo: puro, fresco y luminoso",
+"sum": "Por qué los vinos de Nueva Zelanda saben luminosos y frescos: un clima fresco marcado por el mar, dos islas largas, una industria joven y un país pequeño que lo exporta casi todo.",
+"out": [
+"Explicar por qué los vinos neozelandeses saben luminosos y frescos",
+"Describir cómo el mar marca el clima de Nueva Zelanda",
+"Describir el pequeño tamaño de Nueva Zelanda y su gran negocio exportador"
+]
+},
+"de": {
+"t": "Neuseeland auf einen Blick: rein, kühl und klar",
+"sum": "Warum Neuseelands Weine klar und frisch schmecken: ein kühles, vom Meer geprägtes Klima, zwei lange Inseln, eine junge Branche und ein kleines Land, das fast alles exportiert.",
+"out": [
+"Erklären, warum neuseeländische Weine klar und frisch schmecken",
+"Beschreiben, wie das Meer Neuseelands Klima prägt",
+"Neuseelands kleine Weinbranche und ihren großen Export beschreiben"
 ]
 }
 },
@@ -1911,6 +3459,24 @@
 "Fortælle, hvordan Sauvignon Blanc og Pinot Noir smager her",
 "Kende det sted, hver vigtig drue kommer fra"
 ]
+},
+"es": {
+"t": "Las uvas de Nueva Zelanda: Sauvignon Blanc y mucho más",
+"sum": "La Sauvignon Blanc ocupa cerca de dos tercios de los viñedos de Nueva Zelanda, la Pinot Noir es la tinta principal y el cálido Hawke's Bay es la casa de la Syrah y los coupages al estilo de Burdeos.",
+"out": [
+"Ordenar las uvas principales de Nueva Zelanda por superficie",
+"Describir cómo saben aquí el Sauvignon Blanc y el Pinot Noir",
+"Relacionar cada uva clave con su región"
+]
+},
+"de": {
+"t": "Neuseelands Rebsorten: Sauvignon Blanc und mehr",
+"sum": "Sauvignon Blanc steht auf rund zwei Dritteln von Neuseelands Rebfläche, Pinot Noir ist die wichtigste rote Sorte, und im warmen Hawke's Bay sind Syrah und Cuvées im Bordeaux-Stil zu Hause.",
+"out": [
+"Neuseelands wichtigste Rebsorten nach Fläche ordnen",
+"Beschreiben, wie Sauvignon Blanc und Pinot Noir hier schmecken",
+"Jede wichtige Rebsorte ihrer Heimatregion zuordnen"
+]
 }
 },
 {
@@ -1932,6 +3498,24 @@
 "Forklare, hvordan sol, kølige nætter og vinmageren former stilen",
 "Kende forskel på Wairau, Southern Valleys og Awatere",
 "Kende ordene på etiketten for en rundere, krydret stil"
+]
+},
+"es": {
+"t": "Marlborough: el corazón de la Sauvignon Blanc neozelandesa",
+"sum": "Por qué los días de sol y las noches frescas de Marlborough dan un Sauvignon Blanc tan vibrante, en qué se diferencian sus tres valles, cómo se elabora y cómo la subregión sube por la escalera de precios.",
+"out": [
+"Explicar cómo el sol, las noches frescas y la elaboración moldean el estilo",
+"Distinguir Wairau, Southern Valleys y Awatere",
+"Reconocer en la etiqueta las palabras de un estilo más redondo y sabroso"
+]
+},
+"de": {
+"t": "Marlborough: Neuseelands Kernland des Sauvignon Blanc",
+"sum": "Warum Marlboroughs sonnige Tage und kühle Nächte so lebendigen Sauvignon Blanc ergeben, wie sich die drei Täler unterscheiden, wie der Wein entsteht und wie Unterregionen die Preisleiter hinaufführen.",
+"out": [
+"Erklären, wie Sonne, kühle Nächte und Weinbereitung den Stil prägen",
+"Wairau, Southern Valleys und Awatere unterscheiden",
+"Die Etikettbegriffe für einen runderen, herzhaften Stil erkennen"
 ]
 }
 },
@@ -1955,6 +3539,24 @@
 "Kende forskel på Pinot Noir fra Gibbston og Bannockburn",
 "Forklare blandingerne, Syrah og Gimblett Gravels i Hawke's Bay"
 ]
+},
+"es": {
+"t": "Central Otago y Hawke's Bay: Pinot, coupages y Syrah",
+"sum": "Central Otago, seco y de interior, elabora Pinot Noir maduro, mientras que Hawke's Bay, cálido y soleado, elabora coupages tintos al estilo de Burdeos y Syrah, sobre todo en el pedregoso Gimblett Gravels.",
+"out": [
+"Describir el clima continental de Central Otago y su Pinot Noir",
+"Comparar los estilos de Pinot Noir de Gibbston y Bannockburn",
+"Explicar los coupages, la Syrah y el distrito de Gimblett Gravels de Hawke's Bay"
+]
+},
+"de": {
+"t": "Central Otago und Hawke's Bay: Pinot, Cuvées und Syrah",
+"sum": "Das trockene Central Otago im Landesinneren erzeugt reifen Pinot Noir, das warme, sonnige Hawke's Bay Cuvées im Bordeaux-Stil und Syrah, besonders auf den steinigen Gimblett Gravels.",
+"out": [
+"Das kontinentale Klima von Central Otago und seinen Pinot Noir beschreiben",
+"Den Pinot-Noir-Stil von Gibbston und Bannockburn vergleichen",
+"Cuvées, Syrah und die Gimblett Gravels in Hawke's Bay erklären"
+]
 }
 },
 {
@@ -1976,6 +3578,24 @@
 "Forklare, hvad 85 %-reglen gælder for",
 "Fortælle, hvad en GI lover, og hvad den ikke lover",
 "Læse en etiket fra New Zealand linje for linje"
+]
+},
+"es": {
+"t": "Leer una etiqueta neozelandesa: lo que promete la ley",
+"sum": "Cómo leer una etiqueta neozelandesa: la regla del 85 %, los registros que la respaldan, los nombres de lugar protegidos (GI), un sello de Marlborough y las pistas de la botella.",
+"out": [
+"Explicar qué cubre la regla del 85 %",
+"Describir qué promete una GI y qué no",
+"Leer una etiqueta neozelandesa línea a línea"
+]
+},
+"de": {
+"t": "Ein neuseeländisches Etikett lesen: was das Gesetz verspricht",
+"sum": "So liest du ein neuseeländisches Etikett: die 85-%-Regel, die Aufzeichnungen dahinter, geschützte Herkunftsnamen (GIs), ein Zeichen der Winzer aus Marlborough und die Hinweise auf der Flasche.",
+"out": [
+"Erklären, was die 85-%-Regel abdeckt",
+"Beschreiben, was eine GI verspricht und was nicht",
+"Ein neuseeländisches Etikett Zeile für Zeile lesen"
 ]
 }
 },
@@ -1999,6 +3619,24 @@
 "Kende frugtig Pinot fra Central Otago fra krydret fra Martinborough",
 "Vælge flasker fra New Zealand til maden og købe godt"
 ]
+},
+"es": {
+"t": "Elegir vino de Nueva Zelanda: Sauvignon Blanc y mucho más",
+"sum": "Una guía práctica del vino neozelandés: qué Sauvignon elegir, los blancos y tintos que hay más allá, qué pedir con cada plato y cómo comprar bien.",
+"out": [
+"Elegir un Sauvignon Blanc neozelandés según su estilo",
+"Distinguir el Pinot afrutado de Central Otago del sabroso de Martinborough",
+"Maridar vinos neozelandeses con platos y comprar bien"
+]
+},
+"de": {
+"t": "Wein aus Neuseeland wählen: Sauvignon Blanc und mehr",
+"sum": "Ein praktischer Leitfaden für Wein aus Neuseeland: welcher Sauvignon es sein soll, die Weiß- und Rotweine jenseits davon, was du zu welchem Gericht bestellst und wie du gut einkaufst.",
+"out": [
+"Einen neuseeländischen Sauvignon Blanc nach Stil auswählen",
+"Fruchtigen Pinot aus Central Otago von herzhaftem aus Martinborough unterscheiden",
+"Neuseeländische Flaschen zu Gerichten wählen und gut einkaufen"
+]
 }
 },
 {
@@ -2020,6 +3658,24 @@
 "Forklare, hvorfor Portugals egne druer og blandede plantninger er særlige",
 "Beskrive, hvordan havet og bjergene former Portugals vejr",
 "Nævne Portugals to berømte hedvine og hvor de kommer fra"
+]
+},
+"es": {
+"t": "Portugal de un vistazo: uvas autóctonas y vino generoso",
+"sum": "Por qué Portugal es un cofre del tesoro de uvas autóctonas y coupages, cómo lo moldean el Atlántico y las montañas, y de dónde vienen el oporto y el Madeira.",
+"out": [
+"Explicar por qué destacan las uvas propias y los viñedos mixtos de Portugal",
+"Describir cómo el Atlántico y las montañas moldean el clima portugués",
+"Nombrar los dos famosos vinos generosos de Portugal y su origen"
+]
+},
+"de": {
+"t": "Portugal auf einen Blick: heimische Reben und Likörwein",
+"sum": "Warum Portugal eine Schatzkiste heimischer Rebsorten und Cuvées ist, wie Atlantik und Gebirge das Land prägen und woher Portwein und Madeira kommen.",
+"out": [
+"Erklären, warum Portugals eigene Rebsorten und gemischter Satz herausstechen",
+"Beschreiben, wie Atlantik und Gebirge Portugals Klima prägen",
+"Portugals zwei berühmte Likörweine und ihre Heimat nennen"
 ]
 }
 },
@@ -2043,6 +3699,24 @@
 "Forklare forskellen på blandet plantning og blokplantning",
 "Koble portugisiske druer til de områder, de hører til"
 ]
+},
+"es": {
+"t": "Las uvas de Portugal: estrellas autóctonas y coupages",
+"sum": "Las uvas autóctonas de Portugal suelen ir en coupage, pero unas pocas estrellas mandan: Touriga Nacional, Touriga Franca, Tinta Roriz, Baga y cuatro blancas clave.",
+"out": [
+"Nombrar las uvas tintas y blancas clave de Portugal",
+"Explicar la diferencia entre viñedo mixto y plantación por bloques",
+"Relacionar las uvas portuguesas con las regiones que definen"
+]
+},
+"de": {
+"t": "Die Rebsorten Portugals: heimische Stars und Cuvées",
+"sum": "Portugals heimische Rebsorten landen oft in Cuvées, doch ein paar Stars führen: Touriga Nacional, Touriga Franca, Tinta Roriz, Baga und vier wichtige Weiße.",
+"out": [
+"Portugals wichtigste rote und weiße Rebsorten nennen",
+"Gemischten Satz und Blockpflanzung unterscheiden",
+"Portugiesische Rebsorten den Regionen zuordnen, die sie prägen"
+]
 }
 },
 {
@@ -2064,6 +3738,24 @@
 "Forklare, hvordan varme og skifer former Douros vinstokke",
 "Fortælle, hvornår spritten kommer i portvin, og hvorfor",
 "Kende portvinens fire typer og Douros rødvine fra hinanden"
+]
+},
+"es": {
+"t": "El Douro: el oporto y sus vinos de mesa",
+"sum": "Cómo un valle caluroso y empinado de terrazas de esquisto se convirtió en una de las primeras regiones vinícolas protegidas, y cómo sus uvas dan oporto dulce y potentes tintos secos.",
+"out": [
+"Explicar cómo el calor y el esquisto moldean las viñas del Douro",
+"Describir cuándo se añade el aguardiente al oporto y por qué",
+"Distinguir los cuatro estilos de oporto y los tintos del Douro"
+]
+},
+"de": {
+"t": "Der Douro: Portwein und seine Tischweine",
+"sum": "Wie ein steiles, heißes Tal mit Schieferterrassen zu einer der ersten geschützten Weinregionen wurde und wie seine Trauben süßen Portwein und kraftvolle trockene Rote ergeben.",
+"out": [
+"Erklären, wie Hitze und Schiefer die Reben des Douro prägen",
+"Beschreiben, wann der Brand in den Portwein kommt und warum",
+"Die vier Portweinstile und Douro-Rotweine unterscheiden"
 ]
 }
 },
@@ -2087,6 +3779,24 @@
 "Kende Alvarinho og Loureiro fra hinanden",
 "Forklare, hvorfor Alvarinho fra Monção e Melgaço smager fyldigere"
 ]
+},
+"es": {
+"t": "Vinho Verde: vinos frescos del norte verde",
+"sum": "Vinho Verde significa vino verde, que suele entenderse como joven y fresco: un blanco ligero del lluvioso norte de Portugal, con el Alvarinho de Monção e Melgaço en lo más alto.",
+"out": [
+"Explicar qué significa «verde» en el Vinho Verde",
+"Distinguir la Alvarinho de la Loureiro por sus pistas",
+"Explicar por qué el Alvarinho de Monção e Melgaço tiene más cuerpo"
+]
+},
+"de": {
+"t": "Vinho Verde: frische Weine aus dem grünen Norden",
+"sum": "Vinho Verde heißt grüner Wein, meist verstanden als jung und frisch: ein leichter, knackiger Weißer aus Portugals regenreichem Norden, an der Spitze Alvarinho aus Monção e Melgaço.",
+"out": [
+"Erklären, was „grün“ beim Vinho Verde bedeutet",
+"Alvarinho und Loureiro an ihren Hinweisen unterscheiden",
+"Erklären, warum Alvarinho aus Monção e Melgaço voller schmeckt"
+]
 }
 },
 {
@@ -2108,6 +3818,24 @@
 "Forklare, hvorfor Dãos rødvine smager friske og elegante",
 "Beskrive Baga, og hvorfor Bairradas rødvine kan gemmes",
 "Nævne begge områders vigtigste druer og bobler"
+]
+},
+"es": {
+"t": "Dão y Bairrada: el elegante centro de Portugal",
+"sum": "Dos vecinas del centro de Portugal: la Touriga Nacional y la Encruzado de Dão, al abrigo de las montañas, y la longeva Baga y el espumoso de método tradicional de Bairrada.",
+"out": [
+"Explicar por qué los tintos de Dão saben frescos y elegantes",
+"Describir la Baga y por qué los tintos de Bairrada envejecen",
+"Nombrar las uvas y burbujas clave de ambas regiones"
+]
+},
+"de": {
+"t": "Dão und Bairrada: Portugals elegante Mitte",
+"sum": "Zwei Nachbarn in Zentralportugal: Dãos von Bergen geschützter Touriga Nacional und Encruzado, Bairradas lagerfähiger Baga und Schaumwein aus traditioneller Flaschengärung.",
+"out": [
+"Erklären, warum Dãos Rotweine frisch und elegant schmecken",
+"Baga beschreiben und warum Bairradas Rotweine reifen können",
+"Die wichtigsten Rebsorten und Schaumweine beider Regionen nennen"
 ]
 }
 },
@@ -2131,6 +3859,24 @@
 "Forklare, hvordan Setúbals Moscatel og Madeira bliver lavet",
 "Nævne Madeiras klassiske typer fra tørrest til sødest"
 ]
+},
+"es": {
+"t": "El Alentejo, el sur y Madeira",
+"sum": "El sur de Portugal te da tintos del Alentejo maduros y fáciles y el dulce Moscatel de Setúbal; la isla de Madeira añade un vino generoso que se calienta a propósito.",
+"out": [
+"Describir el estilo maduro y suave de los tintos del Alentejo",
+"Explicar cómo se elaboran el Moscatel de Setúbal y el Madeira",
+"Nombrar los estilos clásicos del Madeira del más seco al más dulce"
+]
+},
+"de": {
+"t": "Der Alentejo, der Süden und Madeira",
+"sum": "Südportugal bietet dir sonnenreife, unkomplizierte Rotweine aus dem Alentejo und einen süßen Muskateller aus Setúbal; die Insel Madeira steuert einen Likörwein bei, der absichtlich erhitzt wird.",
+"out": [
+"Den reifen, weichen Stil der Rotweine aus dem Alentejo beschreiben",
+"Erklären, wie Setúbals Muskateller und Madeira entstehen",
+"Die klassischen Madeira-Stile vom trockensten zum süßesten nennen"
+]
 }
 },
 {
@@ -2152,6 +3898,24 @@
 "Nævne Portugals tre niveauer, fra DOC til almindelig Vinho",
 "Læse Reserva, Grande Reserva og Garrafeira som et minimum",
 "Læse en portugisisk etiket linje for linje, også på portvin"
+]
+},
+"es": {
+"t": "Leer una etiqueta portuguesa: niveles y palabras clave",
+"sum": "Una etiqueta portuguesa muestra cuán protegido está el lugar, y palabras como Reserva y Garrafeira prometen mínimos: aprende los tres niveles y las palabras clave, oporto incluido.",
+"out": [
+"Nombrar los tres niveles de Portugal, de DOC a Vinho",
+"Entender Reserva, Grande Reserva y Garrafeira como mínimos",
+"Descifrar una etiqueta portuguesa, oporto incluido, línea a línea"
+]
+},
+"de": {
+"t": "Ein portugiesisches Etikett lesen: Stufen und Schlüsselwörter",
+"sum": "Ein portugiesisches Etikett zeigt, wie geschützt der Ort ist, und Wörter wie Reserva und Garrafeira versprechen Mindestwerte: Lerne die drei Stufen und die Schlüsselwörter, Portwein inklusive.",
+"out": [
+"Portugals drei Stufen nennen, von DOC bis einfachem Vinho",
+"Reserva, Grande Reserva und Garrafeira als Mindestwerte lesen",
+"Ein portugiesisches Etikett samt Portwein Zeile für Zeile entschlüsseln"
 ]
 }
 },
@@ -2175,6 +3939,24 @@
 "Vælge en slags portvin, der passer til lejligheden",
 "Forklare, hvor længe hver slags åbnet portvin holder"
 ]
+},
+"es": {
+"t": "Portugal: oporto, Douro y Vinho Verde",
+"sum": "Un recorrido por Portugal para comprar y comer bien: oporto blanco antes de cenar, Vinho Verde con pescado, tintos baratos y buenos, el oporto ideal para el postre y cuánto aguanta.",
+"out": [
+"Elegir un vino portugués para cada momento de la comida",
+"Escoger un estilo de oporto según la ocasión",
+"Explicar cuánto aguanta abierto cada oporto"
+]
+},
+"de": {
+"t": "Portugal: Portwein, Douro und Vinho Verde",
+"sum": "Eine Portugal-Tour fürs Einkaufen und Essen: weißer Portwein vorm Essen, Vinho Verde zum Fisch, preiswerte Rote, der richtige Portwein zum Dessert und wie lange er hält.",
+"out": [
+"Für jeden Moment einer Mahlzeit einen portugiesischen Wein wählen",
+"Einen Portweinstil passend zum Anlass aussuchen",
+"Erklären, wie lange sich jeder geöffnete Portwein hält"
+]
 }
 },
 {
@@ -2196,6 +3978,24 @@
 "Forklare, hvordan ét års vejr ændrer en vin",
 "Læse en årgangstabel og bruge den klogt",
 "Genkende, hvor årgangen betyder mest, og hvor den betyder mindst"
+]
+},
+"es": {
+"t": "Por qué importa la añada, y cuándo no",
+"sum": "El tiempo de cada año se nota en el vino. Aprende dónde pesa más la añada, cómo leer una tabla de añadas y qué comprar en un año flojo.",
+"out": [
+"Explicar cómo el tiempo de un año cambia un vino",
+"Leer una tabla de añadas y usarla con cabeza",
+"Saber dónde importa más la añada, y dónde menos"
+]
+},
+"de": {
+"t": "Warum der Jahrgang zählt, und wann nicht",
+"sum": "Das Wetter jedes Jahres zeigt sich im Wein. Lerne, wo der Jahrgang am meisten zählt, wie du eine Jahrgangstabelle liest und was du in einem schwachen Jahr kaufst.",
+"out": [
+"Erklären, wie das Wetter eines Jahres einen Wein verändert",
+"Eine Jahrgangstabelle lesen und klug nutzen",
+"Erkennen, wo der Jahrgang am meisten zählt und wo am wenigsten"
 ]
 }
 },
@@ -2219,6 +4019,24 @@
 "Bedømme en vin med de fire BLIK-tjek",
 "Bruge point, medaljer og kritikere med omtanke"
 ]
+},
+"es": {
+"t": "Cómo valorar la calidad en la copa",
+"sum": "La calidad no es lo mismo que el gusto. Valora un vino con cuatro pruebas sencillas, pregúntate si sabe a su uva y a su lugar, y lee las puntuaciones con cuidado.",
+"out": [
+"Distinguir la calidad de un vino de tu gusto",
+"Juzgar un vino con los cuatro criterios EPIC",
+"Usar puntuaciones, medallas y críticos con cuidado"
+]
+},
+"de": {
+"t": "So beurteilst du die Qualität im Glas",
+"sum": "Qualität ist nicht dasselbe wie Gefallen. Beurteile einen Wein mit vier einfachen Prüfpunkten, frag, ob er nach Rebsorte und Herkunft schmeckt, und lies Punkte mit Vorsicht.",
+"out": [
+"Die Qualität eines Weins von deinem Geschmack trennen",
+"Einen Wein mit den vier BLIK-Prüfpunkten beurteilen",
+"Punkte, Medaillen und Kritiker mit Bedacht nutzen"
+]
 }
 },
 {
@@ -2240,6 +4058,24 @@
 "Forklare, hvorfor det meste vin ikke bliver bedre med alderen",
 "Nævne de fire rygrade, der lader en vin lagre",
 "Beskrive lagringskurven fra ungdom til forfald"
+]
+},
+"es": {
+"t": "Qué vinos mejoran con los años, y por qué",
+"sum": "Casi todo el vino se hace para beberlo joven. Descubre las cuatro cosas que hacen mejorar a unos pocos, por qué los protege la acidez y el camino que sigue un gran vino.",
+"out": [
+"Explicar por qué casi ningún vino mejora con los años",
+"Nombrar los cuatro pilares que ayudan a un vino a envejecer",
+"Describir la curva de la edad, de la juventud al declive"
+]
+},
+"de": {
+"t": "Welche Weine mit dem Alter besser werden, und warum",
+"sum": "Die meisten Weine trinkt man jung. Lerne die vier Dinge, die wenige Weine besser werden lassen, warum Säure sie schützt und welchen Weg ein großer Wein nimmt.",
+"out": [
+"Erklären, warum die meisten Weine mit dem Alter nicht besser werden",
+"Die vier Rückgrate nennen, die einem Wein beim Reifen helfen",
+"Die Reifekurve von der Jugend bis zum Abbau beschreiben"
 ]
 }
 },
@@ -2263,6 +4099,24 @@
 "Vurdere et vindue ud fra stil, kritikere og årgang",
 "Genkende tegn på, at en gemt flaske er træt"
 ]
+},
+"es": {
+"t": "Cuándo abrir una botella: encuentra su ventana de consumo",
+"sum": "La mayoría de los vinos están en su mejor momento en pocos años. Aprende a leer los mejores años de una botella a partir de unas pocas pistas y, ante la duda, ábrela un poco pronto antes que demasiado tarde.",
+"out": [
+"Explicar qué son la ventana de consumo y su meseta",
+"Calcular una ventana a partir del estilo, los críticos y la añada",
+"Detectar las señales de que una botella guardada puede estar cansada"
+]
+},
+"de": {
+"t": "Wann du eine Flasche öffnest: ihr Trinkfenster finden",
+"sum": "Die meisten Weine schmecken innerhalb weniger Jahre am besten. Lerne, die besten Jahre einer Flasche an ein paar Hinweisen abzulesen, und öffne sie im Zweifel lieber etwas zu früh als zu spät.",
+"out": [
+"Erklären, was ein Trinkfenster und sein Plateau sind",
+"Ein Fenster anhand von Stil, Kritikern und Jahrgang einschätzen",
+"Die Zeichen erkennen, dass eine gelagerte Flasche müde sein könnte"
+]
 }
 },
 {
@@ -2284,6 +4138,24 @@
 "Planlægge en lille første samling med vine, du kan lide",
 "Føre en kælderliste, der fortæller dig, hvad du skal åbne",
 "Bedømme en gammel flaske ud fra vinens højde og fortid"
+]
+},
+"es": {
+"t": "Empieza una pequeña colección de vinos, sin bodega",
+"sum": "Empieza una pequeña colección con vinos que te gustan y unos pocos para guardar, llévala al día con una lista sencilla y aprende a juzgar botellas viejas por lo llenas que están y por dónde han estado.",
+"out": [
+"Planear una primera colección pequeña con vinos que te gustan",
+"Llevar un inventario que te diga qué abrir",
+"Juzgar una botella vieja por su nivel y su procedencia"
+]
+},
+"de": {
+"t": "Eine kleine Weinsammlung anlegen, ganz ohne Keller",
+"sum": "Leg eine kleine Sammlung mit Weinen an, die du magst, plus ein paar zum Aufheben, behalte sie mit einer einfachen Liste im Blick und lerne, alte Flaschen danach zu beurteilen, wie voll sie sind und wo sie waren.",
+"out": [
+"Eine erste kleine Sammlung rund um Weine planen, die du magst",
+"Ein Kellerbuch führen, das dir sagt, was du öffnen solltest",
+"Eine alte Flasche nach Füllstand und Provenienz beurteilen"
 ]
 }
 },
@@ -2307,6 +4179,24 @@
 "Forklare, hvorfor europæiske etiketter skriver stedet, ikke druen",
 "Finde den sandsynlige drue bag et europæisk stednavn"
 ]
+},
+"es": {
+"t": "Etiquetas del Viejo y del Nuevo Mundo: ¿lugar o uva?",
+"sum": "Por qué las etiquetas europeas nombran el lugar y las del Nuevo Mundo la uva, qué promete cada nombre y cómo encontrar la uva que esconde un lugar.",
+"out": [
+"Distinguir una etiqueta del Viejo Mundo de una del Nuevo",
+"Explicar por qué las etiquetas europeas nombran el lugar, no la uva",
+"Deducir la uva probable a partir de un nombre de lugar europeo"
+]
+},
+"de": {
+"t": "Etiketten der Alten und Neuen Welt: Ort oder Rebsorte?",
+"sum": "Warum europäische Etiketten den Ort nennen und Etiketten der Neuen Welt die Rebsorte, was jeder Name verspricht und wie du die Rebsorte hinter einem Ortsnamen findest.",
+"out": [
+"Etiketten der Alten und der Neuen Welt unterscheiden",
+"Erklären, warum europäische Etiketten den Ort statt der Rebsorte nennen",
+"Einem europäischen Ortsnamen seine wahrscheinliche Rebsorte zuordnen"
+]
 }
 },
 {
@@ -2328,6 +4218,24 @@
 "Placere AOC, DOCG, DOCa og Prädikatswein på én stige",
 "Læse Bourgognes trin fra Bourgogne op til Grand Cru",
 "Forklare Spaniens lagringsord og Tysklands modenhedsord"
+]
+},
+"es": {
+"t": "Las escaleras de calidad de Europa: una forma, cuatro países",
+"sum": "Francia, Italia, España y Alemania clasifican el vino en la misma escalera de lugar, con dos giros: España cuenta el tiempo en bodega y Alemania, la madurez en la vendimia.",
+"out": [
+"Situar AOC, DOCG, DOCa y Prädikatswein en una misma escalera",
+"Leer los escalones de Borgoña, de Bourgogne a Grand Cru",
+"Explicar los términos de crianza españoles y los niveles de madurez alemanes"
+]
+},
+"de": {
+"t": "Europas Qualitätsleitern: eine Form, vier Länder",
+"sum": "Frankreich, Italien, Spanien und Deutschland stufen Wein auf derselben Leiter nach dem Ort ein, mit zwei Besonderheiten: Spanien zählt die Zeit im Keller, Deutschland die Reife bei der Lese.",
+"out": [
+"AOC, DOCG, DOCa und Prädikatswein auf einer Leiter einordnen",
+"Burgunds Stufen von Bourgogne bis Grand Cru lesen",
+"Spaniens Altersstufen und Deutschlands Reifestufen erklären"
 ]
 }
 },
@@ -2351,6 +4259,24 @@
 "Forklare, hvad Estate Bottled og Reserve virkelig lover",
 "Vælge de tørreste bobler ud fra sødmeordet"
 ]
+},
+"es": {
+"t": "Palabras de la etiqueta: ¿cuáles son promesas de verdad?",
+"sum": "Algunas palabras las fija la ley, como Estate Bottled, el Reserva español y el Brut del Champagne. Otras, como Old Vine, significan lo que diga la bodega. Aprende a distinguirlas.",
+"out": [
+"Distinguir palabras de ley de palabras de marketing en una etiqueta",
+"Explicar qué prometen de verdad Estate Bottled y Reserve",
+"Elegir el espumoso más seco por su palabra de dulzor"
+]
+},
+"de": {
+"t": "Etikettenwörter: Welche sind echte Versprechen?",
+"sum": "Manche Etikettenwörter legt das Gesetz fest, etwa Estate Bottled, die spanische Reserva und das Brut beim Champagner. Andere, wie Old Vine, bedeuten, was das Weingut sagt. Lerne, sie zu unterscheiden.",
+"out": [
+"Regelwörter und Werbewörter auf dem Etikett unterscheiden",
+"Erklären, was Estate Bottled und Reserve wirklich versprechen",
+"Den trockensten Schaumwein an seinem Süßewort erkennen"
+]
 }
 },
 {
@@ -2372,6 +4298,24 @@
 "Kende forskel på Cabernet Sauvignon og Merlot i glasset",
 "Forklare, hvorfor Bordeaux blander de to druer",
 "Nævne områder og retter, der passer til hver drue"
+]
+},
+"es": {
+"t": "Cabernet Sauvignon y Merlot: la pareja de Burdeos",
+"sum": "La Cabernet Sauvignon aporta grosella negra y una sensación firme que seca la boca, la Merlot aporta fruta suave de ciruela, y juntas forman el clásico coupage tinto de Burdeos.",
+"out": [
+"Distinguir en la copa la Cabernet Sauvignon de la Merlot",
+"Explicar por qué Burdeos mezcla las dos uvas",
+"Nombrar regiones y platos que van con cada uva"
+]
+},
+"de": {
+"t": "Cabernet Sauvignon und Merlot: das Bordeaux-Paar",
+"sum": "Cabernet Sauvignon bringt schwarze Johannisbeere und ein festes, trocknendes Gefühl, Merlot weiche Pflaumenfrucht, und zusammen ergeben sie die klassische rote Bordeaux-Cuvée.",
+"out": [
+"Cabernet Sauvignon und Merlot im Glas auseinanderhalten",
+"Erklären, warum man in Bordeaux die beiden Rebsorten verschneidet",
+"Regionen und Gerichte nennen, die zu beiden Rebsorten passen"
 ]
 }
 },
@@ -2395,6 +4339,24 @@
 "Nævne de kølige steder, hvor Pinot Noir trives bedst",
 "Vælge mad til Pinot Noir og servere den let kølig"
 ]
+},
+"es": {
+"t": "Pinot Noir: ligero, sedoso y exigente",
+"sum": "Por qué los hollejos finos hacen que el Pinot Noir sea pálido, sedoso y fresco, por qué la uva es tan difícil de cultivar, los lugares frescos que adora y la comida con la que combina.",
+"out": [
+"Explicar por qué el Pinot Noir es pálido y sedoso",
+"Nombrar los lugares frescos donde mejor crece la Pinot Noir",
+"Combinar el Pinot Noir con comida y servirlo fresco"
+]
+},
+"de": {
+"t": "Pinot Noir: leicht, seidig und anspruchsvoll",
+"sum": "Warum dünne Schalen Pinot Noir hell, seidig und frisch machen, warum er so schwer anzubauen ist, welche kühlen Gegenden er liebt und wozu er passt.",
+"out": [
+"Erklären, warum Pinot Noir hell und seidig ist",
+"Die kühlen Gegenden nennen, in denen Pinot Noir am besten wächst",
+"Pinot Noir zum Essen kombinieren und kühl servieren"
+]
 }
 },
 {
@@ -2416,6 +4378,24 @@
 "Forklare, hvorfor Syrah og Shiraz er én drue, to stilarter",
 "Beskrive, hvorfor Grenache føles blød og varm",
 "Nævne GSM-druerne, og hvad hver af dem giver vinen"
+]
+},
+"es": {
+"t": "Syrah y Garnacha: especias y calidez",
+"sum": "La Syrah (también llamada Shiraz) aporta fruta negra y pimienta, la Garnacha aporta fruta roja suave y calidez, y juntas protagonizan el coupage GSM.",
+"out": [
+"Explicar por qué Syrah y Shiraz son una uva con dos estilos",
+"Describir la suavidad de la Garnacha y por qué resulta cálida",
+"Nombrar las uvas del GSM y lo que aporta cada una"
+]
+},
+"de": {
+"t": "Syrah und Grenache: Würze und Wärme",
+"sum": "Syrah (auch Shiraz genannt) bringt dunkle Frucht und Pfeffer, Grenache bringt sanfte rote Frucht und Wärme, und gemeinsam sind sie die Stars der GSM-Cuvée.",
+"out": [
+"Erklären, warum Syrah und Shiraz eine Rebsorte mit zwei Stilen sind",
+"Beschreiben, warum sich Grenache weich anfühlt und warm wirkt",
+"Die GSM-Rebsorten nennen und sagen, was jede beiträgt"
 ]
 }
 },
@@ -2439,6 +4419,24 @@
 "Nævne de klassiske spanske og toscanske vine fra hver drue",
 "Forklare, hvorfor Sangiovese passer så godt til tomat"
 ]
+},
+"es": {
+"t": "Tempranillo y Sangiovese: las grandes tintas de España e Italia",
+"sum": "La Tempranillo, la tinta emblemática de España, da fruta roja más vainilla y cuero gracias a la barrica y al tiempo; la Sangiovese de Italia da guinda, hierbas y una acidez hecha para el tomate.",
+"out": [
+"Distinguir la Tempranillo de la Sangiovese por su sabor",
+"Nombrar los vinos clásicos españoles y toscanos de cada uva",
+"Explicar por qué la Sangiovese va tan bien con el tomate"
+]
+},
+"de": {
+"t": "Tempranillo und Sangiovese: die roten Stars Spaniens und Italiens",
+"sum": "Tempranillo, Spaniens rote Vorzeigesorte, bringt rote Frucht plus Vanille und Leder durch Eichenfass und Reife; Italiens Sangiovese bringt Sauerkirsche, Kräuter und eine frische Säure, wie gemacht für Tomaten.",
+"out": [
+"Tempranillo und Sangiovese am Geschmack unterscheiden",
+"Die klassischen spanischen und toskanischen Weine jeder Rebsorte nennen",
+"Erklären, warum Sangiovese so gut zu Tomaten passt"
+]
 }
 },
 {
@@ -2460,6 +4458,24 @@
 "Beskrive, hvad moden og fyldig betyder i en rødvin",
 "Forbinde Malbec, Zinfandel og Carménère med deres hjem",
 "Forklare, hvorfor disse rødvine passer til grillmad og burgere"
+]
+},
+"es": {
+"t": "Malbec, Zinfandel, Carménère: tintos maduros para la barbacoa",
+"sum": "Malbec, Zinfandel y Carménère son tintos maduros, de fruta negra y con mucho cuerpo, jugosos pero secos, y compañeros naturales de la barbacoa y las hamburguesas.",
+"out": [
+"Describir qué significan maduro y con mucho cuerpo en un tinto",
+"Relacionar Malbec, Zinfandel y Carménère con su lugar de origen",
+"Explicar por qué estos tintos van bien con la barbacoa y las hamburguesas"
+]
+},
+"de": {
+"t": "Malbec, Zinfandel, Carménère: reife Rote für den Grill",
+"sum": "Malbec, Zinfandel und Carménère sind reife, vollmundige Rotweine mit dunkler Frucht. Sie schmecken saftig und sind trotzdem trocken, und zu Grillgerichten und Burgern passen sie wie von selbst.",
+"out": [
+"Beschreiben, was reif und vollmundig bei einem Rotwein bedeuten",
+"Malbec, Zinfandel und Carménère ihrer Heimat zuordnen",
+"Erklären, warum diese Rotweine zu Grillgerichten und Burgern passen"
 ]
 }
 },
@@ -2483,6 +4499,24 @@
 "Genkende en cru fra Beaujolais som Morgon på vinkortet",
 "Vælge og køle en let rødvin til picnic eller fisk"
 ]
+},
+"es": {
+"t": "Tintos ligeros y jugosos: la Gamay y sus amigas",
+"sum": "Gamay, Cabernet Franc del Loira, Barbera, Zweigelt y Dolcetto: tintos frescos y con poco tanino que agradecen un poco de frío y van genial con un pícnic, unos embutidos o pescado.",
+"out": [
+"Explicar qué hace que un tinto sea ligero y jugoso",
+"Reconocer en la carta un cru de Beaujolais como Morgon",
+"Elegir y enfriar un tinto ligero para pícnic o pescado"
+]
+},
+"de": {
+"t": "Leichte, saftige Rotweine: Gamay und Freunde",
+"sum": "Gamay, Cabernet Franc von der Loire, Barbera, Zweigelt und Dolcetto: frische Rotweine mit wenig Tannin, die leicht gekühlt glänzen und zu Picknick, Aufschnitt und Fisch passen.",
+"out": [
+"Erklären, was einen Rotwein leicht und saftig macht",
+"Einen Beaujolais-Cru wie Morgon auf der Weinkarte erkennen",
+"Einen leichten Rotwein für Picknick oder Fisch auswählen und kühlen"
+]
 }
 },
 {
@@ -2504,6 +4538,24 @@
 "Nævne seks røde druer med karakter og deres hjem",
 "Skelne de faste rødvine med meget tannin fra Mencía",
 "Forklare, hvad rødkødet og krydsning betyder"
+]
+},
+"es": {
+"t": "Tintas que vale la pena descubrir: seis uvas, seis tierras",
+"sum": "Seis uvas tintas menos famosas, de la Nebbiolo, pálida pero que seca la boca, a la Saperavi de pulpa roja, cada una con su tierra y un estilo que puedes aprender a reconocer.",
+"out": [
+"Nombrar seis uvas tintas con carácter y su tierra de origen",
+"Distinguir los tintos firmes que secan la boca de la Mencía, más amable",
+"Explicar qué significan de pulpa roja y cruce"
+]
+},
+"de": {
+"t": "Rote Rebsorten zum Entdecken: sechs Rote mit Heimat",
+"sum": "Sechs weniger bekannte Rote, vom blassen, aber trocknenden Nebbiolo bis zum rotfleischigen Saperavi, jeder mit einer klaren Heimat und einem Stil, den du erkennen lernen kannst.",
+"out": [
+"Sechs charaktervolle rote Rebsorten und ihre Heimat nennen",
+"Feste, trocknende Rote vom sanfteren Mencía unterscheiden",
+"Erklären, was rotfleischig und Kreuzung bedeuten"
 ]
 }
 },
@@ -2527,6 +4579,24 @@
 "Sætte vintyper i rækkefølge fra koldest til varmest",
 "Bruge køleskab og spand til at servere vin bedre"
 ]
+},
+"es": {
+"t": "Cómo la temperatura cambia un vino",
+"sum": "La temperatura de servicio sube o baja los aromas y el sabor de un vino, así que enfriar los blancos y refrescar un poco los tintos ayuda a que cada uno muestre lo mejor de sí.",
+"out": [
+"Explicar cómo el frío y el calor cambian el sabor de un vino",
+"Ordenar los estilos de vino del servicio más frío al más templado",
+"Usar la nevera y una cubitera para servir mejor el vino"
+]
+},
+"de": {
+"t": "Wie die Temperatur einen Wein verändert",
+"sum": "Die Serviertemperatur dreht die Aromen und den Geschmack eines Weins lauter oder leiser. Gekühlte Weißweine und leicht gekühlte Rotweine zeigen sich deshalb von ihrer besten Seite.",
+"out": [
+"Erklären, wie Kälte und Wärme den Geschmack eines Weins verändern",
+"Weinstile von der kältesten bis zur wärmsten Serviertemperatur ordnen",
+"Mit Kühlschrank und Kübel Wein besser servieren"
+]
 }
 },
 {
@@ -2548,6 +4618,24 @@
 "Forklare, hvordan glassets form ændrer det, du smager",
 "Finde det rette glas til rødvin, hvidvin og bobler",
 "Vælge de to glas, der klarer næsten al vin"
+]
+},
+"es": {
+"t": "Por qué importa la forma de la copa, y las copas que necesitas",
+"sum": "El cáliz y el borde de una copa guían cómo llegan los olores del vino a tu nariz: por eso importa la forma y por eso dos buenas copas cubren casi cualquier vino.",
+"out": [
+"Explicar cómo la forma de la copa cambia lo que saboreas",
+"Relacionar tintos, blancos y espumosos con la copa adecuada",
+"Elegir las dos copas que cubren casi cualquier vino"
+]
+},
+"de": {
+"t": "Warum die Glasform zählt, und welche Gläser du brauchst",
+"sum": "Kelch und Rand eines Glases steuern, wie die Gerüche eines Weins deine Nase erreichen. Deshalb zählt die Form, und deshalb decken zwei gute Gläser fast jeden Wein ab.",
+"out": [
+"Erklären, wie die Glasform verändert, was du schmeckst",
+"Rot-, Weiß- und Schaumweinen das richtige Glas zuordnen",
+"Die zwei Gläser wählen, die fast jeden Wein abdecken"
 ]
 }
 },
@@ -2571,6 +4659,24 @@
 "Forklare, hvorfor tom plads i glasset hjælper",
 "Sætte flere vine i rækkefølge fra mild til kraftig"
 ]
+},
+"es": {
+"t": "Cuánto servir y en qué orden",
+"sum": "Sirve más o menos un tercio de copa (unos 150 ml) para que el vino tenga sitio para girar, y si catas varios, ve de los más suaves a los más intensos para que ninguno quede eclipsado.",
+"out": [
+"Servir unos 150 ml, más o menos un tercio de copa",
+"Explicar por qué ayuda el espacio vacío en la copa",
+"Ordenar varios vinos de lo suave a lo intenso"
+]
+},
+"de": {
+"t": "Wie viel du einschenkst und in welcher Reihenfolge",
+"sum": "Schenk etwa ein Drittel Glas ein (rund 150 ml), damit der Wein Platz zum Schwenken hat. Probierst du mehrere Weine, geh von zart zu kräftig, damit keiner untergeht.",
+"out": [
+"Etwa 150 ml einschenken, rund ein Drittel Glas",
+"Erklären, warum leerer Raum im Glas hilft",
+"Mehrere Weine von zart zu kräftig ordnen"
+]
 }
 },
 {
@@ -2592,6 +4698,24 @@
 "Åbne et skruelåg og en prop roligt og pænt",
 "Redde en prop, der smuldrer eller knækker",
 "Åbne mousserende vin sikkert, med et suk, ikke et knald"
+]
+},
+"es": {
+"t": "Abrir botellas: corchos, tapones de rosca y burbujas",
+"sum": "Más vale pulso firme que fuerza: gira la botella si es de rosca, saca el corcho en dos tiempos tranquilos, rescata uno que se desmenuza y deja salir las burbujas con un suspiro.",
+"out": [
+"Abrir un tapón de rosca y un corcho con calma y limpieza",
+"Rescatar con la herramienta adecuada un corcho que se desmenuza o se rompe",
+"Abrir un espumoso con seguridad, con un suspiro y no un taponazo"
+]
+},
+"de": {
+"t": "Flaschen öffnen: Korken, Schraubverschluss und Prickelndes",
+"sum": "Ruhige Hände schlagen Kraft: Beim Schraubverschluss drehst du die Flasche, einen Korken ziehst du in zwei ruhigen Stufen, einen bröselnden rettest du, und Prickelndes lässt du leise seufzend heraus.",
+"out": [
+"Schraubverschluss und Korken ruhig und sauber öffnen",
+"Einen bröselnden oder abgebrochenen Korken mit dem richtigen Werkzeug retten",
+"Schaumwein sicher öffnen, mit Seufzen statt Knall"
 ]
 }
 },
@@ -2615,6 +4739,24 @@
 "Hælde en gammel rødvin blidt fra bundfaldet",
 "Kende de vine, der slet ikke skal dekanteres"
 ]
+},
+"es": {
+"t": "Decantar: por qué, cuándo y cómo hacerlo",
+"sum": "Decantar es pasar el vino a otro recipiente por una de dos razones: darle aire a un tinto joven y áspero para que se suavice, o dejar atrás los posos de un tinto viejo.",
+"out": [
+"Suavizar un tinto joven y áspero vertiéndolo con brío",
+"Verter con cuidado un tinto viejo y dejar atrás el sedimento",
+"Reconocer los vinos que no necesitan decantarse"
+]
+},
+"de": {
+"t": "Dekantieren: warum, wann und wie",
+"sum": "Dekantieren heißt, Wein aus einem von zwei Gründen in ein anderes Gefäß umzugießen: damit ein junger, herber Rotwein durch Luft weicher wird oder um den körnigen Bodensatz eines alten Rotweins zurückzulassen.",
+"out": [
+"Einen herben jungen Rotwein durch schwungvolles Umgießen weicher machen",
+"Einen alten Rotwein behutsam vom Depot abgießen",
+"Weine erkennen, die kein Dekantieren brauchen"
+]
 }
 },
 {
@@ -2636,6 +4778,24 @@
 "Holde en åbnet stille vin god i flere dage",
 "Forklare, hvorfor luft slider en åbnet vin ned",
 "Kende skrøbelige vine og holde på boblerne"
+]
+},
+"es": {
+"t": "Cómo mantener fresca una botella abierta durante días",
+"sum": "Por qué el aire va cansando poco a poco un vino abierto, cómo el corcho y la nevera te dan de 3 a 5 días, qué vinos se apagan antes y cómo conservar las burbujas.",
+"out": [
+"Conservar un vino tranquilo abierto durante días",
+"Explicar por qué el aire desgasta un vino abierto",
+"Reconocer los vinos frágiles y conservar las burbujas del espumoso"
+]
+},
+"de": {
+"t": "Eine geöffnete Flasche tagelang frisch halten",
+"sum": "Warum Luft einen geöffneten Wein langsam müde macht, wie Korken und Kühlschrank dir 3 bis 5 Tage schenken, welche Weine am schnellsten abbauen und wie Schaumwein seine Kohlensäure behält.",
+"out": [
+"Einen geöffneten stillen Wein tagelang gut halten",
+"Erklären, warum Luft einen geöffneten Wein abbaut",
+"Empfindliche Weine erkennen und die Kohlensäure im Schaumwein halten"
 ]
 }
 },
@@ -2659,6 +4819,24 @@
 "Vælge et godt sted og en god stilling til flaskerne",
 "Kende en hverdagsflaske fra en, der er værd at gemme"
 ]
+},
+"es": {
+"t": "Conservar el vino en casa: fresco, oscuro, quieto y pronto",
+"sum": "Por qué el vino teme el calor, los cambios de temperatura, la luz y las sacudidas, dónde guardar las botellas en casa, por qué las de corcho van tumbadas y por qué casi todo el vino es para abrirlo pronto.",
+"out": [
+"Nombrar los cuatro enemigos del vino en casa",
+"Elegir un buen sitio y una buena posición para tus botellas",
+"Distinguir una botella de diario de una que vale la pena guardar"
+]
+},
+"de": {
+"t": "Wein zu Hause lagern: kühl, dunkel, ruhig und bald trinken",
+"sum": "Warum Wein Wärme, Schwankungen, Licht und Erschütterungen fürchtet, wo du Flaschen zu Hause lagerst, warum Korken liegen sollten und warum du die meisten Weine besser bald öffnest.",
+"out": [
+"Die vier Feinde des Weins zu Hause nennen",
+"Einen guten Platz und die richtige Lage für Flaschen wählen",
+"Eine Alltagsflasche von einer unterscheiden, die sich aufzuheben lohnt"
+]
 }
 },
 {
@@ -2680,6 +4858,24 @@
 "Forklare, hvordan Sydafrika forener Den Gamle og Den Nye Verden",
 "Beskrive, hvordan to have og en vind former Kapområdet",
 "Nævne Sydafrikas mest plantede drue og landets egen røde drue"
+]
+},
+"es": {
+"t": "Sudáfrica de un vistazo: el Viejo Mundo se encuentra con el Nuevo",
+"sum": "Vino del Cabo desde 1659: dos océanos y un viento llamado Cape Doctor, la Chenin Blanc y la Pinotage, y cómo los años de la KWV dieron paso al auge tras 1994.",
+"out": [
+"Explicar cómo Sudáfrica combina el Viejo y el Nuevo Mundo",
+"Describir cómo dos océanos y un viento moldean el Cabo",
+"Nombrar la uva más plantada de Sudáfrica y su tinta propia"
+]
+},
+"de": {
+"t": "Südafrika auf einen Blick: Alte Welt trifft Neue Welt",
+"sum": "Kapwein seit 1659: zwei Ozeane und ein Wind namens Cape Doctor, Chenin Blanc und Pinotage, und wie die Jahre der KWV dem Boom nach 1994 wichen.",
+"out": [
+"Erklären, wie Südafrika Alte und Neue Welt verbindet",
+"Beschreiben, wie zwei Ozeane und ein Wind das Kap prägen",
+"Südafrikas meistangebaute Rebsorte und seine eigene rote nennen"
 ]
 }
 },
@@ -2703,6 +4899,24 @@
 "Beskrive Chenins fire stilarter, og hvorfor gamle vinstokke betyder noget",
 "Forbinde Sydafrikas vigtigste røde druer med deres stilarter"
 ]
+},
+"es": {
+"t": "Las uvas de Sudáfrica: Chenin, Pinotage y más",
+"sum": "La Chenin Blanc, antes llamada Steen, es la uva más plantada de Sudáfrica y la Pinotage su tinta propia, con la Cabernet Sauvignon, la Shiraz y la Cinsault de viñas viejas detrás.",
+"out": [
+"Explicar por qué la Steen y la Chenin Blanc son la misma uva",
+"Describir los cuatro estilos de la Chenin y por qué importan las viñas viejas",
+"Relacionar las principales tintas de Sudáfrica con sus estilos"
+]
+},
+"de": {
+"t": "Die Rebsorten Südafrikas: Chenin, Pinotage und mehr",
+"sum": "Chenin Blanc, früher Steen genannt, ist Südafrikas meistangebaute Rebsorte und Pinotage seine eigene rote, dazu kommen Cabernet Sauvignon, Shiraz und Cinsault von alten Reben.",
+"out": [
+"Erklären, warum Steen und Chenin Blanc dieselbe Rebsorte sind",
+"Die vier Stile des Chenin beschreiben und erklären, warum alte Reben zählen",
+"Südafrikas wichtigste rote Rebsorten ihren Stilen zuordnen"
+]
 }
 },
 {
@@ -2724,6 +4938,24 @@
 "Forklare, hvordan bjerge, jordbund og False Bay former Stellenbosch",
 "Beskrive Cabernet fra Stellenbosch og en blanding i Bordeaux-stil",
 "Kende forskel på Paarl, Franschhoek og Constantia"
+]
+},
+"es": {
+"t": "Stellenbosch y Paarl: el corazón clásico del Cabo",
+"sum": "Montañas, suelos variados y las brisas de False Bay hacen de Stellenbosch tierra de Cabernet, mientras el cálido Paarl, el Franschhoek hugonote y la fresca Constantia completan el cuadro.",
+"out": [
+"Explicar cómo las montañas, los suelos y False Bay moldean Stellenbosch",
+"Describir el Cabernet de Stellenbosch y un coupage al estilo de Burdeos",
+"Distinguir Paarl, Franschhoek y Constantia"
+]
+},
+"de": {
+"t": "Stellenbosch und Paarl: das klassische Herz des Kaps",
+"sum": "Berge, vielfältige Böden und Brisen aus der False Bay machen Stellenbosch zum Cabernet-Land, während das wärmere Paarl, das Hugenottental Franschhoek und das kühle Constantia das Bild abrunden.",
+"out": [
+"Erklären, wie Berge, Böden und die False Bay Stellenbosch prägen",
+"Cabernet aus Stellenbosch und eine Cuvée im Bordeaux-Stil beschreiben",
+"Paarl, Franschhoek und Constantia unterscheiden"
 ]
 }
 },
@@ -2747,6 +4979,24 @@
 "Beskrive den nye bølge og seglet for gamle vinmarker",
 "Nævne de kølige kystområder og deres druer"
 ]
+},
+"es": {
+"t": "Swartland y la nueva ola: viñas viejas, costas frescas",
+"sum": "Cómo las viñas viejas de secano de Swartland impulsaron una nueva ola de vinos más frescos, el sello que certifica los viñedos viejos y las costas frescas de Elgin y Hemel-en-Aarde.",
+"out": [
+"Explicar por qué importan las viñas viejas de secano de Swartland",
+"Describir la nueva ola y el sello de viñedos históricos",
+"Nombrar las zonas costeras frescas y sus uvas"
+]
+},
+"de": {
+"t": "Swartland und die neue Welle: alte Reben, kühle Küsten",
+"sum": "Wie die alten Reben des Swartland im Trockenanbau eine neue Welle frischerer Weine auslösten, welches Siegel alte Weinberge zertifiziert und was die kühlen Küsten von Elgin und Hemel-en-Aarde ausmacht.",
+"out": [
+"Erklären, warum die alten Reben des Swartland im Trockenanbau wichtig sind",
+"Die neue Welle und das Siegel für alte Weinberge beschreiben",
+"Die kühlen Küstengebiete und ihre Rebsorten nennen"
+]
 }
 },
 {
@@ -2768,6 +5018,24 @@
 "Forklare, hvad Wine of Origin-seglet kontrollerer",
 "Læse et stednavn som en adresse, ikke som en karakter",
 "Bruge reglerne om 100 og 85 % på etiketter"
+]
+},
+"es": {
+"t": "Leer una etiqueta sudafricana: el sello numerado",
+"sum": "Un sello numerado respalda el lugar, la uva y la añada de una etiqueta sudafricana. Indicar un lugar exige el 100 % de las uvas; la uva y la añada, el 85 %.",
+"out": [
+"Explicar qué comprueba el sello Wine of Origin",
+"Leer un nombre de lugar como una dirección, no como una categoría",
+"Aplicar las reglas del 100 y el 85 % en etiquetas"
+]
+},
+"de": {
+"t": "Ein südafrikanisches Etikett lesen: das nummerierte Siegel",
+"sum": "Ein nummeriertes Siegel bürgt für Herkunft, Rebsorte und Jahrgang auf einem südafrikanischen Etikett. Eine genannte Herkunft heißt 100 % der Trauben, Rebsorte und Jahrgang brauchen 85 %.",
+"out": [
+"Erklären, was das Wine-of-Origin-Siegel prüft",
+"Einen Herkunftsnamen als Adresse lesen, nicht als Qualitätsstufe",
+"Die 100- und 85-%-Regeln auf Etiketten anwenden"
 ]
 }
 },
@@ -2791,6 +5059,24 @@
 "Kende forskel på kaffe-Pinotage og Pinotage i frugtstil",
 "Planlægge en smagning fra Kapområdet og en flaske til braai"
 ]
+},
+"es": {
+"t": "Elegir vino sudafricano: Chenin, Pinotage y el Cabo",
+"sum": "Una guía del Cabo para la tienda y el restaurante: qué Chenin y qué Pinotage elegir, qué lugar da qué sabor, una primera cata y qué servir en un braai.",
+"out": [
+"Elegir un estilo de Chenin Blanc por las palabras de su etiqueta",
+"Distinguir el Pinotage café del Pinotage afrutado",
+"Planear una cata del Cabo y una botella para un braai"
+]
+},
+"de": {
+"t": "Südafrikanischen Wein wählen: Chenin, Pinotage und das Kap",
+"sum": "Ein Kap-Führer für Weinregal und Restaurant: welcher Chenin und welcher Pinotage, welcher Ort für welchen Geschmack, eine erste Verkostung und was zum Braai ins Glas kommt.",
+"out": [
+"Einen Chenin-Blanc-Stil anhand der Etikettenwörter wählen",
+"Coffee Pinotage von fruchtbetontem Pinotage unterscheiden",
+"Eine Kap-Verkostung und eine Flasche zum Braai planen"
+]
 }
 },
 {
@@ -2812,6 +5098,24 @@
 "Nævne de tre kendetegn ved spansk vin",
 "Beskrive Spaniens vejr, fra det grønne nordvest til højsletten",
 "Forklare, hvorfor mange spanske rødvine er klar fra start"
+]
+},
+"es": {
+"t": "España de un vistazo: sol, viñas viejas y paciencia",
+"sum": "Por qué España tiene más viñedo que nadie pero no hace más vino: sol intenso, viñas viejas y bajas, una meseta alta de noches frescas y tintos que esperan en la bodega hasta estar listos.",
+"out": [
+"Nombrar los tres sellos del vino español",
+"Describir los climas de España, del noroeste verde a la Meseta",
+"Explicar por qué muchos tintos españoles salen ya listos para beber"
+]
+},
+"de": {
+"t": "Spanien auf einen Blick: Sonne, alte Reben und Geduld",
+"sum": "Warum Spanien die größte Rebfläche hat, aber nicht den meisten Wein: kräftige Sonne, alte niedrige Reben, eine Hochebene mit kühlen Nächten und Rotweine, die im Weingut warten, bis sie trinkreif sind.",
+"out": [
+"Die drei Markenzeichen spanischen Weins nennen",
+"Spaniens Klimazonen beschreiben, vom grünen Nordwesten bis zur Hochebene",
+"Erklären, warum viele spanische Rotweine schon beim Verkauf trinkreif sind"
 ]
 }
 },
@@ -2835,6 +5139,24 @@
 "Sætte hver drue sammen med det område, den kommer fra",
 "Forklare, hvordan tyndt eller tykt skind ændrer en rødvin"
 ]
+},
+"es": {
+"t": "Las uvas de España: cinco estrellas locales y su tierra",
+"sum": "La Tempranillo lidera los tintos de España, y la Garnacha, la Monastrell, la Albariño y la Verdejo tienen cada una su región y un sabor claro que el lugar ayuda a explicar.",
+"out": [
+"Nombrar las cinco uvas estrella de España y cómo sabe cada una",
+"Relacionar cada uva con la región que es su tierra",
+"Explicar cómo un hollejo fino o grueso cambia un tinto"
+]
+},
+"de": {
+"t": "Spaniens Rebsorten: fünf lokale Stars und ihre Heimat",
+"sum": "Tempranillo führt Spaniens Rotweine an, und Garnacha, Monastrell, Albariño und Verdejo haben jeweils eine Heimatregion und einen klaren Geschmack, den der Ort erklären hilft.",
+"out": [
+"Spaniens fünf Star-Rebsorten nennen und wie jede schmeckt",
+"Jede Rebsorte ihrer Heimatregion zuordnen",
+"Erklären, wie dünne oder dicke Schalen einen Rotwein verändern"
+]
 }
 },
 {
@@ -2856,6 +5178,24 @@
 "Placere Riojas tre områder efter vejr og stil",
 "Nævne druerne i rød Rioja og hvad de giver",
 "Kende gammeldags og moderne Rioja fra hinanden"
+]
+},
+"es": {
+"t": "Rioja: el gran tinto clásico de España",
+"sum": "Rioja es el tinto clásico de España: una mezcla de uvas encabezada por la Tempranillo, de tres zonas, criada en roble a la antigua o a la moderna, con etiquetas que dicen cuánto tiempo.",
+"out": [
+"Situar las tres subzonas de Rioja por clima y estilo",
+"Nombrar las uvas del Rioja tinto y su papel",
+"Distinguir en la copa el Rioja tradicional del moderno"
+]
+},
+"de": {
+"t": "Rioja: Spaniens klassischer Rotwein",
+"sum": "Rioja ist Spaniens klassischer Rotwein: eine Mischung von Rebsorten mit Tempranillo an der Spitze, aus drei Gebieten, auf alte oder neue Art im Eichenfass gereift, mit Etiketten, die sagen, wie lange.",
+"out": [
+"Riojas drei Unterzonen nach Klima und Stil einordnen",
+"Die Rebsorten im roten Rioja und ihre Aufgaben nennen",
+"Traditionellen von modernem Rioja im Glas unterscheiden"
 ]
 }
 },
@@ -2879,6 +5219,24 @@
 "Finde området for Tinto Fino, Tinta de Toro og Verdejo",
 "Kende Ribera, Toro og Rueda fra hinanden på stilen"
 ]
+},
+"es": {
+"t": "El valle del Duero: Ribera, Toro y Rueda",
+"sum": "Un río, tres regiones: tintos de Tempranillo potentes y de altura en Ribera del Duero y Toro, y blancos frescos de Verdejo en Rueda.",
+"out": [
+"Explicar cómo la altura marca los tintos de Ribera del Duero",
+"Relacionar Tinto Fino, Tinta de Toro y Verdejo con su región",
+"Distinguir Ribera, Toro y Rueda por su estilo"
+]
+},
+"de": {
+"t": "Das Duero-Tal: Ribera, Toro und Rueda",
+"sum": "Ein Fluss, drei Regionen: kraftvolle Tempranillo-Rotweine aus der Höhe von Ribera del Duero und aus Toro sowie frische, knackige Verdejo-Weißweine aus Rueda.",
+"out": [
+"Erklären, wie die Höhe die Rotweine von Ribera del Duero prägt",
+"Tinto Fino, Tinta de Toro und Verdejo ihren Regionen zuordnen",
+"Ribera, Toro und Rueda am Stil unterscheiden"
+]
 }
 },
 {
@@ -2900,6 +5258,24 @@
 "Forklare Cavas metode, og hvorfor druerne er hvide",
 "Kende Cavas trin og læse proppen",
 "Beskrive Priorats skiferjord og den rødvin, den giver"
+]
+},
+"es": {
+"t": "Cataluña: burbujas de Cava y fuerza del Priorat",
+"sum": "Cómo elabora Cataluña el Cava, el vino con burbujas más conocido de España, cómo lo clasifica el tiempo que reposa sobre levaduras muertas y por qué las cepas viejas del Priorat sobre pizarra negra dan tintos tan densos.",
+"out": [
+"Explicar el método del Cava y por qué sus uvas son blancas",
+"Ordenar los niveles de crianza del Cava y leer su corcho",
+"Describir la pizarra del Priorat y los tintos que da"
+]
+},
+"de": {
+"t": "Katalonien: prickelnder Cava und kraftvolles Priorat",
+"sum": "Wie Katalonien Cava macht, Spaniens bekanntesten Wein mit Bläschen, wie die Zeit auf abgestorbener Hefe ihn einstuft und warum die alten Reben des Priorat auf schwarzem Schiefer so dichte Rotweine ergeben.",
+"out": [
+"Die Cava-Methode erklären und warum seine Trauben weiß sind",
+"Die Altersstufen des Cava ordnen und seinen Korken lesen",
+"Den Schieferboden des Priorat und seine Rotweine beschreiben"
 ]
 }
 },
@@ -2923,6 +5299,24 @@
 "Placere sherrytrekanten og dens hvide jord, albariza",
 "Kende Fino, Manzanilla, Amontillado og Oloroso fra hinanden"
 ]
+},
+"es": {
+"t": "El jerez y el sur: flor, aire y solera",
+"sum": "El jerez nace en el cálido sur de España y casi todo se hace más fuerte con aguardiente de uva. Sus estilos clásicos son secos, y una capa de levadura llamada velo de flor separa el Fino pálido del Oloroso oscuro.",
+"out": [
+"Explicar el vino generoso y por qué casi ningún jerez tiene añada",
+"Situar el triángulo del jerez y su albariza blanca",
+"Distinguir Fino, Manzanilla, Amontillado y Oloroso por la flor"
+]
+},
+"de": {
+"t": "Sherry und der Süden: Flor, Luft und Solera",
+"sum": "Sherry kommt aus dem heißen Süden Spaniens und wird meist mit Traubenbrand stärker gemacht. Seine klassischen Stile sind trocken, und eine Hefeschicht namens Flor trennt hellen Fino von dunklem Oloroso.",
+"out": [
+"Likörwein erklären und warum der meiste Sherry keinen Jahrgang hat",
+"Das Sherry-Dreieck und seinen kreidigen Albariza-Boden verorten",
+"Fino, Manzanilla, Amontillado und Oloroso anhand der Flor unterscheiden"
+]
 }
 },
 {
@@ -2944,6 +5338,24 @@
 "Placere Vino de Pago, DOCa og DO på Spaniens stige",
 "Forstå Crianza, Reserva, Gran Reserva og Roble",
 "Læse en spansk etiket, for og bag, linje for linje"
+]
+},
+"es": {
+"t": "Cómo leer una etiqueta española: niveles, crianza y claves",
+"sum": "Lee una botella española de verdad: el nivel de calidad, del pago al Vino de España, los términos de crianza y el Roble, palabras clave, términos catalanes y la contraetiqueta numerada.",
+"out": [
+"Situar el Vino de Pago, la DOCa y la DO en la escalera",
+"Leer Crianza, Reserva, Gran Reserva y Roble como pistas de envejecimiento",
+"Descifrar línea a línea etiqueta y contraetiqueta"
+]
+},
+"de": {
+"t": "Spanische Etiketten lesen: Stufen, Reifezeit, Schlüsselwörter",
+"sum": "Lies eine echte spanische Flasche: die Qualitätsstufe vom Einzelgut bis Vino de España, die Altersstufen und Roble, Schlüsselwörter, katalanische Begriffe und das nummerierte Rückenetikett.",
+"out": [
+"Vino de Pago, DOCa und DO auf Spaniens Leiter einordnen",
+"Crianza, Reserva, Gran Reserva und Roble als Hinweise auf die Reifezeit lesen",
+"Ein spanisches Vorder- und Rückenetikett Zeile für Zeile entschlüsseln"
 ]
 }
 },
@@ -2967,6 +5379,24 @@
 "Sammenligne Rioja, Ribera og Priorat side om side",
 "Finde gode køb og vælge spansk vin til maden"
 ]
+},
+"es": {
+"t": "España: Rioja, Ribera y mucho más",
+"sum": "Un recorrido por España para comprar y pedir bien: a qué sabe cada término de crianza, Rioja y Ribera cara a cara, buenas compras, blancos, burbujas, jerez y comida.",
+"out": [
+"Elegir un tinto español por su término de crianza y el momento",
+"Comparar Rioja, Ribera y Priorat cara a cara",
+"Encontrar buenas compras y maridar vinos españoles con la comida"
+]
+},
+"de": {
+"t": "Spanien: Rioja, Ribera und mehr",
+"sum": "Spanien für Einkauf und Restaurant: wie jede Altersstufe schmeckt, Rioja und Ribera im Vergleich, gute Preise, Weißweine, Schaumwein, Sherry und Essen.",
+"out": [
+"Einen spanischen Rotwein nach Altersstufe und Stimmung wählen",
+"Rioja, Ribera und Priorat direkt vergleichen",
+"Preiswerte Flaschen finden und spanische Weine zum Essen wählen"
+]
 }
 },
 {
@@ -2988,6 +5418,24 @@
 "Forklare, hvordan sukker, der er tilbage, gør vin sød",
 "Placere en vin på skalaen fra tør til sød",
 "Smage dig frem til sødme i stedet for at dufte"
+]
+},
+"es": {
+"t": "¿Dulce o seco? Cómo notar la diferencia",
+"sum": "El dulzor es el azúcar que deja la levadura. Aprende la escala de seco a dulce, las palabras de la etiqueta y por qué un olor afrutado puede engañar a tu nariz.",
+"out": [
+"Explicar cómo el azúcar que sobra hace que un vino sea dulce",
+"Situar un vino en la escala de seco a dulce",
+"Juzgar el dulzor por el sabor, no por el olor afrutado"
+]
+},
+"de": {
+"t": "Süß oder trocken? So schmeckst du den Unterschied",
+"sum": "Süße ist Zucker, den die Hefe übrig gelassen hat. Lerne die Skala von trocken bis süß, die Etikettbegriffe und warum ein fruchtiger Duft deine Nase täuschen kann.",
+"out": [
+"Erklären, wie Restzucker einen Wein süß macht",
+"Einen Wein auf der Skala von trocken bis süß einordnen",
+"Süße am Geschmack beurteilen, nicht am fruchtigen Duft"
 ]
 }
 },
@@ -3011,6 +5459,24 @@
 "Finde syren ved hjælp af flere tegn, ikke kun ét",
 "Forklare, hvorfor syre gør vin god til mad"
 ]
+},
+"es": {
+"t": "La acidez: por qué se te hace la boca agua",
+"sum": "Cómo reconocer la acidez, ese frescor ácido que te hace la boca agua y mantiene el vino vivo y amigo de la comida, y cómo notarla sin fiarte de una sola pista.",
+"out": [
+"Reconocer la acidez como el frescor ácido del vino que te hace la boca agua",
+"Detectar la acidez con varias pistas, no solo con una",
+"Explicar por qué la acidez hace que el vino vaya bien con la comida"
+]
+},
+"de": {
+"t": "Säure: warum dir das Wasser im Mund zusammenläuft",
+"sum": "Wie du Säure erkennst, die säuerliche Frische, bei der dir das Wasser im Mund zusammenläuft und die Wein lebendig und essensfreundlich hält, und wie du sie spürst, ohne dich auf ein einzelnes Anzeichen zu verlassen.",
+"out": [
+"Säure als die säuerliche Frische im Wein erkennen, bei der dir das Wasser im Mund zusammenläuft",
+"Säure an mehreren Anzeichen erkennen, nicht nur an einem",
+"Erklären, warum Wein dank Säure so gut zum Essen passt"
+]
 }
 },
 {
@@ -3032,6 +5498,24 @@
 "Genkende tannin som en tør fornemmelse i munden",
 "Forklare, hvor tannin kommer fra, og hvorfor rødvin har mere",
 "Vælge mad, der gør en rødvin med meget tannin blødere"
+]
+},
+"es": {
+"t": "El tanino: esa sensación secante del vino tinto",
+"sum": "El tanino es una sensación, no un sabor: de dónde viene esa sensación secante, por qué unas uvas tienen más, cómo valorarlo y cómo lo suavizan el tiempo y la comida.",
+"out": [
+"Reconocer el tanino como una sensación secante en la boca",
+"Explicar de dónde viene el tanino y por qué abunda en tintos",
+"Elegir comida que suavice un tinto con mucho tanino"
+]
+},
+"de": {
+"t": "Tannin: das trocknende Gefühl im Rotwein",
+"sum": "Tannin ist ein Gefühl, kein Geschmack: woher das trocknende Gefühl kommt, warum manche Trauben mehr davon haben, wie du es beurteilst und wie Zeit und Essen es weicher machen.",
+"out": [
+"Tannin als trocknendes Gefühl im Mund erkennen",
+"Erklären, woher Tannin kommt und warum Rote mehr haben",
+"Essen wählen, das einen Roten mit viel Tannin weicher macht"
 ]
 }
 },
@@ -3055,6 +5539,24 @@
 "Nævne de to vigtigste ting, der giver fylde",
 "Mærke forskel på lette og fyldige vine"
 ]
+},
+"es": {
+"t": "El cuerpo: qué significan ligero y con mucho cuerpo",
+"sum": "El cuerpo es el peso y la textura de un vino en la boca, de ligero a con mucho cuerpo. Viene sobre todo del alcohol y de la sustancia propia de la uva, y se siente como pasar de la leche desnatada a la nata.",
+"out": [
+"Explicar qué es el cuerpo con la imagen de la leche",
+"Nombrar las dos cosas principales que aportan cuerpo",
+"Distinguir por la sensación un vino ligero de uno con mucho cuerpo"
+]
+},
+"de": {
+"t": "Körper: Was leicht und vollmundig wirklich bedeuten",
+"sum": "Der Körper ist das Gewicht und die Textur eines Weins im Mund, von leicht bis voll. Er kommt vor allem vom Alkohol und von der eigenen Substanz der Trauben und fühlt sich an wie Magermilch bis Sahne.",
+"out": [
+"Mit dem Milchbild erklären, was Körper bedeutet",
+"Die zwei Hauptfaktoren für den Körper nennen",
+"Leichte und vollmundige Weine am Mundgefühl unterscheiden"
+]
 }
 },
 {
@@ -3076,6 +5578,24 @@
 "Sortere en vins duft i en bred familie",
 "Genkende de dufte, der peger på egetræsfad",
 "Skelne mellem din egen smag og en fejl i vinen"
+]
+},
+"es": {
+"t": "La rueda de aromas: ponerle nombre a lo que hueles",
+"sum": "Ponle nombre al olor de un vino de la forma fácil: elige primero una familia amplia, avanza luego hasta la nota exacta y aprende los pocos olores que indican que un vino tiene un defecto.",
+"out": [
+"Clasificar el olor de un vino en una familia amplia",
+"Detectar las notas que apuntan al roble",
+"Distinguir una impresión personal de un defecto del vino"
+]
+},
+"de": {
+"t": "Das Aromarad: benennen, was du riechst",
+"sum": "Benenne den Duft eines Weins ganz einfach: Wähl zuerst eine grobe Familie, arbeite dich dann nach außen bis zur genauen Note vor und lerne die wenigen Gerüche, die einen Weinfehler verraten.",
+"out": [
+"Den Duft eines Weins einer groben Familie zuordnen",
+"Die Noten erkennen, die auf Eiche hindeuten",
+"Einen persönlichen Eindruck von einem Weinfehler unterscheiden"
 ]
 }
 },
@@ -3099,6 +5619,24 @@
 "Forklare, hvor hver gruppe af dufte kommer fra",
 "Bruge duftene som forsigtige spor til vinens alder"
 ]
+},
+"es": {
+"t": "Primarios, secundarios y terciarios: de dónde vienen los aromas del vino",
+"sum": "Los aromas de un vino llegan en tres capas: de la uva, de la elaboración y del tiempo. Ordénalos y podrás leer su estilo y adivinar su edad.",
+"out": [
+"Clasificar los aromas en primarios, secundarios y terciarios",
+"Explicar de dónde viene cada grupo de aromas",
+"Usar los aromas como pistas prudentes sobre la edad"
+]
+},
+"de": {
+"t": "Primär, sekundär, tertiär: Woher die Düfte im Wein kommen",
+"sum": "Die Düfte eines Weins kommen in drei Schichten: aus der Traube, aus der Weinbereitung und vom Alter. Wer sie sortiert, kann den Stil eines Weins lesen und sein Alter schätzen.",
+"out": [
+"Weindüfte in primär, sekundär und tertiär einteilen",
+"Erklären, woher jede Aromagruppe stammt",
+"Aromen als vorsichtige Hinweise auf das Alter eines Weins nutzen"
+]
 }
 },
 {
@@ -3120,6 +5658,24 @@
 "Skrive en smagsnote i fire dele til enhver vin",
 "Give en vins struktur et niveau fra lav til høj",
 "Mærke alkoholens varme og genkende en spritet vin"
+]
+},
+"es": {
+"t": "Ponlo en palabras: una nota de cata sencilla",
+"sum": "Convierte lo que ves, hueles y notas en una nota corta de cuatro partes: estilo, estructura, dos o tres sabores y un veredicto, con el calor del alcohol incluido.",
+"out": [
+"Escribir una nota de cata de cuatro partes para cualquier vino",
+"Puntuar la estructura de un vino de bajo a alto",
+"Notar el calor del alcohol y saber cuándo un vino es ardiente"
+]
+},
+"de": {
+"t": "In Worte fassen: eine einfache Verkostungsnotiz",
+"sum": "Mach aus dem, was du siehst, riechst und spürst, eine kurze Notiz in vier Teilen: Stil, Struktur, zwei oder drei Aromen und ein Urteil, samt der Wärme des Alkohols.",
+"out": [
+"Für jeden Wein eine Verkostungsnotiz in vier Teilen schreiben",
+"Die Struktur eines Weins von niedrig bis hoch bewerten",
+"Die Wärme des Alkohols bemerken und erkennen, wann ein Wein brandig ist"
 ]
 }
 },
@@ -3143,6 +5699,24 @@
 "Stille en flight op og bygge en duftbank",
 "Skrive ærlige noter, der viser, hvad du kan lide"
 ]
+},
+"es": {
+"t": "Desarrollar tu paladar: cómo aprende a catar cualquiera",
+"sum": "Catar es una habilidad que cualquiera puede desarrollar: práctica atenta comparando vinos, un banco de recuerdos de olores cotidianos y notas sinceras que trazan el mapa de tu gusto.",
+"out": [
+"Explicar por qué un gran paladar se construye y no viene de nacimiento",
+"Montar una tanda comparativa y un banco de olores",
+"Llevar notas sinceras que revelen lo que disfrutas"
+]
+},
+"de": {
+"t": "Den Gaumen schulen: So lernt jeder verkosten",
+"sum": "Verkosten ist eine Fähigkeit, die jeder aufbauen kann: aufmerksames Vergleichen, ein Duftgedächtnis aus dem Alltag und ehrliche Notizen, die deinen Geschmack zeigen.",
+"out": [
+"Erklären, warum ein guter Gaumen trainiert und nicht angeboren ist",
+"Einen Flight und ein Duftgedächtnis aufbauen",
+"Ehrliche Notizen führen, die zeigen, was dir schmeckt"
+]
 }
 },
 {
@@ -3164,6 +5738,24 @@
 "Forklare, hvorfor europæiske vinstokke trivedes i Californien, ikke i øst",
 "Beskrive, hvordan Stillehavet og Cascade-bjergene former vinmarkerne",
 "Læse en etiket med druenavn og forvente en moden vin"
+]
+},
+"es": {
+"t": "Estados Unidos de un vistazo: sol, nombres de uva y mucho sabor",
+"sum": "Por qué las uvas europeas fracasaron en el este húmedo pero triunfaron en la soleada California, cómo la niebla del Pacífico refresca la costa y por qué las etiquetas estadounidenses nombran la uva.",
+"out": [
+"Explicar por qué la vid europea triunfó en California y no en el este",
+"Describir cómo el Pacífico y las Cascadas moldean los viñedos",
+"Leer una etiqueta con nombre de uva y anticipar un estilo maduro"
+]
+},
+"de": {
+"t": "Die USA auf einen Blick: Sonne, Rebsortennamen und viel Geschmack",
+"sum": "Warum europäische Reben im feuchten Osten scheiterten, im sonnigen Kalifornien aber gediehen, wie der Pazifiknebel die Küste kühlt und warum amerikanische Etiketten die Rebsorte nennen.",
+"out": [
+"Erklären, warum europäische Reben in Kalifornien gediehen, nicht im Osten",
+"Beschreiben, wie Pazifik und Kaskadenkette die Weinberge prägen",
+"Ein Etikett mit Rebsortennamen lesen und einen reifen Stil erwarten"
 ]
 }
 },
@@ -3187,6 +5779,24 @@
 "Forklare, hvad der gør en Chardonnay smøragtig eller sprød",
 "Fortælle historien om White Zinfandel og druer med to navne"
 ]
+},
+"es": {
+"t": "Las uvas de Estados Unidos: los nombres clave",
+"sum": "El vino estadounidense suele llevar el nombre de la uva, así que aprende Cabernet, Chardonnay, Pinot Noir y Zinfandel, y la historia del White Zinfandel, y podrás leer gran parte de la estantería.",
+"out": [
+"Describir a qué saben las cuatro uvas clave de Estados Unidos",
+"Explicar qué hace mantecoso o fresco a un Chardonnay",
+"Contar la historia del White Zinfandel y las uvas con dos nombres"
+]
+},
+"de": {
+"t": "Die Rebsorten der USA: Namen, die du kennen solltest",
+"sum": "Amerikanischer Wein trägt meist den Namen der Rebsorte. Lerne Cabernet, Chardonnay, Pinot Noir und Zinfandel kennen, dazu die Geschichte des White Zinfandel, und du kannst einen Großteil des Regals lesen.",
+"out": [
+"Beschreiben, wie Amerikas vier wichtigste Rebsorten schmecken",
+"Erklären, was einen Chardonnay buttrig oder knackig macht",
+"Die Geschichte des White Zinfandel und der Doppelnamen erzählen"
+]
 }
 },
 {
@@ -3208,6 +5818,24 @@
 "Forklare, hvorfor det sydlige Napa er køligere end det nordlige",
 "Beskrive en typisk Cabernet fra Napa og dens smag",
 "Læse Napas AVA'er, der ligger i hinanden, på en etiket"
+]
+},
+"es": {
+"t": "Napa Valley: tierra de Cabernet",
+"sum": "Napa es un valle pequeño y cálido, famoso por su Cabernet Sauvignon maduro y con mucho cuerpo, y el lugar donde crecen sus viñas, del extremo fresco junto a la bahía a las montañas, marca el estilo.",
+"out": [
+"Explicar por qué el sur de Napa es más fresco que el norte",
+"Describir un Cabernet típico de Napa y sus sabores",
+"Leer las AVA anidadas de Napa en una etiqueta"
+]
+},
+"de": {
+"t": "Napa Valley: Cabernet-Land",
+"sum": "Napa ist ein kleines, warmes Tal, berühmt für reifen, vollmundigen Cabernet Sauvignon, und wo seine Reben wachsen, vom kühlen Ende an der Bucht bis in die Berge, prägt den Stil.",
+"out": [
+"Erklären, warum Napas Süden kühler ist als sein Norden",
+"Einen typischen Napa-Cabernet und seine Aromen beschreiben",
+"Napas verschachtelte AVAs auf einem Etikett lesen"
 ]
 }
 },
@@ -3231,6 +5859,24 @@
 "Kende vinene fra Sonoma og Central Coast",
 "Gætte en vins stil ud fra afstanden til havet"
 ]
+},
+"es": {
+"t": "Sonoma y la fresca costa de California",
+"sum": "En la costa de California manda el frío Pacífico: las viñas más cercanas al mar suelen tener un clima más fresco, lo que da Pinot Noir y Chardonnay más frescos.",
+"out": [
+"Explicar cómo el frío Pacífico refresca la costa de California",
+"Relacionar zonas de Sonoma y la Central Coast con sus vinos",
+"Adivinar el estilo de un vino por su distancia al mar"
+]
+},
+"de": {
+"t": "Sonoma und die kühle Küste Kaliforniens",
+"sum": "An Kaliforniens Küste bestimmt der kalte Pazifik den Stil: Reben nahe am Meer stehen meist kühler, das ergibt frischeren Pinot Noir und Chardonnay.",
+"out": [
+"Erklären, wie der kalte Pazifik Kaliforniens Küste kühlt",
+"Gebiete in Sonoma und an der Central Coast ihren Weinen zuordnen",
+"Den Stil eines Weins an seiner Entfernung zum Meer erkennen"
+]
 }
 },
 {
@@ -3252,6 +5898,24 @@
 "Forklare, hvordan Cascade-bjergene giver to delstater forskelligt klima",
 "Forklare, hvorfor Oregons kølige dal passer til Pinot Noir",
 "Koble de vigtigste druer i nordvest til deres områder"
+]
+},
+"es": {
+"t": "Oregón y Washington: una cordillera, dos climas",
+"sum": "Cómo las Cascadas dividen el noroeste: Oregón, fresco y lluvioso, da Pinot Noir; Washington, soleado y seco, cultiva Cabernet, Merlot y Syrah maduros pero frescos.",
+"out": [
+"Explicar cómo las Cascadas dan a dos estados climas distintos",
+"Explicar por qué el valle fresco de Oregón favorece a la Pinot Noir",
+"Relacionar las uvas clave del noroeste con sus lugares"
+]
+},
+"de": {
+"t": "Oregon und Washington: ein Gebirge, zwei Klimas",
+"sum": "Wie die Kaskaden den Nordwesten teilen: Im kühlen, feuchten Oregon wächst Pinot Noir, im sonnigen, trockenen Washington reifer und doch frischer Cabernet, Merlot und Syrah.",
+"out": [
+"Erklären, wie die Kaskaden zwei Staaten unterschiedliches Klima geben",
+"Erklären, warum Oregons kühles Tal zum Pinot Noir passt",
+"Die wichtigsten Rebsorten des Nordwestens ihren Orten zuordnen"
 ]
 }
 },
@@ -3275,6 +5939,24 @@
 "Huske de mindste andele for sted, drue og årgang",
 "Læse sted, drue, årgang og vinhus på en etiket"
 ]
+},
+"es": {
+"t": "Leer una etiqueta estadounidense: lugar, uva, añada",
+"sum": "Cómo leer una botella estadounidense de verdad: por qué la línea del lugar pesa más que la marca, qué promete cada nombre, las normas más estrictas de Oregón y las palabras de las que puedes fiarte.",
+"out": [
+"Distinguir una marca de una denominación",
+"Recordar los mínimos de lugar, uva y añada",
+"Leer lugar, uva, año y elaborador en una etiqueta"
+]
+},
+"de": {
+"t": "Ein US-Etikett lesen: Herkunft, Rebsorte, Jahrgang",
+"sum": "So liest du eine echte amerikanische Flasche: warum die Herkunftszeile mehr zählt als der Markenname, was jeder Name verspricht, Oregons strengere Regeln und die Wörter, auf die du dich verlassen kannst.",
+"out": [
+"Einen Markennamen von der Herkunftszeile unterscheiden",
+"Die Mindestanteile für Herkunft, Rebsorte und Jahrgang kennen",
+"Herkunft, Rebsorte, Jahrgang und Erzeuger auf einem Etikett lesen"
+]
 }
 },
 {
@@ -3296,6 +5978,24 @@
 "Vælge en amerikansk vin ud fra drue og sted",
 "Finde vine fra vestkysten til bøf, laks, karry og grillmad",
 "Lave en indkøbsliste fra forkælelse til hverdag"
+]
+},
+"es": {
+"t": "California y mucho más: qué comprar y por qué",
+"sum": "Una guía de compra del vino estadounidense: elegir por uva y lugar, lo mejor de California, Oregón y Washington, maridajes y una lista de la compra.",
+"out": [
+"Elegir un vino estadounidense por su uva y su lugar",
+"Maridar vinos de la costa oeste con carne, salmón, curry y barbacoa",
+"Planificar una lista de compra estadounidense, del capricho al diario"
+]
+},
+"de": {
+"t": "Kalifornien und mehr: was du kaufen solltest und warum",
+"sum": "Ein Einkaufsführer für US-Wein: nach Rebsorte und Herkunft wählen, die besten Tipps aus Kalifornien, Oregon und Washington, passendes Essen und eine Einkaufsliste.",
+"out": [
+"Einen US-Wein nach Rebsorte und Herkunft auswählen",
+"Weine der Westküste zu Steak, Lachs, Curry und Barbecue kombinieren",
+"Eine amerikanische Einkaufsliste vom Verwöhnwein bis zum Alltagswein planen"
 ]
 }
 },
@@ -3319,6 +6019,24 @@
 "Kende frisk Chablis fra fyldig, smøragtig Chardonnay med fad",
 "Forklare, hvor smør, vanilje og ristet brød kommer fra"
 ]
+},
+"es": {
+"t": "Chardonnay: una uva, muchos estilos",
+"sum": "Por qué una uva neutra da el Chablis fresco, el Meursault amplio con barrica, el californiano mantecoso y el Champagne: cómo el clima y la elaboración moldean la Chardonnay.",
+"out": [
+"Explicar por qué una uva neutra da tantos estilos",
+"Distinguir un Chablis fresco de un Chardonnay con barrica, amplio y mantecoso",
+"Explicar de dónde vienen la mantequilla, la vainilla y el tostado"
+]
+},
+"de": {
+"t": "Chardonnay: eine Rebsorte, viele Stile",
+"sum": "Warum eine neutrale Rebsorte knackigen Chablis, üppigen Meursault aus dem Eichenfass, buttrigen Kalifornier und Champagner ergibt: wie Klima und Kellerarbeit Chardonnay prägen.",
+"out": [
+"Erklären, warum eine neutrale Rebsorte viele Stile ergibt",
+"Knackigen Chablis von buttrigem Chardonnay aus Eiche unterscheiden",
+"Erklären, woher Butter, Vanille und Röstnoten kommen"
+]
 }
 },
 {
@@ -3340,6 +6058,24 @@
 "Beskrive syren og de klassiske dufte i Sauvignon Blanc",
 "Kende stilene fra Loire, Marlborough og Bordeaux fra hinanden",
 "Vælge mad, der passer til en frisk Sauvignon Blanc"
+]
+},
+"es": {
+"t": "Sauvignon Blanc: fresco, verde y cítrico",
+"sum": "El Sauvignon Blanc es un blanco fresco, con una acidez que te hace salivar e intensos aromas a grosella espinosa, pomelo y hierba recién cortada. Va de maravilla con el queso de cabra, las ensaladas y el marisco.",
+"out": [
+"Describir la acidez y los aromas clásicos del Sauvignon Blanc",
+"Distinguir los estilos del Loira, Marlborough y Burdeos",
+"Elegir comida que vaya bien con un Sauvignon Blanc fresco"
+]
+},
+"de": {
+"t": "Sauvignon Blanc: knackig, grün und zitrusfrisch",
+"sum": "Sauvignon Blanc ist ein knackiger Weißwein mit einer Säure, bei der dir das Wasser im Mund zusammenläuft, und kräftigen Aromen von Stachelbeere, Grapefruit und frisch gemähtem Gras. Er liebt Ziegenkäse, Salate und Meeresfrüchte.",
+"out": [
+"Säure und klassische Aromen von Sauvignon Blanc beschreiben",
+"Die Stile von Loire, Marlborough und Bordeaux unterscheiden",
+"Essen wählen, das zu einem knackigen Sauvignon Blanc passt"
 ]
 }
 },
@@ -3363,6 +6099,24 @@
 "Finde en tør Riesling på en tysk etiket",
 "Vælge en halvtør Riesling til stærk mad"
 ]
+},
+"es": {
+"t": "Riesling: de totalmente seco a dulce, y cómo distinguirlos",
+"sum": "El Riesling es un blanco de acidez alta que se elabora en todos los niveles de dulzor, así que lee la etiqueta: trocken significa seco, mientras que Kabinett y palabras similares describen la madurez.",
+"out": [
+"Describir a qué sabe el Riesling de joven y con la edad",
+"Reconocer un Riesling seco en una etiqueta alemana",
+"Elegir un Riesling semiseco para la comida picante"
+]
+},
+"de": {
+"t": "Riesling: von knochentrocken bis süß, und wie du die Süße erkennst",
+"sum": "Riesling ist ein Weißwein mit hoher Säure, den es in jedem Süßegrad gibt. Lies also das Etikett: Trocken heißt trocken, während Kabinett und ähnliche Begriffe die Reife beschreiben.",
+"out": [
+"Beschreiben, wie Riesling jung und gereift schmeckt",
+"Einen trockenen Riesling am deutschen Etikett erkennen",
+"Einen halbtrockenen Riesling zu scharfem Essen wählen"
+]
 }
 },
 {
@@ -3384,6 +6138,24 @@
 "Forklare, hvad der gør en hvidvin frisk og let",
 "Genkende seks friske hvidvine og vide, hvor de kommer fra",
 "Vælge en frisk hvidvin, der passer til maden"
+]
+},
+"es": {
+"t": "Blancos frescos: las uvas que conviene conocer y cómo elegir uno",
+"sum": "Qué hace que un blanco sea fresco, seis blancos frescos de Italia, Francia, España y Austria, y cómo dejar que la comida elija la botella.",
+"out": [
+"Explicar qué hace que un vino blanco sea fresco y vivo",
+"Reconocer seis blancos frescos y saber de dónde vienen",
+"Elegir un blanco fresco que vaya bien con tu comida"
+]
+},
+"de": {
+"t": "Knackige Weißweine: Rebsorten, die du kennen solltest, und wie du auswählst",
+"sum": "Was einen Weißwein knackig macht, sechs knackige Weiße aus Italien, Frankreich, Spanien und Österreich, und wie das Essen die Flasche wählt.",
+"out": [
+"Erklären, was einen Weißwein knackig und frisch macht",
+"Sechs knackige Weißweine erkennen und wissen, woher sie kommen",
+"Einen knackigen Weißwein passend zum Essen wählen"
 ]
 }
 },
@@ -3407,6 +6179,24 @@
 "Forklare, hvorfor en sød duft ikke betyder sødme",
 "Vælge en aromatisk hvidvin til stærk asiatisk mad"
 ]
+},
+"es": {
+"t": "Blancos aromáticos: perfume en la copa",
+"sum": "Gewürztraminer, Viognier, Moscatel y Torrontés huelen a flores y fruta, pero un aroma dulce no siempre significa un vino dulce.",
+"out": [
+"Reconocer cuatro uvas blancas aromáticas por su olor",
+"Explicar por qué un aroma dulce no significa dulzor",
+"Elegir un blanco aromático para platos asiáticos picantes"
+]
+},
+"de": {
+"t": "Aromatische Weißweine: Parfüm im Glas",
+"sum": "Gewürztraminer, Viognier, Muskateller und Torrontés duften nach Blüten und Frucht, aber ein süßer Duft bedeutet nicht immer einen süßen Wein.",
+"out": [
+"Vier aromatische weiße Rebsorten am Duft erkennen",
+"Erklären, warum ein süßer Duft nicht heißt, dass der Wein süß ist",
+"Einen aromatischen Weißen zu scharfer asiatischer Küche wählen"
+]
 }
 },
 {
@@ -3428,6 +6218,24 @@
 "Koble otte hvide druer til deres hjem",
 "Forklare, hvorfor nogle hvidvine smager syrligt og andre fyldigt",
 "Kende syrlige, friske hvidvine fra fyldige, runde"
+]
+},
+"es": {
+"t": "Ocho uvas blancas que vale la pena descubrir, y sus tierras",
+"sum": "Relaciona cada uva blanca con su tierra: la Chenin Blanc, la Assyrtiko y la Furmint son tensas y frescas, mientras que la Marsanne y la Roussanne son amplias y redondas.",
+"out": [
+"Relacionar ocho uvas blancas con sus regiones de origen",
+"Explicar por qué unos blancos saben tensos y otros amplios",
+"Distinguir los blancos tensos y frescos de los amplios y redondos"
+]
+},
+"de": {
+"t": "Acht weiße Rebsorten zum Entdecken und ihre Heimat",
+"sum": "Verbinde jede weiße Rebsorte mit ihrer Heimat: Chenin Blanc, Assyrtiko und Furmint sind straff und frisch, Marsanne und Roussanne dagegen üppig und rund.",
+"out": [
+"Acht weiße Rebsorten ihren Heimatregionen zuordnen",
+"Erklären, warum manche Weiße straff und andere üppig schmecken",
+"Straffe, frische Weißweine von üppigen, runden unterscheiden"
 ]
 }
 },
@@ -3451,6 +6259,24 @@
 "Tjekke flasken og den første smagsprøve for fejl",
 "Sende en flaske med fejl eller den forkerte høfligt tilbage"
 ]
+},
+"es": {
+"t": "Pide vino en un restaurante con seguridad",
+"sum": "Qué decirle al sumiller, para qué sirve el ritual de la botella y cuándo es justo devolver un vino: si tiene un defecto o no es el que pediste, no solo porque te resulte desconocido.",
+"out": [
+"Pedir ayuda y decir tu presupuesto con seguridad",
+"Comprobar si la botella y la primera prueba tienen defectos",
+"Devolver con educación una botella defectuosa o equivocada"
+]
+},
+"de": {
+"t": "Selbstsicher Wein im Restaurant bestellen",
+"sum": "Was du dem Sommelier sagst, wozu das Ritual mit der Flasche dient und wann ein Wein zu Recht zurückgeht: wenn er fehlerhaft oder falsch ist, nicht bloß ungewohnt.",
+"out": [
+"Um Hilfe bitten und selbstsicher dein Budget nennen",
+"Flasche und ersten Schluck auf Fehler prüfen",
+"Eine fehlerhafte oder falsche Flasche höflich zurückgehen lassen"
+]
 }
 },
 {
@@ -3472,6 +6298,24 @@
 "Tjekke en tvivlsom flaske i fire trin",
 "Skelne fejl, luft kan fjerne, fra fejl, den ikke kan",
 "Genkende røgskade og musesmag i eftersmagen"
+]
+},
+"es": {
+"t": "¿Tiene un defecto este vino? Un control paso a paso en casa",
+"sum": "Una rutina sencilla para una botella sospechosa: mira, huele, prueba y dale aire, más los defectos que el aire corrige, dos defectos que se notan después de tragar y cómo devolver una botella mala.",
+"out": [
+"Hacer un control de cuatro pasos a una botella sospechosa",
+"Separar los defectos que el aire corrige de los que no",
+"Reconocer en el regusto el humo y el gusto a ratón"
+]
+},
+"de": {
+"t": "Hat der Wein einen Fehler? Der Check Schritt für Schritt",
+"sum": "Eine einfache Routine für eine verdächtige Flasche: anschauen, riechen, probieren und Luft geben, dazu die Fehler, die Luft behebt, zwei Fehler, die sich nach dem Schlucken zeigen, und die Rückgabe einer schlechten Flasche.",
+"out": [
+"Eine verdächtige Flasche in vier Schritten prüfen",
+"Fehler danach sortieren, ob Luft sie behebt",
+"Rauchfehlton und Mäuselton im Nachgeschmack erkennen"
 ]
 }
 },
@@ -3495,6 +6339,24 @@
 "Skænke, skåle og sige nej tak til mere med ro",
 "Tage venligt imod en vin, du ikke kan lide"
 ]
+},
+"es": {
+"t": "Etiqueta del vino sin esnobismo",
+"sum": "Por qué brindamos, a quién se sirve primero, cómo decir que no y qué hacer con un vino que no te gusta: los modales del vino son cuidar a la gente, no lucir palabras.",
+"out": [
+"Tener buenos modales con el vino sin palabras rebuscadas",
+"Servir, brindar y rechazar más vino con seguridad",
+"Tratar con amabilidad un vino que no te gusta en casa ajena"
+]
+},
+"de": {
+"t": "Weinknigge ohne Snobismus",
+"sum": "Warum wir anstoßen, wer zuerst eingeschenkt bekommt, wie du Nein sagst und was du mit einem Wein machst, der dir nicht schmeckt: Weinmanieren sind Rücksicht auf Menschen, keine klugen Worte.",
+"out": [
+"Gute Weinmanieren zeigen, ganz ohne hochtrabende Worte",
+"Sicher einschenken, anstoßen und Nachschenken ablehnen",
+"Bei Freunden freundlich mit einem Wein umgehen, der dir nicht schmeckt"
+]
 }
 },
 {
@@ -3516,6 +6378,24 @@
 "Vælge et tema og fire til seks vine",
 "Planlægge smagsprøver og dække et enkelt bord",
 "Holde en enkelt- eller dobbeltblind smagning med afsløring"
+]
+},
+"es": {
+"t": "Cómo organizar una cata de vinos en casa",
+"sum": "Elige un tema, sirve de cuatro a seis vinos del más ligero al de más cuerpo, y haz que la velada vaya de charlar, no de acertar.",
+"out": [
+"Elegir un tema y de cuatro a seis vinos",
+"Planificar las porciones de cata y preparar una mesa sencilla",
+"Organizar una cata a ciego simple o doble ciego con su revelación"
+]
+},
+"de": {
+"t": "Eine Weinprobe zu Hause veranstalten",
+"sum": "Wähl ein Thema, schenk vier bis sechs Weine von leicht bis vollmundig ein und mach den Abend zum Gespräch, bei dem niemand recht haben muss.",
+"out": [
+"Ein Thema und vier bis sechs Weine auswählen",
+"Probiermengen planen und einen schlichten Tisch decken",
+"Eine einfach oder doppelt blinde Probe mit Auflösung leiten"
 ]
 }
 },
@@ -3539,6 +6419,24 @@
 "Planlægge udvalget, kølingen og returretten",
 "Planlægge vand, mad og en tryg vej hjem for gæsterne"
 ]
+},
+"es": {
+"t": "Cuánto vino para una fiesta: las cuentas y la logística",
+"sum": "Calcula el vino para una cena o una fiesta de picoteo, estira el espumoso para el brindis, compra con devolución, enfría para mucha gente y que todos vuelvan bien a casa.",
+"out": [
+"Calcular las botellas para una cena o una fiesta de picoteo",
+"Planificar la selección, el enfriado y la compra con devolución",
+"Planificar agua, comida y una vuelta segura a casa para los invitados"
+]
+},
+"de": {
+"t": "Wie viel Wein für eine Party: Rechnung und Logistik",
+"sum": "Wein für ein Abendessen oder eine Stehparty berechnen, Schaumwein fürs Anstoßen strecken, mit Rückgaberecht kaufen, für viele kühlen und alle sicher nach Hause bringen.",
+"out": [
+"Flaschen für ein Abendessen oder eine Stehparty berechnen",
+"Auswahl, Kühlung und Kauf mit Rückgaberecht planen",
+"Wasser, Essen und einen sicheren Heimweg für die Gäste planen"
+]
 }
 },
 {
@@ -3560,6 +6458,24 @@
 "Vælge en vingave ud fra det, personen kan lide",
 "Kende sikre valg og vine, du bør springe over",
 "Overrække en flaske med en hilsen og uden pres"
+]
+},
+"es": {
+"t": "Regalar vino: empieza por la persona",
+"sum": "El mejor vino para regalar empieza por lo que ya le gusta a esa persona, no por el precio: apuestas seguras, botellas con historia, regalos para quien no bebe y una buena nota.",
+"out": [
+"Elegir un vino para regalar según lo que le gusta a la persona",
+"Reconocer apuestas seguras y vinos que conviene evitar como regalo",
+"Regalar una botella con una nota y sin presiones"
+]
+},
+"de": {
+"t": "Wein verschenken: Fang bei der Person an",
+"sum": "Das beste Weingeschenk richtet sich danach, was die Person schon gern trinkt, nicht nach dem Preisschild: sichere Tipps, Flaschen mit Geschichte, Geschenke für Menschen ohne Alkohol und eine gute Notiz.",
+"out": [
+"Ein Weingeschenk danach auswählen, was die Person mag",
+"Sichere Tipps und Weine nennen, die sich als Geschenk weniger eignen",
+"Eine Flasche mit Notiz und ohne Druck überreichen"
 ]
 }
 },
@@ -3583,6 +6499,24 @@
 "Skænke for et bord i den rigtige rækkefølge, uden dryp",
 "Servere mousserende vin og bruge en isspand rigtigt"
 ]
+},
+"es": {
+"t": "El servicio del vino: de la botella a la copa",
+"sum": "Para personal nuevo: enseña la botella, ábrela en la mesa, deja que pruebe el anfitrión, sirve en el orden correcto y después cuida la botella y las copas.",
+"out": [
+"Presentar una botella al anfitrión con nombre y añada",
+"Servir a una mesa en el orden correcto, sin gotas",
+"Servir espumoso y usar bien una cubitera"
+]
+},
+"de": {
+"t": "Der Service: von der Flasche ins Glas",
+"sum": "Für neues Personal: Flasche zeigen, am Tisch öffnen, den Gastgeber probieren lassen, in der richtigen Reihenfolge einschenken, dann Flasche und Nachschenken im Blick behalten.",
+"out": [
+"Dem Gastgeber eine Flasche mit Name und Jahrgang präsentieren",
+"Einem Tisch in richtiger Reihenfolge ohne Tropfen einschenken",
+"Schaumwein servieren und einen Eiskübel richtig nutzen"
+]
 }
 },
 {
@@ -3604,6 +6538,24 @@
 "Beskrive enhver vin i én sætning med fire dele",
 "Bytte fagord ud med ord, gæster forstår",
 "Svare ærligt om en vin, du ikke har smagt"
+]
+},
+"es": {
+"t": "Describe cualquier vino a un cliente en una frase",
+"sum": "Una frase sencilla de cuatro partes (estilo, sensación, un sabor, un plato) para describir cualquier vino con palabras que el cliente pueda imaginar.",
+"out": [
+"Describir cualquier vino en una frase de cuatro partes",
+"Cambiar la jerga del vino por palabras que entienda el cliente",
+"Responder con sinceridad sobre un vino que no has probado"
+]
+},
+"de": {
+"t": "Jeden Wein in einem Satz für Gäste beschreiben",
+"sum": "Ein einfacher Satz aus vier Teilen (Stil, Mundgefühl, ein Aroma, ein Gericht), mit dem du jeden Wein in Worten beschreibst, die sich ein Gast vorstellen kann.",
+"out": [
+"Jeden Wein in einem Satz aus vier Teilen beschreiben",
+"Weinfachsprache durch Wörter ersetzen, die Gäste verstehen",
+"Ehrlich antworten bei einem Wein, den du nicht kennst"
 ]
 }
 },
@@ -3627,6 +6579,24 @@
 "Foreslå tre flasker til tre priser med ro i maven",
 "Foreslå et trin op eller et glas uden at presse"
 ]
+},
+"es": {
+"t": "Recomienda por copa y según el presupuesto",
+"sum": "Dos preguntas, tres botellas a tres precios, una forma discreta de hablar de dinero y la copa como manera segura de probar.",
+"out": [
+"Hacer dos preguntas que llevan al vino adecuado",
+"Ofrecer tres botellas a tres precios con seguridad",
+"Sugerir subir un peldaño o una copa sin presionar"
+]
+},
+"de": {
+"t": "Glasweise und nach Budget empfehlen",
+"sum": "Zwei Fragen, drei Flaschen zu drei Preisen, ein diskreter Weg, über Geld zu sprechen, und das Glas als sichere Art zu probieren.",
+"out": [
+"Zwei Fragen stellen, die zum richtigen Wein führen",
+"Drei Flaschen zu drei Preisen sicher anbieten",
+"Eine Stufe höher oder ein Glas vorschlagen, ohne zu drängen"
+]
 }
 },
 {
@@ -3648,6 +6618,24 @@
 "Skelne en flaske med en fejl fra en, gæsten ikke kan lide",
 "Tjekke en returneret vin roligt og sige de rigtige ord",
 "Håndtere en returneret flaske, så intet går til spilde"
+]
+},
+"es": {
+"t": "Cuando un cliente devuelve una botella",
+"sum": "Para personal nuevo: distingue una botella defectuosa de una que al cliente simplemente no le gusta, revísala con calma, di las palabras adecuadas y aprende adónde va la botella después.",
+"out": [
+"Distinguir una botella defectuosa de una que simplemente no gusta",
+"Revisar con calma un vino devuelto y decir las palabras adecuadas",
+"Gestionar una botella devuelta para que nada se desperdicie"
+]
+},
+"de": {
+"t": "Wenn ein Gast eine Flasche zurückgehen lässt",
+"sum": "Für neues Personal: eine fehlerhafte Flasche von einer unterscheiden, die dem Gast einfach nicht schmeckt, sie ruhig prüfen, die richtigen Worte finden und wissen, wohin die Flasche danach geht.",
+"out": [
+"Eine fehlerhafte Flasche von einer bloß nicht gemochten unterscheiden",
+"Einen zurückgegebenen Wein ruhig prüfen und die richtigen Worte finden",
+"Mit einer zurückgegebenen Flasche so umgehen, dass nichts verschwendet wird"
 ]
 }
 },
@@ -3671,6 +6659,24 @@
 "Se tegnene på, at en gæst har fået nok",
 "Sætte tempoet ned og venligt sige nej til mere alkohol"
 ]
+},
+"es": {
+"t": "Servicio responsable: agua, límites y cuándo parar",
+"sum": "Sabe lo que contiene una copa, ofrece agua como parte de la hospitalidad, detecta cuándo un cliente ya ha bebido bastante y frena o di que no con amabilidad.",
+"out": [
+"Explicar lo que contiene una unidad o una genstand en una copa",
+"Detectar las señales de que un cliente ya ha bebido bastante",
+"Frenar el servicio y negar más alcohol con amabilidad"
+]
+},
+"de": {
+"t": "Verantwortungsvoller Ausschank: Wasser, Grenzen und wann Schluss ist",
+"sum": "Wisse, was in einem Glas steckt, biete Wasser als Gastfreundschaft an, erkenne, wann ein Gast genug hat, und bremse oder lehne freundlich ab.",
+"out": [
+"Erklären, was eine Einheit oder ein Genstand im Glas bedeutet",
+"Die Anzeichen erkennen, dass ein Gast genug hat",
+"Den Ausschank bremsen und weiteren Alkohol freundlich ablehnen"
+]
 }
 },
 {
@@ -3692,6 +6698,24 @@
 "Forklare, hvorfor historien om rødvin for hjertet falmede",
 "Regne ud, hvor meget alkohol der er i et glas",
 "Læse retningslinjer som lofter for lav risiko, ikke sikre niveauer"
+]
+},
+"es": {
+"t": "El vino y la salud: una visión equilibrada",
+"sum": "Por qué se desvaneció la idea de que el tinto es bueno para el corazón, qué dicen hoy los expertos en salud, cómo calcular el alcohol de una copa y cómo mantener las cantidades bajas.",
+"out": [
+"Explicar por qué se desvaneció la idea del «tinto cardiosaludable»",
+"Calcular cuánto alcohol hay en una copa",
+"Leer las pautas como techos de bajo riesgo, no como niveles seguros"
+]
+},
+"de": {
+"t": "Wein und Gesundheit: ein ausgewogener Blick",
+"sum": "Warum die Geschichte vom herzgesunden Rotwein verblasst ist, was Gesundheitsfachleute heute sagen, wie du den Alkohol in einem Glas ausrechnest und wie du die Mengen klein hältst.",
+"out": [
+"Erklären, warum die Geschichte vom herzgesunden Rotwein verblasste",
+"Ausrechnen, wie viel Alkohol in einem Glas steckt",
+"Richtwerte als Obergrenzen für geringes Risiko lesen, nicht als unbedenkliche Mengen"
 ]
 }
 },
@@ -3715,6 +6739,24 @@
 "Beskrive, hvem sulfitter rammer, og hvordan",
 "Nævne de mere sandsynlige årsager til hovedpine af rødvin"
 ]
+},
+"es": {
+"t": "Sulfitos, histamina y dolor de cabeza por el vino",
+"sum": "Qué significa de verdad «Contiene sulfitos», a quién afectan los sulfitos y por qué el dolor de cabeza del tinto se debe más probablemente a otras cosas, entre ellas el propio alcohol.",
+"out": [
+"Explicar qué significa «Contiene sulfitos» en una etiqueta",
+"Describir a quién afectan los sulfitos y cómo",
+"Nombrar las causas más probables del dolor de cabeza del tinto"
+]
+},
+"de": {
+"t": "Sulfite, Histamin und Kopfschmerzen vom Wein",
+"sum": "Was „Enthält Sulfite“ wirklich bedeutet, wen Sulfite betreffen und warum der Rotwein-Kopfschmerz eher von anderen Dingen kommt, auch vom Alkohol selbst.",
+"out": [
+"Erklären, was „Enthält Sulfite“ auf einem Etikett bedeutet",
+"Beschreiben, wen Sulfite betreffen und wie",
+"Die wahrscheinlicheren Ursachen für Rotwein-Kopfschmerzen nennen"
+]
 }
 },
 {
@@ -3736,6 +6778,24 @@
 "Forklare, hvorfor alkoholen og ikke sukkeret giver vinens kalorier",
 "Anslå et glas' kalorier ud fra alkoholprocent og størrelse",
 "Forstå »skinny« og »light« på en vinetiket"
+]
+},
+"es": {
+"t": "Calorías, azúcar y vinos «skinny»",
+"sum": "De dónde salen de verdad las calorías de una copa de vino: sobre todo del alcohol, no del azúcar. Por eso los vinos más fuertes tienen más, y los «skinny» suelen ser solo más flojos.",
+"out": [
+"Explicar por qué el alcohol, y no el azúcar, marca las calorías",
+"Calcular las calorías de una copa por su graduación y tamaño",
+"Entender «skinny» y «light» en las etiquetas"
+]
+},
+"de": {
+"t": "Kalorien, Zucker und „Skinny“-Weine",
+"sum": "Woher die Kalorien in einem Glas Wein wirklich kommen: vor allem vom Alkohol, nicht vom Zucker. Stärkere Weine haben also mehr, und „Skinny“-Weine sind meist einfach schwächer.",
+"out": [
+"Erklären, warum Alkohol und nicht Zucker die Kalorien eines Weins bestimmt",
+"Die Kalorien eines Glases aus Alkoholgehalt und Größe schätzen",
+"„Skinny“ und „light“ auf Etiketten verstehen"
 ]
 }
 }
