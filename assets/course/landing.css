@@ -57,7 +57,20 @@
 .cl-fine{margin-top:18px; font-size:13.5px; color:rgba(251,247,244,.65)}
 .cta.cl-end{background:linear-gradient(155deg,#4a1024,#3b0a1e 55%,#26060f); color:var(--paper)}
 
+/* "Look inside a lesson": real phone screens from the web player. A scroll-snap row on phones. */
+.cl-shots-sec{padding-bottom:8px}
+.cl-shots-sec .section-head p a{font-weight:600}
+.cl-shots{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(4,1fr); gap:22px; max-width:1060px; margin-inline:auto}
+.cl-shots figure{margin:0}
+.cl-shots img{display:block; width:100%; height:auto; border-radius:26px; border:6px solid #2a0b18; background:#fff; box-shadow:var(--shadow-md)}
+.cl-shots figcaption{margin-top:12px; font-size:14.5px; line-height:1.45; color:var(--sec); text-align:center; padding:0 4px}
+
 @media (max-width:980px){ .cl-grid{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:860px){
+  .cl-shots{display:flex; gap:16px; overflow-x:auto; scroll-snap-type:x mandatory; margin:0 -24px; padding:4px 24px 14px; scrollbar-width:none}
+  .cl-shots::-webkit-scrollbar{display:none}
+  .cl-shots li{flex:0 0 62%; max-width:260px; scroll-snap-align:center}
+}
 @media (max-width:700px){
   .cl-grid,.cl-units{grid-template-columns:1fr}
   .cl-cta .btn{width:100%}

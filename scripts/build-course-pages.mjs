@@ -161,7 +161,7 @@ ${altLinks}<meta property="og:type" content="website">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="author" content="Jonas Egeskov">
 ${FONTS}
-<link rel="stylesheet" href="/assets/course/landing.css?v=3">
+<link rel="stylesheet" href="/assets/course/landing.css?v=4">
 ${extraHead}<script type="application/ld+json">${JSON.stringify(ld)}</script>
 ${ANALYTICS}
 </head>
@@ -300,6 +300,26 @@ const H = {
   },
 };
 
+// Real screens from the free try lesson "How to read a wine label" (assets/course/shots/, captured
+// from the web player at 390x844 @3x). English only: the try lessons are exported in English.
+const SHOT_LESSON = "374684d1-e0aa-4524-a76d-720efb03392d";
+const SHOTS = [
+  ["lesson-story", "Each lesson teaches one idea at a time, on short illustrated cards.", "A lesson card with an illustration of an archaeologist finding labelled wine jars in Tutankhamun's tomb"],
+  ["lesson-right", "Quick questions check it straight away, with the key fact.", "A true-or-false question answered correctly, with the key fact explained below"],
+  ["lesson-wrong", "Get one wrong and it comes back at the end, so it sticks.", "A multiple-choice question answered wrongly, showing the right answer and a note that it will come back"],
+  ["lesson-match", "Matching, true-or-false and pick-one keep you doing, not just reading.", "A matching exercise pairing Chablis, White Sancerre and Chianti with their grapes"],
+];
+function shotsHtml() {
+  return `
+<section class="section cl-sec cl-shots-sec"><div class="wrap">
+  <div class="section-head"><h2>Look inside a lesson</h2><p>Real screens from the free lesson <em>How to read a wine label</em>. <a href="/course/?try=${SHOT_LESSON}&amp;src=course-shots" data-cta="course-shots">Try it yourself</a>, no account needed.</p></div>
+  <ul class="cl-shots">${SHOTS.map(([f, cap, alt]) => `
+    <li><figure><picture><source type="image/webp" srcset="/assets/course/shots/${f}-360.webp 360w, /assets/course/shots/${f}-720.webp 720w" sizes="(max-width:700px) 62vw, 240px"><img src="/assets/course/shots/${f}.jpg" alt="${esc(alt)}" width="360" height="779" loading="lazy" decoding="async"></picture><figcaption>${esc(cap)}</figcaption></figure></li>`).join("")}
+  </ul>
+</div></section>
+`;
+}
+
 function landing(lang, { withApp }) {
   const t = T[lang], h = H[lang], path = hubUrl(lang);
   const crumbs = [[t.crumbHome, "/"], [t.crumbCourse, path]];
@@ -342,7 +362,7 @@ function landing(lang, { withApp }) {
   <p class="cl-signin"><a href="${appUrl(lang)}">${h.signIn}</a></p>
   <ul class="cl-facts">${h.facts.map(([a, b]) => `<li><b>${a}</b><span>${b}</span></li>`).join("")}</ul>
 </div></section>
-
+${lang === "en" ? shotsHtml() : ""}
 <section class="section cl-sec"><div class="wrap">
   <div class="section-head"><h2>${h.howH}</h2></div>
   <div class="cl-grid">${h.how.map(([a, b]) => `<div class="cl-card"><h3>${a}</h3><p>${b}</p></div>`).join("")}</div>
