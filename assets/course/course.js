@@ -127,6 +127,19 @@
     var id = TRY; TRY = null;
     S.view = "auth"; S.notice = t("web.trySave"); render();
     fetch("/assets/course/try/" + id + ".json").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) {
+      // The visitor's language from <id>.<lang>.json (export-try-lessons.mjs), with localize()'s rule:
+      // a non-empty field replaces the English one. No file, or an error, keeps the English lesson.
+      if (S.lang === "en") return d;
+      return fetch("/assets/course/try/" + id + "." + S.lang + ".json").then(function (r) { return r.ok ? r.json() : null; }).then(function (x) {
+        if (!x) return d;
+        function over(base, f) {
+          var o = Object.assign({}, base);
+          for (var k in f || {}) if (f[k] != null && f[k] !== "" && !(Array.isArray(f[k]) && !f[k].length)) o[k] = f[k];
+          return o;
+        }
+        return { lesson: over(d.lesson, x.lesson), extras: over(d.extras, x.extras) };
+      }).catch(function () { return d; });
+    }).then(function (d) {
       if (S.session) return;
       try { localStorage.removeItem(OPEN_KEY); } catch (e) {}
       S.trying = true;
