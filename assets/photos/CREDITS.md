@@ -249,3 +249,93 @@ looked pink, and Valpolicella had looked like rosé.
 | style-vin-santo.jpg | A small glass of amber Vin Santo with a plate of almond cantucci biscuits on a rustic Tuscan table | /wine-styles/vin-santo/ |
 | style-vouvray.jpg | A glass of pale gold Chenin Blanc in a cave carved into soft white tufa stone, the Loire river and vineyards visible through the opening | /wine-styles/vouvray/ |
 | style-white-burgundy.jpg | A glass of golden Chardonnay beside a lobster tail with lemon on a terrace in Meursault | /wine-styles/white-burgundy/ |
+
+## Grape-variety photos (October 2026)
+
+66 of the 74 `/grape-varieties/` pages have their own hero photo, hub thumbnail and 1200x630
+share image (files `variety-<slug>.*`), replacing a generic glass of wine.
+
+**Real photos (52).** Grapes of the named variety on the vine, from Wikimedia Commons;
+15 of them come from the Julius Kühn-Institut's Vitis International Variety Catalogue (VIVC),
+where the institute identifies the variety. Each page shows the credit and licence under the photo,
+linked to the file page. CC BY-SA files are cropped and resized only; the crops are shared under the
+same licence.
+
+| File | Photographer · licence | Source |
+|---|---|---|
+| variety-albarino.jpg | Miguel Ángel García. · CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Buena_uva,buen_albari%C3%B1o_(pre-veraison).jpg |
+| variety-barbera.jpg | Doris Schneider, Julius Kühn-Institut (JKI) · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:VIVC974_BARBERA_NERA_Cluster_in_the_field_2462.jpg |
+| variety-blaufrankisch.jpg | Geolina163 + 1971markus · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:HBLA_Klosterneuburg_Blaufr%C3%A4nkisch_2.jpg |
+| variety-cabernet-franc.jpg | Ursula Brühl, Julius Kühn-Institut (JKI) · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:VIVC1927_CABERNET_FRANC_Cluster_in_the_field_18531.jpg |
+| variety-cabernet-sauvignon.jpg | Dario Rettore · Public domain | https://commons.wikimedia.org/wiki/File:CABERNETS.wiki1.JPG |
+| variety-carmenere.jpg | Lebowskyclone · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Carmenere.jpg |
+| variety-chardonnay.jpg | Saggittarius A · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Grappolo_di_Chardonnay.jpg |
+| variety-chenin-blanc.jpg | Doris Schneider, Julius Kühn-Institut (JKI) · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:VIVC2527_CHENIN_BLANC_Cluster_in_the_field_8949.jpg |
+| variety-cinsault.jpg | Allie_Caulfield · CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Cinsaut_grapes_in_Luberon.jpg |
+| variety-corvina.jpg | Ursula Brühl, Julius Kühn-Institut (JKI) · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:VIVC2863_CORVINA_VERONESE_Cluster_in_the_field_19664.jpg |
+| variety-dolcetto.jpg | Tenutailfinale · CC0 | https://commons.wikimedia.org/wiki/File:Old_Vine_Dolcetto_-_Fontanavi.jpg |
+| variety-dornfelder.jpg | Fischer.H · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Dornfelder_P1240238.jpg |
+| variety-fiano.jpg | Doris Schneider, Julius Kühn-Institut (JKI) · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:VIVC4124_FIANO_Cluster_in_the_field_2863.jpg |
+| variety-furmint.jpg | Geolina163 + 1971markus · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:HBLA_Klosterneuburg_Furmint_2.jpg |
+| variety-gamay.jpg | Doris Schneider, Julius Kühn-Institut (JKI) · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:VIVC4377_GAMAY_NOIR_Cluster_in_the_field_8997.jpg |
+| variety-gewurztraminer.jpg | Fischer.H · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Gew%C3%BCrztraminer_P1120136.jpg |
+| variety-glera.jpg | Ursula Brühl, Julius Kühn-Institut (JKI) · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:VIVC9741_GLERA_Cluster_in_the_field_17055.jpg |
+| variety-grenache.jpg | Magnetto · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Grenache_Noir.jpg |
+| variety-gruner-veltliner.jpg | Geolina163 · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Ried_Reisenberg_Gr%C3%BCner_Veltliner_6.jpg |
+| variety-macabeo.jpg | MARIA ROSA FERRE ✿ · CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Muntanyes_de_l%27Ordal_-_113.jpg |
+| variety-malbec.jpg | Ian L · CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Malbec_grapes.jpg |
+| variety-melon-de-bourgogne.jpg | Cyril5555 · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Melon_de_bourgogne.jpg |
+| variety-mencia.jpg | feelSacra · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:48-Uvas_de_menc%C3%ADa_en_socalco,_Doade,_Sober_(Lugo).jpg |
+| variety-merlot.jpg | Ursula Brühl, Julius Kühn-Institut (JKI) · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:VIVC7657_MERLOT_NOIR_Cluster_in_the_field_18591.jpg |
+| variety-moscato.jpg | Rosenzweig · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Gelber_Muskateller_Weinsberg_20060908.jpg |
+| variety-mourvedre.jpg | Doris Schneider, Julius Kühn-Institut (JKI) · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:VIVC7915_MONASTRELL_Cluster_in_the_field_3422.jpg |
+| variety-muller-thurgau.jpg | Rosenzweig · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Mueller-Thurgau_Weinsberg_20080927.jpg |
+| variety-nebbiolo.jpg | Hanna · CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Close_up_of_Nebbiolo_cluster_in_Italy.jpg |
+| variety-nero-d-avola.jpg | OppidumNissenae · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Pianta_di_nero_d%27Avola_con_uva_matura_a_Grotte_(AG)_02.jpg |
+| variety-pedro-ximenez.jpg | XIMÉNEZ-SPÍNOLA · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:UvasPX.jpg |
+| variety-petit-verdot.jpg | Ursula Brühl, Julius Kühn-Institut (JKI) · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:VIVC12974_VERDOT_PETIT_Cluster_in_the_field_20416.jpg |
+| variety-pinot-grigio.jpg | Rick Obst · CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Pinot_gris_grape_clusters.jpg |
+| variety-pinot-meunier.jpg | Igor Zemljič ( IgorvonLenart at sl.wikipedia ) · Public domain | https://commons.wikimedia.org/wiki/File:22_Mullerrebe.jpg |
+| variety-pinot-noir.jpg | Cjp24 · Public domain | https://commons.wikimedia.org/wiki/File:Grape_near_Sancerre.jpg |
+| variety-pinotage.jpg | Doris Schneider, Julius Kühn-Institut (JKI) · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:VIVC9286_PINOTAGE_Full_plant_3638.jpg |
+| variety-primitivo.jpg | Saggittarius A · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Grappolo_di_Primitivo_2.jpg |
+| variety-riesling.jpg | Kmtextor · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Riesling_Grapes.jpg |
+| variety-sangiovese.jpg | Ursula Brühl, Julius Kühn-Institut (JKI) · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:VIVC10680_SANGIOVESE_Cluster_in_the_field_20354.jpg |
+| variety-saperavi.jpg | Lebowskyclone · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Saperavicluster.jpg |
+| variety-sauvignon-blanc.jpg | User:Vl · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Sauvignon_blanc_vlasotince_vineyards.jpg |
+| variety-semillon.jpg | Megan Mallen · CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Semillon_grapes_at_Ch%C3%A2teau_Doisy-V%C3%A9drines,_Barsac,_Sauternes.jpg |
+| variety-silvaner.jpg | Fischer.H · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Silvaner_P1240428.jpg |
+| variety-syrah-shiraz.jpg | Verita · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Grape_of_old_vine_shiraz.jpg |
+| variety-tannat.jpg | Doris Schneider, Julius Kühn-Institut (JKI) · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:VIVC12257_TANNAT_Cluster_in_the_field_8302.jpg |
+| variety-tempranillo.jpg | AlloopWine&Pepper · CC0 | https://commons.wikimedia.org/wiki/File:Racimo_de_Tempranillo.jpg |
+| variety-trebbiano.jpg | Doris Schneider, Julius Kühn-Institut (JKI) · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:VIVC12628_TREBBIANO_TOSCANO_Cluster_in_the_field_8408.jpg |
+| variety-verdicchio.jpg | Ursula Brühl, Julius Kühn-Institut (JKI) · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:VIVC12963_VERDICCHIO_BIANCO_Cluster_in_the_field_17400.jpg |
+| variety-vermentino.jpg | Magnetto · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Rolle_ou_Vermentino.jpg |
+| variety-viognier.jpg | Schubert Estate · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Viognier_grpae.jpg |
+| variety-xarel-lo.jpg | Angela Llop · CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Harvest_grapes_end_of_September.jpg |
+| variety-zinfandel.jpg | Frank Schulenburg · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Ripe_Zinfandel_grapes_in_Dry_Creek_Valley-8958.jpg |
+| variety-zweigelt.jpg | Geolina163 + 1971markus · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:HBLA_Klosterneuburg_Zweigelt_02.jpg |
+
+**AI-generated (14).** For varieties with no good free photo on Commons, the photo is
+**AI-generated** with Higgsfield (GPT Image 2.5, quality "high", 2K, 21:9) and shows the grape's
+real berry colour in a landscape of its home region. These pages carry no photo credit.
+
+| File | Shows |
+|---|---|
+| variety-agiorgitiko.jpg | Dark Agiorgitiko grape bunches on old vines above the hills of Nemea at sunset |
+| variety-aglianico.jpg | Black Aglianico grapes hanging on the vine with Monte Vulture in the evening light |
+| variety-assyrtiko.jpg | Green-gold Assyrtiko grapes inside a basket-trained vine on volcanic soil above the Santorini caldera |
+| variety-garganega.jpg | Golden Garganega bunches on a pergola vine with the hilltop castle of Soave behind |
+| variety-godello.jpg | Pale Godello grapes on a vine above terraced slate slopes and a river gorge in Galicia |
+| variety-montepulciano.jpg | Dark Montepulciano grapes on a pergola vine with the snow-capped Gran Sasso behind |
+| variety-negroamaro.jpg | Black Negroamaro grapes on bush vines among olive trees in Puglia at sunset |
+| variety-nerello-mascalese.jpg | Nerello Mascalese grapes on an old vine with smoking Mount Etna behind |
+| variety-palomino.jpg | Ripe Palomino grapes on a low vine rooted in white albariza chalk near Jerez |
+| variety-petite-sirah.jpg | Heavy clusters of inky Petite Sirah grapes on the vine above golden California hills |
+| variety-torrontes.jpg | Golden Torrontés bunches on a pergola with the red mountains of Cafayate, Argentina behind |
+| variety-touriga-nacional.jpg | Touriga Nacional grapes on an old vine above the terraced slopes of the Douro Valley |
+| variety-verdejo.jpg | Verdejo grapes on low bush vines in stony soil on the high plain of Rueda |
+| variety-xinomavro.jpg | Dark Xinomavro grapes on the vine with the mountains of Naoussa, northern Greece, behind |
+
+Still on the generic photo, pending a Higgsfield credit top-up: cortese, greco, lagrein, marsanne,
+roussanne, sagrantino, teroldego, vernaccia.
