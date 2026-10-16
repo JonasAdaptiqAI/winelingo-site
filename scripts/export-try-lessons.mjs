@@ -27,6 +27,20 @@ for (const r of rows) {
   keep.add(`${r.id}.json`);
   index.push({ unit: r.v2_unit, id: r.id, title: r.v2_title || r.title, steps: v2.steps.length });
 }
+// The translations ride next to each lesson as <id>.<lang>.json ({ lesson, extras }: the fields
+// that replace the English ones, as in localize() in course.js). Visitors with no account cannot
+// read the translations table, so try mode needs its own copy.
+const ids = rows.map((r) => `'${r.id}'`).join(", ");
+const tr = rows.length ? query(`select entity_id, entity_type, lang, fields from public.translations
+  where entity_type in ('lesson', 'lesson_extra') and lang in ('da', 'es', 'de') and entity_id in (${ids})`) : [];
+const byFile = new Map();
+for (const t of tr) {
+  const f = `${t.entity_id}.${t.lang}.json`;
+  if (!byFile.has(f)) byFile.set(f, { lesson: {}, extras: {} });
+  byFile.get(f)[t.entity_type === "lesson" ? "lesson" : "extras"] = t.fields || {};
+}
+for (const [f, d] of byFile) { fs.writeFileSync(`${OUT}/${f}`, JSON.stringify(d)); keep.add(f); }
+console.log(`${byFile.size} translation files (da/es/de)`);
 const gone = fs.readdirSync(OUT).filter((f) => f.endsWith(".json") && !keep.has(f));
 for (const f of gone) fs.unlinkSync(`${OUT}/${f}`);
 for (const x of index) console.log(`${x.unit} · ${x.id} · ${x.steps} steps · ${x.title}`);

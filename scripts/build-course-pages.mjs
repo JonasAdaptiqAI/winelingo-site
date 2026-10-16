@@ -300,21 +300,37 @@ const H = {
   },
 };
 
-// Real screens from the free try lesson "How to read a wine label" (assets/course/shots/, captured
-// from the web player at 390x844 @3x). English only: the try lessons are exported in English.
+// Real screens from the free try lesson "How to read a wine label" (assets/course/shots/), captured
+// from the web player at 390 px wide @3x: 844 px tall in English, 900 in Danish (longer text).
+// The Danish try lesson plays in Danish through assets/course/try/<id>.da.json.
 const SHOT_LESSON = "374684d1-e0aa-4524-a76d-720efb03392d";
-const SHOTS = [
-  ["lesson-story", "Each lesson teaches one idea at a time, on short illustrated cards.", "A lesson card with an illustration of an archaeologist finding labelled wine jars in Tutankhamun's tomb"],
-  ["lesson-right", "Quick questions check it straight away, with the key fact.", "A true-or-false question answered correctly, with the key fact explained below"],
-  ["lesson-wrong", "Get one wrong and it comes back at the end, so it sticks.", "A multiple-choice question answered wrongly, showing the right answer and a note that it will come back"],
-  ["lesson-match", "Matching, true-or-false and pick-one keep you doing, not just reading.", "A matching exercise pairing Chablis, White Sancerre and Chianti with their grapes"],
-];
-function shotsHtml() {
+const SHOTS = {
+  en: { h2: "Look inside a lesson", h: 779, src: "course-shots",
+    lead: (a) => `Real screens from the free lesson <em>How to read a wine label</em>. ${a("Try it yourself")}, no account needed.`,
+    shots: [
+      ["lesson-story", "Each lesson teaches one idea at a time, on short illustrated cards.", "A lesson card with an illustration of an archaeologist finding labelled wine jars in Tutankhamun's tomb"],
+      ["lesson-right", "Quick questions check it straight away, with the key fact.", "A true-or-false question answered correctly, with the key fact explained below"],
+      ["lesson-wrong", "Get one wrong and it comes back at the end, so it sticks.", "A multiple-choice question answered wrongly, showing the right answer and a note that it will come back"],
+      ["lesson-match", "Matching, true-or-false and pick-one keep you doing, not just reading.", "A matching exercise pairing Chablis, White Sancerre and Chianti with their grapes"],
+    ] },
+  da: { h2: "Se en lektion indefra", h: 831, src: "da-course-shots",
+    lead: (a) => `Rigtige skærmbilleder fra den gratis lektion <em>Sådan læser du en vinetiket</em>. ${a("Prøv den selv")}, uden at oprette en konto.`,
+    shots: [
+      ["da-lesson-story", "Hver lektion lærer dig én ting ad gangen, på korte kort med billeder.", "Et lektionskort med en tegning af en arkæolog, der finder Tutankhamons vinkrukker med etiketter"],
+      ["da-lesson-right", "Korte spørgsmål tjekker det med det samme, med kernen forklaret.", "Et spørgsmål besvaret rigtigt, med kernen forklaret nedenunder"],
+      ["da-lesson-wrong", "Svarer du forkert, kommer spørgsmålet igen til sidst, så det sidder fast.", "Et sandt-eller-falsk-spørgsmål besvaret forkert, med det rigtige svar og en besked om, at det kommer igen"],
+      ["da-lesson-flip", "Vendekort, sandt eller falsk og quizzer: du gør noget, ikke kun læser.", "Et vendekort med ordet Producent, som man klikker på for at se betydningen"],
+    ] },
+};
+function shotsHtml(lang) {
+  const c = SHOTS[lang];
+  const href = `/course/?try=${SHOT_LESSON}${lang === "en" ? "" : `&amp;lang=${lang}`}&amp;src=${c.src}`;
+  const a = (txt) => `<a href="${href}" data-cta="${c.src}">${txt}</a>`;
   return `
 <section class="section cl-sec cl-shots-sec"><div class="wrap">
-  <div class="section-head"><h2>Look inside a lesson</h2><p>Real screens from the free lesson <em>How to read a wine label</em>. <a href="/course/?try=${SHOT_LESSON}&amp;src=course-shots" data-cta="course-shots">Try it yourself</a>, no account needed.</p></div>
-  <ul class="cl-shots">${SHOTS.map(([f, cap, alt]) => `
-    <li><figure><picture><source type="image/webp" srcset="/assets/course/shots/${f}-360.webp 360w, /assets/course/shots/${f}-720.webp 720w" sizes="(max-width:700px) 62vw, 240px"><img src="/assets/course/shots/${f}.jpg" alt="${esc(alt)}" width="360" height="779" loading="lazy" decoding="async"></picture><figcaption>${esc(cap)}</figcaption></figure></li>`).join("")}
+  <div class="section-head"><h2>${c.h2}</h2><p>${c.lead(a)}</p></div>
+  <ul class="cl-shots">${c.shots.map(([f, cap, alt]) => `
+    <li><figure><picture><source type="image/webp" srcset="/assets/course/shots/${f}-360.webp 360w, /assets/course/shots/${f}-720.webp 720w" sizes="(max-width:700px) 62vw, 240px"><img src="/assets/course/shots/${f}.jpg" alt="${esc(alt)}" width="360" height="${c.h}" loading="lazy" decoding="async"></picture><figcaption>${esc(cap)}</figcaption></figure></li>`).join("")}
   </ul>
 </div></section>
 `;
@@ -362,7 +378,7 @@ function landing(lang, { withApp }) {
   <p class="cl-signin"><a href="${appUrl(lang)}">${h.signIn}</a></p>
   <ul class="cl-facts">${h.facts.map(([a, b]) => `<li><b>${a}</b><span>${b}</span></li>`).join("")}</ul>
 </div></section>
-${lang === "en" ? shotsHtml() : ""}
+${SHOTS[lang] ? shotsHtml(lang) : ""}
 <section class="section cl-sec"><div class="wrap">
   <div class="section-head"><h2>${h.howH}</h2></div>
   <div class="cl-grid">${h.how.map(([a, b]) => `<div class="cl-card"><h3>${a}</h3><p>${b}</p></div>`).join("")}</div>
@@ -403,7 +419,7 @@ ${lang === "en" ? shotsHtml() : ""}
 <div id="app" aria-live="polite" hidden></div>
 <script src="/assets/course/vendor/supabase-2.117.3.js"></script>
 <script src="/assets/course/strings.js?v=9"></script>
-<script src="/assets/course/course.js?v=12"></script>` : "";
+<script src="/assets/course/course.js?v=13"></script>` : "";
   let foot = FOOTER;
   if (withApp) foot = foot.replace("</body>", `${app}\n</body>`);
   return head({ lang, title: h.title, desc: h.desc, path, alt: { en: "/course/", da: "/da/vinkursus/" }, ld, extraHead: appHead }) + HEADER + body + foot;
