@@ -393,7 +393,7 @@ const H = {
       ["¿En qué idiomas está?", "Español, inglés, danés y alemán. Puedes cambiar cuando quieras."],
       ["¿Sirve para formar al personal?", `Sí. Restaurantes y bares de vinos ya lo usan con sus equipos. Mira <a href="/business/">Winelingo para empresas</a> (en inglés).`]],
     endH: "Tu primera lección dura cinco minutos", endCta: "Empieza con las unidades gratis",
-    gift: `¿Es para regalar? <a href="/gift/">Regala el curso</a> (página en inglés).`, fine: "Solo para mayores de edad (18+). Disfruta del vino con moderación.",
+    gift: `¿Es para regalar? <a href="/es/regalo/">Regala el curso</a>.`, fine: "Solo para mayores de edad (18+). Disfruta del vino con moderación.",
   },
   de: {
     title: `Weinkurs online für Anfänger: ${TOTAL_LESSONS} Lektionen | Winelingo`,
@@ -423,7 +423,7 @@ const H = {
       ["In welchen Sprachen gibt es den Kurs?", "Deutsch, Englisch, Dänisch und Spanisch. Du kannst jederzeit wechseln."],
       ["Kann ich damit Personal schulen?", `Ja. Restaurants und Weinbars nutzen ihn schon für ihre Teams. Siehe <a href="/business/">Winelingo für Unternehmen</a> (auf Englisch).`]],
     endH: "Deine erste Lektion dauert fünf Minuten", endCta: "Kostenlose Einheiten starten",
-    gift: `Als Geschenk? <a href="/gift/">Verschenke den Kurs</a> (Seite auf Englisch).`, fine: "Nur für Erwachsene (18+). Bitte genieße Wein verantwortungsvoll.",
+    gift: `Als Geschenk? <a href="/de/geschenk/">Verschenke den Kurs</a>.`, fine: "Nur für Erwachsene (18+). Bitte genieße Wein verantwortungsvoll.",
   },
 };
 
@@ -669,16 +669,83 @@ const G = {
     endH: "Giv noget, de beholder", endCta: "Køb gaven · $39.99",
     fine: "For voksne over 18 år. Nyd vin med omtanke.",
   },
+  es: {
+    path: "/es/regalo/", title: "Regalo original para amantes del vino | Winelingo",
+    desc: `Un regalo original para amantes del vino: el curso de vinos online de Winelingo, ${TOTAL_LESSONS} lecciones interactivas, para siempre. 39,99 $, con tarjeta para regalar.`,
+    eyebrow: "El regalo", h1: "Un regalo original para el amante del vino que lo tiene todo",
+    lede: `Regálale todo el curso de Winelingo: ${TOTAL_LESSONS} lecciones cortas e interactivas, de la cata y las uvas a doce países del vino. Para siempre y en cuatro idiomas. Recibes un código al instante, con una tarjeta para imprimir o enviar.`,
+    buy: "Comprar el regalo · 39,99 $", redeem: "¿Tienes un código? Canjéalo",
+    note: "Un solo pago, sin suscripción. El código no caduca.",
+    cardFor: "Un regalo para ti", cardWhat: "El curso de vino de Winelingo, para siempre", cardWhere: "Canjéalo en winelingo.app/redeem",
+    howH: "Cómo funciona",
+    how: [["Cómpralo", "Inicia sesión o crea una cuenta gratis y paga una sola vez. Paddle, nuestro revendedor online, gestiona el pago y el IVA."],
+      ["Recibe el código", "El código de regalo aparece justo después del pago, con una tarjeta para imprimir o enviar. También queda guardado en tu cuenta."],
+      ["Quien lo recibe, lo canjea", "Introduce el código en winelingo.app/redeem y el curso completo se desbloquea en su propia cuenta, en la web y en la app para iPhone."]],
+    insideH: "Qué incluye", insideDeck: `${TOTAL_LESSONS} lecciones en 26 unidades, unas ${HOURS} horas en total. Cada lección dura de cinco a diez minutos.`,
+    inside: [["Lo esencial", "Las ideas en las que se basa todo, cómo catar, las principales uvas tintas y blancas, las etiquetas, el maridaje, el servicio y el vino en la mesa."],
+      ["Doce países del vino", "Francia, Italia, España, Portugal, Alemania, Austria, Estados Unidos, Argentina, Chile, Australia, Nueva Zelanda y Sudáfrica, región por región."],
+      ["Para ir más allá", "Cómo se hace el vino, el viñedo, la calidad, la guarda y el coleccionismo, cómo comprar bien y la historia del vino."]],
+    syllabus: "Ver el temario completo",
+    forH: "Para quién es",
+    for: [["Principiantes con curiosidad", "Alguien que disfruta del vino y quiere saber qué está bebiendo, sin ir a clase."],
+      ["El amante del vino que lo tiene todo", "Otra botella se acaba en una noche. Saber por qué le gusta tanto dura mucho más."],
+      ["Antes de un viaje", "¿Se va a Burdeos, la Toscana o La Rioja? Las unidades por países explican las regiones, las uvas y las etiquetas."],
+      ["Antes del WSET", "Un primer paso sencillo para quien se plantea estudiar vino o sumillería."]],
+    faqH: "Preguntas",
+    faq: [["¿Caduca el código de regalo?", "No. Funciona hasta que se canjea, así que puede esperar al cumpleaños o a Navidad."],
+      ["¿Cómo se canjea?", "En winelingo.app/redeem: quien lo recibe inicia sesión o crea una cuenta gratis e introduce el código. El curso completo se desbloquea en esa cuenta."],
+      ["¿Funciona en la app para iPhone?", "Sí. Es la misma cuenta: todas las lecciones con corazones ilimitados, en la web y en la app. El escaneo de etiquetas de la app no está incluido."],
+      ["¿Es una suscripción?", "No. Es un solo pago de 39,99 $, que se muestra en tu moneda con el IVA incluido. No se renueva nada."],
+      ["¿En qué idiomas está?", "Español, inglés, danés y alemán. Se puede cambiar en cualquier momento."],
+      ["¿Puedo pedir un reembolso?", "Sí, en los 14 días siguientes a la compra, siempre que el código no se haya canjeado. Un código reembolsado deja de funcionar."],
+      ["¿Llego a tiempo para Navidad?", "Siempre. El código llega en cuanto pagas, así que también sirve como regalo de última hora."]],
+    endH: "Regala algo que perdure", endCta: "Comprar el regalo · 39,99 $",
+    fine: "Solo para mayores de edad (18+). Disfruta del vino con moderación.",
+  },
+  de: {
+    path: "/de/geschenk/", title: "Geschenk für Weinliebhaber: ein Online-Weinkurs | Winelingo",
+    desc: `Ein originelles Geschenk für Weinliebhaber: der Online-Weinkurs von Winelingo mit ${TOTAL_LESSONS} interaktiven Lektionen, auf Lebenszeit. Einmalig 39,99 $, mit Karte.`,
+    eyebrow: "Das Geschenk", h1: "Ein Geschenk für Weinliebhaber, die schon alles haben",
+    lede: `Schenk den ganzen Winelingo-Kurs: ${TOTAL_LESSONS} kurze interaktive Lektionen, von der Verkostung und den Rebsorten bis zu zwölf Weinländern. Auf Lebenszeit, in vier Sprachen. Du bekommst sofort einen Code und dazu eine Karte zum Ausdrucken oder Verschicken.`,
+    buy: "Geschenk kaufen · 39,99 $", redeem: "Einen Code einlösen",
+    note: "Einmalige Zahlung, kein Abo. Der Code verfällt nie.",
+    cardFor: "Ein Geschenk für dich", cardWhat: "Der Winelingo-Weinkurs, auf Lebenszeit", cardWhere: "Einlösen auf winelingo.app/redeem",
+    howH: "So funktioniert's",
+    how: [["Kaufen", "Melde dich an oder erstelle ein kostenloses Konto und zahle einmal. Paddle, unser Online-Händler, wickelt Zahlung und Mehrwertsteuer ab."],
+      ["Code erhalten", "Der Geschenkcode erscheint direkt nach der Zahlung, zusammen mit einer Karte zum Ausdrucken oder Verschicken. Er bleibt auch in deinem Konto gespeichert."],
+      ["Einlösen", "Die beschenkte Person gibt den Code auf winelingo.app/redeem ein, und der ganze Kurs wird in ihrem eigenen Konto freigeschaltet, im Web und in der iPhone-App."]],
+    insideH: "Das steckt drin", insideDeck: `${TOTAL_LESSONS} Lektionen in 26 Einheiten, insgesamt etwa ${HOURS} Stunden. Jede Lektion dauert fünf bis zehn Minuten.`,
+    inside: [["Das Wesentliche", "Die Grundlagen, auf denen alles aufbaut, die Verkostung, die wichtigsten roten und weißen Rebsorten, Etiketten, Wein und Speisen, Servieren und Wein am Tisch."],
+      ["Zwölf Weinländer", "Frankreich, Italien, Spanien, Portugal, Deutschland, Österreich, die USA, Argentinien, Chile, Australien, Neuseeland und Südafrika, Region für Region."],
+      ["Tiefer einsteigen", "Wie Wein entsteht, der Weinberg, Qualität, Reifung und Sammeln, klug einkaufen und die Geschichte des Weins."]],
+    syllabus: "Den ganzen Lehrplan ansehen",
+    forH: "Für wen?",
+    for: [["Neugierige Einsteiger", "Für alle, die Wein genießen und wissen wollen, was im Glas ist, ganz ohne Schulbank."],
+      ["Weinliebhaber, die schon alles haben", "Noch eine Flasche ist nach einem Abend leer. Zu verstehen, warum man Wein liebt, bleibt."],
+      ["Vor der Reise", "Geht es nach Bordeaux, in die Toskana oder in die Rioja? Die Länder-Einheiten erklären Regionen, Rebsorten und Etiketten."],
+      ["Vor dem WSET-Kurs", "Ein entspannter erster Schritt für alle, die über eine Weinausbildung nachdenken."]],
+    faqH: "Fragen",
+    faq: [["Verfällt der Geschenkcode?", "Nein. Er gilt, bis er eingelöst wird, und kann also bis zum Geburtstag oder bis Weihnachten warten."],
+      ["Wie wird er eingelöst?", "Auf winelingo.app/redeem: anmelden oder ein kostenloses Konto erstellen und den Code eingeben. Damit wird der ganze Kurs für dieses Konto freigeschaltet."],
+      ["Funktioniert er in der iPhone-App?", "Ja. Es ist dasselbe Konto: alle Lektionen mit unbegrenzten Herzen, im Web und in der App. Das Scannen von Etiketten in der App ist nicht enthalten."],
+      ["Ist das ein Abo?", "Nein. Es ist eine einmalige Zahlung von 39,99 $, angezeigt in deiner Währung inklusive Mehrwertsteuer. Es verlängert sich nichts automatisch."],
+      ["In welchen Sprachen?", "Deutsch, Englisch, Dänisch und Spanisch. Die Sprache lässt sich jederzeit wechseln."],
+      ["Kann ich das Geld zurückbekommen?", "Ja, innerhalb von 14 Tagen nach dem Kauf, solange der Code nicht eingelöst wurde. Ein erstatteter Code funktioniert nicht mehr."],
+      ["Ist es schon zu spät für Weihnachten?", "Nein. Der Code kommt, sobald du bezahlst, und eignet sich deshalb auch als Last-Minute-Geschenk."]],
+    endH: "Schenk etwas, das bleibt", endCta: "Geschenk kaufen · 39,99 $",
+    fine: "Nur für Erwachsene (18+). Bitte genieße Wein verantwortungsvoll.",
+  },
 };
-const giftBuy = (lang) => (lang === "en" ? "/course/?gift=1" : "/course/?gift=1&lang=da");
-const giftRedeem = (lang) => (lang === "en" ? "/redeem/" : "/redeem/?lang=da");
+const giftBuy = (lang) => (lang === "en" ? "/course/?gift=1" : `/course/?gift=1&lang=${lang}`);
+const giftRedeem = (lang) => (lang === "en" ? "/redeem/" : `/redeem/?lang=${lang}`);
+const GIFT_NAME = { en: "Winelingo online wine course, as a gift", da: "Winelingos vinkursus online, som gave", es: "Curso de vino online de Winelingo para regalar", de: "Online-Weinkurs von Winelingo als Geschenk" };
 function giftPage(lang) {
   const g = G[lang];
   const ld = { "@context": "https://schema.org", "@graph": [
     { "@type": "BreadcrumbList", itemListElement: [
-      { "@type": "ListItem", position: 1, name: lang === "en" ? "Home" : "Forside", item: `${SITE}/` },
+      { "@type": "ListItem", position: 1, name: T[lang].crumbHome, item: `${SITE}/` },
       { "@type": "ListItem", position: 2, name: g.eyebrow, item: `${SITE}${g.path}` }] },
-    { "@type": "Product", name: lang === "en" ? "Winelingo online wine course, as a gift" : "Winelingos vinkursus online, som gave",
+    { "@type": "Product", name: GIFT_NAME[lang],
       description: g.desc, brand: { "@type": "Brand", name: "Winelingo" }, image: `${SITE}/assets/social-card.png`, url: `${SITE}${g.path}`,
       offers: { "@type": "Offer", price: "39.99", priceCurrency: "USD", availability: "https://schema.org/InStock", url: `${SITE}${g.path}` } },
     { "@type": "FAQPage", mainEntity: g.faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },
@@ -731,7 +798,7 @@ function giftPage(lang) {
   <p class="cl-fine">${g.fine}</p>
 </div></section>
 </main>`;
-  return head({ lang, title: g.title, desc: g.desc, path: g.path, alt: { en: G.en.path, da: G.da.path }, ld }) + HEADER + body + FOOTER;
+  return head({ lang, title: g.title, desc: g.desc, path: g.path, alt: Object.fromEntries(LANGS.map((x) => [x, G[x].path])), ld }) + HEADER + body + FOOTER;
 }
 // The card: printed or sent by the buyer. The code arrives in the address's #fragment, which never
 // leaves the browser; names and a message are typed on the page and printed with it.
@@ -768,7 +835,7 @@ ${FONTS}
   </article>
   <p class="gc-redeem"><a id="redeem" class="btn btn-ghost" href="/redeem/" data-t="redeem">Redeem this code now</a></p>
 </main>
-<script src="/assets/gift-card.js?v=2"></script>
+<script src="/assets/gift-card.js?v=3"></script>
 </body>
 </html>
 `;
@@ -830,6 +897,7 @@ write("da/vinkursus/index.html", landing("da", { withApp: false }));
 for (const g of ["es", "de"]) write(`${HUB[g].slice(1)}index.html`, landing(g, { withApp: false }));
 write("gift/index.html", giftPage("en"));
 write("da/gave/index.html", giftPage("da"));
+for (const g of ["es", "de"]) write(`${G[g].path.slice(1)}index.html`, giftPage(g));
 write("gift/card/index.html", cardPage());
 write("redeem/index.html", redeemPage());
 for (const u of U) for (const g of LANGS) write(`${unitUrl(u, g).slice(1)}index.html`, unitPage(u, g));
@@ -837,6 +905,6 @@ for (const [from, key, lang, title, desc] of REDIRECTS) {
   const u = U.find((x) => x.key === key);
   write(from.replace(/^\//, "") + "index.html", redirectPage(unitUrl(u, lang), lang, title, desc));
 }
-export const COURSE_URLS = [...LANGS.map(hubUrl), G.en.path, G.da.path, ...U.flatMap((u) => LANGS.map((g) => unitUrl(u, g)))];
+export const COURSE_URLS = [...LANGS.map(hubUrl), ...LANGS.map((g) => G[g].path), ...U.flatMap((u) => LANGS.map((g) => unitUrl(u, g)))];
 writeFileSync(join(ROOT, "data/course/urls.json"), JSON.stringify(COURSE_URLS, null, 1));
 console.log(`course pages: ${LANGS.length} landings + ${U.length * LANGS.length} unit pages · ${TOTAL_LESSONS} lessons · ~${HOURS} h · course box on ${banded} pages`);

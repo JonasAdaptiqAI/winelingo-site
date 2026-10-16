@@ -14,7 +14,7 @@
       what: "El curso de vino de Winelingo, para siempre", sub: "170 lecciones interactivas: cata, uvas y doce países del vino.",
       code: "Tu código", where: "Canjéalo en winelingo.app/redeem", redeem: "Canjear este código ahora", toP: "Para ", fromP: "De " },
     de: { to: "Für", from: "Von", msg: "Ein paar Worte (optional)", print: "Karte drucken", for: "Ein Geschenk für dich",
-      what: "Der Winelingo-Weinkurs, für immer", sub: "170 interaktive Lektionen: Verkostung, Rebsorten und zwölf Weinländer.",
+      what: "Der Winelingo-Weinkurs, auf Lebenszeit", sub: "170 interaktive Lektionen: Verkostung, Rebsorten und zwölf Weinländer.",
       code: "Dein Code", where: "Einlösen auf winelingo.app/redeem", redeem: "Diesen Code jetzt einlösen", toP: "Für ", fromP: "Von " }
   };
   var hash = location.hash.slice(1), p = {};
