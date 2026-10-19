@@ -440,3 +440,37 @@ landscape and landmarks. These pages carry no photo credit.
 | area-umbria.jpg | Vineyards and olive groves below the hilltop town of Montefalco in Umbria |
 | area-walker-bay.jpg | Vineyards filling the Hemel-en-Aarde valley in Walker Bay, between fynbos mountains, the ocean beyond |
 | area-yarra-valley.jpg | Vineyards on rolling hills in the Yarra Valley, with morning mist and the Great Dividing Range behind |
+
+
+## Wine-country photos (October 2026)
+
+The 15 `/countries/` pages and the countries hub have their own hero photo, hub thumbnail and
+1200x630 share image (files `country-<slug>.*`), each a different view from the region pages' photos.
+The region cards on each country page now show that region's own `area-` (or style) photo.
+
+**Real photos (13).** From Wikimedia Commons, credited under each photo.
+
+| File | Photographer · licence | Source |
+|---|---|---|
+| country-argentina.jpg | PP2025 · CC0 | https://commons.wikimedia.org/wiki/File:Los_Pioneros_Vineyard_2.jpg |
+| country-australia.jpg | Olivier Lemoine · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Barossa_Valley_19.jpg |
+| country-austria.jpg | C.Stadler/Bwag · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:D%C3%BCrnstein_(1).JPG |
+| country-countries-hub.jpg | Lorenz Poffet · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Lavaux_Switzerland.jpg |
+| country-france.jpg | Benjamin Smith · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Chassagne-Montrachet_-_Vignoble_-_1.jpg |
+| country-germany.jpg | Stefan.hermes · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Trittenheim_panorama_moselschleife_sommer.jpg |
+| country-greece.jpg | LBM1948 · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Santorini_103.jpg |
+| country-hungary.jpg | Derzsi Elekes Andor · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Hegymagas%2C_t%C3%A1jk%C3%A9p_sz%C5%91l%C5%91skertekkel%2C_2014.07.05_(16).jpg |
+| country-italy.jpg | Megan Mallen · CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Barolo_-_view_from_La_Morra_in_Piemonte%2C_Italy.jpg |
+| country-portugal.jpg | François Philipp · CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Douro_Wineyard_Terraces_(10247850404).jpg |
+| country-south-africa.jpg | South African Tourism · CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Franschhoek_vineyard%2C_Western_Cape%2C_South_Africa_(20319683579).jpg |
+| country-spain.jpg | Mentxuwiki · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos_en_oto%C3%B1o%2C_Elvillar_4.jpg |
+| country-united-states.jpg | Brocken Inaglory · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Vineyards_in_Napa_Valley_7.jpg |
+
+**AI-generated (3).** Higgsfield (GPT Image 2.5, quality "high", 2K, 21:9), where Commons had no
+excellent photo. No credit line.
+
+| File | Shows |
+|---|---|
+| country-chile.jpg | Vineyards in a valley of central Chile below the snow-covered Andes |
+| country-georgia.jpg | Vineyards in the Alazani Valley of Kakheti below Sighnaghi and the snow-capped Greater Caucasus |
+| country-new-zealand.jpg | Vineyards in the Gibbston Valley, Central Otago, between tussock-covered mountains and a river gorge |
