@@ -474,3 +474,79 @@ excellent photo. No credit line.
 | country-chile.jpg | Vineyards in a valley of central Chile below the snow-covered Andes |
 | country-georgia.jpg | Vineyards in the Alazani Valley of Kakheti below Sighnaghi and the snow-capped Greater Caucasus |
 | country-new-zealand.jpg | Vineyards in the Gibbston Valley, Central Otago, between tussock-covered mountains and a river gorge |
+
+
+## Food-and-wine pairing photos, wave 1 (October 2026)
+
+64 `/food-and-wine-pairing/` pages have their own hero photo and 1200x630 share image (files
+`pairing-<slug>.*`), replacing generic grape and glass photos shared by up to 15 pages. Each photo is
+**AI-generated** with Higgsfield (GPT Image 2.5, quality "high", 2K, 21:9) and shows the dish as it is
+typically served beside a glass of the wine the page recommends first, in that wine's true colour and
+the right glass. No credit line. The remaining pairing pages follow in wave 2.
+
+| File | Shows |
+|---|---|
+| pairing-amatriciana.jpg | Bucatini all'amatriciana with a glass of deep red Montepulciano d'Abruzzo |
+| pairing-aubergine-parmigiana.jpg | Aubergine parmigiana with a glass of dark red Aglianico |
+| pairing-baked-ziti.jpg | Baked ziti with melted mozzarella and a glass of ruby Sangiovese |
+| pairing-beef-stroganoff.jpg | Beef stroganoff over egg noodles with a glass of translucent Pinot Noir |
+| pairing-beef-wellington.jpg | Sliced beef Wellington with a glass of deep red Bordeaux |
+| pairing-beetroot-salad.jpg | Roasted beetroot salad with goat's cheese and a glass of pale Sancerre |
+| pairing-biryani.jpg | Chicken biryani in a copper pot with a glass of golden Gewürztraminer |
+| pairing-bolognese.jpg | Tagliatelle with ragù alla bolognese and a glass of ruby Sangiovese |
+| pairing-butter-chicken.jpg | Butter chicken with naan and a glass of golden Viognier |
+| pairing-butternut-squash-soup.jpg | Butternut squash soup with a glass of pale gold Chenin Blanc |
+| pairing-cassoulet.jpg | Cassoulet in an earthenware dish with a glass of deep red Languedoc wine |
+| pairing-chicken-marsala.jpg | Chicken marsala with mushrooms and a glass of translucent Pinot Noir |
+| pairing-chicken-wings.jpg | Buffalo chicken wings with blue cheese dip and a flute of sparkling Cava |
+| pairing-coq-au-vin.jpg | Coq au vin in a cast-iron pot with a glass of red Burgundy |
+| pairing-dim-sum.jpg | Dim sum in bamboo steamers with a flute of Champagne |
+| pairing-duck.jpg | Sliced roast duck breast with cherry sauce and a glass of Pinot Noir |
+| pairing-empanadas.jpg | Baked beef empanadas with chimichurri and a glass of inky Malbec |
+| pairing-enchiladas.jpg | Red-sauce enchiladas with a glass of ruby Garnacha |
+| pairing-escargot.jpg | Escargots in garlic and parsley butter with a glass of pale Chablis |
+| pairing-etouffee.jpg | Crawfish étouffée over rice with a glass of pale unoaked Chardonnay |
+| pairing-fajitas.jpg | Sizzling beef fajitas with tortillas and a glass of ruby Garnacha |
+| pairing-falafel.jpg | Falafel with hummus and pita and a glass of pale Assyrtiko |
+| pairing-fettuccine-alfredo.jpg | Fettuccine Alfredo with a glass of pale unoaked Chardonnay |
+| pairing-fish-and-chips.jpg | Battered fish and chips with mushy peas and a flute of Champagne |
+| pairing-french-onion-soup.jpg | French onion soup with melted Gruyère and a glass of Beaujolais |
+| pairing-fried-chicken.jpg | Southern fried chicken with a flute of Champagne |
+| pairing-gazpacho.jpg | Chilled gazpacho with a copita of pale Fino sherry |
+| pairing-goulash.jpg | Hungarian beef goulash with a glass of ruby Blaufränkisch |
+| pairing-gumbo.jpg | Seafood and sausage gumbo with a glass of pale off-dry Riesling |
+| pairing-gyros.jpg | Pork gyros in pita with tzatziki and a glass of red Agiorgitiko |
+| pairing-hibachi.jpg | Hibachi steak, shrimp and fried rice with a glass of pale Riesling |
+| pairing-hot-dogs.jpg | Grilled hot dogs with mustard and relish beside a glass of pale rosé |
+| pairing-hummus.jpg | Hummus with olive oil and pita beside a glass of pale Assyrtiko |
+| pairing-jambalaya.jpg | Creole jambalaya in a cast-iron pot with a glass of pale Riesling |
+| pairing-jerk-chicken.jpg | Jamaican jerk chicken with rice and peas and a glass of pale Riesling |
+| pairing-key-lime-pie.jpg | Key lime pie with a glass of lightly sparkling Moscato d'Asti |
+| pairing-korean-bbq.jpg | Korean barbecue on a tabletop grill with banchan and a glass of Beaujolais |
+| pairing-lasagne.jpg | Lasagne alla bolognese with a glass of ruby Sangiovese |
+| pairing-leek-and-potato-soup.jpg | Leek and potato soup with chives and a glass of pale Chablis |
+| pairing-mac-and-cheese.jpg | Baked mac and cheese in a skillet with a glass of pale Chardonnay |
+| pairing-moussaka.jpg | Greek moussaka with a glass of deep red Agiorgitiko |
+| pairing-mushroom-risotto.jpg | Creamy mushroom risotto with a glass of translucent Pinot Noir |
+| pairing-nachos.jpg | Loaded nachos with guacamole and a flute of sparkling Cava |
+| pairing-osso-buco.jpg | Osso buco with gremolata and saffron risotto and a glass of Barbera |
+| pairing-pad-thai.jpg | Pad thai with shrimp and peanuts and a glass of pale off-dry Riesling |
+| pairing-paella.jpg | Seafood paella in its pan with a glass of pale Albariño |
+| pairing-pasta-alla-vodka.jpg | Penne alla vodka with a glass of ruby Barbera |
+| pairing-pho.jpg | Vietnamese beef pho with herbs and a glass of pale dry Riesling |
+| pairing-pulled-pork.jpg | Pulled pork sandwich with coleslaw and a glass of deep red Zinfandel |
+| pairing-quesadillas.jpg | Cheese quesadillas with salsa and guacamole and a flute of Cava |
+| pairing-quiche.jpg | Quiche Lorraine with salad and a flute of Crémant d'Alsace |
+| pairing-ramen.jpg | Tonkotsu ramen with a soft egg and a flute of Champagne |
+| pairing-ratatouille.jpg | Provençal ratatouille with a glass of pale pink Provence rosé |
+| pairing-roasted-cauliflower.jpg | Whole roasted cauliflower with tahini and a glass of golden Chardonnay |
+| pairing-shakshuka.jpg | Shakshuka in a cast-iron pan with a glass of pale pink rosé |
+| pairing-shepherds-pie.jpg | Shepherd's pie with a golden potato top and a glass of dark Syrah |
+| pairing-spaghetti-and-meatballs.jpg | Spaghetti and meatballs with a glass of ruby Sangiovese |
+| pairing-sushi.jpg | Sushi board of nigiri and maki with a glass of pale off-dry Riesling |
+| pairing-tacos.jpg | Fish tacos with lime and cabbage and a glass of pale Albariño |
+| pairing-thai-yellow-curry.jpg | Thai yellow curry with potato and rice and a glass of pale off-dry Riesling |
+| pairing-tiramisu.jpg | Tiramisu dusted with cocoa and a small glass of amber Vin Santo |
+| pairing-toad-in-the-hole.jpg | Toad in the hole with onion gravy and a glass of Beaujolais |
+| pairing-udon.jpg | Udon noodles in dashi broth with a glass of pale dry Riesling |
+| pairing-zuppa-toscana.jpg | Zuppa toscana with sausage, potato and kale and a glass of Chianti Classico |
