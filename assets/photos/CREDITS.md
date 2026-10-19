@@ -252,7 +252,7 @@ looked pink, and Valpolicella had looked like rosé.
 
 ## Grape-variety photos (October 2026)
 
-66 of the 74 `/grape-varieties/` pages have their own hero photo, hub thumbnail and 1200x630
+All 74 `/grape-varieties/` pages have their own hero photo, hub thumbnail and 1200x630
 share image (files `variety-<slug>.*`), replacing a generic glass of wine.
 
 **Real photos (52).** Grapes of the named variety on the vine, from Wikimedia Commons;
@@ -316,7 +316,7 @@ same licence.
 | variety-zinfandel.jpg | Frank Schulenburg · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Ripe_Zinfandel_grapes_in_Dry_Creek_Valley-8958.jpg |
 | variety-zweigelt.jpg | Geolina163 + 1971markus · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:HBLA_Klosterneuburg_Zweigelt_02.jpg |
 
-**AI-generated (14).** For varieties with no good free photo on Commons, the photo is
+**AI-generated (22).** For varieties with no good free photo on Commons, the photo is
 **AI-generated** with Higgsfield (GPT Image 2.5, quality "high", 2K, 21:9) and shows the grape's
 real berry colour in a landscape of its home region. These pages carry no photo credit.
 
@@ -325,17 +325,22 @@ real berry colour in a landscape of its home region. These pages carry no photo 
 | variety-agiorgitiko.jpg | Dark Agiorgitiko grape bunches on old vines above the hills of Nemea at sunset |
 | variety-aglianico.jpg | Black Aglianico grapes hanging on the vine with Monte Vulture in the evening light |
 | variety-assyrtiko.jpg | Green-gold Assyrtiko grapes inside a basket-trained vine on volcanic soil above the Santorini caldera |
+| variety-cortese.jpg | Pale gold Cortese grapes on the vine above the hills of Gavi in Piedmont, with a hilltop village behind |
 | variety-garganega.jpg | Golden Garganega bunches on a pergola vine with the hilltop castle of Soave behind |
 | variety-godello.jpg | Pale Godello grapes on a vine above terraced slate slopes and a river gorge in Galicia |
+| variety-greco.jpg | Golden Greco grapes on an old vine above the wooded hills of Irpinia in Campania |
+| variety-lagrein.jpg | Dark Lagrein grapes on a pergola vine with the Bolzano basin and the Dolomites behind |
+| variety-marsanne.jpg | Golden Marsanne grapes on a staked vine below the hill of Hermitage and the Rhône |
 | variety-montepulciano.jpg | Dark Montepulciano grapes on a pergola vine with the snow-capped Gran Sasso behind |
 | variety-negroamaro.jpg | Black Negroamaro grapes on bush vines among olive trees in Puglia at sunset |
 | variety-nerello-mascalese.jpg | Nerello Mascalese grapes on an old vine with smoking Mount Etna behind |
 | variety-palomino.jpg | Ripe Palomino grapes on a low vine rooted in white albariza chalk near Jerez |
 | variety-petite-sirah.jpg | Heavy clusters of inky Petite Sirah grapes on the vine above golden California hills |
+| variety-roussanne.jpg | Russet-tinged golden Roussanne grapes above pebble-covered vineyards in the southern Rhône |
+| variety-sagrantino.jpg | Thick-skinned, almost black Sagrantino grapes with the hilltop town of Montefalco in Umbria behind |
+| variety-teroldego.jpg | Blue-black Teroldego grapes on a pergola above the Campo Rotaliano, enclosed by Dolomite cliffs |
 | variety-torrontes.jpg | Golden Torrontés bunches on a pergola with the red mountains of Cafayate, Argentina behind |
 | variety-touriga-nacional.jpg | Touriga Nacional grapes on an old vine above the terraced slopes of the Douro Valley |
 | variety-verdejo.jpg | Verdejo grapes on low bush vines in stony soil on the high plain of Rueda |
+| variety-vernaccia.jpg | Golden Vernaccia grapes on the vine with the medieval towers of San Gimignano behind |
 | variety-xinomavro.jpg | Dark Xinomavro grapes on the vine with the mountains of Naoussa, northern Greece, behind |
-
-Still on the generic photo, pending a Higgsfield credit top-up: cortese, greco, lagrein, marsanne,
-roussanne, sagrantino, teroldego, vernaccia.
