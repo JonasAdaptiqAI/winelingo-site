@@ -344,3 +344,99 @@ real berry colour in a landscape of its home region. These pages carry no photo 
 | variety-verdejo.jpg | Verdejo grapes on low bush vines in stony soil on the high plain of Rueda |
 | variety-vernaccia.jpg | Golden Vernaccia grapes on the vine with the medieval towers of San Gimignano behind |
 | variety-xinomavro.jpg | Dark Xinomavro grapes on the vine with the mountains of Naoussa, northern Greece, behind |
+
+
+## Wine-region photos (October 2026)
+
+All 74 `/wine-regions/` pages have their own hero photo, hub thumbnail and 1200x630 share image
+(files `area-<slug>.*`), replacing 15 generic vineyard photos that were shared by up to 6 pages each.
+The 8 region addresses that now redirect to a style page show that style's photo on the hub.
+
+**Real photos (53).** Vineyards of the named region, from Wikimedia Commons, chosen by eye for
+quality and checked against each file's description and categories for the location. Each page shows
+the credit and licence under the photo, linked to the file page. CC BY-SA files are cropped and resized
+only; the crops are shared under the same licence.
+
+| File | Photographer · licence | Source |
+|---|---|---|
+| area-abruzzo.jpg | maury3001 · CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Vigneto_autunnale_sulla_Val_di_Foro_-_panoramio.jpg |
+| area-alentejo.jpg | Kent Wang from London, United Kingdom · CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Alentejo_(27868681287).jpg |
+| area-alsace.jpg | JLPC · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Kaysersberg_Vignoble_c_2011.jpg |
+| area-alto-adige.jpg | Isderion · CC BY-SA 3.0 de | https://commons.wikimedia.org/wiki/File:Tramin_vom_Weinberg.jpg |
+| area-barossa-valley.jpg | Olivier Lemoine (Photo-Terroir.fr) · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Barossa_Valley_10.jpg |
+| area-bordeaux.jpg | Marie Thérèse Hébert & Jean Robert Thibault · CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Saint-%C3%89milion,_le_village_entour%C3%A9_de_vignobles_(8224549501).jpg |
+| area-burgundy.jpg | Benjamin Smith · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Santenay_-_Vignoble_-_3.jpg |
+| area-casablanca-valley.jpg | Paulo JC Nogueira · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Uvas_da_Vi%C3%B1a_Idomita_-_Valpara%C3%ADso_-_Chile_-_panoramio.jpg |
+| area-central-otago.jpg | ED01 (Wikivoyage) · Public domain | https://commons.wikimedia.org/wiki/File:RipponVineyard.jpg |
+| area-clare-valley.jpg | Scott Davis · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Vines_in_Clare_Valley.jpg |
+| area-colchagua-valley.jpg | Tjeerd Wiersma · CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Vi%C3%B1a_Montes_(20348984418).jpg |
+| area-constantia.jpg | Barry haynes · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Constantia_vineyards.jpg |
+| area-coonawarra.jpg | Alpha · CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Wynns_Coonawarra_-_Grapevines.jpg |
+| area-douro.jpg | bvi4092 · CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Vineyards_on_the_hillside_of_the_Douro_Valley_-_Portugal_(54342973921).jpg |
+| area-friuli-venezia-giulia.jpg | Cookligan · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Vigne_nel_Collio_Goriziano_vicino_a_Oslavia.jpg |
+| area-hawke-s-bay.jpg | HuttyMcphoo · CC BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:HB_Vineyard_autumn.JPG |
+| area-jerez.jpg | Historiador jerezano · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Torre_de_Macharnudo_Vi%C3%B1a_El_Majuelo.jpg |
+| area-kakheti.jpg | Vladimir Pankratov · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Rainbow_in_Kakheti.jpg |
+| area-languedoc-roussillon.jpg | Gaylord Burguière · CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Vignes_de_l%27AOP_Saint-Chinian_vue_sur_le_Mont_Caroux.jpg |
+| area-loire-valley.jpg | Cjp24 · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Sancerre_vu_depuis_Chavignol.jpg |
+| area-lombardy.jpg | Franco Folini · CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Valtellina,_Italy_vineyard.jpg |
+| area-maipo-valley.jpg | Fsanchezs · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Vi%C3%B1edo_Puente_Alto.jpg |
+| area-marlborough.jpg | Jonathan Harker · CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Wairau_Valley_vineyards_in_Marlborough,_New_Zealand.jpg |
+| area-mclaren-vale.jpg | Wikipedian · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:McLaren_Vale_wine_region_-_panoramio.jpg |
+| area-mendoza.jpg | Juan Pelizzatti · CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Bodega_chakana_nieve_y_camino.jpg |
+| area-mosel.jpg | Kora27 · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Moselschleife_bei_Bremm_(Mosel)._Rhreinland-Pfalz_2H1A0001WI.jpg |
+| area-nahe.jpg | Jacquesverlaeken · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Oberhausen_Nahe_fromLemberg_20405_01.jpg |
+| area-napa-valley.jpg | Rhododendrites · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Vineyard_in_Napa_Valley_(01934).jpg |
+| area-northern-rhone.jpg | Frederick Wildman and Sons, Ltd · CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Vignobles_sur_la_colline_de_Tain_l%27Hermitage.jpg |
+| area-penedes.jpg | Angela Llop · CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Vinyes_de_Tardor,_Santa_Maria_de_Foix,_Alt_Pened%C3%A8s._(22366284159).jpg |
+| area-pfalz.jpg | Kmtextor · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:St-martin-vineyards-autumn.jpg |
+| area-piedmont.jpg | Mikegw66 · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Serralunga_d'Alba_-_Castello_di_Serralunga_incastonato_tra_i_vigneti.jpg |
+| area-priorat.jpg | Alberto-g-rovi · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:L%27escaladei-el_priorat-2011.JPG |
+| area-provence.jpg | François GOGLINS · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Puyloubier-FR-13-vignes_et_Mont_Venturi-a1.jpg |
+| area-puglia.jpg | Angelomagic · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Vigneto_in_via_Campi.jpg |
+| area-rheingau.jpg | Kurt Möbus · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Weinberge_am_Rhein_bei_R%C3%BCdesheim_UNESO_Welterbe_Mitelrheintal.jpg |
+| area-rheinhessen.jpg | JulienWittenberg · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Katharinenkirche,_Burg_Landskron,_Teile_der_historischen_Stadtbefestigung_und_weitere_historische_Geb%C3%A4ude_Oppenheims_im_Ensemble,_Weinberge_im_Vordergrund.jpg |
+| area-rias-baixas.jpg | Re Fresh Vigo · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos_de_albari%C3%B1o_en_la_parroquia_de_Santa_Cruz_de_Castrelo_(Cambados).jpg |
+| area-salta.jpg | Tokyo Tanenhaus · CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Vi%C3%B1edoCafayate.jpg |
+| area-santorini.jpg | Norbert Nagel · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Winegrowing_between_crater_rim_and_Megalochori_-_Santorini_-_Greece.jpg |
+| area-sardinia.jpg | La Casa di Sophia · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Spiaggia_Grande_vineyard_on_a_sandy_soil.jpg |
+| area-sicily.jpg | Marco89Testa · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:VIGNA_CON_SFONDO_ETNA.jpg |
+| area-sonoma-county.jpg | Frank Schulenburg · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Joseph_Family_Vineyards_(2025)-L1000290.jpg |
+| area-southern-rhone.jpg | Véronique Pagnier · Public domain | https://commons.wikimedia.org/wiki/File:Vacqueyras_et_Dentelles_de_Montmirail.JPG |
+| area-stellenbosch.jpg | Matthias Bethke · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Vineyards_in_Stellenbosch_II.jpg |
+| area-tokaj.jpg | JezW · CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:The_Tokaj_mountain_3.JPG |
+| area-toro.jpg | VIEX - Ernest Niedermann · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Wineyard_Spain_in_Spring_-_San_Roman_de_Horinja.jpg |
+| area-tuscany.jpg | Repuli · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Autunno_in_Chianti_Toscana.jpg |
+| area-uco-valley.jpg | David (Flickr) · CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Vineyard_in_Mendoza,_Argentina.jpg |
+| area-veneto.jpg | Civvì · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Pentagono_del_Cartizze_01.jpg |
+| area-vinho-verde.jpg | Joseolgon · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Igreja_de_Alvaredo_(4).jpg |
+| area-wachau.jpg | Isiwal · CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Wei%C3%9Fenkirchen_in_der_Wachau-9234.jpg |
+| area-willamette-valley.jpg | Gary Halvorson, Oregon State Archives · CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Quarry_Road,_Newberg_-_DPLA_-_1e5a932e842b53a7330d4e29b5661f52.jpg |
+
+**AI-generated (21).** Where Commons had no good, clearly located photo, the photo is
+**AI-generated** with Higgsfield (GPT Image 2.5, quality "high", 2K, 21:9) and shows the region's typical
+landscape and landmarks. These pages carry no photo credit.
+
+| File | Shows |
+|---|---|
+| area-aconcagua-valley.jpg | Vineyards on the floor of the Aconcagua Valley, with cacti on the foothills and the snow-capped Andes behind |
+| area-bierzo.jpg | Steep slate slopes of old bush vines above Villafranca del Bierzo, with green mountain ridges behind |
+| area-burgenland.jpg | Vineyards sloping down to the reed-fringed Lake Neusiedl in Burgenland, with a village church spire |
+| area-campania.jpg | Vineyards on the slopes of Mount Vesuvius above the Bay of Naples, with umbrella pines |
+| area-columbia-valley.jpg | Irrigated vineyards on sagebrush hills above the Columbia River and its basalt bluffs in eastern Washington |
+| area-dao.jpg | Small vineyard plots among granite boulders and pine forest in the Dão, with the Serra da Estrela on the horizon |
+| area-finger-lakes.jpg | Vineyard rows sloping down to Seneca Lake in the Finger Lakes, with a red barn and autumn woods |
+| area-hunter-valley.jpg | Vineyard rows among eucalyptus trees in the Hunter Valley, below the sandstone Brokenback Range |
+| area-kamptal.jpg | Terraced vineyards on the Heiligenstein above the Kamp valley and the village of Zöbing |
+| area-margaret-river.jpg | Vineyard rows running towards karri and marri forest in Margaret River, the Indian Ocean in the distance |
+| area-martinborough.jpg | Pinot Noir vineyards on dry river terraces at Martinborough, with poplar windbreaks and the ranges behind |
+| area-maule-valley.jpg | Old dry-farmed bush vines on rolling granite hills in the Maule Valley, Chile |
+| area-naoussa.jpg | Xinomavro vineyards on the lower slopes of Mount Vermio above the town of Naoussa in northern Greece |
+| area-nemea.jpg | Agiorgitiko vineyards in the valley of Nemea, with the columns of the ancient Temple of Zeus among cypresses |
+| area-paso-robles.jpg | Vineyards on rolling golden hills dotted with oak trees in Paso Robles, California |
+| area-patagonia.jpg | Irrigated vineyards and poplar windbreaks on the Río Negro valley floor, below the bare cliffs of the Patagonian plateau |
+| area-rueda.jpg | Flat Verdejo vineyards on pale stony soil on the high plateau of Rueda, a village church tower in the distance |
+| area-swartland.jpg | Old bush vines and golden wheat fields in the Swartland, with Riebeek-Kasteel and the Kasteelberg behind |
+| area-umbria.jpg | Vineyards and olive groves below the hilltop town of Montefalco in Umbria |
+| area-walker-bay.jpg | Vineyards filling the Hemel-en-Aarde valley in Walker Bay, between fynbos mountains, the ocean beyond |
+| area-yarra-valley.jpg | Vineyards on rolling hills in the Yarra Valley, with morning mist and the Great Dividing Range behind |
