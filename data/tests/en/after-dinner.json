@@ -33,14 +33,14 @@
     {
       "q": "A guest orders the crème brûlée and wants a Port with nutty, caramel flavours. Which do you pour?",
       "opts": [
-        "A 10 Year Old Tawny Port",
+        "A 10-year-old Tawny Port",
         "A young Ruby Port",
         "A Late Bottled Vintage (LBV) Port",
         "A young Vintage Port"
       ],
       "a": 0,
       "why": "Tawny ages for years in small wooden casks, where slow contact with air turns it amber and gives it nutty, toffee and dried-fruit flavours. Ruby, LBV and Vintage Port stay deep red and taste of dark berries.",
-      "deeper": "The 10, 20, 30 or 40 years on a Tawny label is not the exact age of every drop. It is a blend of several harvests that the Port institute's tasters have approved as having the character of that age.",
+      "deeper": "The age on a Tawny label, 10, 20, 30, 40 or 50 years, is not the exact age of every drop. It is a blend of several harvests that the Port institute's tasters have approved as having the character of that age.",
       "source": "https://www.decanter.com/wine/wine-regions/port/understanding-tawny-port-347710/"
     },
     {
@@ -65,7 +65,7 @@
         "No: it is Cognac from two top areas, aged at least 10 years"
       ],
       "a": 3,
-      "why": "Here \"Champagne\" names the two best growing areas inside Cognac, Grande and Petite Champagne; Fine Champagne is a blend of the two, at least half from Grande Champagne. XO means the youngest brandy in the blend has spent at least 10 years in oak.",
+      "why": "Here \"Champagne\" names the two most famous growing areas inside Cognac, Grande and Petite Champagne; Fine Champagne is a blend of the two, at least half from Grande Champagne. XO means the youngest brandy in the blend has spent at least 10 years in oak.",
       "deeper": "The other age terms are VS, at least 2 years in oak, and VSOP, at least 4 years. The XO minimum rose from 6 to 10 years in 2018, and many XOs are much older than that.",
       "source": "https://drinksint.com/news/fullstory.php/aid/7503/.html"
     },
@@ -113,12 +113,12 @@
       "opts": [
         "Fino sherry",
         "Ruby Port",
-        "10 Year Old Tawny Port",
+        "10-year-old Tawny Port",
         "Madeira"
       ],
       "a": 3,
       "why": "Madeira is heated and exposed to air on purpose as it ages, so a little more air after opening does it very little harm: it keeps for months. Wines that were shielded from air all their lives, like Fino, fade the fastest.",
-      "deeper": "Re-corked in the fridge, Fino keeps a few days, a week at most; Ruby and LBV about a week; Tawny a few weeks. Write the opening date on every bottle so the whole team knows how long it has been open.",
+      "deeper": "Re-corked and kept cool (Fino in the fridge), Fino and Vintage Port keep a few days, Ruby and LBV about a week, Tawny a few weeks. Write the opening date on every bottle so the whole team knows how long it has been open.",
       "source": "https://www.thewinesociety.com/discover/wine-basics/serve-store-taste/caroline-gilby-how-long-can-i-keep-a-bottle-of-wine-once-its-been-opened"
     },
     {
@@ -130,7 +130,7 @@
         "Keep suggesting drinks until somebody at the table agrees"
       ],
       "a": 1,
-      "why": "A specific choice of two, such as \"a 10 year old Tawny, or a glass of Sauternes with the tart?\", is easy to say yes to. Naming the price, especially for a pricey Cognac, avoids a nasty surprise on the bill and builds trust.",
+      "why": "A specific choice of two, such as \"a 10-year-old Tawny, or a glass of Sauternes with the tart?\", is easy to say yes to. Naming the price, especially for a pricey Cognac, avoids a nasty surprise on the bill and builds trust.",
       "deeper": "Never push a guest who is driving or has clearly had enough; offer coffee, tea or an alcohol-free drink instead. In the UK, for example, it is a criminal offence to knowingly sell alcohol to someone who is drunk.",
       "source": "https://www.legislation.gov.uk/ukpga/2003/17/section/141"
     }

@@ -1,7 +1,7 @@
 {
   "slug": "after-dinner",
-  "title": "Nach dem Essen: Dessertwein und Digestif",
-  "summary": "Empfiehl, serviere und lagere die Getränke, die ein Essen abrunden: Dessertwein, Portwein, Sherry und Brände, angeboten ohne Aufdringlichkeit.",
+  "title": "Getränke nach dem Essen",
+  "summary": "Empfiehl, serviere und bewahre auf, was ein Essen abrundet: Dessertwein, Portwein, Sherry und Brandy, angeboten ohne Druck.",
   "level": 2,
   "questions": [
     {
@@ -14,31 +14,31 @@
       ],
       "a": 1,
       "why": "Zum Dessert muss der Wein mindestens so süß sein wie das Essen, sonst lässt ihn der Zucker dünn und sauer schmecken. Ruby und LBV Port sind süß, üppig und voller dunkler Beerenfrucht, deshalb halten sie dunkler Schokolade stand.",
-      "deeper": "LBV (Late Bottled Vintage) ist die Ernte eines einzigen Jahres, nach vier bis sechs Jahren im Holz abgefüllt und trinkreif. Vintage Port gibt es nur aus den besten Jahren; er kann jahrzehntelang auf der Flasche reifen und bildet ein Depot, deshalb wird er meist dekantiert."
+      "deeper": "LBV (Late Bottled Vintage) stammt aus einem einzigen Jahrgang, wird nach vier bis sechs Jahren im Holz abgefüllt und ist dann trinkreif. Vintage Port gibt es nur aus den besten Jahren; er kann jahrzehntelang auf der Flasche reifen und bildet ein Depot, deshalb wird er meist dekantiert."
     },
     {
       "q": "Ein Gast, dem der Barolo sehr geschmeckt hat, möchte etwas zum Blauschimmelkäse und würde gern einen süßen Weißwein probieren. Was schlägst du vor?",
       "opts": [
         "Noch ein Glas vom Barolo",
-        "Ein Glas knackigen, trockenen Sancerre",
+        "Ein Glas knackiger, trockener Sancerre",
         "Ein Glas Manzanilla-Sherry",
         "Ein Glas Tokaji Aszú"
       ],
       "a": 3,
-      "why": "Salziger Blauschimmelkäse liebt süßen Wein: Das Salz verhindert, dass die Süße schwer wirkt, und der Zucker zähmt die Schärfe des Käses. Tokaji Aszú, ein berühmter süßer Weißwein aus Ungarn, hat außerdem frische Säure, die durch den cremigen Käse schneidet.",
+      "why": "Salziger Blauschimmelkäse liebt süßen Wein: Das Salz verhindert, dass die Süße schwer wirkt, und der Zucker zähmt die Schärfe des Käses. Tokaji Aszú, ein berühmter süßer Weißwein aus Ungarn, hat außerdem frische Säure, die den cremigen Käse ausbalanciert.",
       "deeper": "Roter Portwein zu Stilton ist der andere Klassiker, aber dieser Gast wollte einen Weißwein. Tokaji Aszú und Sauternes verdanken ihre Süße beide der Edelfäule, einem nützlichen Pilz, der die Trauben schrumpfen lässt und so Zucker und Säure konzentriert."
     },
     {
       "q": "Ein Gast bestellt die Crème brûlée und möchte einen Portwein mit Noten von Nüssen und Karamell. Welchen schenkst du ein?",
       "opts": [
-        "Einen 10 Jahre alten Tawny Port",
+        "Einen 10-jährigen Tawny Port",
         "Einen jungen Ruby Port",
         "Einen Late Bottled Vintage (LBV) Port",
         "Einen jungen Vintage Port"
       ],
       "a": 0,
       "why": "Tawny reift jahrelang in kleinen Holzfässern, wo langsam eindringende Luft ihn bernsteinfarben macht und ihm Noten von Nüssen, Toffee und Trockenfrüchten gibt. Ruby, LBV und Vintage Port bleiben tiefrot und schmecken nach dunklen Beeren.",
-      "deeper": "Die 10, 20, 30 oder 40 Jahre auf dem Etikett eines Tawny sind nicht das genaue Alter jedes Tropfens. Es ist eine Cuvée aus mehreren Jahrgängen, der die Verkoster des Portwein-Instituts den Charakter dieses Alters bestätigt haben."
+      "deeper": "Die Altersangabe auf einem Tawny, 10, 20, 30, 40 oder 50 Jahre, ist nicht das genaue Alter jedes Tropfens. Der Wein ist eine Cuvée aus mehreren Jahrgängen, der die Verkoster des Portwein-Instituts den Charakter dieses Alters bestätigt haben."
     },
     {
       "q": "Ein Gast sagt: „Sherry ist doch das süße Zeug, das meine Oma immer getrunken hat.“ Welche Antwort stimmt?",
@@ -61,7 +61,7 @@
         "Nein: Das ist Cognac aus zwei Spitzengebieten, mindestens 10 Jahre gereift"
       ],
       "a": 3,
-      "why": "Hier bezeichnet „Champagne“ die zwei besten Anbaugebiete innerhalb von Cognac, Grande und Petite Champagne; Fine Champagne ist eine Mischung aus beiden, mindestens zur Hälfte aus Grande Champagne. XO bedeutet, dass der jüngste Brand in der Mischung mindestens 10 Jahre im Eichenfass verbracht hat.",
+      "why": "Hier bezeichnet „Champagne“ die zwei berühmtesten Anbauzonen im Cognac-Gebiet, Grande und Petite Champagne; Fine Champagne ist eine Mischung aus beiden, mindestens zur Hälfte aus Grande Champagne. XO bedeutet, dass der jüngste Brand in der Mischung mindestens 10 Jahre im Eichenfass verbracht hat.",
       "deeper": "Die anderen Altersangaben sind VS, mindestens 2 Jahre im Eichenfass, und VSOP, mindestens 4 Jahre. Das Mindestalter für XO stieg 2018 von 6 auf 10 Jahre, und viele XO sind deutlich älter."
     },
     {
@@ -73,8 +73,8 @@
         "Armagnac ist Birnenbrand aus dem Elsass; Calvados ist Kirschbrand aus Burgund"
       ],
       "a": 0,
-      "why": "Armagnac wird in der Gascogne im Südwesten Frankreichs aus Weißwein gebrannt, meist in einer besonderen Kolonnenbrennanlage. Calvados wird in der Normandie im Norden Frankreichs aus Cidre gebrannt, manchmal zusammen mit Poiré, dem Cidre aus Birnen.",
-      "deeper": "Calvados muss vor dem Verkauf mindestens zwei Jahre im Eichenfass reifen. Der meiste Armagnac wird nur einmal gebrannt, in dieser Kolonnenbrennanlage, Cognac dagegen zweimal in einer kupfernen Brennblase."
+      "why": "Armagnac wird in der Gascogne im Südwesten Frankreichs aus Weißwein gebrannt, meist in einer besonderen Brennkolonne. Calvados wird in der Normandie im Norden Frankreichs aus Cidre gebrannt, manchmal zusammen mit Poiré, dem Cidre aus Birnen.",
+      "deeper": "Calvados muss vor dem Verkauf mindestens zwei Jahre im Eichenfass reifen. Der meiste Armagnac wird nur einmal gebrannt, in dieser Brennkolonne, Cognac dagegen zweimal in einer kupfernen Brennblase."
     },
     {
       "q": "Ein Gast möchte statt eines Brandys lieber einen Scotch. Was muss für jeden Whisky gelten, der als Scotch verkauft wird?",
@@ -105,12 +105,12 @@
       "opts": [
         "Fino-Sherry",
         "Ruby Port",
-        "10 Jahre alter Tawny Port",
+        "10-jähriger Tawny Port",
         "Madeira"
       ],
       "a": 3,
       "why": "Madeira wird beim Reifen absichtlich erhitzt und der Luft ausgesetzt, deshalb schadet ihm ein bisschen mehr Luft nach dem Öffnen kaum: Er hält monatelang. Weine, die ihr ganzes Leben vor Luft geschützt waren, wie Fino, verblassen am schnellsten.",
-      "deeper": "Wieder verschlossen im Kühlschrank hält Fino ein paar Tage, höchstens eine Woche; Ruby und LBV etwa eine Woche; Tawny ein paar Wochen. Schreib auf jede Flasche das Öffnungsdatum, damit das ganze Team weiß, wie lange sie schon offen ist."
+      "deeper": "Wieder verschlossen und kühl gelagert (Fino im Kühlschrank), halten Fino und Vintage Port ein paar Tage, Ruby und LBV etwa eine Woche, Tawny ein paar Wochen. Schreib auf jede Flasche das Öffnungsdatum, damit das ganze Team weiß, wie lange sie schon offen ist."
     },
     {
       "q": "An einem Vierertisch sind die Teller abgeräumt. Wie bietest du Getränke für nach dem Essen an?",
@@ -121,7 +121,7 @@
         "So lange Getränke vorschlagen, bis jemand am Tisch zusagt"
       ],
       "a": 1,
-      "why": "Eine konkrete Wahl zwischen zwei Dingen, etwa „ein 10 Jahre alter Tawny oder ein Glas Sauternes zur Tarte?“, ist leicht zu bejahen. Den Preis zu nennen, gerade bei einem teuren Cognac, erspart eine böse Überraschung auf der Rechnung und schafft Vertrauen.",
+      "why": "Eine konkrete Wahl zwischen zwei Dingen, etwa „Darf es ein 10-jähriger Tawny sein oder ein Glas Sauternes zur Tarte?“, ist leicht zu bejahen. Den Preis zu nennen, gerade bei einem teuren Cognac, erspart eine böse Überraschung auf der Rechnung und schafft Vertrauen.",
       "deeper": "Dränge nie einen Gast, der noch fahren muss oder sichtlich genug hat; biete stattdessen Kaffee, Tee oder ein alkoholfreies Getränk an. In Großbritannien zum Beispiel ist es eine Straftat, wissentlich Alkohol an eine betrunkene Person zu verkaufen."
     }
   ]
