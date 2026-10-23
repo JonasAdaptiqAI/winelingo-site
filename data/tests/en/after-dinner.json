@@ -1,0 +1,138 @@
+{
+  "slug": "after-dinner",
+  "title": "After-dinner drinks",
+  "summary": "Suggest, pour and keep the drinks that end a meal: dessert wine, Port, sherry and brandy, offered without being pushy.",
+  "level": 2,
+  "questions": [
+    {
+      "q": "A guest orders the dark chocolate fondant and asks for a glass of something to go with it. Which is the best match?",
+      "opts": [
+        "A glass of dry Brut Champagne",
+        "A glass of Ruby or LBV Port",
+        "A glass of chilled Fino sherry",
+        "A glass of a dry red such as Barolo"
+      ],
+      "a": 1,
+      "why": "With dessert, the wine must be at least as sweet as the food, or the sugar makes it taste thin and sour. Ruby and LBV Port are sweet, rich and full of dark berry fruit, so they stand up to dark chocolate.",
+      "deeper": "LBV (Late Bottled Vintage) is one year's harvest, bottled after four to six years in wood and ready to drink. Vintage Port, made only in the best years, can age for decades in the bottle and throws a sediment, so it is usually decanted.",
+      "source": "https://www.decanterchina.com/en/knowledge/wset/wset-level-2-chinese-food-and-wine-matching"
+    },
+    {
+      "q": "A guest who loved the Barolo asks for something to go with the blue cheese, and would like to try a sweet white. What do you suggest?",
+      "opts": [
+        "Another glass of the Barolo",
+        "A glass of crisp, dry Sancerre",
+        "A glass of Manzanilla sherry",
+        "A glass of Tokaji Aszú"
+      ],
+      "a": 3,
+      "why": "Salty blue cheese loves a sweet wine: the salt stops the sweetness feeling heavy, and the sugar tames the cheese's bite. Tokaji Aszú, a famous sweet white from Hungary, also has fresh acidity to cut through the creamy cheese.",
+      "deeper": "Red Port with Stilton is the other classic, but this guest asked for a white. Tokaji Aszú and Sauternes both get their sweetness from noble rot, a helpful fungus that shrivels the grapes and concentrates their sugar and acidity.",
+      "source": "https://www.decanter.com/decanter-best/best-tokaji-wines-for-food-thinking-outside-the-box-471273"
+    },
+    {
+      "q": "A guest orders the crème brûlée and wants a Port with nutty, caramel flavours. Which do you pour?",
+      "opts": [
+        "A 10 Year Old Tawny Port",
+        "A young Ruby Port",
+        "A Late Bottled Vintage (LBV) Port",
+        "A young Vintage Port"
+      ],
+      "a": 0,
+      "why": "Tawny ages for years in small wooden casks, where slow contact with air turns it amber and gives it nutty, toffee and dried-fruit flavours. Ruby, LBV and Vintage Port stay deep red and taste of dark berries.",
+      "deeper": "The 10, 20, 30 or 40 years on a Tawny label is not the exact age of every drop. It is a blend of several harvests that the Port institute's tasters have approved as having the character of that age.",
+      "source": "https://www.decanter.com/wine/wine-regions/port/understanding-tawny-port-347710/"
+    },
+    {
+      "q": "A guest says, \"Sherry is that sweet stuff my gran used to drink.\" Which answer is accurate?",
+      "opts": [
+        "Yes, all sherry is sweet; Fino is just the lightest one",
+        "No, all sherry is dry; PX is simply darker in colour",
+        "Not all: Fino is bone-dry and cold; PX is very sweet",
+        "Yes, and Fino is the sweetest, best served warm"
+      ],
+      "a": 2,
+      "why": "Most sherry is dry: Fino ages under a layer of yeast called flor, stays pale and bone-dry, and is served fridge cold, about 5 to 7 °C. Pedro Ximénez (PX) is made from sun-dried grapes, so it is very sweet, with raisin and fig flavours.",
+      "deeper": "Sweet cream sherries, like the one many grandparents kept, are usually dry Oloroso sweetened with PX. A small splash of PX poured over vanilla ice cream is a simple, popular dessert.",
+      "source": "https://www.sherry.wine/enjoying-sherry/conservation-serving"
+    },
+    {
+      "q": "A guest points to \"XO Fine Champagne Cognac\" on the list and asks if it is a sparkling wine. What do you tell them?",
+      "opts": [
+        "Yes: it is Champagne with a dash of Cognac added to it",
+        "Yes: it is a sparkling wine made in the Cognac region",
+        "No: it is a young brandy made from Champagne's leftover grapes",
+        "No: it is Cognac from two top areas, aged at least 10 years"
+      ],
+      "a": 3,
+      "why": "Here \"Champagne\" names the two best growing areas inside Cognac, Grande and Petite Champagne; Fine Champagne is a blend of the two, at least half from Grande Champagne. XO means the youngest brandy in the blend has spent at least 10 years in oak.",
+      "deeper": "The other age terms are VS, at least 2 years in oak, and VSOP, at least 4 years. The XO minimum rose from 6 to 10 years in 2018, and many XOs are much older than that.",
+      "source": "https://drinksint.com/news/fullstory.php/aid/7503/.html"
+    },
+    {
+      "q": "A guest asks, \"What is the difference between Armagnac and Calvados?\" Which answer is right?",
+      "opts": [
+        "Armagnac is grape brandy from Gascony; Calvados is apple brandy from Normandy",
+        "Armagnac is apple brandy from Normandy; Calvados is grape brandy from Gascony",
+        "Both are grape brandies from Cognac, simply aged for different lengths of time",
+        "Armagnac is a pear brandy from Alsace; Calvados is a cherry brandy from Burgundy"
+      ],
+      "a": 0,
+      "why": "Armagnac is distilled from white wine in Gascony, south-west France, mostly in a special column still. Calvados is distilled from cider, sometimes with perry made from pears, in Normandy in northern France.",
+      "deeper": "Calvados must age at least two years in oak before it is sold. Most Armagnac is distilled just once, in that column still, while Cognac is distilled twice in a pot still.",
+      "source": "https://www.armagnac.fr/distillation-and-ageing"
+    },
+    {
+      "q": "A guest would like a Scotch whisky instead of a brandy. What must be true of every whisky sold as Scotch?",
+      "opts": [
+        "It is made only from malted barley, in a copper pot still",
+        "It has matured in oak casks in Scotland for at least 3 years",
+        "It has aged for at least 10 years, just like an XO Cognac",
+        "It was distilled in Scotland, but it may be aged in any country"
+      ],
+      "a": 1,
+      "why": "By UK law, Scotch whisky must be distilled and matured in Scotland, in oak casks, for at least three years. An age on the label, such as 12 years, is the age of the youngest whisky in the bottle.",
+      "deeper": "Single malt Scotch must be made only from malted barley, in pot stills, at one distillery; grain and blended Scotch follow looser rules. Rum, by comparison, is made from sugar cane: its juice, syrup or molasses.",
+      "source": "https://www.legislation.gov.uk/uksi/2009/2890/regulation/3/made"
+    },
+    {
+      "q": "A guest orders an XO Cognac after dinner. How do you serve it?",
+      "opts": [
+        "In a big balloon glass, warmed over a candle first",
+        "In a chilled shot glass, to be drunk in one go",
+        "Neat, in a tulip-shaped glass, at room temperature",
+        "In a Champagne flute, topped up with tonic water"
+      ],
+      "a": 2,
+      "why": "A tulip glass, with a bowl that narrows at the top, holds the aromas in so the guest can enjoy them. Heating Cognac over a flame makes the alcohol fumes sting the nose and drown the aromas, so never warm the glass that way.",
+      "deeper": "If the guest likes it a little warmer, the warmth of their hand around the bowl is plenty. A glass of still water on the side is a thoughtful touch.",
+      "source": "https://www.cognac.fr/en/tasting/the-art-of-tasting/how-to-taste-cognac/"
+    },
+    {
+      "q": "Which of these opened, re-corked bottles behind the bar will stay good for the longest?",
+      "opts": [
+        "Fino sherry",
+        "Ruby Port",
+        "10 Year Old Tawny Port",
+        "Madeira"
+      ],
+      "a": 3,
+      "why": "Madeira is heated and exposed to air on purpose as it ages, so a little more air after opening does it very little harm: it keeps for months. Wines that were shielded from air all their lives, like Fino, fade the fastest.",
+      "deeper": "Re-corked in the fridge, Fino keeps a few days, a week at most; Ruby and LBV about a week; Tawny a few weeks. Write the opening date on every bottle so the whole team knows how long it has been open.",
+      "source": "https://www.thewinesociety.com/discover/wine-basics/serve-store-taste/caroline-gilby-how-long-can-i-keep-a-bottle-of-wine-once-its-been-opened"
+    },
+    {
+      "q": "Plates are cleared at a table of four. How do you offer after-dinner drinks?",
+      "opts": [
+        "Ask, \"Anything else?\" and wait for them to think of something",
+        "Suggest two drinks, say the price per glass, and accept a no",
+        "Bring four glasses of the priciest Cognac as a surprise treat",
+        "Keep suggesting drinks until somebody at the table agrees"
+      ],
+      "a": 1,
+      "why": "A specific choice of two, such as \"a 10 year old Tawny, or a glass of Sauternes with the tart?\", is easy to say yes to. Naming the price, especially for a pricey Cognac, avoids a nasty surprise on the bill and builds trust.",
+      "deeper": "Never push a guest who is driving or has clearly had enough; offer coffee, tea or an alcohol-free drink instead. In the UK, for example, it is a criminal offence to knowingly sell alcohol to someone who is drunk.",
+      "source": "https://www.legislation.gov.uk/ukpga/2003/17/section/141"
+    }
+  ]
+}

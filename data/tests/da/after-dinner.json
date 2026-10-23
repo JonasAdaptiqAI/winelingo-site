@@ -1,0 +1,128 @@
+{
+  "slug": "after-dinner",
+  "title": "Efter middagen: dessertvin og avec",
+  "summary": "Foreslå, skænk og gem de drikke, der runder et måltid af: dessertvin, portvin, sherry og brandy, tilbudt uden at være påtrængende.",
+  "level": 2,
+  "questions": [
+    {
+      "q": "En gæst bestiller den mørke chokoladefondant og vil gerne have et glas til. Hvad passer bedst?",
+      "opts": [
+        "Et glas tør Brut Champagne",
+        "Et glas Ruby Port eller LBV",
+        "Et glas kold Fino-sherry",
+        "Et glas tør rødvin, fx Barolo"
+      ],
+      "a": 1,
+      "why": "Til dessert skal vinen være mindst lige så sød som maden, ellers får sukkeret den til at smage tynd og sur. Ruby Port og LBV er søde og fyldige med masser af mørk bærfrugt, så de kan klare mørk chokolade.",
+      "deeper": "LBV (Late Bottled Vintage) er vin fra ét års høst, hældt på flaske efter fire til seks år i træ og klar til at drikke. Vintage Port laves kun i de bedste år, kan blive ældre i årtier på flasken og får et gruset bundfald, så den bliver som regel dekanteret."
+    },
+    {
+      "q": "En gæst, der var glad for Barolo'en, vil have noget til blåskimmelosten og vil gerne prøve en sød hvidvin. Hvad foreslår du?",
+      "opts": [
+        "Et glas mere af Barolo'en",
+        "Et glas frisk, tør Sancerre",
+        "Et glas Manzanilla-sherry",
+        "Et glas Tokaji Aszú"
+      ],
+      "a": 3,
+      "why": "Salt blåskimmelost elsker sød vin: saltet gør, at sødmen ikke føles tung, og sukkeret tæmmer ostens bid. Tokaji Aszú, en berømt sød hvidvin fra Ungarn, har også frisk syre, der skærer igennem den cremede ost.",
+      "deeper": "Rød portvin til Stilton er den anden klassiker, men gæsten bad om en hvidvin. Tokaji Aszú og Sauternes får begge deres sødme fra ædelråd, en nyttig svamp, der skrumper druerne ind, så sukkeret og syren bliver samlet i mindre saft."
+    },
+    {
+      "q": "En gæst bestiller crème brûlée og vil have en portvin med smag af nødder og karamel. Hvilken skænker du?",
+      "opts": [
+        "En 10 år gammel Tawny Port",
+        "En ung Ruby Port",
+        "En Late Bottled Vintage (LBV)",
+        "En ung Vintage Port"
+      ],
+      "a": 0,
+      "why": "Tawny ligger i årevis i små træfade, hvor luften langsomt gør den ravfarvet og giver smag af nødder, flødekaramel og tørret frugt. Ruby, LBV og Vintage Port forbliver dybrøde og smager af mørke bær.",
+      "deeper": "Tallet 10, 20, 30 eller 40 år på en Tawny er ikke den præcise alder på hver dråbe. Det er en blanding af flere høstår, som smagerne fra portvinens officielle institut har godkendt, fordi den smager som en vin på den alder."
+    },
+    {
+      "q": "En gæst siger: \"Sherry er det søde stads, min mormor drak.\" Hvilket svar er korrekt?",
+      "opts": [
+        "Ja, al sherry er sød; Fino er bare den letteste",
+        "Nej, al sherry er tør; PX er bare mørkere i farven",
+        "Ikke altid: Fino er helt tør og kold, PX meget sød",
+        "Ja, og Fino er den sødeste, bedst serveret lun"
+      ],
+      "a": 2,
+      "why": "Det meste sherry er tørt. Fino modner under flor, et lag gær, der flyder oven på vinen og holder luften ude. Den forbliver lys og helt tør og serveres kold fra køleskabet, ca. 5 til 7 °C. Pedro Ximénez (PX) laves af druer tørret i solen, så den er meget sød, med smag af rosiner og figner.",
+      "deeper": "Søde cream-sherryer, som dem mange bedsteforældre havde stående, er som regel tør Oloroso, der er gjort sød med PX. Et lille skvæt PX hældt over vaniljeis er en enkel og populær dessert."
+    },
+    {
+      "q": "En gæst peger på \"XO Fine Champagne Cognac\" på kortet og spørger, om det er en mousserende vin. Hvad svarer du?",
+      "opts": [
+        "Ja: det er Champagne med et skvæt Cognac i",
+        "Ja: det er en mousserende vin fra Cognac-området",
+        "Nej: det er en ung brandy lavet af Champagnes overskudsdruer",
+        "Nej: det er Cognac fra to topområder, lagret i mindst 10 år"
+      ],
+      "a": 3,
+      "why": "Her er \"Champagne\" navnet på de to bedste dyrkningsområder inde i Cognac, Grande og Petite Champagne. Fine Champagne er en blanding af de to, mindst halvdelen fra Grande Champagne. XO betyder, at den yngste brandy i blandingen har ligget mindst 10 år på egetræsfad.",
+      "deeper": "De andre aldersbetegnelser er VS, mindst 2 år på fad, og VSOP, mindst 4 år. Minimum for XO blev hævet fra 6 til 10 år i 2018, og mange XO'er er langt ældre end det."
+    },
+    {
+      "q": "En gæst spørger: \"Hvad er forskellen på Armagnac og Calvados?\" Hvilket svar er rigtigt?",
+      "opts": [
+        "Armagnac er druebrandy fra Gascogne; Calvados er æblebrandy fra Normandiet",
+        "Armagnac er æblebrandy fra Normandiet; Calvados er druebrandy fra Gascogne",
+        "Begge er druebrandy fra Cognac, bare lagret i forskellig tid",
+        "Armagnac er pærebrandy fra Alsace; Calvados er kirsebærbrandy fra Bourgogne"
+      ],
+      "a": 0,
+      "why": "Armagnac brændes af hvidvin i Gascogne i det sydvestlige Frankrig, mest i et særligt kolonneapparat. Calvados brændes af æblecider, nogle gange med pærecider, i Normandiet i det nordlige Frankrig.",
+      "deeper": "Calvados skal lagres mindst to år på egetræsfad, før den må sælges. Det meste Armagnac brændes kun én gang i kolonneapparatet, mens Cognac brændes to gange i en kobberkedel (pot still)."
+    },
+    {
+      "q": "En gæst vil hellere have en skotsk whisky end en brandy. Hvad gælder for al whisky, der sælges som Scotch?",
+      "opts": [
+        "Den er kun lavet af maltet byg i en kobberkedel",
+        "Den har modnet på egetræsfade i Skotland i mindst 3 år",
+        "Den har ligget mindst 10 år, ligesom en XO Cognac",
+        "Den er brændt i Skotland, men må lagres i et hvilket som helst land"
+      ],
+      "a": 1,
+      "why": "Efter britisk lov skal Scotch whisky være brændt og modnet i Skotland, på egetræsfade, i mindst tre år. En alder på etiketten, fx 12 år, er alderen på den yngste whisky i flasken.",
+      "deeper": "Single malt Scotch må kun laves af maltet byg, i kobberkedler (pot stills), på ét destilleri; grain- og blended Scotch har løsere regler. Rom laves til sammenligning af sukkerrør: saften, siruppen eller melassen."
+    },
+    {
+      "q": "En gæst bestiller en XO Cognac som avec. Hvordan serverer du den?",
+      "opts": [
+        "I et stort ballonglas, som du først varmer over et stearinlys",
+        "I et kølet shotglas, så den kan drikkes på én gang",
+        "Ren, i et tulipglas, ved stuetemperatur",
+        "I et champagneglas, fyldt op med tonic"
+      ],
+      "a": 2,
+      "why": "Et tulipglas, hvor kummen bliver smallere foroven, holder duftene samlet, så gæsten kan nyde dem. Varmer du Cognac over en flamme, stikker alkoholdampene i næsen og overdøver duftene, så varm aldrig glasset på den måde.",
+      "deeper": "Vil gæsten have den lidt varmere, er varmen fra hånden om kummen rigeligt. Et glas vand ved siden af er en betænksom detalje."
+    },
+    {
+      "q": "Hvilken af disse åbnede flasker bag baren, med proppen sat i igen, holder sig længst?",
+      "opts": [
+        "Fino-sherry",
+        "Ruby Port",
+        "10 år gammel Tawny Port",
+        "Madeira"
+      ],
+      "a": 3,
+      "why": "Madeira bliver varmet op og udsat for luft med vilje, mens den bliver ældre, så lidt mere luft efter åbning skader den næsten ikke: den holder i måneder. Vine, der har været skærmet mod luft hele livet, som Fino, mister hurtigst smagen.",
+      "deeper": "Med proppen i og i køleskabet holder Fino et par dage, højst en uge; Ruby og LBV omkring en uge; Tawny et par uger. Skriv åbningsdatoen på hver flaske, så hele holdet ved, hvor længe den har været åben."
+    },
+    {
+      "q": "Tallerknerne er ryddet ved et bord med fire gæster. Hvordan tilbyder du dessertvin eller avec?",
+      "opts": [
+        "Spørger \"Skal det være andet?\" og venter, til de selv kommer på noget",
+        "Foreslår to drikke, siger prisen pr. glas og tager imod et nej",
+        "Kommer med fire glas af den dyreste Cognac som en overraskelse",
+        "Bliver ved med at foreslå drikke, til nogen ved bordet siger ja"
+      ],
+      "a": 1,
+      "why": "Et konkret valg mellem to, fx \"en 10 år gammel Tawny eller et glas Sauternes til tærten?\", er let at sige ja til. Når du nævner prisen, især for en dyr Cognac, undgår du en grim overraskelse på regningen, og gæsten får tillid til dig.",
+      "deeper": "Pres aldrig en gæst, der skal køre, eller som tydeligvis har fået nok; tilbyd kaffe, te eller en alkoholfri drik i stedet. Den danske restaurationslov forbyder at servere alkohol for gæster, der må antages at blive \"til fare eller ulempe for sig selv eller andre\"."
+    }
+  ]
+}

@@ -25,6 +25,7 @@ const DESC = {
   "tests/white-grapes/index.html": "The nine white grapes you meet everywhere, what they taste like, and which grape hides behind a famous place." + TAIL,
   "tests/wset-level-1-practice/index.html": "Unofficial practice questions in the style of WSET Level 1: wine styles, grapes, food pairing and serving, each explained. Free, no sign-up.",
   "tests/wine-faults/index.html": "Recognise the common wine faults, tell them from harmless quirks, and handle a complaint calmly and fairly." + TAIL,
+  "tests/after-dinner/index.html": "Offer, serve and keep the drinks that end a meal: dessert wine, Port, sherry and brandy, sold without pushing." + TAIL,
 };
 for (const [p, d] of Object.entries(DESC)) {
   if (d.length > 160) throw new Error(`${p}: ${d.length} chars`);
