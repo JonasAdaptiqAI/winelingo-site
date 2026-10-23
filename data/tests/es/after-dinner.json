@@ -1,0 +1,128 @@
+{
+  "slug": "after-dinner",
+  "title": "Bebidas de sobremesa",
+  "summary": "Sugiere, sirve y conserva las bebidas que cierran una comida: vinos dulces, oporto, jerez y brandy, ofrecidos sin agobiar.",
+  "level": 2,
+  "questions": [
+    {
+      "q": "Un cliente pide el coulant de chocolate negro y quiere una copa de algo para acompañarlo. ¿Qué le va mejor?",
+      "opts": [
+        "Una copa de Champagne Brut seco",
+        "Una copa de oporto ruby o LBV",
+        "Una copa de Fino bien frío",
+        "Una copa de un tinto seco como un Barolo"
+      ],
+      "a": 1,
+      "why": "Con el postre, el vino tiene que ser al menos tan dulce como la comida; si no, el azúcar hace que sepa aguado y agrio. El oporto ruby y el LBV son dulces, intensos y llenos de fruta negra, como moras y ciruelas, así que plantan cara al chocolate negro.",
+      "deeper": "El LBV (Late Bottled Vintage) es la cosecha de un solo año, embotellada tras cuatro a seis años en madera y lista para beber. El oporto vintage, que solo se elabora en las mejores añadas, puede envejecer décadas en botella y deja posos, así que normalmente se decanta."
+    },
+    {
+      "q": "A un cliente le ha encantado el Barolo y ahora quiere algo para el queso azul; le apetece probar un blanco dulce. ¿Qué le sugieres?",
+      "opts": [
+        "Otra copa del Barolo",
+        "Una copa de Sancerre seco y vivo",
+        "Una copa de Manzanilla",
+        "Una copa de Tokaji Aszú"
+      ],
+      "a": 3,
+      "why": "El queso azul salado adora el vino dulce: la sal hace que el dulzor no resulte pesado y el azúcar doma la fuerza del queso. El Tokaji Aszú, un famoso blanco dulce de Hungría, tiene además una acidez fresca que corta la cremosidad del queso.",
+      "deeper": "El oporto tinto con Stilton es el otro clásico, pero este cliente ha pedido un blanco. El Tokaji Aszú y el Sauternes deben su dulzor a la podredumbre noble, un moho beneficioso que arruga las uvas y concentra su azúcar y su acidez."
+    },
+    {
+      "q": "Un cliente pide la crème brûlée y quiere un oporto con notas de frutos secos y caramelo. ¿Cuál le sirves?",
+      "opts": [
+        "Un oporto tawny de 10 años",
+        "Un oporto ruby joven",
+        "Un oporto LBV (Late Bottled Vintage)",
+        "Un oporto vintage joven"
+      ],
+      "a": 0,
+      "why": "El tawny envejece años en pequeñas barricas de madera, donde el contacto lento con el aire lo vuelve ámbar y le da notas de frutos secos, tofe y fruta pasa. El ruby, el LBV y el oporto vintage siguen de un rojo intenso y saben a frutos negros.",
+      "deeper": "Los 10, 20, 30 o 40 años de la etiqueta de un tawny no son la edad exacta de cada gota. Es un coupage de varias cosechas que los catadores del instituto oficial del oporto han aprobado porque tiene el carácter de esa edad."
+    },
+    {
+      "q": "Un cliente dice: \"El jerez es esa cosa dulce que bebía mi abuela\". ¿Qué respuesta es correcta?",
+      "opts": [
+        "Sí, todo el jerez es dulce; el Fino es solo el más ligero",
+        "No, todo el jerez es seco; el PX solo tiene un color más oscuro",
+        "No todo: el Fino es totalmente seco y frío; el PX, muy dulce",
+        "Sí, y el Fino es el más dulce, mejor servido templado"
+      ],
+      "a": 2,
+      "why": "Casi todo el jerez es seco. El Fino envejece bajo una capa de levadura llamada velo de flor, se queda pálido y totalmente seco, y se sirve frío de nevera, entre 5 y 7 °C. El Pedro Ximénez (PX) se elabora con uvas secadas al sol, así que es muy dulce, con notas de pasas e higos.",
+      "deeper": "Los jereces Cream, dulces como el que guardaban muchos abuelos, suelen ser Oloroso seco endulzado con PX. Un chorrito de PX sobre helado de vainilla es un postre sencillo y muy popular."
+    },
+    {
+      "q": "Un cliente señala \"XO Fine Champagne Cognac\" en la carta y pregunta si es un espumoso. ¿Qué le dices?",
+      "opts": [
+        "Sí: es Champagne con un chorrito de Cognac",
+        "Sí: es un espumoso elaborado en la región de Cognac",
+        "No: es un brandy joven hecho con las uvas que sobran en Champagne",
+        "No: es Cognac de las dos mejores zonas, con 10 años o más"
+      ],
+      "a": 3,
+      "why": "Aquí \"Champagne\" es el nombre de las dos mejores zonas de cultivo dentro de Cognac, la Grande y la Petite Champagne; Fine Champagne es una mezcla de las dos, con al menos la mitad de Grande Champagne. XO significa que el aguardiente más joven de la mezcla ha pasado al menos 10 años en roble.",
+      "deeper": "Las otras menciones de edad son VS, al menos 2 años en roble, y VSOP, al menos 4. El mínimo del XO subió de 6 a 10 años en 2018, y muchos XO son bastante más viejos."
+    },
+    {
+      "q": "Un cliente pregunta: \"¿Qué diferencia hay entre el Armagnac y el Calvados?\". ¿Cuál es la respuesta correcta?",
+      "opts": [
+        "El Armagnac es brandy de uva de Gascuña; el Calvados, de manzana de Normandía",
+        "El Armagnac es brandy de manzana de Normandía; el Calvados, de uva de Gascuña",
+        "Los dos son brandies de uva de Cognac, solo que envejecidos más o menos tiempo",
+        "El Armagnac es aguardiente de pera de Alsacia; el Calvados, de cereza de Borgoña"
+      ],
+      "a": 0,
+      "why": "El Armagnac se destila a partir de vino blanco en Gascuña, en el suroeste de Francia, sobre todo en un alambique de columna especial. El Calvados se destila a partir de sidra, a veces con sidra de pera, en Normandía, en el norte de Francia.",
+      "deeper": "El Calvados tiene que envejecer al menos dos años en roble antes de venderse. La mayor parte del Armagnac se destila una sola vez, en ese alambique de columna, mientras que el Cognac se destila dos veces en un alambique tradicional de cobre."
+    },
+    {
+      "q": "Un cliente prefiere un whisky escocés en lugar de un brandy. ¿Qué tiene que cumplir todo whisky que se vende como Scotch?",
+      "opts": [
+        "Estar hecho solo con cebada malteada, en un alambique de cobre",
+        "Haber madurado en barricas de roble en Escocia al menos 3 años",
+        "Haber envejecido al menos 10 años, igual que un Cognac XO",
+        "Estar destilado en Escocia, aunque puede envejecer en cualquier país"
+      ],
+      "a": 1,
+      "why": "Según la ley británica, el Scotch whisky tiene que destilarse y madurar en Escocia, en barricas de roble, durante al menos tres años. La edad de la etiqueta, por ejemplo 12 años, es la del whisky más joven de la botella.",
+      "deeper": "El single malt escocés solo puede hacerse con cebada malteada, en alambiques tradicionales de cobre y en una sola destilería; los whiskies de grano y los blended siguen normas más flexibles. El ron, en cambio, se hace de caña de azúcar: de su zumo, su jarabe o su melaza."
+    },
+    {
+      "q": "Un cliente pide un Cognac XO de sobremesa. ¿Cómo se lo sirves?",
+      "opts": [
+        "En una gran copa balón, calentada antes sobre una vela",
+        "En un vaso de chupito frío, para tomarlo de un trago",
+        "Solo, en una copa de tulipa, a temperatura ambiente",
+        "En una flauta de Champagne, completada con tónica"
+      ],
+      "a": 2,
+      "why": "Una copa de tulipa, con el cáliz que se estrecha arriba, retiene los aromas para que el cliente pueda disfrutarlos. Calentar el Cognac sobre una llama hace que los vapores del alcohol piquen en la nariz y tapen los aromas, así que nunca calientes la copa de esa forma.",
+      "deeper": "Si al cliente le gusta un poco más templado, basta con el calor de su mano alrededor del cáliz. Un vaso de agua sin gas al lado es un detalle muy atento."
+    },
+    {
+      "q": "De estas botellas abiertas y vueltas a tapar en la barra, ¿cuál se mantiene bien más tiempo?",
+      "opts": [
+        "Fino",
+        "Oporto ruby",
+        "Oporto tawny de 10 años",
+        "Madeira"
+      ],
+      "a": 3,
+      "why": "El Madeira se calienta y se expone al aire a propósito mientras envejece, así que un poco más de aire tras abrirlo apenas le afecta: aguanta meses. Los vinos que vivieron toda su vida protegidos del aire, como el Fino, son los que antes se apagan.",
+      "deeper": "Bien tapado y en la nevera, el Fino aguanta unos días, una semana como mucho; el ruby y el LBV, una semana, más o menos; el tawny, unas semanas. Apunta la fecha de apertura en cada botella para que todo el equipo sepa cuánto tiempo lleva abierta."
+    },
+    {
+      "q": "Acabas de retirar los platos en una mesa de cuatro. ¿Cómo ofreces las bebidas de sobremesa?",
+      "opts": [
+        "Preguntas \"¿Algo más?\" y esperas a que se les ocurra algo",
+        "Sugieres dos bebidas, dices el precio por copa y aceptas un no",
+        "Llevas cuatro copas del Cognac más caro como sorpresa",
+        "Sigues sugiriendo bebidas hasta que alguien de la mesa dice que sí"
+      ],
+      "a": 1,
+      "why": "Una elección concreta entre dos, como \"¿un tawny de 10 años o una copa de Sauternes con la tarta?\", es fácil de aceptar. Decir el precio, sobre todo de un Cognac caro, evita un disgusto con la cuenta y genera confianza.",
+      "deeper": "Nunca insistas a un cliente que conduce o que claramente ya ha bebido suficiente; ofrécele café, una infusión o una bebida sin alcohol. En el Reino Unido, por ejemplo, es delito vender alcohol a sabiendas a una persona ebria."
+    }
+  ]
+}
