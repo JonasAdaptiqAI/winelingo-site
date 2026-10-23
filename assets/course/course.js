@@ -326,6 +326,15 @@
         return best;
       }).catch(function () { return {}; });
   }
+  // Workplace tests (migration 0142): a quiz with partner_code shows only to staff who redeemed that
+  // partner code (RLS). Generic tests live on /tests, so the course lists just these.
+  function loadTests() {
+    return sb.from("quizzes").select("id, slug, title, summary, questions, partner_code").not("partner_code", "is", null)
+      .order("sort_order").then(function (res) {
+        if (res.error) return [];
+        return localize("quiz", res.data || []);
+      }).catch(function () { return []; });
+  }
   function loadStreak() {
     return sb.from("user_streaks").select("current_streak, longest_streak, last_active_date").eq("user_id", S.session.user.id)
       .maybeSingle().then(function (res) {
@@ -698,6 +707,7 @@
       h("main", { class: "cmain" },
         S.notice ? h("p", { class: "notice", role: "status", text: S.notice }) : null,
         summary,
+        workTests(),
         h("div", { class: "units-head" }, h("h2", { text: t("learn.allUnits") }),
           h("button", { class: "btn btn-ghost btn-sm", type: "button", onclick: pickCountries }, t("web.changeCountries"))),
         list,
@@ -706,6 +716,25 @@
           h("button", { class: "linkbtn", type: "button", onclick: function () { showRedeem(); } }, t("web.giftHaveCode"))),
         h("p", { class: "fine center", text: t("web.footer") }))));
     S.notice = null;
+  }
+  // The workplace's own tests, above the units. Nothing shows for anyone without a partner test.
+  function workTests() {
+    if (!S.tests || !S.tests.length) return null;
+    return h("section", { class: "unit here worktests" },
+      h("div", { class: "unit-head static" },
+        h("span", { class: "unit-body" },
+          h("span", { class: "unit-k", text: t("learn.tests") }),
+          h("span", { class: "unit-t", text: t("web.workTestsTitle") }),
+          h("span", { class: "ls", text: t("web.workTestsSub") }))),
+      h("ol", { class: "lessons" }, S.tests.map(function (q) {
+        var best = S.best && S.best["test:" + q.slug], n = Array.isArray(q.questions) ? q.questions.length : 0;
+        return h("li", { class: "lrow " + (best ? "done" : "current") },
+          h("span", { class: "lnode" }, best ? icon("check", 16) : icon("cards", 16)),
+          h("span", { class: "lmeta" }, h("span", { class: "lt", text: q.title }),
+            h("span", { class: "ls", text: best ? t("games.best", { score: best.score, total: best.total }) : t("web.testQuestions", { count: n }) })),
+          h("button", { class: "btn " + (best ? "btn-ghost" : "btn-primary") + " btn-sm", type: "button", onclick: function () { openTest(q); } },
+            best ? t("learn.replay") : t("learn.start")));
+      })));
   }
   // The last node of a unit: its review. Locked until every lesson is done; the best score shows once taken.
   function reviewRow(x) {
@@ -859,8 +888,8 @@
     ]);
   }
   function loadCourse() {
-    return Promise.all([loadLessons(), loadDone(), loadXp(), loadStreak(), refreshHearts(), loadBest()])
-      .then(function (r) { S.lessons = r[0]; S.done = withMergedDone(r[1]); S.xp = r[2]; S.streak = r[3]; S.best = r[5]; S.loadErr = false; if (S.view === "course") { render(); openPending(); } })
+    return Promise.all([loadLessons(), loadDone(), loadXp(), loadStreak(), refreshHearts(), loadBest(), loadTests()])
+      .then(function (r) { S.lessons = r[0]; S.done = withMergedDone(r[1]); S.xp = r[2]; S.streak = r[3]; S.best = r[5]; S.tests = r[6]; S.loadErr = false; if (S.view === "course") { render(); openPending(); } })
       .catch(function () { S.loadErr = true; if (S.view === "course") render(); });
   }
   function refreshProgress() {
@@ -1104,6 +1133,26 @@
         startPlay("review");
       });
   }
+  // A workplace test plays like a review (no hearts, scored like practice) over the quiz's own questions,
+  // and is recorded the way the app records it: complete_quiz plus complete_practice("test:<slug>").
+  function openTest(q) {
+    if (P) return;
+    track("test-start", { test: q.slug });
+    var lesson = { id: "test:" + q.slug, topic: q.slug, title: q.title, steps: [] };
+    P = { lesson: lesson, topicLabel: q.title, review: { topic: q.slug, title: q.title, lessonIds: [] }, quiz: q, extras: null, mode: "review",
+      el: h("div", { class: "player", role: "dialog", "aria-modal": "true", "aria-label": q.title }) };
+    document.body.appendChild(P.el);
+    document.body.classList.add("noscroll");
+    document.addEventListener("keydown", onKey);
+    startPlay("review");
+  }
+  function buildTest(q, seed) {
+    var r = rng(seed);
+    var steps = (Array.isArray(q.questions) ? q.questions : []).map(function (x) {
+      return x ? parseStep({ kind: "mcq", q: x.q, opts: x.opts, a: x.a, why: x.why }) : null;
+    }).filter(Boolean).map(function (s) { return shuffleOpts(s, r); });
+    return { steps: steps, keys: steps.map(function (_, i) { return "t" + i; }), card: steps.map(function () { return null; }) };
+  }
   function closePlayer() {
     if (!P) return;
     var tried = S.trying ? P.lesson : null;
@@ -1124,7 +1173,8 @@
       : { bank: x.bank || [], deep_notes: x.deep_notes || [], deeper: x.deeper || [] };
     var deeper = P.pack.deeper.map(parseStep).filter(Boolean);
     P.deeperSteps = deeper;
-    P.play = mode === "review" ? buildReview(P.pool || [], seed)
+    P.play = P.quiz ? buildTest(P.quiz, seed)
+      : mode === "review" ? buildReview(P.pool || [], seed)
       : mode === "deeper" ? buildPlay(deeper, [], new Set(), seed)
       : buildPlay(normalizeSteps(P.lesson, P.topicLabel, v2), P.pack.bank, seenSet(P.lesson.id), seed, v2 ? "v2:" : "");
     P.steps = P.play.steps;
@@ -1151,8 +1201,11 @@
       if (!P.recorded) {
         // Scored like a practice game: XP per right answer, the streak, and the best score on the node.
         P.recorded = true;
-        var rv = P, game = "review:" + P.review.topic, total = Math.max(1, P.qCount), prev = S.best[game];
-        track("review-complete", { unit: P.review.topic, score: P.firstRight, total: P.qCount });
+        var rv = P, game = (P.quiz ? "test:" : "review:") + P.review.topic, total = Math.max(1, P.qCount), prev = S.best[game];
+        if (P.quiz) {
+          track("test-complete", { test: P.quiz.slug, score: P.firstRight, total: P.qCount });
+          sb.rpc("complete_quiz", { p_quiz_id: P.quiz.id, p_score: P.firstRight }).then(function () {}, function () {});
+        } else track("review-complete", { unit: P.review.topic, score: P.firstRight, total: P.qCount });
         if (!prev || P.firstRight > prev.score) S.best[game] = { score: P.firstRight, total: total };
         sb.rpc("complete_practice", { p_game: game, p_score: P.firstRight, p_total: total })
           .then(function (res) { if (typeof res.data === "number") rv.xpAfter = res.data; if (P === rv) drawPlayer(); }).catch(function () {});
@@ -1571,7 +1624,7 @@
         h("div", { class: "ring", style: "--p:" + Math.round(100 * score / total), role: "img", "aria-label": score + "/" + total + " " + t("games.correct") },
           h("b", null, String(score), h("small", { text: "/" + total })), h("span", { text: t("games.correct") })),
         h("h2", { text: rank }),
-        h("p", { class: "muted", text: t("review.doneSub", { unit: P.review.title }) }),
+        h("p", { class: "muted", text: P.quiz ? P.quiz.title : t("review.doneSub", { unit: P.review.title }) }),
         h("div", { class: "stats" },
           gained != null ? stat(t("learn.xpEarned"), "+" + gained, "wine") : null,
           P.secs != null ? stat(t("learn.time"), Math.floor(P.secs / 60) + ":" + String(P.secs % 60).padStart(2, "0"), "orange") : null),
