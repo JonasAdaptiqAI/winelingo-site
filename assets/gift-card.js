@@ -5,16 +5,16 @@
   "use strict";
   var T = {
     en: { to: "To", from: "From", msg: "A few words (optional)", print: "Print the card", for: "A gift for you",
-      what: "The Winelingo wine course, for life", sub: "170 interactive lessons: tasting, grapes and twelve wine countries.",
+      what: "The Winelingo wine course, for life", sub: "173 interactive lessons: tasting, grapes and twelve wine countries.",
       code: "Your code", where: "Redeem at winelingo.app/redeem", redeem: "Redeem this code now", toP: "Dear ", fromP: "From " },
     da: { to: "Til", from: "Fra", msg: "Et par ord (valgfrit)", print: "Print kortet", for: "En gave til dig",
-      what: "Winelingos vinkursus, for altid", sub: "170 interaktive lektioner: smagning, druer og tolv vinlande.",
+      what: "Winelingos vinkursus, for altid", sub: "173 interaktive lektioner: smagning, druer og tolv vinlande.",
       code: "Din kode", where: "Indløs på winelingo.app/redeem", redeem: "Indløs koden nu", toP: "Kære ", fromP: "Fra " },
     es: { to: "Para", from: "De", msg: "Unas palabras (opcional)", print: "Imprimir la tarjeta", for: "Un regalo para ti",
-      what: "El curso de vino de Winelingo, para siempre", sub: "170 lecciones interactivas: cata, uvas y doce países del vino.",
+      what: "El curso de vino de Winelingo, para siempre", sub: "173 lecciones interactivas: cata, uvas y doce países del vino.",
       code: "Tu código", where: "Canjéalo en winelingo.app/redeem", redeem: "Canjear este código ahora", toP: "Para ", fromP: "De " },
     de: { to: "Für", from: "Von", msg: "Ein paar Worte (optional)", print: "Karte drucken", for: "Ein Geschenk für dich",
-      what: "Der Winelingo-Weinkurs, auf Lebenszeit", sub: "170 interaktive Lektionen: Verkostung, Rebsorten und zwölf Weinländer.",
+      what: "Der Winelingo-Weinkurs, auf Lebenszeit", sub: "173 interaktive Lektionen: Verkostung, Rebsorten und zwölf Weinländer.",
       code: "Dein Code", where: "Einlösen auf winelingo.app/redeem", redeem: "Diesen Code jetzt einlösen", toP: "Für ", fromP: "Von " }
   };
   var hash = location.hash.slice(1), p = {};

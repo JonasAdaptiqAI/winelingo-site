@@ -99,7 +99,7 @@ for (const f of files) {
   // ---- main
   const half = Math.ceil(g.sections.length / 2);
   const sections = g.sections.map((s, i) => `<h2>${escT(s.heading)}</h2>\n${s.html}\n${i === half - 1 && i !== g.sections.length - 1 ? divider + "\n" : ""}`).join("");
-  const course = g.course || { href: "/course/", label: "Winelingo's online wine course", count: "170 interactive lessons in 26 units, first two units free" };
+  const course = g.course || { href: "/course/", label: "Winelingo's online wine course", count: "173 interactive lessons in 26 units, first two units free" };
   const main = `<main id="main"><section class="page-hero"><div class="hero-bg" aria-hidden="true"></div>${motif}<div class="wrap">
     <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/learn/">Learn</a><span aria-hidden="true">/</span><span aria-current="page">${escT(g.crumb)}</span></nav>
     <p class="eyebrow reveal">Learn</p>
