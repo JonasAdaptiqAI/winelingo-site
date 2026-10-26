@@ -67,12 +67,14 @@
   // to); the rest needs Premium or the course purchase (0131).
   var FREE_TOPICS = ["Foundations", "Tasting & senses"];
 
-  // The course: one unit per lesson topic, in curriculum order (learn.tsx UNITS, app 1.4.1).
+  // The course: one unit per lesson topic, in curriculum order (learn.tsx UNITS, app 1.5.2).
   var UNITS = [
     ["Foundations", "foundations", "uTerroir"], ["Tasting & senses", "tastingSenses", "uTasting"],
     ["Red grapes to know", "redGrapes", "uRedGrapes"], ["White grapes to know", "whiteGrapes", "uWhiteGrapes"],
     ["Reading the label", "readingLabel", "uLabel"], ["Food & wine", "foodWine", "pairing"],
     ["Serving & glassware", "servingGlassware", "uServing"], ["Wine at the table", "atTable", "uToast"],
+    ["After dinner", "afterDinner", "uAfterDinner", { by: "franzconde", license: "CC BY 2.0", licenseUrl: "https://creativecommons.org/licenses/by/2.0/",
+      src: "https://commons.wikimedia.org/wiki/File:001_Tiramisu.jpg" }],
     ["Wine, health & moderation", "healthModeration", "uModeration"],
     ["France", "france", "uFrance"], ["Italy", "italy", "uItaly"], ["Spain", "spain", "uSpain"],
     ["Portugal", "portugal", "uPortugal"], ["Germany", "germany", "uGermany"], ["Austria", "austria", "uAustria"],
@@ -269,7 +271,10 @@
   // The course path from 1.4.0 (lib/api.ts inUnit): `v2_unit` / `v2_sort` win over chapter and topic.
   // A lesson merged into another (`v2_merged_into`) is left out of the path, and finishing it counts
   // for the lesson it now lives in (withMergedDone).
+  // From app 1.5.1 (0145) `v3_unit` / `v3_sort` win over the v2 place: the After dinner unit, which
+  // gathers lessons that older app versions still show in Food & wine and Wine at the table.
   function inUnit(l) {
+    if (l && l.v3_unit) { l.topic = l.v3_unit; if (l.v3_sort != null) l.sort_order = l.v3_sort; return l; }
     if (l && l.v2_unit) { l.topic = l.v2_unit; if (l.v2_sort != null) l.sort_order = l.v2_sort; }
     return l;
   }
@@ -300,7 +305,10 @@
   function loadLessons() {
     var base = "id, topic, title, summary, body, sort_order, steps, outcomes, chapter, chapter_sort";
     function q(cols) { return sb.from("lessons").select(cols).order("sort_order"); }
-    return q(base + ", v2_title, v2_summary, v2_len, v2_unit, v2_sort, v2_merged_into").then(function (res) {
+    var v2 = base + ", v2_title, v2_summary, v2_len, v2_unit, v2_sort, v2_merged_into";
+    return q(v2 + ", v3_unit, v3_sort").then(function (res) {
+      return res.error && /v3/i.test(res.error.message || "") ? q(v2) : res;
+    }).then(function (res) {
       return res.error && /v2/i.test(res.error.message || "") ? q(base) : res;
     }).then(function (res) {
       if (res.error) throw res.error;
@@ -1576,7 +1584,9 @@
     var outcomeSrc = P.v2 && P.v2.outcomes ? P.v2.outcomes : P.lesson.outcomes;
     var outcomes = Array.isArray(outcomeSrc) ? outcomeSrc.filter(function (o) { return typeof o === "string"; }) : [];
     var recap = P.v2 && Array.isArray(P.v2.recap) ? P.v2.recap.filter(function (o) { return typeof o === "string" && o.trim(); }) : [];
-    var nextUp = P.v2 && typeof P.v2.next === "string" && P.v2.next.trim() ? P.v2.next : null;
+    // A lesson moved into the v3 path has its own teaser there (next_v3), as in the app.
+    var nextRaw = P.v2 && (P.lesson.v3_unit && typeof P.v2.next_v3 === "string" ? P.v2.next_v3 : P.v2.next);
+    var nextUp = typeof nextRaw === "string" && nextRaw.trim() ? nextRaw : null;
     var xpNow = P.xpAfter != null ? P.xpAfter : P.xpBefore;
     var frac = xpNow != null ? Math.min(1, xpNow / goal) : 1;
     return h("div", { class: "pl-wrap done" },

@@ -21,6 +21,15 @@ const GAMES = ["best", "correct", "rankTop", "rankGood", "rankPractice", "practi
 const ONBOARDING = ["levelQ", "levelSub", "countriesQ", "countriesAll", "countriesNone", "countriesChangeLater",
   "goalQ", "goalCommit", "continue", "back", "signOut", "saving", "saveError"];
 
+// Lines the web still shows after the app's 1.5 onboarding dropped them (their last app wording):
+// the level screen's subtitle and the hint under each experience level.
+const KEPT = {
+  en: {"onboarding": {"levelSub": "So we can teach at your level."}, "experience": {"beginnerHint": "I just know what I like", "learningHint": "I know a few things", "enthusiastHint": "I taste deliberately"}},
+  da: {"onboarding": {"levelSub": "Så vi kan undervise på dit niveau."}, "experience": {"beginnerHint": "Jeg ved bare, hvad jeg kan lide", "learningHint": "Jeg ved et par ting", "enthusiastHint": "Jeg smager bevidst"}},
+  es: {"onboarding": {"levelSub": "Para enseñarte a tu nivel."}, "experience": {"beginnerHint": "Solo sé lo que me gusta", "learningHint": "Sé algunas cosas", "enthusiastHint": "Cato con intención"}},
+  de: {"onboarding": {"levelSub": "Damit wir auf deinem Niveau erklären."}, "experience": {"beginnerHint": "Ich weiß nur, was mir schmeckt", "learningHint": "Ich weiß ein paar Dinge", "enthusiastHint": "Ich verkoste bewusst"}},
+};
+
 // Lines only the web course needs. Same voice as the app: plain, warm, short.
 const WEB = {
   en: {
@@ -398,6 +407,7 @@ for (const l of LANGS) {
     o[ns] = src[ns];
   }
   o.onboarding = Object.fromEntries(ONBOARDING.filter((k) => src.onboarding?.[k] != null).map((k) => [k, src.onboarding[k]]));
+  for (const [ns, lines] of Object.entries(KEPT[l])) o[ns] = { ...lines, ...o[ns] };
   o.games = Object.fromEntries(GAMES.map((k) => {
     if (src.games?.[k] == null) throw new Error(`${l}.json has no "games.${k}"`);
     return [k, src.games[k]];
