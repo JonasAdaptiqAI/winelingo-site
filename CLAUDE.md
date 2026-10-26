@@ -46,6 +46,11 @@ Everything is hand-written static HTML/CSS/JS.
 - Voice — warm, plain-language, encouraging; a knowledgeable friend, never a gatekeeper.
 - One hero colour per view (burgundy leads); gold is a thin accent line, not a fill.
 - Warm & light, NOT dark. If it feels cold/dark/purple/SaaS, it's wrong for this brand.
+- The one deliberate exception: the homepage (`body.dark-page`) and the top of `/business` open on a
+  candlelit scroll story (`assets/hero/`), and the homepage stays in that warm night (#120907, cream
+  type, blush/gold accents) down to the footer. Jonas chose this on 2026-10-26; don't lighten it back.
+  `assets/hero/{home,business}.{css,js}` are generated from the prototype in
+  ~/dev/winelingo-hero-prototype (work/scope_css.py, work/make_site_hero.py); edit there and regenerate.
 
 ## Waitlist form
 `index.html` posts to Formspree. Replace `YOUR_FORM_ID` in the form `action` with the real

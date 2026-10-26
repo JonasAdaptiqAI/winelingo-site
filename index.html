@@ -43,6 +43,10 @@
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap"></noscript>
 
 <link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/hero/story-header.css?v=1">
+<link rel="stylesheet" href="/assets/hero/home.css?v=1">
+<link rel="preload" as="image" href="/assets/hero/scene-open.webp" fetchpriority="high">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@800;900&display=swap" media="print" onload="this.media='all'">
 
 <!-- Structured data -->
 <script type="application/ld+json">
@@ -112,84 +116,6 @@
       "publisher": {
         "@id": "https://winelingo.app/#organization"
       }
-    },
-    {
-      "@type": "VideoObject",
-      "@id": "https://winelingo.app/#film",
-      "name": "Winelingo in one minute",
-      "description": "A one-minute tour of Winelingo: learn wine in short lessons, scan any label, order from a restaurant wine list, remember every glass, taste with friends and win the weekly league.",
-      "thumbnailUrl": "https://winelingo.app/assets/video/winelingo-in-a-minute-poster.jpg",
-      "contentUrl": "https://winelingo.app/assets/video/winelingo-in-a-minute.mp4",
-      "uploadDate": "2026-10-01",
-      "duration": "PT59S",
-      "width": 720,
-      "height": 1280,
-      "inLanguage": "en",
-      "publisher": {
-        "@id": "https://winelingo.app/#organization"
-      }
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://winelingo.app/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is Winelingo?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Winelingo is a free app to learn about wine on your iPhone. Scan any wine label and it explains the bottle in plain English — body, tannin, acidity and sweetness — and builds your palate profile as you go. It speaks English, Danish, Spanish and German."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Winelingo free?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Winelingo is free to download, with Premium for unlimited scans. The daily lesson, the wine word of the day and the whole library of grapes, regions and styles are free to learn with. Premium is for people who scan a lot, restaurant wine lists included."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Where can I get it?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Winelingo is live on the App Store, free to download. It is an iPhone app and works in English, Danish, Spanish and German. On a computer, scan the QR code on winelingo.app with your iPhone camera to go straight to it."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which devices does it work on?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Winelingo is an iPhone app. You point your iPhone camera at a label or wine list to scan it."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What languages does it support?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "English, Danish, Spanish and German — with the same warm, plain-language teaching in each."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I need an account?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes — your tasting journal and palate profile are personal to you, so Winelingo asks you to create an account. You can delete your account and all its data at any time, right inside the app."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What happens to the photos I scan?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A label or wine-list photo is processed to identify the wine and return your result — it isn't kept as a long-term gallery, and it's never used to build an advertising profile."
-          }
-        }
-      ]
     }
   ]
 }
@@ -488,6 +414,29 @@
     .games{margin:0 -20px; padding-left:20px; padding-right:20px}
     .cta-get{flex-direction:column; gap:18px}
   }
+
+  /* The homepage after the candlelit story: the reviews and the globe stay in the night of the
+     photos, cream type on near-black, blush and gold for the accents the light pages use wine for. */
+  .dark-band{background:#120907; color:#F6EADB}
+  #reviews.dark-band{padding-top:88px}
+  #around-the-world.dark-band{padding-bottom:104px; background:linear-gradient(180deg,#120907 0%,#1A0D0A 100%)}
+  .dark-band .eyebrow{color:#C9A24A}
+  .dark-band .section-head h2, .dark-band .globe-copy h2{color:#FFF6EC}
+  .dark-band .globe-copy > p:not(.eyebrow){color:rgba(246,234,219,.72)}
+  .dark-band .rev{background:rgba(246,234,219,.045); border-color:rgba(246,234,219,.1); box-shadow:none}
+  .dark-band .rev .rev-t{color:#FFF6EC}
+  .dark-band .rev blockquote p:last-child{color:rgba(246,234,219,.78)}
+  .dark-band .rev figcaption{border-top-color:rgba(246,234,219,.1); color:rgba(246,234,219,.5)}
+  .dark-band .rev figcaption b{color:#F6EADB}
+  .dark-band .rev-note, .dark-band .globe-note{color:rgba(246,234,219,.45)}
+  .dark-band .globe-big{color:#FFF6EC}
+  .dark-band .globe-sub{color:rgba(246,234,219,.72)}
+  .dark-band .globe-dl{color:#E8C877}
+  .dark-band .globe-legend .lg-dot{background:#E8A0B0}
+  .dark-band .globe-legend .lg-ring{border-color:#C9A24A}
+  .dark-band .lg-btn{background:transparent; border-color:rgba(246,234,219,.2); color:rgba(246,234,219,.8)}
+  .dark-band .lg-btn:hover{border-color:rgba(232,160,176,.55); color:#FFF6EC}
+  .dark-band .lg-btn[aria-pressed="true"]{background:rgba(232,160,176,.12); border-color:#E8A0B0; color:#FFF6EC}
 </style>
 <!-- growth:analytics -->
 <script defer src="https://cloud.umami.is/script.js" data-website-id="c7a78f38-93c5-4438-aa14-abcaa3add531" data-domains="winelingo.app"></script>
@@ -512,7 +461,7 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
 </script>
 <!-- /visit-counter -->
 </head>
-<body>
+<body class="has-story dark-page">
 <a class="skip" href="#main">Skip to content</a>
 
 <!-- ============ HEADER ============ -->
@@ -524,14 +473,9 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
     </a>
     <nav class="nav-links" id="navmenu" aria-label="Primary">
       <a href="/course/">Course</a>
-      <a href="/learn/">Learn</a>
-      <a href="/grape-varieties/">Grapes</a>
-      <a href="/wine-regions/">Regions</a>
-      <a href="/wine-styles/">Styles</a><a href="/food-and-wine-pairing/">Pairing</a>
-      <a href="/wine-glossary/">Glossary</a>
-      <a href="/tools/">Tools</a>
-      <a href="/about/">About</a>
+      <a href="/tests/">Wine tests</a>
       <a href="/business/">For business</a>
+      <a href="/about/">About</a>
     </nav>
     <div class="nav-cta">
       <a class="badge-link nav-badge" href="https://apps.apple.com/app/id6785896824"><img src="/assets/appstore-badge.svg" alt="Download Winelingo on the App Store" width="120" height="40"></a>
@@ -543,284 +487,136 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
 <main id="main">
 <span id="top"></span>
 
-<!-- ============ HERO ============ -->
-<section class="hero">
-  <div class="hero-bg" aria-hidden="true"></div>
-  <div class="wrap hero-grid">
-    <div class="hero-copy">
-      <p class="eyebrow">The wine app for iPhone</p>
-      <h1>Learn the wine <br>in your <em>glass</em>.</h1>
-      <p class="hero-sub">Point your camera at any label. Winelingo tells you what the wine is, why it tastes the way it does and what to eat with it — then learns your palate, one glass at a time.</p>
-      <div class="hero-actions" data-get-app-zone>
-        <a class="badge-link" href="https://apps.apple.com/app/id6785896824" data-cta="hero"><img src="/assets/appstore-badge.svg" alt="Download Winelingo on the App Store" width="168" height="56"></a>
-        <div class="qr-card"><img src="/assets/qr-get.svg" alt="QR code that opens Winelingo on the App Store" width="80" height="80"><span class="qr-txt"><b>On a computer?</b>Point your iPhone camera here to get the app.</span></div>
-        <a class="hero-how" href="#film"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.6v12.8c0 .8.9 1.3 1.6.9l10-6.4c.6-.4.6-1.4 0-1.8l-10-6.4C8.9 4.3 8 4.8 8 5.6Z"/></svg> Watch the 1-minute film</a>
-      </div>
-      <p class="hero-fine"><b>Free to download</b>, with Premium for unlimited scans · iPhone · 18+</p>
-      <figure class="hero-review">
-        <span class="stars" role="img" aria-label="5 out of 5 stars"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.6 7.1.7-5.4 4.8 1.6 7L12 17.4 5.8 21.1l1.6-7L2 9.3l7.1-.7L12 2Z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.6 7.1.7-5.4 4.8 1.6 7L12 17.4 5.8 21.1l1.6-7L2 9.3l7.1-.7L12 2Z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.6 7.1.7-5.4 4.8 1.6 7L12 17.4 5.8 21.1l1.6-7L2 9.3l7.1-.7L12 2Z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.6 7.1.7-5.4 4.8 1.6 7L12 17.4 5.8 21.1l1.6-7L2 9.3l7.1-.7L12 2Z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.6 7.1.7-5.4 4.8 1.6 7L12 17.4 5.8 21.1l1.6-7L2 9.3l7.1-.7L12 2Z"/></svg></span>
-        <q>Easy to scan and learn something new — especially for beginners.</q>
-        <cite>App Store review, translated from Danish</cite>
-      </figure>
-    </div>
+<section class="hs-story" id="hs-story" data-get-app-zone aria-label="Winelingo, in a scroll">
+  <div class="hs-stage" id="hs-stage">
+    <div class="hs-shot" id="hs-shot1"><img src="/assets/hero/scene-open.webp" alt="A host proudly presents a bottle of red wine to friends around a candlelit dinner table"></div>
+    <div class="hs-shot" id="hs-shot2"><img src="/assets/hero/scene-phone.webp" alt=""></div>
+    <div class="hs-shot" id="hs-fingers"><img src="/assets/hero/phone-fingers.png" alt=""></div>
+    <div class="hs-vignette" id="hs-vignette"></div>
+    <div class="hs-dim" id="hs-dim"></div>
+    <div class="hs-endshot" id="hs-endshot" role="img" aria-label="The host pours the wine while his friends laugh around the table"></div>
 
-    <!-- The one-minute film: poster first, plays with sound only when asked -->
-    <div class="film-stage">
-      <div class="stage-glow" aria-hidden="true"></div>
-      <figure class="film" id="film" data-get-app-zone>
-        <video playsinline preload="none" poster="/assets/video/winelingo-in-a-minute-poster.jpg" width="720" height="1280"
-          aria-label="Winelingo in one minute: learn wine in short lessons, scan any label, order from a wine list, remember every glass, taste with friends and win the weekly league.">
-          <source src="/assets/video/winelingo-in-a-minute.mp4" type="video/mp4">
-        </video>
-        <button class="film-play" type="button" aria-label="Play the one-minute film about Winelingo, with sound">
-          <span class="fp-pill" aria-hidden="true">
-            <span class="fp-btn"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.6v12.8c0 .8.9 1.3 1.6.9l10-6.4c.6-.4.6-1.4 0-1.8l-10-6.4C8.9 4.3 8 4.8 8 5.6Z"/></svg></span>
-            <span class="fp-lbl">Watch the film<small>1 minute · sound on</small></span>
-          </span>
-        </button>
-        <div class="film-end" hidden>
-          <p class="fe-t">Your next bottle is your first lesson.</p>
-          <a class="badge-link" href="https://apps.apple.com/app/id6785896824" data-cta="video-end"><img src="/assets/appstore-badge-white.svg" alt="Download Winelingo on the App Store" width="156" height="52"></a>
-          <button class="fe-replay" type="button">Watch again</button>
-        </div>
-      </figure>
-    </div>
-  </div>
-
-  <div class="strip">
-    <div class="wrap strip-inner">
-      <span class="strip-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="14" rx="3" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="13" r="3.4" stroke="currentColor" stroke-width="1.6"/><path d="M8 6l1.2-2h5.6L16 6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg> Labels and wine lists</span>
-      <span class="strip-sep" aria-hidden="true"></span>
-      <span class="strip-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 5h16v11H9l-5 4V5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg> Plain words, no jargon</span>
-      <span class="strip-sep" aria-hidden="true"></span>
-      <span class="strip-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.4-7-10a4.6 4.6 0 0 1 8.6-2.3l.4.7.4-.7A4.6 4.6 0 0 1 19 11c0 5.6-7 10-7 10Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg> A palate that learns you</span>
-      <span class="strip-sep" aria-hidden="true"></span>
-      <span class="strip-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3Z" stroke="currentColor" stroke-width="1.6"/></svg> English · Dansk · Español · Deutsch</span>
-    </div>
-  </div>
-</section>
-
-<!-- ============ HOW IT WORKS ============ -->
-<section class="section" id="how">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow center reveal">How it works</p>
-      <h2 class="reveal">From “no idea” to “I’ll have this one”</h2>
-      <p class="reveal d1">No wine words to memorise first. Winelingo starts with the bottle in front of you and teaches from there.</p>
-    </div>
-    <ol class="steps">
-      <li class="step reveal"><span class="step-num">1</span><h3>Point your camera</h3><p>Snap the label on the bottle, or a whole wine list at a restaurant. No typing, no searching.</p></li>
-      <li class="step reveal d1"><span class="step-num">2</span><h3>Meet the wine</h3><p>What it is, how it tastes in plain words, why it tastes that way, and a short story to tell as you pour.</p></li>
-      <li class="step reveal d2"><span class="step-num">3</span><h3>Make it yours</h3><p>Rate what you drink. Winelingo maps your palate and gets sharper with every bottle you save.</p></li>
-    </ol>
-  </div>
-</section>
-
-<!-- ============ FEATURES ============ -->
-<section class="section" id="features" style="padding-top:24px">
-  <div class="wrap">
-
-    <div class="showcase">
-      <div class="show-copy">
-        <p class="eyebrow reveal">Scan a label</p>
-        <h3 class="reveal">Every bottle becomes a wine lesson</h3>
-        <p class="reveal d1">One photo turns a label you can’t pronounce into something you understand. Winelingo identifies the wine, then explains it the way a generous friend would — no jargon, no gatekeeping.</p>
-        <ul class="show-list reveal d1">
-          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>A taste profile in plain words — body, tannin, acidity, sweetness</span></li>
-          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>The story of <em>why</em> it tastes that way, with the one lesson that explains it a tap away</span></li>
-          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>A story for serving, read aloud as you pour, and what to eat with it</span></li>
-        </ul>
-      </div>
-      <div class="show-media reveal d1">
-        <div class="panel-glow" aria-hidden="true"></div>
-        <div class="panel" role="img" aria-label="Example Winelingo scan result with a plain-language taste-profile chart and a note on why the wine tastes that way.">
-          <p class="scan-eyebrow"><span class="dot"></span> Example scan · Taste profile</p>
-          <p class="wine-name">Colline Rosse</p>
-          <p class="wine-meta">Barolo · Nebbiolo · Piedmont, Italy · 2019</p>
-          <span class="type-badge"><span class="swatch"></span> Red · Bold &amp; structured</span>
-          <div class="bars">
-            <div class="bar-row"><span>Body</span><div class="track"><div class="fill" style="width:82%"></div></div></div>
-            <div class="bar-row"><span>Tannin</span><div class="track"><div class="fill" style="width:88%"></div></div></div>
-            <div class="bar-row"><span>Acidity</span><div class="track"><div class="fill" style="width:74%"></div></div></div>
-            <div class="bar-row"><span>Sweetness</span><div class="track"><div class="fill" style="width:12%"></div></div></div>
+    <div class="hs-screen" id="hs-screen" aria-hidden="true">
+      <div class="hs-bezel" id="hs-bezel"></div>
+      <div class="hs-glass">
+        <div class="hs-scr hs-on"><img src="/assets/hero/screen-1-learn.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:top"><i class="hs-tap" id="hs-tapStart" style="left:49.8%;top:67.6%"></i></div>
+        <div class="hs-scr hs-app hs-lesson" id="hs-lesson">
+          <div class="hs-status"><span>9:41</span>
+            <svg width="78" height="13" viewBox="0 0 78 13" fill="#1d1d1f"><rect x="0" y="8" width="3.4" height="5" rx="1"/><rect x="5" y="5.5" width="3.4" height="7.5" rx="1"/><rect x="10" y="3" width="3.4" height="10" rx="1"/><rect x="15" y="0" width="3.4" height="13" rx="1"/><path d="M33 3.2c3 0 5.6 1.1 7.6 3l-1.5 1.5a8.6 8.6 0 0 0-12.2 0L25.4 6.2c2-1.9 4.6-3 7.6-3zm0 4.2c1.7 0 3.2.6 4.4 1.7L33 13.5 28.6 9.1c1.2-1.1 2.7-1.7 4.4-1.7z"/><rect x="48" y=".5" width="25" height="12" rx="3.6" fill="none" stroke="#1d1d1f" stroke-opacity=".4"/><rect x="50" y="2.5" width="21" height="8" rx="2"/><rect x="74.5" y="4.5" width="1.6" height="4" rx=".8" fill-opacity=".4"/></svg>
           </div>
-          <div class="story">
-            <p class="lbl"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M4 5h16M4 12h16M4 19h10" stroke="#7B1E3B" stroke-width="2" stroke-linecap="round"/></svg> Why it tastes this way</p>
-            <p>“Nebbiolo grown in Piedmont’s fog gives high tannin and bright acidity; years in oak add the dried-rose and tar notes Barolo is loved for.”</p>
+          <div class="hs-top">
+            <span class="hs-x"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 2l8 8M10 2l-8 8" stroke="#6e6e73" stroke-width="2" stroke-linecap="round"/></svg></span>
+            <span class="hs-track"><i id="hs-lessonBar"></i></span>
+            <span class="hs-hearts"><svg width="18" height="16" viewBox="0 0 24 21"><path d="M12 21 10.3 19.5C4.2 14 0 10.3 0 5.8 0 2.5 2.6 0 5.9 0c1.9 0 3.7.9 4.9 2.3h2.4C14.4.9 16.2 0 18.1 0 21.4 0 24 2.5 24 5.8c0 4.5-4.2 8.2-10.3 13.7z" fill="#d70015"/></svg>∞</span>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="showcase flip">
-      <div class="show-media reveal d1">
-        <div class="panel-glow" aria-hidden="true"></div>
-        <div class="panel" role="img" aria-label="Example ranked wine list matched to your palate, with a clear top pick to order.">
-          <div class="list-head">
-            <span class="t">The wine list, ranked</span>
-            <span class="s">for your palate</span>
-          </div>
-          <div class="wine-row row-best">
-            <span class="rank">1</span>
-            <div class="info"><div class="nm">Côtes du Rhône, Grenache</div><div class="sub">Medium body · soft tannin</div></div>
-            <span class="order-tag">Order this</span>
-          </div>
-          <div class="wine-row"><span class="rank">2</span><div class="info"><div class="nm">Rioja Crianza, Tempranillo</div><div class="sub">92% match</div></div><span class="match">92%</span></div>
-          <div class="wine-row"><span class="rank">3</span><div class="info"><div class="nm">Chianti Classico, Sangiovese</div><div class="sub">87% match</div></div><span class="match">87%</span></div>
-          <div class="wine-row"><span class="rank">4</span><div class="info"><div class="nm">Malbec, Mendoza</div><div class="sub">81% match</div></div><span class="match">81%</span></div>
-        </div>
-      </div>
-      <div class="show-copy">
-        <p class="eyebrow reveal">Scan a wine list <span class="prem">Premium</span></p>
-        <h3 class="reveal">Never freeze at the wine list again</h3>
-        <p class="reveal d1">Photograph the page at a restaurant and Winelingo reads every bottle, then ranks them by the wines you’ve actually loved. You get a confident pick — and the reason behind it — before the waiter comes back.</p>
-        <ul class="show-list reveal d1">
-          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Reads the printed list straight from your camera</span></li>
-          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Ranks bottles by your personal taste profile</span></li>
-          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>One clear recommendation, not a wall of names</span></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="showcase">
-      <div class="show-copy">
-        <p class="eyebrow reveal">Learn wine like a language</p>
-        <h3 class="reveal">A path, one short lesson at a time</h3>
-        <p class="reveal d1">Winelingo’s course is more than a hundred short, interactive lessons, from tasting and grapes to France, Italy, Spain and the New World, food, ageing and wine at the table. A few minutes a day, and there’s always a lesson waiting for tonight.</p>
-        <ul class="show-list reveal d1">
-          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Start any unit you like; inside it, each lesson opens the next</span></li>
-          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Questions, not homework: pick one, true or false, match the pairs, and see why straight away</span></li>
-          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Miss one and it comes back at the end, until it sticks</span></li>
-          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>A daily goal, and a streak you keep alive with a lesson <em>or</em> a tasting</span></li>
-        </ul>
-        <ul class="units reveal d2" aria-label="The units of the course">
-          <li>Tasting &amp; senses</li><li>Red grapes</li><li>White grapes</li><li>Serving &amp; glassware</li><li>Food &amp; wine</li><li>Reading the label</li><li>France</li><li>Italy, Spain &amp; more</li><li>The New World</li><li>In the vineyard</li><li>How wine is made</li><li>Terroir &amp; vintages</li><li>Quality, ageing &amp; collecting</li><li>Buying &amp; value</li><li>Wine at the table</li><li>Wine, health &amp; moderation</li><li>A short history of wine</li>
-        </ul>
-      </div>
-      <div class="show-media reveal d1">
-        <div class="panel-glow" aria-hidden="true"></div>
-        <div class="panel course" role="img" aria-label="Illustration of the Winelingo course. Unit 1, Tasting and senses: Wine 101 and How to taste wine done, the Body lesson up next, and Tannin opening after it.">
-          <div class="c-top">
-            <span class="c-title">Learn</span>
-            <span class="c-goal"><svg width="22" height="22" viewBox="0 0 36 36"><circle cx="18" cy="18" r="15" fill="none" stroke="#EFE5EA" stroke-width="5"/><circle cx="18" cy="18" r="15" fill="none" stroke="#7B1E3B" stroke-width="5" stroke-linecap="round" stroke-dasharray="94.2" stroke-dashoffset="56.5" transform="rotate(-90 18 18)"/></svg>12/30 XP</span>
-          </div>
-          <div class="c-seg"><span class="on">Course</span><span>Practice</span><span>Library</span></div>
-          <div class="c-meta"><span>2 of 101 lessons</span><span class="c-all"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg>All units</span></div>
-          <div class="c-unit">
-            <img src="/assets/photos/red-swirl-800.webp" alt="" width="800" height="533" loading="lazy" decoding="async">
-            <div class="c-unit-body">
-              <span class="k">Unit 1</span>
-              <span class="t">Tasting &amp; senses</span>
-              <span class="c-bar"><i style="--p:20%"></i><span>2 of 10</span></span>
+          <div class="hs-body">
+            <div class="hs-krow"><span class="hs-kicker">Pick one answer</span><span class="hs-count">2 of 2</span></div>
+            <div class="hs-q">Why does Cabernet Sauvignon lead on the Left Bank?</div>
+            <div class="hs-opts">
+              <div class="hs-opt"><span class="hs-radio"><svg width="13" height="13" viewBox="0 0 14 14"><path d="M3 7.5l2.6 2.6L11 4.5" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Its cool clay holds water</span></div>
+              <div class="hs-opt" id="hs-optRight"><span class="hs-radio"><svg width="13" height="13" viewBox="0 0 14 14"><path d="M3 7.5l2.6 2.6L11 4.5" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Its warm gravel drains fast</span></div>
+              <div class="hs-opt"><span class="hs-radio"><svg width="13" height="13" viewBox="0 0 14 14"><path d="M3 7.5l2.6 2.6L11 4.5" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Its chalk stores summer water</span></div>
+              <div class="hs-opt"><span class="hs-radio"><svg width="13" height="13" viewBox="0 0 14 14"><path d="M3 7.5l2.6 2.6L11 4.5" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Its sea fogs slow ripening</span></div>
             </div>
           </div>
-          <ol class="c-path">
-            <li class="c-node done"><span class="c-dot"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="c-lbl">Wine 101: the main styles of wine</span></li>
-            <li class="c-node done" style="--x:-1"><span class="c-dot"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="c-lbl">How to taste wine in 5 steps</span></li>
-            <li class="c-node current">
-              <span class="c-dot"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.6 7.1.7-5.4 4.8 1.6 7L12 17.4 5.8 21.1l1.6-7L2 9.3l7.1-.7L12 2Z"/></svg></span>
-              <span class="c-pop"><b>Body: what light vs full means</b><small>Lesson 3 of 10</small><span class="c-start">Start</span></span>
-            </li>
-            <li class="c-node locked" style="--x:1"><span class="c-dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="5" y="10.5" width="14" height="10" rx="2.5" stroke="currentColor" stroke-width="2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" stroke="currentColor" stroke-width="2"/></svg></span><span class="c-lbl">Tannin: the grippy, drying feel</span></li>
-          </ol>
-        </div>
-      </div>
-    </div>
-
-    <!-- Practice games (Learn tab, app 1.3.0) -->
-    <div class="practice">
-      <div class="practice-head">
-        <p class="eyebrow center reveal">Practice</p>
-        <h3 class="reveal">Then play with what you’ve learned</h3>
-        <p class="reveal d1">Quick rounds that make it stick: a daily mix of questions on grapes, regions and wine words, or one game at a time, from where a grape comes from to guessing it from three clues.</p>
-      </div>
-      <div class="games">
-        <div class="game reveal" role="img" aria-label="Example question from the game Where does the grape come from: Malbec. Argentina is wrong, France is right.">
-          <h4>Where does the grape come from?</h4><span class="sub">The famous traps included</span>
-          <div class="q">
-            <span class="q-k">Red grape</span>
-            <span class="q-t">Malbec</span>
-            <span class="q-q">Where does the grape originally come from?</span>
-            <div class="opts">
-              <span class="opt wrong">Argentina <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span>
-              <span class="opt right">France <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-            </div>
-            <p class="q-note"><b>The trap!</b> Malbec comes from Cahors in south-west France. Argentina is where it became world-famous.</p>
+          <div class="hs-foot"><div class="hs-btn hs-check" id="hs-checkBtn">Check</div></div>
+          <div class="hs-sheet" id="hs-sheet">
+            <div class="hs-sheetHead"><svg width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="15" r="13.5" fill="#248a3d"/><path d="M9 15.5l4 4 8-8.5" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Nice</div>
+            <p><b>Key fact:</b> Warm, fast-draining gravel suits Cabernet Sauvignon, so it leads Left Bank blends.</p>
+            <p><b>Why it matters:</b> That is why Médoc reds are firmer and more drying, and the best age for many years.</p>
+            <p><b>Remember:</b> Gravel for Cabernet, clay for Merlot.</p>
+            <div class="hs-btn hs-go">Continue</div>
           </div>
+          <i class="hs-tap" id="hs-tapOpt"></i><i class="hs-tap hs-light" id="hs-tapCheck"></i>
         </div>
-        <div class="game reveal d1" role="img" aria-label="Example question from the game Guess the grape: three clues, blackcurrant, cedar and graphite. Cabernet Sauvignon is right.">
-          <h4>Guess the grape</h4><span class="sub">Three clues, one grape</span>
-          <div class="q">
-            <span class="q-k">Red grape</span>
-            <span class="q-t">Blackcurrant, Cedar, Graphite</span>
-            <span class="q-q">Which grape is it?</span>
-            <div class="opts">
-              <span class="opt right">Cabernet Sauvignon <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-              <span class="opt">Pinot Noir</span>
+        <div class="hs-scr hs-app" id="hs-scan">
+          <div class="hs-scroll" id="hs-scanScroll">
+            <div class="hs-hero">
+              <div class="hs-shot"><img src="/assets/hero/scan-photo.jpg" alt=""></div>
+              <div class="hs-scrim"></div>
+              <div class="hs-status"><span>9:41</span>
+                <svg width="78" height="13" viewBox="0 0 78 13" fill="#fff"><rect x="0" y="8" width="3.4" height="5" rx="1"/><rect x="5" y="5.5" width="3.4" height="7.5" rx="1"/><rect x="10" y="3" width="3.4" height="10" rx="1"/><rect x="15" y="0" width="3.4" height="13" rx="1"/><path d="M33 3.2c3 0 5.6 1.1 7.6 3l-1.5 1.5a8.6 8.6 0 0 0-12.2 0L25.4 6.2c2-1.9 4.6-3 7.6-3zm0 4.2c1.7 0 3.2.6 4.4 1.7L33 13.5 28.6 9.1c1.2-1.1 2.7-1.7 4.4-1.7z"/><rect x="48" y=".5" width="25" height="12" rx="3.6" fill="none" stroke="#fff" stroke-opacity=".5"/><rect x="50" y="2.5" width="21" height="8" rx="2"/><rect x="74.5" y="4.5" width="1.6" height="4" rx=".8" fill-opacity=".5"/></svg>
+              </div>
+              <div class="hs-back"><svg width="12" height="18" viewBox="0 0 12 18"><path d="M9.5 2 2.5 9l7 7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <div class="hs-heroText">
+                <div class="hs-heroTitle">Château de la Lanterne</div>
+                <div class="hs-heroSub">Château de la Lanterne · 2020</div>
+              </div>
+            </div>
+            <div class="hs-page">
+              <div class="hs-group">
+                <div class="hs-row"><span class="hs-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M7 3h10l-.6 6.2a4.4 4.4 0 0 1-8.8 0z"/><path d="M12 14v6M8.5 21h7"/></svg></span><span class="hs-lbl">Type</span><span class="hs-val">Red</span></div>
+                <div class="hs-row"><span class="hs-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="#fff"><circle cx="9" cy="10" r="3"/><circle cx="15" cy="10" r="3"/><circle cx="12" cy="15" r="3"/><circle cx="12" cy="20" r="2.2"/><path d="M12 6c0-2 1.4-3.4 3.4-3.6" stroke="#fff" stroke-width="1.6" fill="none"/></svg></span><span class="hs-lbl">Grapes</span><span class="hs-val">Cabernet Sauvignon, Merlot, Cabernet Franc</span></div>
+                <div class="hs-row"><span class="hs-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span><span class="hs-lbl">Vintage</span><span class="hs-val">2020</span></div>
+                <div class="hs-row"><span class="hs-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="#fff"><path d="M12 3s6 6.4 6 11a6 6 0 0 1-12 0c0-4.6 6-11 6-11z"/></svg></span><span class="hs-lbl">Alcohol</span><span class="hs-val">13.5%</span></div>
+                <div class="hs-row"><span class="hs-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="#fff"><path d="M10 3l1.8 5.2L17 10l-5.2 1.8L10 17l-1.8-5.2L3 10l5.2-1.8zM18 14l.9 2.1L21 17l-2.1.9L18 20l-.9-2.1L15 17l2.1-.9z"/></svg></span><span class="hs-lbl">Value</span><span class="hs-val">Notable<small>A cut above the everyday</small></span></div>
+              </div>
+              <div class="hs-card">
+                <div class="hs-kick">Winelingo rating</div>
+                <div class="hs-cardT">2 people have rated this wine</div>
+                <div class="hs-cardS">The average appears at 3 ratings. Yours counts too.</div>
+              </div>
+              <div>
+                <h3>Why it tastes like this</h3>
+                <div class="hs-card"><p class="hs-reading">Cabernet Sauvignon gives the firm, drying tannin and the blackcurrant; Merlot rounds it out with plum. The Médoc’s warm gravel helps late-ripening Cabernet get fully ripe, and time in oak barrels adds the cedar and vanilla.</p></div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="game reveal d2" role="img" aria-label="Example question from the game Which is higher: which has more tannin, Nebbiolo or Pinot Noir? Nebbiolo is right.">
-          <h4>Which is higher?</h4><span class="sub">Tannin, acidity and body</span>
-          <div class="q">
-            <span class="q-k">Tannin</span>
-            <span class="q-t">Nebbiolo or Pinot Noir?</span>
-            <span class="q-q">Which one has more tannin?</span>
-            <div class="opts">
-              <span class="opt right">Nebbiolo <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-              <span class="opt">Pinot Noir</span>
-            </div>
-            <div class="streak-row"><span class="pips" aria-hidden="true"><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span>4 in a row</span></div>
-          </div>
-        </div>
-      </div>
-      <p class="practice-more reveal">The wine tests live in there too. <a href="/tests/">Try one free on the web →</a></p>
-    </div>
-
-    <div class="showcase flip">
-      <div class="show-media reveal d1" role="img" aria-label="Two Winelingo screens: the palate profile and the tasting journal.">
-        <div class="panel-glow" aria-hidden="true"></div>
-        <div class="duo">
-          <div class="phone"><img src="/assets/shots/passport.jpg" alt="" width="640" height="1391" loading="lazy" decoding="async"></div>
-          <div class="phone"><img src="/assets/shots/journal.jpg" alt="" width="640" height="1391" loading="lazy" decoding="async"></div>
-        </div>
-      </div>
-      <div class="show-copy">
-        <p class="eyebrow reveal">Your palate, mapped</p>
-        <h3 class="reveal">The more you sip, the smarter it gets</h3>
-        <p class="reveal d1">Rate what you drink and Winelingo turns scattered sips into a picture of your taste — one you can hand to someone in a wine shop.</p>
-        <ul class="show-list reveal d1">
-          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>A Palate Passport: the grapes, styles and regions you love</span></li>
-          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>A journal with every bottle, its label, your rating and notes</span></li>
-          <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Recommendations “for your palate” that sharpen over time</span></li>
-        </ul>
+        <div class="hs-glow"></div>
       </div>
     </div>
 
+    <div class="hs-copy" id="hs-hero">
+      <span class="hs-eyebrow">The wine app for iPhone</span>
+      <h1>Be the one who <em>knows</em> the wine.</h1>
+      <p class="hs-lede">Short lessons, a label scanner and a palate that learns you. Winelingo turns every bottle into a story you can tell.</p>
+      <div class="hs-ctas">
+        <a href="https://apps.apple.com/app/id6785896824"><img src="/assets/appstore-badge-white.svg" alt="Download on the App Store"></a>
+        <a class="hs-web-link" href="/course/">Start free on the web →</a>
+      </div>
+    </div>
+
+    <p class="hs-copy hs-caption hs-capA" id="hs-capA">A month ago, he’d have said <em>“it’s a red.”</em></p>
+    <p class="hs-copy hs-caption hs-capB" id="hs-capB">Tonight he knows where it’s from, and <em>why</em> it tastes like this.</p>
+
+    <div class="hs-copy hs-side" id="hs-sideLearn">
+      <span class="hs-eyebrow">Learn</span>
+      <h2>Ten minutes <em>a day.</em></h2>
+      <p class="hs-lede">Short lessons with Corki, from your first sip to Barolo. Always picks up right where you left off.</p>
+      <p class="hs-step"><b>01</b> &nbsp;/ 03</p>
+    </div>
+    <div class="hs-copy hs-side" id="hs-sideLesson">
+      <span class="hs-eyebrow">A lesson</span>
+      <h2>One tap, and <em>it clicks.</em></h2>
+      <p class="hs-lede">Questions, not homework. Pick an answer and see straight away why it’s right, like why Cabernet loves warm gravel.</p>
+      <p class="hs-step"><b>02</b> &nbsp;/ 03</p>
+    </div>
+    <div class="hs-copy hs-side" id="hs-sideScan">
+      <span class="hs-eyebrow">Scan</span>
+      <h2>Every bottle is <em>a lesson.</em></h2>
+      <p class="hs-lede">Point your camera at the label. Grapes, taste, food, and the story behind the bottle in your hand.</p>
+      <p class="hs-step"><b>03</b> &nbsp;/ 03</p>
+    </div>
+
+    <div class="hs-copy" id="hs-end">
+      <span class="hs-eyebrow">Out now on the App Store</span>
+      <h2 style="font-size:clamp(40px,5vw,76px);line-height:1">Pour it like you <em>know it.</em></h2>
+      <p class="hs-lede">Free to download, with Premium for unlimited scans.</p>
+      <div class="hs-ctas">
+        <a href="https://apps.apple.com/app/id6785896824"><img src="/assets/appstore-badge-white.svg" alt="Download on the App Store"></a>
+        <a class="hs-web-link" href="/course/">Start free on the web →</a>
+      </div>
+      <div class="hs-qr"><img src="/assets/qr-get.svg" alt="QR code that opens Winelingo on the App Store"><span><b>On a computer?</b>Point your iPhone camera here<br>to get the app.</span></div>
+      <p class="hs-fine">iPhone · English, Dansk, Español, Deutsch · 18+ · Enjoy wine responsibly</p>
+    </div>
+
+    <div class="hs-hint" id="hs-hint">Scroll<i></i></div>
   </div>
 </section>
 
-<!-- ============ MID-PAGE CALL TO ACTION ============ -->
-<section style="padding:8px 0 24px">
-  <div class="wrap">
-    <div class="midcta reveal" data-get-app-zone>
-      <div class="mc-copy">
-        <img src="/assets/icon-192.png" alt="" width="72" height="72" loading="lazy">
-        <div>
-          <h2>Your next bottle is your first lesson</h2>
-          <p>Free to download, with Premium for unlimited scans.</p>
-        </div>
-      </div>
-      <div class="mc-get">
-        <a class="badge-link" href="https://apps.apple.com/app/id6785896824" data-cta="mid"><img src="/assets/appstore-badge.svg" alt="Download Winelingo on the App Store" width="156" height="52" loading="lazy"></a>
-        <div class="qr-card"><img src="/assets/qr-get.svg" alt="QR code that opens Winelingo on the App Store" width="80" height="80" loading="lazy"><span class="qr-txt"><b>On a computer?</b>Point your iPhone camera here to get the app.</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ REVIEWS (real App Store reviews, translated from Danish) ============ -->
-<section class="section" id="reviews">
+<!-- ============ REVIEWS ============ -->
+<section class="section dark-band" id="reviews">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow center reveal">From the App Store</p>
@@ -847,24 +643,8 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
   </div>
 </section>
 
-<!-- ============ LANGUAGES ============ -->
-<section class="langs">
-  <div class="wrap">
-    <div class="lead reveal">
-      <h2>Learn wine in your language</h2>
-      <p>However you say cheers, Winelingo teaches wine in your language — warm, plain and clear in all four.</p>
-    </div>
-    <div class="lang-toasts reveal d1">
-      <div class="toast"><span class="cheers">Cheers</span><small>English</small></div>
-      <div class="toast"><span class="cheers">Skål</span><small>Dansk</small></div>
-      <div class="toast"><span class="cheers">Salud</span><small>Español</small></div>
-      <div class="toast"><span class="cheers">Prost</span><small>Deutsch</small></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ VISITOR GLOBE (anonymous visit counts from egeskovengineering.com/api/visitors) ============ -->
-<section class="section globe-section" id="around-the-world" data-visitor-globe-scope>
+<!-- ============ AROUND THE WORLD ============ -->
+<section class="section globe-section dark-band" id="around-the-world" data-visitor-globe-scope>
   <div class="wrap globe-grid">
     <div class="globe-copy">
       <p class="eyebrow reveal">Around the world</p>
@@ -878,139 +658,8 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
         <p class="globe-note">Visits are counted anonymously, one per browser session: we keep the country and the count, nothing else. No cookies, no IP addresses. Downloads are first-time App Store downloads of Winelingo, from Apple’s daily report.</p>
       </div>
     </div>
-    <div class="globe-canvas" data-visitor-globe data-theme="light" data-site="winelingo"
+    <div class="globe-canvas" data-visitor-globe data-theme="dark" data-ocean="#1E110E" data-land="#3B2721" data-grid="rgba(246,234,219,0.06)" data-dot="#E8A0B0" data-ring="#C9A24A" data-rim="rgba(201,162,74,0.5)" data-halo="rgba(232,160,176,0.24)" data-site="winelingo"
          data-endpoint="https://egeskovengineering.com/api/visitors"></div>
-  </div>
-</section>
-
-<!-- ============ FAQ ============ -->
-<section class="section" id="faq" style="padding-top:40px">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow center reveal">Questions</p>
-      <h2 class="reveal">Good to know</h2>
-    </div>
-    <div class="faq reveal d1">
-      <details open>
-        <summary>Is Winelingo free?<span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary>
-        <div class="a"><p>Winelingo is free to download, with Premium for unlimited scans. The daily lesson, the wine word of the day and the whole library of grapes, regions and styles are free to learn with. Premium is for people who scan a lot, restaurant wine lists included.</p></div>
-      </details>
-      <details><summary>What is Winelingo?<span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary><div class="a"><p>Winelingo is a free app to learn about wine on your iPhone. Scan any wine label and it explains the bottle in plain English — body, tannin, acidity and sweetness — and builds your palate profile as you go. It speaks English, Danish, Spanish and German.</p></div></details>
-      <details>
-        <summary>Where can I get it?<span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary>
-        <div class="a"><p>Right now — Winelingo is live on the App Store, free to download. It’s an iPhone app, and it works in English, Dansk, Español and Deutsch. On a computer, scan the QR code on this page with your iPhone camera to go straight to it.</p></div>
-      </details>
-      <details>
-        <summary>Which devices does it work on?<span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary>
-        <div class="a"><p>Winelingo is an iPhone app. You point your iPhone camera at a label or wine list to scan it.</p></div>
-      </details>
-      <details>
-        <summary>What languages does it support?<span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary>
-        <div class="a"><p>English, Danish, Spanish and German — with the same warm, plain-language teaching in each.</p></div>
-      </details>
-      <details>
-        <summary>Do I need an account?<span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary>
-        <div class="a"><p>Yes — your tasting journal and palate profile are personal to you, so Winelingo asks you to create an account to keep them safe and in sync. You can delete your account and all its data at any time, right inside the app.</p></div>
-      </details>
-      <details>
-        <summary>What happens to the photos I scan?<span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary>
-        <div class="a"><p>A label or wine-list photo is processed to identify the wine and return your result — it isn’t kept as a long-term gallery, and it’s never used to build an advertising profile. Full details are in our <a href="/privacy">Privacy Policy</a>.</p></div>
-      </details>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FOR BUSINESS ============ -->
-<section class="bizband">
-  <div class="wrap">
-    <div class="in reveal">
-      <div>
-        <p class="eyebrow">Winelingo for business</p>
-        <h2>Run a restaurant or wine bar?</h2>
-        <p>Train the whole team on their own phones: short lessons, staff tests, a test built on your wine list and a weekly league.</p>
-      </div>
-      <a class="btn btn-primary" href="/business/">Wine training for staff →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CLOSING CALL TO ACTION ============ -->
-<section class="cta" id="get">
-  <img class="cta-bg" src="/assets/photos/cta-cellar.jpg" alt="" loading="lazy">
-  <div class="wrap">
-    <p class="eyebrow center reveal">Out now on the App Store</p>
-    <h2 class="reveal">Pour with confidence tonight</h2>
-    <p class="lead reveal d1">Point your camera at the bottle in front of you and learn what you’re drinking. Free to download, with Premium for unlimited scans.</p>
-    <div class="cta-get reveal d1">
-      <a class="badge-link" href="https://apps.apple.com/app/id6785896824" data-cta="closing"><img src="/assets/appstore-badge-white.svg" alt="Download Winelingo on the App Store" width="174" height="58" loading="lazy"></a>
-      <div class="qr-card on-dark"><img src="/assets/qr-get.svg" alt="QR code that opens Winelingo on the App Store" width="80" height="80" loading="lazy"><span class="qr-txt"><b>On a computer?</b>Point your iPhone camera here to get the app.</span></div>
-    </div>
-    <div class="cta-meta reveal d2">
-      <span>iPhone · English, Dansk, Español, Deutsch</span>
-      <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 3h8l-.5 4.4A4 4 0 0 1 12 11a4 4 0 0 1-3.5-3.6L8 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 11v6m-3 3h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> For adults of legal drinking age (18+) · Enjoy wine responsibly</span>
-      <span><a href="/privacy">Privacy Policy</a></span>
-    </div>
-  </div>
-</section>
-
-<!-- ============ LEARN HUB (for readers who aren't on their iPhone right now) ============ -->
-<section class="section" id="learn-teaser" style="padding-bottom:40px">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow center reveal">Free to read, no app needed</p>
-      <h2 class="reveal">Start learning wine right now</h2>
-      <p class="reveal d1">Plain-language guides, a full glossary, and a reference library of 74 grapes, 82 regions and 45 wine styles — the same warm teaching that lives inside the app, free on the web.</p>
-    </div>
-    <div class="hub-grid">
-      <a class="hub-card has-img reveal" href="/learn/wine-for-beginners/">
-        <div class="thumb"><picture><source type="image/webp" srcset="/assets/photos/vineyard-flare-800.webp"><img src="/assets/photos/vineyard-flare.jpg" alt="" loading="lazy"></picture></div>
-        <div class="body"><h3>Wine for beginners</h3><p>Where to start, how to find what you like, and why there are no wrong answers.</p><div class="go">Read the guide →</div></div>
-      </a>
-      <a class="hub-card has-img reveal d1" href="/grape-varieties/">
-        <div class="thumb"><picture><source type="image/webp" srcset="/assets/photos/grape-cabernet-800.webp"><img src="/assets/photos/grape-cabernet.jpg" alt="" loading="lazy"></picture></div>
-        <div class="body"><h3>74 grape varieties</h3><p>How each grape tastes, where it grows and what to eat with it — Cabernet to Assyrtiko.</p><div class="go">Browse grapes →</div></div>
-      </a>
-      <a class="hub-card has-img reveal d2" href="/wine-regions/">
-        <div class="thumb"><picture><source type="image/webp" srcset="/assets/photos/region-tuscany-800.webp"><img src="/assets/photos/region-tuscany.jpg" alt="" loading="lazy"></picture></div>
-        <div class="body"><h3>82 wine regions</h3><p>The world’s wine regions across 15 countries — their grapes, styles and what makes each distinctive.</p><div class="go">Browse regions →</div></div>
-      </a>
-      <a class="hub-card has-img reveal" href="/wine-styles/">
-        <div class="thumb"><picture><source type="image/webp" srcset="/assets/photos/wine-styles-800.webp"><img src="/assets/photos/wine-styles.jpg" alt="" loading="lazy"></picture></div>
-        <div class="body"><h3>45 wine styles</h3><p>Barolo, Champagne, Chablis, Rioja, Port and more — the grapes behind them and how they taste.</p><div class="go">Browse styles →</div></div>
-      </a>
-      <a class="hub-card has-img reveal d1" href="/food-and-wine-pairing/">
-        <div class="thumb"><picture><source type="image/webp" srcset="/assets/photos/pairings-800.webp"><img src="/assets/photos/pairings.jpg" alt="" loading="lazy"></picture></div>
-        <div class="body"><h3>Food &amp; wine pairing</h3><p>What to drink with dinner — 130+ easy matches, each with the reason it works.</p><div class="go">Find a pairing →</div></div>
-      </a>
-      <a class="hub-card has-img reveal d2" href="/wine-glossary/">
-        <div class="thumb"><picture><source type="image/webp" srcset="/assets/photos/grapes-purple-800.webp"><img src="/assets/photos/grapes-purple.jpg" alt="" loading="lazy"></picture></div>
-        <div class="body"><h3>Wine glossary</h3><p>45 wine words — tannin, terroir, cuvée and more — defined in plain English.</p><div class="go">Browse the glossary →</div></div>
-      </a>
-    </div>
-    <div class="popular reveal" id="popular">
-      <h3>Popular pairings and guides</h3>
-      <p>The questions readers bring us most often — each answered with a bottle you can actually find, and the reason it works.</p>
-      <p class="plabel">Pairings</p>
-      <div class="pairwrap">
-        <a class="pairpill" href="/food-and-wine-pairing/bruschetta/">Wine with bruschetta</a>
-        <a class="pairpill" href="/food-and-wine-pairing/pasta-alla-vodka/">Wine with penne alla vodka</a>
-        <a class="pairpill" href="/food-and-wine-pairing/goulash/">Wine with goulash</a>
-        <a class="pairpill" href="/food-and-wine-pairing/halibut/">Wine with halibut</a>
-        <a class="pairpill" href="/food-and-wine-pairing/leek-and-potato-soup/">Wine with leek and potato soup</a>
-        <a class="pairpill" href="/food-and-wine-pairing/lentil-stew/">Wine with lentil stew</a>
-        <a class="pairpill" href="/food-and-wine-pairing/shakshuka/">Wine with shakshuka</a>
-        <a class="pairpill" href="/food-and-wine-pairing/lobster-and-crab/">Wine with lobster and crab</a>
-        <a class="pairpill" href="/food-and-wine-pairing/fruit-tart/">Wine with a fruit tart</a>
-        <a class="pairpill" href="/food-and-wine-pairing/quail/">Wine with quail</a>
-      </div>
-      <p class="plabel">Guides</p>
-      <div class="pairwrap">
-        <a class="pairpill" href="/wine-classifications/brunello-vs-rosso-di-montalcino/">Brunello vs Rosso di Montalcino</a>
-        <a class="pairpill" href="/wine-classifications/kabinett-spatlese-auslese/">Kabinett, Spätlese, Auslese</a>
-        <a class="pairpill" href="/learn/alternatives-to-red-burgundy/">Alternatives to red Burgundy</a>
-      </div>
-    </div>
-
   </div>
 </section>
 
@@ -1095,6 +744,7 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
 
 </script>
 <script defer src="/assets/visitor-globe.js?v=4"></script>
+<script defer src="/assets/hero/home.js?v=1"></script>
 <script defer src="/assets/get-app.js?v=1"></script>
 </body>
 </html>
