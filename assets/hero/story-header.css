@@ -1,0 +1,40 @@
+/* Pages that open on a scroll story (the homepage and /business, body.has-story).
+   The site header floats over the candlelit photo: transparent with cream type while the
+   story is on screen (header.on-story, set by the story script), the usual paper bar after it,
+   and paper whenever the phone menu is open so its links read. */
+
+/* site.css hides horizontal overflow on html and body; "hidden" turns body into a scroll
+   container, which stops position: sticky, and the story's stage is sticky. "clip" crops the
+   same overflow without that. */
+html, body.has-story { overflow-x: clip; }
+
+body.has-story header.site-header { position: fixed; top: 0; left: 0; right: 0; }
+
+header.site-header.on-story {
+  background: linear-gradient(180deg, rgba(10,4,3,.62) 0%, rgba(10,4,3,.35) 60%, rgba(10,4,3,0) 100%);
+  -webkit-backdrop-filter: none; backdrop-filter: none; border-bottom-color: transparent; box-shadow: none;
+}
+header.site-header.on-story .brand { color: #FFF6EC; }
+header.site-header.on-story .nav-toggle { color: #F6EADB; border-color: rgba(246,234,219,.32); }
+header.site-header.on-story .nav-toggle:hover { background: rgba(246,234,219,.08); }
+/* The black App Store badge, inverted, is Apple's white one. */
+header.site-header.on-story .nav-badge img { filter: invert(1); }
+@media (min-width: 901px) {
+  header.site-header.on-story .nav-links a { color: rgba(246,234,219,.9); }
+  header.site-header.on-story .nav-links a:hover,
+  header.site-header.on-story .nav-links a[aria-current="page"] { color: #E8A0B0; }
+}
+
+/* The homepage stays dark all the way down (body.dark-page): past the story the header is a
+   night glass bar instead of the paper one, and the phone menu opens as a night sheet. */
+body.dark-page header.site-header:not(.on-story) { background: rgba(18,9,7,.82); border-bottom-color: rgba(246,234,219,.08); box-shadow: none; }
+body.dark-page header.site-header .brand { color: #FFF6EC; }
+body.dark-page header.site-header .nav-toggle { color: #F6EADB; border-color: rgba(246,234,219,.32); }
+body.dark-page header.site-header .nav-toggle:hover { background: rgba(246,234,219,.08); }
+body.dark-page header.site-header .nav-badge img { filter: invert(1); }
+body.dark-page header.site-header .nav-links a { color: rgba(246,234,219,.9); }
+body.dark-page header.site-header .nav-links a:hover { color: #E8A0B0; }
+@media (max-width: 900px) {
+  body.dark-page header.site-header .nav-links { background: #1A0D0A; border-top-color: rgba(246,234,219,.1); box-shadow: 0 20px 44px -26px rgba(0,0,0,.8); }
+  body.dark-page header.site-header .nav-links a:hover { background: rgba(246,234,219,.05); }
+}
