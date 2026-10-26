@@ -64,22 +64,23 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
 <!-- /visit-counter -->
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header">
+<a class="skip" href="#main">Skip to content</a><header class="site-header" id="site-header" data-pagefind-ignore="all">
   <div class="wrap nav">
     <a class="brand" href="/" aria-label="Winelingo home"><img src="/assets/logo.png" alt="" width="34" height="34"> Winelingo</a>
     <nav class="nav-links" id="navmenu" aria-label="Primary">
       <a href="/course/">Course</a>
       <a href="/tests/">Wine tests</a>
-      <a href="/business/">For business</a>
+      <a href="/pricing/">Pricing</a>
       <a href="/about/">About</a>
+      <a class="nav-biz" href="/business/">For restaurants</a>
     </nav>
-    <div class="nav-cta"><a class="badge-link nav-badge" href="https://apps.apple.com/app/id6785896824"><img src="/assets/appstore-badge.svg" alt="Download Winelingo on the App Store" width="120" height="40"></a><button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navmenu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button></div>
+    <div class="nav-cta"><button class="nav-search" type="button" aria-label="Search Winelingo" title="Search (/)" data-search-open><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button><a class="badge-link nav-badge" href="https://apps.apple.com/app/id6785896824"><img src="/assets/appstore-badge.svg" alt="Download Winelingo on the App Store" width="120" height="40"></a><button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navmenu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button></div>
   </div>
 </header>
 <main id="main"><section class="page-hero"><div class="hero-bg" aria-hidden="true"></div><svg class="motif" viewBox="0 0 64 86" fill="none" aria-hidden="true"><path d="M32 6v16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M33 13c5-6 13-6 17-3-3 6-11 8-17 3Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><circle cx="20" cy="35" r="7" stroke="currentColor" stroke-width="1.3"/><circle cx="34" cy="33" r="7" stroke="currentColor" stroke-width="1.3"/><circle cx="46" cy="37" r="7" stroke="currentColor" stroke-width="1.3"/><circle cx="27" cy="49" r="7" stroke="currentColor" stroke-width="1.3"/><circle cx="40" cy="50" r="7" stroke="currentColor" stroke-width="1.3"/><circle cx="33" cy="64" r="7" stroke="currentColor" stroke-width="1.3"/></svg><div class="wrap">
     <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Wine countries</span></nav>
     <p class="eyebrow reveal">Wine countries</p>
-    <h1 class="reveal d1">Wine around the world</h1>
+    <h1 data-pagefind-weight="10" class="reveal d1">Wine around the world</h1>
     <p class="deck reveal d2">The 15 wine-producing countries on Winelingo, grouped the way sommeliers teach them — Old World and New World — each with its regions, grapes and styles.</p>
   </div></section><div class="hero-photo"><picture><source type="image/webp" srcset="/assets/photos/country-countries-hub-800.webp 800w, /assets/photos/country-countries-hub-1200.webp 1200w, /assets/photos/country-countries-hub.webp 1500w" sizes="100vw"><img src="/assets/photos/country-countries-hub.jpg" alt="Aerial view of the Lavaux terraced vineyards and village above Lake Geneva with the Alps beyond, Switzerland" width="1500" height="560" fetchpriority="high" decoding="async"></picture></div><p class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Lavaux_Switzerland.jpg" rel="noopener">Photo: Lorenz Poffet · CC BY-SA 4.0 · Wikimedia Commons</a></p><div class="wrap"><div class="filterbar reveal"><button class="filt on" data-filter="all">All countries</button><button class="filt" data-filter="old">Old World</button><button class="filt" data-filter="new">New World</button></div></div><section class="section" style="padding-top:14px"><h2 class="hub-h2 reveal">All 15 wine countries</h2><div class="hub-grid">
 <a class="hub-card has-img reveal" href="/countries/argentina/" data-tags="new"><div class="thumb"><picture><source type="image/webp" srcset="/assets/photos/country-argentina-800.webp"><img src="/assets/photos/country-argentina.jpg" alt="" loading="lazy"></picture></div><div class="body"><h3>Argentina</h3><p>4 wine regions · New World</p><div class="go">Explore →</div></div></a>
@@ -97,12 +98,25 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
 <a class="hub-card has-img reveal" href="/countries/south-africa/" data-tags="new"><div class="thumb"><picture><source type="image/webp" srcset="/assets/photos/country-south-africa-800.webp"><img src="/assets/photos/country-south-africa.jpg" alt="" loading="lazy"></picture></div><div class="body"><h3>South Africa</h3><p>4 wine regions · New World</p><div class="go">Explore →</div></div></a>
 <a class="hub-card has-img reveal" href="/countries/spain/" data-tags="old"><div class="thumb"><picture><source type="image/webp" srcset="/assets/photos/country-spain-800.webp"><img src="/assets/photos/country-spain.jpg" alt="" loading="lazy"></picture></div><div class="body"><h3>Spain</h3><p>9 wine regions · Old World</p><div class="go">Explore →</div></div></a>
 <a class="hub-card has-img reveal" href="/countries/united-states/" data-tags="new"><div class="thumb"><picture><source type="image/webp" srcset="/assets/photos/country-united-states-800.webp"><img src="/assets/photos/country-united-states.jpg" alt="" loading="lazy"></picture></div><div class="body"><h3>United States</h3><p>6 wine regions · New World</p><div class="go">Explore →</div></div></a>
-</div></section><section class="wrap"><div class="appband"><svg class="motif" viewBox="0 0 64 86" fill="none" aria-hidden="true"><path d="M32 6v16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M33 13c5-6 13-6 17-3-3 6-11 8-17 3Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><circle cx="20" cy="35" r="7" stroke="currentColor" stroke-width="1.3"/><circle cx="34" cy="33" r="7" stroke="currentColor" stroke-width="1.3"/><circle cx="46" cy="37" r="7" stroke="currentColor" stroke-width="1.3"/><circle cx="27" cy="49" r="7" stroke="currentColor" stroke-width="1.3"/><circle cx="40" cy="50" r="7" stroke="currentColor" stroke-width="1.3"/><circle cx="33" cy="64" r="7" stroke="currentColor" stroke-width="1.3"/></svg><div class="in">
+</div></section><!-- lesson-cta (scripts/build-lesson-cta.mjs) -->
+<aside class="lesson-cta" data-lesson="6f15b4dc-40ba-4442-8708-39ef56e61bf9" aria-label="Free lesson" data-pagefind-ignore="all">
+  <p class="eyebrow">Free lesson · about 5 minutes</p>
+  <p class="lc-t">Cool climate vs warm climate: how warmth shapes wine</p>
+  <p class="lc-s">Why does the same grape taste so different from one country to the next? This lesson shows how warmth shapes the wine in your glass.</p>
+  <div class="lc-btns">
+    <a class="btn btn-primary lc-app" data-cta="lesson-app" href="https://apps.apple.com/app/id6785896824">Take it in the iPhone app</a>
+    <a class="btn btn-ghost lc-web" data-cta="lesson-web" href="/course/?try=6f15b4dc-40ba-4442-8708-39ef56e61bf9&amp;src=countries">Take it in your browser</a>
+  </div>
+  <p class="lc-fine">No account needed to try it in your browser. The app is free to download, with Premium for unlimited scans.</p>
+  <p class="lc-test">Or test yourself: <a href="/tests/labels-and-lists/" data-cta="lesson-test">Labels and lists</a> · 10 questions, free</p>
+</aside>
+<!-- /lesson-cta -->
+<section class="wrap"><div class="appband" data-pagefind-ignore="all"><svg class="motif" viewBox="0 0 64 86" fill="none" aria-hidden="true"><path d="M32 6v16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M33 13c5-6 13-6 17-3-3 6-11 8-17 3Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><circle cx="20" cy="35" r="7" stroke="currentColor" stroke-width="1.3"/><circle cx="34" cy="33" r="7" stroke="currentColor" stroke-width="1.3"/><circle cx="46" cy="37" r="7" stroke="currentColor" stroke-width="1.3"/><circle cx="27" cy="49" r="7" stroke="currentColor" stroke-width="1.3"/><circle cx="40" cy="50" r="7" stroke="currentColor" stroke-width="1.3"/><circle cx="33" cy="64" r="7" stroke="currentColor" stroke-width="1.3"/></svg><div class="in">
     <div class="ic"><img src="/assets/logo.png" alt="Winelingo app icon" width="128" height="128" loading="lazy">
       <div><h3>Learn the wine in your glass</h3><p>Scan any label to identify a wine, learn why it tastes the way it does, and build your palate. Free to download on the App Store.</p></div></div>
     <a class="btn btn-primary btn-lg" href="https://apps.apple.com/app/id6785896824">Download on the App&nbsp;Store</a>
   </div></div></section></main>
-<footer class="site-footer">
+<footer class="site-footer" data-pagefind-ignore="all">
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-brand">
@@ -111,13 +125,16 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
         <a class="foot-badge" href="https://apps.apple.com/app/id6785896824"><img src="/assets/appstore-badge-white.svg" alt="Download Winelingo on the App Store" width="120" height="40" loading="lazy"></a>
       </div>
       <div class="foot-col"><h3>Explore</h3>
-        <a href="/grape-varieties/">Grape varieties</a><a href="/wine-regions/">Wine regions</a><a href="/countries/">Wine countries</a><a href="/wine-styles/">Wine styles</a><a href="/food-and-wine-pairing/">Food &amp; wine pairing</a>
+        <a href="/grape-varieties/">Grape varieties</a><a href="/wine-regions/">Wine regions</a><a href="/countries/">Wine countries</a><a href="/wine-styles/">Wine styles</a><a href="/food-and-wine-pairing/">Food &amp; wine pairing</a><a href="/wine-glossary/">Wine glossary</a><a href="/wine-classifications/">Classifications</a>
       </div>
       <div class="foot-col"><h3>Learn</h3>
-        <a href="/learn/">Learn wine</a><a href="/course/">Online wine course</a><a href="/gift/">Give the course</a><a href="/wine-glossary/">Wine glossary</a><a href="/wine-classifications/">Classifications</a><a href="/tools/wine-serving-temperature/">Serving temperature</a><a href="/tools/wine-calories/">Wine calories</a>
+        <a href="/learn/">Learn wine</a><a href="/course/">Online wine course</a><a href="/tests/">Wine quizzes &amp; exam practice</a><a href="/gift/">Give the course</a><a href="/tools/wine-serving-temperature/">Serving temperature</a><a href="/tools/wine-calories/">Wine calories</a>
+      </div>
+      <div class="foot-col"><h3>For restaurants</h3>
+        <a href="/business/">Staff training</a><a href="/partner/">Redeem a team code</a><a href="mailto:jonsegeskov29@gmail.com?subject=Winelingo%20for%20our%20team">Book a demo</a>
       </div>
       <div class="foot-col"><h3>Company</h3>
-        <a href="/about/">About</a><a href="/business/">For business</a><a href="/pricing/">Pricing</a><a href="/support/">Support</a><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Use</a><a href="mailto:jonsegeskov29@gmail.com">Contact</a>
+        <a href="/about/">About</a><a href="/pricing/">Pricing</a><a href="/support/">Support</a><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Use</a><a href="mailto:jonsegeskov29@gmail.com">Contact</a>
       </div>
     </div>
     <div class="foot-bottom">
@@ -140,5 +157,7 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
   else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});rv.forEach(function(e){io.observe(e);});}
 </script>
 <script defer src="/assets/get-app.js?v=1"></script>
+<script src="/assets/search.js" defer></script>
+<script src="/assets/lesson-cta.js" defer></script>
 </body>
 </html>

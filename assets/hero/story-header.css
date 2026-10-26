@@ -38,3 +38,20 @@ body.dark-page header.site-header .nav-links a:hover { color: #E8A0B0; }
   body.dark-page header.site-header .nav-links { background: #1A0D0A; border-top-color: rgba(246,234,219,.1); box-shadow: 0 20px 44px -26px rgba(0,0,0,.8); }
   body.dark-page header.site-header .nav-links a:hover { background: rgba(246,234,219,.05); }
 }
+
+/* The search button, the restaurant pill and the language link over the story and on the dark homepage. */
+header.site-header.on-story .nav-search,
+body.dark-page header.site-header .nav-search { color: #F6EADB; border-color: rgba(246,234,219,.32); }
+header.site-header.on-story .nav-search:hover,
+body.dark-page header.site-header .nav-search:hover { background: rgba(246,234,219,.08); }
+@media (min-width: 901px) {
+  header.site-header.on-story .nav-links a.nav-biz,
+  body.dark-page header.site-header .nav-links a.nav-biz { color: #FFF6EC; border-color: rgba(246,234,219,.4); }
+  header.site-header.on-story .nav-links a.nav-biz:hover,
+  body.dark-page header.site-header .nav-links a.nav-biz:hover { background: #FFF6EC; border-color: #FFF6EC; color: #3B0A1E; }
+  header.site-header.on-story .nav-links a.nav-lang,
+  body.dark-page header.site-header .nav-links a.nav-lang { color: rgba(246,234,219,.62); }
+}
+@media (max-width: 900px) {
+  body.dark-page header.site-header .nav-links a.nav-biz { color: #FFF6EC; border-color: rgba(246,234,219,.4); }
+}

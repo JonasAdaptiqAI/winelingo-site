@@ -55,3 +55,10 @@ Everything is hand-written static HTML/CSS/JS.
 ## Waitlist form
 `index.html` posts to Formspree. Replace `YOUR_FORM_ID` in the form `action` with the real
 Formspree form id to activate it; until then the form falls back to a mailto prompt.
+
+## Site-wide parts and their builders (since 2026-10-27)
+- **Header and footer** live in `scripts/build-chrome.mjs` (English, and Danish for pages under `/da/`). Edit there and run it; never hand-edit the copies in 570 pages. Other builders copy the header from `tools/index.html`, so run build-chrome first.
+- **Search**: `scripts/build-search.sh` rebuilds the Pagefind index in `/pagefind/` (settings in `pagefind.yml`). Re-run it after adding or changing pages, or new pages won't be found.
+- **Danish homepage** `/da/` is built from `index.html` + `data/home-da.json` by `scripts/build-home-da.mjs`. After changing the English homepage, run it; it fails and lists any sentence that has no Danish yet.
+- **Next-step cards** (free lesson + matching test) on reference pages come from `data/lesson-cta.json` (`pages` and whole `sections`) via `scripts/build-lesson-cta.mjs`.
+- Order after content changes: build-tests / other builders → build-lesson-cta → build-home-da → build-chrome → build-search. Note: build-tests rewrites test pages and drops the course-band that `build-course-pages.mjs` puts on `tests/after-dinner/`; re-run that or restore it.

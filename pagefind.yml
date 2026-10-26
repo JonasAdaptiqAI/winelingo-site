@@ -1,0 +1,8 @@
+# Site search index (scripts/build-search.sh). Only content pages: not the course player,
+# partner/redeem/invite flows, the 404 or verification files.
+site: .
+glob: "{index.html,{about,business,countries,course,da,de,es,food-and-wine-pairing,gift,grape-varieties,learn,pricing,support,tests,tools,wine-classifications,wine-glossary,wine-regions,wine-styles}/**/*.html}"
+output_subdir: pagefind
+# One index for the whole site: most pages are English, and a Danish visitor searching for
+# "Riesling" or "Barolo" should still find them.
+force_language: en

@@ -128,6 +128,8 @@
   .hs-story .hs-step b { color: var(--cream); font-weight: 600; }
   .hs-story #hs-end { left: clamp(16px, 6vw, 96px); top: 50%; transform: translateY(-50%); max-width: 520px; }
   .hs-story .hs-hint { position: absolute; left: 50%; bottom: 28px; transform: translateX(-50%); font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: rgba(246,234,219,.6); display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .hs-story .hs-skip-story { display: inline-block; margin-top: 20px; font-size: 13px; letter-spacing: .03em; color: rgba(246,234,219,.68); text-decoration: none; border-bottom: 1px solid rgba(246,234,219,.25); padding-bottom: 2px; pointer-events: auto; }
+  .hs-story .hs-skip-story:hover { color: #FFF6EC; border-color: rgba(246,234,219,.6); }
   .hs-story .hs-hint i { width: 1px; height: 34px; background: linear-gradient(var(--gold), transparent); animation: hs-drip 2.2s ease-in-out infinite; }
 @keyframes hs-drip { 0% { transform: scaleY(0); transform-origin: top; } 50% { transform: scaleY(1); transform-origin: top; } 51% { transform-origin: bottom; } 100% { transform: scaleY(0); transform-origin: bottom; } }
 @media (max-width: 760px) {
