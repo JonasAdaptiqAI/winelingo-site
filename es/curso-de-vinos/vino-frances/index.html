@@ -60,16 +60,17 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-header" id="site-header">
+<header class="site-header" id="site-header" data-pagefind-ignore="all">
   <div class="wrap nav">
     <a class="brand" href="/" aria-label="Winelingo home"><img src="/assets/logo.png" alt="" width="34" height="34"> Winelingo</a>
     <nav class="nav-links" id="navmenu" aria-label="Primary">
       <a href="/course/">Course</a>
       <a href="/tests/">Wine tests</a>
-      <a href="/business/">For business</a>
+      <a href="/pricing/">Pricing</a>
       <a href="/about/">About</a>
+      <a class="nav-biz" href="/business/">For restaurants</a>
     </nav>
-    <div class="nav-cta"><a class="badge-link nav-badge" href="https://apps.apple.com/app/id6785896824"><img src="/assets/appstore-badge.svg" alt="Download Winelingo on the App Store" width="120" height="40"></a><button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navmenu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button></div>
+    <div class="nav-cta"><button class="nav-search" type="button" aria-label="Search Winelingo" title="Search (/)" data-search-open><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button><a class="badge-link nav-badge" href="https://apps.apple.com/app/id6785896824"><img src="/assets/appstore-badge.svg" alt="Download Winelingo on the App Store" width="120" height="40"></a><button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navmenu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button></div>
   </div>
 </header>
 
@@ -77,7 +78,7 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
 <section class="page-hero cl-hero"><div class="hero-bg" aria-hidden="true"></div><div class="wrap">
   <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Inicio</a><span aria-hidden="true">/</span><a href="/es/curso-de-vinos/">Curso de vinos online</a><span aria-hidden="true">/</span><span aria-current="page">Francia</span></nav>
   <p class="eyebrow">Unidad 11 de 27 · Curso de vinos online</p>
-  <h1>Curso de vino francés</h1>
+  <h1 data-pagefind-weight="10">Curso de vino francés</h1>
   <p class="deck">Burdeos, Borgoña, Ródano, Loira y Champagne. 10 lecciones · unos 77 min</p>
   <div class="cl-cta">
     <a class="btn btn-primary btn-lg" href="/course/?app=1&lang=es">Empieza con las unidades gratis</a>
@@ -200,7 +201,7 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
   </nav>
 </div></section>
 </main>
-<footer class="site-footer">
+<footer class="site-footer" data-pagefind-ignore="all">
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-brand">
@@ -209,13 +210,16 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
         <a class="foot-badge" href="https://apps.apple.com/app/id6785896824"><img src="/assets/appstore-badge-white.svg" alt="Download Winelingo on the App Store" width="120" height="40" loading="lazy"></a>
       </div>
       <div class="foot-col"><h3>Explore</h3>
-        <a href="/grape-varieties/">Grape varieties</a><a href="/wine-regions/">Wine regions</a><a href="/countries/">Wine countries</a><a href="/wine-styles/">Wine styles</a><a href="/food-and-wine-pairing/">Food &amp; wine pairing</a>
+        <a href="/grape-varieties/">Grape varieties</a><a href="/wine-regions/">Wine regions</a><a href="/countries/">Wine countries</a><a href="/wine-styles/">Wine styles</a><a href="/food-and-wine-pairing/">Food &amp; wine pairing</a><a href="/wine-glossary/">Wine glossary</a><a href="/wine-classifications/">Classifications</a>
       </div>
       <div class="foot-col"><h3>Learn</h3>
-        <a href="/learn/">Learn wine</a><a href="/course/">Online wine course</a><a href="/gift/">Give the course</a><a href="/wine-glossary/">Wine glossary</a><a href="/wine-classifications/">Classifications</a><a href="/tools/wine-serving-temperature/">Serving temperature</a><a href="/tools/wine-calories/">Wine calories</a>
+        <a href="/learn/">Learn wine</a><a href="/course/">Online wine course</a><a href="/tests/">Wine quizzes &amp; exam practice</a><a href="/gift/">Give the course</a><a href="/tools/wine-serving-temperature/">Serving temperature</a><a href="/tools/wine-calories/">Wine calories</a>
+      </div>
+      <div class="foot-col"><h3>For restaurants</h3>
+        <a href="/business/">Staff training</a><a href="/partner/">Redeem a team code</a><a href="mailto:jonsegeskov29@gmail.com?subject=Winelingo%20for%20our%20team">Book a demo</a>
       </div>
       <div class="foot-col"><h3>Company</h3>
-        <a href="/about/">About</a><a href="/business/">For business</a><a href="/pricing/">Pricing</a><a href="/support/">Support</a><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Use</a><a href="mailto:jonsegeskov29@gmail.com">Contact</a>
+        <a href="/about/">About</a><a href="/pricing/">Pricing</a><a href="/support/">Support</a><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Use</a><a href="mailto:jonsegeskov29@gmail.com">Contact</a>
       </div>
     </div>
     <div class="foot-bottom">
@@ -231,5 +235,6 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
   if(tg&&nm){tg.addEventListener('click',function(){var o=nm.classList.toggle('open');tg.setAttribute('aria-expanded',o?'true':'false');});
     nm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nm.classList.remove('open');tg.setAttribute('aria-expanded','false');});});}
 </script>
+<script src="/assets/search.js" defer></script>
 </body>
 </html>

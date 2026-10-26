@@ -8,11 +8,12 @@
 <meta name="description" content="Winelingo is a free wine app for iPhone. Scan any wine label to identify the wine, learn why it tastes the way it does, and build your own palate.">
 <meta name="keywords" content="wine app, wine label scanner, wine scanner app, learn wine, wine education, taste profile, sommelier app, wine tasting, wine for beginners, wine glossary, food pairing, wine journal, palate">
 <link rel="canonical" href="https://winelingo.app/">
+<link rel="alternate" hreflang="en" href="https://winelingo.app/">
+<link rel="alternate" hreflang="da" href="https://winelingo.app/da/">
+<link rel="alternate" hreflang="x-default" href="https://winelingo.app/">
 <meta name="theme-color" content="#7b1e3b">
 <meta name="color-scheme" content="light">
 <meta name="author" content="Jonas Egeskov">
-<link rel="alternate" hreflang="en" href="https://winelingo.app/">
-<link rel="alternate" hreflang="x-default" href="https://winelingo.app/">
 
 <!-- Icons & manifest (real app icon) -->
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
@@ -418,6 +419,27 @@
   /* The homepage after the candlelit story: the reviews and the globe stay in the night of the
      photos, cream type on near-black, blush and gold for the accents the light pages use wine for. */
   .dark-band{background:#120907; color:#F6EADB}
+  /* Start here: the four ways in, right after the story. */
+  #start-here.dark-band{padding:88px 0 40px}
+  #start-here .section-head{margin-bottom:40px}
+  .path-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:14px}
+  .path{display:flex; flex-direction:column; gap:8px; padding:24px 22px 20px; border-radius:var(--r-card); border:1px solid rgba(246,234,219,.12);
+    background:rgba(246,234,219,.045); color:#F6EADB; text-decoration:none; transition:border-color .2s, background .2s, transform .2s}
+  .path:hover{border-color:rgba(201,162,74,.7); background:rgba(246,234,219,.07); transform:translateY(-2px); text-decoration:none}
+  .path-ico{width:46px; height:46px; border-radius:13px; display:grid; place-items:center; background:rgba(201,162,74,.14); color:#E8C877; margin-bottom:6px}
+  .path-k{font:700 11px/1 var(--font-body); letter-spacing:.14em; text-transform:uppercase; color:#C9A24A}
+  .path h3{font:600 21px/1.2 var(--font-display); color:#FFF6EC; margin:0}
+  .path p{margin:0; color:rgba(246,234,219,.72); font-size:15px; line-height:1.5}
+  .path-go{margin-top:auto; padding-top:10px; font:600 15px/1 var(--font-body); color:#FFF6EC}
+  .path-biz{border-color:rgba(232,160,176,.35); background:linear-gradient(160deg,rgba(232,160,176,.12),rgba(246,234,219,.04) 60%)}
+  .path-biz .path-ico{background:rgba(232,160,176,.16); color:#E8A0B0}
+  .path-biz .path-k{color:#E8A0B0}
+  .paths-note{max-width:640px; margin:26px auto 0; text-align:center; font-size:14px; color:rgba(246,234,219,.6)}
+  .paths-note strong{color:rgba(246,234,219,.85); font-weight:600}
+  #start-here + #reviews.dark-band{padding-top:56px}
+  @media (max-width:1000px){ .path-grid{grid-template-columns:repeat(2,1fr)} }
+  @media (max-width:560px){ #start-here.dark-band{padding:64px 0 28px} .path-grid{grid-template-columns:1fr} .path{padding:20px 18px 18px} }
+
   #reviews.dark-band{padding-top:88px}
   #around-the-world.dark-band{padding-bottom:104px; background:linear-gradient(180deg,#120907 0%,#1A0D0A 100%)}
   .dark-band .eyebrow{color:#C9A24A}
@@ -465,22 +487,18 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
 <a class="skip" href="#main">Skip to content</a>
 
 <!-- ============ HEADER ============ -->
-<header class="site-header" id="site-header">
+<header class="site-header" id="site-header" data-pagefind-ignore="all">
   <div class="wrap nav">
-    <a class="brand" href="/" aria-label="Winelingo home">
-      <img src="/assets/logo.png" alt="" width="34" height="34">
-      Winelingo
-    </a>
+    <a class="brand" href="/" aria-label="Winelingo home"><img src="/assets/logo.png" alt="" width="34" height="34"> Winelingo</a>
     <nav class="nav-links" id="navmenu" aria-label="Primary">
       <a href="/course/">Course</a>
       <a href="/tests/">Wine tests</a>
-      <a href="/business/">For business</a>
+      <a href="/pricing/">Pricing</a>
       <a href="/about/">About</a>
+      <a class="nav-biz" href="/business/">For restaurants</a>
+      <a class="nav-lang" href="/da/" hreflang="da" lang="da">Dansk</a>
     </nav>
-    <div class="nav-cta">
-      <a class="badge-link nav-badge" href="https://apps.apple.com/app/id6785896824"><img src="/assets/appstore-badge.svg" alt="Download Winelingo on the App Store" width="120" height="40"></a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navmenu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
-    </div>
+    <div class="nav-cta"><button class="nav-search" type="button" aria-label="Search Winelingo" title="Search (/)" data-search-open><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button><a class="badge-link nav-badge" href="https://apps.apple.com/app/id6785896824"><img src="/assets/appstore-badge.svg" alt="Download Winelingo on the App Store" width="120" height="40"></a><button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navmenu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button></div>
   </div>
 </header>
 
@@ -569,12 +587,13 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
 
     <div class="hs-copy" id="hs-hero">
       <span class="hs-eyebrow">The wine app for iPhone</span>
-      <h1>Be the one who <em>knows</em> the wine.</h1>
+      <h1 data-pagefind-weight="10">Be the one who <em>knows</em> the wine.</h1>
       <p class="hs-lede">Short lessons, a label scanner and a palate that learns you. Winelingo turns every bottle into a story you can tell.</p>
       <div class="hs-ctas">
         <a href="https://apps.apple.com/app/id6785896824"><img src="/assets/appstore-badge-white.svg" alt="Download on the App Store"></a>
         <a class="hs-web-link" href="/course/">Start free on the web →</a>
       </div>
+      <a class="hs-skip-story" href="#start-here">Skip the story <span aria-hidden="true">↓</span></a>
     </div>
 
     <p class="hs-copy hs-caption hs-capA" id="hs-capA">A month ago, he’d have said <em>“it’s a red.”</em></p>
@@ -612,6 +631,47 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
     </div>
 
     <div class="hs-hint" id="hs-hint">Scroll<i></i></div>
+  </div>
+</section>
+
+<!-- ============ START HERE: four ways in ============ -->
+<section class="section dark-band paths" id="start-here" aria-labelledby="paths-h">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow center">Start here</p>
+      <h2 id="paths-h">What would you like to do?</h2>
+    </div>
+    <div class="path-grid">
+      <a class="path" href="/course/">
+        <span class="path-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5Z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/><path d="M9 8h7M9 12h5"/></svg></span>
+        <span class="path-k">Learn wine</span>
+        <h3>The online wine course</h3>
+        <p>178 short lessons, five minutes a day. The first two units are free in your browser.</p>
+        <span class="path-go">Start free <span aria-hidden="true">→</span></span>
+      </a>
+      <a class="path" href="/tests/">
+        <span class="path-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="m8 9 1.6 1.6L12.5 7.5M8 15.5l1.6 1.6 2.9-3.1M14.5 9.5H17M14.5 16H17"/></svg></span>
+        <span class="path-k">Test yourself</span>
+        <h3>Wine quizzes and exam practice</h3>
+        <p>Ten-question quizzes, plus free practice for WSET and sommelier exams.</p>
+        <span class="path-go">Take a test <span aria-hidden="true">→</span></span>
+      </a>
+      <a class="path" href="https://apps.apple.com/app/id6785896824" data-cta="paths-app">
+        <span class="path-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16"/><path d="M10.5 7.5h3l-.4 3.3a1.6 1.6 0 0 1-.5 1V16h-1.2v-4.2a1.6 1.6 0 0 1-.5-1Z"/></svg></span>
+        <span class="path-k">Scan a label</span>
+        <h3>The Winelingo app</h3>
+        <p>Point your iPhone at a bottle and learn what it is, how it tastes and why.</p>
+        <span class="path-go">Get the app <span aria-hidden="true">→</span></span>
+      </a>
+      <a class="path path-biz" href="/business/">
+        <span class="path-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9.5" r="2.4"/><path d="M3.5 19c.6-3 2.8-4.8 5.5-4.8s4.9 1.8 5.5 4.8M15 14.6c2.6-.3 4.8 1.2 5.5 4.4"/></svg></span>
+        <span class="path-k">For restaurants</span>
+        <h3>Train your team</h3>
+        <p>Staff training built on your own wine list, with a weekly team league.</p>
+        <span class="path-go">See how it works <span aria-hidden="true">→</span></span>
+      </a>
+    </div>
+    <p class="paths-note"><strong>Browser or app?</strong> The course is the same on both, with one account, and your progress follows you. Label scanning is in the iPhone app.</p>
   </div>
 </section>
 
@@ -666,7 +726,7 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
 </main>
 
 <!-- ============ FOOTER ============ -->
-<footer class="site-footer">
+<footer class="site-footer" data-pagefind-ignore="all">
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-brand">
@@ -675,13 +735,16 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
         <a class="foot-badge" href="https://apps.apple.com/app/id6785896824"><img src="/assets/appstore-badge-white.svg" alt="Download Winelingo on the App Store" width="120" height="40" loading="lazy"></a>
       </div>
       <div class="foot-col"><h3>Explore</h3>
-        <a href="/grape-varieties/">Grape varieties</a><a href="/wine-regions/">Wine regions</a><a href="/countries/">Wine countries</a><a href="/wine-styles/">Wine styles</a><a href="/food-and-wine-pairing/">Food &amp; wine pairing</a>
+        <a href="/grape-varieties/">Grape varieties</a><a href="/wine-regions/">Wine regions</a><a href="/countries/">Wine countries</a><a href="/wine-styles/">Wine styles</a><a href="/food-and-wine-pairing/">Food &amp; wine pairing</a><a href="/wine-glossary/">Wine glossary</a><a href="/wine-classifications/">Classifications</a>
       </div>
       <div class="foot-col"><h3>Learn</h3>
-        <a href="/learn/">Learn wine</a><a href="/course/">Online wine course</a><a href="/gift/">Give the course</a><a href="/wine-glossary/">Wine glossary</a><a href="/wine-classifications/">Classifications</a><a href="/tools/wine-serving-temperature/">Serving temperature</a><a href="/tools/wine-calories/">Wine calories</a>
+        <a href="/learn/">Learn wine</a><a href="/course/">Online wine course</a><a href="/tests/">Wine quizzes &amp; exam practice</a><a href="/gift/">Give the course</a><a href="/tools/wine-serving-temperature/">Serving temperature</a><a href="/tools/wine-calories/">Wine calories</a>
+      </div>
+      <div class="foot-col"><h3>For restaurants</h3>
+        <a href="/business/">Staff training</a><a href="/partner/">Redeem a team code</a><a href="mailto:jonsegeskov29@gmail.com?subject=Winelingo%20for%20our%20team">Book a demo</a>
       </div>
       <div class="foot-col"><h3>Company</h3>
-        <a href="/about/">About</a><a href="/business/">For business</a><a href="/pricing/">Pricing</a><a href="/support/">Support</a><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Use</a><a href="mailto:jonsegeskov29@gmail.com">Contact</a>
+        <a href="/about/">About</a><a href="/pricing/">Pricing</a><a href="/support/">Support</a><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Use</a><a href="mailto:jonsegeskov29@gmail.com">Contact</a>
       </div>
     </div>
     <div class="foot-bottom">
@@ -746,5 +809,6 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
 <script defer src="/assets/visitor-globe.js?v=4"></script>
 <script defer src="/assets/hero/home.js?v=1"></script>
 <script defer src="/assets/get-app.js?v=1"></script>
+<script src="/assets/search.js" defer></script>
 </body>
 </html>

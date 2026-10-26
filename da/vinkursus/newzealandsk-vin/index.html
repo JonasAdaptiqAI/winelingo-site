@@ -60,16 +60,17 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-header" id="site-header">
+<header class="site-header" id="site-header" data-pagefind-ignore="all">
   <div class="wrap nav">
-    <a class="brand" href="/" aria-label="Winelingo home"><img src="/assets/logo.png" alt="" width="34" height="34"> Winelingo</a>
-    <nav class="nav-links" id="navmenu" aria-label="Primary">
-      <a href="/course/">Course</a>
-      <a href="/tests/">Wine tests</a>
-      <a href="/business/">For business</a>
-      <a href="/about/">About</a>
+    <a class="brand" href="/da/" aria-label="Winelingo forside"><img src="/assets/logo.png" alt="" width="34" height="34"> Winelingo</a>
+    <nav class="nav-links" id="navmenu" aria-label="Hovedmenu">
+      <a href="/da/vinkursus/" aria-current="page">Vinkursus</a>
+      <a href="/tests/?lang=da">Vintests</a>
+      <a href="/pricing/">Priser</a>
+      <a href="/about/">Om os</a>
+      <a class="nav-biz" href="/business/?lang=da">Til restauranter</a>
     </nav>
-    <div class="nav-cta"><a class="badge-link nav-badge" href="https://apps.apple.com/app/id6785896824"><img src="/assets/appstore-badge.svg" alt="Download Winelingo on the App Store" width="120" height="40"></a><button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navmenu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button></div>
+    <div class="nav-cta"><button class="nav-search" type="button" aria-label="Søg på Winelingo" title="Søg (/)" data-search-open><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button><a class="badge-link nav-badge" href="https://apps.apple.com/app/id6785896824"><img src="/assets/appstore-badge.svg" alt="Hent Winelingo i App Store" width="120" height="40"></a><button class="nav-toggle" aria-label="Åbn menu" aria-expanded="false" aria-controls="navmenu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button></div>
   </div>
 </header>
 
@@ -77,7 +78,7 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
 <section class="page-hero cl-hero"><div class="hero-bg" aria-hidden="true"></div><div class="wrap">
   <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Forside</a><span aria-hidden="true">/</span><a href="/da/vinkursus/">Vinkursus online</a><span aria-hidden="true">/</span><span aria-current="page">New Zealand</span></nav>
   <p class="eyebrow">Enhed 21 af 27 · Vinkursus online</p>
-  <h1>Kursus i newzealandsk vin</h1>
+  <h1 data-pagefind-weight="10">Kursus i newzealandsk vin</h1>
   <p class="deck">Sauvignon Blanc, Marlborough og Central Otago. 6 lektioner · cirka 44 min.</p>
   <div class="cl-cta">
     <a class="btn btn-primary btn-lg" href="/course/?app=1&lang=da">Start med de gratis enheder</a>
@@ -160,27 +161,30 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
   </nav>
 </div></section>
 </main>
-<footer class="site-footer">
+<footer class="site-footer" data-pagefind-ignore="all">
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-brand">
-        <a class="brand" href="/" aria-label="Winelingo home"><img src="/assets/logo.png" alt="" width="34" height="34"> Winelingo</a>
-        <p>Learn the wine in your glass. Scan a label, understand what you’re drinking, and build your own palate — one scan at a time.</p>
-        <a class="foot-badge" href="https://apps.apple.com/app/id6785896824"><img src="/assets/appstore-badge-white.svg" alt="Download Winelingo on the App Store" width="120" height="40" loading="lazy"></a>
+        <a class="brand" href="/da/" aria-label="Winelingo forside"><img src="/assets/logo.png" alt="" width="34" height="34"> Winelingo</a>
+        <p>Lær vinen i dit glas at kende. Scan en etiket, forstå hvad du drikker, og byg din egen smag, én scanning ad gangen.</p>
+        <a class="foot-badge" href="https://apps.apple.com/app/id6785896824"><img src="/assets/appstore-badge-white.svg" alt="Hent Winelingo i App Store" width="120" height="40" loading="lazy"></a>
       </div>
-      <div class="foot-col"><h3>Explore</h3>
-        <a href="/grape-varieties/">Grape varieties</a><a href="/wine-regions/">Wine regions</a><a href="/countries/">Wine countries</a><a href="/wine-styles/">Wine styles</a><a href="/food-and-wine-pairing/">Food &amp; wine pairing</a>
+      <div class="foot-col"><h3>Udforsk</h3>
+        <a href="/grape-varieties/" hreflang="en">Druesorter</a><a href="/wine-regions/" hreflang="en">Vinregioner</a><a href="/countries/" hreflang="en">Vinlande</a><a href="/wine-styles/" hreflang="en">Vinstile</a><a href="/food-and-wine-pairing/" hreflang="en">Mad og vin</a><a href="/wine-glossary/" hreflang="en">Vinordbog</a>
       </div>
-      <div class="foot-col"><h3>Learn</h3>
-        <a href="/learn/">Learn wine</a><a href="/course/">Online wine course</a><a href="/gift/">Give the course</a><a href="/wine-glossary/">Wine glossary</a><a href="/wine-classifications/">Classifications</a><a href="/tools/wine-serving-temperature/">Serving temperature</a><a href="/tools/wine-calories/">Wine calories</a>
+      <div class="foot-col"><h3>Lær</h3>
+        <a href="/da/vinkursus/">Vinkursus online</a><a href="/tests/?lang=da">Vinquiz og øveeksamener</a><a href="/da/gave/">Giv kurset i gave</a>
       </div>
-      <div class="foot-col"><h3>Company</h3>
-        <a href="/about/">About</a><a href="/business/">For business</a><a href="/pricing/">Pricing</a><a href="/support/">Support</a><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Use</a><a href="mailto:jonsegeskov29@gmail.com">Contact</a>
+      <div class="foot-col"><h3>Til restauranter</h3>
+        <a href="/business/?lang=da">Personaletræning</a><a href="/partner/">Indløs en holdkode</a><a href="mailto:jonsegeskov29@gmail.com?subject=Winelingo%20til%20vores%20hold">Book en demo</a>
+      </div>
+      <div class="foot-col"><h3>Winelingo</h3>
+        <a href="/about/" hreflang="en">Om os</a><a href="/pricing/" hreflang="en">Priser</a><a href="/support/" hreflang="en">Hjælp</a><a href="/privacy">Privatlivspolitik</a><a href="/terms">Vilkår</a><a href="mailto:jonsegeskov29@gmail.com">Kontakt</a>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 Jonas Egeskov · <a href="https://egeskovengineering.com">Egeskov Engineering</a>, Denmark</span>
-      <span>For adults of legal drinking age (18+). Please enjoy wine responsibly.</span>
+      <span>© 2026 Jonas Egeskov · <a href="https://egeskovengineering.com">Egeskov Engineering</a>, Danmark</span>
+      <span>For voksne over 18 år. Nyd vin med omtanke.</span>
     </div>
   </div>
 </footer>
@@ -191,5 +195,6 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
   if(tg&&nm){tg.addEventListener('click',function(){var o=nm.classList.toggle('open');tg.setAttribute('aria-expanded',o?'true':'false');});
     nm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nm.classList.remove('open');tg.setAttribute('aria-expanded','false');});});}
 </script>
+<script src="/assets/search.js" defer></script>
 </body>
 </html>

@@ -88,6 +88,15 @@ header.site-header.scrolled{border-bottom-color:var(--line); box-shadow:0 6px 24
   transition:background .2s, border-color .2s}
 .nav-toggle:hover{background:rgba(123,30,59,.05); border-color:rgba(123,30,59,.25)}
 @media (min-width:901px){ .nav-toggle{display:none} }
+/* The restaurant entrance stands apart from the learner links; search and the language link sit beside it. */
+.nav-links a[aria-current="page"]{color:var(--wine)}
+.nav-links a.nav-biz{padding:8px 15px; border:1px solid rgba(123,30,59,.3); border-radius:var(--r-pill); color:var(--wine); font-weight:600}
+.nav-links a.nav-biz:hover,.nav-links a.nav-biz[aria-current="page"]{background:var(--wine); border-color:var(--wine); color:#fff}
+.nav-links a.nav-lang{font-size:13px; color:var(--muted)}
+.nav-search{display:inline-flex; align-items:center; justify-content:center; width:42px; height:42px; flex:0 0 auto;
+  background:transparent; border:1px solid var(--line); border-radius:11px; color:var(--wine-deep); cursor:pointer; transition:background .2s, border-color .2s}
+.nav-search:hover{background:rgba(123,30,59,.05); border-color:rgba(123,30,59,.25)}
+.nav-search:focus-visible,.nav-toggle:focus-visible{outline:2px solid var(--wine); outline-offset:2px}
 
 /* ---------- Sections ---------- */
 section{position:relative}
@@ -299,6 +308,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visibl
   .nav-links.open{max-height:78vh; opacity:1; visibility:visible; overflow-y:auto}
   .nav-links a{font-size:16px; padding:13px 24px}
   .nav-links a:hover{background:rgba(123,30,59,.05); color:var(--wine)}
+  .nav-links a.nav-biz{margin:10px 24px 6px; padding:13px 16px; text-align:center}
+  .nav-links a.nav-lang{font-size:15px}
   .section{padding:72px 0}
   .section-head.left{text-align:center; margin-left:auto}
 }
@@ -529,6 +540,8 @@ a.pairpill:hover{border-color:rgba(123,30,59,.35); color:var(--wine); text-decor
 .lesson-cta .lc-btns .btn{text-decoration:none}
 .lesson-cta .lc-btns .btn[hidden]{display:none}
 .lesson-cta .lc-fine{margin:14px 0 0; font-size:13px; color:var(--muted)}
+.lesson-cta .lc-test{margin:14px 0 0; padding-top:14px; border-top:1px solid var(--line); font-size:15px; color:var(--sec)}
+.lesson-cta .lc-test a{font-weight:600}
 main > .lesson-cta{max-width:var(--maxw-prose); width:calc(100% - 32px); margin:36px auto 30px; box-sizing:border-box}
 /* The tests hub's staff line is a plain paragraph; quiz.css's .qz-biz flex column split it into rows. */
 p.qz-biz{display:block}
@@ -550,3 +563,17 @@ p.qz-biz{display:block}
 /* Credit line under a hero photo that needs attribution (CC BY / CC BY-SA) */
 .photo-credit{max-width:var(--maxw); margin:6px auto 0; padding:0 24px; text-align:right; font-size:12px; line-height:1.4; color:var(--muted)}
 .photo-credit a{color:inherit; text-decoration:underline; text-decoration-color:rgba(138,127,134,.4)}
+
+/* ---------- Site search (assets/search.js + Pagefind) ---------- */
+.search-dialog{width:min(720px,calc(100vw - 24px)); max-height:min(80vh,760px); margin:8vh auto auto; padding:0; border:0; border-radius:20px;
+  background:var(--paper-raised); color:var(--ink); box-shadow:0 40px 120px -30px rgba(18,9,7,.55)}
+.search-dialog::backdrop{background:rgba(18,9,7,.5); backdrop-filter:blur(4px); -webkit-backdrop-filter:blur(4px)}
+.search-in{position:relative; padding:22px 22px 18px; max-height:inherit; overflow-y:auto}
+.search-close{position:absolute; top:12px; right:12px; width:36px; height:36px; border:0; border-radius:10px; background:transparent; font-size:26px; line-height:1; color:var(--muted); cursor:pointer; z-index:2}
+.search-close:hover{background:var(--parchment); color:var(--ink)}
+.search-hint{margin:12px 2px 0; font-size:13px; color:var(--muted)}
+#site-search-ui{--pagefind-ui-scale:.9; --pagefind-ui-primary:#7B1E3B; --pagefind-ui-text:#2B2B2B; --pagefind-ui-background:#FFFDFB;
+  --pagefind-ui-border:#EFE5EA; --pagefind-ui-tag:#F3ECE3; --pagefind-ui-border-width:1px; --pagefind-ui-border-radius:12px; --pagefind-ui-font:var(--font-body); padding-right:36px}
+#site-search-ui .pagefind-ui__result-link{color:var(--wine-deep); font-family:var(--font-display)}
+#site-search-ui mark{background:#F6E3B4; color:inherit}
+@media (max-width:640px){ .search-dialog{margin:12px auto auto; max-height:calc(100dvh - 24px)} }

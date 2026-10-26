@@ -1,5 +1,5 @@
 {
-  "_about": "Topic-matched lesson cards (scripts/build-lesson-cta.mjs). Each page points at one lesson from a free unit ('Foundations' or 'Tasting & senses', the first two units of the course), so the browser link never hits the paywall. 'before' is a literal string in the page; the card is inserted just before it. 'band' rewrites the heading and text of the page's dark App Store band.",
+  "_about": "Topic-matched lesson cards (scripts/build-lesson-cta.mjs). Each page points at one lesson from a free unit ('Foundations' or 'Tasting & senses', the first two units of the course), so the browser link never hits the paywall. 'before' is a literal string in the page; the card is inserted just before it. 'band' rewrites the heading and text of the page's dark App Store band. 'sections' gives every page under a folder its section's lesson, hook and test (a slug, or {text in page: slug, '*': fallback}); pages listed in 'pages' keep their own. Section cards go before the first of 'anchors' found in the page.",
   "appStorePt": "",
   "pages": {
     "learn/wine-for-beginners/index.html": {
@@ -195,6 +195,63 @@
         "Learn the wine in your glass",
         "Scan any label and Winelingo explains the wine in plain words, with a short lesson to go with it. Free to download on the App Store."
       ]
+    }
+  },
+  "anchors": [
+    "<section class=\"wrap\" style=\"max-width:var(--maxw-prose);padding-bottom:6px\"><div class=\"callout\"><strong>Keep exploring</strong>",
+    "<section class=\"section\" style=\"padding-top:20px\"><div class=\"wrap\"><div class=\"section-head\"><p class=\"eyebrow center reveal\">FAQ",
+    "<section class=\"wrap\"><div class=\"appband\""
+  ],
+  "sections": {
+    "grape-varieties": {
+      "lesson": "45d7d75c-3229-4520-a10b-a29d10fa38d6",
+      "hook": "Meet the eight grapes behind most wine lists and learn to tell them apart, with a few quick questions along the way.",
+      "test": {
+        "White wine grape": "white-grapes",
+        "*": "red-grapes"
+      }
+    },
+    "wine-regions": {
+      "lesson": "6f15b4dc-40ba-4442-8708-39ef56e61bf9",
+      "hook": "Why does the same grape taste so different from one region to the next? This lesson shows how warmth shapes the wine in your glass.",
+      "test": "labels-and-lists"
+    },
+    "countries": {
+      "lesson": "6f15b4dc-40ba-4442-8708-39ef56e61bf9",
+      "hook": "Why does the same grape taste so different from one country to the next? This lesson shows how warmth shapes the wine in your glass.",
+      "test": "labels-and-lists"
+    },
+    "wine-styles": {
+      "lesson": "d7170656-caab-47b9-85c2-d15fbf5fc6b1",
+      "hook": "See where this style sits among the main styles of wine, and how to tell them apart in the glass.",
+      "test": {
+        "<dt>Type</dt><dd>Sparkling": "sparkling-wine",
+        "<dt>Type</dt><dd>Fortified": "after-dinner",
+        "<dt>Type</dt><dd>Dessert": "after-dinner",
+        "<dt>Type</dt><dd>Red": "red-grapes",
+        "<dt>Type</dt><dd>White": "white-grapes",
+        "*": "labels-and-lists"
+      }
+    },
+    "food-and-wine-pairing": {
+      "lesson": "b3f3bfef-41a0-4c59-a53c-95c597f1dfd2",
+      "hook": "Most good pairings follow one simple rule. Learn it in five minutes and you can pair almost any dish yourself.",
+      "test": "food-and-wine"
+    },
+    "wine-classifications": {
+      "lesson": "374684d1-e0aa-4524-a76d-720efb03392d",
+      "hook": "Classifications end up on the label. This lesson shows you how to read a wine label, step by step.",
+      "test": "labels-and-lists"
+    },
+    "wine-glossary": {
+      "lesson": "ea252ea9-0358-481f-90b8-c7776070f576",
+      "hook": "Wine words stick faster once you have put them to a real smell. This lesson shows you how.",
+      "test": "wine-faults"
+    },
+    "tools": {
+      "lesson": "b6aec9b7-bc1e-4671-8f10-0fe32ae219fe",
+      "hook": "Serving it right is half the job; the other half is tasting it properly. Five steps, five minutes.",
+      "test": "serving-wine"
     }
   }
 }
