@@ -3,6 +3,7 @@
   const $ = id => document.getElementById('hs-' + id);
   const stage = $('stage'), story = $('story'), nav = document.getElementById('site-header');
   const shot1 = $('shot1'), shot2 = $('shot2'), front = $('front'), dim = $('dim'), vignette = $('vignette'), endshot = $('endshot');
+  const soft1 = $('soft1'), soft2 = $('soft2');
   const screen = $('screen'), bezel = $('bezel');
   const screens = [...screen.querySelectorAll('.hs-scr')];
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -12,8 +13,8 @@
   // `glass` is the phone's grey screen (TL, TR, BR, BL); `front` is what sits in front of it.
   const SETS = {
     desktop: {
-      s1: { src: '/assets/hero/b2b/open-desktop.webp', w: 2560, h: 1440 },
-      s2: { src: '/assets/hero/b2b/phone-desktop.webp', w: 2560, h: 1440 },
+      s1: { src: '/assets/hero/b2b/open-desktop.webp', soft: '/assets/hero/b2b/open-desktop-soft.webp', w: 2560, h: 1440 },
+      s2: { src: '/assets/hero/b2b/phone-desktop.webp', soft: '/assets/hero/b2b/phone-desktop-soft.webp', w: 2560, h: 1440 },
       front: { src: '/assets/hero/b2b/phone-desktop-front.png', box: [592, 612, 782, 965] },
       glass: [[604.7, 627.6], [761.9, 624.5], [770.0, 946.8], [613.7, 953.8]],
       frames: v => ({
@@ -26,8 +27,8 @@
       }),
     },
     mobile: {
-      s1: { src: '/assets/hero/b2b/open-mobile.webp', w: 1440, h: 2155 },
-      s2: { src: '/assets/hero/b2b/phone-mobile.webp', w: 1440, h: 2560 },
+      s1: { src: '/assets/hero/b2b/open-mobile.webp', soft: '/assets/hero/b2b/open-mobile-soft.webp', w: 1440, h: 2155 },
+      s2: { src: '/assets/hero/b2b/phone-mobile.webp', soft: '/assets/hero/b2b/phone-mobile-soft.webp', w: 1440, h: 2560 },
       front: { src: '/assets/hero/b2b/phone-mobile-front.png', box: [348, 1088, 529, 1441] },
       glass: [[360.5, 1100.5], [516.6, 1100.5], [517.5, 1427.5], [363.7, 1429.5]],
       frames: v => ({
@@ -107,14 +108,28 @@
   const lerp = (a, b, t) => a + (b - a) * t;
   const fade = (p, inA, inB, outA, outB) => Math.min(seg(p, inA, inB), outA == null ? 1 : 1 - seg(p, outA, outB));
 
+  // Scroll → story time. The timings below are in story time; each span of it gets scroll in
+  // proportion to its weight: 1 where things move, less where a caption is only being read,
+  // so the story never asks for a long scroll with nothing happening. [span end, weight]
+  const SPANS = [[0.03, .7], [0.17, 1], [0.225, .45], [0.33, 1], [0.35, .25], [0.39, 1], [0.41, .45], [0.58, 1],
+                 [0.6, .45], [0.752, 1], [0.765, .55], [0.855, 1], [0.865, .55], [0.98, 1], [1, .55]];
+  const KNOTS = SPANS.reduce((k, [t, w]) => { const [t0, s0] = k[k.length - 1]; k.push([t, s0 + (t - t0) * w]); return k; }, [[0, 0]]);
+  KNOTS.forEach(k => k[1] /= KNOTS[KNOTS.length - 1][1]);
+  function storyTime(s) {
+    let i = 1;
+    while (i < KNOTS.length - 1 && KNOTS[i][1] < s) i++;
+    const [t0, s0] = KNOTS[i - 1], [t1, s1] = KNOTS[i];
+    return t0 + (t1 - t0) * seg(s, s0, s1);
+  }
+
   let vw, vh, mobile, set, F;
   function measure() {
     vw = stage.clientWidth; vh = stage.clientHeight; mobile = vw < 760;
     const next = SETS[mobile ? 'mobile' : 'desktop'];
     if (next !== set) {
       set = next;
-      for (const [el, img, s] of [[shot1, $('shot1img'), set.s1], [shot2, $('shot2img'), set.s2]]) {
-        el.style.width = `${s.w}px`; el.style.height = `${s.h}px`; img.src = s.src;
+      for (const [el, img, soft, s] of [[shot1, $('shot1img'), soft1, set.s1], [shot2, $('shot2img'), soft2, set.s2]]) {
+        el.style.width = `${s.w}px`; el.style.height = `${s.h}px`; img.src = s.src; soft.src = s.soft;
       }
       const b = set.front.box;
       front.style.width = `${set.s2.w}px`; front.style.height = `${set.s2.h}px`;
@@ -150,23 +165,27 @@
   }
 
   const navToggle = nav && nav.querySelector('.nav-toggle');
-  function onStory() {
+  function onStory(r = story.getBoundingClientRect()) {
     if (!nav) return;
     const open = navToggle && navToggle.getAttribute('aria-expanded') === 'true';
     // Only while the stage is pinned: once it starts to scroll away the site's paper bar returns,
-    // so the story's last lines never slide under a transparent header.
-    nav.classList.toggle('on-story', story.getBoundingClientRect().bottom > stage.clientHeight + 1 && !open);
+    // so the story's last lines never slide under a transparent header. Called from the scroll
+    // handler with the rect it already read, never from inside a frame.
+    nav.classList.toggle('on-story', r.bottom > vh + 1 && !open);
   }
   if (navToggle) navToggle.addEventListener('click', () => setTimeout(onStory));
 
-  function render(p) {
+  function render(s) {
+    const p = storyTime(s);
     const { table, host, bottle, close, phone, away } = F;
 
     // Beat 1: the table, in to her presenting the bottle, then on to the label: the match cut.
     const x12 = seg(p, 0.25, 0.33);
     camera(shot1, 1, p < 0.24 ? mix(table, host, ease(seg(p, 0.03, 0.15))) : mix(host, bottle, ease(seg(p, 0.24, 0.33))));
-    shot1.style.opacity = 1 - x12;
-    shot1.style.filter = x12 > 0 ? `blur(${x12 * 7}px)` : 'none';
+    // A true crossfade: the first photo stays solid underneath until the second one covers it,
+    // so the cut never dips to black halfway.
+    shot1.style.opacity = x12 < 1 ? 1 : 0;
+    soft1.style.opacity = x12;
 
     // Beat 2: before service, the same bottle on the bar; hold on her, then in on the phone.
     const z2 = ease(seg(p, 0.41, 0.49));
@@ -174,8 +193,8 @@
     const cam2 = camera(shot2, 2, mix(close, phone, z2));
     if (lift > 0) camera(shot2, 2, mix(phone, { cx: away.cx, cy: away.cy, z: phone.z * away.k }, lift));
     shot2.style.opacity = x12;
-    const blur2 = (1 - x12) * 6 + lift * 16;
-    shot2.style.filter = blur2 > 0.05 ? `blur(${blur2}px)` : 'none';
+    // In from a soft focus, sharp on her, and out of focus again as the phone lifts away.
+    soft2.style.opacity = Math.min(1, (1 - x12) * 0.5 + lift);
 
     // Beat 3: the screen wakes up in her hand, then lifts out of the photo.
     const lit = seg(p, 0.355, 0.39);
@@ -194,7 +213,6 @@
     screen.style.filter = lift < 1 ? `brightness(${lerp(0.86, 1, lift)})` : 'none';
     bezel.style.opacity = lift;
     front.style.transform = shot2.style.transform;
-    front.style.filter = shot2.style.filter;
     front.style.opacity = x12 * (1 - seg(lift, 0, 0.1));
     dim.style.opacity = lift * 0.6 * (1 - seg(p, 0.88, 0.95));
     vignette.style.opacity = 1 - lift * 0.6 + seg(p, 0.88, 0.95) * 0.6;
@@ -245,25 +263,31 @@
     show($('sideLesson'), fade(p, 0.67, 0.69, 0.765, 0.785), 24);
     show($('sideLeague'), fade(p, 0.795, 0.82, 0.865, 0.885), 24);
     show($('end'), seg(p, 0.94, 0.98), 24);
-    onStory();
   }
 
+  // The picture glides after the scroll: it closes the gap with a 90 ms time constant, measured
+  // in real time so it feels the same at 60 Hz and 120 Hz. ?still draws each position at once.
   const still = location.search.includes('still');
-  let target = 0, current = 0, raf = 0;
+  const TAU = 90;
+  let target = 0, current = 0, raf = 0, last = 0;
   function progress() {
+    // Read before any frame writes styles, so it never forces a layout mid-frame.
     const r = story.getBoundingClientRect();
+    onStory(r);
     return clamp(-r.top / (story.offsetHeight - vh));
   }
-  function tick() {
-    current += (target - current) * (reduce || still ? 1 : 0.11);
-    if (Math.abs(target - current) < 0.0002) current = target;
+  function tick(now) {
+    const k = reduce ? 1 : 1 - Math.exp(-Math.min(now - last, 64) / TAU);
+    last = now;
+    current += (target - current) * k;
+    if (Math.abs(target - current) < 0.0001) current = target;
     render(current);
     raf = current !== target ? requestAnimationFrame(tick) : 0;
   }
   function onScroll() {
     target = progress();
     if (still) { current = target; render(current); return; }
-    if (!raf) raf = requestAnimationFrame(tick);
+    if (!raf) { last = performance.now(); raf = requestAnimationFrame(tick); }
   }
 
   addEventListener('scroll', onScroll, { passive: true });
