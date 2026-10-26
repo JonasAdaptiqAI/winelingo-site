@@ -184,6 +184,13 @@ const testCard = (t) => `<a class="tx-card" href="/tests/${t.slug}/" data-slug="
         <span class="tx-txt"><h3 data-f="title">${esc(t.en.title)}</h3><p data-f="summary">${esc(t.en.summary)}</p>
         <span class="tx-meta"><span data-f="meta">${t.en.questions.length} questions · ${minutes(t.en.questions.length)} min</span><span class="tx-best" data-f="best" hidden></span></span></span>
       </a>`;
+// The palate quiz is its own hand-written page (tests/wine-palate-quiz/), not a ten-question test,
+// so its card leads the wine-knowledge track without a data-slug (quiz.js leaves it alone).
+const palateCard = `<a class="tx-card" href="/tests/wine-palate-quiz/">
+        <span class="tx-ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8l-.6 6.2a3.4 3.4 0 0 1-6.8 0Z"/><path d="M12 12.6V20M8.5 20h7"/><path d="M8.6 7.4h6.8"/></svg></span>
+        <span class="tx-txt"><h3>What wine will I like?</h3><p>The palate quiz: eight questions about coffee, chocolate, lemons and more, no wine knowledge needed. Get the white and red styles you are most likely to enjoy.</p>
+        <span class="tx-meta"><span>8 questions · 2 min</span></span></span>
+      </a>`;
 const trackHtml = (tr) => {
   const list = tr.tests.map((s) => byslug[s]).filter(Boolean);
   if (!list.length) return "";
@@ -192,7 +199,7 @@ const trackHtml = (tr) => {
   <div class="wrap">
     <div class="tx-head"><p class="eyebrow" data-i18n="${tr.id}-eb">${eb}</p><h2 id="${tr.id}-h" data-i18n="${tr.id}-h">${h2}</h2><p data-i18n="${tr.id}-p">${p}</p></div>
     <div class="${prep ? "tx-exams" : "tx-grid"}">
-      ${list.map(prep ? examCard : testCard).join("\n      ")}
+      ${tr.id === "wine-knowledge" ? palateCard + "\n      " : ""}${list.map(prep ? examCard : testCard).join("\n      ")}
     </div>${prep ? `\n    <p class="tx-note" data-i18n="disclaimer">Unofficial practice questions written by Winelingo. Not affiliated with or endorsed by WSET or the Court of Master Sommeliers.</p>` : ""}
   </div>
 </section>`;
