@@ -1,10 +1,10 @@
 // Builds the public, indexable pages of the online course (2026-10-11, "SEO for the course"):
 //
 //   /course/                     landing page (EN) + the course app itself (one page, two modes)
-//   /course/<unit>/              26 unit pages (EN)
+//   /course/<unit>/              one page per unit (EN)
 //   /da/vinkursus/               landing page (DA)
-//   /da/vinkursus/<enhed>/       26 unit pages (DA)
-//   /es/curso-de-vinos/ (+26)     landing + unit pages (ES), /de/weinkurs/ (+26) the same in German
+//   /da/vinkursus/<enhed>/       one page per unit (DA)
+//   /es/curso-de-vinos/           landing + unit pages (ES), /de/weinkurs/ the same in German
 //
 // Before this, /course/ was a login screen: Google saw a title and nothing else. Now every unit's
 // lessons, summaries and outcomes are plain HTML with Course markup, and the app only takes over
@@ -51,6 +51,7 @@ const U = [
   ["Food & wine", "foodWine", "food-and-wine-pairing", "mad-og-vin", "pairing", 0, "Food and Wine Pairing Course", "Kursus i mad og vin", ["/food-and-wine-pairing/"]],
   ["Serving & glassware", "servingGlassware", "serving-wine", "servering-af-vin", "uServing", 0, "Serving Wine: Glasses, Decanting and Storing", "Servering af vin: glas, karaffel og opbevaring", ["/tools/wine-serving-temperature/", "/learn/how-long-does-open-wine-last/"]],
   ["Wine at the table", "atTable", "wine-etiquette", "vin-ved-bordet", "uToast", 0, "Wine at the Table: Restaurants and Etiquette", "Vin ved bordet: restaurant, etikette og gaver", ["/learn/how-to-order-wine-at-a-restaurant/"]],
+  ["After dinner", "afterDinner", "dessert-wine-and-digestifs", "efter-maden", "uAfterDinner", 0, "After Dinner: Dessert Wine, Port, Brandy and Coffee", "Efter maden: dessertvin, portvin, avec og kaffe", ["/wine-styles/port/", "/wine-classifications/types-of-port-wine/", "/tests/after-dinner/"]],
   ["Wine, health & moderation", "healthModeration", "wine-and-health", "vin-og-sundhed", "uModeration", 0, "Wine, Health and Moderation", "Vin, sundhed og måde", ["/learn/how-many-units-in-a-bottle-of-wine/", "/tools/wine-calories/"]],
   ["France", "france", "french-wine", "fransk-vin", "uFrance", 1, "French Wine Course", "Kursus i fransk vin", ["/countries/france/"]],
   ["Italy", "italy", "italian-wine", "italiensk-vin", "uItaly", 1, "Italian Wine Course", "Kursus i italiensk vin", ["/countries/italy/"]],
@@ -81,6 +82,7 @@ const ESDE = {
   readingLabel: [["etiquetas-de-vino", "Cómo leer la etiqueta de un vino", "Curso de etiquetas de vino"], ["weinetikett-lesen", "Weinetiketten lesen und verstehen", "Weinetiketten lesen lernen"]],
   foodWine: [["maridaje", "Curso de maridaje: vino y comida", "Curso de maridaje"], ["wein-und-essen", "Wein und Essen richtig kombinieren", "Wein und Essen kombinieren"]],
   servingGlassware: [["servicio-del-vino", "Servir el vino: copas, decantación y conservación", "Curso de servicio del vino"], ["wein-servieren", "Wein servieren: Gläser, Dekantieren, Lagern", "Weinservice-Kurs"]],
+  afterDinner: [["vinos-dulces-y-digestivos", "La sobremesa: vino dulce, oporto, brandy y café", "Curso de vinos dulces y digestivos"], ["dessertwein-und-digestif", "Nach dem Essen: Dessertwein, Portwein, Brandy und Kaffee", "Weinkurs Dessertwein und Digestif"]],
   atTable: [["el-vino-en-la-mesa", "El vino en la mesa: restaurantes y protocolo", "Curso de protocolo del vino"], ["wein-am-tisch", "Wein am Tisch: Restaurant und Weinknigge", "Weinknigge-Kurs"]],
   healthModeration: [["vino-y-salud", "Vino, salud y moderación", "Curso de vino y salud"], ["wein-und-gesundheit", "Wein und Gesundheit: mit Maß genießen", "Kurs Wein und Gesundheit"]],
   france: [["vino-frances", "Curso de vino francés", "Curso de vino francés"], ["franzoesischer-wein", "Französische Weine kennenlernen", "Weinkurs Frankreich"]],
@@ -116,9 +118,10 @@ const SHORT = { "serving-wine": ["Serving Wine Course", "Kursus i servering af v
   "wine-etiquette": ["Wine Etiquette Course", "Kursus i vin ved bordet"], "wine-and-health": ["Wine & Health Course", "Kursus i vin og sundhed"],
   "history-of-wine": ["History of Wine Course", "Kursus i vinens historie"], "wine-basics": ["Wine Basics Course", "Kursus i vinens grundlag"],
   "wine-tasting": ["Wine Tasting Course", "Vinsmagningskursus"], "food-and-wine-pairing": ["Food & Wine Pairing Course", "Kursus i mad og vin"] };
-// Covers that are not public domain (CC BY-SA), credited like the app does (learn.tsx UNITS credit):
+// Covers that are not public domain (CC BY / BY-SA), credited like the app does (learn.tsx UNITS credit):
 // author linked to the Commons file page, licence linked to its deed, and the source.
 const CREDITS = {
+  uAfterDinner: { by: "franzconde", license: "CC BY 2.0", licenseUrl: "https://creativecommons.org/licenses/by/2.0/", src: "https://commons.wikimedia.org/wiki/File:001_Tiramisu.jpg" },
   uChile: { by: "FRPGCHILE", license: "CC BY-SA 4.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/", src: "https://commons.wikimedia.org/wiki/File:Carmenere_Vineyards_at_Vi%C3%B1a_Tipaume.jpg" },
   uSouthAfrica: { by: "Michael Fu", license: "CC BY-SA 3.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/", src: "https://commons.wikimedia.org/wiki/File:Groot_Constantia_Estate.jpg" },
 };
@@ -134,8 +137,9 @@ for (const u of U) {
   for (const p of u.related) if (!existsSync(join(ROOT, p, "index.html"))) throw new Error(`related page missing: ${p}`);
 }
 const FREE_UNITS = U.filter(isFree), FREE_LESSONS = FREE_UNITS.reduce((a, u) => a + u.lessons.length, 0);
+const NU = U.length;
 const TOTAL_LESSONS = SYL.length, TOTAL_MIN = U.reduce((a, u) => a + u.min, 0), HOURS = Math.round(TOTAL_MIN / 60);
-if (TOTAL_LESSONS !== U.reduce((a, u) => a + u.lessons.length, 0)) throw new Error("lessons outside the 26 units");
+if (TOTAL_LESSONS !== U.reduce((a, u) => a + u.lessons.length, 0)) throw new Error(`lessons outside the ${NU} units`);
 
 const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const name = (u, lang) => STR[lang].lessonTopics[u.key];
@@ -155,46 +159,46 @@ const T = {
   en: {
     groups: ["The essentials", "The wine countries", "Going deeper"],
     groupSub: ["The ideas everything builds on, then how to taste, the grapes that matter, labels, food, serving, the table and health.", "Twelve countries, region by region, with the grapes and the words on the label.", "How wine is made, the vineyard, quality and ageing, buying well and history."],
-    lessons: (n) => `${n} lessons`, about: (m) => `about ${m} min`, free: "Free", unit: (n) => `Unit ${n} of 26`,
+    lessons: (n) => `${n} lessons`, about: (m) => `about ${m} min`, free: "Free", unit: (n) => `Unit ${n} of ${NU}`,
     learn: "You will be able to", start: "Start this unit free", startFree: "Start with the free units",
     unlockLine: "This unit is included with Premium ($3.99 a month, 3 days free) or the course for life ($39.99 once).",
     seePrices: "See prices", related: "Related reading on Winelingo", prev: "Previous unit", next: "Next unit",
     crumbHome: "Home", crumbCourse: "Online wine course", partOf: "Part of Winelingo's online wine course",
     unitDesc: (u, h, d) => `${h} online: ${u.lessons.length} short, interactive lessons. ${d} Start free with Winelingo.`,
-    allUnits: "See all 26 units", theLessons: (n) => `The ${n} lessons`, unitShort: (n) => `Unit ${n}`, firstTwo: "First two units",
+    allUnits: `See all ${NU} units`, theLessons: (n) => `The ${n} lessons`, unitShort: (n) => `Unit ${n}`, firstTwo: "First two units",
   },
   da: {
     groups: ["Det grundlæggende", "Vinlandene", "Et spadestik dybere"],
     groupSub: ["Det, som alt andet bygger på, og så smagning, de druer der betyder noget, etiketter, mad, servering, bordet og sundhed.", "Tolv lande, region for region, med druerne og ordene på etiketten.", "Vinfremstilling, vinmarken, kvalitet og lagring, gode indkøb og historie."],
-    lessons: (n) => `${n} lektioner`, about: (m) => `cirka ${m} min.`, free: "Gratis", unit: (n) => `Enhed ${n} af 26`,
+    lessons: (n) => `${n} lektioner`, about: (m) => `cirka ${m} min.`, free: "Gratis", unit: (n) => `Enhed ${n} af ${NU}`,
     learn: "Du lærer at", start: "Start enheden gratis", startFree: "Start med de gratis enheder",
     unlockLine: "Enheden er inkluderet i Premium ($3.99 om måneden, 3 dage gratis) eller kurset for altid ($39.99 én gang).",
     seePrices: "Se priser", related: "Læs mere på Winelingo (engelsk)", prev: "Forrige enhed", next: "Næste enhed",
     crumbHome: "Forside", crumbCourse: "Vinkursus online", partOf: "En del af Winelingos vinkursus online",
     unitDesc: (u, h, d) => `${h} online: ${u.lessons.length} korte, interaktive lektioner. ${d} Start gratis med Winelingo.`,
-    allUnits: "Se alle 26 enheder", theLessons: (n) => `De ${n} lektioner`, unitShort: (n) => `Enhed ${n}`, firstTwo: "De to første enheder",
+    allUnits: `Se alle ${NU} enheder`, theLessons: (n) => `De ${n} lektioner`, unitShort: (n) => `Enhed ${n}`, firstTwo: "De to første enheder",
   },
   es: {
     groups: ["Lo esencial", "Los países del vino", "Para ir más allá"],
     groupSub: ["Las ideas en las que se basa todo y, después, la cata, las uvas que importan, las etiquetas, la comida, el servicio, la mesa y la salud.", "Doce países, región por región, con sus uvas y las palabras de la etiqueta.", "Cómo se hace el vino, el viñedo, la calidad y la crianza, comprar bien y la historia."],
-    lessons: (n) => `${n} lecciones`, about: (m) => `unos ${m} min`, free: "Gratis", unit: (n) => `Unidad ${n} de 26`,
+    lessons: (n) => `${n} lecciones`, about: (m) => `unos ${m} min`, free: "Gratis", unit: (n) => `Unidad ${n} de ${NU}`,
     learn: "Aprenderás a", lowerOut: true, start: "Empieza esta unidad gratis", startFree: "Empieza con las unidades gratis",
     unlockLine: "Esta unidad está incluida en Premium (3,99 $ al mes, 3 días gratis) o en el curso de por vida (39,99 $, un solo pago).",
     seePrices: "Ver precios", related: "Para seguir leyendo en Winelingo (en inglés)", prev: "Unidad anterior", next: "Unidad siguiente",
     crumbHome: "Inicio", crumbCourse: "Curso de vinos online", partOf: "Parte del curso de vinos online de Winelingo",
     unitDesc: (u, h, d) => `${h} online: ${u.lessons.length} lecciones cortas e interactivas. ${d} Empieza gratis con Winelingo.`,
-    allUnits: "Ver las 26 unidades", theLessons: (n) => `Las ${n} lecciones`, unitShort: (n) => `Unidad ${n}`, firstTwo: "Las dos primeras unidades",
+    allUnits: `Ver las ${NU} unidades`, theLessons: (n) => `Las ${n} lecciones`, unitShort: (n) => `Unidad ${n}`, firstTwo: "Las dos primeras unidades",
   },
   de: {
     groups: ["Das Wesentliche", "Die Weinländer", "Tiefer einsteigen"],
     groupSub: ["Die Grundlagen, auf denen alles aufbaut, danach Verkosten, die wichtigsten Rebsorten, Etiketten, Essen, Servieren, Wein am Tisch und Gesundheit.", "Zwölf Länder, Region für Region, mit ihren Rebsorten und den Begriffen auf dem Etikett.", "Wie Wein entsteht, der Weinberg, Qualität und Reifung, gut einkaufen und Weingeschichte."],
-    lessons: (n) => `${n} Lektionen`, about: (m) => `etwa ${m} Min.`, free: "Kostenlos", unit: (n) => `Einheit ${n} von 26`,
+    lessons: (n) => `${n} Lektionen`, about: (m) => `etwa ${m} Min.`, free: "Kostenlos", unit: (n) => `Einheit ${n} von ${NU}`,
     learn: "Das lernst du", lowerOut: false, start: "Diese Einheit kostenlos starten", startFree: "Mit den kostenlosen Einheiten starten",
     unlockLine: "Diese Einheit ist in Premium enthalten (3,99 $ im Monat, 3 Tage kostenlos) oder im Kurs auf Lebenszeit (einmalig 39,99 $).",
     seePrices: "Preise ansehen", related: "Mehr auf Winelingo (auf Englisch)", prev: "Vorherige Einheit", next: "Nächste Einheit",
     crumbHome: "Startseite", crumbCourse: "Weinkurs online", partOf: "Teil des Online-Weinkurses von Winelingo",
     unitDesc: (u, h, d) => `${h} online: ${u.lessons.length} kurze, interaktive Lektionen. ${d} Starte kostenlos mit Winelingo.`,
-    allUnits: "Alle 26 Einheiten ansehen", theLessons: (n) => `Die ${n} Lektionen`, unitShort: (n) => `Einheit ${n}`, firstTwo: "Die ersten zwei Einheiten",
+    allUnits: `Alle ${NU} Einheiten ansehen`, theLessons: (n) => `Die ${n} Lektionen`, unitShort: (n) => `Einheit ${n}`, firstTwo: "Die ersten zwei Einheiten",
   },
 };
 
@@ -307,11 +311,11 @@ function relName(p) {
 const H = {
   en: {
     title: `Online Wine Course for Beginners: ${TOTAL_LESSONS} Lessons | Winelingo`,
-    desc: `Learn about wine online: ${TOTAL_LESSONS} short, interactive lessons in 26 units, from the basics and tasting to twelve wine countries. First two units free.`,
+    desc: `Learn about wine online: ${TOTAL_LESSONS} short, interactive lessons in ${NU} units, from the basics and tasting to twelve wine countries. First two units free.`,
     eyebrow: "Online wine course", h1: "Learn about wine online, five minutes at a time",
-    deck: `${TOTAL_LESSONS} short, interactive lessons in 26 units: the basics, how to taste, the grapes that matter, food and wine, labels, and twelve wine countries region by region. Start free in your browser or on iPhone.`,
+    deck: `${TOTAL_LESSONS} short, interactive lessons in ${NU} units: the basics, how to taste, the grapes that matter, food and wine, labels, and twelve wine countries region by region. Start free in your browser or on iPhone.`,
     ctaStart: "Start the free units", ctaSyl: "See the syllabus", signIn: "Already have an account? Sign in",
-    facts: [[String(TOTAL_LESSONS), "interactive lessons"], ["26", "units"], [`~${HOURS} h`, "at your own pace"], ["4", "languages"], ["2 units", "free"]],
+    facts: [[String(TOTAL_LESSONS), "interactive lessons"], [String(NU), "units"], [`~${HOURS} h`, "at your own pace"], ["4", "languages"], ["2 units", "free"]],
     howH: "How the course works", how: [
       ["Short, interactive lessons", "Each lesson is a handful of illustrated cards and quick questions. A wrong answer comes back at the end, so it sticks."],
       ["Five minutes a day", "Set a daily goal, keep a streak, and pick up where you left off on any device."],
@@ -337,11 +341,11 @@ const H = {
   },
   da: {
     title: `Vinkursus online for begyndere: ${TOTAL_LESSONS} lektioner | Winelingo`,
-    desc: `Lær om vin online: ${TOTAL_LESSONS} korte, interaktive lektioner i 26 enheder, fra grundlaget og smagning til tolv vinlande. De to første enheder er gratis.`,
+    desc: `Lær om vin online: ${TOTAL_LESSONS} korte, interaktive lektioner i ${NU} enheder, fra grundlaget og smagning til tolv vinlande. De to første enheder er gratis.`,
     eyebrow: "Vinkursus online", h1: "Lær om vin online, fem minutter ad gangen",
-    deck: `${TOTAL_LESSONS} korte, interaktive lektioner i 26 enheder: grundlaget, sådan smager du, de druer der betyder noget, mad og vin, etiketter og tolv vinlande region for region. Start gratis i din browser eller på iPhone.`,
+    deck: `${TOTAL_LESSONS} korte, interaktive lektioner i ${NU} enheder: grundlaget, sådan smager du, de druer der betyder noget, mad og vin, etiketter og tolv vinlande region for region. Start gratis i din browser eller på iPhone.`,
     ctaStart: "Start de gratis enheder", ctaSyl: "Se hele pensum", signIn: "Har du allerede en konto? Log ind",
-    facts: [[String(TOTAL_LESSONS), "interaktive lektioner"], ["26", "enheder"], [`~${HOURS} t`, "i dit eget tempo"], ["4", "sprog"], ["2 enheder", "gratis"]],
+    facts: [[String(TOTAL_LESSONS), "interaktive lektioner"], [String(NU), "enheder"], [`~${HOURS} t`, "i dit eget tempo"], ["4", "sprog"], ["2 enheder", "gratis"]],
     howH: "Sådan fungerer kurset", how: [
       ["Korte, interaktive lektioner", "Hver lektion er en håndfuld illustrerede kort og hurtige spørgsmål. Et forkert svar kommer igen til sidst, så det sidder fast."],
       ["Fem minutter om dagen", "Sæt et dagligt mål, hold din stime i gang, og fortsæt hvor du slap, på alle dine enheder."],
@@ -367,11 +371,11 @@ const H = {
   },
   es: {
     title: "Curso de vinos online para principiantes | Winelingo",
-    desc: `Aprende de vinos online: ${TOTAL_LESSONS} lecciones cortas e interactivas en 26 unidades, de lo básico y la cata a doce países del vino. Las dos primeras unidades, gratis.`,
+    desc: `Aprende de vinos online: ${TOTAL_LESSONS} lecciones cortas e interactivas en ${NU} unidades, de lo básico y la cata a doce países del vino. Las dos primeras unidades, gratis.`,
     eyebrow: "Curso de vinos online", h1: "Aprende de vinos online en ratos de cinco minutos",
-    deck: `${TOTAL_LESSONS} lecciones cortas e interactivas en 26 unidades: lo básico, cómo catar, las uvas que importan, vino y comida, etiquetas y doce países del vino, región por región. Empieza gratis en el navegador o en el iPhone.`,
+    deck: `${TOTAL_LESSONS} lecciones cortas e interactivas en ${NU} unidades: lo básico, cómo catar, las uvas que importan, vino y comida, etiquetas y doce países del vino, región por región. Empieza gratis en el navegador o en el iPhone.`,
     ctaStart: "Empieza con las unidades gratis", ctaSyl: "Ver el temario", signIn: "¿Ya tienes cuenta? Inicia sesión",
-    facts: [[String(TOTAL_LESSONS), "lecciones interactivas"], ["26", "unidades"], [`~${HOURS} h`, "a tu ritmo"], ["4", "idiomas"], ["2 unidades", "gratis"]],
+    facts: [[String(TOTAL_LESSONS), "lecciones interactivas"], [String(NU), "unidades"], [`~${HOURS} h`, "a tu ritmo"], ["4", "idiomas"], ["2 unidades", "gratis"]],
     howH: "Cómo funciona el curso", how: [
       ["Lecciones cortas e interactivas", "Cada lección es un puñado de tarjetas ilustradas y preguntas rápidas. Si fallas una pregunta, vuelve al final para que se te quede."],
       ["Cinco minutos al día", "Ponte una meta diaria, mantén tu racha y sigue donde lo dejaste en cualquier dispositivo."],
@@ -397,11 +401,11 @@ const H = {
   },
   de: {
     title: `Weinkurs online für Anfänger: ${TOTAL_LESSONS} Lektionen | Winelingo`,
-    desc: `Weinwissen online lernen: ${TOTAL_LESSONS} kurze, interaktive Lektionen in 26 Einheiten, von Grundlagen und Verkostung bis zu zwölf Weinländern. Zwei Einheiten kostenlos.`,
+    desc: `Weinwissen online lernen: ${TOTAL_LESSONS} kurze, interaktive Lektionen in ${NU} Einheiten, von Grundlagen und Verkostung bis zu zwölf Weinländern. Zwei Einheiten kostenlos.`,
     eyebrow: "Weinkurs online", h1: "Weinwissen online lernen, in Häppchen von fünf Minuten",
-    deck: `${TOTAL_LESSONS} kurze, interaktive Lektionen in 26 Einheiten: die Grundlagen, richtig verkosten, die wichtigsten Rebsorten, Wein und Essen, Etiketten und zwölf Weinländer, Region für Region. Starte kostenlos im Browser oder auf dem iPhone.`,
+    deck: `${TOTAL_LESSONS} kurze, interaktive Lektionen in ${NU} Einheiten: die Grundlagen, richtig verkosten, die wichtigsten Rebsorten, Wein und Essen, Etiketten und zwölf Weinländer, Region für Region. Starte kostenlos im Browser oder auf dem iPhone.`,
     ctaStart: "Kostenlose Einheiten starten", ctaSyl: "Lehrplan ansehen", signIn: "Schon ein Konto? Anmelden",
-    facts: [[String(TOTAL_LESSONS), "interaktive Lektionen"], ["26", "Einheiten"], [`~${HOURS} Std.`, "in deinem Tempo"], ["4", "Sprachen"], ["2 Einheiten", "kostenlos"]],
+    facts: [[String(TOTAL_LESSONS), "interaktive Lektionen"], [String(NU), "Einheiten"], [`~${HOURS} Std.`, "in deinem Tempo"], ["4", "Sprachen"], ["2 Einheiten", "kostenlos"]],
     howH: "So funktioniert der Kurs", how: [
       ["Kurze, interaktive Lektionen", "Jede Lektion besteht aus ein paar illustrierten Karten und kurzen Fragen. Beantwortest du eine Frage falsch, kommt sie am Ende noch einmal, damit es hängen bleibt."],
       ["Fünf Minuten am Tag", "Setz dir ein Tagesziel, halte deine Serie und mach auf jedem Gerät da weiter, wo du aufgehört hast."],
@@ -557,12 +561,12 @@ ${SHOTS[lang] ? shotsHtml(lang) : ""}
   <p class="cl-fine">${h.fine}</p>
 </div></section>
 </main>`;
-  const appHead = withApp ? `<link rel="stylesheet" href="/assets/course/course.css?v=9">\n` : "";
+  const appHead = withApp ? `<link rel="stylesheet" href="/assets/course/course.css?v=10">\n` : "";
   const app = withApp ? `
 <div id="app" aria-live="polite" hidden></div>
 <script src="/assets/course/vendor/supabase-2.117.3.js"></script>
-<script src="/assets/course/strings.js?v=9"></script>
-<script src="/assets/course/course.js?v=13"></script>` : "";
+<script src="/assets/course/strings.js?v=11"></script>
+<script src="/assets/course/course.js?v=15"></script>` : "";
   let foot = FOOTER;
   if (withApp) foot = foot.replace("</body>", `${app}\n</body>`);
   return head({ lang, title: h.title, desc: h.desc, path, alt: HUB, ld, extraHead: appHead }) + HEADER + body + foot;
@@ -573,7 +577,7 @@ ${SHOTS[lang] ? shotsHtml(lang) : ""}
 // its course unit(s), between markers so a rebuild replaces it. Plus the hub-level pages below.
 function band(units, hubOnly) {
   const items = hubOnly
-    ? `<a href="/course/">Winelingo's online wine course</a> · ${TOTAL_LESSONS} interactive lessons in 26 units, first two units free`
+    ? `<a href="/course/">Winelingo's online wine course</a> · ${TOTAL_LESSONS} interactive lessons in ${NU} units, first two units free`
     : units.map((u) => `<a href="${unitUrl(u, "en")}">${esc(u.h1.en)}</a> · ${u.lessons.length} interactive lessons`).join("<br>");
   return `<!-- course-band (scripts/build-course-pages.mjs) -->
 <aside class="course-band"><div class="wrap"><div class="cb-in">
@@ -615,7 +619,7 @@ const G = {
     how: [["Buy it", "Sign in or create a free account, then pay once. Paddle, our online reseller, handles the payment and VAT."],
       ["Get the code", "Your gift code appears right after the payment, with a card to print or send. It is also kept in your account."],
       ["They redeem it", "They type the code at winelingo.app/redeem and the whole course opens on their own account, on the web and in the iPhone app."]],
-    insideH: "What's inside", insideDeck: `${TOTAL_LESSONS} lessons in 26 units, about ${HOURS} hours in all. Each lesson takes five to ten minutes.`,
+    insideH: "What's inside", insideDeck: `${TOTAL_LESSONS} lessons in ${NU} units, about ${HOURS} hours in all. Each lesson takes five to ten minutes.`,
     inside: [["The essentials", "The ideas everything builds on, how to taste, the red and white grapes that matter, labels, food pairing, serving and wine at the table."],
       ["Twelve wine countries", "France, Italy, Spain, Portugal, Germany, Austria, the USA, Argentina, Chile, Australia, New Zealand and South Africa, region by region."],
       ["Going deeper", "How wine is made, the vineyard, quality, ageing and collecting, buying well and the history of wine."]],
@@ -648,7 +652,7 @@ const G = {
     how: [["Køb den", "Log ind eller opret en gratis konto, og betal én gang. Paddle, vores online forhandler, står for betaling og moms."],
       ["Få koden", "Gavekoden vises lige efter betalingen, med et kort du kan printe eller sende. Den gemmes også på din konto."],
       ["De indløser den", "De skriver koden på winelingo.app/redeem, og hele kurset åbner på deres egen konto, på nettet og i iPhone-appen."]],
-    insideH: "Det får de", insideDeck: `${TOTAL_LESSONS} lektioner i 26 enheder, cirka ${HOURS} timer i alt. Hver lektion tager fem til ti minutter.`,
+    insideH: "Det får de", insideDeck: `${TOTAL_LESSONS} lektioner i ${NU} enheder, cirka ${HOURS} timer i alt. Hver lektion tager fem til ti minutter.`,
     inside: [["Det grundlæggende", "Det, som alt andet bygger på, sådan smager man, de røde og hvide druer der betyder noget, etiketter, mad og vin, servering og vin ved bordet."],
       ["Tolv vinlande", "Frankrig, Italien, Spanien, Portugal, Tyskland, Østrig, USA, Argentina, Chile, Australien, New Zealand og Sydafrika, region for region."],
       ["Et spadestik dybere", "Vinfremstilling, vinmarken, kvalitet, lagring og vinsamling, gode indkøb og vinens historie."]],
@@ -681,7 +685,7 @@ const G = {
     how: [["Cómpralo", "Inicia sesión o crea una cuenta gratis y paga una sola vez. Paddle, nuestro revendedor online, gestiona el pago y el IVA."],
       ["Recibe el código", "El código de regalo aparece justo después del pago, con una tarjeta para imprimir o enviar. También queda guardado en tu cuenta."],
       ["Quien lo recibe, lo canjea", "Introduce el código en winelingo.app/redeem y el curso completo se desbloquea en su propia cuenta, en la web y en la app para iPhone."]],
-    insideH: "Qué incluye", insideDeck: `${TOTAL_LESSONS} lecciones en 26 unidades, unas ${HOURS} horas en total. Cada lección dura de cinco a diez minutos.`,
+    insideH: "Qué incluye", insideDeck: `${TOTAL_LESSONS} lecciones en ${NU} unidades, unas ${HOURS} horas en total. Cada lección dura de cinco a diez minutos.`,
     inside: [["Lo esencial", "Las ideas en las que se basa todo, cómo catar, las principales uvas tintas y blancas, las etiquetas, el maridaje, el servicio y el vino en la mesa."],
       ["Doce países del vino", "Francia, Italia, España, Portugal, Alemania, Austria, Estados Unidos, Argentina, Chile, Australia, Nueva Zelanda y Sudáfrica, región por región."],
       ["Para ir más allá", "Cómo se hace el vino, el viñedo, la calidad, la guarda y el coleccionismo, cómo comprar bien y la historia del vino."]],
@@ -714,7 +718,7 @@ const G = {
     how: [["Kaufen", "Melde dich an oder erstelle ein kostenloses Konto und zahle einmal. Paddle, unser Online-Händler, wickelt Zahlung und Mehrwertsteuer ab."],
       ["Code erhalten", "Der Geschenkcode erscheint direkt nach der Zahlung, zusammen mit einer Karte zum Ausdrucken oder Verschicken. Er bleibt auch in deinem Konto gespeichert."],
       ["Einlösen", "Die beschenkte Person gibt den Code auf winelingo.app/redeem ein, und der ganze Kurs wird in ihrem eigenen Konto freigeschaltet, im Web und in der iPhone-App."]],
-    insideH: "Das steckt drin", insideDeck: `${TOTAL_LESSONS} Lektionen in 26 Einheiten, insgesamt etwa ${HOURS} Stunden. Jede Lektion dauert fünf bis zehn Minuten.`,
+    insideH: "Das steckt drin", insideDeck: `${TOTAL_LESSONS} Lektionen in ${NU} Einheiten, insgesamt etwa ${HOURS} Stunden. Jede Lektion dauert fünf bis zehn Minuten.`,
     inside: [["Das Wesentliche", "Die Grundlagen, auf denen alles aufbaut, die Verkostung, die wichtigsten roten und weißen Rebsorten, Etiketten, Wein und Speisen, Servieren und Wein am Tisch."],
       ["Zwölf Weinländer", "Frankreich, Italien, Spanien, Portugal, Deutschland, Österreich, die USA, Argentinien, Chile, Australien, Neuseeland und Südafrika, Region für Region."],
       ["Tiefer einsteigen", "Wie Wein entsteht, der Weinberg, Qualität, Reifung und Sammeln, klug einkaufen und die Geschichte des Weins."]],
