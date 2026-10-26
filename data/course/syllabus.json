@@ -200,6 +200,366 @@
 }
 },
 {
+"id": "9fa94f15-9ddf-4fe5-ac44-8a3665cee406",
+"unit": "After dinner",
+"s": 1,
+"t": "Fortified wines: Port, sherry and Madeira",
+"sum": "What fortified means, how to tell the Port and sherry styles apart, a word on Madeira, and how to serve, pair and keep each one.",
+"out": [
+"Explain what makes a wine fortified",
+"Tell the main Port and sherry styles apart",
+"Serve, pair and store each fortified style"
+],
+"n": 18,
+"da": {
+"t": "Hedvin: portvin, sherry og Madeira",
+"sum": "Hvad hedvin er, hvordan du kender typerne af portvin og sherry fra hinanden, lidt om Madeira, og hvordan du serverer, vælger mad til og gemmer hver af dem.",
+"out": [
+"Forklare, hvad der gør en vin til en hedvin",
+"Kende de vigtigste typer portvin og sherry fra hinanden",
+"Servere hver type hedvin, vælge mad til den og gemme den"
+]
+},
+"es": {
+"t": "Vinos generosos: oporto, jerez y Madeira",
+"sum": "Qué significa generoso, cómo distinguir los estilos de oporto y de jerez, unas palabras sobre el Madeira y cómo servir, maridar y guardar cada uno.",
+"out": [
+"Explicar qué hace que un vino sea generoso",
+"Distinguir los principales estilos de oporto y de jerez",
+"Servir, maridar y guardar cada estilo de generoso"
+]
+},
+"de": {
+"t": "Likörweine: Portwein, Sherry und Madeira",
+"sum": "Was Likörwein bedeutet, wie du die Stile von Portwein und Sherry unterscheidest, ein Wort zu Madeira und wie du jeden serviert, kombiniert und aufbewahrst.",
+"out": [
+"Erklären, was einen Wein zum Likörwein macht",
+"Die wichtigsten Portwein- und Sherry-Stile unterscheiden",
+"Jeden Likörweinstil servieren, kombinieren und aufbewahren"
+]
+}
+},
+{
+"id": "f0440b06-c81c-44a3-b1a2-eda4d2191870",
+"unit": "After dinner",
+"s": 2,
+"t": "The Port ladder: from Ruby to Vintage",
+"sum": "Ruby, LBV, aged Tawny, Colheita and Vintage Port as one ladder: what each tastes like, how long it keeps open and how to offer one rung up.",
+"out": [
+"Explain the Port ladder from Ruby to Vintage",
+"Tell a filtered LBV from one that needs decanting",
+"Suggest one rung up by the glass without pushing"
+],
+"n": 18,
+"da": {
+"t": "Portvinsstigen: fra Ruby til Vintage Port",
+"sum": "Ruby, LBV, lagret Tawny, Colheita og Vintage Port som én stige: hvordan hver smager, hvor længe den holder, når den er åbnet, og hvordan du byder på et trin op.",
+"out": [
+"Forklare portvinsstigen fra Ruby til Vintage Port",
+"Skelne en filtreret LBV fra en, der skal over i en karaffel",
+"Foreslå et trin op pr. glas uden at presse"
+]
+},
+"es": {
+"t": "La escalera del oporto: del ruby al vintage",
+"sum": "El ruby, el LBV, el tawny con años, el Colheita y el oporto vintage como una escalera: a qué sabe cada uno, cuánto aguanta abierto y cómo ofrecer un peldaño más.",
+"out": [
+"Explicar la escalera del oporto, del ruby al vintage",
+"Distinguir un LBV filtrado de uno que hay que decantar",
+"Sugerir un peldaño más por copas sin insistir"
+]
+},
+"de": {
+"t": "Die Portweinleiter: von Ruby bis Vintage Port",
+"sum": "Ruby, LBV, gereifter Tawny, Colheita und Vintage Port als eine Leiter: wie jeder Stil schmeckt, wie lange er sich offen hält und wie du eine Stufe höher anbietest.",
+"out": [
+"Die Portweinleiter von Ruby bis Vintage Port erklären",
+"Einen filtrierten LBV von einem unterscheiden, der dekantiert werden muss",
+"Glasweise eine Stufe höher vorschlagen, ohne zu drängen"
+]
+}
+},
+{
+"id": "685b7c3a-4b47-4eac-8d1a-66c06551108c",
+"unit": "After dinner",
+"s": 3,
+"t": "Dessert and sweet wines: how to pair them",
+"sum": "Pick a wine at least as sweet as your dessert, match light with light and rich with rich, and let fresh acidity keep it lively.",
+"out": [
+"Choose a wine at least as sweet as dessert",
+"Match classic desserts with the right sweet wine",
+"Explain why acidity keeps sweet wines fresh"
+],
+"n": 16,
+"da": {
+"t": "Dessert og søde vine: sådan sætter du dem sammen",
+"sum": "Vælg en vin, der er mindst lige så sød som desserten, let til let og kraftig til kraftig, og lad frisk syre holde vinen levende.",
+"out": [
+"Vælge en vin, der er mindst lige så sød som desserten",
+"Finde den rigtige søde vin til klassiske desserter",
+"Forklare, hvorfor syre holder søde vine friske"
+]
+},
+"es": {
+"t": "Vinos dulces y de postre: cómo maridarlos",
+"sum": "Elige un vino al menos tan dulce como el postre, junta ligero con ligero e intenso con intenso, y deja que una acidez fresca lo mantenga vivo.",
+"out": [
+"Elegir un vino al menos tan dulce como el postre",
+"Combinar postres clásicos con el vino dulce adecuado",
+"Explicar por qué la acidez mantiene frescos los vinos dulces"
+]
+},
+"de": {
+"t": "Desserts und Süßweine: So kombinierst du sie",
+"sum": "Wähl einen Wein, der mindestens so süß ist wie dein Dessert, kombinier leicht mit leicht und reichhaltig mit üppig, und lass frische Säure ihn lebendig halten.",
+"out": [
+"Einen Wein wählen, der mindestens so süß ist wie das Dessert",
+"Klassische Desserts mit dem passenden Süßwein kombinieren",
+"Erklären, warum Säure Süßweine frisch hält"
+]
+}
+},
+{
+"id": "4efb09f1-9375-42fd-abdf-99ac4c385387",
+"unit": "After dinner",
+"s": 4,
+"t": "Brandy and digestifs: Cognac, Armagnac, Calvados and more",
+"sum": "For new staff: what is on the after-dinner shelf, what VS, VSOP and XO promise, and one clear sentence for each brandy a guest asks about.",
+"out": [
+"Explain what VS, VSOP and XO promise on Cognac",
+"Tell Cognac, Armagnac, Calvados, grappa and Brandy de Jerez apart",
+"Answer a guest's quick question about whisky, rum or liqueurs"
+],
+"n": 18,
+"da": {
+"t": "Brandy og avec: cognac, armagnac, calvados og mere",
+"sum": "For nye tjenere: hvad der står på avec-hylden, hvad VS, VSOP og XO lover, og én klar sætning om hver brandy, en gæst spørger til.",
+"out": [
+"Forklare, hvad VS, VSOP og XO lover på en cognac",
+"Kende cognac, armagnac, calvados, grappa og Brandy de Jerez fra hinanden",
+"Svare kort på en gæsts spørgsmål om whisky, rom eller likører"
+]
+},
+"es": {
+"t": "Brandy y digestivos: Cognac, Armagnac, Calvados y más",
+"sum": "Para personal nuevo: qué hay en la estantería de sobremesa, qué prometen VS, VSOP y XO, y una frase clara para cada brandy por el que pregunte un cliente.",
+"out": [
+"Explicar qué prometen VS, VSOP y XO en un Cognac",
+"Distinguir Cognac, Armagnac, Calvados, grappa y Brandy de Jerez",
+"Responder a un cliente una pregunta rápida sobre whisky, ron o licores"
+]
+},
+"de": {
+"t": "Brandy und Digestifs: Cognac, Armagnac, Calvados und mehr",
+"sum": "Für neues Personal: was im Digestif-Regal steht, was VS, VSOP und XO versprechen, und ein klarer Satz zu jedem Brandy, nach dem ein Gast fragt.",
+"out": [
+"Erklären, was VS, VSOP und XO auf Cognac versprechen",
+"Cognac, Armagnac, Calvados, Grappa und Brandy de Jerez unterscheiden",
+"Eine kurze Gastfrage zu Whisky, Rum oder Likören beantworten"
+]
+}
+},
+{
+"id": "630523ea-07f8-46e5-8108-b303203946f3",
+"unit": "After dinner",
+"s": 5,
+"t": "Whisky, rum and liqueurs: enough to answer a guest",
+"sum": "For new staff: one clear sentence for each whisky, rum, liqueur and herbal bitter a guest asks about after dinner, and how guests take their whisky.",
+"out": [
+"Explain single malt, blended Scotch, bourbon and rye simply",
+"Serve whisky neat, with water or on the rocks",
+"Describe rum, classic liqueurs and herbal bitters in one sentence"
+],
+"n": 18,
+"da": {
+"t": "Whisky, rom og likører: nok til at svare en gæst",
+"sum": "For nye tjenere: én klar sætning om hver whisky, rom, likør og urtebitter, som en gæst spørger om efter maden, og hvordan gæster drikker deres whisky.",
+"out": [
+"Forklare single malt, blended whisky, bourbon og rye enkelt",
+"Servere whisky ren, med vand eller on the rocks",
+"Beskrive rom, klassiske likører og urtebittere i én sætning"
+]
+},
+"es": {
+"t": "Whisky, ron y licores: lo justo para responder a un cliente",
+"sum": "Para personal nuevo: una frase clara para cada whisky, ron, licor y amargo de hierbas por el que pregunte un cliente después de cenar, y cómo se toma el whisky.",
+"out": [
+"Explicar de forma sencilla single malt, blended, bourbon y rye",
+"Servir el whisky solo, con agua o con hielo",
+"Describir en una frase el ron, los licores clásicos y los amargos de hierbas"
+]
+},
+"de": {
+"t": "Whisky, Rum und Liköre: genug, um einem Gast zu antworten",
+"sum": "Für neues Personal: je ein klarer Satz zu Whisky, Rum, Likör und Kräuterbitter, wenn ein Gast nach dem Essen danach fragt, und wie Gäste ihren Whisky trinken.",
+"out": [
+"Single Malt, Blended Scotch, Bourbon und Rye einfach erklären",
+"Whisky pur, mit Wasser oder on the rocks servieren",
+"Rum, klassische Liköre und Kräuterbitter in einem Satz beschreiben"
+]
+}
+},
+{
+"id": "d4d11f70-ad89-44aa-b15a-15f973f92f3f",
+"unit": "After dinner",
+"s": 6,
+"t": "Coffee and after-dinner drinks: what goes with what",
+"sum": "Why sweet glasses and roasted coffee suit each other, what to pour beside an espresso, a cappuccino or the chocolates, and the pairs that clash.",
+"out": [
+"Explain why sweet drinks and roasted coffee suit each other",
+"Suggest a glass for espresso, cappuccino or latte",
+"Spot the after-dinner pairs that clash"
+],
+"n": 16,
+"da": {
+"t": "Kaffe og avec: hvad passer til hvad",
+"sum": "Hvorfor søde drikke og ristet kaffe passer sammen, hvad du skænker til en espresso, en cappuccino eller chokoladen, og hvad der ikke passer sammen.",
+"out": [
+"Forklare, hvorfor søde drikke og ristet kaffe passer sammen",
+"Foreslå et glas til espresso, cappuccino eller latte",
+"Genkende de par efter maden, der ikke passer sammen"
+]
+},
+"es": {
+"t": "Café y bebidas de sobremesa: qué va con qué",
+"sum": "Por qué las copas dulces y el café tostado se llevan bien, qué servir con un café solo, un capuchino o los bombones, y las parejas que chocan.",
+"out": [
+"Explicar por qué las bebidas dulces y el café tostado se llevan bien",
+"Sugerir una copa para un café solo, un capuchino o un latte",
+"Reconocer las parejas de sobremesa que chocan"
+]
+},
+"de": {
+"t": "Kaffee und Getränke nach dem Essen: was passt wozu",
+"sum": "Warum süße Gläser und gerösteter Kaffee zusammenpassen, was du zu Espresso, Cappuccino oder Pralinen einschenkst und welche Paare sich beißen.",
+"out": [
+"Erklären, warum süße Getränke und gerösteter Kaffee zusammenpassen",
+"Ein Glas zu Espresso, Cappuccino oder Caffè Latte vorschlagen",
+"Paare nach dem Essen erkennen, die sich beißen"
+]
+}
+},
+{
+"id": "2937ba35-26ba-4302-804f-44583d1eab93",
+"unit": "After dinner",
+"s": 7,
+"t": "Serving after-dinner drinks: Port, sherry and brandy",
+"sum": "For new staff: the right glass, temperature and measure for Port, sherry, dessert wine and brandy, how long open bottles keep, and what comes with the coffee.",
+"out": [
+"Choose the right glass for Port, sherry and brandy",
+"Serve after-dinner drinks at the right temperature and measure",
+"Judge how long an open bottle behind the bar keeps"
+],
+"n": 18,
+"da": {
+"t": "Servering efter maden: portvin, sherry og brandy",
+"sum": "For nye tjenere: det rette glas, den rette temperatur og det rette skænkemål til portvin, sherry, dessertvin og brandy, hvor længe åbne flasker holder, og hvad der kommer med kaffen.",
+"out": [
+"Vælge det rette glas til portvin, sherry og brandy",
+"Servere drinks efter maden ved den rette temperatur og i det rette mål",
+"Vurdere, hvor længe en åben flaske bag baren holder"
+]
+},
+"es": {
+"t": "Servir las bebidas de sobremesa: oporto, jerez y brandy",
+"sum": "Para personal nuevo: la copa, la temperatura y la medida adecuadas para oporto, jerez, vino de postre y brandy, cuánto aguantan las botellas abiertas y qué acompaña al café.",
+"out": [
+"Elegir la copa adecuada para oporto, jerez y brandy",
+"Servir las bebidas de sobremesa a la temperatura y en la medida justas",
+"Saber cuánto aguanta una botella abierta en la barra"
+]
+},
+"de": {
+"t": "Digestifs servieren: Portwein, Sherry und Brandy",
+"sum": "Für neues Personal: das richtige Glas, die richtige Temperatur und Menge für Portwein, Sherry, Süßwein und Brandy, wie lange offene Flaschen halten und was zum Kaffee kommt.",
+"out": [
+"Das richtige Glas für Portwein, Sherry und Brandy wählen",
+"Digestifs mit der richtigen Temperatur und Menge servieren",
+"Einschätzen, wie lange eine offene Flasche an der Bar hält"
+]
+}
+},
+{
+"id": "c81452bd-d87d-45fd-a6e3-cef20a47f40d",
+"unit": "After dinner",
+"s": 8,
+"t": "Selling after dinner: dessert wine, coffee and a digestif",
+"sum": "The two moments to offer, a choice of two that sells without pushing, the right drink for each guest, and how to make yes, and no, easy.",
+"out": [
+"Spot the two moments to offer an after-dinner drink",
+"Offer a choice of two that sells without pushing",
+"Match dessert wine, Port or brandy to the guest"
+],
+"n": 17,
+"da": {
+"t": "Salg efter middagen: dessertvin, kaffe og avec",
+"sum": "De to øjeblikke, hvor du kan byde på noget, et valg mellem to, der sælger uden at presse, den rigtige drik til hver gæst, og hvordan både ja og nej bliver nemt.",
+"out": [
+"Genkende de to øjeblikke, hvor du kan byde på noget efter maden",
+"Give et valg mellem to, der sælger uden at presse",
+"Vælge dessertvin, portvin eller brandy, der passer til gæsten"
+]
+},
+"es": {
+"t": "Vender en la sobremesa: vino de postre, café y digestivo",
+"sum": "Los dos momentos para ofrecer, dos opciones que venden sin presionar, la copa justa para cada cliente y cómo hacer fácil el sí, y también el no.",
+"out": [
+"Reconocer los dos momentos para ofrecer una copa de sobremesa",
+"Proponer dos opciones que venden sin presionar",
+"Elegir vino dulce, oporto o brandy según el cliente"
+]
+},
+"de": {
+"t": "Verkaufen nach dem Essen: Süßwein, Kaffee und Digestif",
+"sum": "Die zwei Momente fürs Angebot, wie du mit zwei Vorschlägen verkaufst, ohne zu drängen, das passende Getränk für jeden Gast und wie Ja und Nein leichtfallen.",
+"out": [
+"Die zwei Momente für ein Getränk nach dem Essen erkennen",
+"Mit zwei Vorschlägen verkaufen, ohne zu drängen",
+"Süßwein, Portwein oder Brandy passend zum Gast wählen"
+]
+}
+},
+{
+"id": "e2f54879-4760-416c-a09b-1f6ff969d8e6",
+"unit": "After dinner",
+"s": 9,
+"t": "The after-dinner list: read it, price it, recommend from it",
+"sum": "How a dessert and digestif list is built, what each line and number means, how many pours a bottle gives, and how to suggest three drinks at three prices.",
+"out": [
+"Read any line on an after-dinner list",
+"Work out how many pours a bottle gives",
+"Recommend three after-dinner drinks at three prices"
+],
+"n": 18,
+"da": {
+"t": "Avec- og dessertkortet: læs det, regn på det, anbefal fra det",
+"sum": "Sådan er avec- og dessertkortet bygget op, hvad hver linje og hvert tal betyder, hvor mange glas en flaske giver, og hvordan du foreslår tre drikke til tre priser.",
+"out": [
+"Læse enhver linje på et avec-kort",
+"Regne ud, hvor mange glas en flaske giver",
+"Anbefale tre drikke efter maden til tre priser"
+]
+},
+"es": {
+"t": "La carta de sobremesa: leer, calcular y recomendar",
+"sum": "Cómo se organiza una carta de postres y digestivos, qué significa cada línea y cada número, cuántas medidas da una botella y cómo sugerir tres bebidas a tres precios.",
+"out": [
+"Leer cualquier línea de una carta de sobremesa",
+"Calcular cuántas medidas da una botella",
+"Recomendar tres bebidas de sobremesa a tres precios"
+]
+},
+"de": {
+"t": "Die Digestif-Karte: lesen, rechnen, empfehlen",
+"sum": "Wie eine Dessert- und Digestif-Karte aufgebaut ist, was jede Zeile und jede Zahl bedeutet, wie viele Portionen eine Flasche ergibt und wie du drei Getränke zu drei Preisen vorschlägst.",
+"out": [
+"Jede Zeile einer Digestif-Karte lesen",
+"Ausrechnen, wie viele Portionen eine Flasche ergibt",
+"Drei Getränke nach dem Essen zu drei Preisen empfehlen"
+]
+}
+},
+{
 "id": "d713e146-80f5-549d-5c7a-a2cbf581d21f",
 "unit": "Argentina",
 "s": 1,
@@ -1400,86 +1760,6 @@
 }
 },
 {
-"id": "685b7c3a-4b47-4eac-8d1a-66c06551108c",
-"unit": "Food & wine",
-"s": 4,
-"t": "Dessert and sweet wines: how to pair them",
-"sum": "Pick a wine at least as sweet as your dessert, match light with light and rich with rich, and let fresh acidity keep it lively.",
-"out": [
-"Choose a wine at least as sweet as dessert",
-"Match classic desserts with the right sweet wine",
-"Explain why acidity keeps sweet wines fresh"
-],
-"n": 16,
-"da": {
-"t": "Dessert og søde vine: sådan sætter du dem sammen",
-"sum": "Vælg en vin, der er mindst lige så sød som desserten, let til let og kraftig til kraftig, og lad frisk syre holde vinen levende.",
-"out": [
-"Vælge en vin, der er mindst lige så sød som desserten",
-"Finde den rigtige søde vin til klassiske desserter",
-"Forklare, hvorfor syre holder søde vine friske"
-]
-},
-"es": {
-"t": "Vinos dulces y de postre: cómo maridarlos",
-"sum": "Elige un vino al menos tan dulce como el postre, junta ligero con ligero e intenso con intenso, y deja que una acidez fresca lo mantenga vivo.",
-"out": [
-"Elegir un vino al menos tan dulce como el postre",
-"Combinar postres clásicos con el vino dulce adecuado",
-"Explicar por qué la acidez mantiene frescos los vinos dulces"
-]
-},
-"de": {
-"t": "Desserts und Süßweine: So kombinierst du sie",
-"sum": "Wähl einen Wein, der mindestens so süß ist wie dein Dessert, kombinier leicht mit leicht und reichhaltig mit üppig, und lass frische Säure ihn lebendig halten.",
-"out": [
-"Einen Wein wählen, der mindestens so süß ist wie das Dessert",
-"Klassische Desserts mit dem passenden Süßwein kombinieren",
-"Erklären, warum Säure Süßweine frisch hält"
-]
-}
-},
-{
-"id": "9fa94f15-9ddf-4fe5-ac44-8a3665cee406",
-"unit": "Food & wine",
-"s": 5,
-"t": "Fortified wines: Port, sherry and Madeira",
-"sum": "What fortified means, how to tell the Port and sherry styles apart, a word on Madeira, and how to serve, pair and keep each one.",
-"out": [
-"Explain what makes a wine fortified",
-"Tell the main Port and sherry styles apart",
-"Serve, pair and store each fortified style"
-],
-"n": 18,
-"da": {
-"t": "Hedvin: portvin, sherry og Madeira",
-"sum": "Hvad hedvin er, hvordan du kender typerne af portvin og sherry fra hinanden, lidt om Madeira, og hvordan du serverer, vælger mad til og gemmer hver af dem.",
-"out": [
-"Forklare, hvad der gør en vin til en hedvin",
-"Kende de vigtigste typer portvin og sherry fra hinanden",
-"Servere hver type hedvin, vælge mad til den og gemme den"
-]
-},
-"es": {
-"t": "Vinos generosos: oporto, jerez y Madeira",
-"sum": "Qué significa generoso, cómo distinguir los estilos de oporto y de jerez, unas palabras sobre el Madeira y cómo servir, maridar y guardar cada uno.",
-"out": [
-"Explicar qué hace que un vino sea generoso",
-"Distinguir los principales estilos de oporto y de jerez",
-"Servir, maridar y guardar cada estilo de generoso"
-]
-},
-"de": {
-"t": "Likörweine: Portwein, Sherry und Madeira",
-"sum": "Was Likörwein bedeutet, wie du die Stile von Portwein und Sherry unterscheidest, ein Wort zu Madeira und wie du jeden serviert, kombiniert und aufbewahrst.",
-"out": [
-"Erklären, was einen Wein zum Likörwein macht",
-"Die wichtigsten Portwein- und Sherry-Stile unterscheiden",
-"Jeden Likörweinstil servieren, kombinieren und aufbewahren"
-]
-}
-},
-{
 "id": "63f9b44e-68de-48a5-82ad-964fb6512a57",
 "unit": "Food & wine",
 "s": 6,
@@ -1800,9 +2080,49 @@
 }
 },
 {
-"id": "374684d1-e0aa-4524-a76d-720efb03392d",
+"id": "45d7d75c-3229-4520-a10b-a29d10fa38d6",
 "unit": "Foundations",
 "s": 7,
+"t": "The grapes to know first: eight that fill most wine lists",
+"sum": "Four reds and four whites, lined up from light to full: how each tastes, where it is famous, a food it suits, and how to describe it to a guest.",
+"out": [
+"Line up eight key grapes from light to full",
+"Name the grape behind five French place names",
+"Describe a grape to a guest in one sentence"
+],
+"n": 18,
+"da": {
+"t": "Druerne, du skal kende først: de otte på næsten alle vinkort",
+"sum": "Fire røde og fire hvide, stillet op fra let til fyldig: hvordan de smager, hvor de er berømte, en ret, de passer til, og hvordan du beskriver dem for en gæst.",
+"out": [
+"Stille otte vigtige druer op fra let til fyldig",
+"Kende druen bag fem franske stednavne",
+"Beskrive en drue for en gæst i én sætning"
+]
+},
+"es": {
+"t": "Las uvas que conocer primero: ocho que llenan casi todas las cartas",
+"sum": "Cuatro tintas y cuatro blancas, de ligero a con cuerpo: a qué sabe cada una, dónde es famosa, un plato que le va y cómo describírsela a un invitado.",
+"out": [
+"Ordenar ocho uvas clave de ligero a con cuerpo",
+"Nombrar la uva detrás de cinco nombres de lugar franceses",
+"Describir una uva a un invitado en una frase"
+]
+},
+"de": {
+"t": "Die ersten Rebsorten: acht, die fast jede Weinkarte füllen",
+"sum": "Vier rote und vier weiße Rebsorten, von leicht bis voll: wie jede schmeckt, wo sie berühmt ist, wozu sie passt und wie du sie einem Gast beschreibst.",
+"out": [
+"Acht wichtige Rebsorten von leicht bis voll ordnen",
+"Die Rebsorte hinter fünf französischen Ortsnamen nennen",
+"Einem Gast eine Rebsorte in einem Satz beschreiben"
+]
+}
+},
+{
+"id": "374684d1-e0aa-4524-a76d-720efb03392d",
+"unit": "Foundations",
+"s": 8,
 "t": "How to read a wine label: the wine's ID card",
 "sum": "A label is the wine's ID card: who made it, where it is from, the harvest year and its strength tell you enough to make a smart guess.",
 "out": [
@@ -1842,7 +2162,7 @@
 {
 "id": "b3f3bfef-41a0-4c59-a53c-95c597f1dfd2",
 "unit": "Foundations",
-"s": 8,
+"s": 9,
 "t": "The one rule: match the weight",
 "sum": "If you remember nothing else about pairing, match the weight of the wine to the weight of the food, so that neither one flattens the other.",
 "out": [
@@ -6642,7 +6962,7 @@
 {
 "id": "68a5e8ab-e83d-4d5a-8274-70254589844e",
 "unit": "Wine at the table",
-"s": 11,
+"s": 14,
 "t": "Responsible service: water, limits and when to stop",
 "sum": "Know what a glass holds, offer water as hospitality, spot the signs a guest has had enough, and slow down or refuse kindly.",
 "out": [
