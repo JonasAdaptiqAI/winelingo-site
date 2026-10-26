@@ -19,6 +19,9 @@
 - [Types of White Wine](https://winelingo.app/learn/types-of-white-wine/)
 - [How Many Glasses of Wine in a Bottle?](https://winelingo.app/learn/how-many-glasses-of-wine-in-a-bottle/)
 - [WSET Level 1 practice questions (free, unofficial quiz)](https://winelingo.app/tests/wset-level-1-practice/)
+- [WSET Level 2 mock exam: 50 free practice questions (unofficial, timed exam mode)](https://winelingo.app/tests/wset-level-2-mock-exam/)
+- [WSET Level 3 practice questions (free, unofficial)](https://winelingo.app/tests/wset-level-3-practice/)
+- [Introductory Sommelier exam practice questions (free, unofficial, Court of Master Sommeliers style)](https://winelingo.app/tests/introductory-sommelier-practice/)
 - [Wine 101: The Basics Every Beginner Should Know](https://winelingo.app/learn/wine-101/)
 - [How to Host a Wine Tasting at Home](https://winelingo.app/learn/how-to-host-a-wine-tasting/)
 - [WSET Levels Explained: Level 1, 2, 3 and 4 (Diploma)](https://winelingo.app/learn/wset-levels-explained/)
@@ -70,7 +73,7 @@
 
 ## For business
 - [Winelingo for business: wine training for restaurant staff](https://winelingo.app/business/): short lessons, 10 free staff tests, a staff test built on the venue's own wine list, and a weekly team league. English and Danish.
-- [Free wine tests for staff](https://winelingo.app/tests/)
+- [Free wine quizzes and sommelier practice tests](https://winelingo.app/tests/)
 
 ## About
 - [About Winelingo and Jonas Egeskov](https://winelingo.app/about/)

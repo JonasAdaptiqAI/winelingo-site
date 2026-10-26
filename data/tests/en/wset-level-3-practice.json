@@ -1,0 +1,435 @@
+{
+  "slug": "wset-level-3-practice",
+  "title": "WSET Level 3 practice questions: 30 free multiple-choice questions",
+  "summary": "Unofficial practice questions in the style of the WSET Level 3 Award in Wines multiple-choice paper: viticulture, winemaking and the world's key regions.",
+  "level": 3,
+  "exam": {
+    "body": "WSET",
+    "name": "Level 3 Award in Wines",
+    "questions": 50,
+    "minutes": null,
+    "pass": 55
+  },
+  "questions": [
+    {
+      "topic": "Viticulture",
+      "q": "On a still, clear spring night, a Chablis grower sprays water over the vines as the temperature drops below freezing. How does this protect the young buds?",
+      "opts": [
+        "The fine spray warms the surrounding air in the vineyard by several degrees",
+        "The water freezes around each bud, and the ice keeps it at about 0 °C",
+        "The water washes off frost crystals before they can harm the buds",
+        "The cold water keeps the buds dormant until the risk has passed"
+      ],
+      "a": 1,
+      "why": "This method is called aspersion. As the sprayed water freezes it gives off a little heat, and the shell of ice that forms around each bud holds it at about 0 °C, which it can survive, even while the air outside gets colder. The spraying has to keep going until the ice melts in the morning.",
+      "deeper": "Chablis growers also use heaters (often called candles), heated cables along the wires and anti-frost fabrics. Spring frost matters so much there because it strikes after budburst, when the tender new shoots carry the year's crop.",
+      "source": "https://www.chablis-wines.com/explore/the-terroir/a-unique-climate/a-unique-climate,1825,7667.html"
+    },
+    {
+      "topic": "Viticulture",
+      "q": "Which autumn weather pattern gives the best chance of noble rot (Botrytis cinerea) rather than destructive grey rot?",
+      "opts": [
+        "Steady rain, day and night, for several weeks before harvest",
+        "Hot, dry days and nights with almost no humidity",
+        "Misty, humid mornings followed by dry, sunny afternoons",
+        "Hard frosts every night followed by grey, cloudy days"
+      ],
+      "a": 2,
+      "why": "Botrytis needs humidity to take hold on ripe grapes, but the fruit must then dry out, or the fungus turns into harmful grey rot. In Sauternes, the cool Ciron river flowing into the warmer Garonne creates morning mists, and the afternoon sun does the drying.",
+      "deeper": "Noble rot spreads unevenly, so pickers go through the vineyard in several passes, taking only the shrivelled berries. Sémillon, with its thin skin, is the key grape. Grapes frozen on the vine lead to Eiswein or icewine, not botrytis wines.",
+      "source": "https://www.bordeaux.com/en/designations/graves-sauternes/sauternes/"
+    },
+    {
+      "topic": "Viticulture",
+      "q": "Riesling ripens in the Mosel, far north, where many vineyards would struggle. Which site factor helps it most?",
+      "opts": [
+        "Steep, sun-facing slate slopes that store heat by day and release it at night",
+        "Flat valley floors with deep, fertile soils that let the vines give large crops",
+        "Generous summer irrigation drawn directly from the river",
+        "Vineyards planted at high altitude, well above 1,000 metres"
+      ],
+      "a": 0,
+      "why": "The best Mosel sites are steep slopes above the river, angled towards the sun so they catch more of its energy. The slate soils absorb the sun's heat during the day and give it back at night, which helps a late-ripening grape like Riesling get there.",
+      "deeper": "Fertile valley floors push the vine into leaves and big yields rather than ripeness, so they give lighter, less concentrated wines. The steepness has a cost: almost everything, including the harvest, has to be done by hand.",
+      "source": "https://www.winesofgermany.com/our-regions/growing-area/72/mosel"
+    },
+    {
+      "topic": "Winemaking",
+      "q": "What happens during malolactic conversion?",
+      "opts": [
+        "Yeast turns the last of the sugar into alcohol, raising the strength",
+        "Tartrate crystals drop out of the wine when it is chilled",
+        "Oxygen turns some of the alcohol into acetic acid",
+        "Bacteria turn sharp malic acid into softer lactic acid"
+      ],
+      "a": 3,
+      "why": "Malolactic conversion is carried out by lactic acid bacteria, not yeast. They turn tart, green-apple-like malic acid into softer lactic acid, so the wine tastes less acidic and rounder. A by-product called diacetyl can add a buttery note.",
+      "deeper": "Most red wines go through it. For fruity, aromatic whites such as Riesling, winemakers usually block it to keep the crisp acidity and pure fruit. Cold stabilisation (removing tartrate crystals) and acetic acid from oxygen are different things entirely.",
+      "source": "https://en.wikipedia.org/wiki/Malolactic_fermentation"
+    },
+    {
+      "topic": "Winemaking",
+      "q": "In the semi-carbonic method traditionally used in Beaujolais, what happens to the whole, uncrushed bunches at the top of the vat?",
+      "opts": [
+        "They are spread out to dry for several weeks before pressing",
+        "Surrounded by carbon dioxide, they ferment inside the berries",
+        "They are pressed at once and the juice ferments without skins",
+        "They are frozen so that only the sweetest juice is pressed out"
+      ],
+      "a": 1,
+      "why": "Whole bunches go into the vat uncrushed. Carbon dioxide gradually pushes out the oxygen around them, and the intact berries begin to ferment inside their skins, producing a little alcohol and distinctive fruity aromas. Little tannin is extracted, so the wines are soft and fruit-forward.",
+      "deeper": "The weight of the bunches crushes some grapes at the bottom of the vat, and that juice ferments with ordinary yeast. That mix is why the Beaujolais version is called semi-carbonic. Drying grapes is the Amarone route; freezing them is for Eiswein.",
+      "source": "https://www.beaujolais.com/en/2020/09/22/beaujolais-vinification-a-process-like-no-other/"
+    },
+    {
+      "topic": "Winemaking",
+      "q": "A producer wants a very pale, Provence-style rosé from black grapes. Which method is most likely to give the palest colour?",
+      "opts": [
+        "Direct pressing, with no skin maceration before pressing",
+        "A skin maceration of up to 20 hours, then pressing",
+        "Fermenting the juice on its skins for a week, as for a red",
+        "Drying the grapes for several weeks before they are pressed"
+      ],
+      "a": 0,
+      "why": "In direct pressing the grapes are pressed slowly straight away, so the juice picks up only a little colour from the skins during pressing. Rosés made this way are usually paler than rosés given a skin maceration first.",
+      "deeper": "In Provence a skin maceration lasts from 2 to 20 hours at a controlled 16–20 °C, and the longer and warmer the contact, the deeper the colour. A week on the skins would give you a red wine.",
+      "source": "https://www.vinsdeprovence.com/en/le-rose/l-elaboration-du-rose"
+    },
+    {
+      "topic": "Bordeaux",
+      "q": "Why does Cabernet Sauvignon dominate on the gravel rises of Saint-Julien and the rest of the Haut-Médoc?",
+      "opts": [
+        "Cold, damp gravel slows down this naturally early-ripening grape variety",
+        "Very fertile gravel lets the vines carry large crops of ripe fruit",
+        "Warm, free-draining gravel helps this late-ripening grape ripen fully",
+        "Gravel keeps phylloxera away, so the vines need no rootstocks"
+      ],
+      "a": 2,
+      "why": "Cabernet Sauvignon buds and ripens late, so in Bordeaux's moderate maritime climate it needs the warmest sites. The gravel drains well and stores the day's heat, releasing it at night, which helps the grapes ripen slowly but fully.",
+      "deeper": "On the cooler, damper clay and limestone soils of the Right Bank, such as Saint-Émilion and Pomerol, the earlier-ripening Merlot leads instead. In Saint-Julien, Cabernet Sauvignon makes up more than 60% of the vineyard.",
+      "source": "https://www.bordeaux.com/en/designations/medoc/saint-julien/"
+    },
+    {
+      "topic": "Burgundy",
+      "q": "How does the label of a Burgundy Grand Cru usually differ from that of a Premier Cru?",
+      "opts": [
+        "Grand Cru: the village name alone. Premier Cru: the vineyard name alone",
+        "Both show the village name first, then the vineyard name",
+        "Grand Cru: the grape variety plus the vineyard name",
+        "Grand Cru: the vineyard name alone. Premier Cru: village plus vineyard"
+      ],
+      "a": 3,
+      "why": "Each Grand Cru is an appellation in its own right, so its label replaces the village name with the name of the vineyard (the Climat), such as Montrachet or Romanée-Saint-Vivant. A Premier Cru gives the village first and then the vineyard, for example Chablis Premier Cru Montée de Tonnerre.",
+      "deeper": "Watch out for villages that added a famous Grand Cru to their own name, such as Gevrey-Chambertin or Puligny-Montrachet. A wine labelled simply Gevrey-Chambertin is a village wine, not the Grand Cru Chambertin. Chablis is the exception: its Grand Crus are labelled Chablis Grand Cru followed by the Climat, such as Les Clos.",
+      "source": "https://www.bourgogne-wines.com/wine-and-terroir/decoding-the-aocs/bourgogne-wines-decoding-the-aocs,2467,9263.html"
+    },
+    {
+      "topic": "Loire",
+      "q": "What does 'sur lie' on a bottle of Muscadet tell you?",
+      "opts": [
+        "The wine was matured in contact with its lees before bottling",
+        "The grapes were picked late, so the wine has some sweetness",
+        "The wine was aged in new oak barrels for at least a year",
+        "The wine had a second fermentation in the bottle, just like Champagne"
+      ],
+      "a": 0,
+      "why": "Lees are the spent yeast cells left after fermentation. Leaving Muscadet on them adds richness, complexity and a fuller texture to a wine made from the fairly neutral Melon grape (Melon de Bourgogne). To be labelled sur lie, the wine must spend the winter after the harvest on its fine lees and be bottled straight off them.",
+      "deeper": "Producers decide how long: a few months gives fresh, light wines, while much longer lees ageing, as in the Muscadet crus, gives richer and more complex ones. A faint prickle of carbon dioxide is common in young sur lie wines.",
+      "source": "https://www.muscadet.fr/en/the-nantes-vineyards/muscadet-sur-lie/"
+    },
+    {
+      "topic": "Northern Rhône",
+      "q": "Which white grape may be grown alongside Syrah, and included in the red wine, in Côte-Rôtie?",
+      "opts": [
+        "Marsanne",
+        "Chardonnay",
+        "Viognier",
+        "Grenache Blanc"
+      ],
+      "a": 2,
+      "why": "Côte-Rôtie is the only red cru of the Northern Rhône where Viognier is planted alongside Syrah. Syrah gives the colour and tannin, while a small amount of Viognier adds aromatic lift and elegance.",
+      "deeper": "Hermitage and Crozes-Hermitage may add a little of the white grapes Marsanne and Roussanne to their reds instead, but not Viognier. Côte-Rôtie's vineyards cling to very steep terraced slopes above the river.",
+      "source": "https://www.vins-rhone.com/en/cotes-du-rhone-cru-aoc-cote-rotie"
+    },
+    {
+      "topic": "Alsace",
+      "q": "Alsace lies in north-east France, yet it has one of the lowest rainfalls in the country. Why?",
+      "opts": [
+        "Warm Mediterranean winds blow north up the Rhône valley and dry it out",
+        "The Vosges mountains shelter it from rain-bearing westerly winds",
+        "The Rhine draws moisture out of the soil along the valley",
+        "Its vineyards sit at high altitude, above most rain clouds"
+      ],
+      "a": 1,
+      "why": "Westerly winds drop most of their rain on the western side of the Vosges and arrive in Alsace as dry air. The result is a sunny, dry, semi-continental climate in which grapes can hang on the vine and ripen slowly through a long autumn.",
+      "deeper": "Low rainfall also means less risk of rot, so fewer vineyard treatments are needed. Warm autumn days and cool nights help the grapes build aroma while keeping their acidity.",
+      "source": "https://www.vinsalsace.com/en/terroirs/genie-du-terroir/"
+    },
+    {
+      "topic": "Germany",
+      "q": "A German Riesling is labelled 'Spätlese'. What does that tell you for certain?",
+      "opts": [
+        "The finished wine is always noticeably sweet",
+        "Every berry was affected by noble rot",
+        "The grapes were picked frozen on the vine and pressed while frozen",
+        "The grapes met a higher ripeness minimum than Kabinett, with no sugar added"
+      ],
+      "a": 3,
+      "why": "German Prädikat levels are based on the sugar in the grapes at harvest (the must weight). Spätlese means 'late harvest', and the grapes must reach a higher minimum must weight than Kabinett. Like every Prädikatswein, it may not be enriched with added sugar.",
+      "deeper": "A Spätlese can be fermented dry or keep some sweetness, so check for words such as trocken. Noble rot is the basis of Beerenauslese and Trockenbeerenauslese, and Eiswein is made from grapes picked and pressed frozen, below -7 °C.",
+      "source": "https://www.deutscheweine.de/qualitaetstandard/449/pr%C3%A4dikate"
+    },
+    {
+      "topic": "Austria",
+      "q": "In the Wachau, what does 'Smaragd' on a dry white wine label indicate?",
+      "opts": [
+        "The lightest style, with no more than 11.5% alcohol",
+        "The fullest, ripest style, with at least 12.5% alcohol",
+        "A sweet wine made from grapes affected by noble rot (botrytis)",
+        "A wine aged for at least a year in new oak barrels"
+      ],
+      "a": 1,
+      "why": "The Vinea Wachau growers sort their dry wines into three styles by alcohol, which reflects how ripe the grapes were: Steinfeder (up to 11.5%), Federspiel (up to 12.5%) and Smaragd (at least 12.5%). Smaragd wines, mostly Grüner Veltliner and Riesling, are the most powerful and age-worthy.",
+      "deeper": "Smaragd is named after the emerald-green lizards that live in the dry-stone walls of the terraces. None of the three styles is meant to show oak.",
+      "source": "https://www.vinea-wachau.at/en/translate-to-englisch-vinea-wachau/vinea-wine-styles"
+    },
+    {
+      "topic": "Hungary",
+      "q": "How is Tokaji Aszú made?",
+      "opts": [
+        "Grapes are left to freeze on the vine and pressed while frozen",
+        "Whole bunches are dried on straw mats for months, then fermented dry",
+        "Grape spirit is added mid-fermentation to keep the sweetness",
+        "Botrytised berries, picked one by one, are soaked in must or wine"
+      ],
+      "a": 3,
+      "why": "Aszú berries are individual grapes shrivelled by noble rot and picked one at a time. They are soaked in must, fermenting must or new wine to extract their sugar and flavour, then the mixture is pressed and the wine fermented and aged. A wine needs at least 120 g/l of residual sugar to be called Aszú.",
+      "deeper": "The old puttonyos scale counted how many baskets of aszú berries went into a cask of base wine; 120 g/l is equivalent to the old 5 puttonyos. Furmint is the main grape, often with Hárslevelű.",
+      "source": "https://bor.hu/en/magazine/tokaji-szamorodni-aszu-maslas-forditas-natureszencia-whats-what"
+    },
+    {
+      "topic": "Italy",
+      "q": "What is the minimum ageing for a standard (not Riserva) Barolo DOCG?",
+      "opts": [
+        "About 38 months, at least 18 of them in wood",
+        "12 months, with no requirement for wood",
+        "24 months, all of it in new French oak",
+        "Five years, with at least three of them in bottle"
+      ],
+      "a": 0,
+      "why": "Barolo is 100% Nebbiolo and must age for at least 38 months, counted from 1 November of the harvest year, with at least 18 months of that in wood. That long ageing helps tame Nebbiolo's high tannin and acidity.",
+      "deeper": "The rules don't insist on new or small barrels: large old casks (botti) and barriques are both used. A Barolo Riserva must age for at least 62 months, just over five years.",
+      "source": "https://www.langhevini.it/en/le-denominazioni-tutelate-dal-consorzio/barolo-docg/"
+    },
+    {
+      "topic": "Italy",
+      "q": "Amarone della Valpolicella is a rich, high-alcohol red that is normally dry. Where does its concentration come from?",
+      "opts": [
+        "Noble-rotted grapes picked in several passes through the vineyard",
+        "Grape spirit added during fermentation to raise the alcohol",
+        "Grapes dried for several months after harvest, then fermented",
+        "Juice concentrated by heating it before fermentation"
+      ],
+      "a": 2,
+      "why": "After harvest, healthy bunches of Corvina and other local grapes are laid out to dry in airy lofts for several months (appassimento); the rules do not allow them to be vinified before 1 December, and many producers wait until January or February. As water evaporates, sugar and flavour are concentrated, and fermenting that sugar fully gives a dry wine with high alcohol and a full body.",
+      "deeper": "If fermentation stops early and sweetness remains, the result is Recioto della Valpolicella, the sweet wine Amarone grew out of. Corvina (and/or Corvinone) makes up 45–95% of the blend, with 5–30% Rondinella.",
+      "source": "https://italianwinecentral.com/denomination/amarone-della-valpolicella-docg/"
+    },
+    {
+      "topic": "Spain",
+      "q": "What is the minimum ageing for a red Rioja labelled 'Reserva'?",
+      "opts": [
+        "Two years in total, at least one of them spent in oak barrels",
+        "Three years in total, at least one of them in oak barrels",
+        "Five years in total, at least two of them in oak barrels",
+        "Six months in oak, with no minimum total ageing"
+      ],
+      "a": 1,
+      "why": "A red Rioja Reserva must age for at least 36 months in total, with at least 12 months in oak barrels and at least six months in bottle. These are legal minimums; many traditional producers go well beyond them.",
+      "deeper": "Two years with at least one in oak is Crianza. Five years with at least two in oak, followed by bottle ageing, is Gran Reserva.",
+      "source": "https://riojawine.com/en-gb/the-designation/classification/"
+    },
+    {
+      "topic": "Spain",
+      "q": "Many Albariño vineyards in Rías Baixas are trained high on granite-post pergolas (parras). What is the main reason?",
+      "opts": [
+        "To shade the grapes from fierce summer heat",
+        "To make machine harvesting quicker and cheaper",
+        "To keep the vines warm on frosty spring nights",
+        "To keep leaves and bunches airy and away from damp ground"
+      ],
+      "a": 3,
+      "why": "Rías Baixas has a cool, wet Atlantic climate. Training vines high keeps shoots, leaves and bunches away from the damp soil and lets the grapes hang in moving air, which helps protect against powdery mildew, downy mildew and botrytis.",
+      "deeper": "On higher sites with shallower soils, where humidity builds up less, growers often use vertical trellises (espaldera) instead. Pergolas have to be worked by hand, so they are no help to mechanisation.",
+      "source": "https://doriasbaixas.com/parra-o-espaldera-descubre-que-aportan-los-sistemas-de-conduccion-de-la-do-rias-baixas/"
+    },
+    {
+      "topic": "Australia",
+      "q": "Hunter Valley Semillon is light and lemony when young but turns toasty and honeyed after years in bottle. How is this style made?",
+      "opts": [
+        "Early-picked grapes give a low-alcohol, high-acid, unoaked wine",
+        "Noble-rotted grapes are fermented dry and aged in old casks",
+        "The wine is fermented and then aged for two years in new oak barrels",
+        "The wine is lightly fortified so that it keeps for decades"
+      ],
+      "a": 0,
+      "why": "The Hunter Valley is warm and humid, with a risk of rain at harvest. Picking Semillon early gives low sugar, so the wine is low in alcohol (often around 10–11%), with high acidity and delicate citrus fruit. Traditionally made without any oak, it develops toast and lemon-curd notes as it ages in bottle.",
+      "deeper": "Those toasty aromas can trick blind tasters into guessing oak. Picking early also gets the grapes in before the late-season rains.",
+      "source": "https://www.wineaustralia.com/market-insights/regions-and-varieties/new-south-wales-wines/hunter-valley"
+    },
+    {
+      "topic": "New Zealand",
+      "q": "Central Otago, New Zealand's southernmost wine region, is famous for Pinot Noir. How does its climate differ from most other New Zealand regions?",
+      "opts": [
+        "It is maritime and wet, with mild summers and mild winters",
+        "It is subtropical, with high humidity and heavy summer rain",
+        "Inland among mountains, it has hot summers, cold winters and little rain",
+        "It is cooled every afternoon by fog rolling in from the Pacific"
+      ],
+      "a": 2,
+      "why": "Most New Zealand vineyards are close to the sea and have a maritime climate. Central Otago lies inland and is ringed by mountains, so it has the country's hottest, coldest and driest climate, with long hot summers, crisp winters and marked swings between day and night.",
+      "deeper": "Sub-regions vary: Gibbston is high and cool, while Bannockburn and Bendigo are among the warmest, driest sites and give riper, fuller Pinot Noir.",
+      "source": "https://www.nzwine.com/en/media/story/central-otago/"
+    },
+    {
+      "topic": "South Africa",
+      "q": "Which ocean current cools the coastal vineyards of South Africa's Western Cape?",
+      "opts": [
+        "The Agulhas Current",
+        "The Benguela Current",
+        "The Humboldt Current",
+        "The Gulf Stream"
+      ],
+      "a": 1,
+      "why": "The Benguela Current carries icy water from the Antarctic north along Africa's west coast. It chills the Atlantic and the sea breezes that blow inland, moderating summer heat in the coastal winegrowing areas. It also helps make the north and west drier, so irrigation is essential there.",
+      "deeper": "The south-easterly 'Cape Doctor' wind adds to the cooling and dries the vines, cutting disease. The Agulhas is a warm current on the Indian Ocean side, and the Humboldt plays a similar cooling role for Chile.",
+      "source": "https://www.wosa.co.za/The-Industry/Terroir/Climate/"
+    },
+    {
+      "topic": "Chile",
+      "q": "For about a century, much of Chile's Carmenère was grown and sold as another grape. Which one?",
+      "opts": [
+        "Cabernet Franc",
+        "Malbec",
+        "Merlot",
+        "Syrah"
+      ],
+      "a": 2,
+      "why": "Carmenère came to Chile from Bordeaux in the 19th century and was planted mixed in with Merlot, which it closely resembles. After it had all but disappeared from Bordeaux, it was rediscovered among Chilean 'Merlot' vines about a hundred years later.",
+      "deeper": "Carmenère ripens later than Merlot; picked too early it shows strong green-pepper notes. Chile is now the variety's world stronghold, with Colchagua holding the largest area.",
+      "source": "https://www.winesofchile.org/winegrowing-regions/"
+    },
+    {
+      "topic": "Argentina",
+      "q": "Mendoza is sunny and desert-like, at a fairly low latitude, yet Malbec from the Uco Valley can be fresh and floral. What makes this possible?",
+      "opts": [
+        "Regular summer rain that slows down ripening",
+        "Cold breezes blowing in from the nearby Pacific",
+        "Heavy clay soils that stay cool all summer long",
+        "High altitude, giving cool nights that preserve acidity"
+      ],
+      "a": 3,
+      "why": "Many of Mendoza's best vineyards sit high in the Andes foothills; in the Uco Valley some reach about 1,500 metres. Sunny days followed by cool nights let Malbec ripen fully while keeping its acidity and floral, fresh-fruit character.",
+      "deeper": "The Andes cast a rain shadow, so Mendoza gets little rain and vineyards rely on irrigation. The same mountains block any Pacific influence. Lower, warmer sites in the east give fuller, riper Malbec.",
+      "source": "https://www.wsetglobal.com/knowledge-centre/blog/2021/april/12/understanding-grapes-spotlight-on-malbec"
+    },
+    {
+      "topic": "USA",
+      "q": "Why is Los Carneros, at the southern end of Napa Valley, well suited to Chardonnay and Pinot Noir?",
+      "opts": [
+        "Fog and breezes from San Pablo Bay keep summers cool",
+        "It is the hottest part of the valley, ideal for very ripe styles",
+        "Its high mountain vineyards sit above the fog line",
+        "Heavy summer rain keeps the vines growing vigorously"
+      ],
+      "a": 0,
+      "why": "Carneros sits on San Pablo Bay, the northern arm of San Francisco Bay. Morning fog and marine winds off the bay keep it cool, with summer highs rarely above 27 °C, which suits early-ripening Chardonnay and Pinot Noir.",
+      "deeper": "Further north the valley gets warmer, which is why Cabernet Sauvignon dominates places such as Oakville and Rutherford. Carneros straddles both Napa and Sonoma counties.",
+      "source": "https://napavintners.com/napa_valley/appellations/los-carneros-ava/"
+    },
+    {
+      "topic": "Champagne",
+      "q": "What is the legal minimum time a non-vintage Champagne must mature in the producer's cellars before release?",
+      "opts": [
+        "9 months",
+        "15 months",
+        "3 years",
+        "5 years"
+      ],
+      "a": 1,
+      "why": "After the second fermentation in bottle, non-vintage Champagne must mature in the cellar for at least 15 months before release. Vintage Champagne needs at least three years.",
+      "deeper": "Most houses go well beyond the minimum: two to three years for non-vintage and four to ten for vintage are common. Time on the lees builds the bready, biscuity notes Champagne is known for. Nine months is the minimum for Cava, not Champagne.",
+      "source": "https://www.champagne.fr/en/about-champagne/how-champagne-is-made/maturation"
+    },
+    {
+      "topic": "Champagne",
+      "q": "Which of these Champagne labels indicates the sweetest wine?",
+      "opts": [
+        "Brut Nature",
+        "Extra Brut",
+        "Brut",
+        "Extra Dry"
+      ],
+      "a": 3,
+      "why": "Despite the name, Extra Dry (12–17 g/l of sugar) is sweeter than Brut (under 12 g/l). Extra Brut has 0–6 g/l, and Brut Nature has under 3 g/l with no sugar added.",
+      "deeper": "The scale carries on with Sec (17–32 g/l), Demi-sec (32–50 g/l) and Doux (over 50 g/l). The sweetness comes from the dosage, a mix of wine and sugar added after disgorgement.",
+      "source": "https://www.champagne.fr/en/about-champagne/how-champagne-is-made/dosage"
+    },
+    {
+      "topic": "Prosecco",
+      "q": "Why does the tank (Martinotti or Charmat) method suit Prosecco so well?",
+      "opts": [
+        "The rules demand three years on the lees, which only tanks allow",
+        "Glera is too high in sugar to referment safely in bottle",
+        "A short second fermentation in tank keeps Glera's fresh, fruity aromas",
+        "Only the tank method can make a fully sparkling wine"
+      ],
+      "a": 2,
+      "why": "In the tank method the second fermentation happens in a large sealed tank (autoclave) and the wine is then bottled under pressure. Lees contact is short, so the wine keeps Glera's fresh pear, apple and floral aromas instead of developing bready notes. It is also quicker and cheaper, and the wine is meant to be drunk young.",
+      "deeper": "For Prosecco DOC spumante the rules go further: it must be made by fermentation in a pressure tank (autoclave). Only the lightly sparkling frizzante style may be refermented in bottle. Traditional-method wines such as Champagne and Cava have their second fermentation in the bottle you buy.",
+      "source": "https://www.prosecco.wine/en/prosecco/production-regulation/"
+    },
+    {
+      "topic": "Sherry",
+      "q": "Why is a base wine chosen for Oloroso fortified to about 17% abv?",
+      "opts": [
+        "At that strength flor cannot grow, so the wine ages in contact with oxygen",
+        "It encourages a thick, protective layer of flor to form",
+        "It restarts fermentation so that the wine turns sweet",
+        "It is the legal maximum strength for any Sherry"
+      ],
+      "a": 0,
+      "why": "Flor, the film of yeast that protects Fino and Manzanilla from oxygen, cannot survive at 17%. Fortifying to that strength stops it forming, so the Oloroso ages oxidatively, turning brown and developing nutty, toffee-like notes.",
+      "deeper": "Fino and Manzanilla are fortified to only about 15%, where flor thrives. Oloroso is naturally dry, and evaporation during long ageing can push its strength above 20%.",
+      "source": "https://www.sherry.wine/sherry-wine/dry-sherry-wines/oloroso"
+    },
+    {
+      "topic": "Port",
+      "q": "What does '20 Year Old' on a bottle of tawny Port tell you?",
+      "opts": [
+        "Every drop comes from a single harvest exactly 20 years ago",
+        "It spent two years in wood and then 18 years in bottle",
+        "It is a blend of several years, aged in wood, in a 20-year-old style",
+        "It is a Vintage Port that should be cellared for 20 years"
+      ],
+      "a": 2,
+      "why": "Tawny Ports with an indication of age (the classic ones are 10, 20, 30 and 40 years old; the rules now also allow 50 and 80 years old) are blends of wines from several years, aged in casks or vats. The age shows the style and maturity of the blend, not the exact age of every wine in it.",
+      "deeper": "A tawny from a single harvest is a Colheita, which spends at least seven years in cask. Vintage Port is the opposite: bottled after two to three years and left to mature in bottle.",
+      "source": "https://www.ivdp.pt/en/wines/port-wines/introduction/"
+    },
+    {
+      "topic": "Madeira",
+      "q": "A Madeira labelled with one of the four classic white grapes will usually be driest if the grape named is which?",
+      "opts": [
+        "Verdelho",
+        "Sercial",
+        "Malvasia (Malmsey)",
+        "Boal (Bual)"
+      ],
+      "a": 1,
+      "why": "The four classic grapes run from driest to sweetest: Sercial (extra dry or dry), Verdelho (medium dry), Boal or Bual (medium sweet) and Malvasia or Malmsey (sweet). Sercial is also the lightest, with searing acidity.",
+      "deeper": "Sweetness is set by when grape spirit is added to stop the fermentation: early for Malmsey, late for Sercial. Much everyday Madeira is made from Tinta Negra, which has to state its sweetness level on the label.",
+      "source": "https://madeirawineguide.com/madeira-wine-styles-labels/"
+    }
+  ]
+}
