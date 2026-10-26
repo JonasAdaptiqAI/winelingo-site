@@ -19,6 +19,7 @@
 - [Types of White Wine](https://winelingo.app/learn/types-of-white-wine/)
 - [How Many Glasses of Wine in a Bottle?](https://winelingo.app/learn/how-many-glasses-of-wine-in-a-bottle/)
 - [WSET Level 1 practice questions (free, unofficial quiz)](https://winelingo.app/tests/wset-level-1-practice/)
+- [Wine palate quiz: what wine will I like?](https://winelingo.app/tests/wine-palate-quiz/): eight everyday taste questions (coffee, chocolate, sourness, sweetness, milk, flavour, oak, bubbles) mapped to acidity, sweetness, tannin and body, giving a white and a red wine style with grapes to try. English and Danish.
 - [WSET Level 2 mock exam: 50 free practice questions (unofficial, timed exam mode)](https://winelingo.app/tests/wset-level-2-mock-exam/)
 - [WSET Level 3 practice questions (free, unofficial)](https://winelingo.app/tests/wset-level-3-practice/)
 - [Introductory Sommelier exam practice questions (free, unofficial, Court of Master Sommeliers style)](https://winelingo.app/tests/introductory-sommelier-practice/)
