@@ -43,3 +43,88 @@
 .qz-card p{margin:0;color:var(--muted);font-size:15px}
 .qz-hubwrap{max-width:var(--maxw,1100px);margin:0 auto;padding:8px 20px 56px}
 @media (prefers-reduced-motion:reduce){.qz-fill,.qz-opt{transition:none}}
+
+/* ---------- Hub: three tracks ---------- */
+.tx-jump{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.tx-jump a{font:600 14px/1 var(--font-body);padding:11px 16px;border-radius:var(--r-pill,999px);border:1px solid var(--line);background:var(--paper-raised);color:var(--wine-deep);text-decoration:none;transition:border-color .15s,background .15s}
+.tx-jump a:hover{border-color:var(--wine);text-decoration:none}
+.tx-jump a:first-child{background:var(--wine-deep);border-color:var(--wine-deep);color:#FFF6EC}
+.tx-langs{margin-top:18px}
+.tx-track{padding:64px 0;scroll-margin-top:64px}
+.tx-head{max-width:680px;margin-bottom:28px}
+.tx-head h2{font-size:clamp(28px,3.6vw,40px);color:var(--wine-deep);margin-top:10px}
+.tx-head p:not(.eyebrow){color:var(--sec);font-size:17px;margin:12px 0 0}
+
+/* Exam prep: the candlelit night of the homepage, cream type, gold for the ladder. */
+.tx-prep{background:radial-gradient(120% 90% at 85% 0%,#3B1420 0%,#1A0D0A 55%,#120907 100%);color:#F6EADB}
+.tx-prep .eyebrow{color:#C9A24A}
+.tx-prep .tx-head h2{color:#FFF6EC}
+.tx-prep .tx-head p:not(.eyebrow){color:rgba(246,234,219,.74)}
+.tx-exams{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.tx-exam{position:relative;display:flex;flex-direction:column;gap:8px;padding:22px 20px 18px;border-radius:var(--r-card,16px);border:1px solid rgba(246,234,219,.12);background:rgba(246,234,219,.045);color:#F6EADB;text-decoration:none;transition:border-color .2s,background .2s,transform .2s}
+.tx-exam:hover{border-color:rgba(201,162,74,.7);background:rgba(246,234,219,.07);text-decoration:none;transform:translateY(-2px)}
+.tx-exam.is-mock{background:linear-gradient(160deg,rgba(201,162,74,.16),rgba(246,234,219,.05) 60%);border-color:rgba(201,162,74,.55)}
+.tx-exam.is-mock::before{content:"";position:absolute;inset:-1px;border-radius:inherit;box-shadow:0 24px 60px -28px rgba(201,162,74,.55);pointer-events:none}
+.tx-body{font:700 11px/1 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:#C9A24A}
+.tx-exam h3{font:600 23px/1.15 var(--font-display);color:#FFF6EC;margin:2px 0 0}
+.tx-kind{font:600 14px/1.3 var(--font-body);color:#E8A0B0}
+.tx-real{font-size:13px;line-height:1.45;color:rgba(246,234,219,.6)}
+.tx-go{margin-top:auto;padding-top:12px;display:flex;align-items:center;gap:6px;font:600 15px/1 var(--font-body);color:#FFF6EC}
+.tx-go .tx-best{margin-left:auto}
+.tx-note{margin:22px 0 0;font-size:13px;color:rgba(246,234,219,.5);max-width:680px}
+
+/* Restaurant staff and wine knowledge: light cards with an icon. */
+.tx-track:not(.tx-prep)+.tx-track:not(.tx-prep){padding-top:8px}
+.tx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.tx-card{display:flex;gap:16px;align-items:flex-start;padding:20px;border:1px solid var(--line);border-radius:var(--r-card,16px);background:var(--paper-raised);color:var(--ink);text-decoration:none;transition:border-color .15s,box-shadow .2s,transform .2s}
+.tx-card:hover{border-color:var(--wine);box-shadow:0 14px 34px -24px rgba(59,10,30,.45);text-decoration:none;transform:translateY(-2px)}
+.tx-ico{flex:none;width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--parchment);color:var(--wine)}
+.tx-ico-white-grapes{color:#8A8A2E;background:#F1F0DD}
+.tx-ico-sparkling-wine{color:#9A7A22;background:#F6EDD6}
+.tx-ico-wine-faults{color:#B0463A;background:#F8E6E2}
+.tx-txt{display:flex;flex-direction:column;gap:6px;min-width:0}
+.tx-card h3{font:600 19px/1.2 var(--font-display);color:var(--wine-deep);margin:0}
+.tx-card p{margin:0;color:var(--sec);font-size:15px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tx-meta{display:flex;align-items:center;gap:8px;margin-top:4px;font:500 13px/1 var(--font-body);color:var(--muted)}
+.tx-best{font:700 11px/1 var(--font-body);letter-spacing:.06em;text-transform:uppercase;padding:5px 8px;border-radius:var(--r-pill,999px);background:#EDF0E4;color:#4E5A36}
+.tx-prep .tx-best{background:rgba(201,162,74,.18);color:#E8C877}
+.tx-best[hidden]{display:none}
+@media (max-width:1000px){.tx-exams{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){
+  .tx-track{padding:48px 0}
+  .tx-exams{grid-template-columns:1fr}
+  .tx-exam.is-mock{order:-1}
+  .tx-grid{grid-template-columns:1fr}
+  .tx-jump a{flex:1 1 auto;text-align:center}
+}
+
+/* ---------- Practice exam: mode choice, clock, topics, review ---------- */
+.qz-real{margin:0;color:var(--sec);font-size:15px}
+.qz-modes{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.qz-mode{display:flex;flex-direction:column;gap:6px;text-align:left;padding:18px;border:1px solid var(--line);border-radius:14px;background:var(--paper-raised);color:var(--ink);font:400 14px/1.45 var(--font-body);cursor:pointer;transition:border-color .15s,background .15s}
+.qz-mode strong{font:600 18px/1.2 var(--font-display);color:var(--wine-deep)}
+.qz-mode span{color:var(--sec)}
+.qz-mode:first-child{border-color:var(--wine);background:#FBF1F3}
+.qz-mode:hover{border-color:var(--wine)}
+.qz-mode:focus-visible{outline:2px solid var(--wine);outline-offset:2px}
+@media (max-width:560px){.qz-modes{grid-template-columns:1fr}}
+.qz-clock{font:600 13px/1 var(--font-body);color:var(--wine);white-space:nowrap}
+.qz-topic{font:700 11px/1 var(--font-body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.qz-opt.sel{border-color:var(--wine);background:#FBF1F3;box-shadow:inset 0 0 0 1px var(--wine)}
+.qz-examnav .btn{min-width:120px}
+.qz-examnav .btn[disabled]{opacity:.45;cursor:default}
+.qz-score.is-pass{color:var(--vine-text,#4E5A36)}
+.qz-score.is-fail{color:#B0463A}
+.qz-topics{display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--line);padding-top:16px}
+.qz-topics h3{font:600 19px/1.2 var(--font-display);color:var(--wine-deep);margin:0 0 4px}
+.qz-trow{display:grid;grid-template-columns:minmax(0,1fr) 90px 44px;align-items:center;gap:10px;font-size:14px}
+.qz-trow b{text-align:right;font-variant-numeric:tabular-nums;color:var(--sec);font-weight:600}
+.qz-tbar{height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+.qz-tbar i{display:block;height:100%;background:var(--gold)}
+.qz-review{border-top:1px solid var(--line);padding-top:16px}
+.qz-review summary{cursor:pointer;color:var(--wine);font-weight:600}
+.qz-rv{padding:14px 0;border-bottom:1px solid var(--line);font-size:15px}
+.qz-rv p{margin:4px 0 0}
+.qz-rv-q{font-weight:600;color:var(--ink)}
+.qz-rv-no{color:#B0463A}
+.qz-rv-ok{color:var(--vine-text,#4E5A36)}

@@ -3,6 +3,14 @@
   "title": "WSET Level 1 practice questions",
   "summary": "Unofficial practice questions in the style of the WSET Level 1 Award in Wines: styles, grapes, food pairing and serving.",
   "level": 1,
+  "exam": {
+    "body": "WSET",
+    "name": "Level 1 Award in Wines",
+    "questions": 30,
+    "minutes": 45,
+    "pass": 70,
+    "source": "https://www.wsetglobal.com/media/2914/level-1-award-in-wines-synopsis.pdf"
+  },
   "questions": [
     {
       "q": "Port is a well-known example of which type of wine?",
