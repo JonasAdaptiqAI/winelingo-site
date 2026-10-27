@@ -31,6 +31,15 @@
     document.head.append(js);
   }
 
+  // The way out eases in (CSS .closing), then the dialog really closes.
+  function close() {
+    if (!dlg || !dlg.open || dlg.classList.contains("closing")) return;
+    var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) { dlg.close(); return; }
+    dlg.classList.add("closing");
+    setTimeout(function () { dlg.classList.remove("closing"); dlg.close(); }, 180);
+  }
+
   function open() {
     if (!dlg) {
       dlg = document.createElement("dialog");
@@ -39,8 +48,10 @@
       dlg.innerHTML = '<div class="search-in"><button class="search-close" type="button" aria-label="' + L.close + '">×</button>' +
         '<div id="site-search-ui"></div><p class="search-hint">' + L.hint + "</p></div>";
       document.body.append(dlg);
-      dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
-      dlg.querySelector(".search-close").addEventListener("click", function () { dlg.close(); });
+      dlg.addEventListener("click", function (e) { if (e.target === dlg) close(); });
+      dlg.querySelector(".search-close").addEventListener("click", close);
+      // Esc: let the dialog leave the same way as the close button, eased out.
+      dlg.addEventListener("cancel", function (e) { e.preventDefault(); close(); });
     }
     dlg.showModal();
     load(function () { var i = dlg.querySelector("input"); if (i) i.focus(); });

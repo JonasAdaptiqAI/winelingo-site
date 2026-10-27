@@ -26,7 +26,7 @@ const ORDER = TRACKS.flatMap((t) => t.tests);
 const tpl = readFileSync(join(ROOT, "tools/index.html"), "utf8");
 const cut = (s, a, b) => s.slice(s.indexOf(a), s.indexOf(b) + b.length);
 const header = cut(tpl, '<a class="skip"', "</header>");
-const footer = tpl.slice(tpl.indexOf('<footer class="site-footer">'), tpl.indexOf("</body>"));
+const footer = tpl.slice(tpl.indexOf('<footer class="site-footer"'), tpl.indexOf("</body>"));
 const analytics = cut(tpl, "<!-- growth:analytics -->", "<!-- /growth:analytics -->");
 const fontHref = tpl.match(/<link rel="stylesheet" href="(https:\/\/fonts\.googleapis\.com[^"]+)"/)[1];
 

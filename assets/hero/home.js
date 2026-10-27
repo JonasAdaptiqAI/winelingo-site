@@ -58,7 +58,11 @@
   const seg = (p, a, b) => clamp((p - a) / (b - a));
   const ease = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
   const lerp = (a, b, t) => a + (b - a) * t;
-  const fade = (p, inA, inB, outA, outB) => Math.min(seg(p, inA, inB), outA == null ? 1 : 1 - seg(p, outA, outB));
+  // Nothing real moves at one speed. What arrives eases out (lands fast, then settles);
+  // what leaves eases in (lingers, then goes). Camera moves keep the in-and-out `ease`.
+  const easeOut = t => 1 - Math.pow(1 - t, 3);
+  const easeIn = t => t * t * t;
+  const fade = (p, inA, inB, outA, outB) => Math.min(easeOut(seg(p, inA, inB)), outA == null ? 1 : 1 - easeIn(seg(p, outA, outB)));
 
   // Scroll → story time. The timings below are in story time; each span of it gets scroll in
   // proportion to its weight: 1 where things move, less where a caption is only being read,
@@ -147,7 +151,7 @@
     soft2.style.opacity = Math.min(1, (1 - x12) * 0.5 + lift);
 
     // Beat 3: the screen wakes up in his hand, then lifts out of the photo.
-    const lit = seg(p, 0.355, 0.39);
+    const lit = easeOut(seg(p, 0.355, 0.39));
     const { S, cx, cy } = cam2;
     const inPhoto = QUAD.map(([x, y]) => [(x - cx) * S + vw / 2, (y - cy) * S + vh / 2]);
     const k = mobile ? Math.min(vh * 0.5, 470) / SH : Math.min(vh * 0.78, 700) / SH;
@@ -185,26 +189,26 @@
     });
     checkBtn.classList.toggle('hs-ready', picked);
     lessonBar.style.width = checked ? '30%' : '24%';
-    sheet.style.transform = `translateY(${105 * (1 - ease(seg(p, 0.735, 0.752)))}%)`;
+    sheet.style.transform = `translateY(${105 * (1 - easeOut(seg(p, 0.735, 0.752)))}%)`;
 
     // Like a thumb scrolling the result: from his label photo down to why it tastes like this.
     scanScroll.style.transform = `translateY(${-400 * ease(seg(p, 0.81, 0.86))}px)`;
 
     // Beat 4: back to the table, the payoff.
     const e = seg(p, 0.885, 0.955);
-    endshot.style.opacity = e;
+    endshot.style.opacity = easeOut(e);
     endshot.style.transform = reduce ? 'none' : `scale(${lerp(1.08, 1, ease(e))})`;
     shot2.style.visibility = e >= 1 ? 'hidden' : 'visible';
 
     // Copy.
-    show($('hero'), 1 - seg(p, 0.015, 0.08), -24);
-    show($('hint'), 1 - seg(p, 0, 0.02));
+    show($('hero'), 1 - easeIn(seg(p, 0.015, 0.08)), -24);
+    show($('hint'), 1 - easeIn(seg(p, 0, 0.02)));
     show($('capA'), fade(p, 0.13, 0.17, 0.225, 0.255), 24);
     show($('capB'), fade(p, 0.35, 0.385, 0.435, 0.465), 24);
     show($('sideLearn'), fade(p, 0.545, 0.575, 0.63, 0.65), 24);
     show($('sideLesson'), fade(p, 0.665, 0.69, 0.765, 0.785), 24);
     show($('sideScan'), fade(p, 0.795, 0.82, 0.865, 0.885), 24);
-    show($('end'), seg(p, 0.94, 0.98), 24);
+    show($('end'), easeOut(seg(p, 0.94, 0.98)), 24);
   }
 
   // The picture glides after the scroll: it closes the gap with a 90 ms time constant, measured

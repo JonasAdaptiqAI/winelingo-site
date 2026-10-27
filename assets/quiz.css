@@ -8,7 +8,7 @@
 .qz-level{font:700 11px/1 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--wine)}
 .qz-progress{display:flex;align-items:center;gap:12px;font:500 13px/1 var(--font-body);color:var(--muted);font-variant-numeric:tabular-nums}
 .qz-track{flex:1;height:4px;background:var(--line);border-radius:2px;overflow:hidden}
-.qz-fill{height:100%;background:var(--gold);transition:width .35s ease}
+.qz-fill{height:100%;background:var(--gold);transition:width .5s var(--ease)}
 .qz-card-play{background:var(--paper-raised);border:1px solid var(--line);border-radius:var(--r-card,16px);padding:24px 20px;display:flex;flex-direction:column;gap:16px;scroll-margin-top:90px}
 .qz-q{font:600 22px/1.3 var(--font-display);color:var(--wine-deep);margin:0;text-wrap:balance}
 .qz-opts{display:flex;flex-direction:column;gap:10px}
@@ -61,7 +61,7 @@
 .tx-prep .tx-head h2{color:#FFF6EC}
 .tx-prep .tx-head p:not(.eyebrow){color:rgba(246,234,219,.74)}
 .tx-exams{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.tx-exam{position:relative;display:flex;flex-direction:column;gap:8px;padding:22px 20px 18px;border-radius:var(--r-card,16px);border:1px solid rgba(246,234,219,.12);background:rgba(246,234,219,.045);color:#F6EADB;text-decoration:none;transition:border-color .2s,background .2s,transform .2s}
+.tx-exam{position:relative;display:flex;flex-direction:column;gap:8px;padding:22px 20px 18px;border-radius:var(--r-card,16px);border:1px solid rgba(246,234,219,.12);background:rgba(246,234,219,.045);color:#F6EADB;text-decoration:none;transition:border-color .2s,background .2s,transform .45s var(--spring)}
 .tx-exam:hover{border-color:rgba(201,162,74,.7);background:rgba(246,234,219,.07);text-decoration:none;transform:translateY(-2px)}
 .tx-exam.is-mock{background:linear-gradient(160deg,rgba(201,162,74,.16),rgba(246,234,219,.05) 60%);border-color:rgba(201,162,74,.55)}
 .tx-exam.is-mock::before{content:"";position:absolute;inset:-1px;border-radius:inherit;box-shadow:0 24px 60px -28px rgba(201,162,74,.55);pointer-events:none}
@@ -76,7 +76,7 @@
 /* Restaurant staff and wine knowledge: light cards with an icon. */
 .tx-track:not(.tx-prep)+.tx-track:not(.tx-prep){padding-top:8px}
 .tx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
-.tx-card{display:flex;gap:16px;align-items:flex-start;padding:20px;border:1px solid var(--line);border-radius:var(--r-card,16px);background:var(--paper-raised);color:var(--ink);text-decoration:none;transition:border-color .15s,box-shadow .2s,transform .2s}
+.tx-card{display:flex;gap:16px;align-items:flex-start;padding:20px;border:1px solid var(--line);border-radius:var(--r-card,16px);background:var(--paper-raised);color:var(--ink);text-decoration:none;transition:border-color .15s,box-shadow .2s,transform .45s var(--spring)}
 .tx-card:hover{border-color:var(--wine);box-shadow:0 14px 34px -24px rgba(59,10,30,.45);text-decoration:none;transform:translateY(-2px)}
 .tx-ico{flex:none;width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--parchment);color:var(--wine)}
 .tx-ico-white-grapes{color:#8A8A2E;background:#F1F0DD}
@@ -128,3 +128,28 @@
 .qz-rv-q{font-weight:600;color:var(--ink)}
 .qz-rv-no{color:#B0463A}
 .qz-rv-ok{color:var(--vine-text,#4E5A36)}
+
+/* ---------- Motion: answers spring, the result lands ---------- */
+/* Picking an answer gives a small spring; a right one pops, a wrong one gives a short shake. */
+.qz-opt{transition:border-color .15s,background .15s,transform .4s var(--spring)}
+.qz-opt:active:not([disabled]){transform:scale(.98); transition-duration:.08s}
+.qz-opt.sel{animation:qz-pick .45s var(--spring)}
+.qz-opt.right{animation:qz-pick .5s var(--spring)}
+.qz-opt.wrong{animation:qz-shake .4s var(--ease)}
+.qz-answer{animation:qz-land .45s var(--ease)}
+.qz-card-play[data-state="done"]>*{animation:qz-land .5s var(--ease) both}
+.qz-card-play[data-state="done"]>:nth-child(2){animation-delay:.05s}
+.qz-card-play[data-state="done"]>:nth-child(3){animation-delay:.1s}
+.qz-card-play[data-state="done"]>:nth-child(n+4){animation-delay:.15s}
+.qz-mode{transition:border-color .15s,background .15s,transform .45s var(--spring)}
+.qz-mode:hover{transform:translateY(-2px)}
+.qz-mode:active{transform:scale(.97); transition-duration:.08s}
+.tx-jump a{transition:border-color .15s,background .15s,transform .45s var(--spring)}
+.tx-jump a:active{transform:scale(.96); transition-duration:.08s}
+@keyframes qz-pick{0%{transform:scale(1)}35%{transform:scale(1.03)}100%{transform:scale(1)}}
+@keyframes qz-shake{0%,100%{transform:none}25%{transform:translateX(-5px)}50%{transform:translateX(4px)}75%{transform:translateX(-2px)}}
+@keyframes qz-land{from{opacity:0; transform:translateY(10px)}}
+@media (prefers-reduced-motion:reduce){
+  .qz-opt,.qz-mode,.tx-jump a,.tx-card,.tx-exam{transition:border-color .15s,background .15s}
+  .qz-opt.sel,.qz-opt.right,.qz-opt.wrong,.qz-answer,.qz-card-play[data-state="done"]>*{animation:none}
+}
