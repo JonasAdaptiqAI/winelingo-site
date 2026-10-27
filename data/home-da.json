@@ -60,8 +60,6 @@
     "a lesson.": "en lektion.",
     "Point your camera at the label. Grapes, taste, food, and the story behind the bottle in your hand.": "Ret kameraet mod etiketten. Druer, smag, mad og historien bag flasken i din hånd.",
     "Out now on the App Store": "Ude nu i App Store",
-    "Pour it like you": "Skænk den, som om du",
-    "know it.": "kender den.",
     "Free to download, with Premium for unlimited scans.": "Gratis at hente, med Premium til ubegrænset scanning.",
     "On a computer?": "Sidder du ved en computer?",
     "Point your iPhone camera here": "Ret din iPhones kamera herhen",
@@ -105,7 +103,9 @@
     "here right now": "her lige nu",
     "Site visits": "Besøg på sitet",
     "App downloads": "Downloads af appen",
-    "Visits are counted anonymously, one per browser session: we keep the country and the count, nothing else. No cookies, no IP addresses. Downloads are first-time App Store downloads of Winelingo, from Apple’s daily report.": "Besøg tælles anonymt, ét pr. browsersession: vi gemmer landet og antallet, intet andet. Ingen cookies, ingen IP-adresser. Downloads er første-gangs-downloads af Winelingo fra App Store, fra Apples daglige rapport."
+    "Visits are counted anonymously, one per browser session: we keep the country and the count, nothing else. No cookies, no IP addresses. Downloads are first-time App Store downloads of Winelingo, from Apple’s daily report.": "Besøg tælles anonymt, ét pr. browsersession: vi gemmer landet og antallet, intet andet. Ingen cookies, ingen IP-adresser. Downloads er første-gangs-downloads af Winelingo fra App Store, fra Apples daglige rapport.",
+    "Now you know": "Nu ved du,",
+    "what you’re pouring.": "hvad du skænker."
   },
   "attr": {
     "Winelingo, in a scroll": "Winelingo, fortalt mens du scroller",
@@ -114,15 +114,49 @@
     "Download on the App Store": "Hent i App Store",
     "QR code that opens Winelingo on the App Store": "QR-kode, der åbner Winelingo i App Store",
     "5 out of 5 stars": "5 ud af 5 stjerner",
-    "Highlight on the globe": "Fremhæv på globussen"
+    "Highlight on the globe": "Fremhæv på globussen",
+    "The Winelingo wine page for Château de la Lanterne 2020: red, Cabernet Sauvignon, Merlot and Cabernet Franc from the Médoc, and why it tastes this way": "Winelingos vinside for Château de la Lanterne 2020: rød, Cabernet Sauvignon, Merlot og Cabernet Franc fra Médoc, og hvorfor den smager sådan"
   },
   "html": [
-    ["<span data-vg-unit=\"visitors\" data-one=\"visit\" data-many=\"visits\">visits</span>", "<span data-vg-unit=\"visitors\" data-one=\"besøg\" data-many=\"besøg\">besøg</span>"],
-    ["<p class=\"globe-sub\">from <span data-vg=\"countries\"></span> <span data-vg-unit=\"countries\" data-one=\"country\" data-many=\"countries\">countries</span>", "<p class=\"globe-sub\">fra <span data-vg=\"countries\"></span> <span data-vg-unit=\"countries\" data-one=\"land\" data-many=\"lande\">lande</span>"],
-    ["<span data-vg=\"downloads\"></span> app <span data-vg-unit=\"downloads\" data-one=\"download\" data-many=\"downloads\">downloads</span> from <span data-vg=\"download-countries\"></span> <span data-vg-unit=\"download-countries\" data-one=\"country\" data-many=\"countries\">countries</span>", "<span data-vg=\"downloads\"></span> <span data-vg-unit=\"downloads\" data-one=\"download\" data-many=\"downloads\">downloads</span> af appen fra <span data-vg=\"download-countries\"></span> <span data-vg-unit=\"download-countries\" data-one=\"land\" data-many=\"lande\">lande</span>"],
-    ["href=\"/course/\"", "href=\"/da/vinkursus/\""],
-    ["href=\"/tests/\"", "href=\"/tests/?lang=da\""],
-    ["href=\"/business/\"", "href=\"/business/?lang=da\""],
-    ["href=\"https://winelingo.app/course/\"", "href=\"https://winelingo.app/da/vinkursus/\""]
+    [
+      "<span data-vg-unit=\"visitors\" data-one=\"visit\" data-many=\"visits\">visits</span>",
+      "<span data-vg-unit=\"visitors\" data-one=\"besøg\" data-many=\"besøg\">besøg</span>"
+    ],
+    [
+      "<p class=\"globe-sub\">from <span data-vg=\"countries\"></span> <span data-vg-unit=\"countries\" data-one=\"country\" data-many=\"countries\">countries</span>",
+      "<p class=\"globe-sub\">fra <span data-vg=\"countries\"></span> <span data-vg-unit=\"countries\" data-one=\"land\" data-many=\"lande\">lande</span>"
+    ],
+    [
+      "<span data-vg=\"downloads\"></span> app <span data-vg-unit=\"downloads\" data-one=\"download\" data-many=\"downloads\">downloads</span> from <span data-vg=\"download-countries\"></span> <span data-vg-unit=\"download-countries\" data-one=\"country\" data-many=\"countries\">countries</span>",
+      "<span data-vg=\"downloads\"></span> <span data-vg-unit=\"downloads\" data-one=\"download\" data-many=\"downloads\">downloads</span> af appen fra <span data-vg=\"download-countries\"></span> <span data-vg-unit=\"download-countries\" data-one=\"land\" data-many=\"lande\">lande</span>"
+    ],
+    [
+      "href=\"/course/\"",
+      "href=\"/da/vinkursus/\""
+    ],
+    [
+      "href=\"/tests/\"",
+      "href=\"/tests/?lang=da\""
+    ],
+    [
+      "href=\"/business/\"",
+      "href=\"/business/?lang=da\""
+    ],
+    [
+      "href=\"https://winelingo.app/course/\"",
+      "href=\"https://winelingo.app/da/vinkursus/\""
+    ],
+    [
+      "src=\"/assets/hero/scan-real.jpg\"",
+      "src=\"/assets/hero/scan-real-da.jpg\""
+    ],
+    [
+      "src=\"/assets/hero/scan-real-bar.png\"",
+      "src=\"/assets/hero/scan-real-bar-da.png\""
+    ],
+    [
+      "src=\"/assets/hero/scan-real-status.png\"",
+      "src=\"/assets/hero/scan-real-status-da.png\""
+    ]
   ]
 }

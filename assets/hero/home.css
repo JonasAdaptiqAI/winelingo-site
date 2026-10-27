@@ -38,6 +38,11 @@
     font: 400 16px/1.3 -apple-system, "SF Pro Text", Inter, system-ui, sans-serif; color: #1d1d1f; }
   .hs-story .hs-screen .hs-glass .hs-app { width: 393px; height: 852px; }
   .hs-story .hs-app .hs-scroll { will-change: transform; }
+  .hs-story .hs-real { background: #f9f3e8; }
+  .hs-story .hs-real .hs-realScroll { position: absolute; left: 0; top: 0; width: 100%; will-change: transform; }
+  .hs-story .hs-real .hs-realScroll img { display: block; width: 100%; height: auto; }
+  .hs-story .hs-real .hs-realBar, .hs-story .hs-real .hs-realStatus { position: absolute; left: 0; top: 0; width: 100%; height: auto; pointer-events: none; }
+  .hs-story .hs-real .hs-realBar { opacity: 0; }
   .hs-story .hs-app .hs-hero { position: relative; height: 340px; background: #2a0d18; overflow: hidden; }
   .hs-story .hs-app .hs-shot { position: absolute; left: -1.8px; top: 0; width: 420px; height: 360px; transform: scale(.9444); transform-origin: 0 0; }
   .hs-story .hs-app .hs-shot img { position: absolute; inset: 0; width: 100%; height: 100%; }

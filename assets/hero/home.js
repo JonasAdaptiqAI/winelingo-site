@@ -192,7 +192,14 @@
     sheet.style.transform = `translateY(${105 * (1 - easeOut(seg(p, 0.735, 0.752)))}%)`;
 
     // Like a thumb scrolling the result: from his label photo down to why it tastes like this.
-    scanScroll.style.transform = `translateY(${-400 * ease(seg(p, 0.81, 0.86))}px)`;
+    // The app's own scroll, to the end of the capture: the page is 402 pt wide and the screen 874 pt
+    // tall, so whatever the capture holds past one screen is the scroll (567 pt in English). The
+    // compact header fades in between 195 and 255 pt, where the app's HeroScreen fades its bar.
+    const shot = scanScroll.firstElementChild;
+    const maxScroll = shot.naturalWidth ? shot.naturalHeight / shot.naturalWidth * 402 - 874 : 567;
+    const scrolled = maxScroll * ease(seg(p, 0.81, 0.86));
+    scanScroll.style.transform = `translateY(${-scrolled * 300 / 402}px)`;
+    $('scanBar').style.opacity = clamp((scrolled - 195) / 60);
 
     // Beat 4: back to the table, the payoff.
     const e = seg(p, 0.885, 0.955);
