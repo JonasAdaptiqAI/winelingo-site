@@ -1,0 +1,768 @@
+{
+  "checked": "2026-11-10",
+  "method": "App Store figures (rating, ratings count, version, last update) come from Apple's public lookup API for the US storefront on the checked date. In-app purchase prices are read from each app's US App Store page. Features reflect what each company's own listing or website describes; no competitor app was installed or tested. Ratings are rounded to one decimal.",
+  "apps": [
+    {
+      "id": "vivino",
+      "name": "Vivino",
+      "maker": "Vivino ApS",
+      "what_it_is": "A wine app built around scanning labels, community ratings and reviews, and buying wine from merchants inside the app.",
+      "best_for": "People who want a crowd rating for a bottle in front of them and a place to buy wine from the same app.",
+      "platforms": [
+        "iPhone",
+        "Android",
+        "Web"
+      ],
+      "price": {
+        "free_tier": "Free to download. The App Store description lists label scanning, ratings and reviews, a personal wine journal, a cellar and in-app buying without marking them as paid.",
+        "paid": "Vivino Premium. The US App Store lists 'Vivino Premium' in-app purchases at $4.99, $5.99, $47.90, $49.99 and $57.00 (the listing does not say which are monthly and which are yearly). vivino.com/premium lists the Premium benefits as the Wine List scanner, unlimited 'Sommelier' AI chat and free shipping at a lower minimum spend.",
+        "source": "https://apps.apple.com/us/app/vivino-drink-the-right-wine/id414461255"
+      },
+      "features": {
+        "label_scan": true,
+        "wine_list_scan": true,
+        "ratings_reviews": true,
+        "buy_wine_in_app": true,
+        "cellar_tracking": true,
+        "structured_lessons_or_course": false,
+        "quizzes_or_games": false,
+        "tasting_journal": true,
+        "food_pairing": true
+      },
+      "feature_notes": {
+        "wine_list_scan": "Listed as a Vivino Premium (paid) benefit on vivino.com/premium ('Wine List scanner ... it'll reveal the star rating for every wine on the list'). The App Store description lists 'Scan full restaurant wine lists to quickly spot the best bottles for your taste' among the features without saying it is paid (both re-checked 10 November 2026).",
+        "food_pairing": "Food pairings are shown per wine after a label scan, and you can search by dish (App Store description). It is not a separate pairing tool.",
+        "buy_wine_in_app": "Sold through a marketplace of 'over 500 shoppable merchants' (App Store description). Availability depends on country."
+      },
+      "scale": "Vivino states 'over 70 million wine lovers', '16 million wines', '245,000 wineries' and 'over 500 shoppable merchants' (US App Store description, November 2026).",
+      "app_store": {
+        "url": "https://apps.apple.com/us/app/vivino-drink-the-right-wine/id414461255",
+        "rating": 4.8,
+        "ratings_count": 140897,
+        "last_updated": "2026-11-09",
+        "version": "2026.45.1"
+      },
+      "limits_or_tradeoffs": [
+        "No structured lessons, courses or quizzes are described in Vivino's App Store listing; it describes the app as helping you 'discover, choose, and buy the right wine' (source: https://apps.apple.com/us/app/vivino-drink-the-right-wine/id414461255).",
+        "The restaurant wine list scanner is listed as a Premium (paid) benefit (source: https://www.vivino.com/en/premium).",
+        "Wine is sold inside the app through partner merchants, so the app is both a rating tool and a shop (source: https://apps.apple.com/us/app/vivino-drink-the-right-wine/id414461255)."
+      ],
+      "sources": [
+        "https://itunes.apple.com/lookup?id=414461255&country=us",
+        "https://apps.apple.com/us/app/vivino-drink-the-right-wine/id414461255",
+        "https://www.vivino.com/en/premium",
+        "https://www.vivino.com/legal/premium-subscription-terms",
+        "https://play.google.com/store/apps/details?id=vivino.web.app&hl=en_US&gl=US"
+      ],
+      "unverified": [
+        "Which of the five listed Premium price points is the current US monthly price and which is the current US yearly price. vivino.com/premium showed no price (it was served for Denmark), and the Premium terms say fees are shown at purchase.",
+        "Whether the new Shelf Scanner (in the November 2026 release notes) is free or Premium.",
+        "Whether the free tier has a limit on 'Sommelier' AI chat (Premium is described as 'Unlimited Sommelier', which implies a free limit but does not state it).",
+        "Vivino's website quotes '4.8 in App Store, 548K Ratings'; that appears to be a worldwide figure. The 140,897 here is the US storefront count from Apple's API."
+      ],
+      "short": {
+        "best": "A crowd rating for the bottle in front of you, and buying wine in the same app",
+        "free": "Label scans, ratings and reviews, a journal and a cellar",
+        "paid": "Vivino Premium, sold in the app from $4.99 (the US App Store lists several price points)",
+        "notes": {
+          "wine_list_scan": "Premium",
+          "food_pairing": "Shown per wine",
+          "buy_wine_in_app": "Through partner merchants"
+        },
+        "scale": "Vivino states over 70 million users and 16 million wines"
+      }
+    },
+    {
+      "id": "delectable",
+      "name": "Delectable",
+      "maker": "Delectable, Inc. (App Store seller). Owned by Vinous: Vinous founder Antonio Galloni acquired Delectable and its sister app Banquet in December 2016, and delectable.com carries the footer '©2026 Vinous Group LLC'.",
+      "what_it_is": "A label-scanning wine journal with a social feed where you follow sommeliers, winemakers and critics.",
+      "best_for": "People who want to keep a photo journal of bottles and follow what wine professionals are drinking.",
+      "platforms": [
+        "iPhone",
+        "Android",
+        "Web"
+      ],
+      "price": {
+        "free_tier": "Free, with ads. The App Store description says 'Scan an unlimited number of wines for free'.",
+        "paid": "Delectable Premium $5.99/month (Vinous reviews and ratings, priority label transcription, no ads, profile badge); Delectable Ad Free $1.99/month. Prices as stated in the US App Store description and in-app purchase list.",
+        "source": "https://apps.apple.com/us/app/delectable-scan-rate-wine/id512106648"
+      },
+      "features": {
+        "label_scan": true,
+        "wine_list_scan": false,
+        "ratings_reviews": true,
+        "buy_wine_in_app": true,
+        "cellar_tracking": false,
+        "structured_lessons_or_course": false,
+        "quizzes_or_games": false,
+        "tasting_journal": true,
+        "food_pairing": false
+      },
+      "feature_notes": {
+        "buy_wine_in_app": "The App Store description says 'Buy wine right from your phone and we'll deliver it to your doorstep'. That text belongs to a listing last updated in September 2021 and was not tested; delectable.com points to a separate shopping app, Banquet.",
+        "ratings_reviews": "Community ratings are free; integrated Vinous critic reviews require Delectable Premium."
+      },
+      "scale": "No current user figure on delectable.com. At the December 2016 acquisition the announcement said Delectable 'has been downloaded over a million times and has over 120,000 monthly loyal, unique users' (2016 figure). Google Play shows 500K+ downloads.",
+      "app_store": {
+        "url": "https://apps.apple.com/us/app/delectable-scan-rate-wine/id512106648",
+        "rating": 4.7,
+        "ratings_count": 26018,
+        "last_updated": "2021-09-14",
+        "version": "5.9.5"
+      },
+      "limits_or_tradeoffs": [
+        "The iPhone app was last updated on 14 September 2021 (version 5.9.5, release note: 'Facebook login fix') (source: https://itunes.apple.com/lookup?id=512106648&country=us).",
+        "The Android app was last updated on 15 April 2024 (source: https://play.google.com/store/apps/details?id=com.delectable.mobile&hl=en_US&gl=US).",
+        "No lessons, courses, quizzes, cellar tracking or wine-list scanning are described in the listing (source: https://apps.apple.com/us/app/delectable-scan-rate-wine/id512106648).",
+        "The free version shows ads; removing them costs $1.99/month or comes with Premium at $5.99/month (source: https://apps.apple.com/us/app/delectable-scan-rate-wine/id512106648)."
+      ],
+      "sources": [
+        "https://itunes.apple.com/lookup?id=512106648&country=us",
+        "https://apps.apple.com/us/app/delectable-scan-rate-wine/id512106648",
+        "https://delectable.com",
+        "https://play.google.com/store/apps/details?id=com.delectable.mobile&hl=en_US&gl=US",
+        "https://appdevelopermagazine.com/vinous-acquires-delectable-and-banquet-wine-apps/",
+        "https://www.vinography.com/2016/12/wine_app_wars_continue"
+      ],
+      "unverified": [
+        "Whether in-app wine buying still works today (not tested; the listing text is from 2021).",
+        "Whether label recognition still works reliably on current iOS versions (not tested).",
+        "No statement from Vinous itself about the app's future was found. The website delectable.com is active, with editorial items dated as late as September 2026, even though the iPhone app has not been updated since 2021."
+      ],
+      "short": {
+        "best": "A photo journal of bottles, and following what wine professionals drink",
+        "free": "Unlimited label scans, with ads",
+        "paid": "Premium $5.99 a month; ad-free $1.99 a month",
+        "notes": {
+          "ratings_reviews": "Critic reviews need Premium",
+          "buy_wine_in_app": "Described in a listing from 2021"
+        }
+      }
+    },
+    {
+      "id": "cellartracker",
+      "name": "CellarTracker",
+      "maker": "CellarTracker LLC",
+      "what_it_is": "A cellar management tool and community tasting-note database for tracking the bottles you own, what they are worth and when to drink them.",
+      "best_for": "Collectors who want to manage an inventory of bottles, with values and drinking windows.",
+      "platforms": [
+        "iPhone",
+        "Android",
+        "Web"
+      ],
+      "price": {
+        "free_tier": "Free users can track their cellar inventory and see community tasting notes and community ratings; data you have entered stays accessible without a subscription (CellarTracker support page, last updated 15 October 2026).",
+        "paid": "Subscription priced by cellar size. Annual prices (USD) on CellarTracker's support page: $40 (up to 100 bottles), $60 (up to 250), $80 (up to 500), $160 (up to 1,000), $320 (up to 2,500), $500 (2,500+). The US App Store lists in-app purchases for the same tiers at $4.99, $5.99, $7.99, $14.99, $29.99 and $44.99. Subscription unlocks wine prices, automatic cellar valuation, enhanced drinking windows, AI features and more.",
+        "source": "https://support.cellartracker.com/article/25-voluntary-payment"
+      },
+      "features": {
+        "label_scan": true,
+        "wine_list_scan": true,
+        "ratings_reviews": true,
+        "buy_wine_in_app": false,
+        "cellar_tracking": true,
+        "structured_lessons_or_course": false,
+        "quizzes_or_games": false,
+        "tasting_journal": true,
+        "food_pairing": true
+      },
+      "feature_notes": {
+        "wine_list_scan": "Documented in the support article 'Scanning a Wine List' (last updated 6 November 2026). On 10 November 2026 the article title no longer carried a BETA tag, but the article is filed under the help centre's 'Beta' category ('Information on new beta products and experiences', https://support.cellartracker.com/category/72-beta) and its URL still ends in '-beta'. The article says a scan shows 'ratings, average value, food pairing, and wines recommended for you'. It does not say whether a subscription is needed.",
+        "buy_wine_in_app": "Shows Wine-Searcher price data from merchants; it does not sell wine itself.",
+        "food_pairing": "Described as an AI feature ('expert-grade food pairing recommendations'); the support page lists AI features as requiring a subscription.",
+        "ratings_reviews": "Community notes and ratings are free. The listing also cites 2M professional reviews."
+      },
+      "scale": "CellarTracker states 'over 8.8 million users', 'over 13.6 million wine ratings and reviews', 'over 5 million unique wines' and 'over 193 million bottles tracked' (US App Store description, November 2026).",
+      "app_store": {
+        "url": "https://apps.apple.com/us/app/cellartracker-1-wine-tracker/id6446102275",
+        "rating": 4.9,
+        "ratings_count": 13575,
+        "last_updated": "2026-09-28",
+        "version": "2.24.0"
+      },
+      "limits_or_tradeoffs": [
+        "No structured lessons, courses or quizzes are described; the app is described as a 'wine cellar management app and wine tracker' (source: https://apps.apple.com/us/app/cellartracker-1-wine-tracker/id6446102275).",
+        "Wine prices, automatic cellar valuation, enhanced drinking windows and AI features require a subscription (source: https://support.cellartracker.com/article/25-voluntary-payment).",
+        "The subscription price rises with cellar size, from $40 a year (up to 100 bottles) to $500 a year (2,500+ bottles) (source: https://support.cellartracker.com/article/25-voluntary-payment).",
+        "Wine-list scanning is filed under the 'Beta' category of CellarTracker's own help centre (sources: https://support.cellartracker.com/category/72-beta and https://support.cellartracker.com/article/111-scanning-a-wine-menu-beta)."
+      ],
+      "sources": [
+        "https://itunes.apple.com/lookup?id=6446102275&country=us",
+        "https://apps.apple.com/us/app/cellartracker-1-wine-tracker/id6446102275",
+        "https://support.cellartracker.com/article/25-voluntary-payment",
+        "https://support.cellartracker.com/article/111-scanning-a-wine-menu-beta",
+        "https://play.google.com/store/apps/details?id=com.cellartracker.appV2&hl=en_US&gl=US"
+      ],
+      "unverified": [
+        "The billing period of the App Store in-app purchases ($4.99 to $44.99). They look like monthly prices (the support page says the Apple trial 'converts to a paid monthly subscription'), but the store listing does not label them.",
+        "Whether wine-list scanning is free or subscription-only.",
+        "cellartracker.com itself blocked automated reading, so website claims were taken from the support site and the App Store listing only.",
+        "An older app, 'CT Legacy Version' (id 893759800), is also still on the App Store; it was not reviewed here."
+      ],
+      "short": {
+        "best": "Collectors managing a cellar, with values and drinking windows",
+        "free": "Cellar inventory, community notes and ratings",
+        "paid": "A subscription priced by cellar size, $40 to $500 a year",
+        "notes": {
+          "wine_list_scan": "Listed under Beta",
+          "food_pairing": "An AI feature",
+          "buy_wine_in_app": "Shows merchant prices"
+        }
+      }
+    },
+    {
+      "id": "wine-searcher",
+      "name": "Wine-Searcher",
+      "maker": "Wine-Searcher Limited",
+      "what_it_is": "A price-comparison search engine for wine, beer and spirits that shows which merchants stock a bottle and what they charge.",
+      "best_for": "People who already know which bottle they want and need to find where to buy it and what a fair price is.",
+      "platforms": [
+        "iPhone",
+        "Android",
+        "Web"
+      ],
+      "price": {
+        "free_tier": "The App Store description says 'Wine-Searcher is free to use': label scan, search, prices, critic scores, your own ratings and reviews.",
+        "paid": "Wine-Searcher PRO. The US App Store lists two 'Wine-Searcher PRO' in-app purchases, $10.99 and $98.99 (billing period not labelled in the listing). wine-searcher.com/get-pro advertises 'US$ 8.25/mo (billed annually)' with a 7-day free trial.",
+        "source": "https://apps.apple.com/us/app/wine-searcher/id599836194"
+      },
+      "features": {
+        "label_scan": true,
+        "wine_list_scan": false,
+        "ratings_reviews": true,
+        "buy_wine_in_app": false,
+        "cellar_tracking": true,
+        "structured_lessons_or_course": false,
+        "quizzes_or_games": false,
+        "tasting_journal": true,
+        "food_pairing": false
+      },
+      "feature_notes": {
+        "buy_wine_in_app": "It compares prices and sends you to the merchant: 'Buy wines online through the merchant's site' (App Store description).",
+        "cellar_tracking": "A 'My Cellar' feature is named in the version 7.21 release notes (October 2026).",
+        "structured_lessons_or_course": "It includes an encyclopedia of producers, regions, appellations and grapes. That is reference material, not lessons.",
+        "tasting_journal": "You can rate wines, add tasting notes and build wishlists (Google Play description).",
+        "ratings_reviews": "Critic scores plus user ratings."
+      },
+      "scale": "Wine-Searcher states '8 million wine offers from 55,000 merchants' (US App Store description, November 2026). Google Play shows 1M+ downloads.",
+      "app_store": {
+        "url": "https://apps.apple.com/us/app/wine-searcher/id599836194",
+        "rating": 4.8,
+        "ratings_count": 17178,
+        "last_updated": "2026-10-28",
+        "version": "7.21"
+      },
+      "limits_or_tradeoffs": [
+        "No structured lessons, courses or quizzes are described; the listing describes the app as a way to 'find, compare and buy wines' (source: https://apps.apple.com/us/app/wine-searcher/id599836194).",
+        "It does not sell wine itself; purchases happen on each merchant's own site (source: https://apps.apple.com/us/app/wine-searcher/id599836194).",
+        "Free accounts see prices only from part of the merchant list; PRO subscribers see prices from all listed stores (source: https://www.wine-searcher.com/get-pro; see 'unverified')."
+      ],
+      "sources": [
+        "https://itunes.apple.com/lookup?id=599836194&country=us",
+        "https://apps.apple.com/us/app/wine-searcher/id599836194",
+        "https://play.google.com/store/apps/details?id=com.winesearcher&hl=en_US&gl=US",
+        "https://www.wine-searcher.com/get-pro"
+      ],
+      "unverified": [
+        "wine-searcher.com blocks automated reading (HTTP 403), so the PRO page could not be opened directly. The website price ('US$ 8.25/mo (billed annually)', 7-day trial) and the statement 'Free accounts only see prices from shops with a sponsored list' come from a search engine's index of wine-searcher.com/get-pro. Open that page by hand before publishing either claim.",
+        "Which App Store price is monthly and which is yearly ($10.99 and $98.99 are consistent with monthly and annual, but the listing does not label them).",
+        "Whether the app shows food pairing suggestions per wine. None are described in the store listings, so the flag is false.",
+        "Whether the app can scan a restaurant wine list. None is described, so the flag is false."
+      ],
+      "short": {
+        "best": "Finding where to buy a bottle you already know, and what a fair price is",
+        "free": "Label scan, search, prices and critic scores",
+        "paid": "Wine-Searcher PRO, listed at $10.99 and $98.99 in the US App Store",
+        "notes": {
+          "buy_wine_in_app": "Sends you to the merchant",
+          "structured_lessons_or_course": "A wine encyclopedia, not lessons"
+        },
+        "scale": "Wine-Searcher states 8 million offers from 55,000 merchants"
+      }
+    },
+    {
+      "id": "hello-vino",
+      "name": "Hello Vino",
+      "maker": "Hello Vino, LLC (App Store seller; the website footer says Hello Vino, Inc.)",
+      "what_it_is": "A question-and-answer wine assistant that recommends a type of wine for a meal, an occasion or a taste preference.",
+      "best_for": "People who want a quick suggestion for what kind of wine to buy for a given dish or occasion, and are fine with an app that has not been updated since 2017.",
+      "platforms": [
+        "iPhone"
+      ],
+      "price": {
+        "free_tier": "Free. No in-app purchases are listed on the US App Store page.",
+        "paid": null,
+        "source": "https://apps.apple.com/us/app/hello-vino-wine-assistant/id318447346"
+      },
+      "features": {
+        "label_scan": true,
+        "wine_list_scan": false,
+        "ratings_reviews": true,
+        "buy_wine_in_app": false,
+        "cellar_tracking": false,
+        "structured_lessons_or_course": false,
+        "quizzes_or_games": false,
+        "tasting_journal": true,
+        "food_pairing": true
+      },
+      "feature_notes": {
+        "structured_lessons_or_course": "It has a 'Wine Guide' dictionary of wine varieties with audio pronunciations. That is reference material, not lessons.",
+        "tasting_journal": "A 'My Wines' notebook for saving scanned wines with personal notes and ratings.",
+        "buy_wine_in_app": "The App Store description only describes recommending what to buy. The version 5.0.11 release notes (September 2017) also announce a 'Hello Vino Wine Club, where you can have personalized wine shipments delivered every month' paid with Apple Pay (source: https://itunes.apple.com/lookup?id=318447346&country=us, re-checked 10 November 2026). Whether the club still runs was not tested, so the flag stays false.",
+        "platforms": "The website still shows an Android link, but it leads to a Google Play page that returns 'Not Found'."
+      },
+      "scale": "The App Store description cites 'our community of more than 2 million Hello Vino app users'. That text is from a listing last updated in September 2017.",
+      "app_store": {
+        "url": "https://apps.apple.com/us/app/hello-vino-wine-assistant/id318447346",
+        "rating": 4.6,
+        "ratings_count": 6718,
+        "last_updated": "2017-09-15",
+        "version": "5.0.11"
+      },
+      "limits_or_tradeoffs": [
+        "The iPhone app was last updated on 15 September 2017 (version 5.0.11) (source: https://itunes.apple.com/lookup?id=318447346&country=us).",
+        "The Android link on hellovino.com leads to a Google Play listing (com.hellovino.android) that returned 'Not Found' on 10 November 2026 (source: http://www.hellovino.com/android).",
+        "No lessons, courses, quizzes, cellar tracking or wine-list scanning are described (source: https://apps.apple.com/us/app/hello-vino-wine-assistant/id318447346)."
+      ],
+      "sources": [
+        "https://itunes.apple.com/lookup?id=318447346&country=us",
+        "https://apps.apple.com/us/app/hello-vino-wine-assistant/id318447346",
+        "http://www.hellovino.com/",
+        "http://www.hellovino.com/android"
+      ],
+      "unverified": [
+        "Whether the app still runs properly on current iOS versions, and whether its label scanner and recommendation service still respond (not installed or tested).",
+        "Whether the company is still operating. The website is live and its copyright meta tag reads 2009-2026, but no dated news or recent activity was found.",
+        "The 'more than 2 million users' figure is at least nine years old."
+      ],
+      "short": {
+        "best": "A quick idea of what kind of wine to buy for a dish or an occasion",
+        "free": "Free",
+        "paid": "No in-app purchases listed",
+        "notes": {}
+      }
+    },
+    {
+      "id": "decanter-know-your-wine",
+      "name": "Decanter Know Your Wine",
+      "maker": "Feed Your Elephant Limited (App Store seller), built in partnership with Decanter magazine",
+      "what_it_is": "A question-based wine-learning app that uses spaced repetition to teach regions, grapes, winemaking and wine law in short modules.",
+      "best_for": "Wine students and enthusiasts who want to memorise wine facts by region and topic through repeated short question sessions.",
+      "platforms": [
+        "iPhone"
+      ],
+      "price": {
+        "free_tier": "Free to download with 'over 10 free modules' (App Store description).",
+        "paid": "Annual Content Subscription $19.99; individual modules $0.99 each (US App Store in-app purchase list).",
+        "source": "https://apps.apple.com/us/app/decanter-know-your-wine/id1356107397"
+      },
+      "features": {
+        "label_scan": false,
+        "wine_list_scan": false,
+        "ratings_reviews": false,
+        "buy_wine_in_app": false,
+        "cellar_tracking": false,
+        "structured_lessons_or_course": true,
+        "quizzes_or_games": true,
+        "tasting_journal": false,
+        "food_pairing": false
+      },
+      "feature_notes": {
+        "structured_lessons_or_course": "Learning is delivered as modules of questions with spaced repetition ('microlearning'), not as written or illustrated lessons. The listing says: 'This is not a quiz app (although it has quizzes!)'.",
+        "platforms": "Decanter's own article (February 2023) says the app is on iOS and Android, but the Google Play link in that article (com.feedyourelephant.decanter) returned 'Not Found' on 10 November 2026."
+      },
+      "scale": "Feed Your Elephant's case study (undated; page footer © 2022) says the app launched in May 2018, averaged 1,250 downloads a month and had grown to 'nearly 1,500 questions across 82 modules'.",
+      "app_store": {
+        "url": "https://apps.apple.com/us/app/decanter-know-your-wine/id1356107397",
+        "rating": 4.6,
+        "ratings_count": 564,
+        "last_updated": "2024-09-26",
+        "version": "9.085"
+      },
+      "limits_or_tradeoffs": [
+        "The iPhone app was last updated on 26 September 2024 (version 9.085) (source: https://itunes.apple.com/lookup?id=1356107397&country=us).",
+        "The Android listing that Decanter links to is no longer on Google Play (source: https://www.decanter.com/learn/decanter-launches-wine-learning-app-389078/).",
+        "It is a learning-only app: no label scanning, cellar, journal or food pairing tool is described (source: https://apps.apple.com/us/app/decanter-know-your-wine/id1356107397).",
+        "Only 'over 10' modules are free; the rest need the $19.99 annual subscription or $0.99 per module (source: https://apps.apple.com/us/app/decanter-know-your-wine/id1356107397)."
+      ],
+      "sources": [
+        "https://itunes.apple.com/lookup?id=1356107397&country=us",
+        "https://apps.apple.com/us/app/decanter-know-your-wine/id1356107397",
+        "https://www.decanter.com/learn/decanter-launches-wine-learning-app-389078/",
+        "https://www.feedyourelephant.com/customers/decanter"
+      ],
+      "unverified": [
+        "The current number of modules and questions (the '82 modules' figure is from an undated case study).",
+        "Whether Decanter still promotes or supports the app; the most recent Decanter article found is from February 2023.",
+        "Whether the Android app was removed permanently or is listed under a different package name; a Google Play search did not find it."
+      ],
+      "short": {
+        "best": "Memorising wine facts in short, repeated question sessions",
+        "free": "Over 10 free modules",
+        "paid": "$19.99 a year, or $0.99 a module",
+        "notes": {
+          "structured_lessons_or_course": "Modules of questions"
+        }
+      }
+    },
+    {
+      "id": "somewine",
+      "name": "SomeWine",
+      "maker": "Bas Voets (App Store seller). The website footer says 'A product of Webframer'.",
+      "what_it_is": "A wine app that combines a label scanner, a cellar and tasting journal, and a free wine course with short lessons and quizzes. Its App Store name is 'SomeWine: Wine Cellar Scanner'.",
+      "best_for": "iPhone users who want scanning, a cellar and beginner lessons in one app and do not mind that the app is new.",
+      "platforms": [
+        "iPhone"
+      ],
+      "price": {
+        "free_tier": "Free plan: wine course, label scan limited to 10 scans in total, a cellar of up to 3 bottles, Taste DNA, food pairings, journal and social feed (somewine.app/pricing).",
+        "paid": "SomeWine Pro. The US App Store lists 'SomeWine Pro Monthly' at $4.99 and 'SomeWine Pro' at $34.99. somewine.app/pricing lists €4.99 per month or €39.99 per year. Pro adds unlimited scans, the full cellar, menu (wine list) scanner, receipt scan and guided tasting.",
+        "source": "https://apps.apple.com/us/app/somewine-wine-cellar-scanner/id6782953895"
+      },
+      "features": {
+        "label_scan": true,
+        "wine_list_scan": true,
+        "ratings_reviews": false,
+        "buy_wine_in_app": false,
+        "cellar_tracking": true,
+        "structured_lessons_or_course": true,
+        "quizzes_or_games": true,
+        "tasting_journal": true,
+        "food_pairing": true
+      },
+      "feature_notes": {
+        "label_scan": "10 free scans in total; unlimited on Pro.",
+        "wine_list_scan": "Pro only ('Menu scanner' on the pricing page; 'Premium adds ... restaurant wine list scanning' in the App Store description).",
+        "cellar_tracking": "Up to 3 bottles on the free plan; unlimited on Pro.",
+        "ratings_reviews": "You rate your own bottles and can follow friends in a social feed. No public crowd-rating database is described.",
+        "structured_lessons_or_course": "The website states 32 lessons and 10 levels; the lessons can also be read free on somewine.app.",
+        "platforms": "The app is iPhone and iPad only. The website also hosts the lessons, a pairing tool and grape and winery pages."
+      },
+      "scale": "The website states 32 lessons, 10 levels and 203 winery profiles. No user numbers are published. The app was first released on 17 July 2026 and has no ratings on the US App Store yet.",
+      "app_store": {
+        "url": "https://apps.apple.com/us/app/somewine-wine-cellar-scanner/id6782953895",
+        "rating": null,
+        "ratings_count": 0,
+        "last_updated": "2026-11-07",
+        "version": "2.6.1"
+      },
+      "limits_or_tradeoffs": [
+        "Available on iOS only; the website says 'Available on iOS' and links only to the App Store (source: https://somewine.app/pricing).",
+        "The free plan is limited to 10 label scans in total and a cellar of 3 bottles (source: https://somewine.app/pricing).",
+        "Wine-list scanning requires Pro (source: https://somewine.app/pricing).",
+        "The app is new: first released 17 July 2026, with 0 ratings on the US App Store on the checked date (source: https://itunes.apple.com/lookup?id=6782953895&country=us)."
+      ],
+      "sources": [
+        "https://itunes.apple.com/lookup?id=6782953895&country=us",
+        "https://apps.apple.com/us/app/somewine-wine-cellar-scanner/id6782953895",
+        "https://somewine.app",
+        "https://somewine.app/pricing"
+      ],
+      "unverified": [
+        "Whether the $34.99 'SomeWine Pro' in-app purchase is the yearly plan (likely, but the store listing does not label it). The website's yearly price is €39.99, so the US and euro prices differ.",
+        "How many lessons are in the app today (32 is the website's figure).",
+        "The relationship between the seller (Bas Voets) and 'Webframer'."
+      ],
+      "short": {
+        "best": "Scanning, a cellar and beginner lessons in one new app",
+        "free": "The wine course, 10 label scans in total and a 3-bottle cellar",
+        "paid": "Pro $4.99 a month; a $34.99 purchase is also listed",
+        "notes": {
+          "label_scan": "10 free in total",
+          "wine_list_scan": "Pro",
+          "cellar_tracking": "3 bottles free",
+          "structured_lessons_or_course": "32 lessons"
+        }
+      }
+    },
+    {
+      "id": "wine-folly-plus",
+      "name": "Wine Folly Plus",
+      "maker": "Wine Folly Inc",
+      "what_it_is": "The app for Wine Folly's paid membership: interactive wine-region maps, infographics and a weekly featured grape, region and story.",
+      "best_for": "Visual learners and exam students who want detailed, zoomable wine maps and reference charts.",
+      "platforms": [
+        "iPhone",
+        "Android",
+        "Web"
+      ],
+      "price": {
+        "free_tier": "The listing says 'Start free, then unlock the complete Wine Folly+ collection'. What is free is not itemised.",
+        "paid": "Wine Folly Plus: $99.99 in-app purchase on the US App Store. winefolly.com/plus lists '$8.25/mo, billed annually' ('just $99/year') with a money-back guarantee.",
+        "source": "https://winefolly.com/plus"
+      },
+      "features": {
+        "label_scan": false,
+        "wine_list_scan": false,
+        "ratings_reviews": false,
+        "buy_wine_in_app": false,
+        "cellar_tracking": false,
+        "structured_lessons_or_course": false,
+        "quizzes_or_games": false,
+        "tasting_journal": false,
+        "food_pairing": true
+      },
+      "feature_notes": {
+        "structured_lessons_or_course": "The app contains 32 interactive maps, 'more than a dozen' infographics and weekly articles. Wine Folly's courses (Wine 101, Wine 201 and regional courses) are sold separately on winefolly.com.",
+        "quizzes_or_games": "No quizzes are described. Map layers can be switched off 'to challenge your memory'.",
+        "food_pairing": "As a visual food and wine pairing guide (infographic), not a per-bottle pairing tool."
+      },
+      "scale": "winefolly.com/plus states '20,000+ students' and 'Trusted Worldwide Since 2011'. The app itself was first released on 5 August 2026 and has 4 ratings on the US App Store.",
+      "app_store": {
+        "url": "https://apps.apple.com/us/app/wine-folly-plus/id6763405098",
+        "rating": 4.8,
+        "ratings_count": 4,
+        "last_updated": "2026-10-07",
+        "version": "1.0.6"
+      },
+      "limits_or_tradeoffs": [
+        "The app is reference material (maps, infographics, weekly articles) rather than a step-by-step lesson path with quizzes (source: https://apps.apple.com/us/app/wine-folly-plus/id6763405098).",
+        "Wine Folly's courses are sold separately on its website; course bundles are listed at $499.99 and up (source: https://winefolly.com/courses/).",
+        "The full collection costs $99.99 a year (source: https://winefolly.com/plus).",
+        "The app is new: first released 5 August 2026, with 4 US ratings on the checked date (source: https://itunes.apple.com/lookup?id=6763405098&country=us)."
+      ],
+      "sources": [
+        "https://itunes.apple.com/lookup?id=6763405098&country=us",
+        "https://apps.apple.com/us/app/wine-folly-plus/id6763405098",
+        "https://winefolly.com/plus",
+        "https://winefolly.com/courses/",
+        "https://play.google.com/store/apps/details?id=com.winefolly.app&hl=en_US&gl=US"
+      ],
+      "unverified": [
+        "Exactly which maps or guides are free before paying.",
+        "Whether Wine Folly+ membership includes any of the paid courses (the pages read do not say so).",
+        "Google Play shows the Android app ('Wine Folly') with in-app purchases of '$14.99 - $35.99 per item', which does not match the $99.99 on the App Store. The reason was not found.",
+        "The rating is 4.75 from only 4 ratings, so it says little."
+      ],
+      "short": {
+        "best": "Visual learners who want detailed, zoomable wine maps and charts",
+        "free": "Starts free; what is free is not itemised",
+        "paid": "$99.99 a year",
+        "notes": {
+          "food_pairing": "An infographic guide"
+        }
+      }
+    },
+    {
+      "id": "cork-dork",
+      "name": "Cork Dork Wine Study",
+      "maker": "Paul Kavanagh (independent developer)",
+      "what_it_is": "A flashcard and map-quiz study app for wine exams (WSET Level 2 and 3, CMS Introductory and Certified) built on spaced repetition.",
+      "best_for": "People studying for a WSET or Court of Master Sommeliers exam who want flashcards and map quizzes.",
+      "platforms": [
+        "iPhone",
+        "Android"
+      ],
+      "price": {
+        "free_tier": "Free users can study Argentina, Austria, Fortified, Italy, Portugal and Spain (App Store description).",
+        "paid": "Cork Dork Wine Study Pro unlocks all categories. The US App Store lists 'Monthly Subscription' at $7.99 and $9.99 and 'Annual Subscription' at $49.99 and $59.99 (two price points for each).",
+        "source": "https://apps.apple.com/us/app/cork-dork-wine-study/id1564201450"
+      },
+      "features": {
+        "label_scan": false,
+        "wine_list_scan": false,
+        "ratings_reviews": false,
+        "buy_wine_in_app": false,
+        "cellar_tracking": false,
+        "structured_lessons_or_course": false,
+        "quizzes_or_games": true,
+        "tasting_journal": false,
+        "food_pairing": false
+      },
+      "feature_notes": {
+        "structured_lessons_or_course": "Content is organised as flashcard decks and review notes by region and by two difficulty levels, studied with spaced repetition. No lesson-by-lesson course is described.",
+        "quizzes_or_games": "Map quizzes, matching quizzes, practice questions and word games ('Winedle', 'Wordsearch')."
+      },
+      "scale": "corkdork.io states 'Trusted by 1,000+ paying customers in 70+ countries'. The App Store description cites 2500+ flashcards, 40+ wine maps and 30+ interactive map quizzes. Google Play shows 10K+ downloads.",
+      "app_store": {
+        "url": "https://apps.apple.com/us/app/cork-dork-wine-study/id1564201450",
+        "rating": 4.9,
+        "ratings_count": 364,
+        "last_updated": "2026-09-15",
+        "version": "2.0"
+      },
+      "limits_or_tradeoffs": [
+        "It is built for exam preparation (WSET 2, WSET 3, CMS Intro, CMS Certified) rather than for beginners choosing a bottle (source: https://apps.apple.com/us/app/cork-dork-wine-study/id1564201450).",
+        "Only six categories are free; all other regions need the Pro subscription (source: https://apps.apple.com/us/app/cork-dork-wine-study/id1564201450).",
+        "No label scanning, cellar, journal or food pairing is described (source: https://apps.apple.com/us/app/cork-dork-wine-study/id1564201450).",
+        "The site states it is not affiliated with or endorsed by WSET or CMS (source: https://www.corkdork.io/)."
+      ],
+      "sources": [
+        "https://itunes.apple.com/lookup?id=1564201450&country=us",
+        "https://apps.apple.com/us/app/cork-dork-wine-study/id1564201450",
+        "https://www.corkdork.io/",
+        "https://play.google.com/store/apps/details?id=io.corkdork.cd&hl=en_US&gl=US"
+      ],
+      "unverified": [
+        "Which of the two listed monthly prices ($7.99, $9.99) and two annual prices ($49.99, $59.99) a new US subscriber is charged today. The website gives no prices.",
+        "The flashcard count: the website says 2,300+, the App Store description says 2500+."
+      ],
+      "short": {
+        "best": "WSET and sommelier exam students who want flashcards and map quizzes",
+        "free": "Six study categories",
+        "paid": "Pro, from $7.99 a month or $49.99 a year",
+        "notes": {
+          "quizzes_or_games": "Flashcards and map quizzes"
+        }
+      }
+    },
+    {
+      "id": "true-wine",
+      "name": "True Wine",
+      "maker": "True Wine, Inc.",
+      "what_it_is": "A gamified wine-learning app with bite-sized lessons, challenges and an interactive map of wine regions.",
+      "best_for": "Learners who like short game-style lessons and an interactive region map, and accept that the app has not been updated since March 2025.",
+      "platforms": [
+        "iPhone"
+      ],
+      "price": {
+        "free_tier": "Free with ads. The listing describes Premium as removing ads and adding unlimited challenge retries and exclusive premium courses, which implies the free version has ads and limited retries.",
+        "paid": "True Wine Monthly Subscription $9.99; True Wine Yearly Subscription $59.99 (US App Store). The listing offers a 3-day free trial.",
+        "source": "https://apps.apple.com/us/app/true-wine/id1481005735"
+      },
+      "features": {
+        "label_scan": false,
+        "wine_list_scan": false,
+        "ratings_reviews": false,
+        "buy_wine_in_app": false,
+        "cellar_tracking": false,
+        "structured_lessons_or_course": true,
+        "quizzes_or_games": true,
+        "tasting_journal": false,
+        "food_pairing": false
+      },
+      "feature_notes": {
+        "structured_lessons_or_course": "Lessons and region courses (the latest release notes add a course on Gattinara). Some courses are Premium only.",
+        "food_pairing": "Pairing is taught as lesson content ('pair like a pro'); no pairing tool is described."
+      },
+      "scale": "The listing says the app is 'trusted by wine lovers and professionals in 50+ countries' and that its map covers '2,000+ wine regions'. No user count is published.",
+      "app_store": {
+        "url": "https://apps.apple.com/us/app/true-wine/id1481005735",
+        "rating": 4.8,
+        "ratings_count": 557,
+        "last_updated": "2025-03-03",
+        "version": "1.14.0"
+      },
+      "limits_or_tradeoffs": [
+        "The app was last updated on 3 March 2025 (version 1.14.0) (source: https://itunes.apple.com/lookup?id=1481005735&country=us).",
+        "The developer website listed on the App Store, truewine.io, showed 'This website is not available' on 10 November 2026 (source: https://truewine.io/).",
+        "The free version carries ads; removing them requires Premium at $9.99 a month or $59.99 a year (source: https://apps.apple.com/us/app/true-wine/id1481005735).",
+        "No label scanning, cellar or journal is described (source: https://apps.apple.com/us/app/true-wine/id1481005735)."
+      ],
+      "sources": [
+        "https://itunes.apple.com/lookup?id=1481005735&country=us",
+        "https://apps.apple.com/us/app/true-wine/id1481005735",
+        "https://truewine.io/"
+      ],
+      "unverified": [
+        "Whether an Android version exists. A Google Play search found none, and the website was down, so it could not be confirmed either way.",
+        "Whether the app is still maintained. It is still downloadable on the US App Store, but the website was not being served on the checked date. This may be temporary.",
+        "How much content is free and how many lessons the app contains."
+      ],
+      "short": {
+        "best": "Short game-style lessons and an interactive region map",
+        "free": "Free, with ads",
+        "paid": "$9.99 a month or $59.99 a year",
+        "notes": {}
+      }
+    },
+    {
+      "id": "wine-master",
+      "name": "Wine Master: Learn Wine",
+      "maker": "Assaf El Al (independent developer)",
+      "what_it_is": "A free wine course app with illustrated short lessons, quizzes, flashcards, a wine atlas and WSET Level 1 to 3 practice exams.",
+      "best_for": "Learners who want a free, structured wine course or WSET exam practice and do not need label recognition.",
+      "platforms": [
+        "iPhone",
+        "Android",
+        "Web"
+      ],
+      "price": {
+        "free_tier": "Everything. The listing says: 'Free, with no ads, tracking or in-app purchases.'",
+        "paid": null,
+        "source": "https://apps.apple.com/us/app/wine-master-learn-wine/id6812080826"
+      },
+      "features": {
+        "label_scan": false,
+        "wine_list_scan": false,
+        "ratings_reviews": false,
+        "buy_wine_in_app": false,
+        "cellar_tracking": true,
+        "structured_lessons_or_course": true,
+        "quizzes_or_games": true,
+        "tasting_journal": true,
+        "food_pairing": true
+      },
+      "feature_notes": {
+        "label_scan": "The iPhone listing says 'The camera does not identify wines or scan labels.' The Android listing and website describe a label scan that reads the words on the label on the phone and 'does not look the wine up in a database'.",
+        "structured_lessons_or_course": "'28 islands and more than 460 short lessons' (App Store description).",
+        "cellar_tracking": "A simple list of your bottles with tasting notes and optional photos.",
+        "tasting_journal": "A guided tasting flow saves your tasting notes to the cellar.",
+        "food_pairing": "Described on the website and in the Google Play listing ('Food pairing covers 44 dishes'); not mentioned in the iPhone listing."
+      },
+      "scale": "The App Store description states 28 islands, 460+ lessons and 14 languages; the Google Play listing adds 'more than 4,700 questions'. No user numbers are published. First released 18 September 2026; no ratings on the US App Store yet; Google Play shows 10+ downloads.",
+      "app_store": {
+        "url": "https://apps.apple.com/us/app/wine-master-learn-wine/id6812080826",
+        "rating": null,
+        "ratings_count": 0,
+        "last_updated": "2026-11-03",
+        "version": "1.5.0"
+      },
+      "limits_or_tradeoffs": [
+        "The iPhone app does not identify wines or scan labels (source: https://apps.apple.com/us/app/wine-master-learn-wine/id6812080826).",
+        "The app is new: first released 18 September 2026, with 0 ratings on the US App Store on the checked date (source: https://itunes.apple.com/lookup?id=6812080826&country=us).",
+        "It is an independent study aid and states it is not affiliated with or endorsed by WSET and does not award a qualification (source: https://apps.apple.com/us/app/wine-master-learn-wine/id6812080826).",
+        "No community ratings, wine-list scanning or wine buying is described (source: https://apps.apple.com/us/app/wine-master-learn-wine/id6812080826)."
+      ],
+      "sources": [
+        "https://itunes.apple.com/lookup?id=6812080826&country=us",
+        "https://apps.apple.com/us/app/wine-master-learn-wine/id6812080826",
+        "https://master-wine-gamma.vercel.app/landing.html",
+        "https://play.google.com/store/apps/details?id=com.masterwine.app&hl=en_US&gl=US"
+      ],
+      "unverified": [
+        "Whether the iPhone app has the label-text scan and food pairing that the Android listing describes; the two store listings differ.",
+        "Who is behind the app beyond the developer name, and how the content was written or checked.",
+        "Whether it will stay free."
+      ],
+      "short": {
+        "best": "A free, structured wine course and WSET exam practice",
+        "free": "Everything: the listing says no ads and no in-app purchases",
+        "paid": "Nothing to buy",
+        "notes": {
+          "structured_lessons_or_course": "460+ lessons",
+          "label_scan": "Not on iPhone, its listing says; the Android listing describes reading a label's text"
+        }
+      }
+    }
+  ],
+  "also_found_not_included": [
+    {
+      "name": "Vinoh: AI Wine Journal & Learn",
+      "app_store_id": 6738624509,
+      "note": "Wine journal with six guided 'Wine Journeys' (lessons, quizzes, tasting assignments) and an AI companion. US App Store: version 1.4.0, updated 2026-09-28, 0 ratings; in-app purchases 'Plus' $4.99 and $44.99. iPhone only (website links only to the App Store)."
+    },
+    {
+      "name": "Winemind: Wine Quiz & Course",
+      "app_store_id": 6743863754,
+      "note": "Micro-courses and quizzes in six languages. US App Store: version 2.0.0, updated 2026-10-03, 1 rating. Also on Google Play."
+    },
+    {
+      "name": "Duo Vino: Learn Wine",
+      "app_store_id": 6798583856,
+      "note": "Lessons, flashcards and WSET Level 2 mock exams. US App Store: version 1.0.1, updated 2026-09-15, 0 ratings. Also on Google Play."
+    },
+    {
+      "name": "Wine Trainer: WSET & Sommelier",
+      "app_store_id": 478266987,
+      "note": "4,700+ flashcard questions, one-time purchase after a 48-hour trial. US App Store: version 4.0, updated 2026-09-14, 3 ratings."
+    },
+    {
+      "name": "WSET Tasting Notes - Wine",
+      "app_store_id": 1291862104,
+      "note": "WSET's own app is a tasting-note tool, not a course. US App Store: version 3.1, updated 2025-01-06, rating 2.9 from 17 ratings."
+    }
+  ],
+  "_short": "`short` on each app is Winelingo's own wording of the facts above, cut to fit a table cell. Change the facts first, then the short text."
+}

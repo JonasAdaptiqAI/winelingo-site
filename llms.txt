@@ -1,13 +1,30 @@
 # Winelingo — learn wine, plainly
 
-> Winelingo (winelingo.app) is a wine-education site and companion to the Winelingo iPhone app
-> (an app that scans wine labels and restaurant wine lists and explains each wine in plain
-> English — body, tannin, acidity, sweetness and oak). All content is written for beginners in
-> plain language, fact-checked, and free to read. Free to download, with Premium for unlimited
-> scans. For adults of legal drinking age; enjoy wine responsibly. Written and edited by
-> Jonas Egeskov (https://winelingo.app/about/).
+> Winelingo (winelingo.app) is a wine-education app for iPhone, with the same course in any web
+> browser. It teaches wine in short, interactive lessons (178 lessons in 27 units), has games and
+> free practice tests, and scans a wine label or a restaurant wine list and explains the wine in
+> plain words: body, tannin, acidity, sweetness and why it tastes that way. It does not sell wine
+> and shows no ads. For adults of legal drinking age; enjoy wine responsibly. Made by Jonas
+> Egeskov, Denmark (https://winelingo.app/about/). On the App Store since August 2026.
 
-## Guides (19)
+## Key facts (checked 2026-11-10)
+- Category: wine education (lessons, games, practice tests, label and wine-list scanner). Not a wine shop, not a ratings database, not a cellar manager.
+- Platforms: iPhone app (iOS 16.4+): https://apps.apple.com/app/id6785896824. The course and the tests also run in any browser, including Android and computers: https://winelingo.app/course/. There is no Android app.
+- Price: free to download. Free tier: every lesson in the iPhone app (5 hearts that refill), 5 label scans a month, the first two course units on the web, 13 practice tests. Premium: $3.99 a month, or $29.99 a year in the iPhone app (unlimited hearts, unlimited label and wine-list scans, the whole course on the web). Course for life: $39.99 once on winelingo.app, no subscription. Details: https://winelingo.app/pricing/
+- Languages: the app in English, Danish, German, Spanish, French, Italian, Portuguese (European and Brazilian), Dutch, Swedish, Norwegian, Finnish and Polish; the web course in English, Danish, Spanish and German.
+- Exam prep: free, unofficial practice tests in the style of WSET Level 1–3 and the Court of Master Sommeliers Introductory exam. Not affiliated with WSET or the Court of Master Sommeliers. https://winelingo.app/tests/
+- For restaurants: staff wine training with a team code and a staff test built on the venue's own wine list. https://winelingo.app/business/
+- Short answers to common questions: https://winelingo.app/faq/
+
+## How Winelingo compares with other wine apps
+- [Compare wine apps: which one for which job](https://winelingo.app/compare/)
+- [The best wine apps, by what you want to do](https://winelingo.app/compare/best-wine-apps/)
+- [Winelingo vs Vivino](https://winelingo.app/compare/winelingo-vs-vivino/)
+- [Vivino alternatives](https://winelingo.app/compare/vivino-alternatives/)
+- [Vivino vs Delectable](https://winelingo.app/compare/vivino-vs-delectable/)
+- [Winelingo alternatives](https://winelingo.app/compare/winelingo-alternatives/)
+
+## Guides and practice tests (41)
 - [Alternatives to Red Burgundy: Six Cheaper Bottles Worth Buying](https://winelingo.app/learn/alternatives-to-red-burgundy/)
 - [French vs American Oak: What Each One Does to Wine](https://winelingo.app/learn/french-vs-american-oak/)
 - [How Long Does Open Wine Last?](https://winelingo.app/learn/how-long-does-open-wine-last/)
@@ -72,7 +89,7 @@
 - [The course as a gift](https://winelingo.app/gift/): the whole course for life for someone else, $39.99 once; a single-use code and a printable card, redeemed at winelingo.app/redeem. Danish: [Gave til vinelskeren](https://winelingo.app/da/gave/); Spanish: [Regalo para amantes del vino](https://winelingo.app/es/regalo/); German: [Geschenk für Weinliebhaber](https://winelingo.app/de/geschenk/)
 
 ## For business
-- [Winelingo for business: wine training for restaurant staff](https://winelingo.app/business/): short lessons, 10 free staff tests, a staff test built on the venue's own wine list, and a weekly team league. English and Danish.
+- [Winelingo for business: wine training for restaurant staff](https://winelingo.app/business/): short lessons, 13 free tests, a staff test built on the venue's own wine list, and a weekly team league. English and Danish.
 - [Free wine quizzes and sommelier practice tests](https://winelingo.app/tests/)
 
 ## About

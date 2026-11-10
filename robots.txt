@@ -1,4 +1,19 @@
 User-agent: *
 Allow: /
 
+# AI assistants and AI search are welcome to read and quote this site.
+# A plain summary for them is at /llms.txt, and the short answers are at /faq/.
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+Allow: /
+
 Sitemap: https://winelingo.app/sitemap.xml
