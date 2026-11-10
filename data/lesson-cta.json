@@ -195,6 +195,11 @@
         "Learn the wine in your glass",
         "Scan any label and Winelingo explains the wine in plain words, with a short lesson to go with it. Free to download on the App Store."
       ]
+    },
+    "tests/wine-palate-quiz/index.html": {
+      "lesson": "90c04205-6472-4ae2-acc3-8353d4d61ae8",
+      "hook": "Got your result? Now train the palate behind it. This short lesson shows how anyone learns to taste, one glass at a time.",
+      "before": "<section class=\"wrap\"><div class=\"appband\""
     }
   },
   "anchors": [

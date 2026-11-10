@@ -1,0 +1,79 @@
+/* Winelingo palate quiz. Builds on quiz.css (.qz-*) and the tokens in site.css. */
+.pq-wrap{max-width:760px;margin:0 auto;padding:8px 20px 40px;display:flex;flex-direction:column;gap:18px}
+.pq-wrap .qz-card-play{padding:28px 24px}
+.pq-p{margin:0;color:var(--sec);font-size:16px;line-height:1.6}
+.pq-start{align-self:flex-start}
+.pq-opts.four{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pq-opt{min-height:56px;align-items:center;font-size:16px}
+.pq-opt.picked{border-color:var(--wine);background:#F6E9ED}
+.pq-why{margin:0;font-size:14px;line-height:1.55;color:var(--muted)}
+.pq-why strong{color:var(--wine);font-weight:600}
+.pq-back{align-self:flex-start;background:none;border:0;padding:4px 0;font:600 14px/1 var(--font-body);color:var(--muted);cursor:pointer}
+.pq-back:hover{color:var(--wine)}
+.pq-back:focus-visible,.pq-match a:focus-visible{outline:2px solid var(--wine);outline-offset:2px}
+.pq-head{font:600 30px/1.15 var(--font-display);color:var(--wine-deep);margin:0;text-wrap:balance}
+.pq-head:focus,.qz-q:focus{outline:none}
+.pq-dials{display:flex;flex-direction:column;gap:10px;padding:16px 18px;border-radius:12px;background:var(--parchment)}
+.pq-dial{display:grid;grid-template-columns:96px auto 1fr;align-items:center;gap:14px;font-size:15px}
+.pq-dn{font-weight:600;color:var(--ink)}
+.pq-pips{display:flex;gap:4px}
+.pq-pips span{width:22px;height:8px;border-radius:4px;background:#E3D6CB}
+.pq-pips span.on{background:var(--wine)}
+.pq-dw{color:var(--sec)}
+.pq-matches{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pq-match{border:1px solid var(--line);border-radius:var(--r-card);padding:20px 18px;background:var(--paper);display:flex;flex-direction:column;gap:10px}
+.pq-match h3{font:600 22px/1.2 var(--font-display);color:var(--wine-deep);margin:0}
+.pq-type{margin:0;display:flex;align-items:center;gap:8px;font:700 11px/1 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--wine)}
+.pq-dot{width:12px;height:12px;border-radius:50%;flex:none}
+.pq-white .pq-dot{background:var(--white-wine);box-shadow:inset 0 0 0 1px rgba(59,10,30,.18)}
+.pq-red .pq-dot{background:var(--wine)}
+.pq-desc{margin:0;font-size:15px;line-height:1.55;color:var(--ink)}
+.pq-sub{margin:4px 0 0;font:700 11px/1 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.pq-grapes{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px;font-size:15px}
+.pq-grapes a{color:var(--wine);font-weight:600}
+.pq-grapes span{color:var(--sec)}
+.pq-label{margin:0;font-size:14px;line-height:1.5;color:var(--sec);border-top:1px solid var(--line);padding-top:10px}
+.pq-label strong{color:var(--ink)}
+.pq-runner{margin:0;font-size:13px;color:var(--muted)}
+.pq-extras{display:flex;flex-direction:column;gap:8px}
+.pq-extras p{margin:0;font-size:15px;line-height:1.5}
+.pq-extras a{font-weight:600;color:var(--wine)}
+.pq-honest{margin:0;font-size:14px;font-style:italic;color:var(--muted)}
+.pq-fine{font-size:13px}
+.pq-guide{padding-top:12px}
+.pq-styles td:first-child{font-weight:600;color:var(--wine-deep);white-space:nowrap}
+/* Motion, with the site's tokens: cards arrive easing out, leave easing in, a pick springs.
+   The result lands in a short stagger and its dials fill from the left. All off for reduced motion. */
+@media (prefers-reduced-motion:no-preference){
+  .pq-intro,.pq-q{animation:qz-land .4s var(--ease) both}
+  .pq-q.leaving{opacity:0;transform:translateY(-8px);transition:opacity .16s var(--ease-in),transform .16s var(--ease-in)}
+  .pq-opt.picked{animation:qz-pick .45s var(--spring)}
+  .pq-result>*{animation:qz-land .5s var(--ease) both}
+  .pq-result>:nth-child(2){animation-delay:.05s}
+  .pq-result>:nth-child(3){animation-delay:.1s}
+  .pq-result>:nth-child(4){animation-delay:.18s}
+  .pq-result>:nth-child(n+5){animation-delay:.24s}
+  .pq-pips span.on{transform-origin:left;animation:pq-fill .5s var(--ease) .15s both}
+  .pq-pips span.on:nth-child(2){animation-delay:.2s}
+  .pq-pips span.on:nth-child(3){animation-delay:.25s}
+  .pq-pips span.on:nth-child(4){animation-delay:.3s}
+  .pq-pips span.on:nth-child(5){animation-delay:.35s}
+}
+@keyframes pq-fill{from{transform:scaleX(0)}}
+@media (max-width:640px){
+  .pq-wrap{padding:4px 16px 32px}
+  .pq-wrap .qz-card-play{padding:22px 18px}
+  .pq-opts.four,.pq-matches{grid-template-columns:1fr}
+  .pq-head{font-size:26px}
+  .pq-dial{grid-template-columns:82px auto;row-gap:2px}
+  .pq-dw{grid-column:1 / -1;font-size:14px}
+  /* The style table stacks into one card per style, so the grape links never hide off-screen. */
+  table.data.pq-styles{min-width:0}
+  .pq-styles thead{display:none}
+  .pq-styles tbody,.pq-styles tr,.pq-styles td{display:block}
+  .pq-styles tr{padding:14px 16px;border-bottom:1px solid var(--line)}
+  .pq-styles tbody tr:last-child{border-bottom:none}
+  table.data.pq-styles td{padding:2px 0;border:0}
+  .pq-styles td:first-child{white-space:normal;font:600 18px/1.3 var(--font-display);margin-bottom:2px}
+  .pq-styles td:nth-child(2){color:var(--sec)}
+}
