@@ -1,0 +1,51 @@
+{
+  "_about": "Winelingo's own facts, in the same shape as the apps in competitors.json. Checked 2026-11-10 against the live App Store listing (version 1.5.4), /pricing/ and /course/. Update this file when the app or the prices change, then run scripts/build-compare.mjs.",
+  "id": "winelingo",
+  "name": "Winelingo",
+  "maker": "Jonas Egeskov (Egeskov Engineering), Denmark",
+  "what_it_is": "A wine-education app: short lessons and games that teach wine, plus a scanner that explains the bottle or wine list in front of you.",
+  "best_for": "Learning wine from scratch, a few minutes a day, and understanding the bottle in front of you",
+  "platforms": [
+    "iPhone",
+    "Web (the course and the tests, in any browser)"
+  ],
+  "price": {
+    "free_tier": "Every lesson in the iPhone app (with 5 hearts that refill), 5 label scans a month, the first two course units on the web, and all the practice tests",
+    "paid": "Premium $3.99 a month, or $29.99 a year in the iPhone app (unlimited hearts and scans, the whole course on the web); or the course for life for $39.99 once on winelingo.app",
+    "source": "https://winelingo.app/pricing/"
+  },
+  "features": {
+    "label_scan": true,
+    "wine_list_scan": true,
+    "ratings_reviews": false,
+    "buy_wine_in_app": false,
+    "cellar_tracking": false,
+    "structured_lessons_or_course": true,
+    "quizzes_or_games": true,
+    "tasting_journal": true,
+    "food_pairing": true
+  },
+  "feature_notes": {
+    "structured_lessons_or_course": "178 lessons in 27 units",
+    "label_scan": "5 a month free",
+    "wine_list_scan": "Premium",
+    "ratings_reviews": "An average once 3 people have rated a wine; no public reviews",
+    "quizzes_or_games": "Plus practice tests for WSET and sommelier exams"
+  },
+  "scale": "Launched August 2026; a new, small app",
+  "app_store": {
+    "url": "https://apps.apple.com/app/id6785896824",
+    "version": "1.5.4",
+    "last_updated": "2026-11-06"
+  },
+  "limits_or_tradeoffs": [
+    "No Android app: on Android the course and the tests run in the browser, but scanning needs the iPhone app",
+    "A small wine database compared with apps that have collected ratings for over a decade",
+    "Very few ratings from other users and no public reviews, no prices, no shop and no cellar inventory"
+  ],
+  "sources": [
+    "https://winelingo.app/pricing/",
+    "https://apps.apple.com/app/id6785896824",
+    "https://winelingo.app/course/"
+  ]
+}

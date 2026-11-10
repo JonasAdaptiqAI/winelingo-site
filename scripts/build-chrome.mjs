@@ -13,7 +13,7 @@ import { readFileSync, writeFileSync, readdirSync, statSync } from "node:fs";
 import { join, relative } from "node:path";
 
 const ROOT = new URL("..", import.meta.url).pathname;
-const SKIP = new Set(["node_modules", "docs", "data", "scripts", "assets", "pagefind", ".git"]);
+const SKIP = new Set(["node_modules", "docs", "data", "scripts", "assets", "pagefind", ".git"]);  // everything else is pages, /compare/ and /faq/ included
 
 // Pages under /da/ get the Danish menu and footer; everything else the English one.
 const NAV = {
@@ -77,7 +77,7 @@ const FOOTER = `<footer class="site-footer" data-pagefind-ignore="all">
         <a href="/business/">Staff training</a><a href="/partner/">Redeem a team code</a><a href="mailto:jonsegeskov29@gmail.com?subject=Winelingo%20for%20our%20team">Book a demo</a>
       </div>
       <div class="foot-col"><h3>Company</h3>
-        <a href="/about/">About</a><a href="/pricing/">Pricing</a><a href="/support/">Support</a><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Use</a><a href="mailto:jonsegeskov29@gmail.com">Contact</a>
+        <a href="/about/">About</a><a href="/pricing/">Pricing</a><a href="/faq/">FAQ</a><a href="/compare/">Compare wine apps</a><a href="/support/">Support</a><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Use</a><a href="mailto:jonsegeskov29@gmail.com">Contact</a>
       </div>
     </div>
     <div class="foot-bottom">
@@ -105,7 +105,7 @@ const FOOTER_DA = `<footer class="site-footer" data-pagefind-ignore="all">
         <a href="/business/?lang=da">Personaletræning</a><a href="/partner/">Indløs en holdkode</a><a href="mailto:jonsegeskov29@gmail.com?subject=Winelingo%20til%20vores%20hold">Book en demo</a>
       </div>
       <div class="foot-col"><h3>Winelingo</h3>
-        <a href="/about/" hreflang="en">Om os</a><a href="/pricing/" hreflang="en">Priser</a><a href="/support/" hreflang="en">Hjælp</a><a href="/privacy">Privatlivspolitik</a><a href="/terms">Vilkår</a><a href="mailto:jonsegeskov29@gmail.com">Kontakt</a>
+        <a href="/about/" hreflang="en">Om os</a><a href="/pricing/" hreflang="en">Priser</a><a href="/faq/" hreflang="en">Spørgsmål og svar</a><a href="/compare/" hreflang="en">Sammenlign vinapps</a><a href="/support/" hreflang="en">Hjælp</a><a href="/privacy">Privatlivspolitik</a><a href="/terms">Vilkår</a><a href="mailto:jonsegeskov29@gmail.com">Kontakt</a>
       </div>
     </div>
     <div class="foot-bottom">

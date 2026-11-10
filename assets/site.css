@@ -613,3 +613,29 @@ p.qz-biz{display:block}
   .btn:active,.nav-search:active,.nav-toggle:active{transform:none}
   .search-dialog[open],.search-dialog.closing,.search-dialog[open]::backdrop,.search-dialog.closing::backdrop,.nav-links.open a{animation:none}
 }
+
+/* ---------- Comparison pages and FAQ (scripts/build-compare.mjs) ---------- */
+.cmp-date{margin-top:14px; font-size:13px; color:var(--muted)}
+.cmp-prose h2{margin-top:44px}
+.cmp-prose h3{font-size:20px; color:var(--wine-deep); margin:28px 0 8px}
+.cmp-prose ul{padding-left:20px; margin:12px 0}
+.cmp-prose li{margin:6px 0}
+.cmp-who{font-size:15px; color:var(--sec)}
+.cmp{margin:22px 0 8px}
+.cmp table.data{min-width:560px}
+.cmp table.data td small{display:block; font-size:12.5px; color:var(--muted); font-weight:400; margin-top:2px}
+.cmp-y{color:var(--vine-text); font-weight:700}
+.cmp-n{color:var(--muted)}
+.cmp-u{font-size:13px; color:var(--muted)}
+.cmp-src{font-size:12.5px; color:var(--muted); margin:8px 0 0}
+.cmp-pick{display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin:22px 0}
+.cmp-pick > div{background:var(--paper-raised); border:1px solid var(--line); border-radius:14px; padding:18px 20px}
+.cmp-pick h3{margin:0 0 8px}
+.cmp-pick ul{margin:0; padding-left:18px; font-size:15.5px}
+.cmp-list{list-style:none; padding:0; margin:18px 0; display:grid; gap:12px}
+.cmp-list > li{background:var(--paper-raised); border:1px solid var(--line); border-radius:14px; padding:18px 20px; margin:0}
+.cmp-list h3{margin:0 0 6px}
+.cmp-list p{margin:6px 0 0; font-size:15.5px}
+.cmp-list .cmp-meta{font-size:13.5px; color:var(--muted)}
+.appband .cmp-web{color:rgba(251,247,244,.85); font-size:15px; font-weight:600}
+@media (max-width:640px){ .cmp-pick{grid-template-columns:1fr} }
