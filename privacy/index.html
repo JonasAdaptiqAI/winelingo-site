@@ -88,7 +88,7 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
   <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Privacy Policy</span></nav>
   <p class="eyebrow">Legal</p>
   <h1 data-pagefind-weight="10">Privacy Policy</h1>
-  <p class="deck">Winelingo · Last updated: 11 October 2026</p>
+  <p class="deck">Winelingo · Last updated: 17 November 2026</p>
 </div></section>
 
 <article class="prose legal">
@@ -117,6 +117,15 @@ builds a private taste profile from the wines you rate. The data controller is
 </table></div>
 <p>We do <strong>not</strong> knowingly collect special-category data, and we do not sell your personal data.</p>
 
+<h3 id="website">The website (winelingo.app)</h3>
+<p>The website counts visits without cookies and without anything that identifies you. For each page view our
+statistics tool, Umami, records the page, the site that referred you, your browser and device type, and your country
+(worked out from your IP address, which is not stored). It also records a few anonymous actions: clicks on links to
+the App Store, a lesson or a test; a search being opened; how far down a page you scrolled; and whether the page
+stayed open for 30 seconds or two minutes. We use this only to see which pages are useful. It is not linked to an
+account, not used for advertising and not shared. Separately, we keep our own anonymous count of visits per country
+for the globe on the homepage: the country and the count, nothing else.</p>
+
 <h2>2. Who processes your data</h2>
 <p>We use trusted processors, each bound by their own data-protection terms:</p>
 <div class="table-wrap"><table>
@@ -124,6 +133,7 @@ builds a private taste profile from the wines you rate. The data controller is
   <tr><td>Supabase</td><td>Backend, database and authentication (data hosting).</td></tr>
   <tr><td>Anthropic</td><td>AI vision + text: reads your scanned photos and writes the tasting explanations. Photos are sent for processing to return your result.</td></tr>
   <tr><td>PostHog</td><td>Privacy-focused product analytics.</td></tr>
+  <tr><td>Umami</td><td>Cookieless visitor statistics for the website winelingo.app, hosted in the EU (see “The website” below).</td></tr>
   <tr><td>Expo</td><td>Delivers push notifications to your device, if you allow them.</td></tr>
   <tr><td>RevenueCat</td><td>Manages subscription status and receipts for purchases (Apple, or Paddle on our website, processes the payment).</td></tr>
   <tr><td>Paddle</td><td>Our online reseller (Merchant of Record) for purchases on winelingo.app: takes the payment, handles VAT and sends receipts. Paddle collects your payment details and email directly; we only receive the purchase status.</td></tr>
@@ -201,5 +211,6 @@ notified in-app.</p>
     nm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nm.classList.remove('open');tg.setAttribute('aria-expanded','false');});});}
 </script>
 <script src="/assets/search.js" defer></script>
+<script src="/assets/read-signal.js" defer></script>
 </body>
 </html>
