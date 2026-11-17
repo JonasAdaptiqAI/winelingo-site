@@ -100,5 +100,6 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
   else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});rv.forEach(function(e){io.observe(e);});}
 </script>
 <script src="/assets/search.js" defer></script>
+<script src="/assets/read-signal.js" defer></script>
 </body>
 </html>

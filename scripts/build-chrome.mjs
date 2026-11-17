@@ -116,6 +116,8 @@ const FOOTER_DA = `<footer class="site-footer" data-pagefind-ignore="all">
 </footer>`;
 
 const SEARCH = '<script src="/assets/search.js" defer></script>';
+// Reading measurement (scroll depth and time in view), see assets/read-signal.js.
+const READ = '<script src="/assets/read-signal.js" defer></script>';
 
 function* pages(dir) {
   for (const name of readdirSync(dir)) {
@@ -134,6 +136,7 @@ for (const file of pages(ROOT)) {
   html = html.replace(/<header class="site-header"[\s\S]*?<\/header>/, () => header(path));
   html = html.replace(/<footer class="site-footer"[\s\S]*?<\/footer>/, () => (langOf(path) === "da" ? FOOTER_DA : FOOTER));
   if (html.includes('class="site-header"') && !html.includes(SEARCH)) html = html.replace("</body>", `${SEARCH}\n</body>`);
+  if (html.includes('class="site-header"') && !html.includes(READ)) html = html.replace("</body>", `${READ}\n</body>`);
   // Search: a page's own title should beat pages that only mention the word.
   html = html.replace(/<h1(?![^>]*data-pagefind-weight)(?=[\s>])/, '<h1 data-pagefind-weight="10"');
   // The App Store band repeats on hundreds of pages; keep it out of the search index.
