@@ -1,0 +1,603 @@
+{
+ "checked": "2026-11-16",
+ "method": "Facts come from each resource's own website or store listing and, for the exam formats, from the awarding bodies' own specification documents and pages, all read on the checked date. No account was created and nothing was bought, so anything behind a login is reported only as the site describes it. `short` is Winelingo's own wording of those facts, cut to fit a table cell.",
+ "official_format": [
+  {
+   "exam": "WSET Level 1 Award in Wines",
+   "questions": "30 multiple-choice questions",
+   "time": "45 minutes",
+   "pass_mark": "70% (results are Pass or Fail only)",
+   "other": "Closed-book. One mark per question, no marks subtracted for wrong answers. The specification (Issue 1.2, 2022) says WSET does not release past papers and includes five sample questions with an answer key. Note: the qualification web page on wsetglobal.com shows a '1 hour exam' badge and 'A 1-hour closed-book exam', which differs from the 45 minutes in the specification PDF.",
+   "source": "https://www.wsetglobal.com/media/zyhewzz4/wset-l1wines-specification.pdf",
+   "also_checked": [
+    "https://www.wsetglobal.com/qualifications/wset-level-1-award-in-wines/"
+   ]
+  },
+  {
+   "exam": "WSET Level 2 Award in Wines",
+   "questions": "50 multiple-choice questions",
+   "time": "60 minutes",
+   "pass_mark": "55% (Pass 55-69%, Pass with merit 70-84%, Pass with distinction 85% or more)",
+   "other": "Closed-book. One mark per question, no marks subtracted for wrong answers. The specification (Issue 2, 2023) says WSET does not release past papers and includes five sample questions with an answer key. Note: the qualification web page on wsetglobal.com shows a '45 min exam' header badge while its text says 'A one-hour closed-book exam comprised of 50 multiple-choice questions'.",
+   "source": "https://www.wsetglobal.com/media/3yuhxb4i/wset-l2wines-specification.pdf",
+   "also_checked": [
+    "https://www.wsetglobal.com/qualifications/wset-level-2-award-in-wines/"
+   ]
+  },
+  {
+   "exam": "WSET Level 3 Award in Wines",
+   "questions": "Theory: 50 multiple-choice questions plus four short-written-answer questions of 25 marks each. Tasting: two wines tasted blind.",
+   "time": "Theory paper: 2 hours. Tasting: 30 minutes.",
+   "pass_mark": "55% in each of the multiple-choice part, the short-written part and the tasting (Pass 55-64%, Pass with merit 65-79%, Pass with distinction 80% and above with no individual paper below 65%)",
+   "other": "Closed-book. The specification (Issue 2, 2022) says WSET does not release past papers. It includes five sample multiple-choice questions with an answer key and one sample short-written question (25 marks) without a model answer; it includes no sample tasting question.",
+   "source": "https://www.wsetglobal.com/media/ugpjmqol/wset-l3wines-specification.pdf",
+   "also_checked": [
+    "https://www.wsetglobal.com/qualifications/wset-level-3-award-in-wines/"
+   ]
+  },
+  {
+   "exam": "Court of Master Sommeliers Introductory Sommelier Course & Examination (Americas)",
+   "questions": "70 multiple-choice questions",
+   "time": "45 minutes",
+   "pass_mark": "60%",
+   "other": "The page lists the in-person course and exam at $949 and the online course and exam at $649. It mentions a downloadable workbook for enrolled students and does not mention practice questions or a sample exam. The Court of Master Sommeliers Europe is a separate body: its Introductory page describes 'a multiple-choice theoretical paper plus a short elementary practical service test' with a 60% pass mark for each part, and does not state the number of questions.",
+   "source": "https://www.mastersommeliers.org/certification/certification-levels/introductory-sommelier-course-and-exam/",
+   "also_checked": [
+    "https://courtofmastersommeliers.org/introductory-sommelier-certificate-3-days/"
+   ]
+  }
+ ],
+ "resources": [
+  {
+   "id": "winelingo-tests",
+   "name": "Winelingo practice tests",
+   "maker": "Winelingo (Jonas Egeskov, Denmark)",
+   "url": "https://winelingo.app/tests/",
+   "what_it_is": "Free, unofficial practice tests that run in a browser, for WSET Levels 1 to 3 and the Court of Master Sommeliers Introductory exam.",
+   "levels": [
+    "WSET 1",
+    "WSET 2",
+    "WSET 3",
+    "CMS Intro"
+   ],
+   "free_questions": "All of it: 10 Level 1 questions, a 50-question Level 2 mock exam, 30 Level 3 multiple-choice questions and 30 Introductory Sommelier questions, each with a timed exam mode and a practice mode that explains every answer. No account.",
+   "question_count": "120 (one fixed set per exam)",
+   "timed_mock_mode": true,
+   "explanations": true,
+   "signup_needed_for_free_part": false,
+   "price": "Free",
+   "format": "website",
+   "official": false,
+   "limits_or_tradeoffs": [
+    "Each exam has one fixed set of questions, so a second attempt shows the same questions (source: https://winelingo.app/tests/)",
+    "Only the Level 2 test is a full-length mock (50 questions); the Level 1 test has 10 questions and the Level 3 and Introductory Sommelier tests have 30 (source: https://winelingo.app/tests/)",
+    "The Level 3 test is multiple choice only; it does not cover the short-written answers or the tasting (source: https://winelingo.app/tests/wset-level-3-practice/)"
+   ],
+   "sources": [
+    "https://winelingo.app/tests/",
+    "https://winelingo.app/tests/wset-level-2-mock-exam/",
+    "https://winelingo.app/tests/wset-level-3-practice/",
+    "https://winelingo.app/tests/introductory-sommelier-practice/"
+   ],
+   "unverified": [],
+   "short": {
+    "what": "Ours: free browser tests, one fixed set per exam",
+    "free": "All 120 questions, incl. a 50-question Level 2 mock, no sign-up",
+    "price": "Free"
+   }
+  },
+  {
+   "id": "wset-official-specifications",
+   "name": "WSET specification PDFs (Level 1, 2 and 3 Award in Wines)",
+   "maker": "Wine & Spirit Education Trust (WSET)",
+   "url": "https://www.wsetglobal.com/qualifications/wset-level-2-award-in-wines/",
+   "what_it_is": "The official syllabus documents, each with an exam-format section and a short set of sample examination questions.",
+   "levels": [
+    "WSET 1",
+    "WSET 2",
+    "WSET 3"
+   ],
+   "free_questions": "Five sample multiple-choice questions with an answer key in each of the Level 1, Level 2 and Level 3 specifications; Level 3 also has one sample short-written question (25 marks, no model answer). Free PDF download, no account.",
+   "question_count": "5 per level (plus 1 written question at Level 3)",
+   "timed_mock_mode": false,
+   "explanations": false,
+   "signup_needed_for_free_part": false,
+   "price": "Free",
+   "format": "website (PDF download)",
+   "official": true,
+   "limits_or_tradeoffs": [
+    "Each specification states that WSET does not release past papers, so the five sample questions are the only official ones published there (source: https://www.wsetglobal.com/media/3yuhxb4i/wset-l2wines-specification.pdf)",
+    "Answers are given as a letter key only, with no explanations (source: https://www.wsetglobal.com/media/zyhewzz4/wset-l1wines-specification.pdf)",
+    "The Level 3 sample short-written question has no model answer, and there is no sample tasting question (source: https://www.wsetglobal.com/media/ugpjmqol/wset-l3wines-specification.pdf)"
+   ],
+   "sources": [
+    "https://www.wsetglobal.com/qualifications/wset-level-1-award-in-wines/",
+    "https://www.wsetglobal.com/qualifications/wset-level-2-award-in-wines/",
+    "https://www.wsetglobal.com/qualifications/wset-level-3-award-in-wines/",
+    "https://www.wsetglobal.com/media/zyhewzz4/wset-l1wines-specification.pdf",
+    "https://www.wsetglobal.com/media/3yuhxb4i/wset-l2wines-specification.pdf",
+    "https://www.wsetglobal.com/media/ugpjmqol/wset-l3wines-specification.pdf"
+   ],
+   "unverified": [
+    "Whether WSET course providers hand out further official practice material to enrolled students (not stated on the pages fetched)"
+   ],
+   "short": {
+    "what": "Official syllabus PDFs with five sample questions per level",
+    "free": "5 sample questions per level, answer key, no account",
+    "price": "Free"
+   }
+  },
+  {
+   "id": "sommo",
+   "name": "Sommo",
+   "maker": "Sommo (\"An independent wine app, made in London\"; footer credits Gökhan Arkan)",
+   "url": "https://sommo.app/wset/",
+   "what_it_is": "A wine app with free browser-based mock tests, flashcards and cheat sheets for WSET levels and the Court of Master Sommeliers exams.",
+   "levels": [
+    "WSET 1",
+    "WSET 2",
+    "WSET 3",
+    "WSET 4",
+    "CMS Intro",
+    "CMS Certified"
+   ],
+   "free_questions": "On the web, free and without sign-up, with unlimited retakes: WSET Level 1 mock (50 questions drawn from a 180-question bank), WSET Level 2 mock (50 multiple-choice questions), WSET Level 3 mock (50 multiple-choice questions), CMS Introductory practice exam (70 questions drawn from a bank of 162).",
+   "question_count": "Level 1 bank: 180; CMS Introductory bank: 162; Level 2 and Level 3 bank sizes not stated",
+   "timed_mock_mode": null,
+   "explanations": true,
+   "signup_needed_for_free_part": false,
+   "price": "Web study tools: free. App: Basic is free and includes WSET Level 1 prep; Premium is \"$4.99 a month or $29.99 a year in the US\" and is needed for WSET Levels 2 to 4 in the app.",
+   "format": "website, iPhone app, Android app",
+   "official": false,
+   "limits_or_tradeoffs": [
+    "The mock pages state \"This independent quiz is not an official paper or a complete exam simulation\" (source: https://sommo.app/wset/level-2/mock-test/)",
+    "The Level 3 mock is multiple choice only; its questions \"do not reproduce the written-answer or tasting assessments\" (source: https://sommo.app/wset/level-3/mock-test/)",
+    "In the app, WSET Levels 2 to 4 are Premium only; prices vary by country and store (source: https://sommo.app/pricing/)"
+   ],
+   "sources": [
+    "https://sommo.app/wset/",
+    "https://sommo.app/wset/level-1/mock-test/",
+    "https://sommo.app/wset/level-2/mock-test/",
+    "https://sommo.app/wset/level-3/mock-test/",
+    "https://sommo.app/sommelier/",
+    "https://sommo.app/pricing/",
+    "https://sommo.app/features/wset-exam-prep/"
+   ],
+   "unverified": [
+    "Whether the web mock tests run against a timer (the pages fetched do not say)",
+    "Contents of the Level 4 (D3) mock test and the CMS Certified tools (linked, not fetched in detail)"
+   ],
+   "short": {
+    "what": "Wine app with free web mock tests for WSET and CMS",
+    "free": "50-question WSET mocks, 70-question CMS Intro, no sign-up",
+    "price": "Web free; app Premium $4.99/month or $29.99/year (US)",
+    "timed": "on the web; timed in the app, its site says"
+   }
+  },
+  {
+   "id": "winerevision",
+   "name": "WineRevision",
+   "maker": "WineRevision.com (operator not named on the site)",
+   "url": "https://winerevision.com",
+   "what_it_is": "A free study site with flashcards, mock examinations and a 60-second timed challenge for WSET Level 2 and Level 3 wines.",
+   "levels": [
+    "WSET 2",
+    "WSET 3"
+   ],
+   "free_questions": "Without an account: sample flashcards and a 10-question Level 2 sample test. With a free account: Level 2 \"450+ flashcards\" and 6 mock exams (300 questions); Level 3 over 1,150 flashcards and 10 mock exams (500 questions). The site says \"100% free · No credit card required\".",
+   "question_count": "300 mock-exam questions (Level 2) and 500 (Level 3), as stated",
+   "timed_mock_mode": true,
+   "explanations": null,
+   "signup_needed_for_free_part": true,
+   "price": "Free",
+   "format": "website, flashcards",
+   "official": false,
+   "limits_or_tradeoffs": [
+    "The full mock exams and all flashcards need a free account; only sample flashcards and a 10-question test are open without one (source: https://winerevision.com)",
+    "The homepage counters (\"139+\" flashcards, \"92+\" exam questions, \"1\" mock exam) do not match the per-level figures given elsewhere on the same page (source: https://winerevision.com)",
+    "The site lists only WSET Level 2 and Level 3; no Level 1 or Court of Master Sommeliers material is offered (source: https://winerevision.com/faq)"
+   ],
+   "sources": [
+    "https://winerevision.com",
+    "https://winerevision.com/faq",
+    "https://winerevision.com/sample-test"
+   ],
+   "unverified": [
+    "Whether each answer comes with a written explanation (the homepage speaks of a detailed answer review after each attempt; not checked inside an account)",
+    "Who operates the site"
+   ],
+   "short": {
+    "what": "Flashcards and mock exams for WSET 2 and 3, free with an account",
+    "free": "10-question sample open; full mocks need a free account",
+    "price": "Free"
+   }
+  },
+  {
+   "id": "wine-exam-trainer",
+   "name": "Wine Exam Trainer",
+   "maker": "wijnleren (Ayke Tjiam)",
+   "url": "https://wineexamtrainer.com",
+   "what_it_is": "A subscription question bank with timed mock exams for WSET Level 2, Level 3 and the Diploma, including AI-marked open questions.",
+   "levels": [
+    "WSET 2",
+    "WSET 3",
+    "WSET 4"
+   ],
+   "free_questions": "Without an account: 25 Level 2 sample questions (one per chapter) with explanations, the first chapters, one timed mock exam per level (Level 2: 50 randomly drawn questions, 60-minute timer), and one AI-marked open question per day.",
+   "question_count": "3,516 in total as stated (Level 2: 968 multiple-choice; Level 3: 1,576 multiple-choice and 612 open; Diploma: 360 open)",
+   "timed_mock_mode": true,
+   "explanations": true,
+   "signup_needed_for_free_part": false,
+   "price": "€9 per month, or €30 per 6 months (one plan covers the levels; the Level 2 page says full access \"includes Level 3\")",
+   "format": "website",
+   "official": false,
+   "limits_or_tradeoffs": [
+    "Only the first mock per level and the first chapters are free; \"Full access adds unlimited mocks and all 968 questions\" (source: https://wineexamtrainer.com/wset-level-2/mock-exam/)",
+    "No WSET Level 1 or Court of Master Sommeliers material is listed (source: https://wineexamtrainer.com)",
+    "Open-question answers are marked by AI against key facts, not by a human examiner, and the subscription renews automatically until cancelled (source: https://wineexamtrainer.com)"
+   ],
+   "sources": [
+    "https://wineexamtrainer.com",
+    "https://wineexamtrainer.com/wset-level-2/mock-exam/",
+    "https://wineexamtrainer.com/wset-level-2/practice-questions/",
+    "https://wineexamtrainer.com/wset-level-3/mock-exam/"
+   ],
+   "unverified": [
+    "The time limit used for the Level 3 mock (the page says only that it is timed)"
+   ],
+   "short": {
+    "what": "Paid question bank with timed mocks for WSET 2, 3 and Diploma",
+    "free": "25 questions and one timed mock per level, no account",
+    "price": "€9 per month or €30 per 6 months"
+   }
+  },
+  {
+   "id": "eclavin",
+   "name": "Eclavin",
+   "maker": "Eclavin (App Store seller: Minki Choi)",
+   "url": "https://eclavin.com/practice/wset-level-2",
+   "what_it_is": "A study site and iOS app with multiple-choice practice questions and worked explanations for WSET Levels 1 to 3.",
+   "levels": [
+    "WSET 1",
+    "WSET 2",
+    "WSET 3"
+   ],
+   "free_questions": "On the web: \"All 100 Level 2 questions on Eclavin are free\" and \"All 100 Level 1 questions on Eclavin are free\", each with a worked explanation; \"there is no sign-up\".",
+   "question_count": "100 per level on the web (Levels 1 and 2); the site describes the app as having \"2,000+ questions across Levels 1, 2 and 3\"",
+   "timed_mock_mode": null,
+   "explanations": true,
+   "signup_needed_for_free_part": false,
+   "price": "Web questions: free. iOS app: free download with in-app purchases, Level 2 Unlock $6.99 and Level 3 Unlock $17.99 (US App Store).",
+   "format": "website, iPhone app",
+   "official": false,
+   "limits_or_tradeoffs": [
+    "Level 3 is not on the website; it appears only in the app, behind a $17.99 unlock (source: https://apps.apple.com/us/app/id6757098139)",
+    "The web pages do not say that the question sets run against a timer (source: https://eclavin.com/practice/wset-level-2)",
+    "The App Store listing does not name WSET or state a question count, and shows too few ratings to display a score (source: https://apps.apple.com/us/app/id6757098139)"
+   ],
+   "sources": [
+    "https://eclavin.com/practice/wset-level-2",
+    "https://eclavin.com/practice/wset-level-1?lang=en",
+    "https://apps.apple.com/us/app/id6757098139"
+   ],
+   "unverified": [
+    "Whether the app's mock exams are timed (the listing says \"Take full mock exams to build confidence under exam conditions\")",
+    "What is free inside the app without the Level 2 and Level 3 unlocks"
+   ],
+   "short": {
+    "what": "Web and iOS practice questions for WSET Levels 1 to 3",
+    "free": "100 Level 1 and 100 Level 2 web questions, no sign-up",
+    "price": "Web free; app unlocks $6.99 (L2) and $17.99 (L3)"
+   }
+  },
+  {
+   "id": "thirtyfifty",
+   "name": "ThirtyFifty mock exams and practice questions",
+   "maker": "ThirtyFifty (a WSET course provider in London)",
+   "url": "https://thirtyfifty.co.uk/WSET-L2-Wine-Exam-Questions.asp",
+   "what_it_is": "Mock exams and chapter questions written by a WSET course provider, free to its own students and sold to everyone else.",
+   "levels": [
+    "WSET 1",
+    "WSET 2",
+    "WSET 3"
+   ],
+   "free_questions": "With a free account: Level 1, two mock exams of 30 questions each; Level 2, a 15-question trial exam; Level 3, the viticulture chapter questions (25 multiple-choice and two written). All resources are free to ThirtyFifty's own students.",
+   "question_count": "Level 1: 60. Level 2: 250 (5 mock exams of 50) plus a 15-question trial. Level 3: 10 multiple-choice mock exams of 50 questions and 4 short-written exams of four questions, plus chapter questions.",
+   "timed_mock_mode": null,
+   "explanations": null,
+   "signup_needed_for_free_part": true,
+   "price": "Level 1: free. Level 2 mock exams: £15 for 12 months' access. Level 3: mock exams £30, chapter questions £20, flash cards £25, wine maps £20, tasting exam flash cards £10.",
+   "format": "website",
+   "official": false,
+   "limits_or_tradeoffs": [
+    "Sign-in is required even for the free questions: \"To access questions please sign in or Register Here\" (source: https://thirtyfifty.co.uk/WSET-L2-Wine-Exam-Questions.asp)",
+    "The Level 2 page says the questions follow \"the current 2026\" syllabus and also that \"One purchase gives you access to both the 2023 and 2019 syllabus\", so the buyer has to pick the right set (source: https://thirtyfifty.co.uk/WSET-L2-Wine-Exam-Questions.asp)",
+    "Level 3 is sold as separate products, and the pages do not describe a timer or per-question explanations beyond answers and marking schedules (source: https://thirtyfifty.co.uk/WSET-L3-Exam-Questions.asp)"
+   ],
+   "sources": [
+    "https://thirtyfifty.co.uk/WSET-L2-Wine-Exam-Questions.asp",
+    "https://www.thirtyfifty.co.uk/WSET-L1-Wine-Exam-Questions.asp",
+    "https://thirtyfifty.co.uk/WSET-L3-Exam-Questions.asp"
+   ],
+   "unverified": [
+    "Whether the mock exams are timed and whether answers include explanations (not stated on the pages; not checked inside an account)"
+   ],
+   "short": {
+    "what": "Mock exams from a London WSET course provider",
+    "free": "Level 1 mocks and short Level 2/3 samples, account needed",
+    "price": "Level 1 free; Level 2 £15; Level 3 mocks £30"
+   }
+  },
+  {
+   "id": "portnwine",
+   "name": "portnwine WSET practice",
+   "maker": "portnwine (a blog about Portuguese wine; operator not named on the site)",
+   "url": "https://portnwine.com/wset-2-practice",
+   "what_it_is": "Free timed mock papers for WSET Levels 1, 2 and 3, each a random draw from the site's question bank.",
+   "levels": [
+    "WSET 1",
+    "WSET 2",
+    "WSET 3"
+   ],
+   "free_questions": "Free timed mock paper per level, redrawn at random on each attempt: Level 1, 30 questions in 45 minutes (pass 70%); Level 2, 50 questions in 60 minutes (pass 55%); Level 3, 50 multiple-choice questions in 60 minutes (pass 55%). A written explanation for every question is shown after finishing.",
+   "question_count": null,
+   "timed_mock_mode": true,
+   "explanations": true,
+   "signup_needed_for_free_part": false,
+   "price": "Free",
+   "format": "website",
+   "official": false,
+   "limits_or_tradeoffs": [
+    "The size of the question bank is not stated; the page says only that the bank is updated regularly (source: https://portnwine.com/wset-2-practice)",
+    "The Level 3 paper is multiple choice only and does not cover the short-written or tasting parts of the real exam (source: https://portnwine.com/wset-3-practice)",
+    "The site does not name who writes the questions; the About page describes a blog about wine from Portugal (source: https://portnwine.com/about-1)"
+   ],
+   "sources": [
+    "https://portnwine.com/wset-2-practice",
+    "https://portnwine.com/wset-1-practice",
+    "https://portnwine.com/wset-3-practice",
+    "https://portnwine.com/about-1"
+   ],
+   "unverified": [
+    "That no account is needed (the pages show no sign-up requirement; a quiz was not started to confirm)",
+    "Question bank size and author"
+   ],
+   "short": {
+    "what": "Free timed mock papers for WSET Levels 1 to 3",
+    "free": "Timed mock per level with explanations, no sign-up shown",
+    "price": "Free"
+   }
+  },
+  {
+   "id": "open-exam-prep",
+   "name": "OpenExamPrep",
+   "maker": "OpenExamPrep (describes itself as \"an independent education provider\")",
+   "url": "https://open-exam-prep.com/practice/wset-level-2",
+   "what_it_is": "A general exam-prep site with free practice questions, a study guide, flashcards and a cheat sheet for WSET wine exams among many other exams.",
+   "levels": [
+    "WSET 1",
+    "WSET 2",
+    "WSET 3"
+   ],
+   "free_questions": "100 practice questions with explanations for WSET Level 2 and 100 for WSET Level 3, labelled \"100% Free\", \"No registration\", \"No credit card\". Everyone also gets \"10 free AI interactions per day\" with the AI tutor.",
+   "question_count": "100 per exam (stated for Level 2 and Level 3)",
+   "timed_mock_mode": null,
+   "explanations": true,
+   "signup_needed_for_free_part": false,
+   "price": "Study materials free. Optional AI credits: \"Buy Now - $100\" for 100 credits at regular price; an Early Supporter pack lets the buyer choose \"any amount from $10 to $200\".",
+   "format": "website",
+   "official": false,
+   "limits_or_tradeoffs": [
+    "The site states its questions are \"independently developed simulations, not actual, recalled, or sponsor-provided exam items\" and that \"Coverage, format, and difficulty may differ from the actual exam\" (source: https://open-exam-prep.com/practice/wset-level-2)",
+    "The practice pages do not describe a timed mock mode (source: https://open-exam-prep.com/practice/wset-level-3)",
+    "The site carries affiliate links and sells AI-tutor credits (source: https://open-exam-prep.com/pricing)"
+   ],
+   "sources": [
+    "https://open-exam-prep.com/practice/wset-level-2",
+    "https://open-exam-prep.com/practice/wset-level-3",
+    "https://open-exam-prep.com/pricing"
+   ],
+   "unverified": [
+    "The number of questions on the WSET Level 1 Wines practice page (the page is listed on the site but was not fetched)"
+   ],
+   "short": {
+    "what": "General exam-prep site with free WSET practice questions",
+    "free": "100 questions per exam with explanations, no registration",
+    "price": "Free; optional AI credits"
+   }
+  },
+  {
+   "id": "brainscape",
+   "name": "Brainscape WSET flashcards",
+   "maker": "Brainscape (Bold Learning Solutions); lead authors Sarah Looper (DipWSET) and Tony Lecuroux",
+   "url": "https://www.brainscape.com/learn/wset-level-2-wine",
+   "what_it_is": "Spaced-repetition flashcard classes for WSET Level 2 and Level 3 wines, studied on the web or in the Brainscape apps.",
+   "levels": [
+    "WSET 2",
+    "WSET 3",
+    "CMS Intro"
+   ],
+   "free_questions": "\"Free to start\"; each class page also promises a free practice exam \"which you'll receive as soon as you start studying this class\". The free Basic plan includes \"Study 2,500 pre-loaded flashcards\" across the whole site.",
+   "question_count": "Level 2: 30 decks (\"Hundreds of flashcards\"). Level 3: 42 decks, \"1,900+ Flashcards\".",
+   "timed_mock_mode": null,
+   "explanations": null,
+   "signup_needed_for_free_part": true,
+   "price": "\"Free to start or $8/mo for full access\" on the class pages; the pricing page lists Pro at \"$7.99/mo\" billed yearly",
+   "format": "flashcards (website, iPhone app, Android app)",
+   "official": false,
+   "limits_or_tradeoffs": [
+    "The classes are question-and-answer flashcards, not exam-format multiple-choice papers (source: https://www.brainscape.com/learn/wset-level-2-wine)",
+    "The free practice exam is delivered after starting the class, and the \"Start Studying\" buttons lead to a sign-up page (source: https://www.brainscape.com/learn/wset-level-3-wine)",
+    "Full access to the class needs a paid plan; the free plan caps pre-loaded cards at 2,500 (source: https://www.brainscape.com/pricing)"
+   ],
+   "sources": [
+    "https://www.brainscape.com/learn/wset-level-2-wine",
+    "https://www.brainscape.com/learn/wset-level-3-wine",
+    "https://www.brainscape.com/pricing",
+    "https://www.brainscape.com/learn/introductory-sommelier-exam-cms"
+   ],
+   "unverified": [
+    "The length and format of the free practice exam",
+    "How many cards of a WSET class are open before payment",
+    "Whether Brainscape has its own WSET Level 1 class (none was linked from the pages fetched)"
+   ],
+   "short": {
+    "what": "Flashcard classes for WSET 2, WSET 3 and the CMS Intro exam",
+    "free": "Free to start; practice exam sent after sign-up",
+    "price": "About $8 a month when billed yearly"
+   }
+  },
+  {
+   "id": "wine-master-learn-wine",
+   "name": "Wine Master: Learn Wine",
+   "maker": "Assaf El Al (copyright line: Master Wine)",
+   "url": "https://apps.apple.com/us/app/id6812080826",
+   "what_it_is": "A free wine-learning app for iPhone and Android, with a web version, with lessons, flashcards and WSET Level 1 to 3 exam practice including timed mock exams.",
+   "levels": [
+    "WSET 1",
+    "WSET 2",
+    "WSET 3"
+   ],
+   "free_questions": "The whole app is free: \"Study for WSET® Levels 1–3 with more than 4,700 questions and a written explanation for every answer\", including timed mock exams.",
+   "question_count": "more than 4,700",
+   "timed_mock_mode": true,
+   "explanations": true,
+   "signup_needed_for_free_part": false,
+   "price": "Free (\"Free, with no ads, tracking or in-app purchases.\")",
+   "format": "iPhone app, Android app, website",
+   "official": false,
+   "limits_or_tradeoffs": [
+    "The App Store shows too few ratings to display a score (source: https://apps.apple.com/us/app/id6812080826)",
+    "Parts of the exam prep are new: version 1.6.0, released a few days before 2026-11-16, added the practice builder, study plan and Level 3 tasting (source: https://apps.apple.com/us/app/id6812080826)"
+   ],
+   "sources": [
+    "https://apps.apple.com/us/app/id6812080826",
+    "https://master-wine-gamma.vercel.app/landing.html"
+   ],
+   "unverified": [
+    "Whether an account is needed inside the app",
+    "How the 4,700 questions are split between the three levels"
+   ],
+   "short": {
+    "what": "Free app (iPhone, Android, web) with WSET 1 to 3 practice",
+    "free": "All of it; its listing says 4,700+ questions with explanations",
+    "price": "Free, no in-app purchases"
+   }
+  },
+  {
+   "id": "cork-dork-wine-study",
+   "name": "Cork Dork Wine Study",
+   "maker": "Paul Kavanagh",
+   "url": "https://apps.apple.com/us/app/id1564201450",
+   "what_it_is": "A spaced-repetition flashcard app with wine maps and map quizzes aimed at WSET and Court of Master Sommeliers students.",
+   "levels": [
+    "WSET 2",
+    "WSET 3",
+    "CMS Intro",
+    "CMS Certified"
+   ],
+   "free_questions": "Free users can study six categories: Argentina, Austria, Fortified, Italy, Portugal and Spain.",
+   "question_count": "\"2500+ wine study flashcards\" (plus 40+ wine maps and 30+ interactive map quizzes; number of practice questions not stated)",
+   "timed_mock_mode": null,
+   "explanations": null,
+   "signup_needed_for_free_part": null,
+   "price": "Free download; Pro subscriptions listed at $7.99 and $9.99 per month and $49.99 and $59.99 per year (US App Store)",
+   "format": "iPhone app, Android app, flashcards",
+   "official": false,
+   "limits_or_tradeoffs": [
+    "It is a flashcard and map-quiz app; the listing does not describe an exam-format mock test (source: https://apps.apple.com/us/app/id1564201450)",
+    "Without the Pro subscription only six categories are open (source: https://apps.apple.com/us/app/id1564201450)",
+    "WSET Level 1 is not among the exams the listing names (source: https://apps.apple.com/us/app/id1564201450)"
+   ],
+   "sources": [
+    "https://apps.apple.com/us/app/id1564201450",
+    "https://www.corkdork.io/"
+   ],
+   "unverified": [
+    "Which subscription price applies to which plan (the listing shows two monthly and two annual prices without explanation)"
+   ],
+   "short": {
+    "what": "Flashcards and map quizzes for WSET 2-3 and CMS (iPhone, Android)",
+    "free": "Six categories free (e.g. Italy, Spain, Portugal)",
+    "price": "From $7.99 per month or $49.99 per year"
+   }
+  },
+  {
+   "id": "wine-trainer-wset-sommelier",
+   "name": "Wine Trainer: WSET & Sommelier",
+   "maker": "VinoMobile (seller: Avinis GmbH)",
+   "url": "https://apps.apple.com/us/app/id478266987",
+   "what_it_is": "A wine-knowledge flashcard and quiz app sold as one-time purchases, based on a German-language reference book.",
+   "levels": [
+    "WSET (level not stated)",
+    "Sommelier certification (level not stated)"
+   ],
+   "free_questions": "\"FREE TRIAL: 48 hours of full access to all content.\"",
+   "question_count": "\"4,700+ questions\" (also described as \"4,700+ flashcards\")",
+   "timed_mock_mode": null,
+   "explanations": null,
+   "signup_needed_for_free_part": null,
+   "price": "One-time in-app purchases (\"NO SUBSCRIPTIONS: Pay once, use forever\"): WineTrainer PRO Package $9.99; Modules A, B and C $4.99 each; Module D $1.99; update packs $5.99 to $9.99 (US App Store)",
+   "format": "iPhone app, Android app, flashcards",
+   "official": false,
+   "limits_or_tradeoffs": [
+    "The listing mentions WSET and sommelier certification in general but names no level or syllabus; it says the content is \"Based on a reference book that is a 20-edition classic in German-speaking Europe\" (source: https://apps.apple.com/us/app/id478266987)",
+    "Free access lasts 48 hours; after that the content is paid (source: https://apps.apple.com/us/app/id478266987)",
+    "The listing does not describe a timed mock exam; rounds are 20, 50 or 100 questions, and the US listing shows 3 ratings (source: https://apps.apple.com/us/app/id478266987)"
+   ],
+   "sources": [
+    "https://apps.apple.com/us/app/id478266987"
+   ],
+   "unverified": [
+    "Which in-app purchase is needed for full access and how the modules overlap",
+    "Whether answers come with explanations"
+   ],
+   "short": {
+    "what": "General wine quiz app; names WSET but no specific level",
+    "free": "48 hours of full access",
+    "price": "One-time purchases, PRO package $9.99"
+   }
+  },
+  {
+   "id": "udemy-wset-practice-tests",
+   "name": "Udemy WSET practice-test courses (category)",
+   "maker": "Independent instructors on Udemy (for example Dmytro Khmelenko, The Wine Alchemist, Samantha Alder, Clinton van Heerden)",
+   "url": "https://www.udemy.com/courses/search/?q=wset%20level%203%20practice",
+   "what_it_is": "Individually sold sets of multiple-choice practice tests for WSET Levels 1 to 3, each written by a different instructor.",
+   "levels": [
+    "WSET 1",
+    "WSET 2",
+    "WSET 3"
+   ],
+   "free_questions": null,
+   "question_count": "Varies by course: 90 questions (Level 1, three tests of 30), 149 to 300 questions (Level 2), 390 questions (one Level 3 course), as listed",
+   "timed_mock_mode": null,
+   "explanations": null,
+   "signup_needed_for_free_part": null,
+   "price": "List prices €19.99 to €34.99 per course on the EUR storefront; on 2026-11-16 every course seen was on sale at €9.99 (\"Ends Nov 18\"). Udemy also offers a subscription \"From €11.00/month\".",
+   "format": "website (practice-test courses, with mobile access)",
+   "official": false,
+   "limits_or_tradeoffs": [
+    "Each course is by a different instructor and several have few or no ratings (for example 3 ratings, or 0.0), so quality has to be judged course by course (source: https://www.udemy.com/courses/search/?q=wset%20level%203%20practice)",
+    "Prices move with sales: the same course showed €34.99 list and €9.99 sale on 2026-11-16 (source: https://www.udemy.com/course/wset-level-2-award-in-wines-practice-exams/)",
+    "Not every listing says that answers come with explanations; one that does states \"Each question includes detailed explanations\" (source: https://www.udemy.com/course/wset-level-2-award-in-wines-practice-exams/)"
+   ],
+   "sources": [
+    "https://www.udemy.com/course/wset-level-2-award-in-wines-practice-exams/",
+    "https://www.udemy.com/course/preparing-for-your-wset-level-2-award-in-wines-exam/",
+    "https://www.udemy.com/course/wset-level-1-award-in-wine-course-practice-questions/",
+    "https://www.udemy.com/courses/search/?q=wset%20level%203%20practice"
+   ],
+   "unverified": [
+    "Whether Udemy's practice-test player runs a timer for these courses (not stated on the course pages)",
+    "Prices in other currencies or regions",
+    "Udemy pages could not be re-read in the second check on 2026-11-16 (HTTP 403)."
+   ],
+   "short": {
+    "what": "Paid practice-test sets by independent instructors",
+    "free": "None stated",
+    "price": "€19.99-€34.99 list; €9.99 during sales"
+   }
+  }
+ ]
+}

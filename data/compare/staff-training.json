@@ -1,0 +1,611 @@
+{
+ "checked": "2026-11-16",
+ "method": "Facts come from each company's own website (home, pricing, feature and FAQ pages) and, for apps, its store listing, read on the checked date. Nothing was signed up for, installed or tried. Prices are quoted as published on that date, in the currency shown. `short` is Winelingo's own wording of those facts, cut to fit a table cell.",
+ "dropped": [
+  {
+   "name": "WineStaff (winestaff.app)",
+   "why": "Its site describes a private app for the staff of its own restaurants; no offer to other venues."
+  },
+  {
+   "name": "Oeno Academy",
+   "why": "Its site said registration was not yet open."
+  }
+ ],
+ "items": [
+  {
+   "id": "winelingo-business",
+   "name": "Winelingo for restaurants",
+   "maker": "Winelingo (Jonas Egeskov, Denmark)",
+   "url": "https://winelingo.app/business/",
+   "what_it_is": "A wine course in short lessons that staff take on their own phones, with a weekly team league and one staff test built from the venue's own wine list. Its 13 practice tests, five of them written for floor staff, are free to anyone.",
+   "best_for": "Restaurants, wine bars and hotels that want staff to learn wine itself (grapes, regions, service) and also be tested on the house list.",
+   "format": "phone app (iPhone) + web course",
+   "own_wine_list": true,
+   "own_wine_list_note": "\"We build a staff test from your list: ten questions the way guests ask them, each pointing to a bottle you actually pour.\"",
+   "manager_tools": "None. The business page says: \"As the employer you don't get access to anyone's account.\" A weekly league shows colleagues who have added each other.",
+   "languages": "English, Danish, German and Spanish",
+   "price": {
+    "public": false,
+    "text": "On request: \"It depends on the size of your team.\"",
+    "free_trial": "\"New partners start with a free trial period\" (length not stated)",
+    "source": "https://winelingo.app/business/"
+   },
+   "certificate_or_qualification": null,
+   "limits_or_tradeoffs": [
+    "No manager dashboard or progress reports: the employer cannot see what each person has completed (source: https://winelingo.app/business/)",
+    "The price is not published (source: https://winelingo.app/business/)",
+    "The house test is one ten-question test that Winelingo builds by hand from the wine list; it is not regenerated automatically when the list changes (source: https://winelingo.app/business/)",
+    "The app is for iPhone; staff with Android phones take the course in a browser and cannot scan labels (source: https://winelingo.app/business/)",
+    "New and small: the business page names two partner venues (source: https://winelingo.app/business/)"
+   ],
+   "sources": [
+    "https://winelingo.app/business/",
+    "https://winelingo.app/tests/",
+    "https://winelingo.app/faq/"
+   ],
+   "unverified": [],
+   "short": {
+    "best": "Ours: staff learn wine itself, plus one test on your own list",
+    "price": "On request; free trial period",
+    "format": "iPhone app and web course",
+    "own_list": "One ten-question test, built for you by hand"
+   }
+  },
+  {
+   "id": "shifttrained",
+   "name": "ShiftTrained",
+   "maker": "ShiftTrained, Inc. (Chicago, IL, USA)",
+   "url": "https://www.shifttrained.com/wine-training",
+   "what_it_is": "A browser-based menu and wine training tool that uses AI to turn a restaurant's uploaded menu or wine list into short quizzes staff take on their phones.",
+   "best_for": "Restaurants that want quizzes generated from their own wine list and menu, sent to staff by text link, with pricing tiers by number of employees (up to 20, 40 or 99; more or multi-location is Enterprise).",
+   "format": "web app (SMS link, no install) + AI tool",
+   "own_wine_list": true,
+   "own_wine_list_note": "\"Upload your wine list PDF, AI generates a full set of questions specific to your bottles, your vintages, your pour costs, your food pairings.\"",
+   "manager_tools": "Listed on every plan: unlimited manager access, leaderboard and score tracking, inspector-ready reporting, editable AI-generated questions, live Toast and Square sync. Enterprise adds cross-location reporting and a corporate dashboard.",
+   "languages": "\"Multi-Language Support\" is listed as BETA; no language list is published on the pricing section.",
+   "price": {
+    "public": true,
+    "text": "Basic $29 USD/mo (up to 20 employees); Pro $49 USD/mo (up to 40 employees); Max $99 USD/mo (up to 99 employees); Enterprise (multiple locations or 100+ employees): contact. Yearly billing: \"Save 20%\".",
+    "free_trial": "\"Free trial · No credit card\" (length not stated)",
+    "source": "https://www.shifttrained.com/#pricing"
+   },
+   "certificate_or_qualification": null,
+   "limits_or_tradeoffs": [
+    "Questions are generated from the venue's own list, so it trains staff on the list rather than teaching a general wine curriculum; the company itself contrasts this with \"generic wine education\". (source: https://www.shifttrained.com/wine-training)",
+    "Plans are capped by employee count (20 / 40 / 99); more than one location or 100+ staff requires an Enterprise quote. (source: https://www.shifttrained.com/#pricing)",
+    "Multi-language support is marked BETA. (source: https://www.shifttrained.com/#pricing)",
+    "Questions are AI-generated; the page says managers can \"Change any question you want\", which implies review is expected. (source: https://www.shifttrained.com/wine-training)"
+   ],
+   "sources": [
+    "https://www.shifttrained.com/wine-training",
+    "https://www.shifttrained.com/",
+    "https://www.shifttrained.com/#pricing"
+   ],
+   "unverified": [
+    "Length of the free trial",
+    "Which languages the beta multi-language support covers",
+    "Whether the $29-$99 plans cover one location only (only Enterprise mentions multiple locations)",
+    "The testimonial claim of wine sales \"up 34%\" is a customer quote on the company's page, not independently checked"
+   ],
+   "short": {
+    "best": "Venues wanting AI quizzes from their own wine list, by text link",
+    "price": "From $29 USD/mo (up to 20 employees); free trial",
+    "format": "Web app via SMS link, no install",
+    "own_list": "AI quizzes from an uploaded list"
+   }
+  },
+  {
+   "id": "my-wine-guide-sommone-server",
+   "name": "My Wine Guide - SommOne Server",
+   "maker": "MWG LLC (country not stated; says staff are \"located throughout the US, UK and Australia\")",
+   "url": "https://www.mywineguide.com/restaurant-wine-training",
+   "what_it_is": "A staff training and reference module inside the SommOne wine-list platform, giving servers the venue's live wine list, tasting notes, producer stories and pairings on phones, tablets and PCs.",
+   "best_for": "Restaurants, hotels and clubs that run (or want) a SommOne digital wine list and want staff education tied to that list and its stock; the company cites Wine Spectator award winners and MICHELIN Guide restaurants as its audience.",
+   "format": "web app (Progressive Web App, no app-store download)",
+   "own_wine_list": true,
+   "own_wine_list_note": "\"Your wine list IS the curriculum. The training updates the moment you add a new vintage or pour.\"",
+   "manager_tools": "Per-server profiles showing how often and how long staff access SommOne and for what; whether they keep up with alerts, featured wines and pairings; whether they make tasting notes. Alerts and notifications to staff devices; low-stock and out-of-stock updates.",
+   "languages": null,
+   "price": {
+    "public": false,
+    "text": "On request for SommOne Server. Published platform prices: \"SommOne Digital Cru Wine List starts at $200/month\", \"SommOne Inventory and Sales Reporting - $125/month\", \"SommOne Suite ... starts at $250/month\"; \"We do not charge any set up fees nor require an upfront commitment.\"",
+    "free_trial": "No trial stated; the company offers a free \"2-day custom demo\" built with the venue's own wine list",
+    "source": "https://www.mywineguide.com/faqs"
+   },
+   "certificate_or_qualification": null,
+   "limits_or_tradeoffs": [
+    "No separate price is published for SommOne Server; published prices are for the digital wine list, inventory and suite products, and fees are \"based on the size of your wine and beverage program\". (source: https://www.mywineguide.com/faqs)",
+    "The page describes reference content, personal taste profiles, alerts and engagement tracking; it does not describe quizzes, tests or a course structure. (source: https://www.mywineguide.com/restaurant-wine-training)",
+    "It is part of a wider wine-program platform (digital list, inventory, POS integrations), so it is not presented as a stand-alone training app. (source: https://www.mywineguide.com/restaurant-wine-training)",
+    "The headline guarantee \"Sell 30% More Wine — or Your Money Back\" is shown without terms on the pages read. (source: https://www.mywineguide.com/restaurant-wine-training)"
+   ],
+   "sources": [
+    "https://www.mywineguide.com/restaurant-wine-training",
+    "https://mywineguide.com/wine-education-program",
+    "https://www.mywineguide.com/faqs",
+    "https://mywineguide.com/about-mywineguide"
+   ],
+   "unverified": [
+    "Price of SommOne Server on its own, and whether it can be bought without the digital wine list",
+    "Terms of the 30% money-back guarantee",
+    "Languages supported",
+    "Company country of registration"
+   ],
+   "short": {
+    "best": "Venues using a SommOne digital wine list that want staff tied to it",
+    "price": "On request; wine-list platform from $200/month",
+    "format": "Web app (PWA) on phones, tablets, PCs",
+    "own_list": "Your list is the curriculum; no quizzes described"
+   }
+  },
+  {
+   "id": "typsy",
+   "name": "Typsy",
+   "maker": "Typsy (country not stated on the pages read)",
+   "url": "https://www.typsy.com",
+   "what_it_is": "A hospitality learning platform with 2,000+ short video lessons, including wine courses such as \"Wine 101 for servers\" (7 lessons, 28m 24s).",
+   "best_for": "Hospitality businesses that want general video training across many roles and topics, with wine as one subject, for teams of up to 100 members (larger is Enterprise).",
+   "format": "video courses (web, iOS and Android)",
+   "own_wine_list": false,
+   "own_wine_list_note": "Wine courses are pre-made video courses; the site lists \"Custom content\" and SmartCards that turn \"SOPs and PDFs\" into guidance (\"NOW IN BETA\"), but does not say wine training is built from the venue's wine list.",
+   "manager_tools": "Assign training by role, onboarding stage or need; reporting by team and location; manager portal. The plan comparison lists assigning actions, role-based pathways, operational reporting and workforce visibility as not included in the Individual plan.",
+   "languages": "\"Available in 40+ languages\"; plan table says \"40+ subtitles, 10+ dubbed languages\". The Wine 101 for servers page lists English, Spanish, Indonesian and 38 others.",
+   "price": {
+    "public": true,
+    "text": "Individual: €180.00 EUR per year, billed annually (1 user). Team: €120.00 EUR / member / year (up to 100 members). Enterprise (100+ members): Custom. Annual billing \"Save 16%\"; monthly billing is offered but its price was not read.",
+    "free_trial": null,
+    "source": "https://www.typsy.com/pricing"
+   },
+   "certificate_or_qualification": "Course certificates and badges; the Wine 101 for servers course is stated as recognised by the Institute of Hospitality and worth one CPD point.",
+   "limits_or_tradeoffs": [
+    "Wine is a small part of the library: five wine courses were found in the course list (Wine 101 for servers, Wine knowledge essentials, Introduction to red wine varietals, Introduction to white wine varietals, Champagne essentials) out of \"183 courses found\". (source: https://www.typsy.com/discover/courses)",
+    "Content is general wine and service knowledge on video, not the venue's own wine list. (source: https://www.typsy.com/courses/wine-101-for-servers)",
+    "Team pricing is per member per year, so cost scales with headcount. (source: https://www.typsy.com/pricing)",
+    "Some enterprise features carry an extra charge: \"Enterprise infrastructure (additional fee applies)\". (source: https://www.typsy.com/pricing)"
+   ],
+   "sources": [
+    "https://www.typsy.com",
+    "https://www.typsy.com/pricing",
+    "https://www.typsy.com/courses/wine-101-for-servers",
+    "https://www.typsy.com/discover/courses",
+    "https://www.typsy.com/about"
+   ],
+   "unverified": [
+    "Company country (not stated on the pages read)",
+    "Whether the EUR prices are shown to all visitors or localised by region",
+    "Monthly-billing prices",
+    "Whether a free trial exists",
+    "Full count of wine courses (the course list was long; only the first part was fully read)"
+   ],
+   "short": {
+    "best": "Teams wanting broad hospitality video training incl. wine basics",
+    "price": "Team €120.00 EUR per member per year (up to 100)",
+    "format": "Video courses on web, iOS, Android"
+   }
+  },
+  {
+   "id": "vinealto",
+   "name": "Vinealto",
+   "maker": "Honest Glass Group Limited (England and Wales, UK)",
+   "url": "https://vinealto.com",
+   "what_it_is": "A British wine education site with a three-stage course (Foundation, Certificate, Fellowship), two apps and a business area offering block-booked course places for restaurant teams.",
+   "best_for": "Restaurants and shops that want staff to follow a general wine course, bought as team places \"in packs of ten\"; the business offer is opened only after registering.",
+   "format": "web app + phone apps (course with questions)",
+   "own_wine_list": null,
+   "own_wine_list_note": "Not stated. The business page says only: \"We have a number of high return offers and learning materials with block booking of a range of learning courses. Register to open this section.\"",
+   "manager_tools": null,
+   "languages": "English (site says \"More languages coming soon\")",
+   "price": {
+    "public": false,
+    "text": "Business: \"Arranged with you\" (prices shown only after registering and entering an access code). Published consumer prices: \"Foundation is free. Bundles from £79\"; Dining \"From 99p a month\".",
+    "free_trial": "Foundation course is free (\"Foundation is free, and earns a certificate\")",
+    "source": "https://vinealto.com/subscribe"
+   },
+   "certificate_or_qualification": "Vinealto's own awards: Foundation (certificate), Certificate, and Fellowship by examination. These are the company's own awards, not WSET or CMS qualifications.",
+   "limits_or_tradeoffs": [
+    "The business offer and its prices are hidden until the venue registers and receives an access code. (source: https://vinealto.com/business)",
+    "No manager dashboard, team progress view or reporting is described on the public pages. (source: https://vinealto.com/business)",
+    "The course is a general wine syllabus (\"47 chapters and nearly 3,000 questions\"), not presented as training on a venue's own list. (source: https://vinealto.com/faq)",
+    "English only at present. (source: https://vinealto.com/)"
+   ],
+   "sources": [
+    "https://vinealto.com/",
+    "https://vinealto.com/subscribe",
+    "https://vinealto.com/faq",
+    "https://vinealto.com/business"
+   ],
+   "unverified": [
+    "What the business offer actually contains (behind an access code)",
+    "Business pricing and bulk discount rates",
+    "Whether managers can see staff progress",
+    "App Store / Google Play listings were not read"
+   ],
+   "short": {
+    "best": "Teams wanting a general wine course bought in packs of ten",
+    "price": "Business on request; Foundation free, bundles from £79",
+    "format": "Web course plus phone apps"
+   }
+  },
+  {
+   "id": "knowbie",
+   "name": "Knowbie",
+   "maker": "Knowbie Inc. (App Store seller: 1259861 BC Ltd.; country not stated on the website, which refers to restaurants \"across North America\")",
+   "url": "https://getknowbie.com",
+   "what_it_is": "A gamified phone app that teaches hospitality staff wine, beer, spirits and food pairing in short chapters with quizzes and badges.",
+   "best_for": "Restaurants, clubs and liquor retailers that want general beverage knowledge (not only wine) taught through short game-style lessons, with pre-shift messaging to the team.",
+   "format": "phone app (iOS and Android)",
+   "own_wine_list": null,
+   "own_wine_list_note": "Not stated for wine lists. The site says: \"Fully customized: Knowbie's environment includes logos, menus and messages from your business.\"",
+   "manager_tools": "\"Progress dashboard for performance tracking\", \"Detailed analytics and insights\", and \"Send pre-shift messages to your team\".",
+   "languages": "English (App Store listing)",
+   "price": {
+    "public": false,
+    "text": "On request. The restaurant page is headed \"Simple, Transparent Pricing\" but lists no amounts; the app itself is free to download.",
+    "free_trial": "\"Try For Free\" button and \"Download the app on your app store and try it for yourself!\" (no trial terms stated)",
+    "source": "https://getknowbie.com/restaurant/"
+   },
+   "certificate_or_qualification": "Not stated by the company; a customer testimonial on the site refers to \"Knowbie's beverage alcohol training accreditation\".",
+   "limits_or_tradeoffs": [
+    "No subscription price is published despite the \"Simple, Transparent Pricing\" heading. (source: https://getknowbie.com/restaurant/)",
+    "Covers beer, wine and spirits together, so wine is one part of the content. (source: https://getknowbie.com/restaurant/)",
+    "The site does not say lessons are generated from the venue's own wine list; customisation is described as logos, menus and messages. (source: https://getknowbie.com/)",
+    "App Store listing shows English only and 1 rating. (source: https://apps.apple.com/us/app/knowbie-beverage-training/id1563550561)"
+   ],
+   "sources": [
+    "https://getknowbie.com/",
+    "https://getknowbie.com/restaurant/",
+    "https://getknowbie.com/get-started/",
+    "https://apps.apple.com/us/app/knowbie-beverage-training/id1563550561"
+   ],
+   "unverified": [
+    "Subscription price and trial terms",
+    "Company country (App Store seller name suggests British Columbia, Canada, but this is not stated)",
+    "How far the content can be tailored to a venue's own wines",
+    "Google Play listing was not read",
+    "Year of the latest App Store update (listing showed version 2.7.0, \"Oct 23\")"
+   ],
+   "short": {
+    "best": "Venues wanting gamified wine, beer and spirits basics on phones",
+    "price": "On request (no amounts published)",
+    "format": "Phone app (iOS and Android)"
+   }
+  },
+  {
+   "id": "sorso",
+   "name": "Sorso",
+   "maker": "Sorso (country not stated)",
+   "url": "https://sorso.live",
+   "what_it_is": "An AI wine-program management platform that generates food pairings, tracks margins and produces an auto-generated nightly staff brief from the venue's menu and wine inventory.",
+   "best_for": "Restaurants that want pairing suggestions, margin tracking and a printed or shared daily briefing for staff rather than a course or quiz tool; integrates with Toast POS.",
+   "format": "web app + AI tool",
+   "own_wine_list": true,
+   "own_wine_list_note": "\"Import your wine list. Scan labels or import a CSV. Sorso builds your inventory automatically.\" Staff briefs are generated from this: \"Auto-generated nightly staff briefs featuring wine stories, push picks, and talking points\".",
+   "manager_tools": "Margin intelligence (profit per bottle and per pour), Toast POS sales and dead-stock view, guest QR wine list. No staff progress tracking, quizzes or reports on staff knowledge are described.",
+   "languages": null,
+   "price": {
+    "public": true,
+    "text": "Starter $99 per month (up to 50 wines in inventory, AI pairings for 1 menu, daily staff brief); Professional $249 per month (unlimited wine inventory, pairings for all menus, Toast POS integration); Enterprise: Custom (multi-location; includes \"Staff training sessions\").",
+    "free_trial": "\"Every plan includes a 14-day free trial. No credit card required.\"",
+    "source": "https://sorso.live/"
+   },
+   "certificate_or_qualification": null,
+   "limits_or_tradeoffs": [
+    "Staff training here means a daily brief (stories, push picks, talking points); no lessons, quizzes or progress tracking are described. (source: https://sorso.live/)",
+    "\"Staff training sessions\" are listed only under the Enterprise plan. (source: https://sorso.live/)",
+    "Starter is limited to 50 wines in inventory and pairings for 1 menu. (source: https://sorso.live/)",
+    "The only POS integration named is Toast, and it is on the Professional plan. (source: https://sorso.live/)"
+   ],
+   "sources": [
+    "https://sorso.live/"
+   ],
+   "unverified": [
+    "Company name, country and who is behind it",
+    "Currency of the \"$\" prices (not named)",
+    "What the Enterprise \"Staff training sessions\" consist of",
+    "Marketing figures on the page (\"32% avg margin lift\", an unnamed New York testimonial) are the company's own claims",
+    "Platforms and languages"
+   ],
+   "short": {
+    "best": "Venues wanting AI pairings and a nightly staff brief, not a course",
+    "price": "$99 or $249 per month; 14-day free trial",
+    "format": "Web platform with AI-generated briefs",
+    "own_list": "A nightly staff brief, no quizzes"
+   }
+  },
+  {
+   "id": "service-well",
+   "name": "Service Well",
+   "maker": "Service Well LLC (country not stated)",
+   "url": "https://servicewell.co",
+   "what_it_is": "An AI-powered training platform where managers enter menu products (wines, cocktails, spirits, sake, beer, non-alcoholic, food) and staff take 60-second quizzes and spaced-repetition flashcards on their phones.",
+   "best_for": "Restaurants with a beverage program across several categories that want per-staff pricing with free manager accounts; currently joined through a waitlist.",
+   "format": "web app (PWA on phones) + AI tool",
+   "own_wine_list": true,
+   "own_wine_list_note": "\"Questions and flashcards are generated from your products and study materials.\" Products are entered by the venue (\"Enter products across 7 categories\"); a file import of a wine list is not described.",
+   "manager_tools": "\"Completion rates, knowledge gaps, coaching profiles, and engagement trends\"; quiz scheduling and delivery; manager accounts are free and unlimited per location.",
+   "languages": null,
+   "price": {
+    "public": true,
+    "text": "Founder's Rate $15/staff/month (\"Locked for 2 years. Limited to 50 accounts.\"); Standard $25/staff/month (\"Available after founder's slots fill\"). Managers free. Minimum 3 staff.",
+    "free_trial": "No trial terms shown; \"30-day money-back guarantee — full refund, no questions asked\"",
+    "source": "https://servicewell.co/pricing"
+   },
+   "certificate_or_qualification": null,
+   "limits_or_tradeoffs": [
+    "Sign-up is by waitlist: \"We'll let you know when it's your turn.\" (source: https://servicewell.co/)",
+    "Priced per staff member per month with a minimum of 3 staff, so cost rises with team size. (source: https://servicewell.co/pricing)",
+    "Products are entered one by one with AI filling in details (\"Web enrichment for beverages\"); uploading a whole wine list file is not described. (source: https://servicewell.co/features)",
+    "The features page says \"Service Well doesn't offer allergen screening today.\" (source: https://servicewell.co/features)"
+   ],
+   "sources": [
+    "https://servicewell.co/",
+    "https://servicewell.co/pricing",
+    "https://servicewell.co/features"
+   ],
+   "unverified": [
+    "Whether the product is generally available yet or waitlist only",
+    "Answer to the pricing FAQ \"Is there a free trial?\" (the answer text was not readable)",
+    "Currency of the \"$\" prices (not named)",
+    "Company country and languages"
+   ],
+   "short": {
+    "best": "Venues wanting quizzes and flashcards from their own products",
+    "price": "$15/staff/month founder's rate; $25 standard",
+    "format": "Phone web app (PWA), waitlist sign-up",
+    "own_list": "Quizzes from products the manager enters"
+   }
+  },
+  {
+   "id": "lumintino",
+   "name": "Lumintino",
+   "maker": "Lumintino (company and country not stated)",
+   "url": "https://www.lumintino.com",
+   "what_it_is": "A searchable internal reference of a venue's own wine list for staff, with tasting notes, pairings and origin stories curated by the venue and an admin panel for updates.",
+   "best_for": "Restaurants that want a single, always-current wine reference for servers (and optionally guests via QR code) instead of printed training packets.",
+   "format": "web app (Progressive Web App, no app-store download)",
+   "own_wine_list": true,
+   "own_wine_list_note": "\"send us your wine list, and we'll use AI to populate your initial database with tasting notes and characteristics, so you're ready to launch on day one.\"",
+   "manager_tools": "An admin panel: \"When you update a wine in the admin panel, the entire team sees it instantly.\" Notes from tastings and winemaker visits can be stored in the app. No quizzes, team progress or reports are described.",
+   "languages": null,
+   "price": {
+    "public": false,
+    "text": "On request (\"Contact Us for Pricing\")",
+    "free_trial": "No trial stated; a \"Try Live Demo\" link is offered",
+    "source": "https://www.lumintino.com/"
+   },
+   "certificate_or_qualification": null,
+   "limits_or_tradeoffs": [
+    "It is described as a search and reference tool (\"The internal search engine for your wine program\"); no lessons, quizzes or progress tracking are described. (source: https://www.lumintino.com/)",
+    "Pricing is not published. (source: https://www.lumintino.com/)",
+    "Initial tasting notes are populated by AI from the list the venue sends, then curated by the venue. (source: https://www.lumintino.com/)"
+   ],
+   "sources": [
+    "https://www.lumintino.com/"
+   ],
+   "unverified": [
+    "Company name, country and who is behind it",
+    "Price",
+    "Languages",
+    "Only the home page could be read; no separate pricing or FAQ page was found",
+    "lumintino.com could not be re-read in the second check on 2026-11-16 (the page is rendered by script)."
+   ],
+   "short": {
+    "best": "Venues wanting a searchable staff reference of their own list",
+    "price": "On request",
+    "format": "Web app (PWA), no download",
+    "own_list": "A searchable reference, no quizzes"
+   }
+  },
+  {
+   "id": "winevalue-ai",
+   "name": "WineValueAI",
+   "maker": "Aitech Anjos (country not stated)",
+   "url": "https://winevalueai.com",
+   "what_it_is": "A browser-based \"AI sommelier for restaurants\" that scans bottles to produce a sommelier report for each wine and suggests wines per table, with staff training named as one use.",
+   "best_for": "Restaurants without wine specialists that want AI-written notes on each bottle for staff to read and wine suggestions per table and budget; it is a selling aid more than a course.",
+   "format": "web app + AI tool",
+   "own_wine_list": true,
+   "own_wine_list_note": "\"Scan a bottle from your wine list (front and back label)\" ... \"Get the full sommelier report to train your staff on every wine\".",
+   "manager_tools": "\"A login for each staff member\" with roles \"staff, manager, administrator\"; edit prices and promote chosen wines. No quizzes, progress tracking or reports on staff knowledge are described.",
+   "languages": "The site's language selector lists many languages (including English, Portuguese, Spanish, French, German, Norwegian, Swedish and Italian); a full verified list was not captured.",
+   "price": {
+    "public": true,
+    "text": "Monthly $99 / month; Yearly $990 / year (\"2 months free\"). Other currencies can be selected (AUD, BRL, CAD, CHF, EUR, GBP, NOK, SEK).",
+    "free_trial": "\"New accounts get 3 free bottle scans to try it.\"",
+    "source": "https://winevalueai.com/"
+   },
+   "certificate_or_qualification": null,
+   "limits_or_tradeoffs": [
+    "Training consists of an AI-generated report per scanned bottle; no lessons, quizzes or staff progress tracking are described. (source: https://winevalueai.com/)",
+    "The company states: \"All content in WineValueAI is AI-generated ... not guaranteed and may contain errors.\" (source: https://winevalueai.com/)",
+    "\"Up to 1,500 wine recommendations and scans a month\" per subscription, although the plan also lists \"Unlimited bottle scans\". (source: https://winevalueai.com/)",
+    "The notice says it \"does not account for allergies, sulfites or dietary requirements\". (source: https://winevalueai.com/)"
+   ],
+   "sources": [
+    "https://winevalueai.com/"
+   ],
+   "unverified": [
+    "Company country",
+    "Exact list of supported languages and whether reports are produced in each",
+    "FAQ answers (collapsed on the page) on device limits per staff login and photo-page limits for lists and menus",
+    "Exact prices in currencies other than USD"
+   ],
+   "short": {
+    "best": "Venues wanting AI notes per bottle for staff, plus table picks",
+    "price": "$99 / month or $990 / year; 3 free bottle scans",
+    "format": "Web app in the browser, AI-generated",
+    "own_list": "An AI report per scanned bottle"
+   }
+  },
+  {
+   "id": "wset-level-1-award-in-wines",
+   "name": "WSET Level 1 Award in Wines",
+   "maker": "Wine & Spirit Education Trust (WSET), UK; taught through independent course providers",
+   "url": "https://www.wsetglobal.com/explore-courses/explore-all-courses/level-1-award-in-wines/",
+   "what_it_is": "A beginner wine qualification with 6 hours of guided learning, including a closed-book exam of 30 multiple-choice questions, taught in person or online by WSET course providers.",
+   "best_for": "Staff who want a recognised, regulated beginner qualification in general wine knowledge; WSET describes it as for people \"new to the world of wine\" and does not tailor it to a venue.",
+   "format": "live or in-person course; also online through providers",
+   "own_wine_list": false,
+   "own_wine_list_note": "Fixed syllabus: \"The main types and styles of wine\", common grape varieties, \"How to store and serve wine\", \"The principles of food and wine pairing\", and the Level 1 Systematic Approach to Tasting.",
+   "manager_tools": null,
+   "languages": "English, Chinese Traditional, Dutch, French, German, Greek, Italian, Japanese",
+   "price": {
+    "public": false,
+    "text": "Not published by WSET; set by each course provider. Example from one US provider (Napa Valley Wine Academy): $289.00 on-demand online, $329.00 instructor-led online, $425.00 in person.",
+    "free_trial": null,
+    "source": "https://napavalleywineacademy.com/collections/all"
+   },
+   "certificate_or_qualification": "WSET Level 1 Award in Wines; \"regulated by Ofqual, the English regulator for qualifications and exams\". On passing: \"a digital certificate\" and use of the WSET certified logo.",
+   "limits_or_tradeoffs": [
+    "General syllabus; it does not cover a venue's own wine list. (source: https://www.wsetglobal.com/explore-courses/explore-all-courses/level-1-award-in-wines/)",
+    "Paid per person through a course provider; WSET does not publish a price. (source: https://www.wsetglobal.com/explore-courses/explore-all-courses/level-1-award-in-wines/)",
+    "A one-off course and exam (\"closed-book exam of 30 multiple-choice questions\"), not ongoing training. (source: https://www.wsetglobal.com/explore-courses/explore-all-courses/level-1-award-in-wines/)",
+    "Tasting participation requires legal drinking age in the country of the course. (source: https://www.wsetglobal.com/explore-courses/explore-all-courses/level-1-award-in-wines/)"
+   ],
+   "sources": [
+    "https://www.wsetglobal.com/qualifications/wset-level-1-award-in-wines/",
+    "https://www.wsetglobal.com/explore-courses/explore-all-courses/level-1-award-in-wines/",
+    "https://napavalleywineacademy.com/collections/all",
+    "https://napavalleywineacademy.com/search?q=level+1+wine+on-demand&type=product"
+   ],
+   "unverified": [
+    "Pass mark (not stated on the page read)",
+    "Prices at providers other than the one example, and prices outside the USA",
+    "WSET's \"Training for your team\" page was linked but not read"
+   ],
+   "short": {
+    "best": "Staff wanting a recognised beginner wine qualification",
+    "price": "Set by provider; e.g. $289.00-$425.00 at one US school",
+    "format": "6 hours of guided learning, exam included"
+   }
+  },
+  {
+   "id": "napa-valley-wine-academy",
+   "name": "Napa Valley Wine Academy (team training and WSET courses)",
+   "maker": "Napa Valley Wine Academy (Napa, California, USA)",
+   "url": "https://napavalleywineacademy.com/pages/corporate-wine-training",
+   "what_it_is": "A wine school and WSET course provider that sells WSET courses online and in person and arranges custom courses for businesses with at least 10 participants.",
+   "best_for": "Businesses that want a group of 10 or more staff to take a WSET qualification, or a bespoke session without an exam, online or in person in the USA.",
+   "format": "live or in-person course; online live cohort or on-demand",
+   "own_wine_list": null,
+   "own_wine_list_note": "Not stated. Custom courses can include \"your own products if they meet qualification standards\" as tasting samples; full WSET content remains mandatory for WSET courses.",
+   "manager_tools": null,
+   "languages": null,
+   "price": {
+    "public": true,
+    "text": "Team courses: \"Costs vary based on course level, customization level, and group size.\" Published individual prices: WSET Level 1 Wine Online On-Demand $289.00; WSET Level 1 Wine Online Instructor-Led $329.00; WSET Level 1 Award in Wines In-Person $425.00.",
+    "free_trial": null,
+    "source": "https://napavalleywineacademy.com/collections/all"
+   },
+   "certificate_or_qualification": "WSET qualifications (the school is a WSET course provider); bespoke sessions are offered with \"no exams\".",
+   "limits_or_tradeoffs": [
+    "Custom team courses need \"at least 10 participants\" and \"a minimum of four weeks' notice\". (source: https://napavalleywineacademy.com/pages/corporate-wine-training)",
+    "Team pricing is by quote only. (source: https://napavalleywineacademy.com/pages/corporate-wine-training)",
+    "The corporate page does not name restaurants as a target group; listed partners are mainly retailers, distributors and wineries, plus Marriott. (source: https://napavalleywineacademy.com/pages/corporate-wine-training)",
+    "The \"SommDay School\" online wine service course aimed at restaurant staff no longer has a product page; its URL redirects to the general catalog. (source: https://napavalleywineacademy.com/products/sommday-school-online-service-course)"
+   ],
+   "sources": [
+    "https://napavalleywineacademy.com/pages/corporate-wine-training",
+    "https://napavalleywineacademy.com/collections/all",
+    "https://napavalleywineacademy.com/search?q=level+1+wine+on-demand&type=product",
+    "https://napavalleywineacademy.com/search?q=sommday+service&type=product",
+    "https://napavalleywineacademy.com/pages/sommday-school-workshops",
+    "https://napavalleywineacademy.com/products/sommday-school-online-service-course"
+   ],
+   "unverified": [
+    "Whether a dedicated online \"wine for servers\" course is currently sold (the SommDay School online service course could not be found in the catalog on 2026-11-16)",
+    "Dates or prices for the in-person SommDay School workshops (the page describes 6-hour sessions for waitstaff and bartenders but lists none)",
+    "Team course prices and group discounts"
+   ],
+   "short": {
+    "best": "Groups of 10+ staff taking WSET or a bespoke class (USA)",
+    "price": "Team by quote; WSET Level 1 from $289.00 per person",
+    "format": "Online or in-person courses"
+   }
+  },
+  {
+   "id": "tablo",
+   "name": "Tablo",
+   "maker": "Tablo (company and country not stated)",
+   "url": "https://trytablo.com",
+   "what_it_is": "A phone app that turns a restaurant's imported menu, including its wine list, into 3-minute pre-shift quizzes for staff.",
+   "best_for": "Restaurants that want one flat monthly price for unlimited staff and short daily quizzes on their own dishes and wines; the company says it is opening to its first restaurants.",
+   "format": "phone app (iPhone and Android) + AI tool",
+   "own_wine_list": true,
+   "own_wine_list_note": "\"Every answer is checked against your own dishes and wine list. No generic food trivia.\"",
+   "manager_tools": "\"See who's trained tonight and who isn't\"; alert \"when someone's average drops below 65%\"; Focus Areas showing weakest categories and weekly trends; per-staff review of missed questions; invite staff by text.",
+   "languages": null,
+   "price": {
+    "public": true,
+    "text": "Tablo Pro $49.99 per month: unlimited staff members, 40 quizzes per month.",
+    "free_trial": "\"Includes a 7-day free trial. No credit card required to start.\"",
+    "source": "https://trytablo.com/"
+   },
+   "certificate_or_qualification": null,
+   "limits_or_tradeoffs": [
+    "The plan is limited to 40 quizzes per month. (source: https://trytablo.com/)",
+    "It covers the whole menu (dishes, wines, pairings, upsells), so wine is one part of the quiz content, not a wine course. (source: https://trytablo.com/)",
+    "The site says \"We're opening Tablo to our first restaurants\", which indicates an early-stage product. (source: https://trytablo.com/)",
+    "Staff need to download the app to take quizzes. (source: https://trytablo.com/)"
+   ],
+   "sources": [
+    "https://trytablo.com/"
+   ],
+   "unverified": [
+    "Company name and country",
+    "Currency of the \"$\" price (not named)",
+    "Languages",
+    "App Store and Google Play listings were not read directly"
+   ],
+   "short": {
+    "best": "Venues wanting 3-minute pre-shift quizzes from their own menu",
+    "price": "$49.99 per month, unlimited staff; 7-day free trial",
+    "format": "Phone app (iPhone and Android)",
+    "own_list": "Quizzes from the imported menu"
+   }
+  },
+  {
+   "id": "mitti-wine-knowledge",
+   "name": "Mitti by SafetyCulture - \"Wine Knowledge\" course",
+   "maker": "Mitti by SafetyCulture (country not stated)",
+   "url": "https://mitti.com/library/hospitality/wine-knowledge-us",
+   "what_it_is": "A free, editable short online course for food and drink servers with four lessons (Wine Introduction, Production of Wine, Versatility of Wine, Final Assessment), hosted on a general workplace training platform.",
+   "best_for": "Small teams that want a free, under-30-minute wine primer for servers that a manager can edit; the platform's free plan covers up to 10 users.",
+   "format": "web app / short online course (any device)",
+   "own_wine_list": false,
+   "own_wine_list_note": "Pre-made general course \"designed to help food and drink servers in hospitality establishments recall essential knowledge about wine\"; it is labelled \"Editable\", so a venue could adapt it, but it is not built from the venue's list.",
+   "manager_tools": "Platform-level training tools; the pricing table lists basic training on Free and advanced training on Premium, and mentions a training matrix and performance tracking (which plan includes each was not confirmed).",
+   "languages": null,
+   "price": {
+    "public": true,
+    "text": "Course listed as \"Free Course\". Platform: Free $0 (\"up to 10\" seats); Premium $24 per seat per month billed annually or $29 per seat per month billed monthly; Enterprise: custom.",
+    "free_trial": "Free plan for up to 10 seats",
+    "source": "https://mitti.com/pricing"
+   },
+   "certificate_or_qualification": null,
+   "limits_or_tradeoffs": [
+    "Short and general: four lessons, completable \"in under 30 minutes\". (source: https://mitti.com/library/hospitality/wine-knowledge-us)",
+    "Not built from the venue's wine list; any tailoring is manual editing. (source: https://mitti.com/library/hospitality/wine-knowledge-us)",
+    "The free plan is capped at 10 seats; larger teams pay per seat per month. (source: https://mitti.com/pricing)",
+    "It is one course in a general operations and training platform, not a wine-specific product. (source: https://mitti.com/library/hospitality/wine-knowledge-us)"
+   ],
+   "sources": [
+    "https://training.safetyculture.com/course/wine-knowledge-us",
+    "https://mitti.com/library/hospitality/wine-knowledge-us",
+    "https://mitti.com/pricing"
+   ],
+   "unverified": [
+    "Languages the course is offered in",
+    "Whether a certificate is issued",
+    "Which manager features (training matrix, performance tracking) are on the free plan",
+    "Currency of the \"$\" prices (not named)",
+    "The older SafetyCulture training URL redirects to mitti.com; the relationship is taken from the page branding \"Mitti by SafetyCulture\""
+   ],
+   "short": {
+    "best": "Small teams wanting a free 30-minute wine primer for servers",
+    "price": "Course free; platform free up to 10 seats",
+    "format": "Short online course, any device"
+   }
+  }
+ ]
+}
