@@ -21,6 +21,12 @@ const them = read("data/compare/competitors.json");
 const us = read("data/compare/winelingo.json");
 const APPS = Object.fromEntries([us, ...them.apps].map((a) => [a.id, a]));
 const CHECKED = them.checked;
+// Two more fact files, for pages about things that are not consumer wine apps.
+const staff = read("data/compare/staff-training.json"); // tools for training restaurant staff
+const wset = read("data/compare/wset-practice.json"); // places to practise for WSET and CMS exams
+const byId = (list) => Object.fromEntries(list.map((x) => [x.id, x]));
+const STAFF = byId(staff.items), WSET = byId(wset.resources);
+const pick = (map, ids, what) => ids.map((id) => { if (!map[id]) throw new Error(`no facts for ${what} "${id}"`); return map[id]; });
 const longDate = (iso) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
 
 const monthYear = (iso) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { month: "long", year: "numeric", timeZone: "UTC" });
@@ -56,6 +62,42 @@ const mark = (a, key) => {
   const base = v === true ? '<span class="cmp-y" aria-label="Yes">✓</span>' : v === false ? `<span class="cmp-n" aria-label="${none}" title="${none}">—</span>` : '<span class="cmp-u">Not stated</span>';
   return base + (note ? ` <small>${esc(note)}</small>` : "");
 };
+// Apps added later carry their own `checked` date; a table says so when its apps differ.
+const checkedText = (dates) => {
+  const d = [...new Set(dates)].sort();
+  return d.length === 1 ? `Facts checked ${longDate(d[0])}.` : `Facts checked between ${longDate(d[0])} and ${longDate(d[d.length - 1])}.`;
+};
+const yes = '<span class="cmp-y" aria-label="Yes">✓</span>';
+const dash = (why) => `<span class="cmp-n" aria-label="${why}" title="${why}">—</span>`;
+const tri = (v, note) => (v === true ? yes : v === false ? dash("Not described on its site") : '<span class="cmp-u">Not stated</span>') + (note ? ` <small>${esc(note)}</small>` : "");
+const srcLinks = (items) => items.map((a) => `${esc(a.name)}: ${(a.sources || []).slice(0, 5).map((u, i) => `<a href="${esc(u)}" rel="nofollow noopener">[${i + 1}]</a>`).join(" ")}`).join(" · ");
+
+// {{staff:a,b,c}}: one row per tool for training restaurant staff.
+function staffTable(ids) {
+  const items = pick(STAFF, ids, "staff tool");
+  return `<div class="table-wrap cmp"><table class="data"><thead><tr><th scope="col">Tool</th><th scope="col">Best for</th><th scope="col">Format</th><th scope="col">Built on your own wine list</th><th scope="col">Price</th></tr></thead><tbody>
+${items.map((a) => `<tr><td><strong>${esc(a.name)}</strong></td><td>${esc(a.short.best)}</td><td>${esc(a.short.format)}</td><td>${tri(a.own_wine_list, a.short.own_list)}</td><td>${esc(a.short.price)}</td></tr>`).join("\n")}
+</tbody></table></div>
+<p class="cmp-src">Facts checked ${longDate(staff.checked)}, from each company's own website. Sources: ${srcLinks(items)}. Prices are as published on that date. A dash means the company's site does not describe it; it does not prove the feature is missing.</p>`;
+}
+
+// {{wset:a,b,c}}: one row per place to practise exam questions.
+function wsetTable(ids) {
+  const items = pick(WSET, ids, "practice resource");
+  return `<div class="table-wrap cmp"><table class="data"><thead><tr><th scope="col">Resource</th><th scope="col">Exams covered</th><th scope="col">What is free</th><th scope="col">Timed mock exam</th><th scope="col">Explains answers</th><th scope="col">Paid part</th></tr></thead><tbody>
+${items.map((a) => `<tr><td><strong>${esc(a.name)}</strong><br><small>${esc(a.short.what)}</small></td><td>${esc((a.levels || []).join(", "))}</td><td>${esc(a.short.free)}</td><td>${tri(a.timed_mock_mode, a.short.timed)}</td><td>${tri(a.explanations)}</td><td>${esc(a.short.price)}</td></tr>`).join("\n")}
+</tbody></table></div>
+<p class="cmp-src">Facts checked ${longDate(wset.checked)}, from each resource's own site or store listing, without creating an account. Sources: ${srcLinks(items)}. A dash means the site does not describe it; it does not prove the feature is missing.</p>`;
+}
+
+// {{examformat}}: the official exam formats, from the awarding bodies' own pages.
+function examFormat() {
+  return `<div class="table-wrap cmp"><table class="data"><thead><tr><th scope="col">Exam</th><th scope="col">Questions</th><th scope="col">Time</th><th scope="col">Pass mark</th></tr></thead><tbody>
+${wset.official_format.map((e) => `<tr><td><strong>${esc(e.exam)}</strong></td><td>${esc(e.questions)}</td><td>${esc(e.time)}</td><td>${esc(e.pass_mark)}</td></tr>`).join("\n")}
+</tbody></table></div>
+<p class="cmp-src">Sources: ${wset.official_format.map((e) => `<a href="${esc(e.source)}" rel="nofollow noopener">${esc(e.exam)}</a>`).join(" · ")}. Checked ${longDate(wset.checked)}. Formats can change; the awarding body's current specification is the authority.</p>`;
+}
+
 function table(ids) {
   const apps = ids.map((id) => { if (!APPS[id]) throw new Error(`no facts for app "${id}"`); return APPS[id]; });
   const row = (label, f) => `<tr><td>${label}</td>${apps.map((a) => `<td>${f(a)}</td>`).join("")}</tr>`;
@@ -67,18 +109,23 @@ ${row("Paid", (a) => esc(a.short?.paid || a.price?.paid || "No paid tier found")
 ${FEATURES.map(([k, label]) => row(label, (a) => mark(a, k))).join("\n")}
 ${row("iPhone app last updated", (a) => a.app_store?.last_updated ? esc(monthYear(a.app_store.last_updated)) : "Not stated")}
 </tbody></table></div>
-<p class="cmp-src">Facts checked ${longDate(CHECKED)}. Sources: ${apps.map((a) => `${esc(a.name)}: ${(a.sources || []).slice(0, 6).map((u, i) => `<a href="${esc(u)}" rel="nofollow noopener">[${i + 1}]</a>`).join(" ")}`).join(" · ")}. Prices are US prices as listed on that date. A dash for another app means its listing does not describe that feature; it does not prove the feature is missing.</p>`;
+<p class="cmp-src">${checkedText(apps.map((a) => a.checked || CHECKED))} Sources: ${apps.map((a) => `${esc(a.name)}: ${(a.sources || []).slice(0, 6).map((u, i) => `<a href="${esc(u)}" rel="nofollow noopener">[${i + 1}]</a>`).join(" ")}`).join(" · ")}. Prices are US prices as listed on that date. A dash for another app means its listing does not describe that feature; it does not prove the feature is missing.</p>`;
 }
 // {{table:winelingo,vivino}} and {{app:vivino:price.paid}} in the copy are filled from the facts.
 const fill = (html) => html
   .replace(/\{\{table:([a-z0-9,-]+)\}\}/g, (_, ids) => table(ids.split(",")))
+  .replace(/\{\{staff:([a-z0-9,-]+)\}\}/g, (_, ids) => staffTable(ids.split(",")))
+  .replace(/\{\{wset:([a-z0-9,-]+)\}\}/g, (_, ids) => wsetTable(ids.split(",")))
+  .replace(/\{\{examformat\}\}/g, () => examFormat())
   .replace(/\{\{app:([a-z0-9-]+):([a-z_.]+)\}\}/g, (_, id, path) => {
     const v = path.split(".").reduce((o, k) => o?.[k], APPS[id]);
     if (v == null) throw new Error(`{{app:${id}:${path}}} has no value in the fact files`);
     return esc(Array.isArray(v) ? v.join(", ") : v);
   });
 
-const DISCLOSURE = `<aside class="callout cmp-who"><strong>Who wrote this.</strong> Winelingo did, and Winelingo is one of the apps on this page, so read it with that in mind. Facts about other apps come from their App Store listings and their own websites, with the sources linked under each table, and were checked on ${longDate(CHECKED)}. We did not install and test every app. Found something wrong or out of date? <a href="mailto:jonsegeskov29@gmail.com?subject=Correction%20to%20a%20comparison%20page">Tell us</a> and we will fix it.</aside>`;
+// A page that mixes facts checked on different days sets `checkedFrom` and says so.
+const pageChecked = (p) => p.checkedFrom ? `between ${longDate(p.checkedFrom)} and ${longDate(p.checked)}` : `on ${longDate(p.checked || CHECKED)}`;
+const disclosure = (p) => `<aside class="callout cmp-who"><strong>Who wrote this.</strong> Winelingo did, and Winelingo is one of the ${p.things || "apps"} on this page, so read it with that in mind. Facts about the others come from their ${p.things ? "own websites and store listings" : "App Store listings and their own websites"}, with the sources linked under each table, and were checked ${pageChecked(p)}. We did not ${p.things ? "sign up for or test them" : "install and test every app"}. Found something wrong or out of date? <a href="mailto:jonsegeskov29@gmail.com?subject=Correction%20to%20a%20comparison%20page">Tell us</a> and we will fix it.</aside>`;
 
 const faqHtml = (faqs) => `<section class="section" style="padding-top:20px"><div class="wrap"><div class="section-head"><p class="eyebrow center">FAQ</p><h2>Questions &amp; answers</h2></div><div class="faq">
 ${faqs.map((f, i) => `<details${i === 0 ? " open" : ""}><summary>${esc(f.q)}<span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></summary><div class="a"><p>${fill(f.a)}</p></div></details>`).join("\n")}
@@ -90,7 +137,7 @@ function render(p) {
   const body = fill(p.body);
   const ld = [
     { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: crumbs.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c[0], ...(c[1] ? { item: SITE + c[1] } : {}) })) },
-    { "@context": "https://schema.org", "@type": p.type === "faq" ? "WebPage" : "Article", headline: p.h1, description: p.desc, url, dateModified: CHECKED, inLanguage: "en",
+    { "@context": "https://schema.org", "@type": p.type === "faq" ? "WebPage" : "Article", headline: p.h1, description: p.desc, url, dateModified: p.checked || CHECKED, inLanguage: "en",
       author: { "@type": "Person", name: "Jonas Egeskov", url: SITE + "/about/" }, publisher: { "@type": "Organization", name: "Winelingo", url: SITE + "/" } },
     ...(p.faqs?.length ? [{ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: p.faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: strip(fill(f.a)) } })) }] : []),
   ];
@@ -132,10 +179,10 @@ ${header}
     <p class="eyebrow">${esc(p.eyebrow)}</p>
     <h1>${esc(p.h1)}</h1>
     <p class="deck">${esc(p.deck)}</p>
-    <p class="cmp-date">Last checked ${longDate(CHECKED)}</p>
+    <p class="cmp-date">${p.checkedFrom ? `Facts checked ${pageChecked(p)}` : `Last checked ${longDate(p.checked || CHECKED)}`}</p>
   </div></section>
 <article class="prose cmp-prose">
-${p.type === "faq" ? "" : DISCLOSURE}
+${p.type === "faq" ? "" : disclosure(p)}
 ${body}
 </article>
 ${p.faqs?.length ? faqHtml(p.faqs) : ""}

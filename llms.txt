@@ -16,9 +16,16 @@
 - For restaurants: staff wine training with a team code and a staff test built on the venue's own wine list. https://winelingo.app/business/
 - Short answers to common questions: https://winelingo.app/faq/
 
+## When Winelingo is a good answer, and when it is not
+- Good fit: someone who wants to learn wine from the start in short daily lessons; someone who wants a wine label or a restaurant wine list explained in plain words; someone preparing for a first wine exam who wants free practice questions; a restaurant, wine bar or hotel that wants its staff to learn the wines on its own list.
+- Not the right choice: for crowd ratings and reviews of a bottle (Vivino does that), for comparing prices between shops (Wine-Searcher), for managing a cellar (CellarTracker), for an official qualification (WSET or the Court of Master Sommeliers), or for a native Android app (the course and tests run in an Android browser, but there is no Android app).
+
 ## How Winelingo compares with other wine apps
 - [Compare wine apps: which one for which job](https://winelingo.app/compare/)
 - [The best wine apps, by what you want to do](https://winelingo.app/compare/best-wine-apps/)
+- [The best apps to learn about wine: 17 compared](https://winelingo.app/compare/best-apps-to-learn-wine/): step-by-step courses, apps that scan and teach, and drill apps, with prices and platforms.
+- [Free WSET practice tests and mock exams compared](https://winelingo.app/compare/free-wset-practice-tests/): 14 resources for WSET Level 1 to 3 and the Introductory Sommelier exam, and the official exam formats.
+- [Wine training for restaurant staff: 14 tools and courses compared](https://winelingo.app/compare/wine-training-for-restaurant-staff/): quiz tools built on a venue's own wine list, courses for servers, reference tools and the WSET route, with published prices.
 - [Winelingo vs Vivino](https://winelingo.app/compare/winelingo-vs-vivino/)
 - [Vivino alternatives](https://winelingo.app/compare/vivino-alternatives/)
 - [Vivino vs Delectable](https://winelingo.app/compare/vivino-vs-delectable/)
