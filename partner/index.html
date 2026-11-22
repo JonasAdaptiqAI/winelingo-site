@@ -93,7 +93,7 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
     </form>
     <a class="inv-btn alt" id="store" href="https://apps.apple.com/app/id6785896824" hidden>Åbn Winelingo i App Store</a>
 
-    <p class="inv-foot">Har du spørgsmål? Skriv til jonsegeskov29@gmail.com.<br>18+ · Drik ansvarligt.<br>
+    <p class="inv-foot">Har du spørgsmål? Skriv til hello@winelingo.app.<br>18+ · Drik ansvarligt.<br>
       <a href="/">winelingo.app</a> · <a href="/privacy">Privatliv</a></p>
   </div>
 </main>
@@ -126,7 +126,7 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
     var ERR = {
       invalid_code: ["Koden findes ikke", "Tjek, at den er skrevet præcis som du fik den, med bindestreg."],
       expired: ["Koden er udløbet", "Spørg din leder, om der er en ny kode."],
-      full: ["Koden er brugt op", "Alle pladser på koden er taget. Skriv til jonsegeskov29@gmail.com, så finder vi en løsning."],
+      full: ["Koden er brugt op", "Alle pladser på koden er taget. Skriv til hello@winelingo.app, så finder vi en løsning."],
       no_account: ["Vi kan ikke finde din konto", "Opret først en konto i appen. Skriv derefter den mail, du loggede ind med, eller dit @brugernavn fra din profil."],
       rate_limited: ["For mange forsøg lige nu", "Vent 10 minutter, og prøv igen."]
     };
@@ -152,7 +152,7 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
             go.hidden = true; store.hidden = false;
             return;
           }
-          var e2 = ERR[j.error] || ["Det lykkedes ikke", "Prøv igen om lidt. Bliver det ved, så skriv til jonsegeskov29@gmail.com."];
+          var e2 = ERR[j.error] || ["Det lykkedes ikke", "Prøv igen om lidt. Bliver det ved, så skriv til hello@winelingo.app."];
           say("err", e2[0], e2[1]);
         })
         .catch(function () { say("err", "Ingen forbindelse", "Tjek din internetforbindelse, og prøv igen."); })

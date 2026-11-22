@@ -96,7 +96,7 @@ const hub = {
 <ul>
 <li>Facts about another app come from its own App Store or Google Play listing, its own website or Apple's public data. The one exception is who owns Delectable, which comes from news reports of the 2016 sale. Each comparison table links its sources.</li>
 <li>In the tables, a dash for another app means its listing does not describe that feature. It does not prove the feature is missing.</li>
-<li>Every page shows the date the facts were last checked. Apps change; if a page is out of date, <a href="mailto:jonsegeskov29@gmail.com?subject=Correction%20to%20a%20comparison%20page">tell us</a>.</li>
+<li>Every page shows the date the facts were last checked. Apps change; if a page is out of date, <a href="mailto:hello@winelingo.app?subject=Correction%20to%20a%20comparison%20page">tell us</a>.</li>
 <li>We did not install and test every app. We compare what each company says its app does.</li>
 <li>Where another app is the better choice, the page says so.</li>
 </ul>

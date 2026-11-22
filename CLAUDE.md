@@ -35,7 +35,7 @@ Everything is hand-written static HTML/CSS/JS.
   just today. That is the lesson these two bullets encode; it cost a near-miss on the
   carousels to learn.
 - Include an **18+ / drink responsibly** line (the App Store rating; Apple retired 17+). Legal entity/contact: **Jonas Egeskov, Denmark**,
-  jonsegeskov29@gmail.com.
+  hello@winelingo.app.
 
 ## Design system (single source of truth: app repo `design/Design-Guide.md`)
 - Palette — paper `#FBF7F4`, paper-raised `#FFFDFB`, parchment `#F3ECE3`, wine `#7B1E3B`,
