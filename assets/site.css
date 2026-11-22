@@ -639,3 +639,25 @@ p.qz-biz{display:block}
 .cmp-list .cmp-meta{font-size:13.5px; color:var(--muted)}
 .appband .cmp-web{color:rgba(251,247,244,.85); font-size:15px; font-weight:600}
 @media (max-width:640px){ .cmp-pick{grid-template-columns:1fr} }
+
+/* Pairing pages: the app pitched at the reader's real moment (choosing a bottle), placed right
+   under the answer instead of after the FAQ. Phones get the button; computers a QR (an iPhone
+   app can't be installed from a laptop). data-get-app-zone keeps the sticky bar out of its way. */
+.shelf-cta{max-width:var(--maxw-prose); margin:6px auto 30px; padding:20px 20px 18px; display:flex; gap:16px; align-items:flex-start;
+  border-radius:18px; background:linear-gradient(160deg,#fffdfb,#f6eee6); border:1px solid rgba(201,162,74,.45); box-shadow:var(--shadow-sm)}
+.shelf-cta .sc-icon{width:52px; height:52px; border-radius:13px; flex:0 0 auto; box-shadow:0 4px 10px -4px rgba(59,10,30,.45)}
+.shelf-cta .sc-txt{min-width:0}
+.shelf-cta .eyebrow{margin:2px 0 4px}
+.shelf-cta .sc-h{font-family:var(--font-display); font-weight:600; font-size:22px; line-height:1.25; color:var(--wine-deep); margin:0 0 6px}
+.shelf-cta .sc-b{margin:0 0 14px; color:var(--ink); font-size:16px; line-height:1.5}
+.shelf-cta .sc-go{display:flex; flex-wrap:wrap; align-items:center; gap:8px 14px}
+.shelf-cta .sc-btn{display:inline-block; padding:12px 20px; border-radius:999px; background:var(--wine); color:#fff; font:600 15px/1 var(--font-body); text-decoration:none; box-shadow:0 6px 14px -8px rgba(123,30,59,.7)}
+.shelf-cta .sc-btn:hover{background:var(--wine-deep)}
+.shelf-cta .sc-note{font-size:13px; color:var(--muted)}
+.shelf-cta .sc-qr{display:none}
+@media (hover:hover) and (pointer:fine) and (min-width:901px){
+  .shelf-cta .sc-go{display:none}
+  .shelf-cta .sc-qr{display:flex; align-items:center; gap:12px; font-size:13px; line-height:1.4; color:var(--ink)}
+  .shelf-cta .sc-qr img{border-radius:8px; background:#fff; padding:4px; border:1px solid var(--line)}
+}
+@media (max-width:520px){ .shelf-cta{margin:4px 16px 26px; padding:18px 16px 16px; gap:12px} .shelf-cta .sc-icon{width:44px; height:44px} .shelf-cta .sc-h{font-size:20px} }
