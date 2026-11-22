@@ -28,7 +28,7 @@ const longDate = (iso) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB
 
 const pick = (re, what) => { const m = donor.match(re); if (!m) throw new Error(`donor drift: ${what}`); return m[0]; };
 const motif = pick(/<svg class="motif"[\s\S]*?<\/svg>/, "hero motif");
-const appband = pick(/<section class="wrap"><div class="appband">[\s\S]*?<\/div><\/div><\/section>/, "app band");
+const appband = pick(/<section class="wrap"><div class="appband"[^>]*>[\s\S]*?<\/div><\/div><\/section>/, "app band");
 const pm = '<span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>';
 const divider = '<div class="prose-divider" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.4 6.3L21 9l-5 4.2L17.6 20 12 16.4 6.4 20 8 13.2 3 9l6.6-.7L12 2Z"/></svg></div>';
 const donorUrl = donor.match(/<link rel="canonical" href="([^"]+)">/)[1];
@@ -68,7 +68,13 @@ for (const f of files) {
   check(g, f);
   if (g.hero) for (const v of [".jpg", ".webp", "-800.webp", "-1200.webp", "-og.jpg"]) if (!existsSync(join(ROOT, "assets/photos", g.hero.img + v))) throw new Error(`${f}: missing photo ${g.hero.img}${v}`);
   const url = `https://winelingo.app/learn/${g.slug}/`;
-  const published = g.published || TODAY;
+  // Dates: a rebuild must not make an untouched guide look new. The publication date comes from the
+  // JSON, else from the page already on disk. "Updated" moves to today only for a guide named on the
+  // command line (the one being edited); a build of every guide keeps each page's own date.
+  const was = existsSync(join(ROOT, "learn", g.slug, "index.html")) ? readFileSync(join(ROOT, "learn", g.slug, "index.html"), "utf8") : "";
+  const dateOn = (key) => (was.match(new RegExp(`"${key}":"(\\d{4}-\\d{2}-\\d{2})"`)) || [])[1];
+  const published = g.published || dateOn("datePublished") || TODAY;
+  const modified = only ? TODAY : dateOn("dateModified") || TODAY;
   const title = `${g.title.replace(/\s*\|\s*Winelingo$/, "")} | Winelingo`;
   if (title.length > 60) throw new Error(`${f}: title ${title.length} chars`);
 
@@ -88,7 +94,7 @@ for (const f of files) {
       { "@type": "ListItem", position: 1, name: "Home", item: "https://winelingo.app/" },
       { "@type": "ListItem", position: 2, name: "Learn", item: "https://winelingo.app/learn/" },
       { "@type": "ListItem", position: 3, name: g.crumb }] },
-    { ...article, headline: g.h1, description: g.metaDescription, datePublished: published, dateModified: TODAY, mainEntityOfPage: url },
+    { ...article, headline: g.h1, description: g.metaDescription, datePublished: published, dateModified: modified, mainEntityOfPage: url },
     { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: g.faq.map((x) => ({ "@type": "Question", name: x.q, acceptedAnswer: { "@type": "Answer", text: x.a } })) },
   ];
   // drop the donor's JSON-LD and write ours in its place
@@ -105,7 +111,7 @@ for (const f of files) {
     <p class="eyebrow reveal">Learn</p>
     <h1 class="reveal d1">${escT(g.h1)}</h1>
     <p class="deck reveal d2">${escT(g.deck)}</p>
-    <p class="byline">By <a href="/about/">Jonas Egeskov</a> · Updated <time datetime="${TODAY}">${longDate(TODAY)}</time></p>
+    <p class="byline">By <a href="/about/">Jonas Egeskov</a> · Updated <time datetime="${modified}">${longDate(modified)}</time></p>
   </div></section>${g.hero ? `<div class="hero-photo"><picture><source type="image/webp" srcset="/assets/photos/${g.hero.img}-800.webp 800w, /assets/photos/${g.hero.img}-1200.webp 1200w, /assets/photos/${g.hero.img}.webp 1500w" sizes="100vw"><img src="/assets/photos/${g.hero.img}.jpg" alt="${esc(g.hero.alt)}" width="1500" height="560" fetchpriority="high" decoding="async"></picture></div>` : ""}<article class="prose">${g.intro.replace("<p>", '<p class="lead">')}</article><article class="prose">${sections}</article><section class="wrap" style="max-width:var(--maxw-prose);padding-bottom:10px"><div class="callout"><strong>Keep learning</strong><div style="margin-top:10px;display:grid;gap:8px">${g.keepLearning.map((l) => `<a href="${l.href}">${escT(l.anchor)}</a>`).join("")}</div><p style="margin:12px 0 0;font-size:13px;color:var(--muted)">More from Winelingo: <a href="/learn/">the full learn hub</a>.</p></div></section><section class="section" style="padding-top:20px"><div class="wrap"><div class="section-head"><p class="eyebrow center reveal">FAQ</p><h2 class="reveal">Questions &amp; answers</h2></div><div class="faq reveal d1">
 ${g.faq.map((x, i) => `<details${i === 0 ? " open" : ""}><summary>${escT(x.q)}${pm}</summary><div class="a"><p>${escT(x.a)}</p></div></details>`).join("\n")}
 </div></div></section>${appband}<!-- course-band (scripts/build-guides.mjs) -->
