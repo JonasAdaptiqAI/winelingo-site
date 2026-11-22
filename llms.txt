@@ -1,7 +1,7 @@
 # Winelingo — learn wine, plainly
 
 > Winelingo (winelingo.app) is a wine-education app for iPhone, with the same course in any web
-> browser. It teaches wine in short, interactive lessons (178 lessons in 27 units), has games and
+> browser. It teaches wine in short, interactive lessons (179 lessons in 27 units), has games and
 > free practice tests, and scans a wine label or a restaurant wine list and explains the wine in
 > plain words: body, tannin, acidity, sweetness and why it tastes that way. It does not sell wine
 > and shows no ads. For adults of legal drinking age; enjoy wine responsibly. Made by Jonas
@@ -89,7 +89,7 @@
 - [Wine calories calculator](https://winelingo.app/tools/wine-calories/)
 
 ## Online wine course
-- [Winelingo online wine course](https://winelingo.app/course/): 178 short, interactive lessons in 27 units (the basics, tasting, grapes, serving, food and wine, labels, 12 wine countries, vineyard, winemaking, buying, history). First two units free; Premium $3.99/month or the course for life $39.99. English, Danish, Spanish, German. Same account on the web and in the iPhone app.
+- [Winelingo online wine course](https://winelingo.app/course/): 179 short, interactive lessons in 27 units (the basics, tasting, grapes, serving, food and wine, labels, 12 wine countries, vineyard, winemaking, buying, history). First two units free; Premium $3.99/month or the course for life $39.99. English, Danish, Spanish, German. Same account on the web and in the iPhone app.
 - [Vinkursus online (dansk)](https://winelingo.app/da/vinkursus/)
 - [Curso de vinos online (español)](https://winelingo.app/es/curso-de-vinos/)
 - [Weinkurs online (Deutsch)](https://winelingo.app/de/weinkurs/)
