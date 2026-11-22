@@ -64,7 +64,7 @@
   };
   var LANGS = ["en", "da", "de", "es"];
   var NAMES = { en: "English", da: "Dansk", de: "Deutsch", es: "Español" };
-  var CONTACT = "jonsegeskov29@gmail.com";
+  var CONTACT = "hello@winelingo.app";
   var APP = "https://apps.apple.com/app/id6785896824";
 
   function pickLang(available) {
