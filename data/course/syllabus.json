@@ -1843,46 +1843,86 @@
 "id": "d7170656-caab-47b9-85c2-d15fbf5fc6b1",
 "unit": "Foundations",
 "s": 1,
-"t": "Wine 101: the main styles of wine and how to read them",
-"sum": "Wine is grape juice fermented by yeast, and almost every bottle belongs to a few families you can read by colour, sweetness, bubbles and strength.",
+"t": "Wine 101: grapes, yeast and colour",
+"sum": "Wine is grape juice fermented by yeast, and its colour comes from the skins, which is why black grapes can even make a white wine.",
 "out": [
 "Explain how yeast turns grape juice into wine",
-"Tell still, sparkling, sweet and fortified wines apart",
-"Read any wine by colour, sweetness, bubbles and strength"
+"Explain where a wine's colour comes from",
+"Tell red, white, rosé and orange wine apart"
 ],
-"n": 18,
+"n": 7,
 "da": {
-"t": "Vin 101: de vigtigste slags vin, og hvordan du kender dem",
-"sum": "Vin er druesaft, som gær har lavet om til alkohol, og næsten alle flasker hører til en af få familier, som du kan kende på farve, sødme, bobler og styrke.",
+"t": "Vin 101: druer, gær og farve",
+"sum": "Vin er druesaft, som gær har lavet om til alkohol, og farven kommer fra skindene. Derfor kan blå druer endda give hvidvin.",
 "out": [
 "Forklare, hvordan gær laver druesaft om til vin",
-"Kende forskel på stille, mousserende og søde vine og hedvin",
-"Placere enhver vin ud fra farve, sødme, bobler og styrke"
+"Forklare, hvor vinens farve kommer fra",
+"Kende forskel på rødvin, hvidvin, rosé og orangevin"
 ]
 },
 "es": {
-"t": "Vino 101: los grandes estilos de vino y cómo leerlos",
-"sum": "El vino es zumo de uva fermentado por levaduras, y casi todas las botellas pertenecen a unas pocas familias que puedes reconocer por su color, dulzor, burbujas y graduación.",
+"t": "Vino 101: uvas, levadura y color",
+"sum": "El vino es zumo de uva fermentado por levaduras, y su color viene de los hollejos: por eso con uvas tintas se puede hacer hasta un vino blanco.",
 "out": [
 "Explicar cómo la levadura convierte el zumo de uva en vino",
-"Distinguir vinos tranquilos, espumosos, dulces y generosos",
-"Leer cualquier vino por su color, dulzor, burbujas y graduación"
+"Explicar de dónde viene el color del vino",
+"Distinguir vino tinto, blanco, rosado y naranja"
 ]
 },
 "de": {
-"t": "Wein 101: die wichtigsten Weinstile und wie du sie liest",
-"sum": "Wein ist von Hefen vergorener Traubensaft, und fast jede Flasche gehört zu wenigen Familien, die du an Farbe, Süße, Bläschen und Stärke erkennst.",
+"t": "Wein 101: Trauben, Hefe und Farbe",
+"sum": "Wein ist von Hefen vergorener Traubensaft, und seine Farbe kommt aus den Schalen. Darum kann man aus dunklen Trauben sogar Weißwein machen.",
 "out": [
 "Erklären, wie Hefe aus Traubensaft Wein macht",
+"Erklären, woher die Farbe eines Weins kommt",
+"Rotwein, Weißwein, Rosé und Orangewein unterscheiden"
+]
+}
+},
+{
+"id": "05a9a73c-2b4f-47e3-8d6c-c796c9944fcd",
+"unit": "Foundations",
+"s": 2,
+"t": "Wine 101, part 2: bubbles, sweetness and strength",
+"sum": "Bubbles, sugar left behind and added grape spirit make the other wine families, and four questions place almost any bottle.",
+"out": [
+"Tell still, sparkling, sweet and fortified wines apart",
+"Read any wine by colour, sweetness, bubbles and strength",
+"Find a wine's strength on its label"
+],
+"n": 11,
+"da": {
+"t": "Vin 101, del 2: bobler, sødme og styrke",
+"sum": "Bobler, sukker der bliver tilbage, og tilsat druesprit giver de andre vinfamilier, og fire spørgsmål placerer næsten enhver flaske.",
+"out": [
+"Kende forskel på stille, mousserende og søde vine og hedvin",
+"Placere enhver vin ud fra farve, sødme, bobler og styrke",
+"Finde vinens styrke på etiketten"
+]
+},
+"es": {
+"t": "Vino 101, parte 2: burbujas, dulzor y graduación",
+"sum": "Las burbujas, el azúcar que queda y el aguardiente añadido forman las demás familias, y cuatro preguntas sitúan casi cualquier botella.",
+"out": [
+"Distinguir vinos tranquilos, espumosos, dulces y generosos",
+"Leer cualquier vino por su color, dulzor, burbujas y graduación",
+"Encontrar la graduación en la etiqueta"
+]
+},
+"de": {
+"t": "Wein 101, Teil 2: Bläschen, Süße und Stärke",
+"sum": "Bläschen, übrig gebliebener Zucker und zugesetzter Traubenbrand ergeben die anderen Weinfamilien, und vier Fragen ordnen fast jede Flasche ein.",
+"out": [
 "Stillwein, Schaumwein, Süßwein und Likörwein unterscheiden",
-"Jeden Wein nach Farbe, Süße, Bläschen und Stärke einordnen"
+"Jeden Wein nach Farbe, Süße, Bläschen und Stärke einordnen",
+"Die Stärke eines Weins auf dem Etikett finden"
 ]
 }
 },
 {
 "id": "b6aec9b7-bc1e-4671-8f10-0fe32ae219fe",
 "unit": "Foundations",
-"s": 2,
+"s": 3,
 "t": "How to taste wine in 5 steps",
 "sum": "Tasting is just drinking, slowed down: See, Swirl, Smell, Sip and Savour, five steps that give each sense its turn and help you notice what you like.",
 "out": [
@@ -1922,7 +1962,7 @@
 {
 "id": "a27a9d77-d41f-4407-aacb-93e44e436c9a",
 "unit": "Foundations",
-"s": 3,
+"s": 4,
 "t": "From grape to glass: the winery's year, step by step",
 "sum": "Follow grapes through the winery, from crushing and fermenting to the quiet finishing steps that make wine clear, stable and ready to bottle.",
 "out": [
@@ -1962,7 +2002,7 @@
 {
 "id": "e750ea47-e866-4a6d-9a09-835a6191997f",
 "unit": "Foundations",
-"s": 4,
+"s": 5,
 "t": "How red, white and rosé differ",
 "sum": "A wine's colour and its drying tannin come from time on the grape skins: the whole range from white through pink to red, and orange wine beside it.",
 "out": [
@@ -2002,7 +2042,7 @@
 {
 "id": "6f15b4dc-40ba-4442-8708-39ef56e61bf9",
 "unit": "Foundations",
-"s": 5,
+"s": 6,
 "t": "Cool climate vs warm climate: how warmth shapes wine",
 "sum": "Why the warmth of a region sets its wine's style: the vine belt, life at the cool edge, the fixes growers and winemakers use, and a wine map on the move.",
 "out": [
@@ -2042,7 +2082,7 @@
 {
 "id": "8fd0c519-6836-42a1-b46d-07aa374ef141",
 "unit": "Foundations",
-"s": 6,
+"s": 7,
 "t": "What terroir really means, and how to taste it",
 "sum": "Terroir put to the test: how soil really works through water, why 'mineral' is not the taste of rock, and how to taste a place side by side.",
 "out": [
@@ -2082,7 +2122,7 @@
 {
 "id": "45d7d75c-3229-4520-a10b-a29d10fa38d6",
 "unit": "Foundations",
-"s": 7,
+"s": 8,
 "t": "The grapes to know first: eight that fill most wine lists",
 "sum": "Four reds and four whites, lined up from light to full: how each tastes, where it is famous, a food it suits, and how to describe it to a guest.",
 "out": [
@@ -2122,7 +2162,7 @@
 {
 "id": "374684d1-e0aa-4524-a76d-720efb03392d",
 "unit": "Foundations",
-"s": 8,
+"s": 9,
 "t": "How to read a wine label: the wine's ID card",
 "sum": "A label is the wine's ID card: who made it, where it is from, the harvest year and its strength tell you enough to make a smart guess.",
 "out": [
@@ -2162,7 +2202,7 @@
 {
 "id": "b3f3bfef-41a0-4c59-a53c-95c597f1dfd2",
 "unit": "Foundations",
-"s": 9,
+"s": 10,
 "t": "The one rule: match the weight",
 "sum": "If you remember nothing else about pairing, match the weight of the wine to the weight of the food, so that neither one flattens the other.",
 "out": [
