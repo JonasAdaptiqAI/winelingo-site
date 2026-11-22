@@ -64,7 +64,7 @@
   } catch (e) {}
 
   // A line that fits what the reader came for.
-  var line = /^\/food-and-wine-pairing\//.test(p) ? 'Scan a bottle, see what to eat with it'
+  var line = /^\/food-and-wine-pairing\//.test(p) ? 'In the shop? Scan a bottle before you buy'
     : /^\/(learn|wine-glossary|tests|wine-classifications)\//.test(p) ? 'Learn wine a little every day'
     : 'Scan any label, learn the wine';
 

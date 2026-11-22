@@ -239,6 +239,7 @@
       }
     },
     "food-and-wine-pairing": {
+      "anchors": ["<section class=\"wrap\"><div class=\"faq\">"],
       "lesson": "b3f3bfef-41a0-4c59-a53c-95c597f1dfd2",
       "hook": "Most good pairings follow one simple rule. Learn it in five minutes and you can pair almost any dish yourself.",
       "test": "food-and-wine"

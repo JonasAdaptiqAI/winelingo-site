@@ -99,8 +99,10 @@ for (const [dir, c] of Object.entries(cfg.sections || {})) {
   for (const file of walk(dir)) {
     if (cfg.pages[file]) continue;
     const html = readFileSync(join(ROOT, file), "utf8");
-    if (![].concat(cfg.anchors).some((x) => html.includes(x))) continue;  // a page without the usual layout
-    writeFileSync(join(ROOT, file), place(file, { before: cfg.anchors, ...c }, html));
+    // A section may name its own anchors first (pairing pages: above the FAQ, 2026-11-22), then the usual ones.
+    const anchors = [].concat(c.anchors ?? [], cfg.anchors);
+    if (!anchors.some((x) => html.includes(x))) continue;  // a page without the usual layout
+    writeFileSync(join(ROOT, file), place(file, { ...c, before: anchors }, html));
     m++;
   }
 }
