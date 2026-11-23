@@ -88,7 +88,7 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
   <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Privacy Policy</span></nav>
   <p class="eyebrow">Legal</p>
   <h1 data-pagefind-weight="10">Privacy Policy</h1>
-  <p class="deck">Winelingo · Last updated: 22 November 2026</p>
+  <p class="deck">Winelingo · Last updated: 23 November 2026</p>
 </div></section>
 
 <article class="prose legal">
@@ -112,6 +112,7 @@ builds a private taste profile from the wines you rate. The data controller is
   <tr><td>The placement test, if you take it: how much you say you know already, your answers, your score and the unit you were placed in</td><td>To let you start further into the course. A unit you pass is marked as tested out and stays open; nothing else on your account changes.</td></tr>
   <tr><td>If you start without an account: a guest identifier with no name, email address or password, and the learning activity, learning choices and analytics events described here</td><td>So you can take your first lesson before you sign up. When you create an account (Sign in with Apple, or email and password) the guest identifier becomes your account, and what you did is kept. Until then we cannot tell who a guest session belongs to.</td></tr>
   <tr><td>Basic product-analytics events, keyed to your account identifier</td><td>To understand usage and improve the app.</td></tr>
+  <tr><td>If you installed the app after seeing or tapping one of our ads in the App Store (Apple Search Ads): which campaign, ad group and keyword the install is credited to, the country or region of the ad, and whether it was a new download or a re-download</td><td>To see which of our own ads bring people who go on to use the app, so we know where our advertising money works. The app gets a short-lived token from Apple and passes it to RevenueCat, which asks Apple what, if anything, the install is credited to. This is Apple’s own install attribution. It does not use your device’s advertising identifier, we do not ask to track you across other companies’ apps and websites, and we do not share it with ad networks. The answer is stored with your account identifier, next to your subscription status. If you did not come from one of our ads, there is nothing to record. This starts with an app update we are preparing; earlier versions of the app do not do it.</td></tr>
   <tr><td>A device notification token, only if you allow notifications</td><td>To send the reminders you opted into (for example, that your learning streak is about to end). You can switch each kind of notification off, or choose your own reminder time, in the app (Profile → Notifications). Turning notifications off in iOS Settings stops them all.</td></tr>
   <tr><td>When you use the app: the times you complete lessons, practice, tests and tastings, and whether you were active on a given day</td><td>To send your reminder around the time you usually learn rather than at a fixed hour, and to estimate each day how likely you are to come back, so that people who will probably return anyway get their reminder later. This estimate is calculated from your own activity only. It decides when we send you a reminder and nothing else: it is not used for advertising, not shared with anyone, and has no other effect on your account. If you choose your own reminder time, we use that time instead.</td></tr>
   <tr><td>Gift codes, if you buy the course as a gift or redeem one</td><td>To show the buyer their codes and unlock the course for whoever redeems one. We keep which account bought each code and which account redeemed it.</td></tr>
@@ -138,7 +139,7 @@ for the globe on the homepage: the country and the count, nothing else.</p>
   <tr><td>PostHog</td><td>Privacy-focused product analytics.</td></tr>
   <tr><td>Umami</td><td>Cookieless visitor statistics for the website winelingo.app, hosted in the EU (see “The website” below).</td></tr>
   <tr><td>Expo</td><td>Delivers push notifications to your device, if you allow them.</td></tr>
-  <tr><td>RevenueCat</td><td>Manages subscription status and receipts for purchases (Apple, or Paddle on our website, processes the payment).</td></tr>
+  <tr><td>RevenueCat</td><td>Manages subscription status and receipts for purchases (Apple, or Paddle on our website, processes the payment). It also asks Apple which of our App Store ads, if any, an install is credited to, and keeps the answer with your subscription record.</td></tr>
   <tr><td>Paddle</td><td>Our online reseller (Merchant of Record) for purchases on winelingo.app: takes the payment, handles VAT and sends receipts. Paddle collects your payment details and email directly; we only receive the purchase status.</td></tr>
 </table></div>
 <p>Some processors operate outside the EEA; where they do, transfers are covered by appropriate safeguards
@@ -147,7 +148,8 @@ for the globe on the homepage: the country and the count, nothing else.</p>
 <h2>3. Legal bases (EU/UK GDPR)</h2>
 <p>We rely on: <strong>performance of a contract</strong> (running the app and your account), your
 <strong>consent</strong> (optional analytics and push notifications, including the timing of your reminders, which you can withdraw at any time), and
-our <strong>legitimate interests</strong> (securing and improving the service).</p>
+our <strong>legitimate interests</strong> (securing and improving the service, and seeing which of our own ads bring
+people to the app).</p>
 
 <h2>4. Retention</h2>
 <p>We keep your account data for as long as your account exists. A photo attached to a saved tasting is
@@ -156,7 +158,9 @@ saving a tasting, and wine-list photos, are processed to produce a result and ar
 is kept until you remove it or delete your account. When you delete your account, your profile, profile photo,
 journal, palate, scan history and stored tasting photos are deleted. A guest session that is never turned into
 an account holds no name, email address or password, and has no fixed time limit for now. To have one removed,
-create an account from it and delete that account in the app, which deletes everything in it.</p>
+create an account from it and delete that account in the app, which deletes everything in it. Your subscription
+record at RevenueCat, including which ad an install is credited to, is not removed by deleting your account in the
+app; write to <a href="mailto:hello@winelingo.app">hello@winelingo.app</a> and we will delete it.</p>
 
 <h2>5. Your rights</h2>
 <p>You can access, correct, export or delete your data. You can <strong>delete your account and all its data
