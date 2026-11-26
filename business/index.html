@@ -7,11 +7,12 @@
 <title>Wine Training for Restaurant Staff | Winelingo for Business</title>
 <meta name="description" content="Wine training for restaurant staff, on their own phones: short lessons, free staff tests, a test built on your own wine list and a weekly team league.">
 <link rel="canonical" href="https://winelingo.app/business/">
+<link rel="alternate" hreflang="en" href="https://winelingo.app/business/">
+<link rel="alternate" hreflang="da" href="https://winelingo.app/da/restauranter/">
+<link rel="alternate" hreflang="x-default" href="https://winelingo.app/business/">
 <meta name="theme-color" content="#7b1e3b">
 <meta name="color-scheme" content="light">
 <meta name="author" content="Jonas Egeskov">
-<link rel="alternate" hreflang="en" href="https://winelingo.app/business/">
-<link rel="alternate" hreflang="x-default" href="https://winelingo.app/business/">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -268,6 +269,7 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
       <a href="/pricing/">Pricing</a>
       <a href="/about/">About</a>
       <a class="nav-biz" href="/business/" aria-current="page">For restaurants</a>
+      <a class="nav-lang" href="/da/restauranter/" hreflang="da" lang="da">Dansk</a>
     </nav>
     <div class="nav-cta"><button class="nav-search" type="button" aria-label="Search Winelingo" title="Search (/)" data-search-open><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button><a class="badge-link nav-badge" href="https://apps.apple.com/app/id6785896824"><img src="/assets/appstore-badge.svg" alt="Download Winelingo on the App Store" width="120" height="40"></a><button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navmenu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button></div>
   </div>
@@ -709,145 +711,24 @@ setInterval(function(){if(!document.hidden)tick()},60000);})();
     };
   })();
 
-  // English is in the HTML; Danish swaps in for Danish visitors (or by the toggle).
-  // Every string is plain text, set with textContent.
+  // Danish is its own page, /da/restauranter/, built from this file and data/business-da.json by
+  // scripts/build-business-da.mjs. The toggle moves between the two pages. A visitor with a Danish
+  // browser, an old ?lang=da link or a saved Danish choice is sent on to the Danish page, unless
+  // they chose English (the toggle, ?lang=en, or arriving here from the Danish page).
   (function(){
-    var DA = {
-      // The scroll story at the top (assets/hero/business.*)
-      hsEyebrow: 'Winelingo til restauranter',
-      hsH1a: 'Tjenere, der sælger vin med ',
-      hsH1b: 'selvtillid.',
-      hsSub: 'Oplæring bygget på jeres eget vinkort. Holdet lærer at beskrive, anbefale og servere hver flaske, I skænker, på deres egen telefon, et par minutter før servicen.',
-      hsMail: 'Skriv til os',
-      hsTests: 'Prøv en personaletest →',
-      hsCapA1: 'For to uger siden ville hun have sagt ',
-      hsCapA2: '„husets rødvin er god.“',
-      hsCapB1: 'Før servicen lærer hun ',
-      hsCapB2: 'aftenens',
-      hsCapB3: ' vinkort.',
-      hsL1k: 'Jeres vinkort',
-      hsL1a: 'Oplæring bygget på ',
-      hsL1b: 'jeres',
-      hsL1c: ' kort.',
-      hsL1p: 'Vi laver en personaletest ud fra jeres vinkort: ti spørgsmål, som gæsterne stiller dem, og hvert svar peger på en flaske, I faktisk skænker.',
-      hsL2k: 'Ved bordet',
-      hsL2a: 'Ordene, der ',
-      hsL2b: 'sælger',
-      hsL2c: ' flasken.',
-      hsL2p: 'Korte lektioner om druer, regioner og servering, så holdet kan sige, hvorfor en vin passer, og ikke bare skænke den.',
-      hsL3k: 'Holdet',
-      hsL3a: 'En liga, der holder dem ',
-      hsL3b: 'i gang.',
-      hsL3p: 'En ugentlig liga for hele holdet. Et par minutter om dagen, og ingen vil slutte sidst.',
-      hsEndK: 'Til restauranter, vinbarer og hoteller',
-      hsEndA: 'Hvert bord, serveret med ',
-      hsEndB: 'selvtillid.',
-      hsEndP: 'Hver tjener får appen på sin egen telefon. I får oplæring bygget på jeres vinkort og en ugentlig liga. Nye partnere starter med en gratis prøveperiode.',
-      hsPartners: 'Partnere',
-      hsTLevel: 'Personaletest · Vores vinkort',
-      hsTQ: 'Spørgsmål',
-      hsTQuestion: 'Bord 4 bestiller havbarsen og vil have en frisk, tør hvidvin. Hvad foreslår du?',
-      hsTRight: 'Rigtigt',
-      hsTWhy: 'Chablis er Chardonnay fra det kølige nordlige Bourgogne, oftest lavet uden nye egetræsfade: frisk, tør og mineralsk, så den løfter fisken i stedet for at dække den. Sauternes er sød, og de to andre er kraftige rødvine.',
-      hsLPick: 'Vælg ét svar',
-      hsLCount: '2 af 2',
-      hsLQ: 'Hvorfor fører Cabernet Sauvignon an på venstre bred?',
-      hsLO1: 'Det kølige ler holder på vandet',
-      hsLO2: 'Det varme grus dræner hurtigt',
-      hsLO3: 'Vinstokkene vokser på øer',
-      hsLO4: 'Den ligger længst fra havet',
-      hsLCheck: 'Tjek svar',
-      hsLNice: 'Flot',
-      hsLKeyL: 'Kernen:',
-      hsLKey: 'Varmt grus, der dræner hurtigt, passer til Cabernet Sauvignon, så den fører an i blandingerne på venstre bred.',
-      hsLWhyL: 'Derfor:',
-      hsLWhy: 'Derfor er rødvinene fra Médoc stramme, og de bedste kan lagres i mange år.',
-      hsLRemL: 'Husk:',
-      hsLRem: 'Grus til Cabernet, ler til Merlot.',
-      hsLGo: 'Fortsæt',
-      hsGTitle: 'Ugens liga',
-      hsGEnds: 'Slutter søndag ved midnat · 3 dage tilbage',
-      hsGWeek: 'Din uge',
-      hsGLessons: 'Lektioner',
-      hsGTastings: 'Smagninger',
-      eyebrow: 'Winelingo til virksomheder',
-      h1a: 'Vinoplæring til ', h1b: 'hele holdet',
-      sub: 'Fem minutter om dagen på deres egen telefon: korte lektioner, personaletests og en ugentlig liga. Så når gæsten spørger „hvad passer til lammet?“, har holdet svaret.',
-      ctaDemo: 'Book en demo på 15 minutter',
-      ctaWatch: 'Se filmen · 68 sekunder',
-      fine: 'Til restauranter, vinbarer, hoteller og tjenerskoler',
-      fpT: 'Se filmen', fpS: '68 sekunder · med lyd',
-      feT: 'Skal vi bygge en test til jeres vinkort?', feMail: 'Skriv til os', feAgain: 'Se igen',
-      proofK: 'Vores partnere',
-      jWhy: 'Hvorfor', jWhat: 'Det får I', jPartners: 'Partnere', jStart: 'Sådan kommer I i gang', jFaq: 'Pris og spørgsmål', jContact: 'Kontakt',
-      codeT: 'Arbejder I allerede med os?', codeA: 'Personalet indløser holdkoden her →',
-      whyK: 'Hvorfor', whyH: 'Gæsten spørger. Kan holdet svare?',
-      whyP: 'Vin sælger bedst, når den, der står ved bordet, kan fortælle om den. Men holdet skifter hver sæson, der er ikke en sommelier på hver vagt, og oplæringen skal passe ind mellem servicerne.',
-      w1h: 'Nye ansigter hver sæson', w1p: 'Sæson- og deltidsansatte starter en fredag. Med Winelingo kan de gå i gang med det grundlæggende fra første dag, på deres egen telefon.',
-      w2h: 'Ingen sommelier på hver vagt', w2p: 'Appen forklarer enhver flaske på hylden med enkle ord: hvordan den smager, dens historie, hvad man spiser til, og hvordan den serveres.',
-      w3h: 'Oplæring mellem servicerne', w3p: 'En lektion tager omkring fem minutter. Intet klasselokale, ingen mappe, ingen kursusdag at booke.',
-      getK: 'Det får holdet', getH: 'Seks måder at lære på, én app',
-      getP: 'Det hele findes i appen eller på winelingo.app i dag, bortset fra jeres egen test, som vi bygger til jer.',
-      c1k: '01 · Lær', c1h: 'Fem minutter før servicen', c1p: '173 korte, interaktive lektioner i 27 enheder, fra glas og temperatur til druer, regioner og vin ved bordet.',
-      c2k: '02 · Personaletest', c2h: 'Test holdet, før gæsterne gør', c2p: '13 gratis tests: servering, gæsternes spørgsmål, druer, mad og vin, etiketter, mousserende vin, vinfejl og avec, plus prøveeksamener til WSET Level 1–3 og Introductory Sommelier.', c2a: 'Prøv testene nu →',
-      c3tag: 'Skræddersyet til jer', c3k: '03 · Jeres eget vinkort', c3h: 'Bygget på jeres flasker', c3p: 'Vi laver en personaletest ud fra jeres vinkort, med jeres vine og jeres priser. Personalet åbner den på telefonen, uden login.',
-      c4k: '04 · Kend flasken', c4h: 'Kend hver flaske på hylden', c4p: 'Scan etiketten, og få historien, smagen, maden og serveringen.',
-      c5k: '05 · Smag sammen', c5h: 'Blindsmagning til briefingen', c5p: 'Alle skriver noter på deres egen telefon. Så afslører I vinen og ser, hvem der havde den skarpeste gane.',
-      c6k: '06 · Ugens liga', c6h: 'Holdet konkurrerer', c6p: 'XP for lektioner og smagninger og en ny vinder hver uge. Kolleger tilføjer hinanden som venner og dyster om førstepladsen.',
-      pK: 'Partnere', pH: 'Bygget sammen med dem på gulvet',
-      pP: 'Vores partnere bruger Winelingo med hele holdet og fortæller os, hvad der virker under servicen. Den feedback bestemmer, hvad vi bygger næste gang.',
-      p1tag: 'Partner', p1meta: 'Aarhus',
-      p3tag: 'Partner', p3meta: 'Skolegade, Aarhus · Siden 1936',
-      p3body: 'En af Aarhus’ ældste caféer, hvor holdet lærer vin med Winelingo.',
-      p1body: 'Hele holdet på Vincaféen lærer vin med Winelingo og er med til at forme det, der kommer næste gang.',
-      p2h: 'Jeres hold som det næste?', p2p: 'Partnere får Premium til hele holdet gennem én partnerkode og en personaletest bygget på deres eget vinkort.', p2a: 'Bliv partner',
-      sK: 'Sådan kommer I i gang', sH: 'Tre trin, ingen IT-afdeling',
-      s1h: 'En kort snak', s1p: 'Fortæl os om jeres hold og jeres vinkort. Et kvarter er nok.',
-      s2h: 'Én kode til holdet', s2p: 'Personalet henter Winelingo på iPhone eller åbner kurset i browseren og indløser jeres partnerkode på winelingo.app/partner. Så er Premium låst op på deres konto.',
-      s3h: 'Jeres egen test', s3p: 'Vi sender jer en personaletest bygget på jeres vinkort. Del linket i holdets chat.',
-      lH: 'Ét hold, fire sprog', lP: 'Appen, lektionerne og personaletestene findes på dansk, engelsk, tysk og spansk. Hver medarbejder vælger sit eget sprog.',
-      fK: 'Spørgsmål', fH: 'Godt at vide',
-      q1: 'Hvad koster det?', a1: 'Det afhænger af, hvor stort holdet er. Nye partnere starter med en gratis prøveperiode, så holdet kan prøve Winelingo, før I beslutter noget. Skriv til os, så giver vi et tilbud.',
-      q2: 'Hvilke telefoner virker det på?', a2: 'Winelingo er en iPhone-app, og hele kurset kører også i browseren, så medarbejdere med en Android-telefon eller en computer kan også være med, på den samme konto. Personaletestene og jeres egen test er også websider.', a2l: 'Åbn kurset i browseren',
-      q3: 'Kan I tilpasse det til vores vinkort?', a3: 'Ja. Vi bygger en personaletest ud fra jeres kort: ti spørgsmål, som gæsterne stiller dem, og hvert svar peger på en flaske, I faktisk skænker. Den ligger på sin egen webside, som ikke kan findes på Google.',
-      q5: 'Er personalets data private?', a5: 'Hver medarbejder har sin egen konto, og deres smagsdagbog er deres egen. Som arbejdsgiver får I ikke adgang til nogens konto. Læs mere i vores', a5l: 'privatlivspolitik',
-      ctaK: 'Lad os tage en snak', ctaH: 'Skal vi bygge en test til jeres vinkort?',
-      ctaP: 'Skriv til Jonas Egeskov, der har bygget Winelingo. Han svarer selv på alle mails.',
-      ctaMail: 'Book en snak på 15 minutter', ctaTests: 'Prøv personaletestene', ctaMeta: 'For voksne over 18 år · Nyd vin med omtanke'
-    };
-    var TITLE = {en: document.title, da: 'Vinoplæring til personalet | Winelingo til virksomheder'};
-    var SUBJ = {en: 'Winelingo for our team', da: 'Winelingo til vores hold'};
-    var nodes = document.querySelectorAll('[data-t]'), EN = {};
-    nodes.forEach(function(n){ EN[n.getAttribute('data-t')] = n.textContent; });
-    var btns = document.querySelectorAll('.lang-seg button');
-
-    var NAV_DA = { '/course/': ['/da/vinkursus/', 'Vinkursus'], '/tests/': ['/tests/?lang=da', 'Vintests'], '/pricing/': ['/pricing/', 'Priser'],
-      '/about/': ['/about/', 'Om os'], '/business/': ['/business/?lang=da', 'Til restauranter'] };
-    function setLang(lang, save){
-      var d = lang === 'da' ? DA : EN;
-      nodes.forEach(function(n){ var k = n.getAttribute('data-t'); if (d[k] != null) n.textContent = d[k]; });
-      document.querySelectorAll('img[data-img]').forEach(function(i){ i.src = '/assets/business/' + i.getAttribute('data-img') + '-' + lang + '.webp'; });
-      document.querySelectorAll('a[data-mail]').forEach(function(a){ a.href = 'mailto:hello@winelingo.app?subject=' + encodeURIComponent(SUBJ[lang]); });
-      document.documentElement.lang = lang;
-      // The site menu follows the page's language toggle, links included.
-      document.querySelectorAll('#navmenu a').forEach(function(l){
-        var en = l.getAttribute('data-en') || (l.setAttribute('data-en', l.getAttribute('href') + '|' + l.textContent), l.getAttribute('data-en'));
-        var parts = en.split('|'), da = NAV_DA[parts[0]];
-        l.setAttribute('href', lang === 'da' && da ? da[0] : parts[0]);
-        l.textContent = lang === 'da' && da ? da[1] : parts[1];
-      });
-      document.title = TITLE[lang];
-      btns.forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-lang') === lang ? 'true' : 'false'); });
-      if (film) film(lang);
-      if (save){ try { localStorage.setItem('wl-business-lang', lang); } catch (e) {} }
-    }
-    btns.forEach(function(b){ b.addEventListener('click', function(){ setLang(b.getAttribute('data-lang'), true); }); });
-
+    var HERE = document.documentElement.lang === 'da' ? 'da' : 'en';
+    var URLS = {en: '/business/', da: '/da/restauranter/'};
+    var save = function(l){ try { localStorage.setItem('wl-business-lang', l); } catch (e) {} };
+    document.querySelectorAll('.lang-seg button').forEach(function(b){
+      b.addEventListener('click', function(){ var l = b.getAttribute('data-lang'); save(l); if (l !== HERE) location.href = URLS[l] + location.hash; });
+    });
+    if (HERE !== 'en') return;
     var lang = null, q = location.search.match(/[?&]lang=(da|en)\b/);
-    if (q) lang = q[1];
+    if (q){ lang = q[1]; save(lang); }
+    else if (/\/da\/restauranter\//.test(document.referrer)){ lang = 'en'; save(lang); }
     if (!lang){ try { lang = localStorage.getItem('wl-business-lang'); } catch (e) {} }
     if (!lang){ lang = (navigator.languages || [navigator.language || '']).some(function(l){ return /^da\b/i.test(l); }) ? 'da' : 'en'; }
-    if (lang === 'da') setLang('da', false);
+    if (lang === 'da') location.replace(URLS.da + location.hash);
   })();
 </script>
 <script defer src="/assets/hero/business.js?v=1"></script>

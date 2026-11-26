@@ -18,9 +18,9 @@ const SKIP = new Set(["node_modules", "docs", "data", "scripts", "assets", "page
 // Pages under /da/ get the Danish menu and footer; everything else the English one.
 const NAV = {
   en: [["/course/", "Course"], ["/tests/", "Wine tests"], ["/pricing/", "Pricing"], ["/about/", "About"]],
-  da: [["/da/vinkursus/", "Vinkursus"], ["/tests/?lang=da", "Vintests"], ["/pricing/", "Priser"], ["/about/", "Om os"]],
+  da: [["/da/vinkursus/", "Vinkursus"], ["/da/vinquiz/", "Vinquiz"], ["/pricing/", "Priser"], ["/about/", "Om os"]],
 };
-const BIZ = { en: ["/business/", "For restaurants"], da: ["/business/?lang=da", "Til restauranter"] };
+const BIZ = { en: ["/business/", "For restaurants"], da: ["/da/restauranter/", "Til restauranter"] };
 const SEARCH_ICON = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
 const MENU_ICON = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
 
@@ -32,7 +32,7 @@ const sectionOf = (path) => {
 const cur = (href, here) => (href.split("?")[0] === here ? ' aria-current="page"' : "");
 
 // Pages with a twin in the other language get a link to it in the header; the twin links back.
-const PAIRS = [["", "da/"], ["course/", "da/vinkursus/"], ["gift/", "da/gave/"]];
+const PAIRS = [["", "da/"], ["course/", "da/vinkursus/"], ["gift/", "da/gave/"], ["tests/", "da/vinquiz/"], ["business/", "da/restauranter/"]];
 const TWINS = Object.fromEntries(PAIRS.flatMap(([en, da]) => [[en, da], [da, en]]));
 
 const langOf = (path) => (path.startsWith("da/") ? "da" : "en");
@@ -99,10 +99,10 @@ const FOOTER_DA = `<footer class="site-footer" data-pagefind-ignore="all">
         <a href="/grape-varieties/" hreflang="en">Druesorter</a><a href="/wine-regions/" hreflang="en">Vinregioner</a><a href="/countries/" hreflang="en">Vinlande</a><a href="/wine-styles/" hreflang="en">Vinstile</a><a href="/food-and-wine-pairing/" hreflang="en">Mad og vin</a><a href="/wine-glossary/" hreflang="en">Vinordbog</a>
       </div>
       <div class="foot-col"><h3>Lær</h3>
-        <a href="/da/vinkursus/">Vinkursus online</a><a href="/tests/?lang=da">Vinquiz og øveeksamener</a><a href="/da/gave/">Giv kurset i gave</a>
+        <a href="/da/vinkursus/">Vinkursus online</a><a href="/da/vinquiz/">Vinquiz og øveeksamener</a><a href="/da/gave/">Giv kurset i gave</a>
       </div>
       <div class="foot-col"><h3>Til restauranter</h3>
-        <a href="/business/?lang=da">Personaletræning</a><a href="/partner/">Indløs en holdkode</a><a href="mailto:hello@winelingo.app?subject=Winelingo%20til%20vores%20hold">Book en demo</a>
+        <a href="/da/restauranter/">Personaletræning</a><a href="/partner/">Indløs en holdkode</a><a href="mailto:hello@winelingo.app?subject=Winelingo%20til%20vores%20hold">Book en demo</a>
       </div>
       <div class="foot-col"><h3>Winelingo</h3>
         <a href="/about/" hreflang="en">Om os</a><a href="/pricing/" hreflang="en">Priser</a><a href="/faq/" hreflang="en">Spørgsmål og svar</a><a href="/compare/" hreflang="en">Sammenlign vinapps</a><a href="/support/" hreflang="en">Hjælp</a><a href="/privacy">Privatlivspolitik</a><a href="/terms">Vilkår</a><a href="mailto:hello@winelingo.app">Kontakt</a>
