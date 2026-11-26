@@ -172,6 +172,10 @@ const TRACK_TEXT = {
 // The hub exists once per language that has its own address: /tests/ in English and /da/vinquiz/ in
 // Danish. The Danish words come from the table quiz.js uses (UI.da), so the built page and the
 // script agree. German and Spanish visitors still get /tests/ with the words swapped by quiz.js.
+// Tests with a Danish page of their own, /da/vinquiz/<Danish slug>/ (data/tests/da-slugs.json;
+// build-chrome.mjs reads the same file for the language link in the header).
+const DA_SLUGS = JSON.parse(readFileSync(join(DATA, "da-slugs.json"), "utf8"));
+const daPath = (slug) => (DA_SLUGS[slug] && byslug[slug] && byslug[slug].da ? `/da/vinquiz/${DA_SLUGS[slug]}/` : null);
 const quizJs = readFileSync(join(ROOT, "assets/quiz.js"), "utf8");
 const UI = new Function("return " + quizJs.slice(quizJs.indexOf("var UI = {") + 9, quizJs.indexOf("\n  };", quizJs.indexOf("var UI = {")) + 4))();
 const PALATE_ICON = `<span class="tx-ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8l-.6 6.2a3.4 3.4 0 0 1-6.8 0Z"/><path d="M12 12.6V20M8.5 20h7"/><path d="M8.6 7.4h6.8"/></svg></span>`;
@@ -190,7 +194,7 @@ const HUBS = [
     title: "Vinquiz: gratis quiz om vin med svar | Winelingo",
     desc: "Gratis vinquiz med svar og forklaringer: test din vinviden, øv dig til WSET- og sommeliereksamener, eller træn som tjener. Ingen tilmelding.",
     eyebrow: "Gratis vinquiz", h1: UI.da.hubH, deck: () => UI.da.hubP,
-    jump: "Kategorier", track: (id) => [UI.da[`${id}-eb`], UI.da[`${id}-h`], UI.da[`${id}-p`]], href: (slug) => `/tests/${slug}/?lang=da`,
+    jump: "Kategorier", track: (id) => [UI.da[`${id}-eb`], UI.da[`${id}-h`], UI.da[`${id}-p`]], href: (slug) => daPath(slug) || `/tests/${slug}/?lang=da`,
     s: UI.da,
     palate: ["/tests/wine-palate-quiz/?lang=da", "Hvilken vin vil jeg kunne lide?", "Smagsquizzen: otte spørgsmål om kaffe, chokolade, citroner og mere, helt uden vinviden. Få de hvid- og rødvinsstile, du med størst sandsynlighed vil holde af.", "8 spørgsmål · 2 min"],
     biz: `Skal et restauranthold oplæres? <a href="/da/restauranter/" style="font-weight:600">Se, hvordan Winelingo virker for personalet</a>, med en test bygget på jeres eget vinkort.` },
@@ -254,26 +258,69 @@ for (const L of HUBS) {
   </div></section>`) +
       `\n<div class="tx-hub" id="quiz"${L.lang === "en" ? "" : ` data-lang="${L.lang}"`}>\n${TRACKS.map((t) => trackHtml(t, L)).join("\n")}\n</div>` +
       `\n<p class="qz-biz" style="max-width:var(--maxw-prose);margin:8px auto 64px;padding:0 24px;text-align:center;color:var(--sec);font-size:16px">${L.biz}</p>`,
-    data: { tests: tests.map((t) => ({ slug: t.slug, level: t.level, n: t.en.questions.length, exam: t.exam, ...Object.fromEntries(LANGS.filter((l) => t[l]).map((l) => [l, { title: t[l].title, summary: t[l].summary }])) })) },
+    data: { tests: tests.map((t) => ({ slug: t.slug, level: t.level, n: t.en.questions.length, exam: t.exam, ...(daPath(t.slug) ? { urls: { da: daPath(t.slug) } } : {}), ...Object.fromEntries(LANGS.filter((l) => t[l]).map((l) => [l, { title: t[l].title, summary: t[l].summary }])) })) },
   });
   if (L.lang === "da") html = html.replace('aria-label="Breadcrumb"', 'aria-label="Brødkrumme"');
   writeFileSync(join(dir, "index.html"), html);
 }
 
-// One page per test
+// One page per test. A test with a Danish page names both addresses in its data (`urls`), so
+// quiz.js can send a Danish visitor to the Danish page and move between the two.
+const testAlt = (slug) => (daPath(slug) ? `
+<link rel="alternate" hreflang="en" href="https://winelingo.app/tests/${slug}/">
+<link rel="alternate" hreflang="da" href="https://winelingo.app${daPath(slug)}">
+<link rel="alternate" hreflang="x-default" href="https://winelingo.app/tests/${slug}/">` : "");
+const testData = (t) => (daPath(t.slug) ? { ...t, urls: { en: `/tests/${t.slug}/`, da: daPath(t.slug) } } : t);
 for (const t of tests) {
   const crumbs = [["Home", "/"], ["Wine tests", "/tests/"], [t.en.title]];
   mkdirSync(join(ROOT, "tests", t.slug), { recursive: true });
   writeFileSync(join(ROOT, "tests", t.slug, "index.html"), page({
-    path: `/tests/${t.slug}/`,
+    path: `/tests/${t.slug}/`, alt: testAlt(t.slug),
     // Exam practice titles already say what they are ("…: 50 free practice questions").
     title: t.exam ? `${t.en.title} | Winelingo` : `${t.en.title}: Free Wine Quiz | Winelingo`,
     desc: t.exam ? `${t.en.summary} Every answer explained. Free, no sign-up.` : `${t.en.summary} Ten questions with explanations. Free, no sign-up.`,
     crumbs,
     body: hero(crumbs, t.exam ? "Exam practice" : "Wine test", t.en.title, t.en.summary, true) +
       `\n<div class="qz-wrap" id="quiz"><noscript>Turn on JavaScript to take the test.</noscript></div>`,
-    data: t,
+    data: testData(t),
   }));
 }
+
+// The same tests in Danish, each on its own address. Below the quiz the page lists every question
+// with its answer folded away: the words are then in the HTML for a search engine, and it is what
+// someone looking for "vin quiz med svar" came for.
+const PM = '<span class="pm" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>';
+const answerList = (qs) => `
+<section class="wrap"><div class="faq" id="svar">
+  <h2>Alle ${qs.length} spørgsmål med svar</h2>
+  <p style="color:var(--sec);margin:8px 0 14px">Vil du hellere læse end klikke? Svaret og forklaringen ligger under hvert spørgsmål.</p>
+  ${qs.map((q, i) => `<details><summary>${i + 1}. ${esc(q.q)}${PM}</summary><div class="a"><p><strong>Svar:</strong> ${esc(q.opts[q.a])}</p><p>${esc(q.why)}</p></div></details>`).join("\n  ")}
+</div></section>`;
+const daBuilt = [];
+for (const t of tests) {
+  const path = daPath(t.slug);
+  if (!path) continue;
+  const crumbs = [["Forside", "/da/"], ["Vinquiz", "/da/vinquiz/"], [t.da.title]];
+  // The longest title and description that fit (60 and 160 characters).
+  const sep = t.da.title.includes(":") ? " | " : ": ";
+  const title = [`${t.da.title}${sep}gratis vinquiz med svar | Winelingo`, `${t.da.title}${sep}vinquiz med svar | Winelingo`, `${t.da.title}${sep}vinquiz med svar`].find((x) => x.length <= 60);
+  if (!title) throw new Error(`da/${t.slug}: no title fits in 60 characters`);
+  const n = t.da.questions.length;
+  const desc = [`${t.da.summary} ${n} spørgsmål med svar og forklaringer. Gratis, uden tilmelding.`, `${t.da.summary} ${n} spørgsmål med svar og forklaringer.`, `${t.da.summary} Vinquiz med svar.`, t.da.summary].find((x) => x.length <= 160);
+  if (!desc) throw new Error(`da/${t.slug}: the summary is longer than 160 characters`);
+  const dir = join(ROOT, path.replace(/^\/|\/$/g, ""));
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(join(dir, "index.html"), page({
+    path, lang: "da", alt: testAlt(t.slug), title,
+    desc,
+    crumbs,
+    body: hero(crumbs, "Vinquiz", t.da.title, t.da.summary, true) +
+      `\n<div class="qz-wrap" id="quiz" data-lang="da"><noscript>Slå JavaScript til for at tage quizzen, eller læs spørgsmålene og svarene herunder.</noscript></div>` +
+      answerList(t.da.questions),
+    data: testData(t),
+  }).replace('aria-label="Breadcrumb"', 'aria-label="Brødkrumme"'));
+  daBuilt.push(path);
+}
+console.log(`Built ${daBuilt.length} Danish test pages under /da/vinquiz/`);
 
 console.log(`Built /tests/ with ${tests.length} tests: ${tests.map((t) => `${t.slug} [${LANGS.filter((l) => t[l]).join(",")}]`).join(", ")}`);

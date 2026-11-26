@@ -136,7 +136,7 @@
       root.querySelectorAll("[data-slug]").forEach(function (a) {
         var t = bySlug[a.getAttribute("data-slug")]; if (!t) return;
         var c = t[lang] || t.en, u = function (k) { return tr(lang, k); };
-        a.href = "/tests/" + t.slug + "/" + (lang === "en" ? "" : "?lang=" + lang);
+        a.href = (t.urls && t.urls[lang]) || "/tests/" + t.slug + "/" + (lang === "en" ? "" : "?lang=" + lang);
         var f = function (k) { return a.querySelector('[data-f="' + k + '"]'); };
         if (f("title")) f("title").textContent = c.title;
         if (f("summary")) f("summary").textContent = c.summary;
@@ -157,7 +157,21 @@
      score against the real pass mark and a breakdown by topic. */
   function play(root, data) {
     var available = LANGS.filter(function (l) { return data[l]; });
-    var lang = pickLang(available), i = 0, score = 0, mode = data.exam ? null : "practice";
+    // A test with a page of its own in another language (data.urls, e.g. Danish under /da/vinquiz/)
+    // works like the hub: that page keeps its language, and the English address sends a visitor
+    // in that language on, unless they came from that page to read this one.
+    var fixed = root.getAttribute("data-lang"), urls = data.urls || {};
+    if (!fixed && !new URLSearchParams(location.search).get("lang")) {
+      for (var k in urls) if (k !== "en" && document.referrer.indexOf(location.origin + urls[k]) === 0) saveLang("en");
+    }
+    var lang = fixed || pickLang(available), i = 0, score = 0, mode = data.exam ? null : "practice";
+    if (!fixed && lang !== "en" && urls[lang]) { location.replace(urls[lang]); return; }
+    function switchLang(l) {
+      saveLang(l);
+      var here = fixed || "en", target = urls[l] || (fixed ? urls.en + "?lang=" + l : null);
+      if (l !== here && target) { location.href = target; return; }
+      lang = l; drawHead(); if (card.dataset.state === "done") done(); else if (mode) render(); else intro();
+    }
     var picks = [], log = [], timer = 0, deadline = 0;
     var head = el("div", { cls: "qz-head" });
     var prog = el("div", { cls: "qz-progress" });
@@ -169,7 +183,7 @@
     function drawHead() {
       document.documentElement.lang = lang;
       head.replaceChildren(
-        langBar(available, lang, function (l) { lang = l; saveLang(l); drawHead(); if (card.dataset.state === "done") done(); else if (mode) render(); else intro(); }),
+        langBar(available, lang, switchLang),
         el("span", { cls: "qz-level", text: data.exam ? data.exam.body + " · " + data.exam.name : u("lvl")[data.level] })
       );
       var h1 = document.querySelector("[data-qz-title]"); if (h1) h1.textContent = T().title;
@@ -325,7 +339,7 @@
         el("p", { text: msg }),
         topics(),
         mode === "exam" ? review() : null,
-        el("div", { cls: "qz-row" }, [again, el("a", { cls: "btn btn-ghost", href: "/tests/" + (lang === "en" ? "" : "?lang=" + lang), text: u("all") })]),
+        el("div", { cls: "qz-row" }, [again, el("a", { cls: "btn btn-ghost", href: HUB_PAGES[lang] || "/tests/?lang=" + lang, text: u("all") })]),
         el("div", { cls: "qz-cta" }, [el("h3", { text: u("appT") }), el("p", { text: u("appP") }), el("a", { cls: "btn btn-primary", href: APP, text: u("appB") })]),
         el("div", { cls: "qz-biz" }, [el("h3", { text: u("bizT") }), el("p", null, [u("bizP"), mail, "."])])
       ].filter(Boolean));
