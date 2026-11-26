@@ -97,8 +97,8 @@
 - [The course as a gift](https://winelingo.app/gift/): the whole course for life for someone else, $39.99 once; a single-use code and a printable card, redeemed at winelingo.app/redeem. Danish: [Gave til vinelskeren](https://winelingo.app/da/gave/); Spanish: [Regalo para amantes del vino](https://winelingo.app/es/regalo/); German: [Geschenk für Weinliebhaber](https://winelingo.app/de/geschenk/)
 
 ## For business
-- [Winelingo for business: wine training for restaurant staff](https://winelingo.app/business/): short lessons, 13 free tests, a staff test built on the venue's own wine list, and a weekly team league. English and Danish.
-- [Free wine quizzes and sommelier practice tests](https://winelingo.app/tests/)
+- [Winelingo for business: wine training for restaurant staff](https://winelingo.app/business/): short lessons, 13 free tests, a staff test built on the venue's own wine list, and a weekly team league. English and Danish. Danish: [Vinoplæring til personalet](https://winelingo.app/da/restauranter/).
+- [Free wine quizzes and sommelier practice tests](https://winelingo.app/tests/) Danish: [Vinquiz](https://winelingo.app/da/vinquiz/).
 
 ## About
 - [About Winelingo and Jonas Egeskov](https://winelingo.app/about/)

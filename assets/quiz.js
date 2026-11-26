@@ -65,6 +65,8 @@
   var LANGS = ["en", "da", "de", "es"];
   var NAMES = { en: "English", da: "Dansk", de: "Deutsch", es: "Español" };
   var CONTACT = "hello@winelingo.app";
+  // Languages whose test hub is a page of its own (the same paths as HUBS in build-tests.mjs).
+  var HUB_PAGES = { en: "/tests/", da: "/da/vinquiz/" };
   var APP = "https://apps.apple.com/app/id6785896824";
 
   function pickLang(available) {
@@ -109,7 +111,21 @@
      visitor's language, points the links at that language and adds their best scores. */
   function hub(root, data) {
     var available = LANGS.filter(function (l) { return data.tests.some(function (t) { return t[l]; }); });
-    var lang = pickLang(available), bySlug = {};
+    // A hub built in one language (build-tests.mjs writes /da/vinquiz/ in Danish) says so with
+    // data-lang and keeps that language. On /tests/, a visitor whose language has a page of its
+    // own is sent there, unless they came from that page to read this one.
+    var fixed = root.getAttribute("data-lang");
+    if (!fixed && !new URLSearchParams(location.search).get("lang")) {
+      for (var k in HUB_PAGES) if (k !== "en" && document.referrer.indexOf(location.origin + HUB_PAGES[k]) === 0) saveLang("en");
+    }
+    var lang = fixed || pickLang(available), bySlug = {};
+    if (!fixed && lang !== "en" && HUB_PAGES[lang]) { location.replace(HUB_PAGES[lang] + location.hash); return; }
+    function pick(l) {
+      saveLang(l);
+      var here = fixed || "en", target = HUB_PAGES[l] || (fixed ? HUB_PAGES.en + "?lang=" + l : null);
+      if (l !== here && target) { location.href = target; return; }
+      lang = l; draw();
+    }
     data.tests.forEach(function (t) { bySlug[t.slug] = t; });
     var langSlot = document.querySelector("[data-qz-langs]") || root;
     function draw() {
@@ -130,7 +146,7 @@
         var b = best(t.slug), bn = f("best");
         if (bn) { bn.hidden = !b; if (b) bn.textContent = u("best") + " " + b.s + "/" + b.n; }
       });
-      langSlot.replaceChildren(langBar(available, lang, function (l) { lang = l; saveLang(l); draw(); }));
+      langSlot.replaceChildren(langBar(available, lang, pick));
     }
     draw();
   }
