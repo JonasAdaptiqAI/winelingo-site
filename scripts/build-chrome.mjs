@@ -33,6 +33,8 @@ const cur = (href, here) => (href.split("?")[0] === here ? ' aria-current="page"
 
 // Pages with a twin in the other language get a link to it in the header; the twin links back.
 const PAIRS = [["", "da/"], ["course/", "da/vinkursus/"], ["gift/", "da/gave/"], ["tests/", "da/vinquiz/"], ["business/", "da/restauranter/"]];
+// Each test with a Danish page (data/tests/da-slugs.json, written out by build-tests.mjs).
+for (const [en, da] of Object.entries(JSON.parse(readFileSync(join(ROOT, "data/tests/da-slugs.json"), "utf8")))) PAIRS.push([`tests/${en}/`, `da/vinquiz/${da}/`]);
 const TWINS = Object.fromEntries(PAIRS.flatMap(([en, da]) => [[en, da], [da, en]]));
 
 const langOf = (path) => (path.startsWith("da/") ? "da" : "en");
